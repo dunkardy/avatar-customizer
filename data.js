@@ -37295,16 +37295,6 @@ const AVATAR_DATA = {
       "gender": "unknown",
       "dateAdded": 1670421517
     },
-    "bunny": {
-      "id": "bunny",
-      "name": "bunny",
-      "preview": "images/Avatars_BUNNY1.0.jpg",
-      "textures": [],
-      "clothes": [],
-      "recommended": false,
-      "gender": "unknown",
-      "dateAdded": 1693882503
-    },
     "Nozomi": {
       "id": "Nozomi",
       "name": "Nozomi",
