@@ -389,6 +389,15 @@ function hideHoverPreview() {
 }
 
 document.addEventListener('mousemove', updateHoverPosition);
+// Dismiss hover preview on tap/click anywhere
+document.addEventListener('click', function(e) {
+  if (hoverPreview && hoverPreview.style.display !== 'none') {
+    // Don't hide if clicking on a card (the page navigation will handle it via render())
+    if (!e.target.closest('.card') && !e.target.closest('#avatarThumb') && !e.target.closest('.selected-item')) {
+      hideHoverPreview();
+    }
+  }
+});
 
 function renderCard(item, onClick, badges = []) {
   const card = document.createElement('div');
