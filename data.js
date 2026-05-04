@@ -40688,48 +40688,6 @@ const AVATAR_DATA = {
       "dateAdded": 1673102830
     }
   ],
-  "linlaHairs": [
-    {
-      "name": "dango",
-      "sourceFile": "Linla Hair/dango.unitypackage",
-      "preview": null
-    },
-    {
-      "name": "HalfUpTwinTails",
-      "sourceFile": "Linla Hair/HalfUpTwinTails.unitypackage",
-      "preview": null
-    },
-    {
-      "name": "LinlaHair Dango",
-      "sourceFile": "Linla Hair/LinlaHair_Dango.zip",
-      "preview": null
-    },
-    {
-      "name": "LinlaHair HalfUpTwinTails",
-      "sourceFile": "Linla Hair/LinlaHair_HalfUpTwinTails.zip",
-      "preview": null
-    },
-    {
-      "name": "LinlaHair LowTwinTails",
-      "sourceFile": "Linla Hair/LinlaHair_LowTwinTails.zip",
-      "preview": null
-    },
-    {
-      "name": "LinlaHair Onion",
-      "sourceFile": "Linla Hair/LinlaHair_Onion.zip",
-      "preview": null
-    },
-    {
-      "name": "lowtwin",
-      "sourceFile": "Linla Hair/lowtwin.unitypackage",
-      "preview": null
-    },
-    {
-      "name": "Onion",
-      "sourceFile": "Linla Hair/Onion.unitypackage",
-      "preview": null
-    }
-  ],
   "accessories": [
     {
       "name": "1483281 acc ikshop ChainGlasses v5",
@@ -43377,84 +43335,6 @@ const AVATAR_DATA = {
       "preview": "images/Accessories_【VRChat想定】桜ネイルSAKURA_nail_tips「MDollnail対応」#NeRosaVRC.jpg",
       "sourceFile": "Accessories/【VRChat想定】桜ネイルSAKURA nail tips「MDollnail対応」#NeRosaVRC.zip",
       "dateAdded": 1714610671
-    },
-    {
-      "name": "Tex Axolotl",
-      "preview": "images/Accessories_axolotl_Tex_Axolotl.jpg",
-      "sourceFile": null,
-      "dateAdded": 1627615522
-    },
-    {
-      "name": "Tex Axolotl mask",
-      "preview": "images/Accessories_axolotl_Tex_Axolotl_mask.jpg",
-      "sourceFile": null,
-      "dateAdded": 1627615648
-    },
-    {
-      "name": "img enufshi accessory Pink 04 Cat 210219 0000",
-      "preview": "images/Accessories_enufshi_accessory_Pink_04_Cat_210219_0000_img_enufshi_accessory_Pink_04_Cat_210219_0000.jpg",
-      "sourceFile": null,
-      "dateAdded": 1686750306
-    },
-    {
-      "name": "Tex hiyoko",
-      "preview": "images/Accessories_hiyoko_Tex_hiyoko.jpg",
-      "sourceFile": null,
-      "dateAdded": 1628002206
-    },
-    {
-      "name": "Tex hiyoko mask",
-      "preview": "images/Accessories_hiyoko_Tex_hiyoko_mask.jpg",
-      "sourceFile": null,
-      "dateAdded": 1628002752
-    },
-    {
-      "name": "Horns AO",
-      "preview": "images/Accessories_Horns__Sakyubasua_collection__Horns_AO.jpg",
-      "sourceFile": null,
-      "dateAdded": 1654021144
-    },
-    {
-      "name": "Horns Albedo",
-      "preview": "images/Accessories_Horns__Sakyubasua_collection__Horns_Albedo.jpg",
-      "sourceFile": null,
-      "dateAdded": 1654100388
-    },
-    {
-      "name": "Horns Normal",
-      "preview": "images/Accessories_Horns__Sakyubasua_collection__Horns_Normal.jpg",
-      "sourceFile": null,
-      "dateAdded": 1654025174
-    },
-    {
-      "name": "Horns Roughness",
-      "preview": "images/Accessories_Horns__Sakyubasua_collection__Horns_Roughness.jpg",
-      "sourceFile": null,
-      "dateAdded": 1654021142
-    },
-    {
-      "name": "kikyo gothic punk gloves",
-      "preview": "images/Accessories_Kikyo_kikyo_gothic_punk_gloves.jpg",
-      "sourceFile": "Accessories/Kikyo/kikyo_gothic_punk_gloves.zip",
-      "dateAdded": 1685242725
-    },
-    {
-      "name": "nipple for selestia",
-      "preview": "images/Accessories_Selestia_nipple_for_selestia.jpg",
-      "sourceFile": "Accessories/Selestia/nipple_for_selestia.zip",
-      "dateAdded": 1686312462
-    },
-    {
-      "name": "TailT",
-      "preview": "images/Accessories_tail_v_1-1_TailT.2png.jpg",
-      "sourceFile": null,
-      "dateAdded": 1642005830
-    },
-    {
-      "name": "Tail luminosity mask",
-      "preview": "images/Accessories_tail_v_1-1_Tail_luminosity_mask.jpg",
-      "sourceFile": null,
-      "dateAdded": 1642007529
     }
   ],
   "props": [
