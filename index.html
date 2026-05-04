@@ -493,7 +493,7 @@ function startPathA() { state.page = 'pathA'; state.selectedClothFirst = null; r
 function startPathB() { state.page = 'pathB'; state.selectedClothFirst = null; render(); }
 
 // --- Path A: Avatar Grid ---
-let pathAFilter = { search: '', gender: 'all', sort: 'date' };
+let pathAFilter = { search: '', gender: 'all', sort: 'outfits' };
 
 function renderPathA(main) {
   currentMain = main;
@@ -510,6 +510,7 @@ function renderPathA(main) {
       <select id="sortA" onchange="pathAFilter.sort=this.value;renderPathAList()">
         <option value="date" ${pathAFilter.sort==='date'?'selected':''}>${lang==='th'?'ล่าสุด':'Latest'}</option>
         <option value="alpha" ${pathAFilter.sort==='alpha'?'selected':''}>A-Z</option>
+        <option value="outfits" ${pathAFilter.sort==='outfits'?'selected':''}>${lang==='th'?'ชุดเยอะสุด':'Most outfits'}</option>
       </select>
     </div>
     <div class="card-grid" id="avatarGrid"></div>
@@ -536,17 +537,32 @@ function renderPathAList() {
   if (pathAFilter.gender === 'male') avatars = avatars.filter(a => a.gender === 'male');
   if (pathAFilter.gender === 'recommended') avatars = avatars.filter(a => a.recommended);
 
+  // Pre-compute outfit counts for all avatars
+  var setsClothes = (avatarById('Sets') || {}).clothes || [];
+  var outfitCountMap = {};
+  for (var ai = 0; ai < avatars.length; ai++) {
+    var avId = avatars[ai].id;
+    var count = (avatarById(avId) || {}).clothes ? avatarById(avId).clothes.length : 0;
+    for (var si = 0; si < setsClothes.length; si++) {
+      if ((setsClothes[si].compatibleAvatars || []).indexOf(avId) >= 0) count++;
+    }
+    outfitCountMap[avId] = count;
+  }
+
   // Sort
-  if (pathAFilter.sort === 'alpha') {
+  if (pathAFilter.sort === 'outfits') {
+    avatars.sort(function(a,b) { return (outfitCountMap[b.id] || 0) - (outfitCountMap[a.id] || 0); });
+  } else if (pathAFilter.sort === 'alpha') {
     avatars.sort((a,b) => a.name.localeCompare(b.name));
   } else {
-    // Date added (newest first), then recommended first as tiebreaker
     avatars.sort((a,b) => (b.dateAdded||0) - (a.dateAdded||0) || (b.recommended?1:0) - (a.recommended?1:0));
   }
 
   for (const av of avatars) {
     const badges = [];
     if (av.recommended) badges.push({text: t('recommended'), cls: 'badge-rec'});
+    var oc = outfitCountMap[av.id] || 0;
+    if (oc > 0) badges.push({text: oc + ' ' + t('outfit'), cls: 'badge-new'});
     if (av._discovered) badges.push({text: t('discovered'), cls: 'badge-new'});
 
     const card = renderCard(av, (item) => {
