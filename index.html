@@ -361,7 +361,10 @@ function renderHeader() {
 let hoverTimer = null;
 let hoverPreview = null;
 
+var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+
 function showHoverPreview(imgSrc, evt) {
+  if (isTouchDevice) return;
   if (!hoverPreview) {
     hoverPreview = document.createElement('img');
     hoverPreview.className = 'hover-preview';
