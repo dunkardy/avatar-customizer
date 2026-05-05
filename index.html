@@ -261,10 +261,11 @@ function clothesForAvatar(avatarId) {
   if (!av) return [];
   const allClothes = [...av.clothes];
   // Also include Sets clothes compatible with this avatar
+  // Clothes with unknown compatibility (empty array) show on ALL avatars with a warning
   const sets = avatarById('Sets');
   if (sets) {
     for (const c of sets.clothes) {
-      if (c.compatibleAvatars.includes(avatarId)) {
+      if (c.compatibleAvatars.length === 0 || c.compatibleAvatars.includes(avatarId)) {
         allClothes.push(c);
       }
     }
@@ -845,7 +846,7 @@ function renderColorBar() {
         var bi = document.createElement('input');
         bi.type = 'color'; bi.value = bcolors[bci];
         bi.style.cssText = 'width:32px;height:32px;border:1px solid var(--border);border-radius:6px;cursor:pointer;padding:1px';
-        bi.onchange = (function(idx) { return function() { state.selections.baseHairColors[idx] = this.value; renderSelectedStrip(); }; })(bci);
+        bi.onchange = (function(idx) { return function() { state.selections.baseHairColors[idx] = this.value; /* no re-render: keeps color picker open on mobile */ }; })(bci);
         bcw.appendChild(bi);
         if (bcolors.length > 1) {
           var bx = document.createElement('button');
@@ -918,7 +919,7 @@ function renderColorBar() {
       inp.onchange = function() {
         if (side === 'left') state.selections.eyeColorLeft = this.value;
         else state.selections.eyeColorRight = this.value;
-        renderSelectedStrip();
+        // No re-render: keeps color picker open on mobile
       };
       div.appendChild(inp);
       var hexSpan = document.createElement('span');
@@ -1187,7 +1188,7 @@ function renderSelectedStrip() {
 function setHairColor(hairIdx, colorIdx, color) {
   if (!state.selections.hairs[hairIdx].colors) state.selections.hairs[hairIdx].colors = ['#000000'];
   state.selections.hairs[hairIdx].colors[colorIdx] = color;
-  renderSelectedStrip();
+  // Don't re-render: destroys the color input on mobile, dismissing picker
 }
 
 function addHairColor(hairIdx) {
