@@ -48,6 +48,9 @@ a{color:var(--accent)}
 .badge-new{background:var(--green);color:#fff}
 .badge-warn{background:var(--orange);color:#000}
 .badge-unknown{background:var(--red);color:#fff}
+.booth-link{position:absolute;top:4px;right:4px;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font-size:.65rem;font-weight:700;display:flex;align-items:center;justify-content:center;text-decoration:none;line-height:1;opacity:.7;transition:opacity .15s}
+.booth-link:hover{opacity:1}
+.card{position:relative}
 
 /* ===== Buttons ===== */
 .btn-primary{background:var(--accent);color:#fff;font-weight:600;padding:12px 28px;font-size:1rem}
@@ -175,6 +178,7 @@ const T = {
     maxWarning: "VRChat จำกัด Physbone 256 transforms แนะนำให้เลือกผม+ชุดรวมกันไม่เกิน 8 ชิ้น หากเกินแนะนำให้สั่งแยกเป็น 2 ตัว",
     hairClipWarning: "เลือกกิ๊บ/เครื่องประดับติดผม แต่มีหลายทรงผม อาจปรับให้พอดีกับทุกทรงได้ยาก",
     unknownCompat: "ไม่ทราบว่าใช้กับอวตาร์ตัวไหน กรุณาสอบถามทางร้าน",
+    hideUnknown: "ซ่อนชุดที่ไม่ทราบว่าใช้ได้กับอวตาร์ไหน",
     copyText: "คัดลอกข้อความ",
     copied: "คัดลอกแล้ว!",
     startOver: "เริ่มใหม่",
@@ -218,6 +222,7 @@ const T = {
     maxWarning: "VRChat limits to 256 Physbone transforms. Recommended: max 8 hair+cloth pieces combined. If exceeded, consider splitting into 2 avatars.",
     hairClipWarning: "Hair clips/accessories selected with multiple hairstyles. Fit may be inconsistent across different styles.",
     unknownCompat: "Compatibility unknown - please verify with shop",
+    hideUnknown: "Hide unknown compatibility",
     copyText: "Copy Text",
     copied: "Copied!",
     startOver: "Start Over",
@@ -447,6 +452,19 @@ function renderCard(item, onClick, badges = []) {
     badge.className = 'card-badge ' + (b.cls || '');
     badge.textContent = b.text;
     card.appendChild(badge);
+  }
+
+  // Booth.pm search link
+  if (item.boothSearch) {
+    const booth = document.createElement('a');
+    booth.className = 'booth-link';
+    booth.href = item.boothSearch;
+    booth.target = '_blank';
+    booth.rel = 'noopener';
+    booth.title = lang === 'th' ? 'ค้นหาใน Booth.pm' : 'Search on Booth.pm';
+    booth.textContent = 'B';
+    booth.onclick = function(e) { e.stopPropagation(); };
+    card.appendChild(booth);
   }
 
   if (onClick) card.onclick = () => onClick(item);
@@ -721,6 +739,7 @@ function renderPathBCompat(main) {
 // --- Customize Hub ---
 let customTab = 'hairs';
 let customSort = 'date';
+let hideUnknownCompat = true;
 
 function renderCustomize(main) {
   currentMain = main;
@@ -786,11 +805,15 @@ function renderCustomize(main) {
     <div id="selectedStrip" class="selected-strip"></div>
     <div id="colorBar"></div>
 
-    <div class="tabs">
+    <div class="tabs" style="align-items:center">
       <button class="tab ${customTab==='hairs'?'active':''}" onclick="switchTab('hairs')">${t('hair')} <span class="count">${state.selections.hairs.length}</span></button>
       <button class="tab ${customTab==='textures'?'active':''}" onclick="switchTab('textures')">${t('textures')} <span class="count">${state.selections.textures.length}</span></button>
       <button class="tab ${customTab==='clothes'?'active':''}" onclick="switchTab('clothes')">${t('outfit')} <span class="count">${state.selections.clothes.length}</span></button>
       <button class="tab ${customTab==='accessories'?'active':''}" onclick="switchTab('accessories')">${t('accessories')} <span class="count">${state.selections.accessories.length}</span></button>
+      <label style="display:flex;align-items:center;gap:4px;font-size:.75rem;cursor:pointer;color:var(--text2);margin-left:auto">
+        <input type="checkbox" id="hideUnknown" ${hideUnknownCompat?'checked':''} onchange="hideUnknownCompat=this.checked;renderCustomTabList()">
+        ${t('hideUnknown')}
+      </label>
     </div>
 
     <div class="search-bar">
@@ -1335,6 +1358,16 @@ function renderCustomTabList() {
   // Filter
   if (query) {
     items = items.filter(i => i.name.toLowerCase().includes(query));
+  }
+
+  // Hide unknown compatibility items when checkbox is checked
+  if (hideUnknownCompat) {
+    items = items.filter(function(i) {
+      var compat = i.compatibleAvatars;
+      // Items without compat field (hairs, avatar textures) always pass
+      // Items with empty compat (unknown) are hidden
+      return compat === undefined || compat.length > 0;
+    });
   }
 
   // Sort
