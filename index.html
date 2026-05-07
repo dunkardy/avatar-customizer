@@ -80,6 +80,18 @@ a{color:var(--accent)}
 .search-bar input{flex:1;min-width:200px;padding:10px 16px;border-radius:var(--radius);border:1px solid var(--border);background:var(--surface2);color:var(--text);font:inherit}
 .search-bar select{padding:10px 16px;border-radius:var(--radius);border:1px solid var(--border);background:var(--surface2);color:var(--text);font:inherit}
 
+/* ===== Tag Filter ===== */
+.tag-filter-area{margin-bottom:12px}
+.tag-filter-area .tag-search{width:100%;max-width:300px;padding:8px 12px;border-radius:var(--radius);border:1px solid var(--border);background:var(--surface2);color:var(--text);font:inherit;font-size:.82rem;margin-bottom:8px}
+.tag-chips{display:flex;flex-wrap:wrap;gap:6px;max-height:180px;overflow-y:auto;padding:2px 0}
+.tag-chip{background:var(--surface2);color:var(--text2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-size:.78rem;cursor:pointer;transition:all .15s;white-space:nowrap;user-select:none}
+.tag-chip:hover{border-color:var(--accent);color:var(--text)}
+.tag-chip.selected{background:var(--accent);color:#fff;border-color:var(--accent)}
+.tag-chip .tag-count{font-size:.7rem;opacity:.7;margin-left:3px}
+.tag-clear-btn{background:none;color:var(--red);border:1px solid var(--red);border-radius:20px;padding:4px 12px;font-size:.78rem;cursor:pointer;white-space:nowrap;transition:all .15s}
+.tag-clear-btn:hover{background:var(--red);color:#fff}
+.tag-no-match{color:var(--text2);font-size:.8rem;padding:4px 0}
+
 /* ===== Tabs ===== */
 .tabs{display:flex;gap:4px;border-bottom:2px solid var(--border);margin-bottom:16px;overflow-x:auto;flex-wrap:wrap}
 .tab{padding:10px 18px;background:none;color:var(--text2);border-radius:var(--radius) var(--radius) 0 0;font-size:.9rem;white-space:nowrap}
@@ -114,7 +126,10 @@ a{color:var(--accent)}
 .copy-btn{margin-top:8px}
 
 /* Hover preview */
-.hover-preview{position:fixed;z-index:9999;pointer-events:none;border-radius:8px;border:2px solid var(--accent);box-shadow:0 8px 32px rgba(0,0,0,.6);max-width:350px;max-height:500px;object-fit:contain;background:var(--surface);display:none}
+.hover-preview{position:fixed;z-index:9999;pointer-events:none;border-radius:8px;border:2px solid var(--accent);box-shadow:0 8px 32px rgba(0,0,0,.6);max-width:350px;max-height:80vh;background:var(--surface);display:none;overflow:hidden}
+.hover-preview img{display:block;max-width:350px;max-height:400px;object-fit:contain;margin:0 auto}
+.hover-tags{padding:6px 8px;display:flex;flex-wrap:wrap;gap:3px;background:var(--surface);border-top:1px solid var(--border)}
+.hover-tag{font-size:10px;padding:1px 5px;border-radius:3px;background:var(--bg);color:var(--text);white-space:nowrap}
 
 /* ===== Toast ===== */
 .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;padding:10px 24px;border-radius:20px;font-weight:600;z-index:1000;animation:fadeIn .3s}
@@ -190,6 +205,10 @@ const T = {
     pathBCompat: "เลือกอวตาร์ที่ใช้ชุดนี้ได้",
     customizeTitle: "ปรับแต่งอวตาร์",
     summaryTitle: "สรุปคำสั่ง",
+    tagFilter: "กรองด้วยแท็ก",
+    tagSearchPlaceholder: "ค้นหาแท็ก...",
+    clearTags: "ล้าง",
+    noTagMatch: "ไม่มีแท็กที่ตรงกัน",
   },
   en: {
     appTitle: "Avatar Customizer",
@@ -234,6 +253,10 @@ const T = {
     pathBCompat: "Pick Compatible Avatar",
     customizeTitle: "Customize Avatar",
     summaryTitle: "Order Summary",
+    tagFilter: "Filter by Tags",
+    tagSearchPlaceholder: "Search tags...",
+    clearTags: "Clear",
+    noTagMatch: "No matching tags",
   }
 };
 
@@ -250,7 +273,9 @@ let state = {
     clothes: [],         // [{name, preview, sourceFile}]
     accessories: [],     // [{name, preview, sourceFile}]
     props: [],           // [{name, preview, sourceFile}]
-  }
+  },
+  tagFilter: new Set(),   // Set of selected tag strings for AND filtering
+  tagSearch: '',          // current tag search input
 };
 
 function t(key) { return (T[lang] || T.en)[key] || key; }
@@ -369,14 +394,30 @@ let hoverPreview = null;
 
 var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
 
-function showHoverPreview(imgSrc, evt) {
+function showHoverPreview(item, evt) {
   if (isTouchDevice) return;
   if (!hoverPreview) {
-    hoverPreview = document.createElement('img');
+    hoverPreview = document.createElement('div');
     hoverPreview.className = 'hover-preview';
+    var img = document.createElement('img');
+    hoverPreview.appendChild(img);
+    var tagsDiv = document.createElement('div');
+    tagsDiv.className = 'hover-tags';
+    hoverPreview.appendChild(tagsDiv);
     document.body.appendChild(hoverPreview);
   }
-  hoverPreview.src = imgSrc;
+  var img = hoverPreview.querySelector('img');
+  img.src = IMAGE_BASE + item.preview;
+  var tagsDiv = hoverPreview.querySelector('.hover-tags');
+  var tags = item.autoTags || [];
+  if (tags.length > 0) {
+    tagsDiv.style.display = 'flex';
+    tagsDiv.innerHTML = tags.map(function(t) {
+      return '<span class="hover-tag">' + t.replace(/_/g, ' ') + '</span>';
+    }).join('');
+  } else {
+    tagsDiv.style.display = 'none';
+  }
   hoverPreview.style.display = 'block';
   updateHoverPosition(evt);
 }
@@ -397,7 +438,6 @@ function hideHoverPreview() {
   if (hoverTimer) { clearTimeout(hoverTimer); hoverTimer = null; }
 }
 
-document.addEventListener('mousemove', updateHoverPosition);
 // Dismiss hover preview on tap/click anywhere
 document.addEventListener('click', function(e) {
   if (hoverPreview && hoverPreview.style.display !== 'none') {
@@ -414,10 +454,9 @@ function renderCard(item, onClick, badges = []) {
   if (item._selected) card.classList.add('selected');
 
   // Hover preview on the image
-  var imgSrc = item.preview ? IMAGE_BASE + item.preview : '';
-  if (imgSrc) {
+  if (item.preview) {
     card.addEventListener('mouseenter', function(evt) {
-      hoverTimer = setTimeout(function() { showHoverPreview(imgSrc, evt); }, 400);
+      hoverTimer = setTimeout(function() { showHoverPreview(item, evt); }, 400);
     });
     card.addEventListener('mouseleave', hideHoverPreview);
   }
@@ -587,6 +626,8 @@ function renderPathAList() {
     const card = renderCard(av, (item) => {
       state.selectedAvatar = item.id;
       state.selections = { hairs: [], textures: [], clothes: [], accessories: [], eyeColorLeft: '#000000', eyeColorRight: '#000000' };
+      state.tagFilter = new Set();
+      state.tagSearch = '';
       state.page = 'customize';
       render();
     }, badges);
@@ -613,6 +654,8 @@ let pathBFilter = { search: '', sort: 'date' };
 
 function renderPathB(main) {
   currentMain = main;
+  state.tagFilter = new Set();
+  state.tagSearch = '';
   main.innerHTML = `
     <div class="page-title">${t('pathBTitle')}</div>
     <div class="search-bar">
@@ -622,6 +665,7 @@ function renderPathB(main) {
         <option value="alpha" ${pathBFilter.sort==='alpha'?'selected':''}>A-Z</option>
       </select>
     </div>
+    <div id="tagFilterArea" class="tag-filter-area"></div>
     <div class="card-grid" id="clothGrid"></div>
     <div style="margin-top:16px">
       <button class="btn-secondary" onclick="state.page='landing';render()">${t('back')}</button>
@@ -633,7 +677,10 @@ function renderPathB(main) {
 function renderPathBList() {
   const grid = (currentMain || document).querySelector('#clothGrid');
   if (!grid) return;
+  var scrollY = window.scrollY;
   grid.innerHTML = '';
+
+  renderTagFilter('pathB', renderPathBList);
 
   // Collect ALL clothes from Sets (cross-model)
   const sets = avatarById('Sets');
@@ -644,6 +691,15 @@ function renderPathBList() {
   if (pathBFilter.search) {
     const q = pathBFilter.search.toLowerCase();
     clothes = clothes.filter(c => c.name.toLowerCase().includes(q));
+  }
+
+  // Tag filter (AND logic)
+  if (state.tagFilter.size > 0) {
+    var selectedTags = Array.from(state.tagFilter);
+    clothes = clothes.filter(function(c) {
+      var tags = c.autoTags || [];
+      return selectedTags.every(function(t) { return tags.indexOf(t) >= 0; });
+    });
   }
 
   // Sort
@@ -667,6 +723,8 @@ function renderPathBList() {
 
     grid.appendChild(card);
   }
+
+  window.scrollTo(0, scrollY);
 }
 
 // --- Path B Compatible Avatars ---
@@ -724,6 +782,8 @@ function renderPathBCompat(main) {
     var card = renderCard(av, (function(item) {
       state.selectedAvatar = item.id;
       state.selections = { hairs: [], textures: [], clothes: [], accessories: [], eyeColorLeft: '#000000', eyeColorRight: '#000000' };
+      state.tagFilter = new Set();
+      state.tagSearch = '';
       if (cloth) state.selections.clothes = [cloth];
       state.page = 'customize';
       render();
@@ -823,6 +883,8 @@ function renderCustomize(main) {
         <option value="alpha" ${customSort==='alpha'?'selected':''}>A-Z</option>
       </select>
     </div>
+
+    <div id="tagFilterArea" class="tag-filter-area"></div>
 
     <div class="card-grid" id="customGrid"></div>
   `;
@@ -1300,10 +1362,202 @@ function goBackFromCustomize() {
   render();
 }
 
+// --- Tag Filter ---
+function buildTagIndex(tab) {
+  // Collect all items for this tab and count tag frequencies.
+  // When tags are already selected, counts reflect the currently filtered set
+  // (i.e. "how many items would match if I also add this tag?").
+  var items = [];
+  switch (tab) {
+    case 'hairs': items = AVATAR_DATA.hairs || []; break;
+    case 'textures':
+      if (state.selectedAvatar) {
+        items = (avatarById(state.selectedAvatar)?.textures || []).slice();
+        var setsTex = avatarById('Sets')?.textures || [];
+        for (var ti = 0; ti < setsTex.length; ti++) {
+          var st = setsTex[ti];
+          var compat = st.compatibleAvatars || [];
+          if (compat.length > 0 && compat.indexOf(state.selectedAvatar) >= 0) items.push(st);
+        }
+      }
+      break;
+    case 'clothes':
+      if (state.selectedAvatar) items = clothesForAvatar(state.selectedAvatar);
+      break;
+    case 'accessories':
+      items = (AVATAR_DATA.accessories || []).slice();
+      if (state.selectedAvatar) {
+        var avId2 = state.selectedAvatar;
+        items = items.filter(function(acc) {
+          var compat = acc.compatibleAvatars;
+          if (!compat || compat.length === 0) return true;
+          return compat.indexOf(avId2) >= 0;
+        });
+      }
+      break;
+    case 'pathB':
+      var setsB = avatarById('Sets');
+      if (setsB) items = setsB.clothes || [];
+      break;
+  }
+
+  // Apply current tag filter (excluding the tag being counted) to show refinement counts
+  var tagArr = [];
+  state.tagFilter.forEach(function(t) { tagArr.push(t); });
+  if (tagArr.length > 0) {
+    items = items.filter(function(i) {
+      var tags = i.autoTags || [];
+      return tagArr.every(function(t) { return tags.indexOf(t) >= 0; });
+    });
+  }
+
+  var freq = {};
+  for (var i = 0; i < items.length; i++) {
+    var tags = items[i].autoTags || [];
+    for (var j = 0; j < tags.length; j++) {
+      var t = tags[j];
+      freq[t] = (freq[t] || 0) + 1;
+    }
+  }
+  // Filter to tags appearing at least twice, sorted by frequency
+  var result = [];
+  var keys = Object.keys(freq);
+  for (var k = 0; k < keys.length; k++) {
+    if (freq[keys[k]] >= 2) result.push({tag: keys[k], count: freq[keys[k]]});
+  }
+  result.sort(function(a,b) { return b.count - a.count; });
+  return result;
+}
+
+function renderTagFilter(optTab, refreshFn) {
+  var area = (currentMain || document).querySelector('#tagFilterArea');
+  if (!area) return;
+
+  var tab = optTab || customTab;
+  var refresh = refreshFn || renderCustomTabList;
+  var tagData = buildTagIndex(tab);
+  var selected = state.tagFilter;
+  var search = (state.tagSearch || '').toLowerCase();
+
+  // Search row — only rebuild if it doesn't exist yet
+  var searchRow = area.querySelector('.tag-search-row');
+  if (!searchRow) {
+    area.innerHTML = '';
+    searchRow = document.createElement('div');
+    searchRow.className = 'tag-search-row';
+    searchRow.style.cssText = 'display:flex;gap:8px;align-items:center;margin-bottom:8px';
+    var input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'tag-search';
+    input.placeholder = t('tagSearchPlaceholder');
+    input.oninput = function() {
+      state.tagSearch = this.value;
+      renderTagFilter(tab, refreshFn);
+    };
+    searchRow.appendChild(input);
+
+    var clearBtn = document.createElement('button');
+    clearBtn.className = 'tag-clear-btn';
+    clearBtn.style.display = 'none';
+    clearBtn.onclick = function() {
+      state.tagFilter = new Set();
+      state.tagSearch = '';
+      refresh();
+    };
+    searchRow.appendChild(clearBtn);
+    area.appendChild(searchRow);
+
+    var chipsArea = document.createElement('div');
+    chipsArea.className = 'tag-chips-area';
+    area.appendChild(chipsArea);
+  }
+
+  // Update search input value
+  var input = searchRow.querySelector('.tag-search');
+  if (input) input.value = state.tagSearch || '';
+
+  // Update clear button
+  var clearBtn = searchRow.querySelector('.tag-clear-btn');
+  if (clearBtn) {
+    clearBtn.style.display = selected.size > 0 ? '' : 'none';
+    if (selected.size > 0) clearBtn.textContent = t('clearTags') + ' (' + selected.size + ')';
+  }
+
+  // Rebuild chips only
+  var chipsArea = area.querySelector('.tag-chips-area');
+  if (!chipsArea) return;
+  chipsArea.innerHTML = '';
+
+  // Filter by search
+  var filtered = tagData;
+  if (search) {
+    filtered = tagData.filter(function(td) { return td.tag.toLowerCase().indexOf(search) >= 0; });
+  }
+
+  var maxShow = search ? filtered.length : Math.min(filtered.length, 40);
+  var display = filtered.slice(0, maxShow);
+
+  // Always show selected tags even if they don't match the search
+  if (selected.size > 0) {
+    var displaySet = new Set();
+    for (var d = 0; d < display.length; d++) { displaySet.add(display[d].tag); }
+    selected.forEach(function(t) {
+      if (!displaySet.has(t)) {
+        // Look up the tag count from tagData
+        for (var j = 0; j < tagData.length; j++) {
+          if (tagData[j].tag === t) { display.unshift(tagData[j]); break; }
+        }
+      }
+    });
+  }
+
+  if (display.length === 0) {
+    var noMatch = document.createElement('div');
+    noMatch.className = 'tag-no-match';
+    noMatch.textContent = t('noTagMatch');
+    chipsArea.appendChild(noMatch);
+    return;
+  }
+
+  var chips = document.createElement('div');
+  chips.className = 'tag-chips';
+
+  // Put selected tags first
+  var ordered = [];
+  var rest = [];
+  for (var d = 0; d < display.length; d++) {
+    if (selected.has(display[d].tag)) ordered.push(display[d]);
+    else rest.push(display[d]);
+  }
+  display = ordered.concat(rest);
+
+  for (var i = 0; i < display.length; i++) {
+    var td = display[i];
+    var chip = document.createElement('span');
+    chip.className = 'tag-chip' + (selected.has(td.tag) ? ' selected' : '');
+    chip.innerHTML = td.tag.replace(/_/g, ' ') + '<span class="tag-count">' + td.count + '</span>';
+    chip.onclick = (function(tag) {
+      return function() {
+        if (state.tagFilter.has(tag)) {
+          state.tagFilter.delete(tag);
+        } else {
+          state.tagFilter.add(tag);
+        }
+        refresh();
+      };
+    })(td.tag);
+    chips.appendChild(chip);
+  }
+  chipsArea.appendChild(chips);
+}
+
 function renderCustomTabList() {
   const grid = (currentMain || document).querySelector('#customGrid');
   if (!grid) return;
+  var scrollY = window.scrollY;
   grid.innerHTML = '';
+
+  renderTagFilter();
 
   const searchEl = (currentMain || document).querySelector('#customSearch');
   const query = searchEl ? searchEl.value.toLowerCase() : '';
@@ -1370,6 +1624,15 @@ function renderCustomTabList() {
     });
   }
 
+  // Tag filter (AND logic: item must have ALL selected tags)
+  if (state.tagFilter.size > 0) {
+    var selectedTags = Array.from(state.tagFilter);
+    items = items.filter(function(i) {
+      var tags = i.autoTags || [];
+      return selectedTags.every(function(t) { return tags.indexOf(t) >= 0; });
+    });
+  }
+
   // Sort
   if (customSort === 'alpha') {
     items.sort(function(a,b) { return a.name.localeCompare(b.name); });
@@ -1398,6 +1661,8 @@ function renderCustomTabList() {
 
   renderSelectedStrip();
   renderColorBar();
+
+  window.scrollTo(0, scrollY);
 }
 
 function colorName(hex) {
@@ -1766,7 +2031,9 @@ function resetAll() {
     page: 'landing',
     selectedAvatar: null,
     selectedClothFirst: null,
-    selections: { hairs: [], textures: [], clothes: [], accessories: [], eyeColorLeft: '#000000', eyeColorRight: '#000000', baseHairColors: ['#000000'], keepBaseHair: true, keepBaseOutfit: true, isNewAvatar: true, optPolygon: false, optPCSS: false, optDPSHole: 0, optDPSRod: 0, baseHairChanged: false, eyeChanged: false }
+    selections: { hairs: [], textures: [], clothes: [], accessories: [], eyeColorLeft: '#000000', eyeColorRight: '#000000', baseHairColors: ['#000000'], keepBaseHair: true, keepBaseOutfit: true, isNewAvatar: true, optPolygon: false, optPCSS: false, optDPSHole: 0, optDPSRod: 0, baseHairChanged: false, eyeChanged: false },
+    tagFilter: new Set(),
+    tagSearch: '',
   };
   render();
 }
