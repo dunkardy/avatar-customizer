@@ -87,6 +87,8 @@ a{color:var(--accent)}
 .tag-chip{background:var(--surface2);color:var(--text2);border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-size:.78rem;cursor:pointer;transition:all .15s;white-space:nowrap;user-select:none}
 .tag-chip:hover{border-color:var(--accent);color:var(--text)}
 .tag-chip.selected{background:var(--accent);color:#fff;border-color:var(--accent)}
+.tag-chip.zero{opacity:.4;border-style:dashed;cursor:default}
+.tag-chip.zero:hover{border-color:var(--border);color:var(--text2)}
 .tag-chip .tag-count{font-size:.7rem;opacity:.7;margin-left:3px}
 .tag-clear-btn{background:none;color:var(--red);border:1px solid var(--red);border-radius:20px;padding:4px 12px;font-size:.78rem;cursor:pointer;white-space:nowrap;transition:all .15s}
 .tag-clear-btn:hover{background:var(--red);color:#fff}
@@ -1367,6 +1369,8 @@ function buildTagIndex(tab) {
   // Collect all items for this tab and count tag frequencies.
   // When tags are already selected, counts reflect the currently filtered set
   // (i.e. "how many items would match if I also add this tag?").
+  // Tags that exist in the full set but have 0 in the filtered set are still
+  // included so they appear during search.
   var items = [];
   switch (tab) {
     case 'hairs': items = AVATAR_DATA.hairs || []; break;
@@ -1401,31 +1405,46 @@ function buildTagIndex(tab) {
       break;
   }
 
-  // Apply current tag filter (excluding the tag being counted) to show refinement counts
+  // Build full tag frequency from ALL items (unfiltered)
+  var fullFreq = {};
+  for (var i = 0; i < items.length; i++) {
+    var tags = items[i].autoTags || [];
+    for (var j = 0; j < tags.length; j++) {
+      var t = tags[j];
+      fullFreq[t] = (fullFreq[t] || 0) + 1;
+    }
+  }
+
+  // Apply current tag filter to get refinement counts
   var tagArr = [];
   state.tagFilter.forEach(function(t) { tagArr.push(t); });
+  var filtered = items;
   if (tagArr.length > 0) {
-    items = items.filter(function(i) {
+    filtered = items.filter(function(i) {
       var tags = i.autoTags || [];
       return tagArr.every(function(t) { return tags.indexOf(t) >= 0; });
     });
   }
 
   var freq = {};
-  for (var i = 0; i < items.length; i++) {
-    var tags = items[i].autoTags || [];
-    for (var j = 0; j < tags.length; j++) {
-      var t = tags[j];
-      freq[t] = (freq[t] || 0) + 1;
+  for (var i2 = 0; i2 < filtered.length; i2++) {
+    var ftags = filtered[i2].autoTags || [];
+    for (var j2 = 0; j2 < ftags.length; j2++) {
+      var t2 = ftags[j2];
+      freq[t2] = (freq[t2] || 0) + 1;
     }
   }
-  // Filter to tags appearing at least twice, sorted by frequency
+
+  // Build result: include all tags, even if count is 0 or 1.
+  // Rare tags still show up during search.
   var result = [];
-  var keys = Object.keys(freq);
+  var keys = Object.keys(fullFreq);
   for (var k = 0; k < keys.length; k++) {
-    if (freq[keys[k]] >= 2) result.push({tag: keys[k], count: freq[keys[k]]});
+    var tag = keys[k];
+    var count = freq[tag] || 0;
+    result.push({tag: tag, count: count, fullCount: fullFreq[tag]});
   }
-  result.sort(function(a,b) { return b.count - a.count; });
+  result.sort(function(a,b) { return b.count - a.count || b.fullCount - a.fullCount; });
   return result;
 }
 
@@ -1488,10 +1507,13 @@ function renderTagFilter(optTab, refreshFn) {
   if (!chipsArea) return;
   chipsArea.innerHTML = '';
 
-  // Filter by search
+  // Filter by search — when searching, show all tags including rare ones (count 1)
+  // When not searching, only show tags with fullCount >= 2 to keep the default view tidy
   var filtered = tagData;
   if (search) {
     filtered = tagData.filter(function(td) { return td.tag.toLowerCase().indexOf(search) >= 0; });
+  } else {
+    filtered = tagData.filter(function(td) { return td.fullCount >= 2; });
   }
 
   var maxShow = search ? filtered.length : Math.min(filtered.length, 40);
@@ -1533,19 +1555,22 @@ function renderTagFilter(optTab, refreshFn) {
 
   for (var i = 0; i < display.length; i++) {
     var td = display[i];
+    var isZero = td.count === 0 && !selected.has(td.tag);
     var chip = document.createElement('span');
-    chip.className = 'tag-chip' + (selected.has(td.tag) ? ' selected' : '');
+    chip.className = 'tag-chip' + (selected.has(td.tag) ? ' selected' : '') + (isZero ? ' zero' : '');
     chip.innerHTML = td.tag.replace(/_/g, ' ') + '<span class="tag-count">' + td.count + '</span>';
-    chip.onclick = (function(tag) {
-      return function() {
-        if (state.tagFilter.has(tag)) {
-          state.tagFilter.delete(tag);
-        } else {
-          state.tagFilter.add(tag);
-        }
-        refresh();
-      };
-    })(td.tag);
+    if (!isZero) {
+      chip.onclick = (function(tag) {
+        return function() {
+          if (state.tagFilter.has(tag)) {
+            state.tagFilter.delete(tag);
+          } else {
+            state.tagFilter.add(tag);
+          }
+          refresh();
+        };
+      })(td.tag);
+    }
     chips.appendChild(chip);
   }
   chipsArea.appendChild(chips);
