@@ -276,9 +276,18 @@ let state = {
     accessories: [],     // [{name, preview, sourceFile}]
     props: [],           // [{name, preview, sourceFile}]
   },
-  tagFilter: new Set(),   // Set of selected tag strings for AND filtering
-  tagSearch: '',          // current tag search input
+  tagFilters: {},         // { tab: Set } per-tab selected tag strings
+  tagSearches: {}         // { tab: string } per-tab tag search input
 };
+
+// Per-tab tag filter helpers — each tab keeps its own filter state
+function _tf(tab) {
+  if (!state.tagFilters[tab]) state.tagFilters[tab] = new Set();
+  return state.tagFilters[tab];
+}
+function _ts(tab) {
+  return state.tagSearches[tab] || '';
+}
 
 function t(key) { return (T[lang] || T.en)[key] || key; }
 
@@ -628,8 +637,8 @@ function renderPathAList() {
     const card = renderCard(av, (item) => {
       state.selectedAvatar = item.id;
       state.selections = { hairs: [], textures: [], clothes: [], accessories: [], eyeColorLeft: '#000000', eyeColorRight: '#000000' };
-      state.tagFilter = new Set();
-      state.tagSearch = '';
+      state.tagFilters = {};
+      state.tagSearches = {};
       state.page = 'customize';
       render();
     }, badges);
@@ -656,8 +665,8 @@ let pathBFilter = { search: '', sort: 'date' };
 
 function renderPathB(main) {
   currentMain = main;
-  state.tagFilter = new Set();
-  state.tagSearch = '';
+  state.tagFilters = {};
+  state.tagSearches = {};
   main.innerHTML = `
     <div class="page-title">${t('pathBTitle')}</div>
     <div class="search-bar">
@@ -696,8 +705,9 @@ function renderPathBList() {
   }
 
   // Tag filter (AND logic)
-  if (state.tagFilter.size > 0) {
-    var selectedTags = Array.from(state.tagFilter);
+  var pathBTags = _tf('pathB');
+  if (pathBTags.size > 0) {
+    var selectedTags = Array.from(pathBTags);
     clothes = clothes.filter(function(c) {
       var tags = c.autoTags || [];
       return selectedTags.every(function(t) { return tags.indexOf(t) >= 0; });
@@ -784,8 +794,8 @@ function renderPathBCompat(main) {
     var card = renderCard(av, (function(item) {
       state.selectedAvatar = item.id;
       state.selections = { hairs: [], textures: [], clothes: [], accessories: [], eyeColorLeft: '#000000', eyeColorRight: '#000000' };
-      state.tagFilter = new Set();
-      state.tagSearch = '';
+      state.tagFilters = {};
+      state.tagSearches = {};
       if (cloth) state.selections.clothes = [cloth];
       state.page = 'customize';
       render();
@@ -1417,7 +1427,7 @@ function buildTagIndex(tab) {
 
   // Apply current tag filter to get refinement counts
   var tagArr = [];
-  state.tagFilter.forEach(function(t) { tagArr.push(t); });
+  _tf(tab).forEach(function(t) { tagArr.push(t); });
   var filtered = items;
   if (tagArr.length > 0) {
     filtered = items.filter(function(i) {
@@ -1455,8 +1465,8 @@ function renderTagFilter(optTab, refreshFn) {
   var tab = optTab || customTab;
   var refresh = refreshFn || renderCustomTabList;
   var tagData = buildTagIndex(tab);
-  var selected = state.tagFilter;
-  var search = (state.tagSearch || '').toLowerCase();
+  var selected = _tf(tab);
+  var search = _ts(tab).toLowerCase();
 
   // Store context on area so event handlers can read current values
   // (avoids stale closure captures when tabs are switched)
@@ -1475,7 +1485,7 @@ function renderTagFilter(optTab, refreshFn) {
     input.className = 'tag-search';
     input.placeholder = t('tagSearchPlaceholder');
     input.oninput = function() {
-      state.tagSearch = this.value;
+      state.tagSearches[area._tab] = this.value;
       renderTagFilter(area._tab, area._refresh);
     };
     searchRow.appendChild(input);
@@ -1484,8 +1494,8 @@ function renderTagFilter(optTab, refreshFn) {
     clearBtn.className = 'tag-clear-btn';
     clearBtn.style.display = 'none';
     clearBtn.onclick = function() {
-      state.tagFilter = new Set();
-      state.tagSearch = '';
+      state.tagFilters[area._tab] = new Set();
+      state.tagSearches[area._tab] = '';
       area._refresh();
     };
     searchRow.appendChild(clearBtn);
@@ -1498,7 +1508,7 @@ function renderTagFilter(optTab, refreshFn) {
 
   // Update search input value
   var input = searchRow.querySelector('.tag-search');
-  if (input) input.value = state.tagSearch || '';
+  if (input) input.value = _ts(tab) || '';
 
   // Update clear button
   var clearBtn = searchRow.querySelector('.tag-clear-btn');
@@ -1567,10 +1577,11 @@ function renderTagFilter(optTab, refreshFn) {
     if (!isZero) {
       chip.onclick = (function(tag) {
         return function() {
-          if (state.tagFilter.has(tag)) {
-            state.tagFilter.delete(tag);
+          var tf = _tf(area._tab);
+          if (tf.has(tag)) {
+            tf.delete(tag);
           } else {
-            state.tagFilter.add(tag);
+            tf.add(tag);
           }
           refresh();
         };
@@ -1655,8 +1666,9 @@ function renderCustomTabList() {
   }
 
   // Tag filter (AND logic: item must have ALL selected tags)
-  if (state.tagFilter.size > 0) {
-    var selectedTags = Array.from(state.tagFilter);
+  var ctFilter = _tf(customTab);
+  if (ctFilter.size > 0) {
+    var selectedTags = Array.from(ctFilter);
     items = items.filter(function(i) {
       var tags = i.autoTags || [];
       return selectedTags.every(function(t) { return tags.indexOf(t) >= 0; });
