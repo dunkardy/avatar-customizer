@@ -1458,6 +1458,11 @@ function renderTagFilter(optTab, refreshFn) {
   var selected = state.tagFilter;
   var search = (state.tagSearch || '').toLowerCase();
 
+  // Store context on area so event handlers can read current values
+  // (avoids stale closure captures when tabs are switched)
+  area._tab = tab;
+  area._refresh = refresh;
+
   // Search row — only rebuild if it doesn't exist yet
   var searchRow = area.querySelector('.tag-search-row');
   if (!searchRow) {
@@ -1471,7 +1476,7 @@ function renderTagFilter(optTab, refreshFn) {
     input.placeholder = t('tagSearchPlaceholder');
     input.oninput = function() {
       state.tagSearch = this.value;
-      renderTagFilter(tab, refreshFn);
+      renderTagFilter(area._tab, area._refresh);
     };
     searchRow.appendChild(input);
 
@@ -1481,7 +1486,7 @@ function renderTagFilter(optTab, refreshFn) {
     clearBtn.onclick = function() {
       state.tagFilter = new Set();
       state.tagSearch = '';
-      refresh();
+      area._refresh();
     };
     searchRow.appendChild(clearBtn);
     area.appendChild(searchRow);
