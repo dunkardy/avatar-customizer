@@ -136,6 +136,20 @@ a{color:var(--accent)}
 /* ===== Toast ===== */
 .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;padding:10px 24px;border-radius:20px;font-weight:600;z-index:1000;animation:fadeIn .3s}
 @keyframes fadeIn{from{opacity:0;transform:translateX(-50%) translateY(10px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
+/* Share modal */
+.share-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:1100;display:flex;align-items:center;justify-content:center}
+.share-modal{background:var(--surface);border-radius:12px;padding:24px;max-width:480px;width:90%;max-height:90vh;overflow-y:auto;box-shadow:0 16px 48px rgba(0,0,0,.5)}
+.share-modal h3{margin:0 0 12px;font-size:1.1rem}
+.share-modal label{display:block;font-size:.85rem;color:var(--text2);margin-bottom:4px}
+.share-modal .url-row{display:flex;gap:8px;margin-bottom:16px}
+.share-modal .url-row input{flex:1;font-size:.8rem;padding:8px;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--text);word-break:break-all}
+.share-modal textarea{width:100%;height:80px;font-size:.85rem;padding:8px;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--text);resize:vertical;font-family:inherit;box-sizing:border-box;margin-bottom:4px}
+.share-modal .char-remaining{font-size:.75rem;color:var(--text2);margin-bottom:12px}
+.share-modal .char-remaining.warn{color:#e8a800}
+.share-modal .btn-row{display:flex;gap:8px;flex-wrap:wrap}
+.share-btn{background:var(--accent);color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.85rem;font-weight:600;transition:all .15s;display:flex;align-items:center;gap:5px}
+.share-btn::before{content:'\2197';font-size:1rem}
+.share-btn:hover{background:var(--accent2)}
 
 /* ===== Mobile ===== */
 @media(max-width:640px){
@@ -146,6 +160,7 @@ a{color:var(--accent)}
   .tab{padding:8px 12px}
 }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/lz-string@1.5.0/libs/lz-string.min.js"></script>
 </head>
 <body>
 <div id="app"></div>
@@ -211,6 +226,14 @@ const T = {
     tagSearchPlaceholder: "ค้นหาแท็ก...",
     clearTags: "ล้าง",
     noTagMatch: "ไม่มีแท็กที่ตรงกัน",
+    share: "แชร์",
+    shareTitle: "แชร์การปรับแต่ง",
+    shareInstructions: "คัดลอกลิงก์นี้เพื่อแชร์:",
+    shareNotes: "หมายเหตุ (ส่งไปพร้อมกับลิงก์):",
+    copyLinkNotes: "คัดลอกลิงก์ + หมายเหตุ",
+    copyLinkOnly: "คัดลอกลิงก์เท่านั้น",
+    shareUrlLong: "URL ค่อนข้างยาว — อาจถูกตัดในบางแอป",
+    textCopied: "คัดลอกแล้ว!",
   },
   en: {
     appTitle: "Avatar Customizer",
@@ -259,6 +282,14 @@ const T = {
     tagSearchPlaceholder: "Search tags...",
     clearTags: "Clear",
     noTagMatch: "No matching tags",
+    share: "Share",
+    shareTitle: "Share Build",
+    shareInstructions: "Copy this link to share:",
+    shareNotes: "Notes (sent with the link):",
+    copyLinkNotes: "Copy Link + Notes",
+    copyLinkOnly: "Copy Link Only",
+    shareUrlLong: "URL is getting long — it may be truncated in some apps",
+    textCopied: "Copied!",
   }
 };
 
@@ -277,7 +308,8 @@ let state = {
     props: [],           // [{name, preview, sourceFile}]
   },
   tagFilters: {},         // { tab: Set } per-tab selected tag strings
-  tagSearches: {}         // { tab: string } per-tab tag search input
+  tagSearches: {},        // { tab: string } per-tab tag search input
+  customerNotes: ''       // free-text notes for share URL
 };
 
 // Per-tab tag filter helpers — each tab keeps its own filter state
@@ -288,6 +320,31 @@ function _tf(tab) {
 function _ts(tab) {
   return state.tagSearches[tab] || '';
 }
+
+// --- Config ---
+var PRICING = {
+  baseAvatar: 99,
+  hair: 49,
+  hairColorChange: 9,
+  cloth: 49,
+  eyeColorChange: 9,
+  texture: 39,
+  accessory: 39,
+  clothToggle: 9,
+  polygonReduction: 49,
+  pcssShadows: 69,
+  dpsHole: 19,
+  dpsRod: 29
+};
+var LIMITS = {
+  maxPieces: 8,
+  maxNotesChars: 500,
+  maxUrlLength: 1500,
+  toastDuration: 2000,
+  hoverDelay: 400,
+  maxTagChips: 40,
+  shareDebounce: 300
+};
 
 function t(key) { return (T[lang] || T.en)[key] || key; }
 
@@ -333,6 +390,330 @@ function hasHairClipConflict() {
     );
 }
 
+// --- Source File Map (for share URL restore) ---
+var _sourceFileMap = null;
+function buildSourceFileMap() {
+  if (_sourceFileMap) return _sourceFileMap;
+  _sourceFileMap = {};
+  var cats = ['hairs', 'accessories', 'props'];
+  for (var ci = 0; ci < cats.length; ci++) {
+    var arr = AVATAR_DATA[cats[ci]] || [];
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].sourceFile) _sourceFileMap[arr[i].sourceFile] = arr[i];
+    }
+  }
+  // Scan textures and clothes inside each avatar + Sets
+  var avatars = AVATAR_DATA.avatars;
+  for (var avId in avatars) {
+    var av = avatars[avId];
+    for (var k = 0; k < (av.textures || []).length; k++) {
+      if (av.textures[k].sourceFile) _sourceFileMap[av.textures[k].sourceFile] = av.textures[k];
+    }
+    for (var k2 = 0; k2 < (av.clothes || []).length; k2++) {
+      if (av.clothes[k2].sourceFile) _sourceFileMap[av.clothes[k2].sourceFile] = av.clothes[k2];
+    }
+  }
+  return _sourceFileMap;
+}
+
+// --- Share URL encode/decode ---
+function encodeStateToHash() {
+  var compact = { p: state.page, a: state.selectedAvatar || undefined };
+  var sel = state.selections;
+  if (sel.hairs.length) compact.h = sel.hairs.map(function(i) { return i.sourceFile; });
+  if (sel.clothes.length) compact.c = sel.clothes.map(function(i) { return i.sourceFile; });
+  if (sel.textures.length) compact.t = sel.textures.map(function(i) { return i.sourceFile; });
+  if (sel.accessories.length) compact.x = sel.accessories.map(function(i) { return i.sourceFile; });
+  if ((sel.props || []).length) compact.r = sel.props.map(function(i) { return i.sourceFile; });
+  // Per-item notes (only encode items that have notes)
+  var itemNotes = {};
+  ['hairs','clothes','textures','accessories','props'].forEach(function(cat) {
+    var items = cat === 'props' ? (sel.props || []) : sel[cat];
+    for (var ni = 0; ni < items.length; ni++) {
+      if (items[ni].note) itemNotes[items[ni].sourceFile] = items[ni].note;
+    }
+  });
+  if (Object.keys(itemNotes).length > 0) compact.no = itemNotes;
+  // Eye colors — only encode if customer changed them
+  if (sel.eyeChanged) {
+    if (sel.eyeColorLeft) compact.el = sel.eyeColorLeft;
+    if (sel.eyeColorRight) compact.er = sel.eyeColorRight;
+  }
+  // New Avatar vs Add to Existing (only encode non-default)
+  if (sel.isNewAvatar === false) compact.nv = false;
+  // Base hair colors — only encode if changed
+  if (sel.baseHairChanged && sel.baseHairColors && sel.baseHairColors.length) {
+    compact.bh = sel.baseHairColors;
+  }
+  // Per-hair colors — encode as parallel array to h, only if any hair has custom colors
+  if (sel.hairs.length) {
+    var hc = sel.hairs.map(function(h) {
+      if (h.hairChanged && h.colors && h.colors.length) return h.colors;
+      return null;
+    });
+    if (hc.some(function(c) { return c !== null; })) compact.hc = hc;
+  }
+  if (state.customerNotes) compact.n = state.customerNotes;
+  // Tag filter state (only save non-empty tabs)
+  var f = {};
+  for (var tab in state.tagFilters) {
+    if (state.tagFilters[tab].size > 0) f[tab] = Array.from(state.tagFilters[tab]);
+  }
+  if (Object.keys(f).length > 0) compact.f = f;
+  var s = {};
+  for (var ts in state.tagSearches) {
+    if (state.tagSearches[ts]) s[ts] = state.tagSearches[ts];
+  }
+  if (Object.keys(s).length > 0) compact.s = s;
+  // Language (only if non-default)
+  var savedLang = localStorage.getItem('avatar-lang');
+  if (savedLang) compact.l = savedLang;
+  // SelectedClothFirst (Path B flow)
+  if (state.selectedClothFirst && state.selectedClothFirst.sourceFile) {
+    compact.cf = state.selectedClothFirst.sourceFile;
+  }
+  var json = JSON.stringify(compact);
+  // For short payloads, plain base64 is shorter than LZString (no dictionary overhead)
+  if (json.length < 120) {
+    // UTF-8 safe base64 (btoa chokes on non-Latin1 like Thai)
+    var bytes = new TextEncoder().encode(json);
+    var bin = '';
+    for (var i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
+    return btoa(bin);
+  }
+  return LZString.compressToEncodedURIComponent(json);
+}
+
+function tryRestoreFromHash() {
+  var hash = location.hash.slice(1);
+  if (!hash) return false;
+
+  function tryParse(json) {
+    if (!json) return null;
+    try {
+      var c = JSON.parse(json);
+      if (c.p && c.a) return c;
+    } catch(e) {}
+    return null;
+  }
+
+  // Try base64 first (used for short payloads, UTF-8 safe encoding)
+  var compact = null;
+  try {
+    var bin = atob(hash);
+    var bytes = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    compact = tryParse(new TextDecoder().decode(bytes));
+  } catch(e) {}
+
+  // Fall back to LZString (used for larger payloads)
+  if (!compact) {
+    try {
+      compact = tryParse(LZString.decompressFromEncodedURIComponent(hash));
+    } catch(e) {}
+  }
+
+  if (!compact) return false;
+
+  buildSourceFileMap();
+
+  var sel = {
+    hairs: [], textures: [], clothes: [], accessories: [], props: [],
+    eyeColorLeft: compact.el || '#000000',
+    eyeColorRight: compact.er || '#000000',
+    eyeChanged: !!(compact.el || compact.er),  // true only if eye colors were in the URL
+    isNewAvatar: compact.nv !== false,          // default true (New Avatar)
+    baseHairColors: compact.bh ? compact.bh.slice() : ['#000000'],
+    baseHairChanged: !!compact.bh,
+    keepBaseHair: true,
+    keepBaseOutfit: true,
+    optPolygon: false, optPCSS: false, optDPSHole: 0, optDPSRod: 0
+  };
+  ['h','c','t','x','r'].forEach(function(key, idx) {
+    var arr = compact[key];
+    if (!arr || !arr.length) return;
+    var catKeys = ['hairs','clothes','textures','accessories','props'];
+    var cat = catKeys[idx];
+    for (var i = 0; i < arr.length; i++) {
+      var item = _sourceFileMap[arr[i]];
+      if (item) {
+        // Clone items matching toggleSelection() pattern
+        if (cat === 'hairs') {
+          var clone = { name: item.name, preview: item.preview, sourceFile: item.sourceFile };
+          if (compact.hc && compact.hc[i]) {
+            clone.colors = compact.hc[i].slice();
+            clone.hairChanged = true;
+          } else if (compact.nv === false) {
+            // Add to Existing — use existing colors
+            clone.colors = [];
+            clone.hairChanged = false;
+          } else {
+            // New Avatar — default black
+            clone.colors = ['#000000'];
+          }
+          sel[cat].push(clone);
+        } else {
+          var clone2 = { name: item.name, preview: item.preview, sourceFile: item.sourceFile };
+          sel[cat].push(clone2);
+        }
+      }
+    }
+  });
+
+  // Restore per-item notes
+  if (compact.no) {
+    for (var catIdx = 0; catIdx < ['hairs','clothes','textures','accessories','props'].length; catIdx++) {
+      var catNotes = sel[['hairs','clothes','textures','accessories','props'][catIdx]];
+      for (var ni2 = 0; ni2 < catNotes.length; ni2++) {
+        var note = compact.no[catNotes[ni2].sourceFile];
+        if (note) catNotes[ni2].note = note;
+      }
+    }
+  }
+
+  state.page = compact.p;
+  state.selectedAvatar = compact.a;
+  state.selections = sel;
+  if (compact.n) state.customerNotes = compact.n;
+
+  // Restore tag filters
+  state.tagFilters = {};
+  if (compact.f) {
+    for (var tab in compact.f) {
+      state.tagFilters[tab] = new Set(compact.f[tab]);
+    }
+  }
+  state.tagSearches = {};
+  if (compact.s) {
+    for (var ts in compact.s) {
+      state.tagSearches[ts] = compact.s[ts];
+    }
+  }
+
+  // Restore selectedClothFirst
+  if (compact.cf && _sourceFileMap[compact.cf]) {
+    state.selectedClothFirst = _sourceFileMap[compact.cf];
+  }
+
+  // Restore language
+  if (compact.l) {
+    lang = compact.l;
+    localStorage.setItem('avatar-lang', lang);
+  }
+
+  return true;
+}
+
+// --- Share modal ---
+var _shareToast = null;
+function showToast(msg) {
+  if (_shareToast) _shareToast.remove();
+  _shareToast = document.createElement('div');
+  _shareToast.className = 'toast';
+  _shareToast.textContent = msg;
+  document.body.appendChild(_shareToast);
+  setTimeout(function() { _shareToast.remove(); _shareToast = null; }, LIMITS.toastDuration);
+}
+
+function openShareModal() {
+  var overlay = document.createElement('div');
+  overlay.className = 'share-modal-overlay';
+  overlay.id = 'shareOverlay';
+
+  var modal = document.createElement('div');
+  modal.className = 'share-modal';
+  modal.innerHTML = '<h3>' + t('shareTitle') + '</h3>' +
+    '<label>' + t('shareInstructions') + '</label>' +
+    '<div class="url-row">' +
+      '<input type="text" id="shareUrlInput" readonly>' +
+      '<button class="btn-primary" onclick="copyShareUrl()" style="white-space:nowrap">' + t('copyLinkOnly') + '</button>' +
+    '</div>' +
+    '<label>' + t('shareNotes') + '</label>' +
+    '<textarea id="shareNotesInput" maxlength="' + LIMITS.maxNotesChars + '" placeholder="' + t('shareNotes') + '">' + (state.customerNotes || '') + '</textarea>' +
+    '<div class="char-remaining" id="shareCharRemaining"></div>' +
+    '<div class="btn-row">' +
+      '<button class="btn-primary" onclick="copyShareAll()">' + t('copyLinkNotes') + '</button>' +
+      '<button class="btn-secondary" onclick="closeShareModal()">' + t('back') + '</button>' +
+    '</div>';
+
+  overlay.appendChild(modal);
+  document.body.appendChild(overlay);
+
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) closeShareModal();
+  });
+
+  var notesInput = modal.querySelector('#shareNotesInput');
+  var urlInput = modal.querySelector('#shareUrlInput');
+  var charRem = modal.querySelector('#shareCharRemaining');
+  var debounceTimer = null;
+
+  function updateUrl() {
+    var url = getShareUrl();
+    urlInput.value = url;
+    var remaining = LIMITS.maxNotesChars - (state.customerNotes || '').length;
+    charRem.textContent = remaining + ' chars remaining';
+    charRem.className = 'char-remaining' + (remaining < 50 ? ' warn' : '');
+    if (url.length - (url.indexOf('#') + 1) > LIMITS.maxUrlLength) {
+      charRem.textContent += ' — ' + t('shareUrlLong');
+      charRem.className = 'char-remaining warn';
+    }
+  }
+
+  updateUrl();
+
+  notesInput.addEventListener('input', function() {
+    state.customerNotes = this.value;
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(updateUrl, LIMITS.shareDebounce);
+  });
+
+  setTimeout(function() { urlInput.select(); }, 100);
+}
+
+function closeShareModal() {
+  var overlay = document.getElementById('shareOverlay');
+  if (overlay) overlay.remove();
+}
+
+function getShareUrl() {
+  var path = window.location.pathname;
+  if (path.slice(-1) === '/') path += 'index.html';
+  return window.location.origin + path + '#' + encodeStateToHash();
+}
+
+function copyShareUrl() {
+  // Sync notes to state before encoding (bypasses debounce)
+  var notesInput = document.getElementById('shareNotesInput');
+  if (notesInput) state.customerNotes = notesInput.value;
+  var url = getShareUrl();
+  var input = document.getElementById('shareUrlInput');
+  if (!input) return;
+  input.value = url;
+  input.select();
+  navigator.clipboard.writeText(url).then(function() {
+    showToast(t('textCopied') || 'Copied!');
+  });
+}
+
+function copyShareAll() {
+  // Sync notes to state before encoding (bypasses debounce)
+  var notesInput = document.getElementById('shareNotesInput');
+  if (notesInput) state.customerNotes = notesInput.value;
+  var url = getShareUrl();
+  var input = document.getElementById('shareUrlInput');
+  if (!input) return;
+  input.value = url;
+  var text = url;
+  if (notesInput && notesInput.value.trim()) {
+    text += '\n\n' + t('shareNotes') + ':\n' + notesInput.value.trim();
+  }
+  navigator.clipboard.writeText(text).then(function() {
+    showToast(t('textCopied') || 'Copied!');
+  });
+  closeShareModal();
+}
+
 // --- Render ---
 function render() {
   hideHoverPreview();
@@ -364,6 +745,16 @@ function renderHeader() {
 
   const actions = document.createElement('div');
   actions.className = 'header-actions';
+
+  // Share button (customize + summary pages only)
+  if (state.selectedAvatar && (state.page === 'customize' || state.page === 'summary')) {
+    var shareBtn = document.createElement('button');
+    shareBtn.className = 'share-btn';
+    shareBtn.textContent = t('share');
+    shareBtn.onclick = openShareModal;
+    shareBtn.title = t('shareTitle');
+    actions.appendChild(shareBtn);
+  }
 
   for (const l of ['th', 'en']) {
     const btn = document.createElement('button');
@@ -467,7 +858,7 @@ function renderCard(item, onClick, badges = []) {
   // Hover preview on the image
   if (item.preview) {
     card.addEventListener('mouseenter', function(evt) {
-      hoverTimer = setTimeout(function() { showHoverPreview(item, evt); }, 400);
+      hoverTimer = setTimeout(function() { showHoverPreview(item, evt); }, LIMITS.hoverDelay);
     });
     card.addEventListener('mouseleave', hideHoverPreview);
   }
@@ -906,8 +1297,7 @@ function renderCustomize(main) {
   // Hover preview on avatar thumbnail
   var avThumb2 = (currentMain || document).querySelector('#avatarThumb');
   if (avThumb2 && av.preview) {
-    var avSrc2 = IMAGE_BASE + av.preview;
-    avThumb2.addEventListener('mouseenter', function(e) { hoverTimer = setTimeout(function(){ showHoverPreview(avSrc2, e); }, 400); });
+    avThumb2.addEventListener('mouseenter', function(e) { hoverTimer = setTimeout(function(){ showHoverPreview(av, e); }, LIMITS.hoverDelay); });
     avThumb2.addEventListener('mouseleave', hideHoverPreview);
   }
 
@@ -1187,7 +1577,7 @@ function renderSelectedStrip() {
     tabs[3].textContent = state.selections.accessories.length;
   }
   var warnEl = (currentMain || document).querySelector('.warning');
-  if (!warnEl && pc > 8) {
+  if (!warnEl && pc > LIMITS.maxPieces) {
     warnEl = document.createElement('div');
     warnEl.className = 'warning';
     warnEl.innerHTML = '<strong>!</strong> ' + t('maxWarning');
@@ -1210,10 +1600,10 @@ function renderSelectedStrip() {
     img.src = item.preview ? IMAGE_BASE + item.preview : '';
     img.onerror = function() { this.style.display = 'none'; };
     if (item.preview) {
-      (function(src) {
-        div.addEventListener('mouseenter', function(e) { hoverTimer = setTimeout(function(){ showHoverPreview(src, e); }, 400); });
+      (function(it) {
+        div.addEventListener('mouseenter', function(e) { hoverTimer = setTimeout(function(){ showHoverPreview(it, e); }, LIMITS.hoverDelay); });
         div.addEventListener('mouseleave', hideHoverPreview);
-      })(IMAGE_BASE + item.preview);
+      })(item);
     }
     div.appendChild(img);
     var span = document.createElement('span');
@@ -1838,21 +2228,20 @@ function calculatePrice() {
   var details = [];
   var isNew = state.selections.isNewAvatar !== false;
 
-  // Base avatar: 99 (only for new avatars)
+  // Base avatar (only for new avatars)
   if (isNew) {
-    total += 99;
-    details.push((lang==='th'?'ตัวเบส':'Base avatar') + ': 99');
+    total += PRICING.baseAvatar;
+    details.push((lang==='th'?'ตัวเบส':'Base avatar') + ': ' + PRICING.baseAvatar);
   } else {
     details.push((lang==='th'?'เพิ่มของใส่ตัวเดิม (ไม่มีค่าตัวเบส)':'Add to existing avatar (no base cost)') + ': 0');
   }
-  // Hair: 49 each
+  // Hair
   if (state.selections.hairs.length > 0) {
-    var hc = state.selections.hairs.length * 49;
+    var hc = state.selections.hairs.length * PRICING.hair;
     total += hc;
     details.push((lang==='th'?'ทรงผม':'Hair') + ' x' + state.selections.hairs.length + ': ' + hc);
   }
-  // Hair color: free for new avatar, 9 baht each for existing (base + additional hairs)
-  // Hair color toggles: 9 baht per extra color per hair
+  // Hair color changes and toggle colors
   var hairToggleCount = 0;
   if (isNew) {
     // New avatar: only count extra colors beyond first
@@ -1880,31 +2269,31 @@ function calculatePrice() {
     }
   }
   if (hairToggleCount > 0) {
-    var htc = hairToggleCount * 9;
+    var htc = hairToggleCount * PRICING.hairColorChange;
     total += htc;
     details.push((lang==='th'?'ค่าปรับสีผม':'Hair color change') + ' x' + hairToggleCount + ': ' + htc);
   }
-  // Eye color: free for new avatar, 9 baht for existing (unless they added textures)
+  // Eye color: free for new avatar, priced for existing (unless they added textures)
   var eyeChanged = state.selections.eyeChanged === true;
   if (!isNew && eyeChanged && state.selections.textures.length === 0) {
-    total += 9;
-    details.push((lang==='th'?'ค่าปรับสีตา':'Eye color change') + ': 9');
+    total += PRICING.eyeColorChange;
+    details.push((lang==='th'?'ค่าปรับสีตา':'Eye color change') + ': ' + PRICING.eyeColorChange);
   } else if (!isNew && eyeChanged && state.selections.textures.length > 0) {
     details.push((lang==='th'?'ปรับสีตา (ฟรี เพราะเพิ่ม Texture)':'Eye color change (free with texture)') + ': 0');
   }
-  // Textures: 39 each
+  // Textures
   if (state.selections.textures.length > 0) {
-    var tc = state.selections.textures.length * 39;
+    var tc = state.selections.textures.length * PRICING.texture;
     total += tc;
     details.push((lang==='th'?'Texture':'Texture') + ' x' + state.selections.textures.length + ': ' + tc);
   }
-  // Clothes: 49 each
+  // Clothes
   if (state.selections.clothes.length > 0) {
-    var cc = state.selections.clothes.length * 49;
+    var cc = state.selections.clothes.length * PRICING.cloth;
     total += cc;
     details.push((lang==='th'?'ชุด':'Outfit') + ' x' + state.selections.clothes.length + ': ' + cc);
   }
-  // Cloth toggles: 9 each, free for head items
+  // Cloth toggles: priced each, free for head items
   var headKeywords = ['หมวก','hat','cap','hood','หูฟัง','headphone','earphone','หูแมว','หูกระต่าย','cat ear','bunny ear','rabbit ear','animal ear','helmet','crown','มงกุฎ','headband','ribbon','โบว์','bow','glasses','แว่น','mask','หน้ากาก','veil','hoodie','หู','ears','head','หัว','bean','beanie','beret','visor','tiara','hairpin','hairclip','กิ๊บ','clip'];
   var paidToggles = 0;
   var freeToggles = 0;
@@ -1920,36 +2309,36 @@ function calculatePrice() {
     }
   }
   if (paidToggles > 0) {
-    total += paidToggles * 9;
-    details.push((lang==='th'?'ปุ่มเปิดปิดชุด':'Outfit toggles') + ' x' + paidToggles + ': ' + (paidToggles * 9));
+    total += paidToggles * PRICING.clothToggle;
+    details.push((lang==='th'?'ปุ่มเปิดปิดชุด':'Outfit toggles') + ' x' + paidToggles + ': ' + (paidToggles * PRICING.clothToggle));
   }
   if (freeToggles > 0) {
     details.push((lang==='th'?'ปุ่มเปิดปิดของบนหัว (ฟรี)':'Head item toggles (free)') + ' x' + freeToggles + ': 0');
   }
-  // Accessories: 39 each (free toggles)
+  // Accessories (free toggles)
   if (state.selections.accessories.length > 0) {
-    var ac = state.selections.accessories.length * 39;
+    var ac = state.selections.accessories.length * PRICING.accessory;
     total += ac;
     details.push((lang==='th'?'เครื่องประดับ':'Accessories') + ' x' + state.selections.accessories.length + ': ' + ac);
   }
   // Optional services
   if (state.selections.optPolygon) {
-    total += 49;
-    details.push((lang==='th'?'ลด Polygon':'Polygon reduction') + ': 49');
+    total += PRICING.polygonReduction;
+    details.push((lang==='th'?'ลด Polygon':'Polygon reduction') + ': ' + PRICING.polygonReduction);
   }
   if (state.selections.optPCSS) {
-    total += 69;
-    details.push((lang==='th'?'PCSS เงาสมจริง':'PCSS shadows') + ': 69');
+    total += PRICING.pcssShadows;
+    details.push((lang==='th'?'PCSS เงาสมจริง':'PCSS shadows') + ': ' + PRICING.pcssShadows);
   }
   var dpsHole = state.selections.optDPSHole || 0;
   var dpsRod = state.selections.optDPSRod || 0;
   if (dpsHole > 0) {
-    total += dpsHole * 19;
-    details.push((lang==='th'?'DPS รู':'DPS holes') + ' x' + dpsHole + ': ' + (dpsHole * 19));
+    total += dpsHole * PRICING.dpsHole;
+    details.push((lang==='th'?'DPS รู':'DPS holes') + ' x' + dpsHole + ': ' + (dpsHole * PRICING.dpsHole));
   }
   if (dpsRod > 0) {
-    total += dpsRod * 29;
-    details.push((lang==='th'?'DPS แท่ง':'DPS rods') + ' x' + dpsRod + ': ' + (dpsRod * 29));
+    total += dpsRod * PRICING.dpsRod;
+    details.push((lang==='th'?'DPS แท่ง':'DPS rods') + ' x' + dpsRod + ': ' + (dpsRod * PRICING.dpsRod));
   }
   return { total: total, details: details };
 }
@@ -2064,7 +2453,7 @@ function copySummary() {
     toast.className = 'toast';
     toast.textContent = t('copied');
     document.body.appendChild(toast);
-    setTimeout(() => toast.remove(), 2000);
+    setTimeout(() => toast.remove(), LIMITS.toastDuration);
   });
 }
 
@@ -2074,8 +2463,9 @@ function resetAll() {
     selectedAvatar: null,
     selectedClothFirst: null,
     selections: { hairs: [], textures: [], clothes: [], accessories: [], eyeColorLeft: '#000000', eyeColorRight: '#000000', baseHairColors: ['#000000'], keepBaseHair: true, keepBaseOutfit: true, isNewAvatar: true, optPolygon: false, optPCSS: false, optDPSHole: 0, optDPSRod: 0, baseHairChanged: false, eyeChanged: false },
-    tagFilter: new Set(),
-    tagSearch: '',
+    tagFilters: {},
+    tagSearches: {},
+    customerNotes: '',
   };
   render();
 }
@@ -2093,6 +2483,7 @@ window.onerror = function(msg, url, line, col, error) {
 };
 
 // --- Init ---
+tryRestoreFromHash();
 render();
 </script>
 </body>

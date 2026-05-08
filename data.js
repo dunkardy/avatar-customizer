@@ -66871,10 +66871,10 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Texture/Cyberpunk_face.zip",
           "dateAdded": 1673531850,
           "compatibleAvatars": [
+            "CHISE",
             "Maya",
             "Selestia",
-            "Sophina",
-            "CHISE"
+            "Sophina"
           ],
           "boothSearch": "https://booth.pm/en/search/Cyberpunk%20face",
           "autoTags": [
@@ -67369,11 +67369,11 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Texture/StarEyes_V1.0.zip",
           "dateAdded": 1724652498,
           "compatibleAvatars": [
+            "AlPha",
             "Kikyo",
             "Minase",
             "Moe",
-            "Selestia",
-            "AlPha"
+            "Selestia"
           ],
           "boothSearch": "https://booth.pm/en/search/Star%20Eyes",
           "autoTags": [
@@ -67704,7 +67704,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_-NEW-_GalshopTomngo_Lingerie_ver2.3.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/-NEW-_GalshopTomngo_Lingerie_ver2.3.zip",
           "compatibleAvatars": [
-            "Anon",
             "Karin",
             "Kikyo",
             "Leefa",
@@ -67718,6 +67717,7 @@ const AVATAR_DATA = {
             "Moe",
             "Rindo",
             "Selestia",
+            "Anon",
             "rushka"
           ],
           "dateAdded": 1701052968,
@@ -67755,7 +67755,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_-NEW-_GalshopTomngo_Lingerie_ver2.6.1.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/-NEW-_GalshopTomngo_Lingerie_ver2.6.1.zip",
           "compatibleAvatars": [
-            "Anon",
             "Karin",
             "Kikyo",
             "Leefa",
@@ -67771,6 +67770,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Sio",
+            "Anon",
             "rushka"
           ],
           "dateAdded": 1743473559,
@@ -68300,7 +68300,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_4970851_multiavatar_capettiya_NekoNekoNurse.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/4970851 multiavatar capettiya_NekoNekoNurse.rar",
           "compatibleAvatars": [
-            "Anon",
             "Karin",
             "Kikyo",
             "Leefa",
@@ -68312,6 +68311,7 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Soraha",
+            "Anon",
             "noy",
             "sapphy",
             "shayna",
@@ -68509,7 +68509,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_5312417_multiavatar_capettiya_Poppin_Gift.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/5312417 multiavatar capettiya_Poppin Gift.zip",
           "compatibleAvatars": [
-            "Anon",
             "Karin",
             "Kikyo",
             "Leefa",
@@ -68523,6 +68522,7 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Soraha",
+            "Anon",
             "sapphy",
             "shayna",
             "yuu"
@@ -68746,6 +68746,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Clothes/5460941 osatoubox_QuietQuill_Shinra Grus Kalne Lapwing Lasyusha Lime Mamehinata Manuka Moe.zip",
           "compatibleAvatars": [
             "Grus",
+            "Kalne",
             "Kikyo",
             "Lapwing",
             "Lasyusha",
@@ -68756,8 +68757,7 @@ const AVATAR_DATA = {
             "Kipfel",
             "Manuka",
             "Moe",
-            "Shinra",
-            "Kalne"
+            "Shinra"
           ],
           "dateAdded": 1711247321,
           "boothSearch": "https://booth.pm/en/items/5460941",
@@ -68789,7 +68789,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_5502202_sw11.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/5502202 sw11.rar",
           "compatibleAvatars": [
-            "Anon",
             "Hakka",
             "Karin",
             "Kikyo",
@@ -68803,7 +68802,8 @@ const AVATAR_DATA = {
             "Rindo",
             "Rusk",
             "Selestia",
-            "ANDI"
+            "ANDI",
+            "Anon"
           ],
           "dateAdded": 1711513123,
           "boothSearch": "https://booth.pm/en/items/5502202",
@@ -70293,8 +70293,8 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes__cs_dta_towel_ver1_1.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/_cs_dta_towel_ver1_1.zip",
           "compatibleAvatars": [
-            "Anon",
             "Soraha",
+            "Anon",
             "shayna"
           ],
           "dateAdded": 1695466801,
@@ -73601,11 +73601,11 @@ const AVATAR_DATA = {
             "Manuka",
             "Maya",
             "Moe",
+            "Nozomi",
             "Selestia",
             "Shinra",
-            "Uzuki",
             "Velle",
-            "Nozomi"
+            "Uzuki"
           ],
           "dateAdded": 1712188388,
           "boothSearch": "https://booth.pm/en/search/Bride%20of%20July",
@@ -74020,7 +74020,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_BurumaSet_FULLSET_Ver1.00.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/BurumaSet_FULLSET_Ver1.00.zip",
           "compatibleAvatars": [
-            "Anon",
             "Hakka",
             "Imeris",
             "Karin",
@@ -74030,7 +74029,8 @@ const AVATAR_DATA = {
             "Manuka",
             "Maya",
             "Moe",
-            "Rindo"
+            "Rindo",
+            "Anon"
           ],
           "dateAdded": 1708388405,
           "boothSearch": "https://booth.pm/en/search/Buruma%20Set",
@@ -75105,11 +75105,11 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Clothes/ChillWear.zip",
           "compatibleAvatars": [
             "Airi",
-            "Anon",
             "Ash",
             "Chiffon",
             "Karin",
             "Kikyo",
+            "Kyalong",
             "Lasyusha",
             "Leefa",
             "Lunalitt",
@@ -75127,8 +75127,8 @@ const AVATAR_DATA = {
             "Shinra",
             "Sio",
             "Sophina",
+            "Anon",
             "ciel",
-            "Kyalong",
             "MORPHO",
             "neige",
             "phi",
@@ -75690,7 +75690,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Classical_Maid.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Classical Maid.zip",
           "compatibleAvatars": [
-            "Anon",
             "Anri",
             "Ash",
             "Chiffon",
@@ -75721,18 +75720,19 @@ const AVATAR_DATA = {
             "Minase",
             "Mizuki",
             "Moe",
+            "Nozomi",
             "Rusk",
             "Selestia",
             "Shinra",
             "Sio",
             "Sophina",
             "Soraha",
+            "Sue",
             "Wolferia",
             "YRISPHERE",
-            "Yoll",
             "Yugi",
             "Miyo",
-            "Zome",
+            "Anon",
             "ciel",
             "curishia",
             "fluctua",
@@ -75741,16 +75741,16 @@ const AVATAR_DATA = {
             "lilie",
             "mariel",
             "nayu",
-            "Nozomi",
             "Perula",
             "phi",
             "rushka",
             "sapphy",
             "sii",
-            "Sue",
             "Tolass",
             "tycho",
-            "ururu"
+            "ururu",
+            "Yoll",
+            "Zome"
           ],
           "dateAdded": 1721023106,
           "boothSearch": "https://booth.pm/en/search/Classical%20Maid",
@@ -75847,7 +75847,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Cloth_Fullset_PUELLA_OF_FANTASIA.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Cloth Fullset PUELLA OF FANTASIA.zip",
           "compatibleAvatars": [
-            "Anon",
             "Anri",
             "Ash",
             "Grus",
@@ -75865,6 +75864,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Sophina",
             "Yugi",
+            "Anon",
             "rushka",
             "ururu",
             "yugi_miyo"
@@ -76769,8 +76769,8 @@ const AVATAR_DATA = {
             "Shinano",
             "Shinra",
             "Sio",
-            "mulicia",
-            "Sue"
+            "Sue",
+            "mulicia"
           ],
           "dateAdded": 1759465997,
           "boothSearch": "https://booth.pm/en/search/Cyber%20Maid",
@@ -78013,7 +78013,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_dream-sleeping-fullset_.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/dream-sleeping-fullset_.7z",
           "compatibleAvatars": [
-            "Anon",
             "Hakka",
             "Inaba",
             "Shiina",
@@ -78032,12 +78031,13 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinra",
             "Soraha",
+            "Sue",
             "Tuberose",
             "Yugi",
+            "Anon",
             "feihon",
             "nayu",
             "shinonome",
-            "Sue",
             "yugi_miyo"
           ],
           "dateAdded": 1690807215,
@@ -81920,7 +81920,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Fullset_SUBCAL_PUNK_CODE_By_Add+Recollection.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Fullset SUBCAL PUNK CODE By Add+Recollection.zip",
           "compatibleAvatars": [
-            "Anon",
             "Kikyo",
             "Leefa",
             "Lunalitt",
@@ -81934,6 +81933,7 @@ const AVATAR_DATA = {
             "Shinra",
             "Sophina",
             "Yugi",
+            "Anon",
             "ciel",
             "yugi_miyo"
           ],
@@ -82412,7 +82412,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Fullset_Yumecoi_Style_18avatar.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Fullset_Yumecoi_Style_18avatar.zip",
           "compatibleAvatars": [
-            "Anon",
             "Kikyo",
             "Leefa",
             "Lunalitt",
@@ -82425,6 +82424,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinra",
             "Sophina",
+            "Anon",
             "ciel"
           ],
           "dateAdded": 1698368276,
@@ -83351,7 +83351,7 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Half_Parka_Outfit.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Half Parka Outfit.zip",
           "compatibleAvatars": [
-            "Anon",
+            "CHISE",
             "Hakka",
             "Imeris",
             "Karin",
@@ -83365,7 +83365,7 @@ const AVATAR_DATA = {
             "Rindo",
             "Selestia",
             "Wolferia",
-            "CHISE",
+            "Anon",
             "eyo",
             "lilie"
           ],
@@ -84216,7 +84216,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_hip_street_full_v0_2.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/hip_street_full_v0_2.zip",
           "compatibleAvatars": [
-            "Anon",
             "Ash",
             "Hakka",
             "Karin",
@@ -84226,6 +84225,7 @@ const AVATAR_DATA = {
             "Maya",
             "Rindo",
             "Rusk",
+            "Anon",
             "mariel"
           ],
           "dateAdded": 1687695096,
@@ -84463,10 +84463,10 @@ const AVATAR_DATA = {
             "Maya",
             "Moe",
             "Selestia",
+            "Sue",
             "Wolferia",
             "mariel",
-            "nayu",
-            "Sue"
+            "nayu"
           ],
           "dateAdded": 1692585552,
           "boothSearch": "https://booth.pm/en/search/Hopping%20Stella.",
@@ -84752,7 +84752,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_IdolTypeForte_Fullset_Ver1.00.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/IdolTypeForte_Fullset_Ver1.00.zip",
           "compatibleAvatars": [
-            "Anon",
             "Karin",
             "Kikyo",
             "Leefa",
@@ -84766,6 +84765,7 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Soraha",
+            "Anon",
             "noy",
             "sapphy",
             "shayna",
@@ -84996,7 +84996,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Iris_Bloom.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Iris Bloom.zip",
           "compatibleAvatars": [
-            "Anon",
             "Chiffon",
             "Kikyo",
             "Lime",
@@ -85007,7 +85006,8 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Shinra",
-            "Sio"
+            "Sio",
+            "Anon"
           ],
           "dateAdded": 1715226184,
           "boothSearch": "https://booth.pm/en/search/Iris%20Bloom",
@@ -85217,7 +85217,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_JerseyJersey.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/JerseyJersey.zip",
           "compatibleAvatars": [
-            "Anon",
             "Kikyo",
             "Leefa",
             "Lunalitt",
@@ -85226,6 +85225,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinra",
             "Sophina",
+            "Anon",
             "ciel"
           ],
           "dateAdded": 1685445111,
@@ -85889,7 +85889,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Knit_Dress_(Full_Set).jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Knit Dress (Full Set).zip",
           "compatibleAvatars": [
-            "Anon",
             "Inaba",
             "Shiina",
             "Kaya",
@@ -85910,6 +85909,7 @@ const AVATAR_DATA = {
             "Soraha",
             "Velle",
             "Yugi",
+            "Anon",
             "feihon",
             "mariel",
             "shinonome",
@@ -86417,7 +86417,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_liachanoshikode_fullset_ver1_02.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/liachanoshikode_fullset_ver1_02.zip",
           "compatibleAvatars": [
-            "Anon",
             "Ash",
             "Hakka",
             "Karin",
@@ -86425,6 +86424,7 @@ const AVATAR_DATA = {
             "Maya",
             "Rindo",
             "Sephira",
+            "Anon",
             "lilie",
             "nayu",
             "noy",
@@ -87483,8 +87483,8 @@ const AVATAR_DATA = {
             "Rindo",
             "Selestia",
             "Shinra",
-            "Uzuki",
-            "Yugi"
+            "Yugi",
+            "Uzuki"
           ],
           "dateAdded": 1689118862,
           "boothSearch": "https://booth.pm/en/search/Lovesome",
@@ -89223,7 +89223,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_MilitcuteOnepiece_Fullset_Ver1.00.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/MilitcuteOnepiece_Fullset_Ver1.00.zip",
           "compatibleAvatars": [
-            "Anon",
             "Chiffon",
             "Karin",
             "Kikyo",
@@ -89235,6 +89234,7 @@ const AVATAR_DATA = {
             "Mizuki",
             "Moe",
             "Soraha",
+            "Anon",
             "sapphy",
             "shayna",
             "tina"
@@ -90484,8 +90484,8 @@ const AVATAR_DATA = {
             "Chocolat",
             "Manuka",
             "Moe",
-            "Rumi",
-            "Selestia"
+            "Selestia",
+            "Rumi"
           ],
           "dateAdded": 1702427227,
           "boothSearch": "https://booth.pm/en/search/Mustang",
@@ -90918,13 +90918,13 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Necro_China_FULL.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Necro_China FULL.zip",
           "compatibleAvatars": [
+            "CHISE",
             "Karin",
             "Kikyo",
             "Manuka",
             "Moe",
             "Selestia",
-            "Zome",
-            "CHISE"
+            "Zome"
           ],
           "dateAdded": 1717041724,
           "boothSearch": "https://booth.pm/en/search/Necro%20China",
@@ -91133,7 +91133,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_nekonekoja-ji_fullset_ver1_00.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/nekonekoja-ji_fullset_ver1_00.zip",
           "compatibleAvatars": [
-            "Anon",
             "Ash",
             "Hakka",
             "Karin",
@@ -91145,6 +91144,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Sephira",
             "Soraha",
+            "Anon",
             "fiona",
             "noy",
             "sapphy",
@@ -92090,8 +92090,8 @@ const AVATAR_DATA = {
             "Maya",
             "Moe",
             "Selestia",
-            "Uzuki",
-            "usasaki"
+            "usasaki",
+            "Uzuki"
           ],
           "dateAdded": 1695087268,
           "boothSearch": "https://booth.pm/en/search/Octopusquid",
@@ -93193,11 +93193,11 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Shinra",
-            "Wolferia",
-            "Zome",
-            "nayu",
             "Sue",
-            "tycho"
+            "Wolferia",
+            "nayu",
+            "tycho",
+            "Zome"
           ],
           "dateAdded": 1708129798,
           "boothSearch": "https://booth.pm/en/search/Phantom%20Venus",
@@ -93356,11 +93356,11 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Pionites_Summer_Fullset.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Pionites Summer Fullset.zip",
           "compatibleAvatars": [
+            "AlPha",
             "Anri",
             "Komano",
             "Kuuta",
-            "Shinra",
-            "AlPha"
+            "Shinra"
           ],
           "dateAdded": 1758361849,
           "boothSearch": "https://booth.pm/en/search/Pionites%20Summer",
@@ -93572,7 +93572,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_poison_Maiden_full.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/poison_Maiden_full.rar",
           "compatibleAvatars": [
-            "Anon",
             "Kikyo",
             "Leefa",
             "Lunalitt",
@@ -93582,7 +93581,8 @@ const AVATAR_DATA = {
             "Manuka",
             "Moe",
             "Selestia",
-            "Shinra"
+            "Shinra",
+            "Anon"
           ],
           "dateAdded": 1695864317,
           "boothSearch": "https://booth.pm/en/search/poison%20Maiden",
@@ -94892,7 +94892,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Re_FLOWER_BIKINI.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Re FLOWER BIKINI.zip",
           "compatibleAvatars": [
-            "Anon",
             "Karin",
             "Kikyo",
             "Leefa",
@@ -94903,7 +94902,8 @@ const AVATAR_DATA = {
             "Maya",
             "Moe",
             "Selestia",
-            "Shinra"
+            "Shinra",
+            "Anon"
           ],
           "dateAdded": 1693994825,
           "boothSearch": "https://booth.pm/en/search/Re%20FLOWER%20BIKINI",
@@ -95081,6 +95081,7 @@ const AVATAR_DATA = {
           "compatibleAvatars": [
             "Chiffon",
             "Kikyo",
+            "Kyalong",
             "Leefa",
             "Lunalitt",
             "Lime",
@@ -95090,8 +95091,7 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Shinra",
-            "Yoll",
-            "Kyalong"
+            "Yoll"
           ],
           "dateAdded": 1712018415,
           "boothSearch": "https://booth.pm/en/search/Re%20Premier%20Nuit",
@@ -95125,7 +95125,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Revealing_Sister.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Revealing_Sister.zip",
           "compatibleAvatars": [
-            "Anon",
             "Kikyo",
             "Leefa",
             "Lunalitt",
@@ -95133,6 +95132,7 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Shinra",
+            "Anon",
             "ciel"
           ],
           "dateAdded": 1697368295,
@@ -95864,9 +95864,9 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Clothes/RPB.rar",
           "compatibleAvatars": [
             "Hanka",
+            "Kalne",
             "Komano",
-            "Minase",
-            "Kalne"
+            "Minase"
           ],
           "dateAdded": 1768019735,
           "boothSearch": "https://booth.pm/en/search/RPB",
@@ -95930,8 +95930,8 @@ const AVATAR_DATA = {
             "Chocolat",
             "Manuka",
             "Moe",
-            "Rumi",
-            "Selestia"
+            "Selestia",
+            "Rumi"
           ],
           "dateAdded": 1722659998,
           "boothSearch": "https://booth.pm/en/search/Rumi016%20zipper%20dress",
@@ -98092,7 +98092,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Snowlight_Latex_Servant_1.0.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Snowlight Latex Servant 1.0.7z",
           "compatibleAvatars": [
-            "Anon",
             "Imeris",
             "Karin",
             "Kikyo",
@@ -98109,7 +98108,8 @@ const AVATAR_DATA = {
             "Rindo",
             "Selestia",
             "Soraha",
-            "Velle"
+            "Velle",
+            "Anon"
           ],
           "dateAdded": 1721023470,
           "boothSearch": "https://booth.pm/en/search/Snowlight%20Latex%20Servant",
@@ -99489,7 +99489,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_sukumizure_fullset_ver1_30.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/sukumizure_fullset_ver1_30.zip",
           "compatibleAvatars": [
-            "Anon",
             "Ash",
             "Hakka",
             "Karin",
@@ -99504,6 +99503,7 @@ const AVATAR_DATA = {
             "Rindo",
             "Sephira",
             "Soraha",
+            "Anon",
             "lilie",
             "mint",
             "noy",
@@ -101533,8 +101533,8 @@ const AVATAR_DATA = {
             "Shinra",
             "Sio",
             "Tuberose",
-            "Uzuki",
             "Yugi",
+            "Uzuki",
             "yugi_miyo"
           ],
           "dateAdded": 1739409082,
@@ -101864,7 +101864,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Usagisan_Roomwear_Re_Ver1.00.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Usagisan Roomwear Re Ver1.00.zip",
           "compatibleAvatars": [
-            "Anon",
             "Chiffon",
             "Karin",
             "Kikyo",
@@ -101876,6 +101875,7 @@ const AVATAR_DATA = {
             "Mizuki",
             "Moe",
             "Soraha",
+            "Anon",
             "sapphy",
             "tina"
           ],
@@ -103278,7 +103278,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Wings_of_Paradise.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Wings of Paradise.zip",
           "compatibleAvatars": [
-            "Anon",
             "Chiffon",
             "Kikyo",
             "Lime",
@@ -103289,7 +103288,8 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Shinra",
-            "Sio"
+            "Sio",
+            "Anon"
           ],
           "dateAdded": 1716514231,
           "boothSearch": "https://booth.pm/en/search/Wings%20of%20Paradise",
