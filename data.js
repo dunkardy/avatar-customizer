@@ -82105,7 +82105,7 @@ const AVATAR_DATA = {
         },
         {
           "name": "Fullset Simple Hoodie By preto#",
-          "preview": "images/Clothes,_Texture_Sets_Clothes_Fullset_Simple_Hoodie_By_preto#.jpg",
+          "preview": "images/Clothes,_Texture_Sets_Clothes_Fullset_Simple_Hoodie_By_preto_.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Fullset Simple Hoodie By preto#.rar",
           "compatibleAvatars": [
             "Chiffon",
@@ -82271,7 +82271,7 @@ const AVATAR_DATA = {
         },
         {
           "name": "Fullset Spring Water Wear By preto#",
-          "preview": "images/Clothes,_Texture_Sets_Clothes_Fullset_Spring_Water_Wear_By_preto#.jpg",
+          "preview": "images/Clothes,_Texture_Sets_Clothes_Fullset_Spring_Water_Wear_By_preto_.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Fullset Spring Water Wear By preto#.zip",
           "compatibleAvatars": [
             "Chiffon",
@@ -110333,7 +110333,7 @@ const AVATAR_DATA = {
         },
         {
           "name": "Sioしお ɞ zmeu# Eye Texture",
-          "preview": "images/Clothes,_Texture_Sio_Texture_Sioしお_ɞ_zmeu#_Eye_Texture.jpg",
+          "preview": "images/Clothes,_Texture_Sio_Texture_Sioしお_ɞ_zmeu__Eye_Texture.jpg",
           "sourceFile": "Clothes, Texture/Sio/Texture/Sioしお ɞ zmeu# Eye Texture.jpg",
           "dateAdded": 1713661678,
           "boothSearch": "https://booth.pm/en/search/Sio%E3%81%97%E3%81%8A%20%C9%9E%20zmeu%23%20Eye%20Texture",
@@ -112640,7 +112640,7 @@ const AVATAR_DATA = {
         },
         {
           "name": "Punk No",
-          "preview": "images/Clothes,_Texture_Sio_Clothes_Punk_No.7_(for_SIO)_#3BON.jpg",
+          "preview": "images/Clothes,_Texture_Sio_Clothes_Punk_No.7_(for_SIO)__3BON.jpg",
           "sourceFile": "Clothes, Texture/Sio/Clothes/Punk No.7 (for SIO) #3BON.zip",
           "compatibleAvatars": [
             "Sio"
@@ -140209,7 +140209,7 @@ const AVATAR_DATA = {
     },
     {
       "name": "【VRChat想定】桜ネイルSAKURA nail tips「MDollnail対応」#NeRosaVRC",
-      "preview": "images/Accessories_【VRChat想定】桜ネイルSAKURA_nail_tips「MDollnail対応」#NeRosaVRC.jpg",
+      "preview": "images/Accessories_【VRChat想定】桜ネイルSAKURA_nail_tips「MDollnail対応」_NeRosaVRC.jpg",
       "sourceFile": "Accessories/【VRChat想定】桜ネイルSAKURA nail tips「MDollnail対応」#NeRosaVRC.zip",
       "dateAdded": 1714610671,
       "boothSearch": "https://booth.pm/en/search/%E3%80%90VR%20Chat%E6%83%B3%E5%AE%9A%E3%80%91%E6%A1%9C%E3%83%8D%E3%82%A4%E3%83%ABSAKURA%20nail%20tips%E3%80%8CMDollnail%E5%AF%BE%E5%BF%9C%E3%80%8D%23Ne%20Rosa%20VRC",
