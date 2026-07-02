@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy site
 on:
   push:
     branches: [main]
@@ -11,6 +11,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+
+      # Target 1: GitHub Pages via gh-pages branch (original URL, works when GitHub recovers)
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -18,3 +20,19 @@ jobs:
           publish_dir: .
           publish_branch: gh-pages
           force_orphan: true
+
+      # Target 2: Netlify (reliable fallback, deduped uploads)
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v3
+        with:
+          publish-dir: .
+          production-deploy: true
+          deploy-message: "Deploy from GitHub Actions ${{ github.sha }}"
+          enable-pull-request-comment: false
+          enable-commit-comment: false
+          enable-commit-status: false
+          enable-github-deployment: false
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 20
