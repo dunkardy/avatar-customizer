@@ -42,6 +42,7 @@ a{color:var(--accent)}
 .lang-btn{background:var(--surface2);color:var(--text2);padding:7px 14px;font-size:.85rem;border:1px solid var(--border)}
 .lang-btn.active{background:var(--grad);color:#fff;border-color:transparent}
 .step-indicator{display:flex;gap:4px;align-items:center;font-size:.85rem;color:var(--text2);background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:5px 14px}
+.step-indicator .step-count{display:none}
 .step-indicator .active{color:var(--accent);font-weight:700}
 .step-indicator span{margin:0 4px}
 
@@ -200,10 +201,12 @@ a{color:var(--accent)}
   .card-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
   .landing-options{grid-template-columns:1fr}
   .header h1{font-size:1.2rem}
-  .step-indicator{display:none}
+  .step-indicator span:not(.active):not(.step-count){display:none}
+  .step-indicator .step-count{display:inline;font-weight:700;color:var(--accent)}
   .tabs{font-size:.8rem}
   .tab{padding:8px 12px}
 }
+.empty-state{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;color:var(--text2);padding:40px 16px}
 .unknown-pill{grid-column:1/-1;padding:10px 14px;border:1px dashed var(--border);border-radius:var(--radius);background:transparent;color:var(--text2);font-size:.8rem;cursor:pointer;text-align:center}
 .unknown-pill:hover{color:var(--text);border-color:var(--accent)}
 </style>
@@ -296,6 +299,10 @@ const T = {
     quickLookClose: "ปิด",
     quickLookHint: "แตะเพื่อดูภาพใหญ่",
     moreOptions: "ตัวเลือกเพิ่มเติม",
+    clearFilters: "ล้างตัวกรอง",
+    noMatchFilters: "ไม่พบรายการที่ตรงกับตัวกรอง",
+    progressRestored: "กู้คืนการปรับแต่งล่าสุดแล้ว",
+    confirmReset: "เริ่มใหม่ทั้งหมด? การเลือกทั้งหมดจะถูกลบ",
   },
   en: {
     appTitle: "Avatar Customizer",
@@ -364,6 +371,10 @@ const T = {
     quickLookClose: "Close",
     quickLookHint: "Tap to enlarge",
     moreOptions: "More options",
+    clearFilters: "Clear filters",
+    noMatchFilters: "Nothing matches your filters",
+    progressRestored: "Restored your last session",
+    confirmReset: "Start over? All selections will be cleared.",
   }
 };
 
@@ -700,13 +711,28 @@ function restoreFromEncoded(hash) {
 
 // --- Share modal ---
 var _shareToast = null;
-function showToast(msg) {
+var _shareToastTimer = null;
+function showToast(msg, action, duration) {
+  if (_shareToastTimer) { clearTimeout(_shareToastTimer); _shareToastTimer = null; }
   if (_shareToast) _shareToast.remove();
-  _shareToast = document.createElement('div');
-  _shareToast.className = 'toast';
-  _shareToast.textContent = msg;
-  document.body.appendChild(_shareToast);
-  setTimeout(function() { _shareToast.remove(); _shareToast = null; }, LIMITS.toastDuration);
+  var toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.textContent = msg;
+  if (action) {
+    var btn = document.createElement('button');
+    btn.className = 'btn-secondary';
+    btn.style.cssText = 'margin-left:12px;padding:5px 12px;font-size:.8rem';
+    btn.textContent = action.label;
+    btn.onclick = function() { toast.remove(); if (_shareToast === toast) _shareToast = null; action.onClick(); };
+    toast.appendChild(btn);
+  }
+  _shareToast = toast;
+  document.body.appendChild(toast);
+  _shareToastTimer = setTimeout(function() {
+    toast.remove();
+    if (_shareToast === toast) _shareToast = null;
+    _shareToastTimer = null;
+  }, duration || LIMITS.toastDuration);
 }
 
 function openShareModal() {
@@ -868,16 +894,24 @@ function renderHeader() {
       pathBcompat: t('selectAvatar'), customize: t('customize'),
       summary: t('summary')
     };
-    const order = ['pathA','pathB','pathBcompat','customize','summary'];
+    // Per-journey trail: path B pages (or a cloth-first selection) follow the B order
+    const isPathB = state.page === 'pathB' || state.page === 'pathBcompat' || !!state.selectedClothFirst;
+    const order = isPathB ? ['pathB','pathBcompat','customize','summary'] : ['pathA','customize','summary'];
     const cur = order.indexOf(state.page);
-    for (let i = 0; i <= cur; i++) {
-      if (i > 0) { const s = document.createElement('span'); s.textContent = '>'; steps.appendChild(s); }
-      const s = document.createElement('span');
-      s.textContent = stepNames[order[i]] || '';
-      if (i === cur) s.className = 'active';
-      steps.appendChild(s);
+    if (cur >= 0) {
+      const count = document.createElement('span');
+      count.className = 'step-count';
+      count.textContent = (cur + 1) + '/' + order.length;
+      steps.appendChild(count);
+      for (let i = 0; i <= cur; i++) {
+        if (i > 0) { const s = document.createElement('span'); s.textContent = '>'; steps.appendChild(s); }
+        const s = document.createElement('span');
+        s.textContent = stepNames[order[i]] || '';
+        if (i === cur) s.className = 'active';
+        steps.appendChild(s);
+      }
+      actions.appendChild(steps);
     }
-    actions.appendChild(steps);
   }
 
   h.appendChild(title);
@@ -1038,6 +1072,23 @@ function renderCard(item, onClick, badges = []) {
   return card;
 }
 
+// Empty state for card grids: friendlier message + a way out when filters caused it
+function renderEmptyState(grid, canClear, onClear, fallbackMsg) {
+  var wrap = document.createElement('div');
+  wrap.className = 'empty-state';
+  var msg = document.createElement('p');
+  msg.textContent = canClear ? t('noMatchFilters') : (fallbackMsg || (lang==='th'?'ไม่มีรายการ':'No items'));
+  wrap.appendChild(msg);
+  if (canClear) {
+    var btn = document.createElement('button');
+    btn.className = 'btn-secondary';
+    btn.textContent = t('clearFilters');
+    btn.onclick = onClear;
+    wrap.appendChild(btn);
+  }
+  grid.appendChild(wrap);
+}
+
 // --- Landing ---
 function renderLanding(main) {
   main.innerHTML = `
@@ -1173,7 +1224,11 @@ function renderPathAList() {
   }
 
   if (avatars.length === 0) {
-    grid.innerHTML = `<p style="grid-column:1/-1;text-align:center;color:var(--text2);padding:40px">${lang==='th'?'ไม่พบอวตาร์':'No avatars found'}</p>`;
+    renderEmptyState(grid, !!(pathAFilter.search || pathAFilter.gender !== 'all'), function() {
+      pathAFilter.search = '';
+      pathAFilter.gender = 'all';
+      renderPathA(currentMain);
+    }, lang==='th'?'ไม่พบอวตาร์':'No avatars found');
   }
 }
 
@@ -1251,6 +1306,13 @@ function renderPathBList() {
     }, badges);
 
     grid.appendChild(card);
+  }
+
+  if (clothes.length === 0) {
+    renderEmptyState(grid, !!(pathBFilter.search || _tf('pathB').size), function() {
+      pathBFilter.search = '';
+      renderPathB(currentMain);  // resets tag filters wholesale
+    });
   }
 
   window.scrollTo(0, scrollY);
@@ -2232,7 +2294,13 @@ function renderCustomTabList() {
   }
 
   if (items.length === 0) {
-    grid.innerHTML = `<p style="grid-column:1/-1;text-align:center;color:var(--text2);padding:40px">${lang==='th'?'ไม่มีรายการ':'No items'}</p>`;
+    renderEmptyState(grid, !!(query || ctFilter.size), function() {
+      var se = (currentMain || document).querySelector('#customSearch');
+      if (se) se.value = '';
+      _tf(customTab).clear();
+      state.tagSearches[customTab] = '';
+      renderCustomTabList();
+    });
   }
 
   // Reveal pill: show how many items the unknown-compat filter hid
@@ -2791,6 +2859,7 @@ function copySummary() {
 }
 
 function resetAll() {
+  if (state.selectedAvatar && !confirm(t('confirmReset'))) return;
   state = {
     page: 'landing',
     selectedAvatar: null,
@@ -2816,8 +2885,9 @@ window.onerror = function(msg, url, line, col, error) {
 };
 
 // --- Init ---
-if (!tryRestoreFromHash()) tryRestoreFromStorage();
+var _restoredFromStorage = !tryRestoreFromHash() && tryRestoreFromStorage();
 render();
+if (_restoredFromStorage) showToast(t('progressRestored'), { label: t('startOver'), onClick: resetAll }, 6000);
 </script>
 </body>
 </html>
