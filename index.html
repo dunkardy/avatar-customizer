@@ -218,7 +218,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 <body>
 <div id="app"></div>
 
-<script src="data.js?v=e6180ca31b20"></script>
+<script src="data.js?v=9297985d8527"></script>
 <script>
 // =========================================================================
 // Avatar Customizer - Web App
@@ -228,6 +228,15 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 // (see serve_dev.py; run from C:\AvatarCode: python serve_dev.py)
 // Then access: http://localhost:8080/web-app/
 const IMAGE_BASE = '';
+
+// Build an <img> src from a library-relative preview path. Segments must be
+// URL-encoded: '#'/'?' in filenames otherwise truncate the request as
+// fragment/query (e.g. "Fullset Simple Hoodie By preto#.jpg").
+function imgSrc(preview) {
+  if (!preview) return '';
+  if (preview.indexOf('data:') === 0) return preview;
+  return IMAGE_BASE + preview.split('/').map(encodeURIComponent).join('/');
+}
 
 // =========================================================================
 
@@ -938,7 +947,7 @@ function showHoverPreview(item, evt) {
     document.body.appendChild(hoverPreview);
   }
   var img = hoverPreview.querySelector('img');
-  img.src = IMAGE_BASE + item.preview;
+  img.src = imgSrc(item.preview);
   var tagsDiv = hoverPreview.querySelector('.hover-tags');
   var tags = item.autoTags || [];
   if (tags.length > 0) {
@@ -991,7 +1000,7 @@ function openQuickLook(item) {
   var tags = item.autoTags || [];
   qlOverlay.innerHTML =
     '<div class="ql-sheet">' +
-      '<img src="' + IMAGE_BASE + item.preview + '" alt="">' +
+      '<img src="' + imgSrc(item.preview) + '" alt="">' +
       (tags.length ? '<div class="ql-tags">' + tags.map(function(x){return '<span class="ql-tag">' + x.replace(/_/g,' ') + '</span>';}).join('') + '</div>' : '') +
       '<button class="ql-close">' + t('quickLookClose') + '</button>' +
     '</div>';
@@ -1025,7 +1034,7 @@ function renderCard(item, onClick, badges = []) {
   if (item.preview) {
     const img = document.createElement('img');
     img.loading = 'lazy';
-    img.src = IMAGE_BASE + item.preview;
+    img.src = imgSrc(item.preview);
     img.alt = item.name;
     img.onerror = function() { this.style.display = 'none'; };
     img.onload = function() { placeholder.style.display = 'none'; };
@@ -1404,7 +1413,7 @@ function renderCustomize(main) {
   main.innerHTML = `
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:12px">
       <div class="page-title" style="margin:0;display:flex;align-items:center;gap:12px">
-        ${av.preview ? `<img src="${IMAGE_BASE + av.preview}" id="avatarThumb" style="width:48px;height:48px;object-fit:cover;border-radius:6px;border:2px solid var(--accent);cursor:pointer" onerror="this.style.display='none'">` : ''}
+        ${av.preview ? `<img src="${imgSrc(av.preview)}" id="avatarThumb" style="width:48px;height:48px;object-fit:cover;border-radius:6px;border:2px solid var(--accent);cursor:pointer" onerror="this.style.display='none'">` : ''}
         <span>${t('customizeTitle')}: <strong>${av.name}</strong></span>
       </div>
       <div style="display:flex;gap:8px">
@@ -1800,7 +1809,7 @@ function renderSelectedStrip() {
     var div = document.createElement('div');
     div.className = 'selected-item';
     var img = document.createElement('img');
-    img.src = item.preview ? IMAGE_BASE + item.preview : '';
+    img.src = item.preview ? imgSrc(item.preview) : '';
     img.onerror = function() { this.style.display = 'none'; };
     if (item.preview) {
       (function(it) {
@@ -2404,7 +2413,7 @@ async function buildOrderImage() {
   const imgMap = {};
   await Promise.all(allItems.map(function(it) {
     if (!it.preview) { imgMap[it.name] = null; return Promise.resolve(); }
-    return _loadImg(IMAGE_BASE + it.preview).then(function(im){ imgMap[it.name] = im; });
+    return _loadImg(imgSrc(it.preview)).then(function(im){ imgMap[it.name] = im; });
   }));
 
   const DPR = Math.max(2, window.devicePixelRatio || 1);
