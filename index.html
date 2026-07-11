@@ -161,7 +161,7 @@ a{color:var(--teal)}
 
 /* ===== Customize workspace ===== */
 .customize-shell{display:flex;gap:28px;align-items:flex-start}
-.customize-inspector{flex:0 0 320px;min-width:0;position:sticky;top:72px;max-height:calc(100vh - 88px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;padding-right:6px}
+.customize-inspector{flex:0 0 320px;min-width:0;position:sticky;top:72px;max-height:var(--insp-max,calc(100vh - 88px));overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;padding-right:6px}
 .customize-library{flex:1;min-width:0}
 @media(max-width:1099px){.customize-inspector{flex-basis:280px}}
 .order-type-btn{background:transparent;color:var(--text-muted);border:1px solid var(--border);border-radius:3px;padding:5px 14px;font-size:.8rem;font-weight:600;cursor:pointer;align-self:center}
@@ -951,7 +951,21 @@ function render() {
 
   app.appendChild(main);
   saveProgress();
+  sizeInspector();
 }
+
+function sizeInspector() {
+  const insp = document.querySelector('.customize-inspector');
+  if (!insp) return;
+  if (!insp.offsetParent || getComputedStyle(insp).position !== 'sticky') {
+    insp.style.removeProperty('--insp-max');
+    return;
+  }
+  const top = Math.max(72, insp.getBoundingClientRect().top);
+  insp.style.setProperty('--insp-max', 'calc(100vh - ' + (top + 16) + 'px)');
+}
+window.addEventListener('scroll', sizeInspector, { passive: true });
+window.addEventListener('resize', sizeInspector);
 
 function renderHeader() {
   const h = document.createElement('div');
