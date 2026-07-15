@@ -1559,15 +1559,22 @@ function basenameOf(preview) {
   return p.replace(/[\\\/ #?]/g, '_').replace(/\.[^.]*$/, '') + '.jpg';
 }
 
-function hairSearchHealthCheck() {
-  if (hairSearchState.checked) return;
-  hairSearchState.checked = true;
+function hairSearchHealthCheck(attempt) {
+  attempt = attempt || 0;
+  if (attempt === 0) {
+    if (hairSearchState.checked) return;
+    hairSearchState.checked = true;
+  }
   var ctrl = new AbortController();
-  var timer = setTimeout(function(){ ctrl.abort(); }, 3000);
+  var timer = setTimeout(function(){ ctrl.abort(); }, 5000);
   fetch(HAIR_SEARCH_API + '/health', { signal: ctrl.signal })
     .then(function(r){ return r.ok ? r.json() : Promise.reject(); })
     .then(function(h){ if (h && h.ok) { hairSearchState.available = true; renderCustomTabList(); } })
-    .catch(function(){ /* homelab down: feature stays hidden */ })
+    .catch(function(){
+      // Cold Funnel/TLS setup can exceed one attempt; retry with backoff
+      // before hiding the feature for the whole session.
+      if (attempt < 2) setTimeout(function(){ hairSearchHealthCheck(attempt + 1); }, 4000 * (attempt + 1));
+    })
     .finally(function(){ clearTimeout(timer); });
 }
 
