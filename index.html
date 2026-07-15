@@ -1546,6 +1546,117 @@ function renderPathBCompat(main) {
 let customTab = 'hairs';
 let customSort = 'date';
 let hideUnknownCompat = true;
+// --- Hair photo search (homelab service, feature-gated on health) ---
+const HAIR_SEARCH_API = 'https://homelab.tailf7e6b7.ts.net';
+var hairSearchState = { available: false, checked: false, active: false,
+                        order: null, thumb: null, busy: false };
+
+function basenameOf(preview) {
+  // Deployed previews are already images/<safe-name>; the service returns
+  // that bare safe-name. Dev paths still need scanner.safe_image_name rules.
+  var p = String(preview || '');
+  if (p.indexOf('images/') === 0) return p.slice(p.lastIndexOf('/') + 1);
+  return p.replace(/[\\\/ #?]/g, '_').replace(/\.[^.]*$/, '') + '.jpg';
+}
+
+function hairSearchHealthCheck() {
+  if (hairSearchState.checked) return;
+  hairSearchState.checked = true;
+  var ctrl = new AbortController();
+  var timer = setTimeout(function(){ ctrl.abort(); }, 3000);
+  fetch(HAIR_SEARCH_API + '/health', { signal: ctrl.signal })
+    .then(function(r){ return r.ok ? r.json() : Promise.reject(); })
+    .then(function(h){ if (h && h.ok) { hairSearchState.available = true; renderCustomTabList(); } })
+    .catch(function(){ /* homelab down: feature stays hidden */ })
+    .finally(function(){ clearTimeout(timer); });
+}
+
+function openHairPhotoSearch() {
+  if (hairSearchState.busy) return;
+  var input = document.createElement('input');
+  input.type = 'file';
+  input.accept = 'image/*';
+  input.onchange = function() {
+    var file = input.files && input.files[0];
+    if (file) hairSearchUpload(file);
+  };
+  input.click();
+}
+
+function hairSearchDownscale(file) {
+  return new Promise(function(resolve, reject) {
+    var img = new Image();
+    var url = URL.createObjectURL(file);
+    img.onload = function() {
+      URL.revokeObjectURL(url);
+      var max = 1024, w = img.width, h = img.height;
+      if (w > max || h > max) {
+        var s = max / Math.max(w, h);
+        w = Math.round(w * s); h = Math.round(h * s);
+      }
+      var c = document.createElement('canvas'); c.width = w; c.height = h;
+      c.getContext('2d').drawImage(img, 0, 0, w, h);
+      hairSearchState.thumb = c.toDataURL('image/jpeg', 0.7);
+      c.toBlob(function(b){ b ? resolve(b) : reject(); }, 'image/jpeg', 0.85);
+    };
+    img.onerror = function(err) { URL.revokeObjectURL(url); reject(err); };
+    img.src = url;
+  });
+}
+
+function applyHairSearchOrder(results) {
+  var order = new Map();
+  results.forEach(function(r, i) { order.set(r.preview, i); });
+  hairSearchState.order = order;
+  hairSearchState.active = true;
+  renderCustomTabList();
+}
+
+function hairSearchUpload(file) {
+  var previousThumb = hairSearchState.thumb;
+  hairSearchState.busy = true;
+  hairSearchDownscale(file).then(function(blob) {
+    return hairSearchPost(blob, true);
+  }).then(function(results) {
+    hairSearchState.busy = false;
+    applyHairSearchOrder(results);
+  }).catch(function() {
+    hairSearchState.thumb = previousThumb;
+    hairSearchState.busy = false;
+    hairSearchToast(lang === 'th' ? 'ค้นหาไม่สำเร็จ ลองใหม่' : 'Search unavailable, try again');
+  });
+}
+
+function hairSearchPost(blob, allowRetry) {
+  return fetch(HAIR_SEARCH_API + '/hair-search', {
+    method: 'POST', headers: { 'Content-Type': 'image/jpeg' }, body: blob
+  }).then(function(r) {
+    if (r.status === 429 && allowRetry) {
+      return r.json().then(function(j) {
+        return new Promise(function(res, rej) {
+          setTimeout(function(){ hairSearchPost(blob, false).then(res, rej); }, (j.retry_ms || 1500));
+        });
+      });
+    }
+    if (!r.ok) return Promise.reject();
+    return r.json().then(function(j){ return j.results; });
+  });
+}
+
+function clearHairSearch() {
+  hairSearchState.active = false;
+  hairSearchState.order = null;
+  hairSearchState.thumb = null;
+  renderCustomTabList();
+}
+
+function hairSearchToast(msg) {
+  var t = document.createElement('div');
+  t.textContent = msg;
+  t.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#333;color:#fff;padding:10px 16px;border-radius:8px;z-index:9999;font-size:.85rem';
+  document.body.appendChild(t);
+  setTimeout(function(){ t.remove(); }, 3000);
+}
 
 function renderCustomize(main) {
   currentMain = main;
@@ -2356,6 +2467,41 @@ function renderCustomTabList() {
   grid.innerHTML = '';
 
   renderTagFilter();
+  // Hair photo search entry point (hairs tab only, when service is up)
+  var bar = (currentMain || document).querySelector('.search-bar');
+  if (customTab === 'hairs') {
+    hairSearchHealthCheck();
+    if (bar && hairSearchState.available && !bar.querySelector('#hairPhotoBtn')) {
+      var btn = document.createElement('button');
+      btn.id = 'hairPhotoBtn';
+      btn.type = 'button';
+      btn.textContent = lang === 'th' ? 'ค้นหาจากรูป' : 'Search by photo';
+      btn.onclick = openHairPhotoSearch;
+      bar.appendChild(btn);
+    }
+    var existingPill = (currentMain || document).querySelector('#hairSearchPill');
+    if (hairSearchState.active && bar) {
+      if (existingPill) existingPill.remove();
+      var pill = document.createElement('div');
+      pill.id = 'hairSearchPill';
+      pill.style.cssText = 'display:flex;align-items:center;gap:6px;font-size:.75rem;margin-left:8px';
+      pill.innerHTML = (hairSearchState.thumb
+        ? '<img src="' + hairSearchState.thumb + '" style="width:24px;height:24px;object-fit:cover;border-radius:4px">'
+        : '') + '<span>' + (lang === 'th' ? 'เรียงตามรูป' : 'sorted by photo') + '</span>';
+      var x = document.createElement('button');
+      x.type = 'button'; x.textContent = '✕';
+      x.onclick = clearHairSearch;
+      pill.appendChild(x);
+      bar.appendChild(pill);
+    } else if (!hairSearchState.active && existingPill) {
+      existingPill.remove();
+    }
+  } else if (bar) {
+    var staleButton = bar.querySelector('#hairPhotoBtn');
+    var stalePill = bar.querySelector('#hairSearchPill');
+    if (staleButton) staleButton.remove();
+    if (stalePill) stalePill.remove();
+  }
 
   const searchEl = (currentMain || document).querySelector('#customSearch');
   const query = searchEl ? searchEl.value.toLowerCase() : '';
@@ -2436,7 +2582,14 @@ function renderCustomTabList() {
   }
 
   // Sort
-  if (customSort === 'alpha') {
+  if (customTab === 'hairs' && hairSearchState.active && hairSearchState.order) {
+    var ord = hairSearchState.order;
+    items.sort(function(a, b) {
+      var ra = ord.has(basenameOf(a.preview)) ? ord.get(basenameOf(a.preview)) : 1e9;
+      var rb = ord.has(basenameOf(b.preview)) ? ord.get(basenameOf(b.preview)) : 1e9;
+      return ra - rb;
+    });
+  } else if (customSort === 'alpha') {
     items.sort(function(a,b) { return a.name.localeCompare(b.name); });
   } else {
     items.sort(function(a,b) { return (b.dateAdded || 0) - (a.dateAdded || 0); });
