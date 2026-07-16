@@ -1794,9 +1794,26 @@ function outfitSearchAttachUI(bar) {
     var pill = document.createElement('div');
     pill.id = 'outfitSearchPill';
     pill.style.cssText = 'display:flex;align-items:center;gap:6px;font-size:.75rem;margin-left:8px';
-    pill.innerHTML = (outfitSearchState.thumb
-      ? '<img src="' + outfitSearchState.thumb + '" style="width:24px;height:24px;object-fit:cover;border-radius:4px">'
-      : '') + '<span>' + (lang === 'th' ? 'เรียงตามรูป' : 'sorted by photo') + '</span>';
+    if (outfitSearchState.thumb) {
+      var previewName = lang === 'th' ? 'รูปอ้างอิงการค้นหา' : 'Search reference image';
+      var previewBtn = document.createElement('button');
+      previewBtn.type = 'button';
+      previewBtn.title = t('quickLookHint');
+      previewBtn.setAttribute('aria-label', t('quickLookHint'));
+      previewBtn.style.cssText = 'background:none;padding:0;border-radius:8px;flex:0 0 auto';
+      var previewImg = document.createElement('img');
+      previewImg.src = outfitSearchState.thumb;
+      previewImg.alt = previewName;
+      previewImg.style.cssText = 'width:64px;height:64px;object-fit:cover;border-radius:8px';
+      previewBtn.onclick = function() {
+        openQuickLook({preview: outfitSearchState.thumb, name: previewName});
+      };
+      previewBtn.appendChild(previewImg);
+      pill.appendChild(previewBtn);
+    }
+    var sortLabel = document.createElement('span');
+    sortLabel.textContent = lang === 'th' ? 'เรียงตามรูป' : 'sorted by photo';
+    pill.appendChild(sortLabel);
     var x = document.createElement('button');
     x.type = 'button'; x.textContent = '✕';
     x.onclick = clearOutfitSearch;
@@ -2651,9 +2668,26 @@ function renderCustomTabList() {
       var pill = document.createElement('div');
       pill.id = 'hairSearchPill';
       pill.style.cssText = 'display:flex;align-items:center;gap:6px;font-size:.75rem;margin-left:8px';
-      pill.innerHTML = (hairSearchState.thumb
-        ? '<img src="' + hairSearchState.thumb + '" style="width:24px;height:24px;object-fit:cover;border-radius:4px">'
-        : '') + '<span>' + (lang === 'th' ? 'เรียงตามรูป' : 'sorted by photo') + '</span>';
+      if (hairSearchState.thumb) {
+        var previewName = lang === 'th' ? 'รูปอ้างอิงการค้นหา' : 'Search reference image';
+        var previewBtn = document.createElement('button');
+        previewBtn.type = 'button';
+        previewBtn.title = t('quickLookHint');
+        previewBtn.setAttribute('aria-label', t('quickLookHint'));
+        previewBtn.style.cssText = 'background:none;padding:0;border-radius:8px;flex:0 0 auto';
+        var previewImg = document.createElement('img');
+        previewImg.src = hairSearchState.thumb;
+        previewImg.alt = previewName;
+        previewImg.style.cssText = 'width:64px;height:64px;object-fit:cover;border-radius:8px';
+        previewBtn.onclick = function() {
+          openQuickLook({preview: hairSearchState.thumb, name: previewName});
+        };
+        previewBtn.appendChild(previewImg);
+        pill.appendChild(previewBtn);
+      }
+      var sortLabel = document.createElement('span');
+      sortLabel.textContent = lang === 'th' ? 'เรียงตามรูป' : 'sorted by photo';
+      pill.appendChild(sortLabel);
       var x = document.createElement('button');
       x.type = 'button'; x.textContent = '✕';
       x.onclick = clearHairSearch;
