@@ -2631,6 +2631,12 @@ function renderCustomTabList() {
   var bar = (currentMain || document).querySelector('.search-bar');
   if (customTab === 'hairs') {
     hairSearchHealthCheck();
+    if (bar) {
+      var staleOutfitBtn2 = bar.querySelector('#outfitPhotoBtn');
+      var staleOutfitPill2 = bar.querySelector('#outfitSearchPill');
+      if (staleOutfitBtn2) staleOutfitBtn2.remove();
+      if (staleOutfitPill2) staleOutfitPill2.remove();
+    }
     if (bar && hairSearchState.available && !bar.querySelector('#hairPhotoBtn')) {
       var btn = document.createElement('button');
       btn.id = 'hairPhotoBtn';
