@@ -1419,6 +1419,8 @@ function renderPathBList() {
   grid.innerHTML = '';
 
   renderTagFilter('pathB', renderPathBList);
+  // Outfit photo search entry point (health-gated)
+  outfitSearchAttachUI((currentMain || document).querySelector('.search-bar'));
 
   // Collect ALL clothes from Sets (cross-model)
   const sets = avatarById('Sets');
@@ -1441,8 +1443,10 @@ function renderPathBList() {
     });
   }
 
-  // Sort
-  if (pathBFilter.sort === 'alpha') {
+  // Sort (photo-search order wins while active)
+  if (outfitSearchState.active && outfitSearchState.order) {
+    outfitSearchSort(clothes);
+  } else if (pathBFilter.sort === 'alpha') {
     clothes.sort(function(a,b) { return a.name.localeCompare(b.name); });
   } else {
     clothes.sort(function(a,b) { return (b.dateAdded || 0) - (a.dateAdded || 0); });
@@ -1663,6 +1667,155 @@ function hairSearchToast(msg) {
   t.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#333;color:#fff;padding:10px 16px;border-radius:8px;z-index:9999;font-size:.85rem';
   document.body.appendChild(t);
   setTimeout(function(){ t.remove(); }, 3000);
+}
+// --- Outfit photo search (homelab service, feature-gated on health) ---
+// Mirrors the hair block above 1:1; separate Funnel port (8443 -> 8473).
+const OUTFIT_SEARCH_API = 'https://homelab.tailf7e6b7.ts.net:8443';
+var outfitSearchState = { available: false, checked: false, active: false,
+                          order: null, thumb: null, busy: false };
+
+function outfitSearchHealthCheck(attempt) {
+  attempt = attempt || 0;
+  if (attempt === 0) {
+    if (outfitSearchState.checked) return;
+    outfitSearchState.checked = true;
+  }
+  var ctrl = new AbortController();
+  var timer = setTimeout(function(){ ctrl.abort(); }, 5000);
+  fetch(OUTFIT_SEARCH_API + '/health', { signal: ctrl.signal })
+    .then(function(r){ return r.ok ? r.json() : Promise.reject(); })
+    .then(function(h){ if (h && h.ok) { outfitSearchState.available = true; outfitSearchRerender(); } })
+    .catch(function(){
+      if (attempt < 2) setTimeout(function(){ outfitSearchHealthCheck(attempt + 1); }, 4000 * (attempt + 1));
+    })
+    .finally(function(){ clearTimeout(timer); });
+}
+
+function outfitSearchRerender() {
+  // Re-render whichever outfit surface is current (Path B grid or Clothes tab).
+  if (state.page === 'pathB') { renderPathBList(); return; }
+  if (customTab === 'clothes') renderCustomTabList();
+}
+
+function openOutfitPhotoSearch() {
+  if (outfitSearchState.busy) return;
+  var input = document.createElement('input');
+  input.type = 'file';
+  input.accept = 'image/*';
+  input.onchange = function() {
+    var file = input.files && input.files[0];
+    if (file) outfitSearchUpload(file);
+  };
+  input.click();
+}
+
+function outfitSearchDownscale(file) {
+  return new Promise(function(resolve, reject) {
+    var img = new Image();
+    var url = URL.createObjectURL(file);
+    img.onload = function() {
+      URL.revokeObjectURL(url);
+      var max = 1024, w = img.width, h = img.height;
+      if (w > max || h > max) {
+        var s = max / Math.max(w, h);
+        w = Math.round(w * s); h = Math.round(h * s);
+      }
+      var c = document.createElement('canvas'); c.width = w; c.height = h;
+      c.getContext('2d').drawImage(img, 0, 0, w, h);
+      outfitSearchState.thumb = c.toDataURL('image/jpeg', 0.7);
+      c.toBlob(function(b){ b ? resolve(b) : reject(); }, 'image/jpeg', 0.85);
+    };
+    img.onerror = function(err) { URL.revokeObjectURL(url); reject(err); };
+    img.src = url;
+  });
+}
+
+function applyOutfitSearchOrder(results) {
+  var order = new Map();
+  results.forEach(function(r, i) { order.set(r.preview, i); });
+  outfitSearchState.order = order;
+  outfitSearchState.active = true;
+  outfitSearchRerender();
+}
+
+function outfitSearchUpload(file) {
+  var previousThumb = outfitSearchState.thumb;
+  outfitSearchState.busy = true;
+  outfitSearchDownscale(file).then(function(blob) {
+    return outfitSearchPost(blob, true);
+  }).then(function(results) {
+    outfitSearchState.busy = false;
+    applyOutfitSearchOrder(results);
+  }).catch(function() {
+    outfitSearchState.thumb = previousThumb;
+    outfitSearchState.busy = false;
+    hairSearchToast(lang === 'th' ? 'ค้นหาไม่สำเร็จ ลองใหม่' : 'Search unavailable, try again');
+  });
+}
+
+function outfitSearchPost(blob, allowRetry) {
+  return fetch(OUTFIT_SEARCH_API + '/outfit-search', {
+    method: 'POST', headers: { 'Content-Type': 'image/jpeg' }, body: blob
+  }).then(function(r) {
+    if (r.status === 429 && allowRetry) {
+      return r.json().then(function(j) {
+        return new Promise(function(res, rej) {
+          setTimeout(function(){ outfitSearchPost(blob, false).then(res, rej); }, (j.retry_ms || 1500));
+        });
+      });
+    }
+    if (!r.ok) return Promise.reject();
+    return r.json().then(function(j){ return j.results; });
+  });
+}
+
+function clearOutfitSearch() {
+  outfitSearchState.active = false;
+  outfitSearchState.order = null;
+  outfitSearchState.thumb = null;
+  outfitSearchRerender();
+}
+
+function outfitSearchAttachUI(bar) {
+  // Health-gated "Search by photo" button + active-sort pill for outfit grids.
+  if (!bar) return;
+  outfitSearchHealthCheck();
+  if (outfitSearchState.available && !bar.querySelector('#outfitPhotoBtn')) {
+    var btn = document.createElement('button');
+    btn.id = 'outfitPhotoBtn';
+    btn.type = 'button';
+    btn.textContent = lang === 'th' ? 'ค้นหาจากรูป' : 'Search by photo';
+    btn.onclick = openOutfitPhotoSearch;
+    bar.appendChild(btn);
+  }
+  var existingPill = bar.querySelector('#outfitSearchPill');
+  if (outfitSearchState.active) {
+    if (existingPill) existingPill.remove();
+    var pill = document.createElement('div');
+    pill.id = 'outfitSearchPill';
+    pill.style.cssText = 'display:flex;align-items:center;gap:6px;font-size:.75rem;margin-left:8px';
+    pill.innerHTML = (outfitSearchState.thumb
+      ? '<img src="' + outfitSearchState.thumb + '" style="width:24px;height:24px;object-fit:cover;border-radius:4px">'
+      : '') + '<span>' + (lang === 'th' ? 'เรียงตามรูป' : 'sorted by photo') + '</span>';
+    var x = document.createElement('button');
+    x.type = 'button'; x.textContent = '✕';
+    x.onclick = clearOutfitSearch;
+    pill.appendChild(x);
+    bar.appendChild(pill);
+  } else if (!outfitSearchState.active && existingPill) {
+    existingPill.remove();
+  }
+}
+
+function outfitSearchSort(items) {
+  // Stable closest-first ordering; unknown previews sink to the end.
+  var ord = outfitSearchState.order;
+  items.sort(function(a, b) {
+    var ra = ord.has(basenameOf(a.preview)) ? ord.get(basenameOf(a.preview)) : 1e9;
+    var rb = ord.has(basenameOf(b.preview)) ? ord.get(basenameOf(b.preview)) : 1e9;
+    return ra - rb;
+  });
+  return items;
 }
 
 function renderCustomize(main) {
@@ -2503,11 +2656,23 @@ function renderCustomTabList() {
     } else if (!hairSearchState.active && existingPill) {
       existingPill.remove();
     }
+  } else if (customTab === 'clothes') {
+    outfitSearchAttachUI(bar);
+    if (bar) {
+      var staleHairBtn = bar.querySelector('#hairPhotoBtn');
+      var staleHairPill = bar.querySelector('#hairSearchPill');
+      if (staleHairBtn) staleHairBtn.remove();
+      if (staleHairPill) staleHairPill.remove();
+    }
   } else if (bar) {
     var staleButton = bar.querySelector('#hairPhotoBtn');
     var stalePill = bar.querySelector('#hairSearchPill');
+    var staleOutfitBtn = bar.querySelector('#outfitPhotoBtn');
+    var staleOutfitPill = bar.querySelector('#outfitSearchPill');
     if (staleButton) staleButton.remove();
     if (stalePill) stalePill.remove();
+    if (staleOutfitBtn) staleOutfitBtn.remove();
+    if (staleOutfitPill) staleOutfitPill.remove();
   }
 
   const searchEl = (currentMain || document).querySelector('#customSearch');
@@ -2596,6 +2761,8 @@ function renderCustomTabList() {
       var rb = ord.has(basenameOf(b.preview)) ? ord.get(basenameOf(b.preview)) : 1e9;
       return ra - rb;
     });
+  } else if (customTab === 'clothes' && outfitSearchState.active && outfitSearchState.order) {
+    outfitSearchSort(items);
   } else if (customSort === 'alpha') {
     items.sort(function(a,b) { return a.name.localeCompare(b.name); });
   } else {
