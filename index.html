@@ -258,7 +258,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 <body>
 <div id="app"></div>
 
-<script src="data.js?v=4c7097afe948"></script>
+<script src="data.js?v=15c5eeb2ea0f"></script>
 <script>
 // =========================================================================
 // Avatar Customizer - Web App
@@ -1575,9 +1575,11 @@ function hairSearchHealthCheck(attempt) {
     .then(function(r){ return r.ok ? r.json() : Promise.reject(); })
     .then(function(h){ if (h && h.ok) { hairSearchState.available = true; renderCustomTabList(); } })
     .catch(function(){
-      // Cold Funnel/TLS setup can exceed one attempt; retry with backoff
-      // before hiding the feature for the whole session.
+      // Cold Funnel/TLS setup can exceed one attempt; retry with backoff.
+      // After the last attempt, un-latch so a future render probes again
+      // instead of hiding the feature for the whole session.
       if (attempt < 2) setTimeout(function(){ hairSearchHealthCheck(attempt + 1); }, 4000 * (attempt + 1));
+      else hairSearchState.checked = false;
     })
     .finally(function(){ clearTimeout(timer); });
 }
@@ -1687,6 +1689,7 @@ function outfitSearchHealthCheck(attempt) {
     .then(function(h){ if (h && h.ok) { outfitSearchState.available = true; outfitSearchRerender(); } })
     .catch(function(){
       if (attempt < 2) setTimeout(function(){ outfitSearchHealthCheck(attempt + 1); }, 4000 * (attempt + 1));
+      else outfitSearchState.checked = false;  // un-latch; next render re-probes
     })
     .finally(function(){ clearTimeout(timer); });
 }
