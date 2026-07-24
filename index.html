@@ -1,0 +1,3425 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Avatar Customizer - ตัวปรับแต่งอวตาร์</title>
+<style>
+/* ===== Reset & Base ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  color-scheme:dark;
+  --bg:#050505;--surface:#0b0b0b;--surface-raised:#111111;--surface-soft:#171717;
+  --border:#292623;--border-strong:#4a443e;
+  --text:#f3eee7;--text-muted:#a8a098;--text-faint:#756e67;
+  --teal:#48dfcc;--teal-dim:#1f786f;--orange:#ff8c42;--orange-dim:#7d4928;
+  --violet:#9b80ff;--green:#63d39b;--red:#ff6b6b;
+  --radius:4px;--radius-lg:8px;--gap:16px;
+  --shadow:0 12px 28px rgba(0,0,0,.32);--shadow-lg:0 20px 48px rgba(0,0,0,.5);
+  /* Legacy aliases: inline styles in the JS renderers reference these names */
+  --surface2:var(--surface-raised);--text2:var(--text-muted);
+  --accent:var(--teal);--accent2:var(--teal-dim);--pink:var(--violet);
+}
+body{font-family:'Manrope','Noto Sans Thai',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.55;min-height:100vh}
+img{max-width:100%;height:auto;display:block}
+button{cursor:pointer;font:inherit;border:none;border-radius:var(--radius);padding:10px 20px;transition:background .15s ease,border-color .15s ease,color .15s ease,opacity .12s ease}
+button:active{opacity:.82}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+h1,h2,h3{font-weight:700;line-height:1.3}
+a{color:var(--teal)}
+
+/* ===== Layout ===== */
+#app{max-width:1440px;margin:0 auto;padding:0 32px 32px}
+.header{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:24px;flex-wrap:wrap;background:rgba(5,5,5,.96)}
+.header h1.brand{display:flex;align-items:center;gap:10px;font-size:1.05rem;font-weight:800;letter-spacing:.14em;line-height:1.2;white-space:nowrap;color:#ffd75e}
+.brand-mark{flex:none}
+.brand-sub{display:block;font-size:.6rem;font-weight:700;letter-spacing:.16em;color:var(--text-faint)}
+.header-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.lang-btn{background:transparent;color:var(--text-muted);padding:7px 12px;font-size:.75rem;font-weight:700;letter-spacing:.08em;border:1px solid var(--border)}
+.lang-btn.active{background:var(--teal);color:#050505;border-color:var(--teal)}
+.step-indicator{display:flex;gap:0;align-items:center;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-faint)}
+.step-indicator .step-count{display:none}
+.step-indicator .active{color:var(--teal);font-weight:700;box-shadow:inset 0 -2px 0 var(--teal);padding-bottom:2px}
+.step-indicator .upcoming{opacity:.45}
+.step-indicator span{margin:0 5px}
+
+/* ===== Cards / Grid ===== */
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
+@media(min-width:760px){.card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:1100px){.card-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(min-width:1280px){.card-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.card{position:relative;background:var(--surface);border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);transition:border-color .15s ease,transform .15s ease;cursor:pointer}
+@media(hover:hover){.card:hover{transform:translateY(-2px);border-color:var(--border-strong)}}
+.card.selected{border-color:var(--teal);box-shadow:0 0 0 1px var(--teal),0 0 0 3px rgba(155,128,255,.3)}
+.card-img{aspect-ratio:3/4;overflow:hidden;background:var(--surface-raised);display:flex;align-items:center;justify-content:center;position:relative}
+.card-img img{width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;z-index:2}
+.card-img .placeholder{color:var(--text-faint);font-size:.72rem;text-align:center;padding:8px;word-break:break-word;position:relative;z-index:1}
+.card-img.loading::before{content:'';position:absolute;inset:0;background:var(--surface-soft);animation:pulse 1.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+.card:focus-within{border-color:var(--teal);box-shadow:0 0 0 2px rgba(72,223,204,.35)}
+.card-select{position:absolute;inset:0;z-index:2;width:100%;height:100%;padding:0;border:0;border-radius:inherit;background:transparent;cursor:pointer}
+.card-select:focus-visible{outline:none}
+.card-name{padding:9px 11px;font-size:.82rem;font-weight:500;line-height:1.35}
+.card-badge{font-size:.64rem;padding:2px 7px;border-radius:2px;display:inline-block;margin:0 11px 9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.badge-rec{background:var(--teal);color:#050505}
+.badge-new{background:transparent;color:var(--green);border:1px solid rgba(99,211,155,.5)}
+.badge-warn{background:transparent;color:var(--orange);border:1px solid rgba(255,140,66,.5)}
+.badge-unknown{background:transparent;color:var(--red);border:1px solid rgba(255,107,107,.5)}
+.booth-link{position:absolute;top:6px;right:6px;width:24px;height:24px;border-radius:3px;background:rgba(5,5,5,.78);color:var(--text);font-size:.65rem;font-weight:700;display:flex;align-items:center;justify-content:center;text-decoration:none;line-height:1;opacity:.85;transition:opacity .15s,background .15s,color .15s;z-index:3;border:1px solid var(--border)}
+.booth-link:hover{opacity:1;background:var(--teal);color:#050505}
+
+/* ===== Buttons ===== */
+.btn-primary{background:var(--teal);color:#050505;font-weight:700;padding:12px 24px;font-size:.95rem;border:1px solid var(--teal)}
+.btn-primary:hover{filter:brightness(1.08)}
+.btn-secondary{background:transparent;color:var(--text);border:1px solid var(--border-strong)}
+.btn-secondary:hover{background:var(--surface-soft)}
+.btn-danger{background:transparent;color:var(--red);border:1px solid var(--red)}
+.btn-danger:hover{background:var(--red);color:#050505}
+.btn-success{background:var(--green);color:#050505;border:1px solid var(--green);font-weight:700}
+.btn-success:hover{filter:brightness(1.08)}
+.btn-large{padding:16px 32px;font-size:1.05rem}
+
+/* ===== Pages ===== */
+.page{display:none}
+.page.active{display:block;animation:pageEnter .22s ease}
+@keyframes pageEnter{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.page-title{font-size:1.5rem;margin-bottom:16px;font-weight:800;text-transform:uppercase}
+.hero-title{color:var(--text)}
+.page-desc{color:var(--text-muted);margin-bottom:20px}
+.btn-back{background:none;border:none;color:var(--text-muted);padding:0;margin-bottom:14px;font-size:.82rem;font-weight:600;display:inline-flex;align-items:center;gap:4px}
+.btn-back:hover{color:var(--teal)}
+.page-eyebrow{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-faint);margin-bottom:6px}
+
+/* ===== Landing ===== */
+.landing{display:grid;grid-template-columns:minmax(260px,5fr) 7fr;gap:44px;margin-top:44px;align-items:start}
+.landing-headline{font-size:2rem;font-weight:800;line-height:1.12;text-transform:uppercase;margin:4px 0 14px}
+.landing-lede{color:var(--text-muted);font-size:.95rem;max-width:38ch;padding-bottom:18px;border-bottom:1px solid var(--border)}
+.landing-options{display:flex;flex-direction:column;gap:12px;margin-top:0}
+.landing-card{display:flex;align-items:center;gap:18px;width:100%;text-align:left;appearance:none;background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:var(--radius);padding:22px 20px;min-height:72px;cursor:pointer;transition:border-color .15s ease,background .15s ease,opacity .12s ease}
+.landing-card:hover,.landing-card:focus-visible{border-color:var(--teal);background:var(--surface-soft)}
+.route-index{font-size:.85rem;font-weight:700;letter-spacing:.1em;color:var(--teal);font-family:ui-monospace,'Cascadia Code',Consolas,monospace}
+.route-body{flex:1;min-width:0}
+.landing-title{display:block;font-size:1.05rem;font-weight:700;line-height:1.3;margin-bottom:4px}
+.landing-copy{display:block;color:var(--text-muted);font-size:.85rem}
+.route-marker{font-size:.68rem;font-weight:700;letter-spacing:.12em;color:var(--text-faint);text-transform:uppercase;transition:transform .15s ease,color .15s ease;white-space:nowrap}
+.landing-card:hover .route-marker,.landing-card:focus-visible .route-marker{color:var(--teal);transform:translateX(4px)}
+.landing-meta{color:var(--text-faint);font-size:.78rem;margin-top:14px;line-height:1.7}
+.landing-meta strong{color:var(--text-muted);font-weight:600}
+
+/* ===== Search ===== */
+.search-bar{margin-bottom:14px;display:flex;gap:8px;flex-wrap:wrap}
+.search-bar input,.search-bar select{padding:10px 14px;border-radius:var(--radius);border:1px solid var(--border);background:var(--surface-raised);color:var(--text);font:inherit;transition:border-color .15s ease,box-shadow .15s ease}
+.search-bar input{flex:1;min-width:200px}
+.search-bar input:focus,.search-bar select:focus{border-color:var(--teal);box-shadow:0 0 0 2px rgba(72,223,204,.22)}
+
+/* ===== Tag Filter ===== */
+.tag-filter-area{margin-bottom:12px}
+.tag-filter-area .tag-search{width:100%;max-width:320px;padding:9px 13px;border-radius:var(--radius);border:1px solid var(--border);background:var(--surface-raised);color:var(--text);font:inherit;font-size:.82rem;margin-bottom:8px}
+.tag-chips{display:flex;flex-wrap:wrap;gap:7px;max-height:180px;overflow-y:auto;padding:2px 0}
+.tag-chip{background:transparent;color:var(--text-muted);border:1px solid var(--border);border-radius:var(--radius);padding:6px 12px;font-size:.78rem;cursor:pointer;transition:all .15s;white-space:nowrap;user-select:none}
+.tag-chip:hover{border-color:var(--teal);color:var(--text)}
+.tag-chip.selected{background:var(--teal);color:#050505;border-color:var(--teal)}
+.tag-chip.zero{opacity:.4;border-style:dashed;cursor:default}
+.tag-chip.zero:hover{border-color:var(--border);color:var(--text-muted)}
+.tag-chip .tag-count{font-size:.7rem;opacity:.7;margin-left:3px}
+.tag-clear-btn{background:none;color:var(--red);border:1px solid var(--red);border-radius:var(--radius);padding:6px 12px;font-size:.78rem;cursor:pointer;white-space:nowrap;transition:all .15s}
+.tag-clear-btn:hover{background:var(--red);color:#050505}
+.tag-no-match{color:var(--text-muted);font-size:.8rem;padding:4px 0}
+
+/* ===== Tabs ===== */
+.tabs{display:flex;gap:2px;border-bottom:1px solid var(--border);margin-bottom:16px;flex-wrap:wrap}
+.tab{padding:11px 14px;background:none;color:var(--text-muted);border-radius:0;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;position:relative}
+.tab.active{color:var(--text)}
+.tab.active::after{content:'';position:absolute;left:10px;right:10px;bottom:-1px;height:2px;background:var(--teal)}
+.tab .count{font-size:.72rem;background:none;color:var(--text-faint);padding:0;margin-left:5px;font-family:ui-monospace,'Cascadia Code',Consolas,monospace}
+.tab.active .count{color:var(--teal)}
+
+/* ===== Warnings ===== */
+.warning{background:transparent;border:1px solid var(--orange);border-left:3px solid var(--orange);border-radius:var(--radius);padding:12px 16px;margin:12px 0;font-size:.85rem}
+.warning strong{color:var(--orange)}
+.counter{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:var(--radius);font-weight:700;font-size:.82rem;background:transparent;border:1px solid}
+.counter.ok{color:var(--green);border-color:rgba(99,211,155,.45)}
+.counter.warn{color:var(--red);border-color:rgba(255,107,107,.55)}
+
+/* Selected items strip (inspector build list) */
+.selected-strip{display:flex;flex-direction:column;padding:8px 0;margin-bottom:8px}
+.selected-item{display:flex;align-items:center;gap:8px;background:transparent;border:0;border-bottom:1px solid var(--border);border-radius:0;padding:6px 2px;font-size:.8rem;flex-wrap:wrap}
+.selected-item:first-child{border-top:1px solid var(--border)}
+.selected-item img{width:32px;height:32px;object-fit:cover;border-radius:3px}
+.selected-item .remove-btn{background:none;color:var(--red);padding:2px 6px;font-size:1.05rem;line-height:1;border-radius:var(--radius);min-width:28px;min-height:28px;margin-left:auto}
+.selected-item .remove-btn:hover{background:rgba(255,107,107,.15)}
+#colorBar input[type=color]{-webkit-appearance:none;appearance:none;cursor:pointer}
+#colorBar input[type=color]::-webkit-color-swatch-wrapper{padding:0}
+#colorBar input[type=color]::-webkit-color-swatch{border-radius:2px;border:1px solid var(--border-strong)}
+
+/* ===== Customize workspace ===== */
+.customize-shell{display:flex;gap:28px;align-items:flex-start}
+.customize-inspector{flex:0 0 320px;min-width:0;position:sticky;top:72px;max-height:var(--insp-max,calc(100vh - 88px));overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;padding-right:6px}
+.customize-library{flex:1;min-width:0}
+@media(max-width:1099px){.customize-inspector{flex-basis:280px}}
+.order-type-btn{background:transparent;color:var(--text-muted);border:1px solid var(--border);border-radius:3px;padding:5px 14px;font-size:.8rem;font-weight:600;cursor:pointer;align-self:center}
+.order-type-btn.active-new{background:var(--teal);color:#050505;border-color:var(--teal)}
+.order-type-btn.active-add{background:var(--orange);color:#050505;border-color:var(--orange)}
+
+/* ===== Summary ===== */
+.summary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin:14px 0}
+.summary-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.summary-card .card-img{aspect-ratio:1}
+.summary-card .card-name{font-size:.75rem;padding:7px 9px}
+.summary-section{margin-bottom:24px;padding-top:12px;border-top:1px solid var(--border)}
+.summary-section h3{font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;display:inline-block}
+.summary-text{background:var(--surface-raised);border:1px solid var(--border);border-radius:var(--radius);padding:16px;font-family:ui-monospace,'Cascadia Code',Consolas,monospace;font-size:.85rem;white-space:pre-wrap;word-break:break-all;max-height:400px;overflow-y:auto;line-height:1.7}
+.copy-btn{margin-top:8px}
+.copy-both-note{margin-top:16px;padding:12px 16px;border-radius:var(--radius);background:transparent;border:1px solid var(--orange);border-left:3px solid var(--orange);color:var(--orange);font-weight:600;font-size:.88rem;line-height:1.5}
+
+/* Hover preview */
+.hover-preview{position:fixed;z-index:9999;pointer-events:none;border-radius:var(--radius-lg);border:1px solid var(--border-strong);box-shadow:var(--shadow-lg);max-width:350px;max-height:80vh;background:var(--surface);display:none;overflow:hidden}
+.hover-preview img{display:block;max-width:350px;max-height:400px;object-fit:contain;margin:0 auto}
+.hover-tags{padding:7px 9px;display:flex;flex-wrap:wrap;gap:4px;background:var(--surface);border-top:1px solid var(--border)}
+.hover-tag{font-size:10px;padding:2px 6px;border-radius:2px;background:var(--surface-raised);color:var(--text-muted);white-space:nowrap}
+.card-zoom{position:absolute;top:6px;left:6px;width:28px;height:28px;border-radius:3px;background:rgba(5,5,5,.78);color:var(--text);font-size:.85rem;display:flex;align-items:center;justify-content:center;z-index:3;opacity:0;transition:opacity .15s;padding:0;border:1px solid var(--border)}
+.card:hover .card-zoom{opacity:.9}
+.card-zoom:hover{opacity:1;background:var(--teal);color:#050505}
+@media (hover:none){.card-zoom{opacity:.9}}
+.ql-overlay{position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:1200;display:flex;align-items:center;justify-content:center;padding:16px}
+.ql-sheet{background:var(--surface-raised);border:1px solid var(--border);border-radius:var(--radius-lg);max-width:420px;width:100%;max-height:90vh;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.ql-sheet img{width:100%;max-height:62vh;object-fit:contain;background:var(--bg)}
+.ql-name{padding:10px 12px 0;font-size:.95rem;font-weight:700;line-height:1.35;overflow-wrap:anywhere}
+.ql-tags{padding:9px 12px;display:flex;flex-wrap:wrap;gap:5px;border-top:1px solid var(--border)}
+.ql-tag{font-size:11px;padding:2px 7px;border-radius:2px;background:var(--surface);color:var(--text-muted)}
+.ql-close{margin:10px 12px 14px;background:var(--surface-soft);color:var(--text);border:1px solid var(--border-strong);align-self:stretch}
+
+/* ===== Toast ===== */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--surface-raised);border:1px solid var(--border-strong);color:var(--text);padding:12px 22px;border-radius:var(--radius);font-weight:600;z-index:1000;box-shadow:var(--shadow);animation:fadeIn .25s}
+@keyframes fadeIn{from{opacity:0;transform:translateX(-50%) translateY(10px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
+/* Share modal */
+.share-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:1100;display:flex;align-items:center;justify-content:center}
+.share-modal{background:var(--surface-raised);border:1px solid var(--border);border-radius:var(--radius-lg);padding:26px;max-width:480px;width:90%;max-height:90vh;overflow-y:auto;box-shadow:var(--shadow)}
+.share-modal h3{margin:0 0 14px;font-size:1.05rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.share-modal label{display:block;font-size:.85rem;color:var(--text-muted);margin-bottom:5px}
+.share-modal .url-row{display:flex;gap:8px;margin-bottom:16px}
+.share-modal .url-row input{flex:1;min-width:0;font-size:.8rem;padding:9px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);color:var(--text);word-break:break-all}
+.share-modal textarea{width:100%;height:80px;font-size:.85rem;padding:9px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);color:var(--text);resize:vertical;font-family:inherit;box-sizing:border-box;margin-bottom:4px}
+.share-modal .char-remaining{font-size:.75rem;color:var(--text-muted);margin-bottom:12px}
+.share-modal .char-remaining.warn{color:var(--orange)}
+.share-modal .btn-row{display:flex;gap:8px;flex-wrap:wrap}
+.share-btn{background:var(--teal);color:#050505;border:1px solid var(--teal);padding:8px 16px;border-radius:var(--radius);cursor:pointer;font-size:.82rem;font-weight:700;transition:filter .15s ease;display:flex;align-items:center;gap:5px}
+.share-btn::before{content:'\2197';font-size:1rem}
+.share-btn:hover{filter:brightness(1.08)}
+.ql-overlay,.share-modal-overlay{animation:overlayIn .18s ease-out}
+.ql-sheet,.share-modal{animation:dialogIn .2s ease-out}
+@keyframes overlayIn{from{opacity:0}to{opacity:1}}
+@keyframes dialogIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+body.dialog-open{overflow:hidden}
+
+/* ===== Responsive ===== */
+.sticky-actions{display:none}
+.sticky-actions .sa-count{font-weight:700;font-size:.9rem}
+.sticky-actions .sa-count.over{color:var(--red)}
+.adv-toggle{display:none}
+#advOptions{transition:none}
+@media(max-width:1099px){#app{padding:0 20px 24px}}
+@media(max-width:759px){
+  #app{padding:0 14px 78px}
+  .adv-toggle{display:inline-flex;align-items:center;gap:6px;background:var(--surface-raised);color:var(--text);border:1px solid var(--border);font-size:.83rem;padding:10px 14px;margin-bottom:8px}
+  #advOptions.collapsed{display:none}
+  .sticky-actions{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;background:#0a0a0a;border-top:1px solid var(--border)}
+  .sticky-actions .btn-primary{padding:11px 22px}
+  .customize-shell{flex-direction:column;gap:0}
+  .customize-inspector{position:static;flex:none;width:100%;max-height:none;overflow:visible;overscroll-behavior:auto;padding-right:0}
+  .landing{grid-template-columns:1fr;gap:22px;margin-top:20px}
+  .landing-headline{font-size:1.5rem}
+  .header h1.brand{font-size:.95rem}
+  .step-indicator span:not(.active):not(.step-count){display:none}
+  .step-indicator .step-count{display:inline;font-weight:700;color:var(--teal)}
+  .tabs{font-size:.8rem}
+  .tab{padding:12px 10px}
+  .tag-chip,.tag-clear-btn{min-height:44px;display:inline-flex;align-items:center}
+  .share-modal{padding:20px}
+  .share-modal .url-row{flex-direction:column}
+}
+@media(max-width:420px){#app{padding:0 12px 78px}.landing-meta{font-size:.72rem}}
+.empty-state{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;color:var(--text-muted);padding:40px 16px}
+.unknown-pill{grid-column:1/-1;padding:12px 14px;border:1px dashed var(--border-strong);border-radius:var(--radius);background:transparent;color:var(--text-muted);font-size:.8rem;cursor:pointer;text-align:center}
+.unknown-pill:hover{color:var(--text);border-color:var(--teal)}
+:where(button,a,input,select,textarea,[tabindex]):focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+</style>
+<script>
+/* lz-string 1.5.0 — inlined verbatim from https://cdn.jsdelivr.net/npm/lz-string@1.5.0/libs/lz-string.min.js (removes CDN dependency; share URLs work offline) */
+var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",n="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-$",e={};function t(r,o){if(!e[r]){e[r]={};for(var n=0;n<r.length;n++)e[r][r.charAt(n)]=n}return e[r][o]}var i={compressToBase64:function(r){if(null==r)return"";var n=i._compress(r,6,function(r){return o.charAt(r)});switch(n.length%4){default:case 0:return n;case 1:return n+"===";case 2:return n+"==";case 3:return n+"="}},decompressFromBase64:function(r){return null==r?"":""==r?null:i._decompress(r.length,32,function(n){return t(o,r.charAt(n))})},compressToUTF16:function(o){return null==o?"":i._compress(o,15,function(o){return r(o+32)})+" "},decompressFromUTF16:function(r){return null==r?"":""==r?null:i._decompress(r.length,16384,function(o){return r.charCodeAt(o)-32})},compressToUint8Array:function(r){for(var o=i.compress(r),n=new Uint8Array(2*o.length),e=0,t=o.length;e<t;e++){var s=o.charCodeAt(e);n[2*e]=s>>>8,n[2*e+1]=s%256}return n},decompressFromUint8Array:function(o){if(null==o)return i.decompress(o);for(var n=new Array(o.length/2),e=0,t=n.length;e<t;e++)n[e]=256*o[2*e]+o[2*e+1];var s=[];return n.forEach(function(o){s.push(r(o))}),i.decompress(s.join(""))},compressToEncodedURIComponent:function(r){return null==r?"":i._compress(r,6,function(r){return n.charAt(r)})},decompressFromEncodedURIComponent:function(r){return null==r?"":""==r?null:(r=r.replace(/ /g,"+"),i._decompress(r.length,32,function(o){return t(n,r.charAt(o))}))},compress:function(o){return i._compress(o,16,function(o){return r(o)})},_compress:function(r,o,n){if(null==r)return"";var e,t,i,s={},u={},a="",p="",c="",l=2,f=3,h=2,d=[],m=0,v=0;for(i=0;i<r.length;i+=1)if(a=r.charAt(i),Object.prototype.hasOwnProperty.call(s,a)||(s[a]=f++,u[a]=!0),p=c+a,Object.prototype.hasOwnProperty.call(s,p))c=p;else{if(Object.prototype.hasOwnProperty.call(u,c)){if(c.charCodeAt(0)<256){for(e=0;e<h;e++)m<<=1,v==o-1?(v=0,d.push(n(m)),m=0):v++;for(t=c.charCodeAt(0),e=0;e<8;e++)m=m<<1|1&t,v==o-1?(v=0,d.push(n(m)),m=0):v++,t>>=1}else{for(t=1,e=0;e<h;e++)m=m<<1|t,v==o-1?(v=0,d.push(n(m)),m=0):v++,t=0;for(t=c.charCodeAt(0),e=0;e<16;e++)m=m<<1|1&t,v==o-1?(v=0,d.push(n(m)),m=0):v++,t>>=1}0==--l&&(l=Math.pow(2,h),h++),delete u[c]}else for(t=s[c],e=0;e<h;e++)m=m<<1|1&t,v==o-1?(v=0,d.push(n(m)),m=0):v++,t>>=1;0==--l&&(l=Math.pow(2,h),h++),s[p]=f++,c=String(a)}if(""!==c){if(Object.prototype.hasOwnProperty.call(u,c)){if(c.charCodeAt(0)<256){for(e=0;e<h;e++)m<<=1,v==o-1?(v=0,d.push(n(m)),m=0):v++;for(t=c.charCodeAt(0),e=0;e<8;e++)m=m<<1|1&t,v==o-1?(v=0,d.push(n(m)),m=0):v++,t>>=1}else{for(t=1,e=0;e<h;e++)m=m<<1|t,v==o-1?(v=0,d.push(n(m)),m=0):v++,t=0;for(t=c.charCodeAt(0),e=0;e<16;e++)m=m<<1|1&t,v==o-1?(v=0,d.push(n(m)),m=0):v++,t>>=1}0==--l&&(l=Math.pow(2,h),h++),delete u[c]}else for(t=s[c],e=0;e<h;e++)m=m<<1|1&t,v==o-1?(v=0,d.push(n(m)),m=0):v++,t>>=1;0==--l&&(l=Math.pow(2,h),h++)}for(t=2,e=0;e<h;e++)m=m<<1|1&t,v==o-1?(v=0,d.push(n(m)),m=0):v++,t>>=1;for(;;){if(m<<=1,v==o-1){d.push(n(m));break}v++}return d.join("")},decompress:function(r){return null==r?"":""==r?null:i._decompress(r.length,32768,function(o){return r.charCodeAt(o)})},_decompress:function(o,n,e){var t,i,s,u,a,p,c,l=[],f=4,h=4,d=3,m="",v=[],g={val:e(0),position:n,index:1};for(t=0;t<3;t+=1)l[t]=t;for(s=0,a=Math.pow(2,2),p=1;p!=a;)u=g.val&g.position,g.position>>=1,0==g.position&&(g.position=n,g.val=e(g.index++)),s|=(u>0?1:0)*p,p<<=1;switch(s){case 0:for(s=0,a=Math.pow(2,8),p=1;p!=a;)u=g.val&g.position,g.position>>=1,0==g.position&&(g.position=n,g.val=e(g.index++)),s|=(u>0?1:0)*p,p<<=1;c=r(s);break;case 1:for(s=0,a=Math.pow(2,16),p=1;p!=a;)u=g.val&g.position,g.position>>=1,0==g.position&&(g.position=n,g.val=e(g.index++)),s|=(u>0?1:0)*p,p<<=1;c=r(s);break;case 2:return""}for(l[3]=c,i=c,v.push(c);;){if(g.index>o)return"";for(s=0,a=Math.pow(2,d),p=1;p!=a;)u=g.val&g.position,g.position>>=1,0==g.position&&(g.position=n,g.val=e(g.index++)),s|=(u>0?1:0)*p,p<<=1;switch(c=s){case 0:for(s=0,a=Math.pow(2,8),p=1;p!=a;)u=g.val&g.position,g.position>>=1,0==g.position&&(g.position=n,g.val=e(g.index++)),s|=(u>0?1:0)*p,p<<=1;l[h++]=r(s),c=h-1,f--;break;case 1:for(s=0,a=Math.pow(2,16),p=1;p!=a;)u=g.val&g.position,g.position>>=1,0==g.position&&(g.position=n,g.val=e(g.index++)),s|=(u>0?1:0)*p,p<<=1;l[h++]=r(s),c=h-1,f--;break;case 2:return v.join("")}if(0==f&&(f=Math.pow(2,d),d++),l[c])m=l[c];else{if(c!==h)return null;m=i+i.charAt(0)}v.push(m),l[h++]=i+m.charAt(0),i=m,0==--f&&(f=Math.pow(2,d),d++)}}};return i}();"function"==typeof define&&define.amd?define(function(){return LZString}):"undefined"!=typeof module&&null!=module?module.exports=LZString:"undefined"!=typeof angular&&null!=angular&&angular.module("LZString",[]).factory("LZString",function(){return LZString});
+</script>
+</head>
+<body>
+<div id="app"></div>
+
+<script src="data.js?v=9145a81b14a3"></script>
+<script>
+// =========================================================================
+// Avatar Customizer - Web App
+// =========================================================================
+
+// Image base path - dev serve maps /library/ onto the Z:\Avatars asset library
+// (see serve_dev.py; run from C:\AvatarCode: python serve_dev.py)
+// Then access: http://localhost:8080/web-app/
+const IMAGE_BASE = '';
+
+// Build an <img> src from a library-relative preview path. Segments must be
+// URL-encoded: '#'/'?' in filenames otherwise truncate the request as
+// fragment/query (e.g. "Fullset Simple Hoodie By preto#.jpg").
+function imgSrc(preview) {
+  if (!preview) return '';
+  if (preview.indexOf('data:') === 0) return preview;
+  return IMAGE_BASE + preview.split('/').map(encodeURIComponent).join('/');
+}
+
+// =========================================================================
+
+// --- Translations ---
+const T = {
+  th: {
+    appTitle: "Avatar Customizer - ตัวปรับแต่งอวตาร์",
+    pickAvatar: "เลือกจากอวตาร์",
+    pickAvatarDesc: "เลือกอวตาร์ตัวที่ชอบก่อน แล้วค่อยเลือกเสื้อผ้า, ทรงผม, และเครื่องประดับทีหลัง",
+    pickOutfit: "เลือกจากชุด",
+    pickOutfitDesc: "เห็นชุดที่ชอบแล้ว? เลือกชุดก่อน แล้วระบบจะแสดงอวตาร์ที่ใช้ชุดนั้นได้",
+    recommended: "แนะนำ",
+    female: "ผู้หญิง",
+    male: "ผู้ชาย",
+    unknown: "อื่นๆ",
+    avatar: "อวตาร์",
+    outfit: "ชุด",
+    hair: "ทรงผม",
+    textures: "Texture / เมคอัพ",
+    accessories: "เครื่องประดับ",
+    search: "ค้นหา...",
+    filterGender: "เพศ",
+    all: "ทั้งหมด",
+    selectAvatar: "เลือกอวตาร์",
+    selectOutfit: "เลือกชุด",
+    compatibleAvatars: "อวตาร์ที่ใช้ได้",
+    selectBase: "เลือกเป็นเบส",
+    customize: "ปรับแต่ง",
+    next: "ถัดไป",
+    back: "ย้อนกลับ",
+    summary: "สรุป",
+    pieceCount: "จำนวนชิ้น",
+    maxWarning: "VRChat จำกัด Physbone 256 transforms แนะนำให้เลือกผม+ชุดรวมกันไม่เกิน 8 ชิ้น หากเกินแนะนำให้สั่งแยกเป็น 2 ตัว",
+    hairClipWarning: "เลือกกิ๊บ/เครื่องประดับติดผม แต่มีหลายทรงผม อาจปรับให้พอดีกับทุกทรงได้ยาก",
+    unknownCompat: "ไม่ทราบว่าใช้กับอวตาร์ตัวไหน กรุณาสอบถามทางร้าน",
+    hideUnknown: "ซ่อนชุดที่ไม่ทราบว่าใช้ได้กับอวตาร์ไหน",
+    showUnverified: "+{n} ชุดที่ซ่อนอยู่ (ไม่ทราบว่าใช้กับอวตาร์ตัวไหน) — กดเพื่อแสดง",
+    copyText: "คัดลอกข้อความ",
+    copied: "คัดลอกแล้ว!",
+    startOver: "เริ่มใหม่",
+    createImage: "สร้างรูปสรุปออเดอร์",
+    generatingImage: "กำลังสร้างรูป...",
+    copyBothNote: "กรุณาส่งให้ทางร้านทั้ง 2 อย่าง: (1) กด \"คัดลอกข้อความ\" และ (2) กด \"สร้างรูปสรุปออเดอร์\" เพื่อสร้างรูป แล้วกด \"คัดลอกรูป\"",
+    copyImage: "คัดลอกรูป",
+    downloadImage: "ดาวน์โหลดรูป",
+    imageCopied: "คัดลอกรูปแล้ว!",
+    copyImageUnsupported: "เบราว์เซอร์นี้คัดลอกรูปไม่ได้ — กดดาวน์โหลดแทน",
+    pieces: "ชิ้น",
+    noSelection: "ยังไม่ได้เลือก",
+    verifyWithShop: "ตรวจสอบกับทางร้าน",
+    discovered: "ใหม่",
+    pathATitle: "เลือกอวตาร์เบส",
+    pathBTitle: "เลือกชุดที่ชอบ",
+    pathBCompat: "เลือกอวตาร์ที่ใช้ชุดนี้ได้",
+    customizeTitle: "ปรับแต่งอวตาร์",
+    summaryTitle: "สรุปคำสั่ง",
+    tagFilter: "กรองด้วยแท็ก",
+    tagSearchPlaceholder: "ค้นหาแท็ก...",
+    clearTags: "ล้าง",
+    noTagMatch: "ไม่มีแท็กที่ตรงกัน",
+    share: "แชร์",
+    shareTitle: "แชร์การปรับแต่ง",
+    shareInstructions: "คัดลอกลิงก์นี้เพื่อแชร์:",
+    shareNotes: "หมายเหตุ (ส่งไปพร้อมกับลิงก์):",
+    copyLinkNotes: "คัดลอกลิงก์ + หมายเหตุ",
+    copyLinkOnly: "คัดลอกลิงก์เท่านั้น",
+    shareUrlLong: "URL ค่อนข้างยาว — อาจถูกตัดในบางแอป",
+    charsRemaining: "เหลืออีก {n} ตัวอักษร",
+    textCopied: "คัดลอกแล้ว!",
+    quickLookClose: "ปิด",
+    quickLookHint: "แตะเพื่อดูภาพใหญ่",
+    moreOptions: "ตัวเลือกเพิ่มเติม",
+    clearFilters: "ล้างตัวกรอง",
+    noMatchFilters: "ไม่พบรายการที่ตรงกับตัวกรอง",
+    progressRestored: "กู้คืนการปรับแต่งล่าสุดแล้ว",
+    confirmReset: "เริ่มใหม่ทั้งหมด? การเลือกทั้งหมดจะถูกลบ",
+  },
+  en: {
+    appTitle: "Avatar Customizer",
+    pickAvatar: "Pick Base Avatar",
+    pickAvatarDesc: "Choose an avatar first, then customize with clothes, hair, and accessories",
+    pickOutfit: "Pick Outfit First",
+    pickOutfitDesc: "Found an outfit you love? Pick it first and see which avatars it works with",
+    recommended: "Recommended",
+    female: "Female",
+    male: "Male",
+    unknown: "Other",
+    avatar: "Avatar",
+    outfit: "Outfit",
+    hair: "Hair",
+    textures: "Textures/Makeup",
+    accessories: "Accessories",
+    props: "Props",
+    search: "Search...",
+    filterGender: "Gender",
+    all: "All",
+    selectAvatar: "Select Avatar",
+    selectOutfit: "Select Outfit",
+    compatibleAvatars: "Compatible Avatars",
+    selectBase: "Select as Base",
+    customize: "Customize",
+    next: "Next",
+    back: "Back",
+    summary: "Summary",
+    pieceCount: "Pieces",
+    maxWarning: "VRChat limits to 256 Physbone transforms. Recommended: max 8 hair+cloth pieces combined. If exceeded, consider splitting into 2 avatars.",
+    hairClipWarning: "Hair clips/accessories selected with multiple hairstyles. Fit may be inconsistent across different styles.",
+    unknownCompat: "Compatibility unknown - please verify with shop",
+    hideUnknown: "Hide unknown compatibility",
+    showUnverified: "+{n} hidden (unknown compatibility) — click to show",
+    copyText: "Copy Text",
+    copied: "Copied!",
+    startOver: "Start Over",
+    createImage: "Create order image",
+    generatingImage: "Generating image...",
+    copyBothNote: "Send BOTH to the shop: (1) tap \"Copy Text\", and (2) tap \"Create order image\" to generate the image, then tap \"Copy image\".",
+    copyImage: "Copy image",
+    downloadImage: "Download image",
+    imageCopied: "Image copied!",
+    copyImageUnsupported: "This browser can't copy images — use Download instead",
+    pieces: "pcs",
+    noSelection: "Not selected",
+    verifyWithShop: "Verify with shop",
+    discovered: "New",
+    pathATitle: "Pick Base Avatar",
+    pathBTitle: "Pick Your Favorite Cloth",
+    pathBCompat: "Pick Compatible Avatar",
+    customizeTitle: "Customize Avatar",
+    summaryTitle: "Order Summary",
+    tagFilter: "Filter by Tags",
+    tagSearchPlaceholder: "Search tags...",
+    clearTags: "Clear",
+    noTagMatch: "No matching tags",
+    share: "Share",
+    shareTitle: "Share Build",
+    shareInstructions: "Copy this link to share:",
+    shareNotes: "Notes (sent with the link):",
+    copyLinkNotes: "Copy Link + Notes",
+    copyLinkOnly: "Copy Link Only",
+    shareUrlLong: "URL is getting long — it may be truncated in some apps",
+    charsRemaining: "{n} characters remaining",
+    textCopied: "Copied!",
+    quickLookClose: "Close",
+    quickLookHint: "Tap to enlarge",
+    moreOptions: "More options",
+    clearFilters: "Clear filters",
+    noMatchFilters: "Nothing matches your filters",
+    progressRestored: "Restored your last session",
+    confirmReset: "Start over? All selections will be cleared.",
+  }
+};
+
+// --- State ---
+let lang = localStorage.getItem('avatar-lang') || 'th';
+let currentMain = null;  // set by each render function before DOM queries
+let state = {
+  page: 'landing',       // landing | pathA | pathB | pathBcompat | customize | summary
+  selectedAvatar: null,  // avatar id
+  selectedClothFirst: null, // cloth object (for path B)
+  selections: {
+    hairs: [],           // [{name, preview, sourceFile}]
+    textures: [],        // [{name, preview, sourceFile}]
+    clothes: [],         // [{name, preview, sourceFile}]
+    accessories: [],     // [{name, preview, sourceFile}]
+    props: [],           // [{name, preview, sourceFile}]
+  },
+  tagFilters: {},         // { tab: Set } per-tab selected tag strings
+  tagSearches: {},        // { tab: string } per-tab tag search input
+  customerNotes: ''       // free-text notes for share URL
+};
+
+// Per-tab tag filter helpers — each tab keeps its own filter state
+function _tf(tab) {
+  if (!state.tagFilters[tab]) state.tagFilters[tab] = new Set();
+  return state.tagFilters[tab];
+}
+function _ts(tab) {
+  return state.tagSearches[tab] || '';
+}
+
+// --- Config ---
+var PRICING = {
+  baseAvatar: 99,
+  hair: 49,
+  hairColorChange: 9,
+  cloth: 49,
+  eyeColorChange: 9,
+  texture: 39,
+  accessory: 39,
+  clothToggle: 9,
+  polygonReduction: 49,
+  pcssShadows: 69,
+  dpsHole: 19,
+  dpsRod: 29
+};
+var LIMITS = {
+  maxPieces: 8,
+  maxNotesChars: 500,
+  maxUrlLength: 1500,
+  toastDuration: 2000,
+  hoverDelay: 400,
+  maxTagChips: 40,
+  shareDebounce: 300
+};
+
+function t(key) { return (T[lang] || T.en)[key] || key; }
+
+// --- Helpers ---
+function avatarById(id) { return AVATAR_DATA.avatars[id]; }
+function avatarList() {
+  return Object.values(AVATAR_DATA.avatars).filter(a => a.id !== 'Sets' && a.name !== 'Sets');
+}
+
+function clothesForAvatar(avatarId) {
+  const av = avatarById(avatarId);
+  if (!av) return [];
+  const allClothes = [...av.clothes];
+  // Also include Sets clothes compatible with this avatar
+  // Clothes with unknown compatibility (empty array) show on ALL avatars with a warning
+  const sets = avatarById('Sets');
+  if (sets) {
+    for (const c of sets.clothes) {
+      if (c.compatibleAvatars.length === 0 || c.compatibleAvatars.includes(avatarId)) {
+        allClothes.push(c);
+      }
+    }
+  }
+  return allClothes;
+}
+
+function textureCount() {
+  return state.selectedAvatar ? (avatarById(state.selectedAvatar)?.textures?.length || 0) : 0;
+}
+
+function pieceCount() {
+  return state.selections.hairs.length + state.selections.clothes.length;
+}
+
+function isOverLimit() { return pieceCount() > 8; }
+
+function hasHairClipConflict() {
+  return state.selections.hairs.length > 1 &&
+    state.selections.accessories.some(a =>
+      a.name.toLowerCase().includes('clip') ||
+      a.name.toLowerCase().includes('hairpin') ||
+      a.name.toLowerCase().includes('กิ๊บ')
+    );
+}
+
+// --- Source File Map (for share URL restore) ---
+var _sourceFileMap = null;
+function buildSourceFileMap() {
+  if (_sourceFileMap) return _sourceFileMap;
+  _sourceFileMap = {};
+  var cats = ['hairs', 'accessories', 'props'];
+  for (var ci = 0; ci < cats.length; ci++) {
+    var arr = AVATAR_DATA[cats[ci]] || [];
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].sourceFile) _sourceFileMap[arr[i].sourceFile] = arr[i];
+    }
+  }
+  // Scan textures and clothes inside each avatar + Sets
+  var avatars = AVATAR_DATA.avatars;
+  for (var avId in avatars) {
+    var av = avatars[avId];
+    for (var k = 0; k < (av.textures || []).length; k++) {
+      if (av.textures[k].sourceFile) _sourceFileMap[av.textures[k].sourceFile] = av.textures[k];
+    }
+    for (var k2 = 0; k2 < (av.clothes || []).length; k2++) {
+      if (av.clothes[k2].sourceFile) _sourceFileMap[av.clothes[k2].sourceFile] = av.clothes[k2];
+    }
+  }
+  return _sourceFileMap;
+}
+
+// --- Share URL encode/decode ---
+function encodeStateToHash() {
+  var compact = { p: state.page, a: state.selectedAvatar || undefined };
+  var sel = state.selections;
+  if (sel.hairs.length) compact.h = sel.hairs.map(function(i) { return i.sourceFile; });
+  if (sel.clothes.length) compact.c = sel.clothes.map(function(i) { return i.sourceFile; });
+  if (sel.textures.length) compact.t = sel.textures.map(function(i) { return i.sourceFile; });
+  if (sel.accessories.length) compact.x = sel.accessories.map(function(i) { return i.sourceFile; });
+  if ((sel.props || []).length) compact.r = sel.props.map(function(i) { return i.sourceFile; });
+  // Per-item notes (only encode items that have notes)
+  var itemNotes = {};
+  ['hairs','clothes','textures','accessories','props'].forEach(function(cat) {
+    var items = cat === 'props' ? (sel.props || []) : sel[cat];
+    for (var ni = 0; ni < items.length; ni++) {
+      if (items[ni].note) itemNotes[items[ni].sourceFile] = items[ni].note;
+    }
+  });
+  if (Object.keys(itemNotes).length > 0) compact.no = itemNotes;
+  // Eye colors — only encode if customer changed them
+  if (sel.eyeChanged) {
+    if (sel.eyeColorLeft) compact.el = sel.eyeColorLeft;
+    if (sel.eyeColorRight) compact.er = sel.eyeColorRight;
+  }
+  // New Avatar vs Add to Existing (only encode non-default)
+  if (sel.isNewAvatar === false) compact.nv = false;
+  // Base hair colors — only encode if changed
+  if (sel.baseHairChanged && sel.baseHairColors && sel.baseHairColors.length) {
+    compact.bh = sel.baseHairColors;
+  }
+  // Per-hair colors — encode as parallel array to h, only if any hair has custom colors
+  if (sel.hairs.length) {
+    var hc = sel.hairs.map(function(h) {
+      if (h.hairChanged && h.colors && h.colors.length) return h.colors;
+      return null;
+    });
+    if (hc.some(function(c) { return c !== null; })) compact.hc = hc;
+  }
+  if (state.customerNotes) compact.n = state.customerNotes;
+  // Tag filter state (only save non-empty tabs)
+  var f = {};
+  for (var tab in state.tagFilters) {
+    if (state.tagFilters[tab].size > 0) f[tab] = Array.from(state.tagFilters[tab]);
+  }
+  if (Object.keys(f).length > 0) compact.f = f;
+  var s = {};
+  for (var ts in state.tagSearches) {
+    if (state.tagSearches[ts]) s[ts] = state.tagSearches[ts];
+  }
+  if (Object.keys(s).length > 0) compact.s = s;
+  // Language (only if non-default)
+  var savedLang = localStorage.getItem('avatar-lang');
+  if (savedLang) compact.l = savedLang;
+  // SelectedClothFirst (Path B flow)
+  if (state.selectedClothFirst && state.selectedClothFirst.sourceFile) {
+    compact.cf = state.selectedClothFirst.sourceFile;
+  }
+  var json = JSON.stringify(compact);
+  // For short payloads, plain base64 is shorter than LZString (no dictionary overhead)
+  if (json.length < 120) {
+    // UTF-8 safe base64 (btoa chokes on non-Latin1 like Thai)
+    var bytes = new TextEncoder().encode(json);
+    var bin = '';
+    for (var i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
+    return btoa(bin);
+  }
+  return LZString.compressToEncodedURIComponent(json);
+}
+
+function saveProgress() {
+  try {
+    if (state.selectedAvatar) {
+      localStorage.setItem('avatar-progress', encodeStateToHash());
+    } else {
+      localStorage.removeItem('avatar-progress');
+    }
+  } catch(e) {}
+}
+
+function tryRestoreFromHash() {
+  var hash = location.hash.slice(1);
+  if (!hash) return false;
+  return restoreFromEncoded(hash);
+}
+
+function tryRestoreFromStorage() {
+  var saved = null;
+  try { saved = localStorage.getItem('avatar-progress'); } catch(e) {}
+  if (!saved) return false;
+  return restoreFromEncoded(saved);
+}
+
+function restoreFromEncoded(hash) {
+  function tryParse(json) {
+    if (!json) return null;
+    try {
+      var c = JSON.parse(json);
+      if (c.p && c.a) return c;
+    } catch(e) {}
+    return null;
+  }
+
+  // Try base64 first (used for short payloads, UTF-8 safe encoding)
+  var compact = null;
+  try {
+    var bin = atob(hash);
+    var bytes = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    compact = tryParse(new TextDecoder().decode(bytes));
+  } catch(e) {}
+
+  // Fall back to LZString (used for larger payloads)
+  if (!compact) {
+    try {
+      compact = tryParse(LZString.decompressFromEncodedURIComponent(hash));
+    } catch(e) {}
+  }
+
+  if (!compact) return false;
+
+  buildSourceFileMap();
+
+  var sel = {
+    hairs: [], textures: [], clothes: [], accessories: [], props: [],
+    eyeColorLeft: compact.el || '#000000',
+    eyeColorRight: compact.er || '#000000',
+    eyeChanged: !!(compact.el || compact.er),  // true only if eye colors were in the URL
+    isNewAvatar: compact.nv !== false,          // default true (New Avatar)
+    baseHairColors: compact.bh ? compact.bh.slice() : ['#000000'],
+    baseHairChanged: !!compact.bh,
+    keepBaseHair: true,
+    keepBaseOutfit: true,
+    optPolygon: false, optPCSS: false, optDPSHole: 0, optDPSRod: 0
+  };
+  ['h','c','t','x','r'].forEach(function(key, idx) {
+    var arr = compact[key];
+    if (!arr || !arr.length) return;
+    var catKeys = ['hairs','clothes','textures','accessories','props'];
+    var cat = catKeys[idx];
+    for (var i = 0; i < arr.length; i++) {
+      var item = _sourceFileMap[arr[i]];
+      if (item) {
+        // Clone items matching toggleSelection() pattern
+        if (cat === 'hairs') {
+          var clone = { name: item.name, preview: item.preview, sourceFile: item.sourceFile };
+          if (compact.hc && compact.hc[i]) {
+            clone.colors = compact.hc[i].slice();
+            clone.hairChanged = true;
+          } else if (compact.nv === false) {
+            // Add to Existing — use existing colors
+            clone.colors = [];
+            clone.hairChanged = false;
+          } else {
+            // New Avatar — default black
+            clone.colors = ['#000000'];
+          }
+          sel[cat].push(clone);
+        } else {
+          var clone2 = { name: item.name, preview: item.preview, sourceFile: item.sourceFile };
+          sel[cat].push(clone2);
+        }
+      }
+    }
+  });
+
+  // Restore per-item notes
+  if (compact.no) {
+    for (var catIdx = 0; catIdx < ['hairs','clothes','textures','accessories','props'].length; catIdx++) {
+      var catNotes = sel[['hairs','clothes','textures','accessories','props'][catIdx]];
+      for (var ni2 = 0; ni2 < catNotes.length; ni2++) {
+        var note = compact.no[catNotes[ni2].sourceFile];
+        if (note) catNotes[ni2].note = note;
+      }
+    }
+  }
+
+  state.page = compact.p;
+  state.selectedAvatar = compact.a;
+  state.selections = sel;
+  if (compact.n) state.customerNotes = compact.n;
+
+  // Restore tag filters
+  state.tagFilters = {};
+  if (compact.f) {
+    for (var tab in compact.f) {
+      state.tagFilters[tab] = new Set(compact.f[tab]);
+    }
+  }
+  state.tagSearches = {};
+  if (compact.s) {
+    for (var ts in compact.s) {
+      state.tagSearches[ts] = compact.s[ts];
+    }
+  }
+
+  // Restore selectedClothFirst
+  if (compact.cf && _sourceFileMap[compact.cf]) {
+    state.selectedClothFirst = _sourceFileMap[compact.cf];
+  }
+
+  // Restore language
+  if (compact.l) {
+    lang = compact.l;
+    localStorage.setItem('avatar-lang', lang);
+  }
+
+  return true;
+}
+
+// --- Share modal ---
+var _shareToast = null;
+var _shareToastTimer = null;
+var _shareReturnFocus = null;
+
+function setDialogOpen(open) {
+  var app = document.getElementById('app');
+  if (app) app.inert = open;
+  document.body.classList.toggle('dialog-open', open);
+}
+
+function trapDialogFocus(e) {
+  if (e.key !== 'Tab') return;
+  var focusable = Array.from(e.currentTarget.querySelectorAll('button,[href],input,textarea,select,[tabindex]:not([tabindex="-1"])')).filter(function(el) {
+    return !el.disabled && el.offsetParent !== null;
+  });
+  if (!focusable.length) return;
+  var first = focusable[0];
+  var last = focusable[focusable.length - 1];
+  if (e.shiftKey && document.activeElement === first) {
+    e.preventDefault();
+    last.focus();
+  } else if (!e.shiftKey && document.activeElement === last) {
+    e.preventDefault();
+    first.focus();
+  }
+}
+function showToast(msg, action, duration) {
+  if (_shareToastTimer) { clearTimeout(_shareToastTimer); _shareToastTimer = null; }
+  if (_shareToast) _shareToast.remove();
+  var toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.setAttribute('role', 'status');
+  toast.setAttribute('aria-live', 'polite');
+  toast.textContent = msg;
+  if (action) {
+    var btn = document.createElement('button');
+    btn.className = 'btn-secondary';
+    btn.style.cssText = 'margin-left:12px;padding:5px 12px;font-size:.8rem';
+    btn.textContent = action.label;
+    btn.onclick = function() { toast.remove(); if (_shareToast === toast) _shareToast = null; action.onClick(); };
+    toast.appendChild(btn);
+  }
+  _shareToast = toast;
+  document.body.appendChild(toast);
+  _shareToastTimer = setTimeout(function() {
+    toast.remove();
+    if (_shareToast === toast) _shareToast = null;
+    _shareToastTimer = null;
+  }, duration || LIMITS.toastDuration);
+}
+
+function openShareModal() {
+  if (document.getElementById('shareOverlay')) return;
+  _shareReturnFocus = document.activeElement;
+
+  var overlay = document.createElement('div');
+  overlay.className = 'share-modal-overlay';
+  overlay.id = 'shareOverlay';
+
+  var modal = document.createElement('div');
+  modal.className = 'share-modal';
+  modal.setAttribute('role', 'dialog');
+  modal.setAttribute('aria-modal', 'true');
+  modal.setAttribute('aria-labelledby', 'shareModalTitle');
+  modal.innerHTML = '<h3 id="shareModalTitle">' + t('shareTitle') + '</h3>' +
+    '<label>' + t('shareInstructions') + '</label>' +
+    '<div class="url-row">' +
+      '<input type="text" id="shareUrlInput" readonly>' +
+      '<button class="btn-primary" type="button" onclick="copyShareUrl()" style="white-space:nowrap">' + t('copyLinkOnly') + '</button>' +
+    '</div>' +
+    '<label>' + t('shareNotes') + '</label>' +
+    '<textarea id="shareNotesInput" maxlength="' + LIMITS.maxNotesChars + '" placeholder="' + t('shareNotes') + '">' + escapeHTML(state.customerNotes || '') + '</textarea>' +
+    '<div class="char-remaining" id="shareCharRemaining"></div>' +
+    '<div class="btn-row">' +
+      '<button class="btn-primary" type="button" onclick="copyShareAll()">' + t('copyLinkNotes') + '</button>' +
+      '<button class="btn-secondary" type="button" onclick="closeShareModal()">' + t('back') + '</button>' +
+    '</div>';
+
+  overlay.appendChild(modal);
+  document.body.appendChild(overlay);
+  setDialogOpen(true);
+
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) closeShareModal();
+  });
+  overlay.addEventListener('keydown', trapDialogFocus);
+
+  var notesInput = modal.querySelector('#shareNotesInput');
+  var urlInput = modal.querySelector('#shareUrlInput');
+  var charRem = modal.querySelector('#shareCharRemaining');
+  var debounceTimer = null;
+
+  function updateUrl() {
+    var url = getShareUrl();
+    urlInput.value = url;
+    var remaining = LIMITS.maxNotesChars - (state.customerNotes || '').length;
+    charRem.textContent = t('charsRemaining').replace('{n}', remaining);
+    charRem.className = 'char-remaining' + (remaining < 50 ? ' warn' : '');
+    if (url.length - (url.indexOf('#') + 1) > LIMITS.maxUrlLength) {
+      charRem.textContent += ' — ' + t('shareUrlLong');
+      charRem.className = 'char-remaining warn';
+    }
+  }
+
+  updateUrl();
+
+  notesInput.addEventListener('input', function() {
+    state.customerNotes = this.value;
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(updateUrl, LIMITS.shareDebounce);
+  });
+
+  setTimeout(function() {
+    urlInput.focus();
+    urlInput.select();
+  }, 100);
+}
+
+function closeShareModal() {
+  var overlay = document.getElementById('shareOverlay');
+  if (!overlay) return;
+  overlay.remove();
+  setDialogOpen(false);
+  if (_shareReturnFocus && document.contains(_shareReturnFocus)) {
+    _shareReturnFocus.focus({preventScroll:true});
+  }
+  _shareReturnFocus = null;
+}
+
+function getShareUrl() {
+  var path = window.location.pathname;
+  if (path.slice(-1) === '/') path += 'index.html';
+  return window.location.origin + path + '#' + encodeStateToHash();
+}
+
+function copyShareUrl() {
+  // Sync notes to state before encoding (bypasses debounce)
+  var notesInput = document.getElementById('shareNotesInput');
+  if (notesInput) state.customerNotes = notesInput.value;
+  var url = getShareUrl();
+  var input = document.getElementById('shareUrlInput');
+  if (!input) return;
+  input.value = url;
+  input.select();
+  navigator.clipboard.writeText(url).then(function() {
+    showToast(t('textCopied') || 'Copied!');
+  });
+}
+
+function copyShareAll() {
+  // Sync notes to state before encoding (bypasses debounce)
+  var notesInput = document.getElementById('shareNotesInput');
+  if (notesInput) state.customerNotes = notesInput.value;
+  var url = getShareUrl();
+  var input = document.getElementById('shareUrlInput');
+  if (!input) return;
+  input.value = url;
+  var text = url;
+  if (notesInput && notesInput.value.trim()) {
+    text += '\n\n' + t('shareNotes') + ':\n' + notesInput.value.trim();
+  }
+  navigator.clipboard.writeText(text).then(function() {
+    showToast(t('textCopied') || 'Copied!');
+  });
+  closeShareModal();
+}
+
+// --- Render ---
+function render() {
+  document.documentElement.lang = lang;
+  document.title = t('appTitle');
+  hideHoverPreview();
+  const app = document.getElementById('app');
+  app.innerHTML = '';
+  app.appendChild(renderHeader());
+
+  const main = document.createElement('main');
+  main.className = 'page active';
+
+  switch (state.page) {
+    case 'landing': renderLanding(main); break;
+    case 'pathA': renderPathA(main); break;
+    case 'pathB': renderPathB(main); break;
+    case 'pathBcompat': renderPathBCompat(main); break;
+    case 'customize': renderCustomize(main); break;
+    case 'summary': renderSummary(main); break;
+  }
+
+  app.appendChild(main);
+  saveProgress();
+  sizeInspector();
+}
+
+function sizeInspector() {
+  const insp = document.querySelector('.customize-inspector');
+  if (!insp) return;
+  if (!insp.offsetParent || getComputedStyle(insp).position !== 'sticky') {
+    insp.style.removeProperty('--insp-max');
+    return;
+  }
+  const top = Math.max(72, insp.getBoundingClientRect().top);
+  insp.style.setProperty('--insp-max', 'calc(100vh - ' + (top + 16) + 'px)');
+}
+window.addEventListener('scroll', sizeInspector, { passive: true });
+window.addEventListener('resize', sizeInspector);
+
+function renderHeader() {
+  const h = document.createElement('div');
+  h.className = 'header';
+
+  const title = document.createElement('h1');
+  title.className = 'brand';
+  title.innerHTML = '<svg class="brand-mark" width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M15 2c5-2 11 2 12 8 1 5-1 10-5 15-5 5-14 4-18-1C0 19 1 11 6 7c3-3 6-4 9-5z" fill="#fdf6dd"/><circle cx="15" cy="14" r="8" fill="#ffd75e"/><path d="M11 10a6 6 0 0 0-2 5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none"/></svg><span class="brand-text">AVATAR VRCHAT<span class="brand-sub">\u0E07\u0E1A\u0E19\u0E49\u0E2D\u0E22\u0E01\u0E47\u0E2A\u0E2D\u0E22\u0E44\u0E14\u0E49</span></span>';
+  title.title = t('appTitle');
+  title.setAttribute('aria-label', t('appTitle'));
+
+  const actions = document.createElement('div');
+  actions.className = 'header-actions';
+
+  // Share button (customize + summary pages only)
+  if (state.selectedAvatar && (state.page === 'customize' || state.page === 'summary')) {
+    var shareBtn = document.createElement('button');
+    shareBtn.className = 'share-btn';
+    shareBtn.textContent = t('share');
+    shareBtn.onclick = openShareModal;
+    shareBtn.title = t('shareTitle');
+    actions.appendChild(shareBtn);
+  }
+
+  for (const l of ['th', 'en']) {
+    const btn = document.createElement('button');
+    btn.className = 'lang-btn' + (lang === l ? ' active' : '');
+    btn.textContent = l === 'th' ? 'TH' : 'EN';
+    btn.setAttribute('aria-pressed', lang === l ? 'true' : 'false');
+    btn.onclick = () => { lang = l; localStorage.setItem('avatar-lang', l); render(); };
+    actions.appendChild(btn);
+  }
+
+  // Step indicator (center zone of the masthead)
+  let steps = null;
+  if (state.page !== 'landing') {
+    steps = document.createElement('div');
+    steps.className = 'step-indicator';
+    const stepNames = {
+      pathA: t('selectAvatar'), pathB: t('selectOutfit'),
+      pathBcompat: t('selectAvatar'), customize: t('customize'),
+      summary: t('summary')
+    };
+    // Per-journey trail: path B pages (or a cloth-first selection) follow the B order
+    const isPathB = state.page === 'pathB' || state.page === 'pathBcompat' || !!state.selectedClothFirst;
+    const order = isPathB ? ['pathB','pathBcompat','customize','summary'] : ['pathA','customize','summary'];
+    const cur = order.indexOf(state.page);
+    if (cur >= 0) {
+      const count = document.createElement('span');
+      count.className = 'step-count';
+      count.textContent = (cur + 1) + '/' + order.length;
+      steps.appendChild(count);
+      for (let i = 0; i < order.length; i++) {
+        if (i > 0) { const s = document.createElement('span'); s.textContent = '>'; s.className = i <= cur ? 'sep' : 'sep upcoming'; steps.appendChild(s); }
+        const s = document.createElement('span');
+        s.textContent = stepNames[order[i]] || '';
+        if (i === cur) s.className = 'active';
+        else if (i > cur) s.className = 'upcoming';
+        steps.appendChild(s);
+      }
+    } else {
+      steps = null;
+    }
+  }
+
+  h.appendChild(title);
+  if (steps) h.appendChild(steps);
+  h.appendChild(actions);
+  return h;
+}
+
+// Hover preview
+let hoverTimer = null;
+let hoverPreview = null;
+
+var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+
+function showHoverPreview(item, evt) {
+  if (isTouchDevice) return;
+  if (!hoverPreview) {
+    hoverPreview = document.createElement('div');
+    hoverPreview.className = 'hover-preview';
+    var img = document.createElement('img');
+    hoverPreview.appendChild(img);
+    var tagsDiv = document.createElement('div');
+    tagsDiv.className = 'hover-tags';
+    hoverPreview.appendChild(tagsDiv);
+    document.body.appendChild(hoverPreview);
+  }
+  var img = hoverPreview.querySelector('img');
+  img.src = imgSrc(item.preview);
+  var tagsDiv = hoverPreview.querySelector('.hover-tags');
+  var tags = item.autoTags || [];
+  if (tags.length > 0) {
+    tagsDiv.style.display = 'flex';
+    tagsDiv.innerHTML = tags.map(function(t) {
+      return '<span class="hover-tag">' + t.replace(/_/g, ' ') + '</span>';
+    }).join('');
+  } else {
+    tagsDiv.style.display = 'none';
+  }
+  hoverPreview.style.display = 'block';
+  updateHoverPosition(evt);
+}
+
+function updateHoverPosition(evt) {
+  if (!hoverPreview || hoverPreview.style.display === 'none') return;
+  var x = evt.clientX + 16, y = evt.clientY + 16;
+  if (x + 350 > window.innerWidth) x = evt.clientX - 360;
+  if (y + 500 > window.innerHeight) y = evt.clientY - 510;
+  if (y < 0) y = 4;
+  if (x < 0) x = 4;
+  hoverPreview.style.left = x + 'px';
+  hoverPreview.style.top = y + 'px';
+}
+
+function hideHoverPreview() {
+  if (hoverPreview) hoverPreview.style.display = 'none';
+  if (hoverTimer) { clearTimeout(hoverTimer); hoverTimer = null; }
+}
+
+// Dismiss hover preview on tap/click anywhere
+document.addEventListener('click', function(e) {
+  if (hoverPreview && hoverPreview.style.display !== 'none') {
+    // Don't hide if clicking on a card (the page navigation will handle it via render())
+    if (!e.target.closest('.card') && !e.target.closest('#avatarThumb') && !e.target.closest('.selected-item')) {
+      hideHoverPreview();
+    }
+  }
+});
+
+let qlOverlay = null;
+let qlReturnFocus = null;
+function openQuickLook(item) {
+  if (!item || !item.preview) return;
+  qlReturnFocus = document.activeElement;
+  if (!qlOverlay) {
+    qlOverlay = document.createElement('div');
+    qlOverlay.className = 'ql-overlay';
+    qlOverlay.addEventListener('click', function(e) { if (e.target === qlOverlay) closeQuickLook(); });
+    qlOverlay.addEventListener('keydown', trapDialogFocus);
+    document.body.appendChild(qlOverlay);
+  }
+  var tags = item.autoTags || [];
+  var name = item.name ? String(item.name) : '';
+  qlOverlay.innerHTML =
+    '<div class="ql-sheet" role="dialog" aria-modal="true"' + (name ? ' aria-labelledby="quickLookTitle"' : '') + '>' +
+      '<img src="' + imgSrc(item.preview) + '" alt="">' +
+      (name ? '<div class="ql-name" id="quickLookTitle">' + escapeHTML(name) + '</div>' : '') +
+      (tags.length ? '<div class="ql-tags">' + tags.map(function(x){return '<span class="ql-tag">' + escapeHTML(x.replace(/_/g,' ')) + '</span>';}).join('') + '</div>' : '') +
+      '<button class="ql-close" type="button">' + t('quickLookClose') + '</button>' +
+    '</div>';
+  var sheet = qlOverlay.querySelector('.ql-sheet');
+  var closeBtn = qlOverlay.querySelector('.ql-close');
+  if (!name) sheet.setAttribute('aria-label', t('quickLookHint'));
+  qlOverlay.querySelector('img').alt = name;
+  closeBtn.onclick = closeQuickLook;
+  qlOverlay.style.display = 'flex';
+  setDialogOpen(true);
+  closeBtn.focus({preventScroll:true});
+}
+function closeQuickLook() {
+  if (!qlOverlay || qlOverlay.style.display === 'none') return;
+  qlOverlay.style.display = 'none';
+  setDialogOpen(false);
+  if (qlReturnFocus && document.contains(qlReturnFocus)) {
+    qlReturnFocus.focus({preventScroll:true});
+  }
+  qlReturnFocus = null;
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key !== 'Escape') return;
+  if (document.getElementById('shareOverlay')) closeShareModal();
+  else closeQuickLook();
+});
+
+function renderCard(item, onClick, badges = []) {
+  const card = document.createElement('div');
+  card.className = 'card';
+  if (item._selected) card.classList.add('selected');
+
+  // Hover preview on the image
+  if (item.preview) {
+    card.addEventListener('mouseenter', function(evt) {
+      hoverTimer = setTimeout(function() { showHoverPreview(item, evt); }, LIMITS.hoverDelay);
+    });
+    card.addEventListener('mouseleave', hideHoverPreview);
+  }
+
+  const imgWrap = document.createElement('div');
+  imgWrap.className = 'card-img' + (item.preview ? ' loading' : '');
+  // Text placeholder (always visible behind image)
+  const placeholder = document.createElement('span');
+  placeholder.className = 'placeholder';
+  placeholder.textContent = item.name;
+  imgWrap.appendChild(placeholder);
+  // Image (loads over placeholder if available)
+  if (item.preview) {
+    const img = document.createElement('img');
+    img.loading = 'lazy';
+    img.alt = item.name;
+    img.onerror = function() {
+      this.style.display = 'none';
+      imgWrap.classList.remove('loading');
+    };
+    img.onload = function() {
+      placeholder.style.display = 'none';
+      imgWrap.classList.remove('loading');
+    };
+    img.src = imgSrc(item.preview);
+    imgWrap.appendChild(img);
+  }
+  card.appendChild(imgWrap);
+
+  const name = document.createElement('div');
+  name.className = 'card-name';
+  name.textContent = item.name;
+  name.title = item.name;
+  card.appendChild(name);
+
+  for (const b of badges) {
+    const badge = document.createElement('span');
+    badge.className = 'card-badge ' + (b.cls || '');
+    badge.textContent = b.text;
+    card.appendChild(badge);
+  }
+
+  // Booth.pm search link
+  if (item.boothSearch) {
+    const booth = document.createElement('a');
+    booth.className = 'booth-link';
+    booth.href = item.boothSearch;
+    booth.target = '_blank';
+    booth.rel = 'noopener';
+    booth.title = lang === 'th' ? 'ค้นหาใน Booth.pm' : 'Search on Booth.pm';
+    booth.textContent = 'B';
+    booth.onclick = function(e) { e.stopPropagation(); };
+    card.appendChild(booth);
+  }
+
+  if (item.preview) {
+    const zoom = document.createElement('button');
+    zoom.className = 'card-zoom';
+    zoom.type = 'button';
+    zoom.textContent = '🔍';
+    zoom.title = t('quickLookHint');
+    zoom.setAttribute('aria-label', t('quickLookHint'));
+    zoom.onclick = function(e) { e.stopPropagation(); openQuickLook(item); };
+    card.appendChild(zoom);
+  }
+  if (onClick) {
+    const action = document.createElement('button');
+    action.className = 'card-select';
+    action.type = 'button';
+    action.setAttribute('aria-label', item.name);
+    action.onclick = function() { onClick(item); };
+    card.appendChild(action);
+  }
+  return card;
+}
+
+// Empty state for card grids: friendlier message + a way out when filters caused it
+function renderEmptyState(grid, canClear, onClear, fallbackMsg) {
+  var wrap = document.createElement('div');
+  wrap.className = 'empty-state';
+  var msg = document.createElement('p');
+  msg.textContent = canClear ? t('noMatchFilters') : (fallbackMsg || (lang==='th'?'ไม่มีรายการ':'No items'));
+  wrap.appendChild(msg);
+  if (canClear) {
+    var btn = document.createElement('button');
+    btn.className = 'btn-secondary';
+    btn.textContent = t('clearFilters');
+    btn.onclick = onClear;
+    wrap.appendChild(btn);
+  }
+  grid.appendChild(wrap);
+}
+
+// --- Landing ---
+function renderLanding(main) {
+  main.innerHTML = `
+    <div class="landing">
+      <div class="landing-intro">
+        <div class="page-eyebrow">AVATAR VRCHAT</div>
+        <div class="landing-headline">${lang==='th' ? 'เลือกวิธีการเริ่มต้น' : 'Select your route'}</div>
+        <p class="landing-lede">${lang==='th' ? 'คุณสามารถเลือกอวตาร์ก่อนแล้วค่อยเลือกชุด หรือเลือกชุดที่ชอบแล้วดูว่าชุดนั้นใช้กับอวตาร์ตัวไหนได้บ้าง' : 'You can pick an avatar first, or find which avatar fits your favorite outfit'}</p>
+      </div>
+      <div class="landing-routes">
+        <div class="landing-options">
+          <button class="landing-card" type="button" onclick="startPathA()">
+            <span class="route-index" aria-hidden="true">01</span>
+            <span class="route-body">
+              <span class="landing-title">${t('pickAvatar')}</span>
+              <span class="landing-copy">${t('pickAvatarDesc')}</span>
+            </span>
+            <span class="route-marker" aria-hidden="true">${lang==='th' ? 'เปิด' : 'Open'}</span>
+          </button>
+          <button class="landing-card" type="button" onclick="startPathB()">
+            <span class="route-index" aria-hidden="true">02</span>
+            <span class="route-body">
+              <span class="landing-title">${t('pickOutfit')}</span>
+              <span class="landing-copy">${t('pickOutfitDesc')}</span>
+            </span>
+            <span class="route-marker" aria-hidden="true">${lang==='th' ? 'เปิด' : 'Open'}</span>
+          </button>
+        </div>
+        <p class="landing-meta">
+          ${lang==='th' ? `${avatarList().length} อวตาร์` : `${avatarList().length} avatars`} ·
+          ${lang==='th' ? 'อวตาร์แนะนำ: ' : 'Recommended: '}
+          ${AVATAR_DATA.recommended.female.map(a => `<strong>${a}</strong>`).join(', ')}
+          ${lang==='th' ? '(ผู้หญิง)' : '(Female)'} ·
+          ${AVATAR_DATA.recommended.male.map(a => `<strong>${a}</strong>`).join(', ')}
+          ${lang==='th' ? '(ผู้ชาย)' : '(Male)'}
+        </p>
+      </div>
+    </div>
+  `;
+}
+
+function startPathA() { state.page = 'pathA'; state.selectedClothFirst = null; render(); }
+function startPathB() { state.page = 'pathB'; state.selectedClothFirst = null; render(); }
+
+// --- Path A: Avatar Grid ---
+let pathAFilter = { search: '', gender: 'all', sort: 'outfits' };
+
+function renderPathA(main) {
+  currentMain = main;
+  main.innerHTML = `
+    <button class="btn-back" onclick="state.page='landing';render()">← ${t('back')}</button>
+    <div class="page-eyebrow">${lang==='th' ? 'แคตตาล็อก' : 'Catalog'}</div>
+    <div class="page-title">${t('pathATitle')}</div>
+    <div class="search-bar">
+      <input type="text" id="searchA" placeholder="${t('search')}" value="${pathAFilter.search}" oninput="pathAFilter.search=this.value;renderPathAList()">
+      <select id="genderA" onchange="pathAFilter.gender=this.value;renderPathAList()">
+        <option value="all" ${pathAFilter.gender==='all'?'selected':''}>${t('all')}</option>
+        <option value="female" ${pathAFilter.gender==='female'?'selected':''}>${t('female')}</option>
+        <option value="male" ${pathAFilter.gender==='male'?'selected':''}>${t('male')}</option>
+        <option value="recommended" ${pathAFilter.gender==='recommended'?'selected':''}>${t('recommended')}</option>
+      </select>
+      <select id="sortA" onchange="pathAFilter.sort=this.value;renderPathAList()">
+        <option value="date" ${pathAFilter.sort==='date'?'selected':''}>${lang==='th'?'ล่าสุด':'Latest'}</option>
+        <option value="alpha" ${pathAFilter.sort==='alpha'?'selected':''}>A-Z</option>
+        <option value="outfits" ${pathAFilter.sort==='outfits'?'selected':''}>${lang==='th'?'ชุดเยอะสุด':'Most outfits'}</option>
+      </select>
+    </div>
+    <div class="card-grid" id="avatarGrid"></div>
+  `;
+  renderPathAList();
+}
+
+function renderPathAList() {
+  const grid = (currentMain || document).querySelector('#avatarGrid');
+  if (!grid) return;
+  grid.innerHTML = '';
+
+  let avatars = avatarList();
+
+  // Filter
+  if (pathAFilter.search) {
+    const q = pathAFilter.search.toLowerCase();
+    avatars = avatars.filter(a => a.name.toLowerCase().includes(q));
+  }
+  if (pathAFilter.gender === 'female') avatars = avatars.filter(a => a.gender === 'female');
+  if (pathAFilter.gender === 'male') avatars = avatars.filter(a => a.gender === 'male');
+  if (pathAFilter.gender === 'recommended') avatars = avatars.filter(a => a.recommended);
+
+  // Pre-compute outfit counts for all avatars
+  var setsClothes = (avatarById('Sets') || {}).clothes || [];
+  var outfitCountMap = {};
+  for (var ai = 0; ai < avatars.length; ai++) {
+    var avId = avatars[ai].id;
+    var count = (avatarById(avId) || {}).clothes ? avatarById(avId).clothes.length : 0;
+    for (var si = 0; si < setsClothes.length; si++) {
+      if ((setsClothes[si].compatibleAvatars || []).indexOf(avId) >= 0) count++;
+    }
+    outfitCountMap[avId] = count;
+  }
+
+  // Sort
+  if (pathAFilter.sort === 'outfits') {
+    avatars.sort(function(a,b) { return (outfitCountMap[b.id] || 0) - (outfitCountMap[a.id] || 0); });
+  } else if (pathAFilter.sort === 'alpha') {
+    avatars.sort((a,b) => a.name.localeCompare(b.name));
+  } else {
+    avatars.sort((a,b) => (b.dateAdded||0) - (a.dateAdded||0) || (b.recommended?1:0) - (a.recommended?1:0));
+  }
+
+  for (const av of avatars) {
+    const badges = [];
+    if (av.recommended) badges.push({text: t('recommended'), cls: 'badge-rec'});
+    var oc = outfitCountMap[av.id] || 0;
+    if (oc > 0) badges.push({text: oc + ' ' + t('outfit'), cls: 'badge-new'});
+    if (av._discovered) badges.push({text: t('discovered'), cls: 'badge-new'});
+
+    const card = renderCard(av, (item) => {
+      state.selectedAvatar = item.id;
+      state.selections = { hairs: [], textures: [], clothes: [], accessories: [], eyeColorLeft: '#000000', eyeColorRight: '#000000' };
+      state.tagFilters = {};
+      state.tagSearches = {};
+      state.page = 'customize';
+      render();
+    }, badges);
+
+    // Gender indicator
+    if (av.gender === 'female' || av.gender === 'male') {
+      const g = document.createElement('span');
+      g.className = 'card-badge';
+      g.style.cssText = 'background:var(--surface2);color:var(--text2)';
+      g.textContent = av.gender === 'female' ? 'F' : 'M';
+      card.appendChild(g);
+    }
+
+    grid.appendChild(card);
+  }
+
+  if (avatars.length === 0) {
+    renderEmptyState(grid, !!(pathAFilter.search || pathAFilter.gender !== 'all'), function() {
+      pathAFilter.search = '';
+      pathAFilter.gender = 'all';
+      renderPathA(currentMain);
+    }, lang==='th'?'ไม่พบอวตาร์':'No avatars found');
+  }
+}
+
+// --- Path B: Cloth Gallery ---
+let pathBFilter = { search: '', sort: 'date' };
+
+function renderPathB(main) {
+  currentMain = main;
+  state.tagFilters = {};
+  state.tagSearches = {};
+  main.innerHTML = `
+    <button class="btn-back" onclick="state.page='landing';render()">← ${t('back')}</button>
+    <div class="page-eyebrow">${lang==='th' ? 'แคตตาล็อก' : 'Catalog'}</div>
+    <div class="page-title">${t('pathBTitle')}</div>
+    <div class="search-bar">
+      <input type="text" id="searchB" placeholder="${t('search')}" value="${pathBFilter.search}" oninput="pathBFilter.search=this.value;renderPathBList()">
+      <select id="sortB" onchange="pathBFilter.sort=this.value;renderPathBList()">
+        <option value="date" ${pathBFilter.sort==='date'?'selected':''}>${lang==='th'?'ล่าสุด':'Latest'}</option>
+        <option value="alpha" ${pathBFilter.sort==='alpha'?'selected':''}>A-Z</option>
+      </select>
+    </div>
+    <div id="tagFilterArea" class="tag-filter-area"></div>
+    <div class="card-grid" id="clothGrid"></div>
+  `;
+  renderPathBList();
+}
+
+function renderPathBList() {
+  const grid = (currentMain || document).querySelector('#clothGrid');
+  if (!grid) return;
+  var scrollY = window.scrollY;
+  grid.innerHTML = '';
+
+  renderTagFilter('pathB', renderPathBList);
+  // Outfit photo search entry point (health-gated)
+  outfitSearchAttachUI((currentMain || document).querySelector('.search-bar'));
+
+  // Collect ALL clothes from Sets (cross-model)
+  const sets = avatarById('Sets');
+  if (!sets) { grid.innerHTML = '<p>No clothes found</p>'; return; }
+
+  let clothes = [...sets.clothes];
+
+  if (pathBFilter.search) {
+    const q = pathBFilter.search.toLowerCase();
+    clothes = clothes.filter(c => c.name.toLowerCase().includes(q));
+  }
+
+  // Tag filter (AND logic)
+  var pathBTags = _tf('pathB');
+  if (pathBTags.size > 0) {
+    var selectedTags = Array.from(pathBTags);
+    clothes = clothes.filter(function(c) {
+      var tags = c.autoTags || [];
+      return selectedTags.every(function(t) { return tags.indexOf(t) >= 0; });
+    });
+  }
+
+  // Sort (photo-search order wins while active)
+  if (outfitSearchState.active && outfitSearchState.order) {
+    outfitSearchSort(clothes);
+  } else if (pathBFilter.sort === 'alpha') {
+    clothes.sort(function(a,b) { return a.name.localeCompare(b.name); });
+  } else {
+    clothes.sort(function(a,b) { return (b.dateAdded || 0) - (a.dateAdded || 0); });
+  }
+
+  for (const c of clothes) {
+    const compat = c.compatibleAvatars.length;
+    const badges = [];
+    if (compat === 0) badges.push({text: t('unknownCompat'), cls: 'badge-unknown'});
+    else badges.push({text: `${compat} ${t('avatar').toLowerCase()}`, cls: 'badge-rec'});
+
+    const card = renderCard(c, (item) => {
+      state.selectedClothFirst = item;
+      state.page = 'pathBcompat';
+      render();
+    }, badges);
+
+    grid.appendChild(card);
+  }
+
+  if (clothes.length === 0) {
+    renderEmptyState(grid, !!(pathBFilter.search || _tf('pathB').size), function() {
+      pathBFilter.search = '';
+      renderPathB(currentMain);  // resets tag filters wholesale
+    });
+  }
+
+  window.scrollTo(0, scrollY);
+}
+
+// --- Path B Compatible Avatars ---
+function escapeHTML(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+function renderPathBCompat(main) {
+  currentMain = main;
+  try {
+  const cloth = state.selectedClothFirst;
+  if (!cloth) { main.innerHTML = '<p>No cloth selected. <button onclick="state.page=\'pathB\';render()">Back</button></p>'; return; }
+
+  const compatIds = cloth.compatibleAvatars || [];
+  let compatAvatars = compatIds.map(function(id) { return avatarById(id); }).filter(Boolean);
+
+  // If no known compatible avatars, show ALL avatars with warning
+  const isUnknown = compatAvatars.length === 0;
+  if (isUnknown) {
+    compatAvatars = avatarList();
+  }
+
+  var parts = [];
+  parts.push('<div class="page-title">' + t('pathBCompat') + '</div>');
+  parts.push('<p class="page-desc">');
+  parts.push((lang==='th' ? 'ชุดที่เลือก: ' : 'Selected outfit: ') + '<strong>' + escapeHTML(cloth.name) + '</strong><br>');
+  if (isUnknown) {
+    parts.push('<span style="color:var(--orange)">' + (lang==='th' ? 'ไม่ทราบอวตาร์ที่ใช้ได้แน่ชัด กรุณาตรวจสอบกับทางร้าน' : 'Compatibility unknown - showing all avatars. Please verify with shop.') + '</span>');
+  } else {
+    parts.push(lang==='th' ? 'ใช้ได้กับ ' + compatAvatars.length + ' อวตาร์' : 'Compatible with ' + compatAvatars.length + ' avatars');
+  }
+  parts.push('</p>');
+  if (isUnknown) {
+    parts.push('<div class="warning"><strong>!</strong> ' + t('unknownCompat') + '</div>');
+  }
+  parts.push('<div class="card-grid" id="compatGrid"></div>');
+  parts.push('<div style="margin-top:16px;display:flex;gap:8px">');
+  parts.push('<button class="btn-secondary" onclick="state.page=\'pathB\';render()">' + t('back') + '</button>');
+  parts.push('</div>');
+  main.innerHTML = parts.join('');
+
+  var grid = main.querySelector('#compatGrid');
+  if (!grid) return;
+
+  compatAvatars.sort(function(a,b) { return (b.recommended?1:0) - (a.recommended?1:0); });
+
+  for (var i = 0; i < compatAvatars.length; i++) {
+    var av = compatAvatars[i];
+    var badges = [];
+    if (av.recommended) badges.push({text: t('recommended'), cls: 'badge-rec'});
+    if (isUnknown) badges.push({text: t('verifyWithShop'), cls: 'badge-warn'});
+
+    var card = renderCard(av, (function(item) {
+      state.selectedAvatar = item.id;
+      state.selections = { hairs: [], textures: [], clothes: [], accessories: [], eyeColorLeft: '#000000', eyeColorRight: '#000000' };
+      state.tagFilters = {};
+      state.tagSearches = {};
+      if (cloth) state.selections.clothes = [cloth];
+      state.page = 'customize';
+      render();
+    }), badges);
+
+    if (card) grid.appendChild(card);
+  }
+  } catch(e) {
+    main.innerHTML = '<div style="padding:20px;color:red;background:#111111"><h3>Error in renderPathBCompat:</h3><pre>' + e.message + '</pre><pre style="font-size:11px">' + (e.stack || 'no stack') + '</pre><p>cloth name: ' + (state.selectedClothFirst ? state.selectedClothFirst.name : 'null') + '</p><button onclick="state.page=\'pathB\';render()">Back</button></div>';
+  }
+}
+
+// --- Customize Hub ---
+let customTab = 'hairs';
+let customSort = 'date';
+let hideUnknownCompat = true;
+// --- Hair photo search (homelab service, feature-gated on health) ---
+const HAIR_SEARCH_API = 'https://homelab.tailf7e6b7.ts.net';
+var hairSearchState = { available: false, checked: false, active: false,
+                        order: null, thumb: null, busy: false };
+
+function basenameOf(preview) {
+  // Deployed previews are already images/<safe-name>; the service returns
+  // that bare safe-name. Dev paths still need scanner.safe_image_name rules.
+  var p = String(preview || '');
+  if (p.indexOf('images/') === 0) return p.slice(p.lastIndexOf('/') + 1);
+  return p.replace(/[\\\/ #?]/g, '_').replace(/\.[^.]*$/, '') + '.jpg';
+}
+
+function hairSearchHealthCheck(attempt) {
+  attempt = attempt || 0;
+  if (attempt === 0) {
+    if (hairSearchState.checked) return;
+    hairSearchState.checked = true;
+  }
+  var ctrl = new AbortController();
+  var timer = setTimeout(function(){ ctrl.abort(); }, 5000);
+  fetch(HAIR_SEARCH_API + '/health', { signal: ctrl.signal })
+    .then(function(r){ return r.ok ? r.json() : Promise.reject(); })
+    .then(function(h){ if (h && h.ok) { hairSearchState.available = true; renderCustomTabList(); } })
+    .catch(function(){
+      // Cold Funnel/TLS setup can exceed one attempt; retry with backoff.
+      // After the last attempt, un-latch so a future render probes again
+      // instead of hiding the feature for the whole session.
+      if (attempt < 2) setTimeout(function(){ hairSearchHealthCheck(attempt + 1); }, 4000 * (attempt + 1));
+      else hairSearchState.checked = false;
+    })
+    .finally(function(){ clearTimeout(timer); });
+}
+
+function openHairPhotoSearch() {
+  if (hairSearchState.busy) return;
+  var input = document.createElement('input');
+  input.type = 'file';
+  input.accept = 'image/*';
+  input.onchange = function() {
+    var file = input.files && input.files[0];
+    if (file) hairSearchUpload(file);
+  };
+  input.click();
+}
+
+function hairSearchDownscale(file) {
+  return new Promise(function(resolve, reject) {
+    var img = new Image();
+    var url = URL.createObjectURL(file);
+    img.onload = function() {
+      URL.revokeObjectURL(url);
+      var max = 1024, w = img.width, h = img.height;
+      if (w > max || h > max) {
+        var s = max / Math.max(w, h);
+        w = Math.round(w * s); h = Math.round(h * s);
+      }
+      var c = document.createElement('canvas'); c.width = w; c.height = h;
+      c.getContext('2d').drawImage(img, 0, 0, w, h);
+      hairSearchState.thumb = c.toDataURL('image/jpeg', 0.7);
+      c.toBlob(function(b){ b ? resolve(b) : reject(); }, 'image/jpeg', 0.85);
+    };
+    img.onerror = function(err) { URL.revokeObjectURL(url); reject(err); };
+    img.src = url;
+  });
+}
+
+function applyHairSearchOrder(results) {
+  var order = new Map();
+  results.forEach(function(r, i) { order.set(r.preview, i); });
+  hairSearchState.order = order;
+  hairSearchState.active = true;
+  renderCustomTabList();
+}
+
+function hairSearchUpload(file) {
+  var previousThumb = hairSearchState.thumb;
+  hairSearchState.busy = true;
+  hairSearchDownscale(file).then(function(blob) {
+    return hairSearchPost(blob, true);
+  }).then(function(results) {
+    hairSearchState.busy = false;
+    applyHairSearchOrder(results);
+  }).catch(function() {
+    hairSearchState.thumb = previousThumb;
+    hairSearchState.busy = false;
+    hairSearchToast(lang === 'th' ? 'ค้นหาไม่สำเร็จ ลองใหม่' : 'Search unavailable, try again');
+  });
+}
+
+function hairSearchPost(blob, allowRetry) {
+  return fetch(HAIR_SEARCH_API + '/hair-search', {
+    method: 'POST', headers: { 'Content-Type': 'image/jpeg' }, body: blob
+  }).then(function(r) {
+    if (r.status === 429 && allowRetry) {
+      return r.json().then(function(j) {
+        return new Promise(function(res, rej) {
+          setTimeout(function(){ hairSearchPost(blob, false).then(res, rej); }, (j.retry_ms || 1500));
+        });
+      });
+    }
+    if (!r.ok) return Promise.reject();
+    return r.json().then(function(j){ return j.results; });
+  });
+}
+
+function clearHairSearch() {
+  hairSearchState.active = false;
+  hairSearchState.order = null;
+  hairSearchState.thumb = null;
+  renderCustomTabList();
+}
+
+function hairSearchToast(msg) {
+  var t = document.createElement('div');
+  t.textContent = msg;
+  t.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#333;color:#fff;padding:10px 16px;border-radius:8px;z-index:9999;font-size:.85rem';
+  document.body.appendChild(t);
+  setTimeout(function(){ t.remove(); }, 3000);
+}
+// --- Outfit photo search (homelab service, feature-gated on health) ---
+// Mirrors the hair block above 1:1; separate Funnel port (8443 -> 8473).
+const OUTFIT_SEARCH_API = 'https://homelab.tailf7e6b7.ts.net:8443';
+var outfitSearchState = { available: false, checked: false, active: false,
+                          order: null, thumb: null, busy: false };
+
+function outfitSearchHealthCheck(attempt) {
+  attempt = attempt || 0;
+  if (attempt === 0) {
+    if (outfitSearchState.checked) return;
+    outfitSearchState.checked = true;
+  }
+  var ctrl = new AbortController();
+  var timer = setTimeout(function(){ ctrl.abort(); }, 5000);
+  fetch(OUTFIT_SEARCH_API + '/health', { signal: ctrl.signal })
+    .then(function(r){ return r.ok ? r.json() : Promise.reject(); })
+    .then(function(h){ if (h && h.ok) { outfitSearchState.available = true; outfitSearchRerender(); } })
+    .catch(function(){
+      if (attempt < 2) setTimeout(function(){ outfitSearchHealthCheck(attempt + 1); }, 4000 * (attempt + 1));
+      else outfitSearchState.checked = false;  // un-latch; next render re-probes
+    })
+    .finally(function(){ clearTimeout(timer); });
+}
+
+function outfitSearchRerender() {
+  // Re-render whichever outfit surface is current (Path B grid or Clothes tab).
+  if (state.page === 'pathB') { renderPathBList(); return; }
+  if (customTab === 'clothes') renderCustomTabList();
+}
+
+function openOutfitPhotoSearch() {
+  if (outfitSearchState.busy) return;
+  var input = document.createElement('input');
+  input.type = 'file';
+  input.accept = 'image/*';
+  input.onchange = function() {
+    var file = input.files && input.files[0];
+    if (file) outfitSearchUpload(file);
+  };
+  input.click();
+}
+
+function outfitSearchDownscale(file) {
+  return new Promise(function(resolve, reject) {
+    var img = new Image();
+    var url = URL.createObjectURL(file);
+    img.onload = function() {
+      URL.revokeObjectURL(url);
+      var max = 1024, w = img.width, h = img.height;
+      if (w > max || h > max) {
+        var s = max / Math.max(w, h);
+        w = Math.round(w * s); h = Math.round(h * s);
+      }
+      var c = document.createElement('canvas'); c.width = w; c.height = h;
+      c.getContext('2d').drawImage(img, 0, 0, w, h);
+      outfitSearchState.thumb = c.toDataURL('image/jpeg', 0.7);
+      c.toBlob(function(b){ b ? resolve(b) : reject(); }, 'image/jpeg', 0.85);
+    };
+    img.onerror = function(err) { URL.revokeObjectURL(url); reject(err); };
+    img.src = url;
+  });
+}
+
+function applyOutfitSearchOrder(results) {
+  var order = new Map();
+  results.forEach(function(r, i) { order.set(r.preview, i); });
+  outfitSearchState.order = order;
+  outfitSearchState.active = true;
+  outfitSearchRerender();
+}
+
+function outfitSearchUpload(file) {
+  var previousThumb = outfitSearchState.thumb;
+  outfitSearchState.busy = true;
+  outfitSearchDownscale(file).then(function(blob) {
+    return outfitSearchPost(blob, true);
+  }).then(function(results) {
+    outfitSearchState.busy = false;
+    applyOutfitSearchOrder(results);
+  }).catch(function() {
+    outfitSearchState.thumb = previousThumb;
+    outfitSearchState.busy = false;
+    hairSearchToast(lang === 'th' ? 'ค้นหาไม่สำเร็จ ลองใหม่' : 'Search unavailable, try again');
+  });
+}
+
+function outfitSearchPost(blob, allowRetry) {
+  return fetch(OUTFIT_SEARCH_API + '/outfit-search', {
+    method: 'POST', headers: { 'Content-Type': 'image/jpeg' }, body: blob
+  }).then(function(r) {
+    if (r.status === 429 && allowRetry) {
+      return r.json().then(function(j) {
+        return new Promise(function(res, rej) {
+          setTimeout(function(){ outfitSearchPost(blob, false).then(res, rej); }, (j.retry_ms || 1500));
+        });
+      });
+    }
+    if (!r.ok) return Promise.reject();
+    return r.json().then(function(j){ return j.results; });
+  });
+}
+
+function clearOutfitSearch() {
+  outfitSearchState.active = false;
+  outfitSearchState.order = null;
+  outfitSearchState.thumb = null;
+  outfitSearchRerender();
+}
+
+function outfitSearchAttachUI(bar) {
+  // Health-gated "Search by photo" button + active-sort pill for outfit grids.
+  if (!bar) return;
+  outfitSearchHealthCheck();
+  if (outfitSearchState.available && !bar.querySelector('#outfitPhotoBtn')) {
+    var btn = document.createElement('button');
+    btn.id = 'outfitPhotoBtn';
+    btn.type = 'button';
+    btn.textContent = lang === 'th' ? 'ค้นหาจากรูป' : 'Search by photo';
+    btn.onclick = openOutfitPhotoSearch;
+    bar.appendChild(btn);
+  }
+  var existingPill = bar.querySelector('#outfitSearchPill');
+  if (outfitSearchState.active) {
+    if (existingPill) existingPill.remove();
+    var pill = document.createElement('div');
+    pill.id = 'outfitSearchPill';
+    pill.style.cssText = 'display:flex;align-items:center;gap:6px;font-size:.75rem;margin-left:8px';
+    if (outfitSearchState.thumb) {
+      var previewName = lang === 'th' ? 'รูปอ้างอิงการค้นหา' : 'Search reference image';
+      var previewBtn = document.createElement('button');
+      previewBtn.type = 'button';
+      previewBtn.title = t('quickLookHint');
+      previewBtn.setAttribute('aria-label', t('quickLookHint'));
+      previewBtn.style.cssText = 'background:none;padding:0;border-radius:8px;flex:0 0 auto';
+      var previewImg = document.createElement('img');
+      previewImg.src = outfitSearchState.thumb;
+      previewImg.alt = previewName;
+      previewImg.style.cssText = 'width:64px;height:64px;object-fit:cover;border-radius:8px';
+      previewBtn.onclick = function() {
+        openQuickLook({preview: outfitSearchState.thumb, name: previewName});
+      };
+      previewBtn.appendChild(previewImg);
+      pill.appendChild(previewBtn);
+    }
+    var sortLabel = document.createElement('span');
+    sortLabel.textContent = lang === 'th' ? 'เรียงตามรูป' : 'sorted by photo';
+    pill.appendChild(sortLabel);
+    var x = document.createElement('button');
+    x.type = 'button'; x.textContent = '✕';
+    x.onclick = clearOutfitSearch;
+    pill.appendChild(x);
+    bar.appendChild(pill);
+  } else if (!outfitSearchState.active && existingPill) {
+    existingPill.remove();
+  }
+}
+
+function outfitSearchSort(items) {
+  // Stable closest-first ordering; unknown previews sink to the end.
+  var ord = outfitSearchState.order;
+  items.sort(function(a, b) {
+    var ra = ord.has(basenameOf(a.preview)) ? ord.get(basenameOf(a.preview)) : 1e9;
+    var rb = ord.has(basenameOf(b.preview)) ? ord.get(basenameOf(b.preview)) : 1e9;
+    return ra - rb;
+  });
+  return items;
+}
+
+function renderCustomize(main) {
+  currentMain = main;
+  const av = avatarById(state.selectedAvatar);
+  if (!av) { state.page = 'landing'; render(); return; }
+
+  const pc = pieceCount();
+  const over = isOverLimit();
+  const clipConflict = hasHairClipConflict();
+
+  main.innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:12px">
+      <div class="page-title" style="margin:0;display:flex;align-items:center;gap:12px">
+        ${av.preview ? `<img src="${imgSrc(av.preview)}" id="avatarThumb" style="width:48px;height:48px;object-fit:cover;border-radius:6px;border:2px solid var(--accent);cursor:pointer" onerror="this.style.display='none'">` : ''}
+        <span>${t('customizeTitle')}: <strong>${av.name}</strong></span>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button class="btn-secondary" onclick="goBackFromCustomize()">${t('back')}</button>
+        <button class="btn-primary" onclick="state.page='summary';render()">${t('summary')} &rarr;</button>
+      </div>
+    </div>
+
+    <div class="customize-shell">
+    <div class="customize-inspector">
+    <div class="page-eyebrow">${lang==='th' ? 'ปรับแต่ง' : 'Build'}</div>
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="counter ${over?'warn':'ok'}">${t('pieceCount')}: ${pc}/8</span>
+      ${over ? `<span style="color:var(--red);font-size:.85rem">${t('maxWarning')}</span>` : ''}
+    </div>
+    ${clipConflict ? `<div class="warning"><strong>!</strong> ${t('hairClipWarning')}</div>` : ''}
+
+    <button class="adv-toggle" type="button" id="advToggle" onclick="toggleAdvancedOptions()">${t('moreOptions')} <span id="advCaret">▾</span></button>
+    <div id="advOptions" class="${isTouchDevice ? 'collapsed' : ''}">
+    <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:4px;font-size:.85rem">
+      <label style="display:flex;align-items:center;gap:6px;cursor:pointer;color:var(--text)">
+        <input type="checkbox" id="keepBaseHair" ${state.selections.keepBaseHair !== false ? 'checked' : ''} onchange="state.selections.keepBaseHair=this.checked;renderSelectedStrip()">
+        ${lang==='th' ? 'เก็บผมตัวเบส' : 'Keep base hair'}
+      </label>
+      <label style="display:flex;align-items:center;gap:6px;cursor:pointer;color:var(--text)">
+        <input type="checkbox" id="keepBaseOutfit" ${state.selections.keepBaseOutfit !== false ? 'checked' : ''} onchange="state.selections.keepBaseOutfit=this.checked;renderSelectedStrip()">
+        ${lang==='th' ? 'เก็บชุดตัวเบส' : 'Keep base outfit'}
+      </label>
+      <span style="font-size:.85rem;font-weight:600;color:var(--text2);display:flex;align-items:center">${lang==='th' ? 'ประเภทคำสั่ง:' : 'Order type:'}</span>
+      <button id="btnNewAvatar" class="order-type-btn${state.selections.isNewAvatar !== false ? ' active-new' : ''}" onclick="state.selections.isNewAvatar=true;updateOrderTypeButtons()">${lang==='th' ? 'ทำอวตาร์ตัวใหม่' : 'New Avatar'}</button>
+      <button id="btnAddExisting" class="order-type-btn${state.selections.isNewAvatar === false ? ' active-add' : ''}" onclick="state.selections.isNewAvatar=false;updateOrderTypeButtons()">${lang==='th' ? 'เพิ่มของใส่ตัวเดิม' : 'Add to Existing'}</button>
+    </div>
+
+    <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:4px;font-size:.83rem;align-items:center">
+      <label style="display:flex;align-items:center;gap:6px;cursor:pointer;color:var(--text)">
+        <input type="checkbox" id="optPolygon" ${state.selections.optPolygon ? 'checked' : ''} onchange="state.selections.optPolygon=this.checked;renderSelectedStrip()">
+        ${lang==='th' ? 'ลด Polygon (49 บ.)' : 'Reduce polygons (49 b.)'}
+      </label>
+      <label style="display:flex;align-items:center;gap:6px;cursor:pointer;color:var(--text)">
+        <input type="checkbox" id="optPCSS" ${state.selections.optPCSS ? 'checked' : ''} onchange="state.selections.optPCSS=this.checked;renderSelectedStrip()">
+        ${lang==='th' ? 'PCSS เงา (69 บ.)' : 'PCSS shadows (69 b.)'}
+      </label>
+      <span style="color:var(--text2);font-size:.8rem">DPS (18+):</span>
+      <label style="display:flex;align-items:center;gap:4px;cursor:pointer;color:var(--text);font-size:.78rem">
+        <input type="number" id="optDPSHole" value="${state.selections.optDPSHole || 0}" min="0" max="5" style="width:36px;background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:4px;padding:2px 4px;font:inherit" onchange="state.selections.optDPSHole=parseInt(this.value)||0;renderSelectedStrip()">
+        ${lang==='th' ? 'รู (19)' : 'holes (19)'}
+      </label>
+      <label style="display:flex;align-items:center;gap:4px;cursor:pointer;color:var(--text);font-size:.78rem">
+        <input type="number" id="optDPSRod" value="${state.selections.optDPSRod || 0}" min="0" max="5" style="width:36px;background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:4px;padding:2px 4px;font:inherit" onchange="state.selections.optDPSRod=parseInt(this.value)||0;renderSelectedStrip()">
+        ${lang==='th' ? 'แท่ง (29)' : 'rods (29)'}
+      </label>
+    </div>
+    </div>
+
+    <div id="selectedStrip" class="selected-strip"></div>
+    <div id="colorBar"></div>
+    </div>
+    <div class="customize-library">
+
+    <div class="tabs" style="align-items:center">
+      <button class="tab ${customTab==='hairs'?'active':''}" onclick="switchTab('hairs')">${t('hair')} <span class="count">${state.selections.hairs.length}</span></button>
+      <button class="tab ${customTab==='textures'?'active':''}" onclick="switchTab('textures')">${t('textures')} <span class="count">${state.selections.textures.length}</span></button>
+      <button class="tab ${customTab==='clothes'?'active':''}" onclick="switchTab('clothes')">${t('outfit')} <span class="count">${state.selections.clothes.length}</span></button>
+      <button class="tab ${customTab==='accessories'?'active':''}" onclick="switchTab('accessories')">${t('accessories')} <span class="count">${state.selections.accessories.length}</span></button>
+      <label style="display:flex;align-items:center;gap:4px;font-size:.75rem;cursor:pointer;color:var(--text2);margin-left:auto">
+        <input type="checkbox" id="hideUnknown" ${hideUnknownCompat?'checked':''} onchange="hideUnknownCompat=this.checked;renderCustomTabList()">
+        ${t('hideUnknown')} <span id="hideUnknownCount"></span>
+      </label>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="customSearch" placeholder="${t('search')}" oninput="renderCustomTabList()">
+      <select id="customSortSel" onchange="customSort=this.value;renderCustomTabList()">
+        <option value="date" ${customSort==='date'?'selected':''}>${lang==='th'?'ล่าสุด':'Latest'}</option>
+        <option value="alpha" ${customSort==='alpha'?'selected':''}>A-Z</option>
+      </select>
+    </div>
+
+    <div id="tagFilterArea" class="tag-filter-area"></div>
+
+    <div class="card-grid" id="customGrid"></div>
+    </div>
+    </div>
+    <div class="sticky-actions">
+      <span class="sa-count ${over?'over':''}">${t('pieceCount')}: ${pc}/8</span>
+      <button class="btn-primary" onclick="state.page='summary';render()">${t('summary')} &rarr;</button>
+    </div>
+  `;
+
+  renderCustomTabList();
+
+  // Hover preview on avatar thumbnail
+  var avThumb2 = (currentMain || document).querySelector('#avatarThumb');
+  if (avThumb2 && av.preview) {
+    avThumb2.addEventListener('mouseenter', function(e) { hoverTimer = setTimeout(function(){ showHoverPreview(av, e); }, LIMITS.hoverDelay); });
+    avThumb2.addEventListener('mouseleave', hideHoverPreview);
+  }
+
+}
+
+function toggleAdvancedOptions() {
+  var box = document.getElementById('advOptions');
+  var caret = document.getElementById('advCaret');
+  if (!box) return;
+  box.classList.toggle('collapsed');
+  if (caret) caret.textContent = box.classList.contains('collapsed') ? '▾' : '▴';
+}
+
+function renderColorBar() {
+  var colorBar = (currentMain || document).querySelector('#colorBar');
+  if (!colorBar) return;
+  colorBar.innerHTML = '';
+
+  var isExisting = state.selections.isNewAvatar === false;
+
+  // Base hair color
+  if (state.selections.keepBaseHair !== false) {
+    if (!state.selections.baseHairColors) state.selections.baseHairColors = ['#000000'];
+    if (state.selections.baseHairChanged === undefined) state.selections.baseHairChanged = false;
+    var bcolors = state.selections.baseHairColors;
+    var hairBase = document.createElement('div');
+    hairBase.style.cssText = 'display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 0;margin-bottom:4px';
+    hairBase.innerHTML = '<span style="font-weight:600;font-size:.9rem;color:var(--accent)">' + (lang==='th'?'สีผมตัวเบส:':'Base Hair Color:') + '</span>';
+    if (!state.selections.baseHairChanged) {
+      hairBase.innerHTML += '<span style="font-size:.8rem;color:var(--text2);background:var(--surface);border-radius:4px;padding:4px 10px">' + (isExisting ? (lang==='th'?'สีเดิม':'Existing') : (lang==='th'?'เหมือนรูปปก':'As thumbnail')) + '</span>';
+      var hchg = document.createElement('button');
+      var hcost = isExisting ? (lang==='th'?'เปลี่ยน (9 บาท)':'Change (9 baht)') : (lang==='th'?'เปลี่ยน':'Change');
+      hchg.textContent = hcost;
+      hchg.style.cssText = 'background:var(--surface2);color:var(--orange);border:1px dashed var(--orange);border-radius:4px;padding:3px 8px;font-size:.7rem;cursor:pointer';
+      hchg.onclick = function() { state.selections.baseHairChanged = true; renderSelectedStrip(); };
+      hairBase.appendChild(hchg);
+    } else {
+      for (var bci = 0; bci < bcolors.length; bci++) {
+        var bcw = document.createElement('span');
+        bcw.style.cssText = 'display:inline-flex;align-items:center;gap:2px';
+        var bi = document.createElement('input');
+        bi.type = 'color'; bi.value = bcolors[bci];
+        bi.style.cssText = 'width:32px;height:32px;border:1px solid var(--border);border-radius:6px;cursor:pointer;padding:1px';
+        bi.onchange = (function(idx) { return function() { state.selections.baseHairColors[idx] = this.value; /* no re-render: keeps color picker open on mobile */ }; })(bci);
+        bcw.appendChild(bi);
+        if (bcolors.length > 1) {
+          var bx = document.createElement('button');
+          bx.textContent = 'x'; bx.style.cssText = 'background:none;color:var(--red);border:none;padding:0 2px;font-size:.8rem;cursor:pointer;line-height:1';
+          bx.onclick = (function(idx) { return function() {
+            state.selections.baseHairColors.splice(idx, 1);
+            if (state.selections.baseHairColors.length === 0) state.selections.baseHairColors = ['#000000'];
+            renderSelectedStrip();
+          }; })(bci);
+          bcw.appendChild(bx);
+        }
+        hairBase.appendChild(bcw);
+      }
+      var badd = document.createElement('button');
+      badd.textContent = '+'; badd.title = lang==='th'?'เพิ่มสีสลับ':'Add toggle color';
+      badd.style.cssText = 'background:var(--surface2);color:var(--accent);border:1px dashed var(--accent);border-radius:4px;width:28px;height:28px;cursor:pointer;font-size:1rem;line-height:1;padding:0;align-self:center';
+      badd.onclick = function() { state.selections.baseHairColors.push('#000000'); renderSelectedStrip(); };
+      hairBase.appendChild(badd);
+      if (isExisting) {
+        var hrev = document.createElement('button');
+        hrev.textContent = isExisting ? (lang==='th'?'สีเดิม':'Revert') : (lang==='th'?'รูปปก':'Thumbnail');
+        hrev.title = isExisting ? (lang==='th'?'กลับไปใช้สีเดิม':'Revert to existing color') : (lang==='th'?'กลับไปใช้สีตามรูปปก':'Revert to thumbnail color');
+        hrev.style.cssText = 'background:var(--surface2);color:var(--text2);border:1px solid var(--border);border-radius:4px;padding:2px 6px;font-size:.65rem;cursor:pointer';
+        hrev.onclick = function() { state.selections.baseHairChanged = false; state.selections.baseHairColors = ['#000000']; renderSelectedStrip(); };
+        hairBase.appendChild(hrev);
+      }
+      if (state.selections.hairs.length > 0) {
+        var ball = document.createElement('button');
+        ball.textContent = lang==='th'?'ใช้ทั้งหมด':'All'; ball.title = lang==='th'?'ใช้สีนี้กับทุกผม':'Apply to all hairs';
+        ball.style.cssText = 'background:var(--surface2);color:var(--text2);border:1px solid var(--border);border-radius:4px;padding:2px 8px;font-size:.7rem;cursor:pointer;white-space:nowrap';
+        ball.onclick = applyBaseHairColorToAll;
+        hairBase.appendChild(ball);
+      }
+    }
+    colorBar.appendChild(hairBase);
+  }
+
+  // Eye colors
+  if (!state.selections.eyeColorLeft) state.selections.eyeColorLeft = '#000000';
+  if (!state.selections.eyeColorRight) state.selections.eyeColorRight = '#000000';
+  if (state.selections.eyeChanged === undefined) state.selections.eyeChanged = false;
+
+  function renderOneEye(side, colorVal, otherColorVal) {
+    var label = side === 'left' ? (lang==='th'?'สีตาซ้าย:':'Left Eye:') : (lang==='th'?'สีตาขวา:':'Right Eye:');
+    var div = document.createElement('div');
+    div.style.cssText = 'display:flex;align-items:center;gap:8px;padding:8px 0;margin-bottom:4px';
+    div.innerHTML = '<span style="font-weight:600;font-size:.9rem;color:var(--pink)">' + label + '</span>';
+    if (!state.selections.eyeChanged) {
+      div.innerHTML += '<span style="font-size:.8rem;color:var(--text2);background:var(--surface);border-radius:4px;padding:4px 10px">' + (isExisting ? (lang==='th'?'สีเดิม':'Existing') : (lang==='th'?'เหมือนรูปปก':'As thumbnail')) + '</span>';
+      if (side === 'left') {
+        var echg2 = document.createElement('button');
+        var eyeCost;
+        if (isExisting && state.selections.textures.length === 0) {
+          eyeCost = lang==='th'?'เปลี่ยน (9 บาท)':'Change (9 baht)';
+        } else if (isExisting && state.selections.textures.length > 0) {
+          eyeCost = lang==='th'?'เปลี่ยน (ฟรี)':'Change (free)';
+        } else {
+          eyeCost = lang==='th'?'เปลี่ยน':'Change';
+        }
+        echg2.textContent = eyeCost;
+        var eyeColor = (isExisting && state.selections.textures.length === 0) ? 'var(--orange)' : (isExisting ? 'var(--green)' : 'var(--orange)');
+        echg2.style.cssText = 'background:var(--surface2);color:' + eyeColor + ';border:1px dashed ' + eyeColor + ';border-radius:4px;padding:3px 8px;font-size:.7rem;cursor:pointer';
+        echg2.onclick = function() { state.selections.eyeChanged = true; renderSelectedStrip(); };
+        div.appendChild(echg2);
+      }
+    } else {
+      var inp = document.createElement('input');
+      inp.type = 'color'; inp.value = colorVal;
+      inp.style.cssText = 'width:32px;height:32px;border:1px solid var(--border);border-radius:6px;cursor:pointer;padding:1px';
+      inp.onchange = function() {
+        if (side === 'left') state.selections.eyeColorLeft = this.value;
+        else state.selections.eyeColorRight = this.value;
+        // No re-render: keeps color picker open on mobile
+      };
+      div.appendChild(inp);
+      var hexSpan = document.createElement('span');
+      hexSpan.style.cssText = 'font-size:.8rem;font-family:monospace;color:var(--text2)';
+      hexSpan.textContent = colorVal.toUpperCase();
+      div.appendChild(hexSpan);
+      var revertBtn = document.createElement('button');
+      revertBtn.textContent = isExisting ? (lang==='th'?'สีเดิม':'Revert') : (lang==='th'?'รูปปก':'Thumbnail');
+      revertBtn.title = lang==='th'?'กลับไปใช้สีเดิม':'Revert to existing color';
+      revertBtn.style.cssText = 'background:var(--surface2);color:var(--text2);border:1px solid var(--border);border-radius:4px;padding:2px 6px;font-size:.65rem;cursor:pointer';
+      revertBtn.onclick = function() { state.selections.eyeChanged = false; renderSelectedStrip(); };
+      div.appendChild(revertBtn);
+      if (side === 'left') {
+        var bothBtn = document.createElement('button');
+        bothBtn.textContent = lang==='th'?'ทั้งสองข้าง':'Both';
+        bothBtn.title = lang==='th'?'ใช้สีเดียวกันทั้งสองข้าง':'Apply to both eyes';
+        bothBtn.style.cssText = 'background:var(--surface2);color:var(--pink);border:1px solid var(--pink);border-radius:4px;padding:2px 6px;font-size:.65rem;cursor:pointer';
+        bothBtn.onclick = function() { state.selections.eyeColorRight = state.selections.eyeColorLeft; renderSelectedStrip(); };
+        div.appendChild(bothBtn);
+      }
+    }
+    return div;
+  }
+
+  colorBar.appendChild(renderOneEye('left', state.selections.eyeColorLeft, state.selections.eyeColorRight));
+  colorBar.appendChild(renderOneEye('right', state.selections.eyeColorRight, state.selections.eyeColorLeft));
+
+  // Toggle note
+  var hasClothToggles = false;
+  for (var cti = 0; cti < state.selections.clothes.length; cti++) {
+    if ((state.selections.clothes[cti].toggles || []).length > 0) { hasClothToggles = true; break; }
+  }
+  if (hasClothToggles) {
+    var togNote = document.createElement('div');
+    togNote.style.cssText = 'font-size:.7rem;color:var(--text2);padding:4px 0';
+    togNote.textContent = lang==='th' ? '* ของบนหัว (หมวก หูฟัง หูแมว ฯลฯ) ทำปุ่มเปิดปิดให้ฟรีอยู่แล้ว ไม่ต้องเพิ่มในช่องปุ่ม' : '* Head items (hats, headphones, cat ears, etc.) already get free toggles - no need to add them';
+    colorBar.appendChild(togNote);
+  }
+
+  // Hair item colors
+  var hairItems = state.selections.hairs;
+  if (hairItems.length > 0) {
+    var hairDiv = document.createElement('div');
+    hairDiv.style.cssText = 'display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:8px 0;margin-bottom:8px';
+    hairDiv.innerHTML = '<span style="font-weight:600;font-size:.9rem;color:var(--accent)">' + (lang==='th'?'สีผม:':'Hair Colors:') + '</span>';
+    // Multi-color hint
+    var hasMultiColor = false;
+    for (var hi2 = 0; hi2 < hairItems.length; hi2++) {
+      if ((hairItems[hi2].colors || []).length > 1) { hasMultiColor = true; break; }
+    }
+    if (hasMultiColor) {
+      hairDiv.innerHTML += '<span style="font-size:.7rem;color:var(--text2);background:var(--surface2);padding:3px 8px;border-radius:10px">&#8635; ' + (lang==='th'?'สีสลับ: เปลี่ยนสีตามลำดับเมื่อกด Toggle':'Color toggle') + '</span>';
+    }
+    colorBar.appendChild(hairDiv);
+    for (var hi = 0; hi < hairItems.length; hi++) {
+      var hitem = hairItems[hi];
+      if (hitem.hairChanged === undefined) hitem.hairChanged = false;
+      if (!hitem.colors) hitem.colors = hitem.color ? [hitem.color] : (isExisting ? [] : ['#000000']);
+      var colors = hitem.colors;
+      var wrapper = document.createElement('span');
+      wrapper.style.cssText = 'display:inline-flex;align-items:center;gap:4px;background:var(--surface);border-radius:8px;padding:6px 12px;border:2px solid var(--accent);flex-wrap:wrap;margin-right:8px';
+      var nameSpan = document.createElement('span');
+      nameSpan.style.cssText = 'font-size:.8rem;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap';
+      nameSpan.textContent = hitem.name.length > 18 ? hitem.name.slice(0,16) + '..' : hitem.name;
+      nameSpan.title = hitem.name;
+      wrapper.appendChild(nameSpan);
+      if (isExisting && !hitem.hairChanged && colors.length === 0) {
+        var hstat = document.createElement('span');
+        hstat.style.cssText = 'font-size:.7rem;color:var(--text2)';
+        hstat.textContent = lang==='th'?'สีเดิม':'Existing';
+        wrapper.appendChild(hstat);
+        var hchg2 = document.createElement('button');
+        hchg2.textContent = lang==='th'?'เปลี่ยน':'Change';
+        hchg2.style.cssText = 'background:var(--surface2);color:var(--accent);border:1px dashed var(--accent);border-radius:4px;padding:2px 6px;font-size:.65rem;cursor:pointer';
+        hchg2.onclick = (function(hIdx) { return function() {
+          state.selections.hairs[hIdx].hairChanged = true;
+          state.selections.hairs[hIdx].colors = ['#000000'];
+          renderSelectedStrip();
+        }; })(hi);
+        wrapper.appendChild(hchg2);
+      } else {
+        for (var ci = 0; ci < colors.length; ci++) {
+          var cw = document.createElement('span');
+          cw.style.cssText = 'display:inline-flex;align-items:center;gap:2px';
+          var inp = document.createElement('input');
+          inp.type = 'color'; inp.value = colors[ci];
+          inp.style.cssText = 'width:28px;height:28px;border:1px solid var(--border);border-radius:6px;cursor:pointer;padding:1px';
+          inp.onchange = (function(hIdx, cIdx) { return function() { setHairColor(hIdx, cIdx, this.value); }; })(hi, ci);
+          cw.appendChild(inp);
+          if (colors.length > 1) {
+            var rmv = document.createElement('button');
+            rmv.textContent = 'x';
+            rmv.style.cssText = 'background:none;color:var(--red);border:none;padding:0 2px;font-size:.8rem;cursor:pointer;line-height:1';
+            rmv.onclick = (function(hIdx, cIdx) { return function() { removeHairColor(hIdx, cIdx); }; })(hi, ci);
+            cw.appendChild(rmv);
+          }
+          wrapper.appendChild(cw);
+        }
+        var addBtn = document.createElement('button');
+        addBtn.textContent = '+'; addBtn.title = lang==='th'?'เพิ่มสีสลับ':'Add toggle color';
+        addBtn.style.cssText = 'background:var(--surface2);color:var(--accent);border:1px dashed var(--accent);border-radius:4px;width:28px;height:28px;cursor:pointer;font-size:1rem;line-height:1;padding:0;align-self:center';
+        addBtn.onclick = (function(hIdx) { return function() { addHairColor(hIdx); }; })(hi);
+        wrapper.appendChild(addBtn);
+        if (isExisting) {
+          var hrev2 = document.createElement('button');
+          hrev2.textContent = lang==='th'?'สีเดิม':'Revert';
+          hrev2.style.cssText = 'background:var(--surface2);color:var(--text2);border:1px solid var(--border);border-radius:4px;padding:2px 6px;font-size:.65rem;cursor:pointer';
+          hrev2.onclick = (function(hIdx) { return function() {
+            state.selections.hairs[hIdx].hairChanged = false;
+            state.selections.hairs[hIdx].colors = [];
+            renderSelectedStrip();
+          }; })(hi);
+          wrapper.appendChild(hrev2);
+        }
+      }
+      if (hairItems.length >= 1) {
+        var allBtn = document.createElement('button');
+        allBtn.textContent = lang==='th'?'ใช้ทั้งหมด':'All'; allBtn.title = lang==='th'?'ใช้สีนี้กับทุกผม':'Apply to all hairs';
+        allBtn.style.cssText = 'background:var(--surface2);color:var(--text2);border:1px solid var(--border);border-radius:4px;padding:2px 6px;font-size:.65rem;cursor:pointer;white-space:nowrap';
+        allBtn.onclick = (function(hIdx) { return function() { applyColorsToAll(hIdx); }; })(hi);
+        wrapper.appendChild(allBtn);
+      }
+      hairDiv.appendChild(wrapper);
+    }
+  }
+
+}
+
+function updateOrderTypeButtons() {
+  var newBtn = document.getElementById('btnNewAvatar');
+  var addBtn = document.getElementById('btnAddExisting');
+  if (!newBtn || !addBtn) return;
+  var isNew = state.selections.isNewAvatar !== false;
+  newBtn.classList.toggle('active-new', isNew);
+  addBtn.classList.toggle('active-add', !isNew);
+  renderColorBar();
+  renderSelectedStrip();
+}
+
+function renderSelectedStrip() {
+  const strip = (currentMain || document).querySelector('#selectedStrip');
+  if (!strip) return;
+  strip.innerHTML = '';
+
+  const allItems = [
+    ...state.selections.hairs.map(function(s) { s._cat = 'hairs'; return s; }),
+    ...state.selections.textures.map(function(s) { s._cat = 'textures'; return s; }),
+    ...state.selections.clothes.map(function(s) { s._cat = 'clothes'; return s; }),
+    ...state.selections.accessories.map(function(s) { s._cat = 'accessories'; return s; }),
+  ];
+
+  // Update counters (always, even with no selections)
+  var pc = pieceCount();
+  var counterEl = (currentMain || document).querySelector('.counter');
+  if (counterEl) {
+    counterEl.textContent = t('pieceCount') + ': ' + pc + '/8';
+    counterEl.className = 'counter ' + (pc > 8 ? 'warn' : 'ok');
+  }
+  var tabs = (currentMain || document).querySelectorAll('.tab .count');
+  if (tabs.length >= 4) {
+    tabs[0].textContent = state.selections.hairs.length;
+    tabs[1].textContent = state.selections.textures.length;
+    tabs[2].textContent = state.selections.clothes.length;
+    tabs[3].textContent = state.selections.accessories.length;
+  }
+  var warnEl = (currentMain || document).querySelector('.warning');
+  if (!warnEl && pc > LIMITS.maxPieces) {
+    warnEl = document.createElement('div');
+    warnEl.className = 'warning';
+    warnEl.innerHTML = '<strong>!</strong> ' + t('maxWarning');
+    if (counterEl) counterEl.parentElement.appendChild(warnEl);
+  } else if (warnEl && pc <= 8) {
+    warnEl.parentElement.removeChild(warnEl);
+  }
+
+  if (allItems.length === 0) {
+    strip.innerHTML = '<span style="color:var(--text2);font-size:.8rem;padding:4px">' + t('noSelection') + '</span>';
+    renderColorBar();
+    return;
+  }
+
+  for (var i = 0; i < allItems.length; i++) {
+    var item = allItems[i];
+    var div = document.createElement('div');
+    div.className = 'selected-item';
+    var img = document.createElement('img');
+    img.src = item.preview ? imgSrc(item.preview) : '';
+    img.onerror = function() { this.style.display = 'none'; };
+    if (item.preview) {
+      (function(it) {
+        div.addEventListener('mouseenter', function(e) { hoverTimer = setTimeout(function(){ showHoverPreview(it, e); }, LIMITS.hoverDelay); });
+        div.addEventListener('mouseleave', hideHoverPreview);
+      })(item);
+    }
+    div.appendChild(img);
+    var span = document.createElement('span');
+    span.textContent = item.name.length > 30 ? item.name.slice(0,28) + '..' : item.name;
+    div.appendChild(span);
+
+    // Note button
+    var noteBtn = document.createElement('button');
+    var hasNote = !!item.note;
+    noteBtn.textContent = hasNote ? (lang==='th'?'โน้ต✓':'Note✓') : (lang==='th'?'+โน้ต':'+Note');
+    noteBtn.title = lang === 'th' ? 'เพิ่มโน้ต/คำขอพิเศษ' : 'Add note / special request';
+    noteBtn.style.cssText = 'background:' + (hasNote ? 'var(--accent)' : 'transparent') + ';color:' + (hasNote ? '#050505' : 'var(--accent)') + ';border:1px dashed ' + (hasNote ? 'var(--accent)' : 'var(--border)') + ';border-radius:4px;padding:2px 8px;font-size:.7rem;cursor:pointer;white-space:nowrap';
+    noteBtn.onclick = (function(cat, name) {
+      return function(e) { e.stopPropagation(); showNoteDialog(cat, name); };
+    })(item._cat, item.name);
+    div.appendChild(noteBtn);
+
+    // Toggle buttons for clothes
+    if (item._cat === 'clothes') {
+      var togs = item.toggles || [];
+      for (var tgi = 0; tgi < togs.length; tgi++) {
+        var tgSpan = document.createElement('span');
+        tgSpan.style.cssText = 'font-size:.6rem;background:rgba(255,140,66,.15);color:var(--orange);border-radius:4px;padding:1px 4px;display:inline-flex;align-items:center;gap:2px;max-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap';
+        tgSpan.title = togs[tgi];
+        tgSpan.textContent = togs[tgi];
+        var tgX = document.createElement('button');
+        tgX.textContent = 'x';
+        tgX.style.cssText = 'background:none;color:var(--red);border:none;padding:0;font-size:.7rem;cursor:pointer;line-height:1';
+        tgX.onclick = (function(cat, name, idx) {
+          return function(e) { e.stopPropagation();
+            var s = state.selections[cat].find(function(x){return x.name===name;});
+            if (s && s.toggles) s.toggles.splice(idx, 1);
+            renderCustomTabList(); renderSelectedStrip();
+          };
+        })(item._cat, item.name, tgi);
+        tgSpan.appendChild(tgX);
+        div.appendChild(tgSpan);
+      }
+      var togBtn = document.createElement('button');
+      togBtn.textContent = '+';
+      togBtn.title = lang==='th' ? 'เพิ่มปุ่มเปิดปิด' : 'Add toggle';
+      togBtn.style.cssText = 'background:transparent;color:var(--orange);border:1px dashed var(--orange);border-radius:50%;width:18px;height:18px;cursor:pointer;font-size:.7rem;line-height:1;padding:0';
+      togBtn.onclick = (function(cat, name) {
+        return function(e) { e.stopPropagation(); showToggleDialog(cat, name); };
+      })(item._cat, item.name);
+      div.appendChild(togBtn);
+    }
+
+    // Remove button
+    var btn = document.createElement('button');
+    btn.className = 'remove-btn';
+    btn.textContent = 'x';
+    btn.title = lang === 'th' ? 'ลบ' : 'Remove';
+    btn.onclick = (function(cat, name) {
+      return function() {
+        var idx = state.selections[cat].findIndex(function(s) { return s.name === name; });
+        if (idx >= 0) state.selections[cat].splice(idx, 1);
+        renderCustomTabList();
+        renderSelectedStrip();
+      };
+    })(item._cat, item.name);
+    div.appendChild(btn);
+    strip.appendChild(div);
+  }
+
+  renderColorBar();
+}
+
+function setHairColor(hairIdx, colorIdx, color) {
+  if (!state.selections.hairs[hairIdx].colors) state.selections.hairs[hairIdx].colors = ['#000000'];
+  state.selections.hairs[hairIdx].colors[colorIdx] = color;
+  // Don't re-render: destroys the color input on mobile, dismissing picker
+}
+
+function addHairColor(hairIdx) {
+  if (!state.selections.hairs[hairIdx].colors) state.selections.hairs[hairIdx].colors = ['#000000'];
+  state.selections.hairs[hairIdx].colors.push('#000000');
+  renderSelectedStrip();
+}
+
+function removeHairColor(hairIdx, colorIdx) {
+  state.selections.hairs[hairIdx].colors.splice(colorIdx, 1);
+  if (state.selections.hairs[hairIdx].colors.length === 0) {
+    state.selections.hairs[hairIdx].colors = ['#000000'];
+  }
+  renderSelectedStrip();
+}
+
+function showToggleDialog(cat, name) {
+  var sel = state.selections[cat];
+  var item = sel.find(function(s) { return s.name === name; });
+  if (!item) return;
+  if (!item.toggles) item.toggles = [];
+  var input = prompt(
+    (lang==='th' ? 'ชื่อส่วนที่ต้องการปุ่มเปิดปิด (เพิ่มทีละอัน):\n(ของบนหัว เช่น หมวก หูฟัง ทำฟรีอยู่แล้ว ไม่ต้องเพิ่ม)\nที่มีอยู่แล้ว: ' : 'Toggle part name (add one at a time):\n(Head items are already free - no need to add)\nExisting: ') + (item.toggles.join(', ') || (lang==='th'?'ไม่มี':'none')),
+    ''
+  );
+  if (input !== null && input.trim() !== '') {
+    item.toggles.push(input.trim());
+    renderCustomTabList();
+    renderSelectedStrip();
+  }
+}
+
+function showNoteDialog(cat, name) {
+  var sel = state.selections[cat];
+  var item = sel.find(function(s) { return s.name === name; });
+  if (!item) return;
+  var currentNote = item.note || '';
+  var note = prompt(
+    (lang==='th' ? 'โน้ต/คำขอพิเศษ สำหรับ' : 'Note / special request for') + ' ' + name + ':',
+    currentNote
+  );
+  if (note !== null) {
+    if (note.trim() === '') {
+      delete item.note;
+    } else {
+      item.note = note.trim();
+    }
+    renderCustomTabList();
+    renderSelectedStrip();
+  }
+}
+
+function applyBaseHairColorToAll() {
+  var colors = (state.selections.baseHairColors || ['#000000']).slice();
+  for (var i = 0; i < state.selections.hairs.length; i++) {
+    state.selections.hairs[i].colors = colors.slice();
+  }
+  renderSelectedStrip();
+}
+
+function applyColorsToAll(idx) {
+  var colors = (state.selections.hairs[idx].colors || ['#000000']).slice();
+  for (var i = 0; i < state.selections.hairs.length; i++) {
+    state.selections.hairs[i].colors = colors.slice();
+  }
+  state.selections.baseHairColors = colors.slice();
+  renderSelectedStrip();
+}
+
+function switchTab(tab) {
+  customTab = tab;
+  var searchEl = (currentMain || document).querySelector('#customSearch');
+  if (searchEl) searchEl.value = '';
+  renderCustomTabList();
+  // Update tab buttons
+  document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+  document.querySelector(`.tab:nth-child(${['hairs','textures','clothes','accessories'].indexOf(tab)+1})`)?.classList.add('active');
+}
+
+function goBackFromCustomize() {
+  if (state.selectedClothFirst) {
+    state.page = 'pathBcompat';
+  } else {
+    state.page = 'pathA';
+  }
+  render();
+}
+
+// --- Tag Filter ---
+function buildTagIndex(tab) {
+  // Collect all items for this tab and count tag frequencies.
+  // When tags are already selected, counts reflect the currently filtered set
+  // (i.e. "how many items would match if I also add this tag?").
+  // Tags that exist in the full set but have 0 in the filtered set are still
+  // included so they appear during search.
+  var items = [];
+  switch (tab) {
+    case 'hairs': items = AVATAR_DATA.hairs || []; break;
+    case 'textures':
+      if (state.selectedAvatar) {
+        items = (avatarById(state.selectedAvatar)?.textures || []).slice();
+        var setsTex = avatarById('Sets')?.textures || [];
+        for (var ti = 0; ti < setsTex.length; ti++) {
+          var st = setsTex[ti];
+          var compat = st.compatibleAvatars || [];
+          if (compat.length > 0 && compat.indexOf(state.selectedAvatar) >= 0) items.push(st);
+        }
+      }
+      break;
+    case 'clothes':
+      if (state.selectedAvatar) items = clothesForAvatar(state.selectedAvatar);
+      break;
+    case 'accessories':
+      items = (AVATAR_DATA.accessories || []).slice();
+      if (state.selectedAvatar) {
+        var avId2 = state.selectedAvatar;
+        items = items.filter(function(acc) {
+          var compat = acc.compatibleAvatars;
+          if (!compat || compat.length === 0) return true;
+          return compat.indexOf(avId2) >= 0;
+        });
+      }
+      break;
+    case 'pathB':
+      var setsB = avatarById('Sets');
+      if (setsB) items = setsB.clothes || [];
+      break;
+  }
+
+  // Build full tag frequency from ALL items (unfiltered)
+  var fullFreq = {};
+  for (var i = 0; i < items.length; i++) {
+    var tags = items[i].autoTags || [];
+    for (var j = 0; j < tags.length; j++) {
+      var t = tags[j];
+      fullFreq[t] = (fullFreq[t] || 0) + 1;
+    }
+  }
+
+  // Apply current tag filter to get refinement counts
+  var tagArr = [];
+  _tf(tab).forEach(function(t) { tagArr.push(t); });
+  var filtered = items;
+  if (tagArr.length > 0) {
+    filtered = items.filter(function(i) {
+      var tags = i.autoTags || [];
+      return tagArr.every(function(t) { return tags.indexOf(t) >= 0; });
+    });
+  }
+
+  var freq = {};
+  for (var i2 = 0; i2 < filtered.length; i2++) {
+    var ftags = filtered[i2].autoTags || [];
+    for (var j2 = 0; j2 < ftags.length; j2++) {
+      var t2 = ftags[j2];
+      freq[t2] = (freq[t2] || 0) + 1;
+    }
+  }
+
+  // Build result: include all tags, even if count is 0 or 1.
+  // Rare tags still show up during search.
+  var result = [];
+  var keys = Object.keys(fullFreq);
+  for (var k = 0; k < keys.length; k++) {
+    var tag = keys[k];
+    var count = freq[tag] || 0;
+    result.push({tag: tag, count: count, fullCount: fullFreq[tag]});
+  }
+  result.sort(function(a,b) { return b.count - a.count || b.fullCount - a.fullCount; });
+  return result;
+}
+
+function renderTagFilter(optTab, refreshFn) {
+  var area = (currentMain || document).querySelector('#tagFilterArea');
+  if (!area) return;
+
+  var tab = optTab || customTab;
+  var refresh = refreshFn || renderCustomTabList;
+  var tagData = buildTagIndex(tab);
+  var selected = _tf(tab);
+  var search = _ts(tab).toLowerCase();
+
+  // Store context on area so event handlers can read current values
+  // (avoids stale closure captures when tabs are switched)
+  area._tab = tab;
+  area._refresh = refresh;
+
+  // Search row — only rebuild if it doesn't exist yet
+  var searchRow = area.querySelector('.tag-search-row');
+  if (!searchRow) {
+    area.innerHTML = '';
+    searchRow = document.createElement('div');
+    searchRow.className = 'tag-search-row';
+    searchRow.style.cssText = 'display:flex;gap:8px;align-items:center;margin-bottom:8px';
+    var input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'tag-search';
+    input.placeholder = t('tagSearchPlaceholder');
+    input.oninput = function() {
+      state.tagSearches[area._tab] = this.value;
+      renderTagFilter(area._tab, area._refresh);
+    };
+    searchRow.appendChild(input);
+
+    var clearBtn = document.createElement('button');
+    clearBtn.className = 'tag-clear-btn';
+    clearBtn.style.display = 'none';
+    clearBtn.onclick = function() {
+      state.tagFilters[area._tab] = new Set();
+      state.tagSearches[area._tab] = '';
+      area._refresh();
+    };
+    searchRow.appendChild(clearBtn);
+    area.appendChild(searchRow);
+
+    var chipsArea = document.createElement('div');
+    chipsArea.className = 'tag-chips-area';
+    area.appendChild(chipsArea);
+  }
+
+  // Update search input value
+  var input = searchRow.querySelector('.tag-search');
+  if (input) input.value = _ts(tab) || '';
+
+  // Update clear button
+  var clearBtn = searchRow.querySelector('.tag-clear-btn');
+  if (clearBtn) {
+    clearBtn.style.display = selected.size > 0 ? '' : 'none';
+    if (selected.size > 0) clearBtn.textContent = t('clearTags') + ' (' + selected.size + ')';
+  }
+
+  // Rebuild chips only
+  var chipsArea = area.querySelector('.tag-chips-area');
+  if (!chipsArea) return;
+  chipsArea.innerHTML = '';
+
+  // Filter by search — when searching, show all tags including rare ones (count 1)
+  // When not searching, only show tags with fullCount >= 2 to keep the default view tidy
+  var filtered = tagData;
+  if (search) {
+    filtered = tagData.filter(function(td) { return td.tag.toLowerCase().indexOf(search) >= 0; });
+  } else {
+    filtered = tagData.filter(function(td) { return td.fullCount >= 2; });
+  }
+
+  var maxShow = search ? filtered.length : Math.min(filtered.length, 40);
+  var display = filtered.slice(0, maxShow);
+
+  // Always show selected tags even if they don't match the search
+  if (selected.size > 0) {
+    var displaySet = new Set();
+    for (var d = 0; d < display.length; d++) { displaySet.add(display[d].tag); }
+    selected.forEach(function(t) {
+      if (!displaySet.has(t)) {
+        // Look up the tag count from tagData
+        for (var j = 0; j < tagData.length; j++) {
+          if (tagData[j].tag === t) { display.unshift(tagData[j]); break; }
+        }
+      }
+    });
+  }
+
+  if (display.length === 0) {
+    var noMatch = document.createElement('div');
+    noMatch.className = 'tag-no-match';
+    noMatch.textContent = t('noTagMatch');
+    chipsArea.appendChild(noMatch);
+    return;
+  }
+
+  var chips = document.createElement('div');
+  chips.className = 'tag-chips';
+
+  // Put selected tags first
+  var ordered = [];
+  var rest = [];
+  for (var d = 0; d < display.length; d++) {
+    if (selected.has(display[d].tag)) ordered.push(display[d]);
+    else rest.push(display[d]);
+  }
+  display = ordered.concat(rest);
+
+  for (var i = 0; i < display.length; i++) {
+    var td = display[i];
+    var isZero = td.count === 0 && !selected.has(td.tag);
+    var chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'tag-chip' + (selected.has(td.tag) ? ' selected' : '') + (isZero ? ' zero' : '');
+    chip.appendChild(document.createTextNode(td.tag.replace(/_/g, ' ')));
+    var count = document.createElement('span');
+    count.className = 'tag-count';
+    count.textContent = td.count;
+    chip.appendChild(count);
+    chip.disabled = isZero;
+    if (!isZero) {
+      chip.onclick = (function(tag) {
+        return function() {
+          var tf = _tf(area._tab);
+          if (tf.has(tag)) {
+            tf.delete(tag);
+          } else {
+            tf.add(tag);
+          }
+          refresh();
+        };
+      })(td.tag);
+    }
+    chips.appendChild(chip);
+  }
+  chipsArea.appendChild(chips);
+}
+
+function renderCustomTabList() {
+  const grid = (currentMain || document).querySelector('#customGrid');
+  if (!grid) return;
+  var scrollY = window.scrollY;
+  grid.innerHTML = '';
+
+  renderTagFilter();
+  // Hair photo search entry point (hairs tab only, when service is up)
+  var bar = (currentMain || document).querySelector('.search-bar');
+  if (customTab === 'hairs') {
+    hairSearchHealthCheck();
+    if (bar) {
+      var staleOutfitBtn2 = bar.querySelector('#outfitPhotoBtn');
+      var staleOutfitPill2 = bar.querySelector('#outfitSearchPill');
+      if (staleOutfitBtn2) staleOutfitBtn2.remove();
+      if (staleOutfitPill2) staleOutfitPill2.remove();
+    }
+    if (bar && hairSearchState.available && !bar.querySelector('#hairPhotoBtn')) {
+      var btn = document.createElement('button');
+      btn.id = 'hairPhotoBtn';
+      btn.type = 'button';
+      btn.textContent = lang === 'th' ? 'ค้นหาจากรูป' : 'Search by photo';
+      btn.onclick = openHairPhotoSearch;
+      bar.appendChild(btn);
+    }
+    var existingPill = (currentMain || document).querySelector('#hairSearchPill');
+    if (hairSearchState.active && bar) {
+      if (existingPill) existingPill.remove();
+      var pill = document.createElement('div');
+      pill.id = 'hairSearchPill';
+      pill.style.cssText = 'display:flex;align-items:center;gap:6px;font-size:.75rem;margin-left:8px';
+      if (hairSearchState.thumb) {
+        var previewName = lang === 'th' ? 'รูปอ้างอิงการค้นหา' : 'Search reference image';
+        var previewBtn = document.createElement('button');
+        previewBtn.type = 'button';
+        previewBtn.title = t('quickLookHint');
+        previewBtn.setAttribute('aria-label', t('quickLookHint'));
+        previewBtn.style.cssText = 'background:none;padding:0;border-radius:8px;flex:0 0 auto';
+        var previewImg = document.createElement('img');
+        previewImg.src = hairSearchState.thumb;
+        previewImg.alt = previewName;
+        previewImg.style.cssText = 'width:64px;height:64px;object-fit:cover;border-radius:8px';
+        previewBtn.onclick = function() {
+          openQuickLook({preview: hairSearchState.thumb, name: previewName});
+        };
+        previewBtn.appendChild(previewImg);
+        pill.appendChild(previewBtn);
+      }
+      var sortLabel = document.createElement('span');
+      sortLabel.textContent = lang === 'th' ? 'เรียงตามรูป' : 'sorted by photo';
+      pill.appendChild(sortLabel);
+      var x = document.createElement('button');
+      x.type = 'button'; x.textContent = '✕';
+      x.onclick = clearHairSearch;
+      pill.appendChild(x);
+      bar.appendChild(pill);
+    } else if (!hairSearchState.active && existingPill) {
+      existingPill.remove();
+    }
+  } else if (customTab === 'clothes') {
+    outfitSearchAttachUI(bar);
+    if (bar) {
+      var staleHairBtn = bar.querySelector('#hairPhotoBtn');
+      var staleHairPill = bar.querySelector('#hairSearchPill');
+      if (staleHairBtn) staleHairBtn.remove();
+      if (staleHairPill) staleHairPill.remove();
+    }
+  } else if (bar) {
+    var staleButton = bar.querySelector('#hairPhotoBtn');
+    var stalePill = bar.querySelector('#hairSearchPill');
+    var staleOutfitBtn = bar.querySelector('#outfitPhotoBtn');
+    var staleOutfitPill = bar.querySelector('#outfitSearchPill');
+    if (staleButton) staleButton.remove();
+    if (stalePill) stalePill.remove();
+    if (staleOutfitBtn) staleOutfitBtn.remove();
+    if (staleOutfitPill) staleOutfitPill.remove();
+  }
+
+  const searchEl = (currentMain || document).querySelector('#customSearch');
+  const query = searchEl ? searchEl.value.toLowerCase() : '';
+
+  let items = [];
+  const sel = state.selections;
+
+  switch (customTab) {
+    case 'hairs':
+      items = [...AVATAR_DATA.hairs];
+      break;
+    case 'textures':
+      if (state.selectedAvatar) {
+        items = (avatarById(state.selectedAvatar)?.textures || []).slice();
+        // Include Sets textures compatible with selected avatar (or unknown compat)
+        const setsTex = avatarById('Sets')?.textures || [];
+        const avId = state.selectedAvatar;
+        for (var ti = 0; ti < setsTex.length; ti++) {
+          var st = setsTex[ti];
+          var compat = st.compatibleAvatars || [];
+          if (compat.length > 0 && compat.indexOf(avId) >= 0) {
+            items.push(st);
+          }
+        }
+      }
+      break;
+    case 'clothes':
+      if (state.selectedAvatar) {
+        items = clothesForAvatar(state.selectedAvatar);
+      }
+      break;
+    case 'accessories':
+      items = AVATAR_DATA.accessories.slice();
+      // Filter: only show universal (no compat) or compatible with selected avatar
+      if (state.selectedAvatar) {
+        var avId2 = state.selectedAvatar;
+        items = items.filter(function(acc) {
+          var compat = acc.compatibleAvatars;
+          if (!compat || compat.length === 0) return true; // universal
+          return compat.indexOf(avId2) >= 0;
+        });
+      }
+      break;
+  }
+
+  // Mark selected
+  const selSet = new Set(sel[customTab].map(s => s.name));
+  for (const item of items) {
+    item._selected = selSet.has(item.name);
+  }
+
+  // Filter
+  if (query) {
+    items = items.filter(i => i.name.toLowerCase().includes(query));
+  }
+
+  // Hide unknown compatibility items when checkbox is checked
+  var hiddenUnknownCount = 0;
+  if (hideUnknownCompat) {
+    var _beforeUnknown = items.length;
+    items = items.filter(function(i) {
+      var compat = i.compatibleAvatars;
+      // Items without compat field (hairs, avatar textures) always pass
+      // Items with empty compat (unknown) are hidden
+      return compat === undefined || compat.length > 0;
+    });
+    hiddenUnknownCount = _beforeUnknown - items.length;
+  }
+
+  // Tag filter (AND logic: item must have ALL selected tags)
+  var ctFilter = _tf(customTab);
+  if (ctFilter.size > 0) {
+    var selectedTags = Array.from(ctFilter);
+    items = items.filter(function(i) {
+      var tags = i.autoTags || [];
+      return selectedTags.every(function(t) { return tags.indexOf(t) >= 0; });
+    });
+  }
+
+  // Sort
+  if (customTab === 'hairs' && hairSearchState.active && hairSearchState.order) {
+    var ord = hairSearchState.order;
+    items.sort(function(a, b) {
+      var ra = ord.has(basenameOf(a.preview)) ? ord.get(basenameOf(a.preview)) : 1e9;
+      var rb = ord.has(basenameOf(b.preview)) ? ord.get(basenameOf(b.preview)) : 1e9;
+      return ra - rb;
+    });
+  } else if (customTab === 'clothes' && outfitSearchState.active && outfitSearchState.order) {
+    outfitSearchSort(items);
+  } else if (customSort === 'alpha') {
+    items.sort(function(a,b) { return a.name.localeCompare(b.name); });
+  } else {
+    items.sort(function(a,b) { return (b.dateAdded || 0) - (a.dateAdded || 0); });
+  }
+
+  // Unknown compat badge
+  for (const item of items) {
+    const badges = [];
+    if (customTab === 'clothes' && item.compatibleAvatars && item.compatibleAvatars.length === 0) {
+      badges.push({text: t('unknownCompat'), cls: 'badge-unknown'});
+    }
+
+    const card = renderCard(item, (clicked) => {
+      toggleSelection(customTab, clicked);
+      renderCustomTabList();
+    }, badges);
+
+    grid.appendChild(card);
+  }
+
+  if (items.length === 0) {
+    renderEmptyState(grid, !!(query || ctFilter.size), function() {
+      var se = (currentMain || document).querySelector('#customSearch');
+      if (se) se.value = '';
+      _tf(customTab).clear();
+      state.tagSearches[customTab] = '';
+      renderCustomTabList();
+    });
+  }
+
+  // Reveal pill: show how many items the unknown-compat filter hid
+  var cntEl = document.getElementById('hideUnknownCount');
+  if (cntEl) cntEl.textContent = hiddenUnknownCount > 0 ? '(' + hiddenUnknownCount + ')' : '';
+  if (hiddenUnknownCount > 0) {
+    var pill = document.createElement('button');
+    pill.type = 'button';
+    pill.className = 'unknown-pill';
+    pill.textContent = t('showUnverified').replace('{n}', hiddenUnknownCount);
+    pill.onclick = function() {
+      hideUnknownCompat = false;
+      var cb = document.getElementById('hideUnknown');
+      if (cb) cb.checked = false;
+      renderCustomTabList();
+    };
+    grid.appendChild(pill);
+  }
+
+  renderSelectedStrip();
+  renderColorBar();
+
+  window.scrollTo(0, scrollY);
+}
+
+function colorName(hex) {
+  var names = {
+    '#000000': lang==='th'?'ดำ':'Black', '#ffffff': lang==='th'?'ขาว':'White',
+    '#ff0000': lang==='th'?'แดง':'Red', '#ffcccc': lang==='th'?'ชมพูอ่อน':'Light Pink',
+    '#ff69b4': lang==='th'?'ชมพู':'Pink', '#ff1493': lang==='th'?'ชมพูเข้ม':'Deep Pink',
+    '#ff8800': lang==='th'?'ส้ม':'Orange', '#ffff00': lang==='th'?'เหลือง':'Yellow',
+    '#00ff00': lang==='th'?'เขียว':'Green', '#0000ff': lang==='th'?'น้ำเงิน':'Blue',
+    '#00ffff': lang==='th'?'ฟ้า':'Cyan', '#800080': lang==='th'?'ม่วง':'Purple',
+    '#8b4513': lang==='th'?'น้ำตาล':'Brown', '#808080': lang==='th'?'เทา':'Gray',
+    '#cccccc': lang==='th'?'เทาอ่อน':'Light Gray', '#ffd700': lang==='th'?'ทอง':'Gold',
+    '#c0c0c0': lang==='th'?'เงิน':'Silver', '#ffb6c1': lang==='th'?'ชมพูอ่อน':'Light Pink',
+    '#90ee90': lang==='th'?'เขียวอ่อน':'Light Green', '#87ceeb': lang==='th'?'ฟ้าอ่อน':'Light Blue',
+    '#f5f5dc': lang==='th'?'เบจ':'Beige', '#ffe4c4': lang==='th'?'ไบออเรจ':'Bisque',
+    '#d2b48c': lang==='th'?'แทน':'Tan', '#a52a2a': lang==='th'?'น้ำตาลแดง':'Brown',
+    '#800000': lang==='th'?'แดงเข้ม':'Maroon', '#008000': lang==='th'?'เขียวเข้ม':'Dark Green',
+    '#000080': lang==='th'?'กรมท่า':'Navy', '#4b0082': lang==='th'?'คราม':'Indigo',
+  };
+  hex = hex.toLowerCase();
+  if (names[hex]) return names[hex];
+  // Try closest match
+  var closest = null, minDist = Infinity;
+  for (var h in names) {
+    var d = Math.abs(parseInt(h.slice(1,3),16) - parseInt(hex.slice(1,3),16)) +
+            Math.abs(parseInt(h.slice(3,5),16) - parseInt(hex.slice(3,5),16)) +
+            Math.abs(parseInt(h.slice(5,7),16) - parseInt(hex.slice(5,7),16));
+    if (d < minDist) { minDist = d; closest = names[h]; }
+  }
+  return closest || hex;
+}
+
+function toggleSelection(tab, item) {
+  const sel = state.selections[tab];
+  const idx = sel.findIndex(s => s.name === item.name);
+  if (idx >= 0) {
+    sel.splice(idx, 1);
+    item._selected = false;
+  } else {
+    var entry = { name: item.name, preview: item.preview, sourceFile: item.sourceFile };
+    if (tab === 'hairs') {
+      if (state.selections.isNewAvatar === false) {
+        entry.colors = []; // empty = existing color
+        entry.hairChanged = false;
+      } else {
+        entry.colors = ['#000000'];
+      }
+    }
+    sel.push(entry);
+    item._selected = true;
+  }
+}
+
+// --- Summary ---
+function _loadImg(src) {
+  return new Promise(function(resolve) {
+    var im = new Image();
+    im.onload = function() { resolve(im); };
+    im.onerror = function() { resolve(null); };
+    im.src = src;
+  });
+}
+
+async function buildOrderImage() {
+  await (document.fonts ? document.fonts.ready : Promise.resolve());
+  const av = avatarById(state.selectedAvatar);
+  const sel = state.selections;
+  const sections = [
+    { label: t('hair'),        items: sel.hairs },
+    { label: t('textures'),    items: sel.textures },
+    { label: t('outfit'),      items: sel.clothes },
+    { label: t('accessories'), items: sel.accessories },
+  ].filter(function(s){ return s.items && s.items.length; });
+
+  const allItems = [];
+  if (av) allItems.push(av);
+  sections.forEach(function(s){ s.items.forEach(function(it){ allItems.push(it); }); });
+  const imgMap = {};
+  await Promise.all(allItems.map(function(it) {
+    if (!it.preview) { imgMap[it.name] = null; return Promise.resolve(); }
+    return _loadImg(imgSrc(it.preview)).then(function(im){ imgMap[it.name] = im; });
+  }));
+
+  const DPR = Math.max(2, window.devicePixelRatio || 1);
+  const W = 900, PAD = 28, THUMB = 150, LABEL_H = 26, COL_GAP = 16, ROW_GAP = 10;
+  const perRow = Math.floor((W - PAD * 2 + COL_GAP) / (THUMB + COL_GAP));
+  const FONT = "'Manrope','Noto Sans Thai',system-ui,sans-serif";
+
+  let h = PAD + 88 + 18;
+  sections.forEach(function(s) {
+    const rows = Math.ceil(s.items.length / perRow);
+    h += 34 + rows * (THUMB + LABEL_H + ROW_GAP);
+  });
+  h += PAD;
+
+  const canvas = document.createElement('canvas');
+  canvas.width = W * DPR; canvas.height = Math.ceil(h) * DPR;
+  const ctx = canvas.getContext('2d');
+  ctx.scale(DPR, DPR);
+  ctx.textBaseline = 'top';
+
+  ctx.fillStyle = '#050505'; ctx.fillRect(0, 0, W, h);
+
+  function roundRect(x, y, w, hh, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.arcTo(x + w, y, x + w, y + hh, r);
+    ctx.arcTo(x + w, y + hh, x, y + hh, r);
+    ctx.arcTo(x, y + hh, x, y, r);
+    ctx.arcTo(x, y, x + w, y, r);
+    ctx.closePath();
+  }
+  function drawThumb(im, name, x, y) {
+    roundRect(x, y, THUMB, THUMB, 12); ctx.save(); ctx.clip();
+    if (im) { ctx.drawImage(im, x, y, THUMB, THUMB); }
+    else { ctx.fillStyle = '#111111'; ctx.fillRect(x, y, THUMB, THUMB); }
+    ctx.restore();
+    ctx.fillStyle = '#a8a098'; ctx.font = '13px ' + FONT;
+    let nm = name; if (ctx.measureText(nm).width > THUMB) { while (nm.length > 4 && ctx.measureText(nm + '…').width > THUMB) nm = nm.slice(0, -1); nm += '…'; }
+    ctx.fillText(nm, x, y + THUMB + 6);
+  }
+
+  let y = PAD;
+  roundRect(PAD, y, W - PAD * 2, 88, 8); ctx.fillStyle = '#111111'; ctx.fill();
+  if (av && imgMap[av.name]) { roundRect(PAD + 12, y + 12, 64, 64, 10); ctx.save(); ctx.clip(); ctx.drawImage(imgMap[av.name], PAD + 12, y + 12, 64, 64); ctx.restore(); }
+  ctx.fillStyle = '#f3eee7'; ctx.font = '700 24px ' + FONT;
+  ctx.fillText(av ? av.name : '-', PAD + 90, y + 20);
+  const pc = (typeof pieceCount === 'function') ? pieceCount() : 0;
+  const dateStr = new Date().toISOString().slice(0, 10);
+  ctx.fillStyle = '#a8a098'; ctx.font = '15px ' + FONT;
+  ctx.fillText(pc + ' ' + t('pieces') + '   ·   ' + dateStr, PAD + 90, y + 52);
+  y += 88 + 18;
+
+  sections.forEach(function(s) {
+    ctx.fillStyle = '#48dfcc'; ctx.font = '700 16px ' + FONT;
+    ctx.fillText(s.label.toUpperCase(), PAD, y); y += 34 - 10;
+    let col = 0, rowY = y;
+    s.items.forEach(function(it, i) {
+      const x = PAD + col * (THUMB + COL_GAP);
+      drawThumb(imgMap[it.name], it.name, x, rowY);
+      col++;
+      if (col >= perRow) { col = 0; rowY += THUMB + LABEL_H + ROW_GAP; }
+    });
+    y = rowY + (col > 0 ? (THUMB + LABEL_H + ROW_GAP) : 0);
+  });
+
+  return canvas;
+}
+
+async function showOrderImage() {
+  var btn = document.getElementById('mkImgBtn');
+  var area = document.getElementById('orderImageArea');
+  if (!area) return;
+  var old = btn ? btn.textContent : '';
+  if (btn) { btn.disabled = true; btn.textContent = t('generatingImage'); }
+  try {
+    var canvas = await buildOrderImage();
+    window._orderCanvas = canvas;
+    area.innerHTML = '';
+    var img = document.createElement('img');
+    img.src = canvas.toDataURL('image/png');
+    img.style.cssText = 'max-width:100%;border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow)';
+    area.appendChild(img);
+    var row = document.createElement('div');
+    row.style.cssText = 'margin-top:10px;display:flex;gap:8px;flex-wrap:wrap';
+    row.id = 'orderImageActions';
+    area.appendChild(row);
+    if (typeof wireOrderImageActions === 'function') wireOrderImageActions(row);
+  } finally {
+    if (btn) { btn.disabled = false; btn.textContent = old; }
+  }
+}
+
+function _canCopyImage() {
+  return !!(window.ClipboardItem && navigator.clipboard && navigator.clipboard.write);
+}
+function wireOrderImageActions(row) {
+  row.innerHTML = '';
+  if (_canCopyImage()) {
+    var cp = document.createElement('button');
+    cp.className = 'btn-success'; cp.textContent = t('copyImage');
+    cp.onclick = copyOrderImage;
+    row.appendChild(cp);
+  }
+  var dl = document.createElement('button');
+  dl.className = 'btn-secondary'; dl.textContent = t('downloadImage');
+  dl.onclick = downloadOrderImage;
+  row.appendChild(dl);
+  if (!_canCopyImage()) {
+    var hint = document.createElement('span');
+    hint.style.cssText = 'font-size:.8rem;color:var(--text2);align-self:center';
+    hint.textContent = t('copyImageUnsupported');
+    row.appendChild(hint);
+  }
+}
+function _orderFilename() {
+  var av = avatarById(state.selectedAvatar);
+  var nm = (av ? av.name : 'order').replace(/[^a-zA-Z0-9_-]/g, '');
+  return 'order-' + (nm || 'avatar') + '-' + new Date().toISOString().slice(0, 10) + '.png';
+}
+function copyOrderImage() {
+  if (!window._orderCanvas) return;
+  window._orderCanvas.toBlob(function(blob) {
+    if (!blob || !_canCopyImage()) { downloadOrderImage(); return; }
+    navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })])
+      .then(function() { showToast(t('imageCopied')); })
+      .catch(function() { showToast(t('copyImageUnsupported')); downloadOrderImage(); });
+  }, 'image/png');
+}
+function downloadOrderImage() {
+  if (!window._orderCanvas) return;
+  window._orderCanvas.toBlob(function(blob) {
+    if (!blob) return;
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url; a.download = _orderFilename();
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function() { URL.revokeObjectURL(url); }, 1000);
+  }, 'image/png');
+}
+
+function renderSummary(main) {
+  currentMain = main;
+  const av = avatarById(state.selectedAvatar);
+
+  main.innerHTML = `
+    <div class="page-eyebrow">${lang==='th' ? 'สรุปคำสั่งซื้อ' : 'Order summary'}</div>
+    <div class="page-title">${t('summaryTitle')}</div>
+    <div id="summaryContent"></div>
+    <div class="copy-both-note">${t('copyBothNote')}</div>
+    <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn-secondary" onclick="state.page='customize';render()">${t('back')}</button>
+      <button class="btn-success copy-btn" onclick="copySummary()">${t('copyText')}</button>
+      <button class="btn-primary" id="mkImgBtn" onclick="showOrderImage()">${t('createImage')}</button>
+      <button class="btn-danger" onclick="resetAll()">${t('startOver')}</button>
+    </div>
+    <div id="orderImageArea" style="margin-top:16px"></div>
+  `;
+
+  const content = main.querySelector('#summaryContent');
+
+  // Visual cards
+  const sections = [
+    { key: 'avatar', label: t('avatar'), items: av ? [{name: av.name, preview: av.preview, _isAvatar: true}] : [] },
+    { key: 'hairs', label: t('hair'), items: state.selections.hairs },
+    { key: 'textures', label: t('textures'), items: state.selections.textures },
+    { key: 'clothes', label: t('outfit'), items: state.selections.clothes },
+    { key: 'accessories', label: t('accessories'), items: state.selections.accessories },
+  ];
+
+  for (const sec of sections) {
+    if (sec.items.length === 0) continue;
+
+    const div = document.createElement('div');
+    div.className = 'summary-section';
+    div.innerHTML = `<h3>${sec.label} (${sec.items.length})</h3>`;
+
+    const grid = document.createElement('div');
+    grid.className = 'summary-grid';
+    for (const item of sec.items) {
+      const card = renderCard(item, null, []);
+      grid.appendChild(card);
+    }
+    div.appendChild(grid);
+    content.appendChild(div);
+  }
+
+  // Text summary
+  const textDiv = document.createElement('div');
+  textDiv.className = 'summary-section';
+  var briefTitle = state.selections.isNewAvatar === false ? (lang==='th' ? 'เพิ่มของใส่ตัวเดิม' : 'Add to Existing') : (lang==='th' ? 'อวตาร์ตัวใหม่' : 'New Avatar');
+  textDiv.innerHTML = '<h3>' + briefTitle + '</h3>';
+  const textPre = document.createElement('div');
+  textPre.className = 'summary-text';
+  textPre.id = 'summaryText';
+  textPre.textContent = generateSummaryText();
+  textDiv.appendChild(textPre);
+  content.appendChild(textDiv);
+
+  // Price breakdown
+  var priceDiv = document.createElement('div');
+  priceDiv.className = 'summary-section';
+  priceDiv.innerHTML = '<h3>' + (lang==='th' ? 'สรุปราคา' : 'Price Summary') + '</h3>';
+  var price = calculatePrice();
+  var priceList = document.createElement('div');
+  priceList.style.cssText = 'background:var(--surface);border-radius:var(--radius);padding:12px 16px;font-size:.85rem;line-height:2';
+  var priceHTML = '';
+  for (var pi = 0; pi < price.details.length; pi++) {
+    var parts = price.details[pi].split(': ');
+    var label = parts[0];
+    var amount = parts[1] || '';
+    priceHTML += '<div style="display:flex;justify-content:space-between"><span>' + label + '</span><span>' + amount + ' <span style="color:var(--text2)">บาท</span></span></div>';
+  }
+  priceHTML += '<div style="border-top:1px solid var(--border);margin-top:8px;padding-top:8px;display:flex;justify-content:space-between;font-weight:700;font-size:1rem;color:var(--accent)"><span>' + (lang==='th' ? 'รวม' : 'Total') + '</span><span>' + price.total + ' บาท</span></div>';
+  priceList.innerHTML = priceHTML;
+  priceDiv.appendChild(priceList);
+  content.appendChild(priceDiv);
+}
+
+function calculatePrice() {
+  var total = 0;
+  var details = [];
+  var isNew = state.selections.isNewAvatar !== false;
+
+  // Base avatar (only for new avatars)
+  if (isNew) {
+    total += PRICING.baseAvatar;
+    details.push((lang==='th'?'ตัวเบส':'Base avatar') + ': ' + PRICING.baseAvatar);
+  } else {
+    details.push((lang==='th'?'เพิ่มของใส่ตัวเดิม (ไม่มีค่าตัวเบส)':'Add to existing avatar (no base cost)') + ': 0');
+  }
+  // Hair
+  if (state.selections.hairs.length > 0) {
+    var hc = state.selections.hairs.length * PRICING.hair;
+    total += hc;
+    details.push((lang==='th'?'ทรงผม':'Hair') + ' x' + state.selections.hairs.length + ': ' + hc);
+  }
+  // Hair color changes and toggle colors
+  var hairToggleCount = 0;
+  if (isNew) {
+    // New avatar: only count extra colors beyond first
+    if (state.selections.baseHairColors && state.selections.baseHairColors.length > 1) {
+      hairToggleCount += state.selections.baseHairColors.length - 1;
+    }
+    for (var hi = 0; hi < state.selections.hairs.length; hi++) {
+      var hcolors = state.selections.hairs[hi].colors || [];
+      if (hcolors.length > 1) hairToggleCount += hcolors.length - 1;
+    }
+  } else {
+    // Existing avatar: first color change costs 9, extras cost 9 each
+    if (state.selections.baseHairChanged) {
+      hairToggleCount += 1;
+      if (state.selections.baseHairColors && state.selections.baseHairColors.length > 1) {
+        hairToggleCount += state.selections.baseHairColors.length - 1;
+      }
+    }
+    for (var hi = 0; hi < state.selections.hairs.length; hi++) {
+      var hcolors2 = state.selections.hairs[hi].colors || [];
+      if (hcolors2.length > 0) {
+        hairToggleCount += 1; // changing from existing
+        if (hcolors2.length > 1) hairToggleCount += hcolors2.length - 1;
+      }
+    }
+  }
+  if (hairToggleCount > 0) {
+    var htc = hairToggleCount * PRICING.hairColorChange;
+    total += htc;
+    details.push((lang==='th'?'ค่าปรับสีผม':'Hair color change') + ' x' + hairToggleCount + ': ' + htc);
+  }
+  // Eye color: free for new avatar, priced for existing (unless they added textures)
+  var eyeChanged = state.selections.eyeChanged === true;
+  if (!isNew && eyeChanged && state.selections.textures.length === 0) {
+    total += PRICING.eyeColorChange;
+    details.push((lang==='th'?'ค่าปรับสีตา':'Eye color change') + ': ' + PRICING.eyeColorChange);
+  } else if (!isNew && eyeChanged && state.selections.textures.length > 0) {
+    details.push((lang==='th'?'ปรับสีตา (ฟรี เพราะเพิ่ม Texture)':'Eye color change (free with texture)') + ': 0');
+  }
+  // Textures
+  if (state.selections.textures.length > 0) {
+    var tc = state.selections.textures.length * PRICING.texture;
+    total += tc;
+    details.push((lang==='th'?'Texture':'Texture') + ' x' + state.selections.textures.length + ': ' + tc);
+  }
+  // Clothes
+  if (state.selections.clothes.length > 0) {
+    var cc = state.selections.clothes.length * PRICING.cloth;
+    total += cc;
+    details.push((lang==='th'?'ชุด':'Outfit') + ' x' + state.selections.clothes.length + ': ' + cc);
+  }
+  // Cloth toggles: priced each, free for head items
+  var headKeywords = ['หมวก','hat','cap','hood','หูฟัง','headphone','earphone','หูแมว','หูกระต่าย','cat ear','bunny ear','rabbit ear','animal ear','helmet','crown','มงกุฎ','headband','ribbon','โบว์','bow','glasses','แว่น','mask','หน้ากาก','veil','hoodie','หู','ears','head','หัว','bean','beanie','beret','visor','tiara','hairpin','hairclip','กิ๊บ','clip'];
+  var paidToggles = 0;
+  var freeToggles = 0;
+  for (var ci = 0; ci < state.selections.clothes.length; ci++) {
+    var ctogs = state.selections.clothes[ci].toggles || [];
+    for (var ti = 0; ti < ctogs.length; ti++) {
+      var tname = ctogs[ti].toLowerCase();
+      var isHead = false;
+      for (var hk = 0; hk < headKeywords.length; hk++) {
+        if (tname.indexOf(headKeywords[hk]) >= 0) { isHead = true; break; }
+      }
+      if (isHead) freeToggles++; else paidToggles++;
+    }
+  }
+  if (paidToggles > 0) {
+    total += paidToggles * PRICING.clothToggle;
+    details.push((lang==='th'?'ปุ่มเปิดปิดชุด':'Outfit toggles') + ' x' + paidToggles + ': ' + (paidToggles * PRICING.clothToggle));
+  }
+  if (freeToggles > 0) {
+    details.push((lang==='th'?'ปุ่มเปิดปิดของบนหัว (ฟรี)':'Head item toggles (free)') + ' x' + freeToggles + ': 0');
+  }
+  // Accessories (free toggles)
+  if (state.selections.accessories.length > 0) {
+    var ac = state.selections.accessories.length * PRICING.accessory;
+    total += ac;
+    details.push((lang==='th'?'เครื่องประดับ':'Accessories') + ' x' + state.selections.accessories.length + ': ' + ac);
+  }
+  // Optional services
+  if (state.selections.optPolygon) {
+    total += PRICING.polygonReduction;
+    details.push((lang==='th'?'ลด Polygon':'Polygon reduction') + ': ' + PRICING.polygonReduction);
+  }
+  if (state.selections.optPCSS) {
+    total += PRICING.pcssShadows;
+    details.push((lang==='th'?'PCSS เงาสมจริง':'PCSS shadows') + ': ' + PRICING.pcssShadows);
+  }
+  var dpsHole = state.selections.optDPSHole || 0;
+  var dpsRod = state.selections.optDPSRod || 0;
+  if (dpsHole > 0) {
+    total += dpsHole * PRICING.dpsHole;
+    details.push((lang==='th'?'DPS รู':'DPS holes') + ' x' + dpsHole + ': ' + (dpsHole * PRICING.dpsHole));
+  }
+  if (dpsRod > 0) {
+    total += dpsRod * PRICING.dpsRod;
+    details.push((lang==='th'?'DPS แท่ง':'DPS rods') + ' x' + dpsRod + ': ' + (dpsRod * PRICING.dpsRod));
+  }
+  return { total: total, details: details };
+}
+
+function generateSummaryText() {
+  const lines = [];
+  const av = avatarById(state.selectedAvatar);
+
+  if (state.selections.isNewAvatar === false) {
+    lines.push(lang === 'th' ? '=== เพิ่มของใส่ตัวเดิม ===' : '=== Add to existing avatar ===');
+  } else {
+    lines.push(lang === 'th' ? 'อวตาร์ตัวใหม่' : 'New Avatar');
+  }
+  lines.push('');
+
+  if (av) {
+    lines.push(`${lang==='th' ? '- เบส' : '- Base:'} ${av.name}`);
+  }
+
+  if (state.selections.keepBaseHair === false) {
+    lines.push(lang==='th' ? '- ไม่เก็บผมตัวเบส' : '- Remove base hair');
+  } else if (state.selections.baseHairChanged) {
+    if (state.selections.baseHairColors && state.selections.baseHairColors.length > 0) {
+      var bhStr = state.selections.baseHairColors.map(function(c){return c.toUpperCase()}).join(', ');
+      var bhToggle = state.selections.baseHairColors.length > 1 ? (lang==='th'?' (สลับสี)':' (toggle)') : '';
+      var bhLabel = state.selections.isNewAvatar === false ? (lang==='th' ? '- เปลี่ยนสีผมตัวเบส' : '- Change base hair color:') : (lang==='th' ? '- สีผมตัวเบส' : '- Base hair color:');
+      lines.push(bhLabel + ' ' + bhStr + bhToggle);
+    }
+  } else if (state.selections.isNewAvatar !== false) {
+    // New avatar with base hair unchanged
+    lines.push((lang==='th' ? '- สีผมตัวเบส' : '- Base hair color:') + ' ' + (lang==='th' ? 'ตามรูปปก' : 'As thumbnail'));
+  }
+  if (state.selections.keepBaseOutfit === false) {
+    lines.push(lang==='th' ? '- ไม่เก็บชุดตัวเบส' : '- Remove base outfit');
+  }
+  var eyeChanged2 = state.selections.eyeChanged === true;
+  if (!eyeChanged2 && state.selections.isNewAvatar !== false) {
+    lines.push((lang==='th' ? '- สีตา' : '- Eye color:') + ' ' + (lang==='th' ? 'ตามรูปปก' : 'As thumbnail'));
+  } else if (eyeChanged2) {
+    var eyeL = state.selections.eyeColorLeft || '#000000';
+    var eyeR = state.selections.eyeColorRight || '#000000';
+    if (eyeL !== '#000000' || eyeR !== '#000000') {
+      var chgPrefix = (state.selections.isNewAvatar === false) ? (lang==='th' ? 'เปลี่ยน' : 'Change ') : '';
+      if (eyeL === eyeR) {
+        lines.push(chgPrefix + (lang==='th' ? '- สีตา' : '- Eye color:') + ' ' + eyeL.toUpperCase());
+      } else {
+        lines.push(chgPrefix + (lang==='th' ? '- สีตาซ้าย' : '- Left eye:') + ' ' + eyeL.toUpperCase());
+        lines.push(chgPrefix + (lang==='th' ? '- สีตาขวา' : '- Right eye:') + ' ' + eyeR.toUpperCase());
+      }
+    }
+  }
+
+  for (const tex of state.selections.textures) {
+    var texLine = (lang==='th' ? '- Texture:' : '- Texture:') + ' ' + tex.name;
+    if (tex.note) texLine += ' [' + (lang==='th' ? 'โน้ต' : 'note') + ': ' + tex.note + ']';
+    lines.push(texLine);
+  }
+
+  for (const hair of state.selections.hairs) {
+    var hairLine = (lang==='th' ? '- ทรงผม' : '- Hair:') + ' ' + hair.name;
+    if (state.selections.isNewAvatar === false && !hair.hairChanged) {
+      hairLine += ' ' + (lang==='th' ? 'สีเหมือนทรงผมเก่า' : 'existing color');
+    } else if (hair.colors && hair.colors.length > 0) {
+      var colorStr = hair.colors.map(function(c) { return c.toUpperCase(); }).join(', ');
+      var isMulti = hair.colors.length > 1;
+      hairLine += ' ' + (lang==='th' ? 'สี' : 'color:') + ' ' + colorStr;
+      if (isMulti) hairLine += (lang==='th' ? ' (สลับสี)' : ' (toggle)');
+    }
+    if (hair.note) hairLine += ' [' + (lang==='th' ? 'โน้ต' : 'note') + ': ' + hair.note + ']';
+    lines.push(hairLine);
+  }
+
+  for (const cloth of state.selections.clothes) {
+    var cline = (lang==='th' ? '- ชุด' : '- Outfit:') + ' ' + cloth.name;
+    if (cloth.toggles && cloth.toggles.length > 0) {
+      cline += ' ' + (lang==='th' ? '[ปุ่ม: ' : '[toggle: ') + cloth.toggles.join(', ') + ']';
+    }
+    if (cloth.note) cline += ' [' + (lang==='th' ? 'โน้ต' : 'note') + ': ' + cloth.note + ']';
+    lines.push(cline);
+  }
+
+  for (const acc of state.selections.accessories) {
+    var aline = (lang==='th' ? '- เครื่องประดับ' : '- Accessory:') + ' ' + acc.name;
+    if (acc.note) aline += ' [' + (lang==='th' ? 'โน้ต' : 'note') + ': ' + acc.note + ']';
+    lines.push(aline);
+  }
+
+
+  // Optional services
+  if (state.selections.optPolygon) lines.push((lang==='th' ? '- ลด Polygon' : '- Reduce polygons'));
+  if (state.selections.optPCSS) lines.push((lang==='th' ? '- เพิ่ม PCSS' : '- Add PCSS shadows'));
+  var dpsH = state.selections.optDPSHole || 0;
+  var dpsR = state.selections.optDPSRod || 0;
+  if (dpsH > 0) lines.push((lang==='th' ? '- DPS รู' : '- DPS holes') + ' x' + dpsH);
+  if (dpsR > 0) lines.push((lang==='th' ? '- DPS แท่ง' : '- DPS rods') + ' x' + dpsR);
+
+  // Add price
+  var price = calculatePrice();
+  lines.push('');
+  lines.push('---');
+  lines.push((lang==='th' ? 'รวมราคา' : 'Total') + ': ' + price.total + ' ' + (lang==='th' ? 'บาท' : 'baht'));
+  lines.push('');
+  lines.push((lang==='th' ? '※ ราคานี้เป็นราคาประเมินอัตโนมัติ ร้านจะแจ้งยอดยืนยันอีกครั้ง' : '* Auto-estimated price. Shop will confirm final amount.'));
+
+  return lines.join('\n');
+}
+
+function copySummary() {
+  const text = document.getElementById('summaryText')?.textContent || generateSummaryText();
+  navigator.clipboard.writeText(text).then(() => {
+    showToast(t('copied'));
+  });
+}
+
+function resetAll() {
+  if (state.selectedAvatar && !confirm(t('confirmReset'))) return;
+  state = {
+    page: 'landing',
+    selectedAvatar: null,
+    selectedClothFirst: null,
+    selections: { hairs: [], textures: [], clothes: [], accessories: [], eyeColorLeft: '#000000', eyeColorRight: '#000000', baseHairColors: ['#000000'], keepBaseHair: true, keepBaseOutfit: true, isNewAvatar: true, optPolygon: false, optPCSS: false, optDPSHole: 0, optDPSRod: 0, baseHairChanged: false, eyeChanged: false },
+    tagFilters: {},
+    tagSearches: {},
+    customerNotes: '',
+  };
+  render();
+}
+
+// --- Global Error Handler ---
+window.onerror = function(msg, url, line, col, error) {
+  var app = document.getElementById('app');
+  if (app) {
+    app.innerHTML = '<div style="padding:20px;color:red;background:#111111"><h3>JavaScript Error</h3>' +
+      '<p><strong>Message:</strong> ' + msg + '</p>' +
+      '<p><strong>Line:</strong> ' + line + ', Column: ' + col + '</p>' +
+      '<pre style="font-size:11px;white-space:pre-wrap">' + (error && error.stack ? error.stack : 'no stack') + '</pre></div>';
+  }
+  return true;
+};
+
+// --- Init ---
+var _restoredFromStorage = !tryRestoreFromHash() && tryRestoreFromStorage();
+render();
+if (_restoredFromStorage) showToast(t('progressRestored'), { label: t('startOver'), onClick: resetAll }, 6000);
+</script>
+</body>
+</html>
