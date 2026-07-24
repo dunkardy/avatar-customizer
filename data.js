@@ -66853,6 +66853,7 @@ const AVATAR_DATA = {
             "Mamehinata",
             "Mamehinata & Kipfel 1.12",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Minase",
             "Moe",
@@ -66861,8 +66862,7 @@ const AVATAR_DATA = {
             "Shinano",
             "Shinra",
             "Sio",
-            "Hanka",
-            "Milfy"
+            "Hanka"
           ],
           "boothSearch": "https://booth.pm/en/search/BW%20EYE%20TEXTURES%2031%20AVATARS%20PIT%20BOOTH",
           "autoTags": [
@@ -66935,13 +66935,13 @@ const AVATAR_DATA = {
             "Lime",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
             "Manuka",
+            "Milfy",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
             "Sio",
-            "Soraha",
-            "Milfy"
+            "Soraha"
           ],
           "boothSearch": "https://booth.pm/en/search/cracks%20eye",
           "autoTags": [
@@ -66979,10 +66979,10 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Texture/Cyberpunk_face.zip",
           "dateAdded": 1673531850,
           "compatibleAvatars": [
-            "CHISE",
             "Maya",
             "Selestia",
-            "Sophina"
+            "Sophina",
+            "CHISE"
           ],
           "boothSearch": "https://booth.pm/en/search/Cyberpunk%20face",
           "autoTags": [
@@ -67295,12 +67295,12 @@ const AVATAR_DATA = {
             "Lime",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Rurune",
             "Selestia",
             "Shinano",
-            "Shinra",
-            "Milfy"
+            "Shinra"
           ],
           "boothSearch": "https://booth.pm/en/search/Flower%20Neon%20Tattoos",
           "autoTags": [
@@ -67508,11 +67508,11 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Texture/StarEyes_V1.0.zip",
           "dateAdded": 1724652498,
           "compatibleAvatars": [
+            "AlPha",
             "Kikyo",
             "Minase",
             "Moe",
-            "Selestia",
-            "AlPha"
+            "Selestia"
           ],
           "boothSearch": "https://booth.pm/en/search/Star%20Eyes",
           "autoTags": [
@@ -67539,6 +67539,7 @@ const AVATAR_DATA = {
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
             "Mafuyu",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Minase",
             "Moe",
@@ -67547,8 +67548,7 @@ const AVATAR_DATA = {
             "Shinano",
             "Shinra",
             "Sio",
-            "Hanka",
-            "Milfy"
+            "Hanka"
           ],
           "boothSearch": "https://booth.pm/en/search/Sticky%20Kiss-",
           "autoTags": [
@@ -67842,7 +67842,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_-NEW-_GalshopTomngo_Lingerie_ver2.3.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/-NEW-_GalshopTomngo_Lingerie_ver2.3.zip",
           "compatibleAvatars": [
-            "Anon",
             "Karin",
             "Kikyo",
             "Leefa",
@@ -67856,6 +67855,7 @@ const AVATAR_DATA = {
             "Moe",
             "Rindo",
             "Selestia",
+            "Anon",
             "rushka"
           ],
           "dateAdded": 1701052968,
@@ -67893,7 +67893,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_-NEW-_GalshopTomngo_Lingerie_ver2.6.1.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/-NEW-_GalshopTomngo_Lingerie_ver2.6.1.zip",
           "compatibleAvatars": [
-            "Anon",
             "Karin",
             "Kikyo",
             "Leefa",
@@ -67909,6 +67908,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Sio",
+            "Anon",
             "rushka"
           ],
           "dateAdded": 1743473559,
@@ -68050,14 +68050,14 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1754806275,
           "boothSearch": "https://booth.pm/en/search/13%20010%20School%20Look",
@@ -68438,7 +68438,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_4970851_multiavatar_capettiya_NekoNekoNurse.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/4970851 multiavatar capettiya_NekoNekoNurse.rar",
           "compatibleAvatars": [
-            "Anon",
             "Karin",
             "Kikyo",
             "Leefa",
@@ -68450,6 +68449,7 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Soraha",
+            "Anon",
             "noy",
             "sapphy",
             "shayna",
@@ -68647,7 +68647,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_5312417_multiavatar_capettiya_Poppin_Gift.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/5312417 multiavatar capettiya_Poppin Gift.zip",
           "compatibleAvatars": [
-            "Anon",
             "Karin",
             "Kikyo",
             "Leefa",
@@ -68661,6 +68660,7 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Soraha",
+            "Anon",
             "sapphy",
             "shayna",
             "yuu"
@@ -68884,7 +68884,6 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Clothes/5460941 osatoubox_QuietQuill_Shinra Grus Kalne Lapwing Lasyusha Lime Mamehinata Manuka Moe.zip",
           "compatibleAvatars": [
             "Grus",
-            "Kalne",
             "Kikyo",
             "Lapwing",
             "Lasyusha",
@@ -68895,7 +68894,8 @@ const AVATAR_DATA = {
             "Kipfel",
             "Manuka",
             "Moe",
-            "Shinra"
+            "Shinra",
+            "Kalne"
           ],
           "dateAdded": 1711247321,
           "boothSearch": "https://booth.pm/en/items/5460941",
@@ -68927,7 +68927,7 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_5502202_sw11.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/5502202 sw11.rar",
           "compatibleAvatars": [
-            "Anon",
+            "ANDI",
             "Hakka",
             "Karin",
             "Kikyo",
@@ -68941,7 +68941,7 @@ const AVATAR_DATA = {
             "Rindo",
             "Rusk",
             "Selestia",
-            "ANDI"
+            "Anon"
           ],
           "dateAdded": 1711513123,
           "boothSearch": "https://booth.pm/en/items/5502202",
@@ -69605,13 +69605,13 @@ const AVATAR_DATA = {
             "Mafuyu",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
             "Rurune",
             "Shinano",
-            "Soraha",
-            "Milfy"
+            "Soraha"
           ],
           "dateAdded": 1749870887,
           "boothSearch": "https://booth.pm/en/items/6929935",
@@ -69859,13 +69859,13 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Rurune",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1753942371,
           "boothSearch": "https://booth.pm/en/items/7176888",
@@ -70092,6 +70092,7 @@ const AVATAR_DATA = {
             "Lime",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -70100,8 +70101,7 @@ const AVATAR_DATA = {
             "Shinano",
             "Shinra",
             "Sio",
-            "Hanka",
-            "Milfy"
+            "Hanka"
           ],
           "dateAdded": 1751945775,
           "boothSearch": "https://booth.pm/en/search/Chromium",
@@ -70585,8 +70585,8 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes__cs_dta_towel_ver1_1.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/_cs_dta_towel_ver1_1.zip",
           "compatibleAvatars": [
-            "Anon",
             "Soraha",
+            "Anon",
             "shayna"
           ],
           "dateAdded": 1695466801,
@@ -70734,10 +70734,10 @@ const AVATAR_DATA = {
             "Lime",
             "Chiffon",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Shinano",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1760841555,
           "boothSearch": "https://booth.pm/en/search/Lovely%20pearl",
@@ -70770,10 +70770,10 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes__MP_MP_COLLECTION-BUNNY_BUNNY.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/_MP_MP_COLLECTION-BUNNY_BUNNY.zip",
           "compatibleAvatars": [
+            "BUNNY",
             "Kikyo",
             "Manuka",
-            "Selestia",
-            "BUNNY"
+            "Selestia"
           ],
           "dateAdded": 1704268414,
           "boothSearch": "https://booth.pm/en/search/MP%20MP%20COLLECTION-BUNNY%20BUNNY",
@@ -71052,10 +71052,10 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Shinano",
-            "Shinra",
-            "Milfy"
+            "Shinra"
           ],
           "dateAdded": 1763876194,
           "boothSearch": "https://booth.pm/en/search/After%20Gym",
@@ -71138,6 +71138,7 @@ const AVATAR_DATA = {
             "Chocolat",
             "Manuka",
             "Maya",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -71145,8 +71146,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1757588407,
           "boothSearch": "https://booth.pm/en/search/Agent%20Krash%20FS%20Shinano%20Airi%20Kikyo%20Lime%20Chiffon%20Chocolat%20Manuka%20MAya%20Milfy%20Milltina%20Mizuki%20Rurune%20Moe%20Selestia%20Shinra%20Sio",
@@ -71274,11 +71274,11 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Rurune",
-            "Shinano",
-            "Milfy"
+            "Shinano"
           ],
           "dateAdded": 1763876560,
           "boothSearch": "https://booth.pm/en/search/Akiho",
@@ -71476,13 +71476,13 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Rurune",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1760845593,
           "boothSearch": "https://booth.pm/en/search/Amaretto",
@@ -71829,11 +71829,11 @@ const AVATAR_DATA = {
             "Lime",
             "Manuka",
             "Meiyun",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
-            "Shinano",
-            "Milfy"
+            "Shinano"
           ],
           "dateAdded": 1761971066,
           "boothSearch": "https://booth.pm/en/search/Aqualinel",
@@ -71864,11 +71864,11 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Moe",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1762137800,
           "boothSearch": "https://booth.pm/en/search/Aquamarine",
@@ -72293,6 +72293,7 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_ATTITUDE__The_Royal_Bunny1.x.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/ATTITUDE  The Royal Bunny1.x.zip",
           "compatibleAvatars": [
+            "BUNNY",
             "Chiffon",
             "Chocolat",
             "Ichigo",
@@ -72301,8 +72302,7 @@ const AVATAR_DATA = {
             "Milltina",
             "Moe",
             "Shinra",
-            "Sio",
-            "BUNNY"
+            "Sio"
           ],
           "dateAdded": 1780477804,
           "boothSearch": "https://booth.pm/en/search/ATTITUDE%20The%20Royal%20Bunny1",
@@ -72638,14 +72638,14 @@ const AVATAR_DATA = {
             "Chocolat",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1719450435,
           "boothSearch": "https://booth.pm/en/search/Baby%20Tulle",
@@ -72838,14 +72838,14 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
-            "Shinra",
-            "Milfy"
+            "Shinra"
           ],
           "dateAdded": 1748825520,
           "boothSearch": "https://booth.pm/en/search/Bang%20Viper",
@@ -73095,14 +73095,14 @@ const AVATAR_DATA = {
             "Lumina",
             "Mafuyu",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Minase",
             "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1765000998,
           "boothSearch": "https://booth.pm/en/search/Beloved%20Sugar%20Astro%20Fuite",
@@ -74069,19 +74069,19 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Clothes/Broken_Bunny.zip",
           "compatibleAvatars": [
             "Airi",
+            "BUNNY",
             "Chiffon",
             "Chocolat",
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Rurune",
             "Shinano",
             "Shinra",
-            "Sio",
-            "BUNNY",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1765001045,
           "boothSearch": "https://booth.pm/en/search/Broken%20Bunny",
@@ -74124,12 +74124,12 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Rurune",
             "Selestia",
-            "Shinano",
-            "Milfy"
+            "Shinano"
           ],
           "dateAdded": 1748826773,
           "boothSearch": "https://booth.pm/en/search/Bubble%20Bubbly",
@@ -74152,6 +74152,7 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_BUNNY_GANG.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/BUNNY GANG.zip",
           "compatibleAvatars": [
+            "BUNNY",
             "Chiffon",
             "Karin",
             "Kikyo",
@@ -74161,8 +74162,7 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Shinra",
-            "Sio",
-            "BUNNY"
+            "Sio"
           ],
           "dateAdded": 1721022646,
           "boothSearch": "https://booth.pm/en/search/BUNNY%20GANG",
@@ -74216,6 +74216,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Clothes/Bunny Police.zip",
           "compatibleAvatars": [
             "Airi",
+            "BUNNY",
             "Chiffon",
             "Chocolat",
             "Lasyusha",
@@ -74226,8 +74227,7 @@ const AVATAR_DATA = {
             "Rurune",
             "Selestia",
             "Shinano",
-            "Sio",
-            "BUNNY"
+            "Sio"
           ],
           "dateAdded": 1764999246,
           "boothSearch": "https://booth.pm/en/search/Bunny%20Police",
@@ -74341,13 +74341,13 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Clothes/Bunny_Race.zip",
           "compatibleAvatars": [
             "Airi",
+            "BUNNY",
             "Chiffon",
             "Chocolat",
             "Lime",
             "Manuka",
             "Selestia",
-            "Shinano",
-            "BUNNY"
+            "Shinano"
           ],
           "dateAdded": 1764999555,
           "boothSearch": "https://booth.pm/en/search/Bunny%20Race",
@@ -74435,7 +74435,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_BurumaSet_FULLSET_Ver1.00.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/BurumaSet_FULLSET_Ver1.00.zip",
           "compatibleAvatars": [
-            "Anon",
             "Hakka",
             "Imeris",
             "Karin",
@@ -74445,7 +74444,8 @@ const AVATAR_DATA = {
             "Manuka",
             "Maya",
             "Moe",
-            "Rindo"
+            "Rindo",
+            "Anon"
           ],
           "dateAdded": 1708388405,
           "boothSearch": "https://booth.pm/en/search/Buruma%20Set",
@@ -75048,6 +75048,7 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -75055,8 +75056,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1756185940,
           "boothSearch": "https://booth.pm/en/search/Chain%20Kiss%20Denim%20Street",
@@ -75125,6 +75125,7 @@ const AVATAR_DATA = {
             "Limilia",
             "Mafuyu",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -75134,8 +75135,7 @@ const AVATAR_DATA = {
             "Shinra",
             "Sio",
             "YRISPHERE",
-            "curishia",
-            "Milfy"
+            "curishia"
           ],
           "dateAdded": 1760079148,
           "boothSearch": "https://booth.pm/en/search/Charmveil",
@@ -75220,14 +75220,14 @@ const AVATAR_DATA = {
             "Lime",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1753943683,
           "boothSearch": "https://booth.pm/en/search/Cheddar%20Trap%20Package",
@@ -75266,13 +75266,13 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1751095895,
           "boothSearch": "https://booth.pm/en/search/Cheeky%20Tweaky",
@@ -75520,7 +75520,6 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Clothes/ChillWear.zip",
           "compatibleAvatars": [
             "Airi",
-            "Anon",
             "Ash",
             "Chiffon",
             "Karin",
@@ -75543,6 +75542,7 @@ const AVATAR_DATA = {
             "Shinra",
             "Sio",
             "Sophina",
+            "Anon",
             "ciel",
             "MORPHO",
             "neige",
@@ -75705,13 +75705,13 @@ const AVATAR_DATA = {
             "Lime",
             "Chiffon",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1751094308,
           "boothSearch": "https://booth.pm/en/search/Chi%20Nya%20Nya",
@@ -75886,6 +75886,7 @@ const AVATAR_DATA = {
             "Lime",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -75893,8 +75894,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1756185865,
           "boothSearch": "https://booth.pm/en/search/Chrome%20Decay%203BON",
@@ -76127,6 +76127,7 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Classical_chic_fullset.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Classical chic fullset.rar",
           "compatibleAvatars": [
+            "ANDI",
             "Kikyo",
             "Kipfel",
             "Lapwing",
@@ -76141,8 +76142,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "ANDI"
+            "Sio"
           ],
           "dateAdded": 1737434271,
           "boothSearch": "https://booth.pm/en/search/Classical%20chic",
@@ -76186,7 +76186,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Classical_Maid.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Classical Maid.zip",
           "compatibleAvatars": [
-            "Anon",
             "Anri",
             "Ash",
             "Chiffon",
@@ -76196,6 +76195,7 @@ const AVATAR_DATA = {
             "Inaba",
             "Shiina",
             "Karin",
+            "Kaya",
             "Kikyo",
             "Kokoa",
             "Komano",
@@ -76226,14 +76226,14 @@ const AVATAR_DATA = {
             "Tolass",
             "Wolferia",
             "YRISPHERE",
-            "Yoll",
             "Yugi",
             "Miyo",
+            "Zome",
+            "Anon",
             "ciel",
             "curishia",
             "fluctua",
             "HAOLAN",
-            "Kaya",
             "kyoko",
             "lilie",
             "mariel",
@@ -76246,7 +76246,7 @@ const AVATAR_DATA = {
             "sii",
             "tycho",
             "ururu",
-            "Zome"
+            "Yoll"
           ],
           "dateAdded": 1721023106,
           "boothSearch": "https://booth.pm/en/search/Classical%20Maid",
@@ -76343,7 +76343,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Cloth_Fullset_PUELLA_OF_FANTASIA.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Cloth Fullset PUELLA OF FANTASIA.zip",
           "compatibleAvatars": [
-            "Anon",
             "Anri",
             "Ash",
             "Grus",
@@ -76361,6 +76360,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Sophina",
             "Yugi",
+            "Anon",
             "rushka",
             "ururu",
             "yugi_miyo"
@@ -77017,6 +77017,7 @@ const AVATAR_DATA = {
             "Lime",
             "Mafuyu",
             "Manuka",
+            "Milfy",
             "Milk",
             "Milltina",
             "Mizuki",
@@ -77026,7 +77027,6 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Sio",
-            "Milfy",
             "Shiratsume"
           ],
           "dateAdded": 1753069106,
@@ -77427,6 +77427,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Clothes/Danzai Bunny.zip",
           "compatibleAvatars": [
             "Airi",
+            "BUNNY",
             "Chocolat",
             "Lime",
             "Chiffon",
@@ -77438,7 +77439,6 @@ const AVATAR_DATA = {
             "Shinano",
             "Shinra",
             "Sio",
-            "BUNNY",
             "danzai"
           ],
           "dateAdded": 1743473411,
@@ -77575,6 +77575,7 @@ const AVATAR_DATA = {
             "Lime",
             "Chiffon",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Rurune",
@@ -77582,8 +77583,7 @@ const AVATAR_DATA = {
             "Shinano",
             "Shinra",
             "Sio",
-            "danzai",
-            "Milfy"
+            "danzai"
           ],
           "dateAdded": 1758857195,
           "boothSearch": "https://booth.pm/en/search/Danzai%20Nurse",
@@ -78035,13 +78035,13 @@ const AVATAR_DATA = {
             "Lime",
             "Chocolat",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1760078268,
           "boothSearch": "https://booth.pm/en/search/Denim%20Denier",
@@ -78122,11 +78122,11 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1760845933,
           "boothSearch": "https://booth.pm/en/search/Desperado",
@@ -78272,14 +78272,14 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Diamond_Bunny.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Diamond_Bunny.rar",
           "compatibleAvatars": [
+            "BUNNY",
             "Chiffon",
             "Kikyo",
             "Lime",
             "Chocolat",
             "Manuka",
             "Moe",
-            "Selestia",
-            "BUNNY"
+            "Selestia"
           ],
           "dateAdded": 1719451669,
           "boothSearch": "https://booth.pm/en/search/Diamond%20Bunny",
@@ -78353,13 +78353,13 @@ const AVATAR_DATA = {
             "Ichigo",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1756877639,
           "boothSearch": "https://booth.pm/en/search/Dive%20Vibe",
@@ -78645,7 +78645,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_dream-sleeping-fullset_.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/dream-sleeping-fullset_.7z",
           "compatibleAvatars": [
-            "Anon",
             "Hakka",
             "Inaba",
             "Shiina",
@@ -78667,6 +78666,7 @@ const AVATAR_DATA = {
             "Sue",
             "Tuberose",
             "Yugi",
+            "Anon",
             "feihon",
             "nayu",
             "shinonome",
@@ -78989,6 +78989,7 @@ const AVATAR_DATA = {
             "Kikyo",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -78996,8 +78997,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1758365172,
           "boothSearch": "https://booth.pm/en/search/E",
@@ -79111,12 +79111,12 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Rurune",
             "Selestia",
-            "Shinano",
-            "Milfy"
+            "Shinano"
           ],
           "dateAdded": 1765000413,
           "boothSearch": "https://booth.pm/en/search/Eine%20Kleine",
@@ -79165,6 +79165,7 @@ const AVATAR_DATA = {
             "Chiffon",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -79172,8 +79173,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1766119384,
           "boothSearch": "https://booth.pm/en/search/Elegant%20Eclipse",
@@ -79465,6 +79465,7 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -79472,8 +79473,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1766121069,
           "boothSearch": "https://booth.pm/en/search/Ensnared%20Heart",
@@ -79521,14 +79521,14 @@ const AVATAR_DATA = {
             "Lime",
             "Chocolat",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1756877575,
           "boothSearch": "https://booth.pm/en/search/Eresia",
@@ -79759,13 +79759,13 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Clothes/Evergrace.rar",
           "compatibleAvatars": [
             "Airi",
+            "BUNNY",
             "Kikyo",
             "Manuka",
             "Moe",
             "Selestia",
             "Shinano",
-            "Shinra",
-            "BUNNY"
+            "Shinra"
           ],
           "dateAdded": 1727508615,
           "boothSearch": "https://booth.pm/en/search/Evergrace",
@@ -80140,6 +80140,7 @@ const AVATAR_DATA = {
             "Lime",
             "Chocolat",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -80147,8 +80148,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1756876951,
           "boothSearch": "https://booth.pm/en/search/Fallen%20Angel%20Of%20Hell%20Lucy",
@@ -80216,6 +80216,7 @@ const AVATAR_DATA = {
             "Lasyusha",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -80223,8 +80224,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1748825337,
           "boothSearch": "https://booth.pm/en/search/Fancy%20Lingerie",
@@ -80727,11 +80727,11 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Rurune",
             "Shinano",
-            "Shinra",
-            "Milfy"
+            "Shinra"
           ],
           "dateAdded": 1763878096,
           "boothSearch": "https://booth.pm/en/search/Frosty%20Lovers",
@@ -81146,6 +81146,7 @@ const AVATAR_DATA = {
             "Lime",
             "Chocolat",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -81153,8 +81154,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1761966336,
           "boothSearch": "https://booth.pm/en/search/FULL%20Midnight%20Hug",
@@ -82408,6 +82408,7 @@ const AVATAR_DATA = {
             "Inaba",
             "Shiina",
             "Karin",
+            "Kaya",
             "Kikyo",
             "Lime",
             "Chocolat",
@@ -82419,7 +82420,6 @@ const AVATAR_DATA = {
             "Rindo",
             "Selestia",
             "Sio",
-            "Kaya",
             "MORPHO"
           ],
           "dateAdded": 1714610388,
@@ -82623,7 +82623,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Fullset_SUBCAL_PUNK_CODE_By_Add+Recollection.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Fullset SUBCAL PUNK CODE By Add+Recollection.zip",
           "compatibleAvatars": [
-            "Anon",
             "Kikyo",
             "Leefa",
             "Lunalitt",
@@ -82637,6 +82636,7 @@ const AVATAR_DATA = {
             "Shinra",
             "Sophina",
             "Yugi",
+            "Anon",
             "ciel",
             "yugi_miyo"
           ],
@@ -83115,7 +83115,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Fullset_Yumecoi_Style_18avatar.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Fullset_Yumecoi_Style_18avatar.zip",
           "compatibleAvatars": [
-            "Anon",
             "Kikyo",
             "Leefa",
             "Lunalitt",
@@ -83128,6 +83127,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinra",
             "Sophina",
+            "Anon",
             "ciel"
           ],
           "dateAdded": 1698368276,
@@ -83302,10 +83302,10 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Moe",
             "Shinano",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1751946525,
           "boothSearch": "https://booth.pm/en/search/Funyako",
@@ -83412,11 +83412,11 @@ const AVATAR_DATA = {
             "Lime",
             "Chocolat",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
             "Shinano",
-            "Milfy",
             "Shiratsume",
             "ururu"
           ],
@@ -83577,14 +83577,14 @@ const AVATAR_DATA = {
             "Lime",
             "Chiffon",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1760845000,
           "boothSearch": "https://booth.pm/en/search/Genei%20Waso%20-%20Gekka%20no%20Jaen",
@@ -83680,13 +83680,13 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_GLASS_RABBIT_6_Avatar_Full_set.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/GLASS RABBIT 6 Avatar Full set.zip",
           "compatibleAvatars": [
+            "BUNNY",
             "Kikyo",
             "Lasyusha",
             "Manuka",
             "Moe",
             "Selestia",
-            "Sio",
-            "BUNNY"
+            "Sio"
           ],
           "dateAdded": 1717556379,
           "boothSearch": "https://booth.pm/en/search/GLASS%20RABBIT%206%20Avatar",
@@ -83764,6 +83764,7 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -83771,8 +83772,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1758859054,
           "boothSearch": "https://booth.pm/en/search/Glitch",
@@ -84216,12 +84216,12 @@ const AVATAR_DATA = {
             "Lime",
             "Chiffon",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Rurune",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1760844737,
           "boothSearch": "https://booth.pm/en/search/Halex%20Bloody%20Waltz",
@@ -84292,8 +84292,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Half_Parka_Outfit.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Half Parka Outfit.zip",
           "compatibleAvatars": [
-            "Anon",
-            "CHISE",
             "Hakka",
             "Imeris",
             "Karin",
@@ -84307,6 +84305,8 @@ const AVATAR_DATA = {
             "Rindo",
             "Selestia",
             "Wolferia",
+            "Anon",
+            "CHISE",
             "eyo",
             "lilie"
           ],
@@ -85157,7 +85157,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_hip_street_full_v0_2.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/hip_street_full_v0_2.zip",
           "compatibleAvatars": [
-            "Anon",
             "Ash",
             "Hakka",
             "Karin",
@@ -85167,6 +85166,7 @@ const AVATAR_DATA = {
             "Maya",
             "Rindo",
             "Rusk",
+            "Anon",
             "mariel"
           ],
           "dateAdded": 1687695096,
@@ -85194,14 +85194,14 @@ const AVATAR_DATA = {
             "Lime",
             "Chiffon",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1760843181,
           "boothSearch": "https://booth.pm/en/search/Hollow",
@@ -85693,7 +85693,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_IdolTypeForte_Fullset_Ver1.00.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/IdolTypeForte_Fullset_Ver1.00.zip",
           "compatibleAvatars": [
-            "Anon",
             "Karin",
             "Kikyo",
             "Leefa",
@@ -85707,6 +85706,7 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Soraha",
+            "Anon",
             "noy",
             "sapphy",
             "shayna",
@@ -85805,6 +85805,7 @@ const AVATAR_DATA = {
             "Chiffon",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Minase",
             "Moe",
@@ -85812,8 +85813,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1756182883,
           "boothSearch": "https://booth.pm/en/search/INTERSTELLAR%20LIBERATION%20FRONT",
@@ -85937,7 +85937,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Iris_Bloom.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Iris Bloom.zip",
           "compatibleAvatars": [
-            "Anon",
             "Chiffon",
             "Kikyo",
             "Lime",
@@ -85948,7 +85947,8 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Shinra",
-            "Sio"
+            "Sio",
+            "Anon"
           ],
           "dateAdded": 1715226184,
           "boothSearch": "https://booth.pm/en/search/Iris%20Bloom",
@@ -86219,7 +86219,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_JerseyJersey.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/JerseyJersey.zip",
           "compatibleAvatars": [
-            "Anon",
             "Kikyo",
             "Leefa",
             "Lunalitt",
@@ -86228,6 +86227,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinra",
             "Sophina",
+            "Anon",
             "ciel"
           ],
           "dateAdded": 1685445111,
@@ -86261,14 +86261,14 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
             "Rindo",
             "Runa",
             "Selestia",
-            "Shinano",
-            "Milfy"
+            "Shinano"
           ],
           "dateAdded": 1772252354,
           "boothSearch": "https://booth.pm/en/search/Jingle%20Kiss",
@@ -86536,6 +86536,7 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -86543,8 +86544,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1753072995,
           "boothSearch": "https://booth.pm/en/search/Kissy%20Pop",
@@ -86624,12 +86624,12 @@ const AVATAR_DATA = {
             "Ichigo",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Rurune",
             "Selestia",
-            "Shinano",
-            "Milfy"
+            "Shinano"
           ],
           "dateAdded": 1760846249,
           "boothSearch": "https://booth.pm/en/search/Kitty%20Nitty",
@@ -86780,6 +86780,7 @@ const AVATAR_DATA = {
             "Hakka",
             "Inaba",
             "Shiina",
+            "Kaya",
             "Kikyo",
             "Leefa",
             "Lunalitt",
@@ -86787,6 +86788,7 @@ const AVATAR_DATA = {
             "Chiffon",
             "Chocolat",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -86796,9 +86798,7 @@ const AVATAR_DATA = {
             "Shinra",
             "Tolass",
             "fluctua",
-            "Kaya",
             "kyoko",
-            "Milfy",
             "rushka",
             "ururu"
           ],
@@ -86891,9 +86891,9 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Knit_Dress_(Full_Set).jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Knit Dress (Full Set).zip",
           "compatibleAvatars": [
-            "Anon",
             "Inaba",
             "Shiina",
+            "Kaya",
             "Kikyo",
             "Kosame",
             "Lasyusha",
@@ -86911,8 +86911,8 @@ const AVATAR_DATA = {
             "Soraha",
             "Velle",
             "Yugi",
+            "Anon",
             "feihon",
-            "Kaya",
             "mariel",
             "shinonome",
             "yugi_miyo"
@@ -87131,6 +87131,7 @@ const AVATAR_DATA = {
             "Mafuyu",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Milk",
             "Milltina",
             "Mizuki",
@@ -87139,7 +87140,6 @@ const AVATAR_DATA = {
             "Rusk",
             "Shinano",
             "Soraha",
-            "Milfy",
             "mint"
           ],
           "dateAdded": 1764999701,
@@ -87239,13 +87239,13 @@ const AVATAR_DATA = {
           "compatibleAvatars": [
             "Airi",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1748826444,
           "boothSearch": "https://booth.pm/en/search/Lazy%20Hazy",
@@ -87419,7 +87419,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_liachanoshikode_fullset_ver1_02.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/liachanoshikode_fullset_ver1_02.zip",
           "compatibleAvatars": [
-            "Anon",
             "Ash",
             "Hakka",
             "Karin",
@@ -87427,6 +87426,7 @@ const AVATAR_DATA = {
             "Maya",
             "Rindo",
             "Sephira",
+            "Anon",
             "lilie",
             "nayu",
             "noy",
@@ -87459,14 +87459,14 @@ const AVATAR_DATA = {
             "Lasyusha",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1760846605,
           "boothSearch": "https://booth.pm/en/search/Libero%20Devil%20Hex",
@@ -87720,12 +87720,12 @@ const AVATAR_DATA = {
             "Chiffon",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Rurune",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1768020063,
           "boothSearch": "https://booth.pm/en/search/Lilith%20Wing",
@@ -87767,6 +87767,7 @@ const AVATAR_DATA = {
             "Ichigo",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -87774,8 +87775,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1758361914,
           "boothSearch": "https://booth.pm/en/search/Lily%20Bloom",
@@ -87813,14 +87813,14 @@ const AVATAR_DATA = {
             "Kikyo",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1760844879,
           "boothSearch": "https://booth.pm/en/search/Lingo%20Pop%20Starlet%20Setup",
@@ -88121,13 +88121,13 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1768018843,
           "boothSearch": "https://booth.pm/en/search/Lolly%20Dolly",
@@ -88248,13 +88248,13 @@ const AVATAR_DATA = {
             "Chiffon",
             "Chocolat",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1749870319,
           "boothSearch": "https://booth.pm/en/search/Lop%20Ear%20Mine",
@@ -88602,6 +88602,7 @@ const AVATAR_DATA = {
             "Kikyo",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -88609,8 +88610,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1753944288,
           "boothSearch": "https://booth.pm/en/search/Lunabelle",
@@ -88745,13 +88745,13 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Rurune",
             "Selestia",
             "Shinano",
-            "Shinra",
-            "Milfy"
+            "Shinra"
           ],
           "dateAdded": 1763875952,
           "boothSearch": "https://booth.pm/en/search/Lune%20Fluer",
@@ -89243,6 +89243,7 @@ const AVATAR_DATA = {
             "Lime",
             "Chocolat",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -89250,8 +89251,7 @@ const AVATAR_DATA = {
             "Shinano",
             "Shinra",
             "Sio",
-            "Velle",
-            "Milfy"
+            "Velle"
           ],
           "dateAdded": 1753068491,
           "boothSearch": "https://booth.pm/en/search/Mari%20Velle",
@@ -89289,14 +89289,14 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
             "Rurune",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1748824608,
           "boothSearch": "https://booth.pm/en/search/Marin%20Kiss",
@@ -89372,10 +89372,10 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Shinano",
-            "Shinra",
-            "Milfy"
+            "Shinra"
           ],
           "dateAdded": 1763877271,
           "boothSearch": "https://booth.pm/en/search/Marshmallow%20Nap",
@@ -89824,13 +89824,13 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Rurune",
             "Shinano",
             "Shinra",
             "Sio",
-            "Milfy",
             "Shiratsume"
           ],
           "dateAdded": 1751095244,
@@ -89875,14 +89875,14 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1765000749,
           "boothSearch": "https://booth.pm/en/search/MEMMEM%20set002",
@@ -90218,6 +90218,7 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -90225,8 +90226,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1765001119,
           "boothSearch": "https://booth.pm/en/search/Midnight%20Waltz",
@@ -90303,7 +90303,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_MilitcuteOnepiece_Fullset_Ver1.00.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/MilitcuteOnepiece_Fullset_Ver1.00.zip",
           "compatibleAvatars": [
-            "Anon",
             "Chiffon",
             "Karin",
             "Kikyo",
@@ -90315,6 +90314,7 @@ const AVATAR_DATA = {
             "Mizuki",
             "Moe",
             "Soraha",
+            "Anon",
             "sapphy",
             "shayna",
             "tina"
@@ -90380,6 +90380,7 @@ const AVATAR_DATA = {
             "Mafuyu",
             "Manuka",
             "Maya",
+            "Milfy",
             "Milk",
             "Milltina",
             "Mizuki",
@@ -90388,7 +90389,6 @@ const AVATAR_DATA = {
             "Rusk",
             "Shinano",
             "Shinra",
-            "Milfy",
             "neige"
           ],
           "dateAdded": 1754806057,
@@ -90502,11 +90502,11 @@ const AVATAR_DATA = {
             "Chiffon",
             "Mafuyu",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Rurune",
             "Shinano",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1768019389,
           "boothSearch": "https://booth.pm/en/search/Mira",
@@ -90541,12 +90541,12 @@ const AVATAR_DATA = {
             "Lime",
             "Chiffon",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Rurune",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1749871638,
           "boothSearch": "https://booth.pm/en/search/MIRUKURU%20-%20MELODIA%20-",
@@ -91032,13 +91032,13 @@ const AVATAR_DATA = {
             "Kuuta",
             "Lime",
             "Manuka",
+            "Milfy",
             "Minase",
             "Rurune",
             "Shinano",
             "Shinra",
             "Sio",
-            "Hanka",
-            "Milfy"
+            "Hanka"
           ],
           "dateAdded": 1764998672,
           "boothSearch": "https://booth.pm/en/search/Mon%20Fleur",
@@ -91215,6 +91215,7 @@ const AVATAR_DATA = {
             "Lime",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -91222,8 +91223,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1753067768,
           "boothSearch": "https://booth.pm/en/search/Moon%20Fox%20Eyes",
@@ -91696,12 +91696,12 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Mizuki",
             "Rurune",
             "Shinano",
             "Shinra",
             "Sio",
-            "Milfy",
             "Shiratsume"
           ],
           "dateAdded": 1751091836,
@@ -91769,10 +91769,10 @@ const AVATAR_DATA = {
             "Lime",
             "Chiffon",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Rurune",
-            "Shinano",
-            "Milfy"
+            "Shinano"
           ],
           "dateAdded": 1756876295,
           "boothSearch": "https://booth.pm/en/search/N02%207%20AVATAR",
@@ -91978,13 +91978,13 @@ const AVATAR_DATA = {
             "Lime",
             "Chocolat",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1763198857,
           "boothSearch": "https://booth.pm/en/search/Naughty%20Bikini",
@@ -92098,13 +92098,13 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Necro_China_FULL.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Necro_China FULL.zip",
           "compatibleAvatars": [
-            "CHISE",
             "Karin",
             "Kikyo",
             "Manuka",
             "Moe",
             "Selestia",
-            "Zome"
+            "Zome",
+            "CHISE"
           ],
           "dateAdded": 1717041724,
           "boothSearch": "https://booth.pm/en/search/Necro%20China",
@@ -92313,7 +92313,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_nekonekoja-ji_fullset_ver1_00.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/nekonekoja-ji_fullset_ver1_00.zip",
           "compatibleAvatars": [
-            "Anon",
             "Ash",
             "Hakka",
             "Karin",
@@ -92325,6 +92324,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Sephira",
             "Soraha",
+            "Anon",
             "fiona",
             "noy",
             "sapphy",
@@ -92664,14 +92664,14 @@ const AVATAR_DATA = {
             "Lime",
             "Mafuyu",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1768020475,
           "boothSearch": "https://booth.pm/en/search/Nightsurge%20Eclipse%20Outfit",
@@ -92819,10 +92819,10 @@ const AVATAR_DATA = {
             "Mafuyu",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Rurune",
             "Shinano",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1759463182,
           "boothSearch": "https://booth.pm/en/search/Noem%20Hoodie",
@@ -93599,14 +93599,14 @@ const AVATAR_DATA = {
             "Lasyusha",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1760075355,
           "boothSearch": "https://booth.pm/en/search/Onigokko",
@@ -93660,11 +93660,11 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Rurune",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1761966712,
           "boothSearch": "https://booth.pm/en/search/OPAL%20Full",
@@ -93768,12 +93768,12 @@ const AVATAR_DATA = {
             "Airi",
             "Ichigo",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Rurune",
             "Shinano",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1757588608,
           "boothSearch": "https://booth.pm/en/search/Orfeu%20Full%20Pack",
@@ -93859,13 +93859,13 @@ const AVATAR_DATA = {
             "Chiffon",
             "Chocolat",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
             "Shinano",
             "Shinra",
             "Sio",
-            "Milfy",
             "Shiratsume"
           ],
           "dateAdded": 1756180588,
@@ -94009,14 +94009,14 @@ const AVATAR_DATA = {
             "Lime",
             "Chiffon",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1758857631,
           "boothSearch": "https://booth.pm/en/search/OVERWORK",
@@ -94174,6 +94174,7 @@ const AVATAR_DATA = {
             "Lime",
             "Mafuyu",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -94183,7 +94184,6 @@ const AVATAR_DATA = {
             "Sio",
             "Soraha",
             "ciel",
-            "Milfy",
             "Shiratsume",
             "usasaki"
           ],
@@ -94458,10 +94458,10 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1756875390,
           "boothSearch": "https://booth.pm/en/search/Peridot",
@@ -94618,9 +94618,9 @@ const AVATAR_DATA = {
             "Shinra",
             "Sue",
             "Wolferia",
+            "Zome",
             "nayu",
-            "tycho",
-            "Zome"
+            "tycho"
           ],
           "dateAdded": 1708129798,
           "boothSearch": "https://booth.pm/en/search/Phantom%20Venus",
@@ -94661,10 +94661,10 @@ const AVATAR_DATA = {
             "Lime",
             "Chiffon",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Rurune",
-            "Shinano",
-            "Milfy"
+            "Shinano"
           ],
           "dateAdded": 1772253849,
           "boothSearch": "https://booth.pm/en/search/Phlox",
@@ -94779,11 +94779,11 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Pionites_Summer_Fullset.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Pionites Summer Fullset.zip",
           "compatibleAvatars": [
+            "AlPha",
             "Anri",
             "Komano",
             "Kuuta",
-            "Shinra",
-            "AlPha"
+            "Shinra"
           ],
           "dateAdded": 1758361849,
           "boothSearch": "https://booth.pm/en/search/Pionites%20Summer",
@@ -94895,6 +94895,7 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Pleasure_Bunny.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Pleasure Bunny.zip",
           "compatibleAvatars": [
+            "BUNNY",
             "Chiffon",
             "Lime",
             "Chocolat",
@@ -94902,8 +94903,7 @@ const AVATAR_DATA = {
             "Milltina",
             "Selestia",
             "Shinano",
-            "Shinra",
-            "BUNNY"
+            "Shinra"
           ],
           "dateAdded": 1763781483,
           "boothSearch": "https://booth.pm/en/search/Pleasure%20Bunny",
@@ -94995,7 +94995,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_poison_Maiden_full.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/poison_Maiden_full.rar",
           "compatibleAvatars": [
-            "Anon",
             "Kikyo",
             "Leefa",
             "Lunalitt",
@@ -95005,7 +95004,8 @@ const AVATAR_DATA = {
             "Manuka",
             "Moe",
             "Selestia",
-            "Shinra"
+            "Shinra",
+            "Anon"
           ],
           "dateAdded": 1695864317,
           "boothSearch": "https://booth.pm/en/search/poison%20Maiden",
@@ -95133,12 +95133,12 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Clothes/Precious School Uniforms (Full set).zip",
           "compatibleAvatars": [
             "Airi",
+            "Kaya",
             "Lasyusha",
             "Manuka",
             "Milltina",
             "Shinano",
-            "Shinra",
-            "Kaya"
+            "Shinra"
           ],
           "dateAdded": 1756185565,
           "boothSearch": "https://booth.pm/en/search/Precious%20School%20Uniforms",
@@ -95249,6 +95249,7 @@ const AVATAR_DATA = {
             "Lime",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Minase",
             "Mizuki",
@@ -95258,8 +95259,7 @@ const AVATAR_DATA = {
             "Shinano",
             "Shinra",
             "Sio",
-            "Hanka",
-            "Milfy"
+            "Hanka"
           ],
           "dateAdded": 1756180403,
           "boothSearch": "https://booth.pm/en/search/PSYKHE",
@@ -95386,13 +95386,13 @@ const AVATAR_DATA = {
             "Lime",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
             "Rurune",
             "Selestia",
-            "Shinano",
-            "Milfy"
+            "Shinano"
           ],
           "dateAdded": 1759463580,
           "boothSearch": "https://booth.pm/en/search/Punk%20Reaper",
@@ -95435,11 +95435,13 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Clothes/Punky Bunny.zip",
           "compatibleAvatars": [
             "Airi",
+            "BUNNY",
             "Chiffon",
             "Chocolat",
             "Lasyusha",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -95447,9 +95449,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "BUNNY",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1760844356,
           "boothSearch": "https://booth.pm/en/search/Punky%20Bunny",
@@ -96195,6 +96195,7 @@ const AVATAR_DATA = {
           "compatibleAvatars": [
             "Inaba",
             "Shiina",
+            "Kaya",
             "Lime",
             "Chiffon",
             "Chocolat",
@@ -96204,7 +96205,6 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Wolferia",
-            "Kaya",
             "sapphy"
           ],
           "dateAdded": 1720139960,
@@ -96354,7 +96354,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Re_FLOWER_BIKINI.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Re FLOWER BIKINI.zip",
           "compatibleAvatars": [
-            "Anon",
             "Karin",
             "Kikyo",
             "Leefa",
@@ -96365,7 +96364,8 @@ const AVATAR_DATA = {
             "Maya",
             "Moe",
             "Selestia",
-            "Shinra"
+            "Shinra",
+            "Anon"
           ],
           "dateAdded": 1693994825,
           "boothSearch": "https://booth.pm/en/search/Re%20FLOWER%20BIKINI",
@@ -96587,7 +96587,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Revealing_Sister.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Revealing_Sister.zip",
           "compatibleAvatars": [
-            "Anon",
             "Kikyo",
             "Leefa",
             "Lunalitt",
@@ -96595,6 +96594,7 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Shinra",
+            "Anon",
             "ciel"
           ],
           "dateAdded": 1697368295,
@@ -96625,6 +96625,7 @@ const AVATAR_DATA = {
             "Kikyo",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -96632,8 +96633,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1746490722,
           "boothSearch": "https://booth.pm/en/search/Reveraglow",
@@ -96866,10 +96866,10 @@ const AVATAR_DATA = {
             "Chiffon",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Rurune",
             "Selestia",
-            "Shinano",
-            "Milfy"
+            "Shinano"
           ],
           "dateAdded": 1758364052,
           "boothSearch": "https://booth.pm/en/search/Riptide",
@@ -96996,6 +96996,7 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -97003,8 +97004,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1772253079,
           "boothSearch": "https://booth.pm/en/search/Rogue%20Noir",
@@ -97040,6 +97040,7 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_RojiraBunnyALL.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/RojiraBunnyALL.7z",
           "compatibleAvatars": [
+            "BUNNY",
             "Grus",
             "Kikyo",
             "Leefa",
@@ -97048,7 +97049,6 @@ const AVATAR_DATA = {
             "Miyo",
             "Selestia",
             "Yugi",
-            "BUNNY",
             "yugi_miyo"
           ],
           "dateAdded": 1674849333,
@@ -97194,13 +97194,13 @@ const AVATAR_DATA = {
             "Komano",
             "Kuuta",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Minase",
             "Rurune",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1765000526,
           "boothSearch": "https://booth.pm/en/search/Room%20Knit",
@@ -97325,10 +97325,10 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_RPB.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/RPB.rar",
           "compatibleAvatars": [
-            "Kalne",
             "Komano",
             "Minase",
-            "Hanka"
+            "Hanka",
+            "Kalne"
           ],
           "dateAdded": 1768019735,
           "boothSearch": "https://booth.pm/en/search/RPB",
@@ -97574,10 +97574,10 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1763873876,
           "boothSearch": "https://booth.pm/en/search/Sailor%20Maiden",
@@ -97649,13 +97649,13 @@ const AVATAR_DATA = {
             "Lumina",
             "Mafuyu",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
             "Sio",
-            "Milfy",
             "sapphy"
           ],
           "dateAdded": 1772252935,
@@ -98363,14 +98363,14 @@ const AVATAR_DATA = {
             "Lime",
             "Mafuyu",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1743476209,
           "boothSearch": "https://booth.pm/en/search/Shadow%20Lily",
@@ -98446,13 +98446,13 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1766123768,
           "boothSearch": "https://booth.pm/en/search/Shear%20Dear",
@@ -98666,13 +98666,13 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1756186675,
           "boothSearch": "https://booth.pm/en/search/Shining%20Waves",
@@ -98745,11 +98745,11 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
-            "Shinano",
-            "Milfy"
+            "Shinano"
           ],
           "dateAdded": 1756186488,
           "boothSearch": "https://booth.pm/en/search/Sick%20Honey",
@@ -98786,14 +98786,14 @@ const AVATAR_DATA = {
             "Lime",
             "Chiffon",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1756182029,
           "boothSearch": "https://booth.pm/en/search/Sikkoku%20Serenade",
@@ -98876,6 +98876,7 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -98883,8 +98884,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1772253198,
           "boothSearch": "https://booth.pm/en/search/Silk%20Kitsune",
@@ -98967,13 +98967,13 @@ const AVATAR_DATA = {
             "Lime",
             "Chiffon",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1766123315,
           "boothSearch": "https://booth.pm/en/search/Silk%20Breeze",
@@ -99117,6 +99117,7 @@ const AVATAR_DATA = {
             "Lapwing",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -99124,8 +99125,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1760844163,
           "boothSearch": "https://booth.pm/en/search/Sinicat%20O%20S",
@@ -99161,14 +99161,14 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
             "Rurune",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1761972782,
           "boothSearch": "https://booth.pm/en/search/Sinicat%20S",
@@ -99202,10 +99202,10 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1756186417,
           "boothSearch": "https://booth.pm/en/search/Siren%20Captain",
@@ -99359,6 +99359,7 @@ const AVATAR_DATA = {
             "Ichigo",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -99366,8 +99367,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1756875781,
           "boothSearch": "https://booth.pm/en/search/SKULL%20GRUNGE",
@@ -99741,11 +99741,11 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Shinano",
             "Shinra",
             "Sio",
-            "Milfy",
             "Shiratsume"
           ],
           "dateAdded": 1772253694,
@@ -99788,7 +99788,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Snowlight_Latex_Servant_1.0.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Snowlight Latex Servant 1.0.7z",
           "compatibleAvatars": [
-            "Anon",
             "Imeris",
             "Karin",
             "Kikyo",
@@ -99805,7 +99804,8 @@ const AVATAR_DATA = {
             "Rindo",
             "Selestia",
             "Soraha",
-            "Velle"
+            "Velle",
+            "Anon"
           ],
           "dateAdded": 1721023470,
           "boothSearch": "https://booth.pm/en/search/Snowlight%20Latex%20Servant",
@@ -99927,13 +99927,13 @@ const AVATAR_DATA = {
             "Lime",
             "Chiffon",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Rurune",
             "Selestia",
             "Shinano",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1753072458,
           "boothSearch": "https://booth.pm/en/search/Solaisy",
@@ -100187,11 +100187,11 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Rurune",
-            "Shinano",
-            "Milfy"
+            "Shinano"
           ],
           "dateAdded": 1772253555,
           "boothSearch": "https://booth.pm/en/search/Starlight%20Velvet%20Santa",
@@ -100288,6 +100288,7 @@ const AVATAR_DATA = {
             "Lime",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -100295,8 +100296,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1760843340,
           "boothSearch": "https://booth.pm/en/search/Stay%20Broken",
@@ -100477,14 +100477,14 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1780476671,
           "boothSearch": "https://booth.pm/en/search/Straight%20Flush",
@@ -100542,13 +100542,13 @@ const AVATAR_DATA = {
             "Chiffon",
             "Chocolat",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
             "Shinano",
             "Shinra",
             "Sio",
-            "Milfy",
             "Shiratsume"
           ],
           "dateAdded": 1749869098,
@@ -100596,6 +100596,7 @@ const AVATAR_DATA = {
             "Karin",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -100603,8 +100604,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1768018712,
           "boothSearch": "https://booth.pm/en/search/Stray%20Paw",
@@ -100694,6 +100694,7 @@ const AVATAR_DATA = {
             "Lumina",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -100701,8 +100702,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1763877113,
           "boothSearch": "https://booth.pm/en/search/Street%20Born",
@@ -101006,11 +101006,11 @@ const AVATAR_DATA = {
             "Chocolat",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Moe",
             "Selestia",
-            "Shinano",
-            "Milfy"
+            "Shinano"
           ],
           "dateAdded": 1753944037,
           "boothSearch": "https://booth.pm/en/search/Sugar%20Bind",
@@ -101247,7 +101247,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_sukumizure_fullset_ver1_30.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/sukumizure_fullset_ver1_30.zip",
           "compatibleAvatars": [
-            "Anon",
             "Ash",
             "Hakka",
             "Karin",
@@ -101262,6 +101261,7 @@ const AVATAR_DATA = {
             "Rindo",
             "Sephira",
             "Soraha",
+            "Anon",
             "lilie",
             "mint",
             "noy",
@@ -101760,13 +101760,13 @@ const AVATAR_DATA = {
             "Ichigo",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Rurune",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1758857445,
           "boothSearch": "https://booth.pm/en/search/Sweet%20Rebellion",
@@ -102084,6 +102084,7 @@ const AVATAR_DATA = {
             "Ichigo",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -102091,8 +102092,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1760842610,
           "boothSearch": "https://booth.pm/en/search/Temptress%20Saint",
@@ -102975,12 +102975,12 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Clothes/TwilightDrip.zip",
           "compatibleAvatars": [
             "Manuka",
+            "Milfy",
             "Milltina",
             "Rurune",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1760847189,
           "boothSearch": "https://booth.pm/en/search/Twilight%20Drip",
@@ -103192,10 +103192,10 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Unlucky_Bunny_FULLSET.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Unlucky Bunny FULLSET.zip",
           "compatibleAvatars": [
+            "BUNNY",
             "Manuka",
             "Moe",
-            "Selestia",
-            "BUNNY"
+            "Selestia"
           ],
           "dateAdded": 1711244538,
           "boothSearch": "https://booth.pm/en/search/Unlucky%20Bunny",
@@ -103343,6 +103343,7 @@ const AVATAR_DATA = {
             "Lime",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -103350,8 +103351,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1764999389,
           "boothSearch": "https://booth.pm/en/search/Urban%20Waltz%20Street",
@@ -103459,12 +103459,12 @@ const AVATAR_DATA = {
             "Lapwing",
             "Lime",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Selestia",
             "Shinano",
             "Shinra",
             "Sio",
-            "Milfy",
             "Shiratsume"
           ],
           "dateAdded": 1760846749,
@@ -103622,7 +103622,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Usagisan_Roomwear_Re_Ver1.00.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Usagisan Roomwear Re Ver1.00.zip",
           "compatibleAvatars": [
-            "Anon",
             "Chiffon",
             "Karin",
             "Kikyo",
@@ -103634,6 +103633,7 @@ const AVATAR_DATA = {
             "Mizuki",
             "Moe",
             "Soraha",
+            "Anon",
             "sapphy",
             "tina"
           ],
@@ -103832,11 +103832,11 @@ const AVATAR_DATA = {
             "Lime",
             "Chiffon",
             "Chocolat",
+            "Milfy",
             "Milltina",
             "Rurune",
             "Selestia",
-            "Shinano",
-            "Milfy"
+            "Shinano"
           ],
           "dateAdded": 1756875714,
           "boothSearch": "https://booth.pm/en/search/VECTORIAL",
@@ -103932,6 +103932,7 @@ const AVATAR_DATA = {
             "Lime",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Minase",
             "Mizuki",
@@ -103940,8 +103941,7 @@ const AVATAR_DATA = {
             "Shinano",
             "Shinra",
             "Sio",
-            "Hanka",
-            "Milfy"
+            "Hanka"
           ],
           "dateAdded": 1765002310,
           "boothSearch": "https://booth.pm/en/search/VEKTOR",
@@ -104057,6 +104057,7 @@ const AVATAR_DATA = {
             "Lumina",
             "Mamehinata",
             "Manuka",
+            "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -104064,8 +104065,7 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1761974079,
           "boothSearch": "https://booth.pm/en/search/Velour%20Eclipse",
@@ -104105,10 +104105,10 @@ const AVATAR_DATA = {
             "Chiffon",
             "Lumina",
             "Manuka",
+            "Milfy",
             "Rurune",
             "Shinano",
-            "Sio",
-            "Milfy"
+            "Sio"
           ],
           "dateAdded": 1772253299,
           "boothSearch": "https://booth.pm/en/search/Velvet%20Cat",
@@ -104498,6 +104498,7 @@ const AVATAR_DATA = {
             "Komano",
             "Lime",
             "Manuka",
+            "Milfy",
             "Minase",
             "Mizuki",
             "Moe",
@@ -104506,8 +104507,7 @@ const AVATAR_DATA = {
             "Shinano",
             "Shinra",
             "Sio",
-            "Hanka",
-            "Milfy"
+            "Hanka"
           ],
           "dateAdded": 1759465506,
           "boothSearch": "https://booth.pm/en/search/Void%20type",
@@ -105075,7 +105075,6 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Wings_of_Paradise.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Wings of Paradise.zip",
           "compatibleAvatars": [
-            "Anon",
             "Chiffon",
             "Kikyo",
             "Lime",
@@ -105086,7 +105085,8 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Shinra",
-            "Sio"
+            "Sio",
+            "Anon"
           ],
           "dateAdded": 1716514231,
           "boothSearch": "https://booth.pm/en/search/Wings%20of%20Paradise",

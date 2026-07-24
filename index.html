@@ -191,6 +191,7 @@ a{color:var(--teal)}
 .ql-overlay{position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:1200;display:flex;align-items:center;justify-content:center;padding:16px}
 .ql-sheet{background:var(--surface-raised);border:1px solid var(--border);border-radius:var(--radius-lg);max-width:420px;width:100%;max-height:90vh;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
 .ql-sheet img{width:100%;max-height:62vh;object-fit:contain;background:var(--bg)}
+.ql-name{padding:10px 12px 0;font-size:.95rem;font-weight:700;line-height:1.35;overflow-wrap:anywhere}
 .ql-tags{padding:9px 12px;display:flex;flex-wrap:wrap;gap:5px;border-top:1px solid var(--border)}
 .ql-tag{font-size:11px;padding:2px 7px;border-radius:2px;background:var(--surface);color:var(--text-muted)}
 .ql-close{margin:10px 12px 14px;background:var(--surface-soft);color:var(--text);border:1px solid var(--border-strong);align-self:stretch}
@@ -258,7 +259,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 <body>
 <div id="app"></div>
 
-<script src="data.js?v=15c5eeb2ea0f"></script>
+<script src="data.js?v=9145a81b14a3"></script>
 <script>
 // =========================================================================
 // Avatar Customizer - Web App
@@ -1110,16 +1111,18 @@ function openQuickLook(item) {
     document.body.appendChild(qlOverlay);
   }
   var tags = item.autoTags || [];
+  var name = item.name ? String(item.name) : '';
   qlOverlay.innerHTML =
-    '<div class="ql-sheet" role="dialog" aria-modal="true">' +
+    '<div class="ql-sheet" role="dialog" aria-modal="true"' + (name ? ' aria-labelledby="quickLookTitle"' : '') + '>' +
       '<img src="' + imgSrc(item.preview) + '" alt="">' +
+      (name ? '<div class="ql-name" id="quickLookTitle">' + escapeHTML(name) + '</div>' : '') +
       (tags.length ? '<div class="ql-tags">' + tags.map(function(x){return '<span class="ql-tag">' + escapeHTML(x.replace(/_/g,' ')) + '</span>';}).join('') + '</div>' : '') +
       '<button class="ql-close" type="button">' + t('quickLookClose') + '</button>' +
     '</div>';
   var sheet = qlOverlay.querySelector('.ql-sheet');
   var closeBtn = qlOverlay.querySelector('.ql-close');
-  sheet.setAttribute('aria-label', item.name || t('quickLookHint'));
-  qlOverlay.querySelector('img').alt = item.name || '';
+  if (!name) sheet.setAttribute('aria-label', t('quickLookHint'));
+  qlOverlay.querySelector('img').alt = name;
   closeBtn.onclick = closeQuickLook;
   qlOverlay.style.display = 'flex';
   setDialogOpen(true);
