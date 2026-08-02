@@ -122491,43 +122491,6 @@ const AVATAR_DATA = {
         "ahoge"
       ]
     },
-    "Angel Lehman": {
-      "id": "Angel Lehman",
-      "name": "Angel Lehman",
-      "preview": "images/Avatars_angel_Lehman.jpg",
-      "textures": [],
-      "clothes": [],
-      "recommended": false,
-      "gender": "unknown",
-      "dateAdded": 1761976243,
-      "boothSearch": "https://booth.pm/en/search/Angel%20Lehman",
-      "autoTags": [
-        "male_focus",
-        "necktie",
-        "shirt",
-        "wings",
-        "feathered_wings",
-        "vest",
-        "collared_shirt",
-        "long_sleeves",
-        "jacket",
-        "angel_wings",
-        "pants",
-        "short_hair",
-        "coat",
-        "id_card",
-        "formal",
-        "suit",
-        "buttons",
-        "angel",
-        "open_clothes",
-        "cross",
-        "lanyard",
-        "watch",
-        "hair_between_eyes",
-        "open_coat"
-      ]
-    },
     "CHISE": {
       "id": "CHISE",
       "name": "CHISE",
@@ -123075,17 +123038,6 @@ const AVATAR_DATA = {
         "portrait",
         "jewelry"
       ]
-    },
-    "Neon PhysBone": {
-      "id": "Neon PhysBone",
-      "name": "Neon PhysBone",
-      "preview": "images/Clothes,_Texture_Sets_Clothes_4979667_-_neonix_full.jpg",
-      "textures": [],
-      "clothes": [],
-      "recommended": false,
-      "gender": "unknown",
-      "dateAdded": 1671970654,
-      "boothSearch": "https://booth.pm/en/search/Neon%20Phys%20Bone"
     },
     "Nozomi": {
       "id": "Nozomi",
@@ -123737,37 +123689,6 @@ const AVATAR_DATA = {
         "cross_earrings",
         "frilled_sleeves",
         "goth_fashion"
-      ]
-    },
-    "[Original 3D model] Lizz Sigma [Quest model included]": {
-      "id": "[Original 3D model] Lizz Sigma [Quest model included]",
-      "name": "[Original 3D model] Lizz Sigma [Quest model included]",
-      "preview": "images/Avatars_[Original_3D_model]_Lizz_Sigma_[Quest_model_included].jpg",
-      "textures": [],
-      "clothes": [],
-      "recommended": false,
-      "gender": "unknown",
-      "dateAdded": 1670765273,
-      "boothSearch": "https://booth.pm/en/search/%5BOriginal%203D%20model%5D%20Lizz%20Sigma%20%5BQuest%20model%20included%5D",
-      "autoTags": [
-        "animal_ears",
-        "tail",
-        "hoodie",
-        "hood",
-        "shorts",
-        "short_hair",
-        "hat",
-        "fox_ears",
-        "zoom_layer",
-        "fox_tail",
-        "short_shorts",
-        "hood_down",
-        "character_name",
-        "long_sleeves",
-        "drawstring",
-        "fox_girl",
-        "hands_in_pockets",
-        "hair_between_eyes"
       ]
     },
     "aco": {
@@ -124525,17 +124446,6 @@ const AVATAR_DATA = {
         "hair_between_eyes",
         "snake"
       ]
-    },
-    "ku": {
-      "id": "ku",
-      "name": "ku",
-      "preview": "images/Avatars_KUMALY_ver1.02.jpg",
-      "textures": [],
-      "clothes": [],
-      "recommended": false,
-      "gender": "unknown",
-      "dateAdded": 1670338034,
-      "boothSearch": "https://booth.pm/en/search/ku"
     },
     "kuro": {
       "id": "kuro",
@@ -125894,28 +125804,6 @@ const AVATAR_DATA = {
         "jirai_kei",
         "sleeveless"
       ]
-    },
-    "yu": {
-      "id": "yu",
-      "name": "yu",
-      "preview": "images/Avatars_yuuko_v1_04.jpg",
-      "textures": [],
-      "clothes": [],
-      "recommended": false,
-      "gender": "unknown",
-      "dateAdded": 1672234827,
-      "boothSearch": "https://booth.pm/en/search/yu"
-    },
-    "yugi_miyo": {
-      "id": "yugi_miyo",
-      "name": "yugi_miyo",
-      "preview": "images/Avatars_yugi_miyo.jpg",
-      "textures": [],
-      "clothes": [],
-      "recommended": false,
-      "gender": "unknown",
-      "dateAdded": 1670506081,
-      "boothSearch": "https://booth.pm/en/search/yugi_miyo"
     },
     "yume": {
       "id": "yume",
