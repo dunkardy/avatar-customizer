@@ -5857,7 +5857,7 @@ const AVATAR_DATA = {
     "Kikyo": {
       "id": "Kikyo",
       "name": "Kikyo",
-      "preview": "images/Avatars_kikyo_ver1_03_1.jpg",
+      "preview": "images/Avatars_kikyo.jpg",
       "textures": [
         {
           "name": "1 1 eyes",
@@ -13687,21 +13687,23 @@ const AVATAR_DATA = {
       "boothSearch": "https://booth.pm/en/search/Kikyo",
       "autoTags": [
         "shirt",
-        "neck_ribbon",
-        "hair_between_eyes",
         "long_hair",
-        "hat",
-        "ribbon",
-        "sleeveless_shirt",
-        "album_cover",
-        "jacket",
         "animal_ears",
+        "hair_between_eyes",
+        "sleeveless_shirt",
+        "hat",
+        "neck_ribbon",
         "long_sleeves",
+        "ribbon",
         "bare_shoulders",
-        "off_shoulder",
-        "breasts",
+        "jacket",
+        "nail_polish",
         "sleeveless",
-        "nail_polish"
+        "off_shoulder",
+        "sleeves_past_wrists",
+        "breasts",
+        "album_cover",
+        "collared_shirt"
       ]
     },
     "Kokoa": {
@@ -46587,7 +46589,7 @@ const AVATAR_DATA = {
     "Mizuki": {
       "id": "Mizuki",
       "name": "Mizuki",
-      "preview": "images/Avatars_Mizuki_ver2.00.jpg",
+      "preview": "images/Avatars_mizuki.jpg",
       "textures": [
         {
           "name": "CustomSkin Mizuki for2.0",
@@ -46745,23 +46747,28 @@ const AVATAR_DATA = {
       "dateAdded": 1751117514,
       "boothSearch": "https://booth.pm/en/search/Mizuki",
       "autoTags": [
-        "claw_pose",
         "animal_ears",
-        "bow",
-        "wrist_cuffs",
         "maid_headdress",
+        "bow",
+        "claw_pose",
+        "wrist_cuffs",
         "hair_ornament",
         "long_hair",
-        "horns",
-        "bandaid_on_face",
-        "maid",
-        "bandaid",
-        "bowtie",
-        "hairclip",
         "cat_ears",
+        "maid",
+        "fangs",
         "ahoge",
-        "hands_up",
-        "hair_between_eyes"
+        "bandaid",
+        "animal_ear_fluff",
+        "bowtie",
+        "bandaid_on_face",
+        "hairclip",
+        "hair_between_eyes",
+        "choker",
+        "frills",
+        "cat_girl",
+        "shirt",
+        "hair_bow"
       ]
     },
     "Moe": {
@@ -66987,6 +66994,7 @@ const AVATAR_DATA = {
           "compatibleAvatars": [
             "Anri",
             "Grus",
+            "Kikyo",
             "Kokoa",
             "Maya",
             "Milk",
@@ -66996,7 +67004,6 @@ const AVATAR_DATA = {
             "Wolferia",
             "Yuuko",
             "imeris",
-            "kikyo",
             "koyuki",
             "lucife",
             "maki",
@@ -67058,6 +67065,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Texture/Berrixy.zip",
           "dateAdded": 1751091641,
           "compatibleAvatars": [
+            "AlPha",
             "Chocolat",
             "Karin",
             "Kikyo",
@@ -67079,7 +67087,6 @@ const AVATAR_DATA = {
             "Sio",
             "Thine Unity Package",
             "Yoll",
-            "AlPha",
             "ch",
             "cha hyun",
             "cha hyun_설레오#0001(",
@@ -67976,12 +67983,12 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Texture/StarEyes_V1.0.zip",
           "dateAdded": 1724652498,
           "compatibleAvatars": [
+            "AlPha",
             "Kikyo",
             "Minase",
             "Moe",
             "Selestia",
-            "Thine Unity Package",
-            "AlPha"
+            "Thine Unity Package"
           ],
           "boothSearch": "https://booth.pm/en/search/Star%20Eyes",
           "autoTags": [
@@ -123006,7 +123013,7 @@ const AVATAR_DATA = {
     "Kaya": {
       "id": "Kaya",
       "name": "Kaya",
-      "preview": "images/Avatars_Kaya1.3.3.jpg",
+      "preview": "images/Avatars_Kaya.jpg",
       "textures": [],
       "clothes": [],
       "recommended": false,
@@ -123016,31 +123023,31 @@ const AVATAR_DATA = {
       "autoTags": [
         "weapon",
         "sword",
+        "holding",
         "mask",
         "umbrella",
-        "navel",
-        "holding",
-        "sheath",
-        "katana",
-        "fox_mask",
-        "holding_weapon",
         "unsheathing",
+        "holding_weapon",
+        "sheath",
+        "navel",
+        "katana",
         "holding_sword",
-        "midriff",
         "oil-paper_umbrella",
+        "fox_mask",
         "mask_on_head",
+        "midriff",
+        "flower",
+        "crop_top",
+        "holding_umbrella",
         "gloves",
         "blunt_bangs",
-        "fingerless_gloves",
+        "hair_ornament",
         "japanese_clothes",
-        "holding_umbrella",
-        "crop_top",
-        "flower",
         "floral_print",
-        "armor",
-        "short_hair",
-        "sheathed",
-        "hair_ornament"
+        "long_sleeves",
+        "nail_polish",
+        "hair_flower",
+        "jewelry"
       ]
     },
     "Kyalong": {
@@ -123235,13 +123242,22 @@ const AVATAR_DATA = {
     "Nagi": {
       "id": "Nagi",
       "name": "Nagi",
-      "preview": "images/Avatars_NagiyaRuri_Simple_V1.0.3.jpg",
+      "preview": "images/Avatars_Nagi.jpg",
       "textures": [],
       "clothes": [],
       "recommended": false,
       "gender": "unknown",
       "dateAdded": 1785688031,
-      "boothSearch": "https://booth.pm/en/search/Nagi"
+      "boothSearch": "https://booth.pm/en/search/Nagi",
+      "autoTags": [
+        "long_hair",
+        "sweater",
+        "turtleneck",
+        "turtleneck_sweater",
+        "portrait",
+        "ribbed_sweater",
+        "hair_between_eyes"
+      ]
     },
     "Nozomi": {
       "id": "Nozomi",
@@ -124785,7 +124801,7 @@ const AVATAR_DATA = {
     "lucife": {
       "id": "lucife",
       "name": "lucife",
-      "preview": "images/Avatars_lucife_ver1_02.jpg",
+      "preview": "images/Avatars_lucife.jpg",
       "textures": [],
       "clothes": [],
       "recommended": false,
@@ -126075,13 +126091,49 @@ const AVATAR_DATA = {
     "yuu": {
       "id": "yuu",
       "name": "yuu",
-      "preview": "images/Avatars_yuuko_v1_04.jpg",
+      "preview": "images/Avatars_yuu.jpg",
       "textures": [],
       "clothes": [],
       "recommended": false,
       "gender": "unknown",
       "dateAdded": 1670504826,
-      "boothSearch": "https://booth.pm/en/search/yuu"
+      "boothSearch": "https://booth.pm/en/search/yuu",
+      "autoTags": [
+        "animal_ears",
+        "closed_eyes",
+        "hair_ornament",
+        "long_hair",
+        "braid",
+        "flower",
+        "hair_flower",
+        "shirt",
+        "cat_ears",
+        "hat",
+        "animal_ear_fluff",
+        "jacket",
+        "off_shoulder",
+        "facing_viewer",
+        "twin_braids",
+        "^_^",
+        "sunflower_hair_ornament",
+        "sleeveless_shirt",
+        "long_sleeves",
+        "sunflower",
+        "sleeveless",
+        "beret",
+        ":3",
+        "open_clothes",
+        "collared_shirt",
+        "open_jacket",
+        "bare_shoulders",
+        "sparkle",
+        "scrunchie",
+        "very_long_hair",
+        "cat_girl",
+        "twintails",
+        "sash",
+        "bow"
+      ]
     }
   },
   "hairs": [
