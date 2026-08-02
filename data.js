@@ -522,7 +522,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1760843655,
       "boothSearch": "https://booth.pm/en/search/Airi",
       "autoTags": [
@@ -760,7 +760,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "male",
       "dateAdded": 1751116963,
       "boothSearch": "https://booth.pm/en/search/Anri",
       "autoTags": [
@@ -843,7 +843,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751116964,
       "boothSearch": "https://booth.pm/en/search/Ash",
       "autoTags": [
@@ -1762,7 +1762,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117380,
       "boothSearch": "https://booth.pm/en/search/Grus",
       "autoTags": [
@@ -1794,7 +1794,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117381,
       "boothSearch": "https://booth.pm/en/search/Hakka",
       "autoTags": [
@@ -1878,7 +1878,7 @@ const AVATAR_DATA = {
       ],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1758368124,
       "boothSearch": "https://booth.pm/en/search/Ichigo",
       "autoTags": [
@@ -2600,7 +2600,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1778053078,
       "boothSearch": "https://booth.pm/en/search/Imeris",
       "autoTags": [
@@ -2798,7 +2798,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117383,
       "boothSearch": "https://booth.pm/en/search/Inaba",
       "autoTags": [
@@ -3005,7 +3005,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117383,
       "boothSearch": "https://booth.pm/en/search/Shiina",
       "autoTags": [
@@ -3131,7 +3131,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117384,
       "boothSearch": "https://booth.pm/en/search/Iris",
       "autoTags": [
@@ -5837,7 +5837,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117386,
       "boothSearch": "https://booth.pm/en/search/Karin",
       "autoTags": [
@@ -13682,7 +13682,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1778053076,
       "boothSearch": "https://booth.pm/en/search/Kikyo",
       "autoTags": [
@@ -14823,7 +14823,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1778053074,
       "boothSearch": "https://booth.pm/en/search/Kokoa",
       "autoTags": [
@@ -15205,7 +15205,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117392,
       "boothSearch": "https://booth.pm/en/search/Kosame",
       "autoTags": [
@@ -15276,7 +15276,7 @@ const AVATAR_DATA = {
       ],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "male",
       "dateAdded": 1751117452,
       "boothSearch": "https://booth.pm/en/search/Kuuta",
       "autoTags": [
@@ -15479,7 +15479,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117454,
       "boothSearch": "https://booth.pm/en/search/Lapwing",
       "autoTags": [
@@ -15647,7 +15647,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117474,
       "boothSearch": "https://booth.pm/en/search/Lasyusha",
       "autoTags": [
@@ -16009,7 +16009,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117475,
       "boothSearch": "https://booth.pm/en/search/Leefa",
       "autoTags": [
@@ -16376,7 +16376,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117475,
       "boothSearch": "https://booth.pm/en/search/Lunalitt",
       "autoTags": [
@@ -16433,7 +16433,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117477,
       "boothSearch": "https://booth.pm/en/search/Liloumois",
       "autoTags": [
@@ -18114,7 +18114,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1779624102,
       "boothSearch": "https://booth.pm/en/search/Lime",
       "autoTags": [
@@ -19748,7 +19748,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1779624102,
       "boothSearch": "https://booth.pm/en/search/Chiffon",
       "autoTags": [
@@ -21297,7 +21297,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1779624102,
       "boothSearch": "https://booth.pm/en/search/Chocolat",
       "autoTags": [
@@ -21367,7 +21367,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117499,
       "boothSearch": "https://booth.pm/en/search/Limilia",
       "autoTags": [
@@ -21498,7 +21498,7 @@ const AVATAR_DATA = {
       ],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1785572342,
       "boothSearch": "https://booth.pm/en/search/Lumina",
       "autoTags": [
@@ -21784,7 +21784,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117504,
       "boothSearch": "https://booth.pm/en/search/Mafuyu",
       "autoTags": [
@@ -21967,7 +21967,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117505,
       "boothSearch": "https://booth.pm/en/search/Maki",
       "autoTags": [
@@ -25037,7 +25037,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1763877023,
       "boothSearch": "https://booth.pm/en/search/Mamehinata",
       "autoTags": [
@@ -28035,7 +28035,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1763877023,
       "boothSearch": "https://booth.pm/en/search/Kipfel",
       "autoTags": [
@@ -43713,7 +43713,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1778053050,
       "boothSearch": "https://booth.pm/en/search/Maya",
       "autoTags": [
@@ -43803,7 +43803,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117510,
       "boothSearch": "https://booth.pm/en/search/Meiyun",
       "autoTags": [
@@ -43867,7 +43867,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117510,
       "boothSearch": "https://booth.pm/en/search/Merino",
       "autoTags": [
@@ -43910,7 +43910,7 @@ const AVATAR_DATA = {
       ],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1785571944,
       "boothSearch": "https://booth.pm/en/search/Milfy",
       "autoTags": [
@@ -43983,7 +43983,7 @@ const AVATAR_DATA = {
       ],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117511,
       "boothSearch": "https://booth.pm/en/search/Milk",
       "autoTags": [
@@ -44947,7 +44947,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1783700046,
       "boothSearch": "https://booth.pm/en/search/Milltina",
       "autoTags": [
@@ -46743,7 +46743,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117514,
       "boothSearch": "https://booth.pm/en/search/Mizuki",
       "autoTags": [
@@ -54477,7 +54477,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117517,
       "boothSearch": "https://booth.pm/en/search/Nagiya%20Ruri",
       "autoTags": [
@@ -56975,7 +56975,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117665,
       "boothSearch": "https://booth.pm/en/search/Rindo",
       "autoTags": [
@@ -57292,7 +57292,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1754806325,
       "boothSearch": "https://booth.pm/en/search/Rurune",
       "autoTags": [
@@ -57668,7 +57668,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117669,
       "boothSearch": "https://booth.pm/en/search/Rusk",
       "autoTags": [
@@ -66910,7 +66910,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1778053032,
       "boothSearch": "https://booth.pm/en/search/Selestia",
       "autoTags": [
@@ -66994,20 +66994,20 @@ const AVATAR_DATA = {
           "compatibleAvatars": [
             "Anri",
             "Grus",
+            "Imeris",
             "Kikyo",
             "Kokoa",
+            "Maki",
             "Maya",
+            "Merino",
             "Milk",
             "Rindo",
             "Sue",
             "Thine Unity Package",
             "Wolferia",
             "Yuuko",
-            "imeris",
             "koyuki",
-            "lucife",
-            "maki",
-            "merino"
+            "lucife"
           ],
           "boothSearch": "https://booth.pm/en/search/ametista%20nail",
           "autoTags": [
@@ -67065,7 +67065,6 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Texture/Berrixy.zip",
           "dateAdded": 1751091641,
           "compatibleAvatars": [
-            "AlPha",
             "Chocolat",
             "Karin",
             "Kikyo",
@@ -67087,6 +67086,7 @@ const AVATAR_DATA = {
             "Sio",
             "Thine Unity Package",
             "Yoll",
+            "AlPha",
             "ch",
             "cha hyun",
             "cha hyun_설레오#0001(",
@@ -67983,12 +67983,12 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Texture/StarEyes_V1.0.zip",
           "dateAdded": 1724652498,
           "compatibleAvatars": [
-            "AlPha",
             "Kikyo",
             "Minase",
             "Moe",
             "Selestia",
-            "Thine Unity Package"
+            "Thine Unity Package",
+            "AlPha"
           ],
           "boothSearch": "https://booth.pm/en/search/Star%20Eyes",
           "autoTags": [
@@ -114321,7 +114321,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1778053021,
       "boothSearch": "https://booth.pm/en/search/Shinra",
       "autoTags": [
@@ -119758,7 +119758,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117744,
       "boothSearch": "https://booth.pm/en/search/Sophina",
       "autoTags": [
@@ -120050,7 +120050,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117745,
       "boothSearch": "https://booth.pm/en/search/Soraha",
       "autoTags": [
@@ -120288,7 +120288,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117745,
       "boothSearch": "https://booth.pm/en/search/Tuberose",
       "autoTags": [
@@ -121056,7 +121056,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117881,
       "boothSearch": "https://booth.pm/en/search/Velle",
       "autoTags": [
@@ -121223,7 +121223,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117882,
       "boothSearch": "https://booth.pm/en/search/Wolferia",
       "autoTags": [
@@ -121935,7 +121935,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117942,
       "boothSearch": "https://booth.pm/en/search/Yugi",
       "autoTags": [
@@ -122645,7 +122645,7 @@ const AVATAR_DATA = {
         }
       ],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751117942,
       "boothSearch": "https://booth.pm/en/search/Miyo"
     },
@@ -122656,7 +122656,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1710035957,
       "boothSearch": "https://booth.pm/en/search/ANDI",
       "autoTags": [
@@ -122678,7 +122678,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669336489,
       "boothSearch": "https://booth.pm/en/search/CHISE",
       "autoTags": [
@@ -122706,7 +122706,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1712018990,
       "boothSearch": "https://booth.pm/en/search/Cian",
       "autoTags": [
@@ -122742,7 +122742,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1728026164,
       "boothSearch": "https://booth.pm/en/search/DAMI%20V",
       "autoTags": [
@@ -122763,7 +122763,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1785573950,
       "boothSearch": "https://booth.pm/en/search/Eku",
       "autoTags": [
@@ -122798,7 +122798,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1672439663,
       "boothSearch": "https://booth.pm/en/search/Eri",
       "autoTags": [
@@ -122827,7 +122827,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "male",
       "dateAdded": 1670505762,
       "boothSearch": "https://booth.pm/en/search/Gaku",
       "autoTags": [
@@ -122852,7 +122852,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670074386,
       "boothSearch": "https://booth.pm/en/search/HAOLAN",
       "autoTags": [
@@ -122876,7 +122876,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "male",
       "dateAdded": 1753942841,
       "boothSearch": "https://booth.pm/en/search/Hanka",
       "autoTags": [
@@ -122904,7 +122904,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1785575061,
       "boothSearch": "https://booth.pm/en/search/KUMALY",
       "autoTags": [
@@ -122939,7 +122939,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "male",
       "dateAdded": 1670583711,
       "boothSearch": "https://booth.pm/en/search/Kai%26Ryu",
       "autoTags": [
@@ -122963,7 +122963,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "male",
       "dateAdded": 1710035447,
       "boothSearch": "https://booth.pm/en/search/Kalne",
       "autoTags": [
@@ -122991,7 +122991,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "male",
       "dateAdded": 1785688501,
       "boothSearch": "https://booth.pm/en/search/Kanata",
       "autoTags": [
@@ -123017,7 +123017,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1671799193,
       "boothSearch": "https://booth.pm/en/search/Kaya",
       "autoTags": [
@@ -123057,7 +123057,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1710034816,
       "boothSearch": "https://booth.pm/en/search/Kyalong",
       "autoTags": [
@@ -123100,7 +123100,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1675635150,
       "boothSearch": "https://booth.pm/en/search/Lusion",
       "autoTags": [
@@ -123133,7 +123133,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1785574658,
       "boothSearch": "https://booth.pm/en/search/MAYO",
       "autoTags": [
@@ -123163,7 +123163,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1710034997,
       "boothSearch": "https://booth.pm/en/search/MORPHO",
       "autoTags": [
@@ -123198,7 +123198,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1785688119,
       "boothSearch": "https://booth.pm/en/search/Marycia",
       "autoTags": [
@@ -123226,7 +123226,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1785574418,
       "boothSearch": "https://booth.pm/en/search/Misaki",
       "autoTags": [
@@ -123246,7 +123246,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1785688031,
       "boothSearch": "https://booth.pm/en/search/Nagi",
       "autoTags": [
@@ -123266,7 +123266,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1693820894,
       "boothSearch": "https://booth.pm/en/search/Nozomi",
       "autoTags": [
@@ -123298,7 +123298,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1736078640,
       "boothSearch": "https://booth.pm/en/search/Perula",
       "autoTags": [
@@ -123328,7 +123328,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1785574279,
       "boothSearch": "https://booth.pm/en/search/Plum",
       "autoTags": [
@@ -123358,7 +123358,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1712988167,
       "boothSearch": "https://booth.pm/en/search/Pon%20%26%20Chune",
       "autoTags": [
@@ -123415,7 +123415,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1785575130,
       "boothSearch": "https://booth.pm/en/search/Ramune",
       "autoTags": [
@@ -123453,7 +123453,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1629261398,
       "boothSearch": "https://booth.pm/en/search/Rinfei%20SDK"
     },
@@ -123464,7 +123464,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1671025286,
       "boothSearch": "https://booth.pm/en/search/Rumi",
       "autoTags": [
@@ -123511,7 +123511,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670677938,
       "boothSearch": "https://booth.pm/en/search/SAKI",
       "autoTags": [
@@ -123560,7 +123560,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669293407,
       "boothSearch": "https://booth.pm/en/search/Sephira",
       "autoTags": [
@@ -123595,7 +123595,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670338316,
       "boothSearch": "https://booth.pm/en/search/Shaclo%20Pure",
       "autoTags": [
@@ -123619,7 +123619,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1751092517,
       "boothSearch": "https://booth.pm/en/search/Shiratsume",
       "autoTags": [
@@ -123643,7 +123643,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1662181528,
       "boothSearch": "https://booth.pm/en/search/Sue",
       "autoTags": [
@@ -123670,7 +123670,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1672235132,
       "boothSearch": "https://booth.pm/en/search/Tolass",
       "autoTags": [
@@ -123699,7 +123699,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1785575372,
       "boothSearch": "https://booth.pm/en/search/Uruki",
       "autoTags": [
@@ -123728,7 +123728,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1689387060,
       "boothSearch": "https://booth.pm/en/search/Uzuki",
       "autoTags": [
@@ -123750,7 +123750,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1689386452,
       "boothSearch": "https://booth.pm/en/search/Uzuki%20V",
       "autoTags": [
@@ -123784,7 +123784,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669296939,
       "boothSearch": "https://booth.pm/en/search/YRISPHERE",
       "autoTags": [
@@ -123813,7 +123813,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1700271760,
       "boothSearch": "https://booth.pm/en/search/Yoll",
       "autoTags": [
@@ -123851,7 +123851,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1675427600,
       "boothSearch": "https://booth.pm/en/search/Yuuko",
       "autoTags": [
@@ -123885,7 +123885,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1663534144,
       "boothSearch": "https://booth.pm/en/search/Zome",
       "autoTags": [
@@ -123918,7 +123918,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670027713,
       "boothSearch": "https://booth.pm/en/search/aco",
       "autoTags": [
@@ -123939,7 +123939,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1672324956,
       "boothSearch": "https://booth.pm/en/search/althaea",
       "autoTags": [
@@ -123967,7 +123967,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "male",
       "dateAdded": 1669723494,
       "boothSearch": "https://booth.pm/en/search/alu",
       "autoTags": [
@@ -123995,7 +123995,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1671463529,
       "boothSearch": "https://booth.pm/en/search/amanatsu"
     },
@@ -124006,7 +124006,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669637866,
       "boothSearch": "https://booth.pm/en/search/anon",
       "autoTags": [
@@ -124034,7 +124034,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1672495160,
       "boothSearch": "https://booth.pm/en/search/aoi",
       "autoTags": [
@@ -124060,7 +124060,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669554778,
       "boothSearch": "https://booth.pm/en/search/bea",
       "autoTags": [
@@ -124105,7 +124105,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670594706,
       "boothSearch": "https://booth.pm/en/search/binaco",
       "autoTags": [
@@ -124140,7 +124140,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670504022,
       "boothSearch": "https://booth.pm/en/search/carukia",
       "autoTags": [
@@ -124181,7 +124181,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1671803771,
       "boothSearch": "https://booth.pm/en/search/ciel",
       "autoTags": [
@@ -124226,7 +124226,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670594552,
       "boothSearch": "https://booth.pm/en/search/cocoa",
       "autoTags": [
@@ -124265,7 +124265,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670767053,
       "boothSearch": "https://booth.pm/en/search/cornet",
       "autoTags": [
@@ -124291,7 +124291,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1671887995,
       "boothSearch": "https://booth.pm/en/search/curishia",
       "autoTags": [
@@ -124325,7 +124325,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670878743,
       "boothSearch": "https://booth.pm/en/search/danzai",
       "autoTags": [
@@ -124356,7 +124356,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670504946,
       "boothSearch": "https://booth.pm/en/search/enigma",
       "autoTags": [
@@ -124394,7 +124394,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669383651,
       "boothSearch": "https://booth.pm/en/search/eyo",
       "autoTags": [
@@ -124422,7 +124422,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1671023534,
       "boothSearch": "https://booth.pm/en/search/falria",
       "autoTags": [
@@ -124465,7 +124465,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670877658,
       "boothSearch": "https://booth.pm/en/search/feihon",
       "autoTags": [
@@ -124487,7 +124487,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1678238955,
       "boothSearch": "https://booth.pm/en/search/fiona",
       "autoTags": [
@@ -124509,7 +124509,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670878416,
       "boothSearch": "https://booth.pm/en/search/fluctua",
       "autoTags": [
@@ -124534,7 +124534,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1671536497,
       "boothSearch": "https://booth.pm/en/search/fluria",
       "autoTags": [
@@ -124560,7 +124560,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1672495246,
       "boothSearch": "https://booth.pm/en/search/horiz",
       "autoTags": [
@@ -124598,7 +124598,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670184755,
       "boothSearch": "https://booth.pm/en/search/izul"
     },
@@ -124609,7 +124609,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1672756958,
       "boothSearch": "https://booth.pm/en/search/kanae",
       "autoTags": [
@@ -124651,7 +124651,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669468467,
       "boothSearch": "https://booth.pm/en/search/koyuki",
       "autoTags": [
@@ -124674,7 +124674,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1671369607,
       "boothSearch": "https://booth.pm/en/search/kuro",
       "autoTags": [
@@ -124712,7 +124712,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1672495535,
       "boothSearch": "https://booth.pm/en/search/kyoko",
       "autoTags": [
@@ -124743,7 +124743,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670505623,
       "boothSearch": "https://booth.pm/en/search/lilie",
       "autoTags": [
@@ -124770,7 +124770,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "male",
       "dateAdded": 1671193782,
       "boothSearch": "https://booth.pm/en/search/lio",
       "autoTags": [
@@ -124805,7 +124805,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1671277996,
       "boothSearch": "https://booth.pm/en/search/lucife",
       "autoTags": [
@@ -124839,7 +124839,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1685242609,
       "boothSearch": "https://booth.pm/en/search/lucky",
       "autoTags": [
@@ -124870,7 +124870,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1671889330,
       "boothSearch": "https://booth.pm/en/search/machikitsune",
       "autoTags": [
@@ -124913,7 +124913,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669901965,
       "boothSearch": "https://booth.pm/en/search/maple",
       "autoTags": [
@@ -124940,7 +124940,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1672440919,
       "boothSearch": "https://booth.pm/en/search/mari",
       "autoTags": [
@@ -124971,7 +124971,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669637934,
       "boothSearch": "https://booth.pm/en/search/mariel",
       "autoTags": [
@@ -125008,7 +125008,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1685358136,
       "boothSearch": "https://booth.pm/en/search/milk-re"
     },
@@ -125019,7 +125019,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669993251,
       "boothSearch": "https://booth.pm/en/search/mimino",
       "autoTags": [
@@ -125040,7 +125040,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1685444832,
       "boothSearch": "https://booth.pm/en/search/minahoshi",
       "autoTags": [
@@ -125080,7 +125080,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1675470540,
       "boothSearch": "https://booth.pm/en/search/mint",
       "autoTags": [
@@ -125114,7 +125114,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669902217,
       "boothSearch": "https://booth.pm/en/search/mulicia",
       "autoTags": [
@@ -125142,7 +125142,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1675737990,
       "boothSearch": "https://booth.pm/en/search/nayu",
       "autoTags": [
@@ -125167,7 +125167,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669994170,
       "boothSearch": "https://booth.pm/en/search/necomaid",
       "autoTags": [
@@ -125194,7 +125194,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670595154,
       "boothSearch": "https://booth.pm/en/search/neige",
       "autoTags": [
@@ -125216,7 +125216,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669821294,
       "boothSearch": "https://booth.pm/en/search/nekoyama_nae",
       "autoTags": [
@@ -125262,7 +125262,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670246956,
       "boothSearch": "https://booth.pm/en/search/noranekoseven",
       "autoTags": [
@@ -125287,7 +125287,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669723084,
       "boothSearch": "https://booth.pm/en/search/noy",
       "autoTags": [
@@ -125312,7 +125312,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1674741820,
       "boothSearch": "https://booth.pm/en/search/phi",
       "autoTags": [
@@ -125333,7 +125333,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669821199,
       "boothSearch": "https://booth.pm/en/search/platinum",
       "autoTags": [
@@ -125363,7 +125363,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669723201,
       "boothSearch": "https://booth.pm/en/search/quiche",
       "autoTags": [
@@ -125391,7 +125391,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1671462126,
       "boothSearch": "https://booth.pm/en/search/reflet",
       "autoTags": [
@@ -125420,7 +125420,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1785688315,
       "boothSearch": "https://booth.pm/en/search/ririka",
       "autoTags": [
@@ -125452,7 +125452,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670677530,
       "boothSearch": "https://booth.pm/en/search/rue",
       "autoTags": [
@@ -125480,7 +125480,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1675470969,
       "boothSearch": "https://booth.pm/en/search/rushka",
       "autoTags": [
@@ -125501,7 +125501,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1671192148,
       "boothSearch": "https://booth.pm/en/search/sapphy",
       "autoTags": [
@@ -125532,7 +125532,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669902048,
       "boothSearch": "https://booth.pm/en/search/shaon",
       "autoTags": [
@@ -125561,7 +125561,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1673192018,
       "boothSearch": "https://booth.pm/en/search/shayna",
       "autoTags": [
@@ -125585,7 +125585,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670338979,
       "boothSearch": "https://booth.pm/en/search/shinonome",
       "autoTags": [
@@ -125608,7 +125608,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670073501,
       "boothSearch": "https://booth.pm/en/search/shiriusu",
       "autoTags": [
@@ -125636,7 +125636,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1651515186,
       "boothSearch": "https://booth.pm/en/search/shizuku",
       "autoTags": [
@@ -125666,7 +125666,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670421517,
       "boothSearch": "https://booth.pm/en/search/sii",
       "autoTags": [
@@ -125698,7 +125698,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670765960,
       "boothSearch": "https://booth.pm/en/search/suiren",
       "autoTags": [
@@ -125730,7 +125730,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670765442,
       "boothSearch": "https://booth.pm/en/search/supica",
       "autoTags": [
@@ -125759,7 +125759,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670073598,
       "boothSearch": "https://booth.pm/en/search/suzuhana",
       "autoTags": [
@@ -125799,7 +125799,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669901875,
       "boothSearch": "https://booth.pm/en/search/tien",
       "autoTags": [
@@ -125830,7 +125830,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1671718415,
       "boothSearch": "https://booth.pm/en/search/tina",
       "autoTags": [
@@ -125870,7 +125870,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669993515,
       "boothSearch": "https://booth.pm/en/search/tycho",
       "autoTags": [
@@ -125905,7 +125905,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670183413,
       "boothSearch": "https://booth.pm/en/search/ururu",
       "autoTags": [
@@ -125937,7 +125937,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670595048,
       "boothSearch": "https://booth.pm/en/search/usa",
       "autoTags": [
@@ -125976,7 +125976,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1669637600,
       "boothSearch": "https://booth.pm/en/search/usasaki",
       "autoTags": [
@@ -126006,7 +126006,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "male",
       "dateAdded": 1671279771,
       "boothSearch": "https://booth.pm/en/search/vlau",
       "autoTags": [
@@ -126031,7 +126031,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670506801,
       "boothSearch": "https://booth.pm/en/search/yozuki",
       "autoTags": [
@@ -126064,7 +126064,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670940634,
       "boothSearch": "https://booth.pm/en/search/yume",
       "autoTags": [
@@ -126095,7 +126095,7 @@ const AVATAR_DATA = {
       "textures": [],
       "clothes": [],
       "recommended": false,
-      "gender": "unknown",
+      "gender": "female",
       "dateAdded": 1670504826,
       "boothSearch": "https://booth.pm/en/search/yuu",
       "autoTags": [
