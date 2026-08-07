@@ -67057,20 +67057,20 @@ const AVATAR_DATA = {
           "compatibleAvatars": [
             "Anri",
             "Imeris",
+            "Kikyo",
             "Kokoa",
-            "Maki",
+            "Maya",
+            "Merino",
             "Milk",
+            "Rindo",
             "Sue",
             "Thine Unity Package",
             "Wolferia",
             "Yuuko",
             "grus",
-            "kikyo",
             "koyuki",
             "lucife",
-            "maya",
-            "merino",
-            "rindo"
+            "maki"
           ],
           "boothSearch": "https://booth.pm/en/search/ametista%20nail",
           "autoTags": [
@@ -67813,6 +67813,27 @@ const AVATAR_DATA = {
             "from_side",
             "portrait",
             "two_side_up"
+          ]
+        },
+        {
+          "name": "Kumaly Makeup + Face Blendshape",
+          "preview": "images/Clothes,_Texture_Sets_Texture_Kumaly_Makeup_+_Face_Blendshape.jpg",
+          "sourceFile": "Clothes, Texture/Sets/Texture/Kumaly_Makeup_+_Face_Blendshape.zip",
+          "dateAdded": 1786093439,
+          "compatibleAvatars": [
+            "KUMALY"
+          ],
+          "boothSearch": "https://booth.pm/en/items/8331913",
+          "autoTags": [
+            "hair_ornament",
+            "animal_ears",
+            "ok_sign",
+            "long_hair",
+            "hairclip",
+            "portrait",
+            "cat_ears",
+            "bare_shoulders",
+            "hair_over_one_eye"
           ]
         },
         {
@@ -76933,9 +76954,10 @@ const AVATAR_DATA = {
           "preview": "images/Clothes,_Texture_Sets_Clothes_Chibi_Kaiju_1.1.jpg",
           "sourceFile": "Clothes, Texture/Sets/Clothes/Chibi_Kaiju_1.1.zip",
           "compatibleAvatars": [
-            "Kai",
-            "Kai&Ryu",
-            "Ryu"
+            "Kipfel",
+            "Lusion",
+            "Mamehinata",
+            "usasaki"
           ],
           "dateAdded": 1786090871,
           "boothSearch": "https://booth.pm/en/items/8362796",
@@ -111389,7 +111411,7 @@ const AVATAR_DATA = {
       ],
       "recommended": false,
       "gender": "unknown",
-      "dateAdded": 1786092466,
+      "dateAdded": 1786093540,
       "boothSearch": "https://booth.pm/en/search/Sets",
       "autoTags": [
         "long_hair",
@@ -111749,6 +111771,21 @@ const AVATAR_DATA = {
             "letterboxed",
             "fake_screenshot",
             ":d"
+          ]
+        },
+        {
+          "name": "Shinano Cute Make Up Texture",
+          "preview": "images/Clothes,_Texture_Shinano_Texture_Shinano_Cute_Make_Up_Texture.jpg",
+          "sourceFile": "Clothes, Texture/Shinano/Texture/Shinano_Cute_Make_Up_Texture.jpg",
+          "dateAdded": 1786093526,
+          "boothSearch": "https://booth.pm/en/items/6771401",
+          "autoTags": [
+            "collar",
+            "hair_between_eyes",
+            "long_hair",
+            "portrait",
+            "choker",
+            "heart"
           ]
         },
         {
@@ -112433,7 +112470,7 @@ const AVATAR_DATA = {
       ],
       "recommended": true,
       "gender": "female",
-      "dateAdded": 1768017620,
+      "dateAdded": 1786093526,
       "boothSearch": "https://booth.pm/en/search/Shinano",
       "autoTags": [
         "braid",
