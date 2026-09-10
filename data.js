@@ -67095,21 +67095,21 @@ const AVATAR_DATA = {
           "dateAdded": 1673713967,
           "compatibleAvatars": [
             "Anri",
-            "Kikyo",
+            "Imeris",
             "Kokoa",
-            "Maki",
             "Maya",
             "Merino",
             "Milk",
+            "Rindo",
             "Sue",
             "Thine Unity Package",
             "Wolferia",
             "Yuuko",
             "grus",
-            "imeris",
+            "kikyo",
             "koyuki",
             "lucife",
-            "rindo"
+            "maki"
           ],
           "boothSearch": "https://booth.pm/en/search/ametista%20nail",
           "autoTags": [
@@ -67167,7 +67167,6 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Texture/Berrixy.zip",
           "dateAdded": 1751091641,
           "compatibleAvatars": [
-            "AlPha",
             "Chocolat",
             "Karin",
             "Kikyo",
@@ -67189,6 +67188,7 @@ const AVATAR_DATA = {
             "Sio",
             "Thine Unity Package",
             "Yoll",
+            "AlPha",
             "ch",
             "cha hyun",
             "cha hyun_설레오#0001(",
@@ -68110,12 +68110,12 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Texture/StarEyes_V1.0.zip",
           "dateAdded": 1724652498,
           "compatibleAvatars": [
-            "AlPha",
             "Kikyo",
             "Minase",
             "Moe",
             "Selestia",
-            "Thine Unity Package"
+            "Thine Unity Package",
+            "AlPha"
           ],
           "boothSearch": "https://booth.pm/en/search/Star%20Eyes",
           "autoTags": [
@@ -116440,6 +116440,21 @@ const AVATAR_DATA = {
           ]
         },
         {
+          "name": "Cross Flare Sio",
+          "preview": "images/Clothes,_Texture_Sio_Texture_Cross_Flare_Sio.jpg",
+          "sourceFile": "Clothes, Texture/Sio/Texture/Cross Flare Sio.jpg",
+          "dateAdded": 1789040927,
+          "boothSearch": "https://booth.pm/en/items/8672150",
+          "autoTags": [
+            "long_hair",
+            "hair_between_eyes",
+            "portrait",
+            "animal_ears",
+            "cat_ears",
+            "whiskers"
+          ]
+        },
+        {
           "name": "Ellipses Sio",
           "preview": "images/Clothes,_Texture_Sio_Texture_Ellipses_Sio.jpg",
           "sourceFile": "Clothes, Texture/Sio/Texture/Ellipses Sio.jpg",
@@ -121423,7 +121438,7 @@ const AVATAR_DATA = {
       ],
       "recommended": true,
       "gender": "female",
-      "dateAdded": 1768019843,
+      "dateAdded": 1789040927,
       "boothSearch": "https://booth.pm/en/search/Sio",
       "autoTags": [
         "animal_ears",
