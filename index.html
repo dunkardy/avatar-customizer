@@ -1690,6 +1690,7 @@ function renderPathBCompat(main) {
   }
 
   var parts = [];
+  parts.push('<button class="btn-back" onclick="state.page=\'pathB\';render()">← ' + t('back') + '</button>');
   parts.push('<div class="page-title">' + t('pathBCompat') + '</div>');
   parts.push('<p class="page-desc">');
   parts.push((lang==='th' ? 'ชุดที่เลือก: ' : 'Selected outfit: ') + '<strong>' + escapeHTML(cloth.name) + '</strong><br>');
@@ -1703,9 +1704,6 @@ function renderPathBCompat(main) {
     parts.push('<div class="warning"><strong>!</strong> ' + t('unknownCompat') + '</div>');
   }
   parts.push('<div class="card-grid" id="compatGrid"></div>');
-  parts.push('<div style="margin-top:16px;display:flex;gap:8px">');
-  parts.push('<button class="btn-secondary" onclick="state.page=\'pathB\';render()">' + t('back') + '</button>');
-  parts.push('</div>');
   main.innerHTML = parts.join('');
 
   var grid = main.querySelector('#compatGrid');
@@ -3610,7 +3608,7 @@ function boot() {
 }
 </script>
 <!-- Exact tag: scanner/hidden_store.py render_deploy_html() adds the cache-busting ?v= hash. -->
-<script src="data.js?v=4e9122d630a9"></script>
+<script src="data.js?v=507566b65636"></script>
 <script>boot();</script>
 </body>
 </html>
