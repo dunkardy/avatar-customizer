@@ -6,7 +6,16 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="data:,">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="เลือกตัวเบส ทรงผม และชุดสำหรับ VRChat ดูราคาระหว่างแต่ง แล้วส่งสรุปให้ร้าน">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AVATAR VRCHAT · แต่งอวตาร์ในแบบที่ชอบ">
+<meta property="og:description" content="เลือกตัวเบส ทรงผม และชุดสำหรับ VRChat ดูราคาระหว่างแต่ง แล้วส่งสรุปให้ร้าน">
+<meta property="og:image" content="https://dunkardy-avatars.netlify.app/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath d='M15 2c5-2 11 2 12 8 1 5-1 10-5 15-5 5-14 4-18-1C0 19 1 11 6 7c3-3 6-4 9-5z' fill='%23fdf6dd'/%3E%3Ccircle cx='15' cy='14' r='8' fill='%23ffd75e'/%3E%3Cpath d='M11 10a6 6 0 0 0-2 5' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -59,7 +68,8 @@ a{color:var(--teal)}
 @media(hover:hover){.card:hover{transform:translateY(-2px);border-color:var(--border-strong)}}
 .card.selected{border-color:var(--teal);box-shadow:0 0 0 1px var(--teal),0 0 0 3px rgba(155,128,255,.3)}
 .card-img{aspect-ratio:3/4;overflow:hidden;background:var(--surface-raised);display:flex;align-items:center;justify-content:center;position:relative}
-.card-img img{width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;z-index:2}
+.card-img img{width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;z-index:2;transition:opacity .3s ease}
+.card-img.loading img{opacity:0}
 .card-img .placeholder{color:var(--text-faint);font-size:.72rem;text-align:center;padding:8px;word-break:break-word;position:relative;z-index:1}
 .card-img.loading::before{content:'';position:absolute;inset:0;background:var(--surface-soft);animation:pulse 1.2s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
@@ -98,9 +108,13 @@ a{color:var(--teal)}
 .page-eyebrow{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-faint);margin-bottom:6px}
 
 /* ===== Landing ===== */
-.landing{display:grid;grid-template-columns:minmax(260px,5fr) 7fr;gap:44px;margin-top:44px;align-items:start}
-.landing-headline{font-size:2rem;font-weight:800;line-height:1.12;text-transform:uppercase;margin:4px 0 14px}
-.landing-lede{color:var(--text-muted);font-size:.95rem;max-width:38ch;padding-bottom:18px;border-bottom:1px solid var(--border)}
+.landing{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:48px;margin-top:28px;align-items:center}
+.landing-headline{font-size:3rem;font-weight:800;line-height:1.12;text-transform:uppercase;margin:4px 0 16px}
+.landing-lede{color:var(--text-muted);font-size:1rem;max-width:42ch;margin-bottom:22px}
+.hero-stats{display:flex;gap:32px;padding:14px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-bottom:26px}
+.hero-stat b{display:block;font-size:1.75rem;font-weight:800;line-height:1.15;font-variant-numeric:tabular-nums}
+.hero-stat b:empty::before{content:'\2014';color:var(--text-faint)}
+.hero-stat span{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
 .landing-options{display:flex;flex-direction:column;gap:12px;margin-top:0}
 .landing-card{display:flex;align-items:center;gap:18px;width:100%;text-align:left;appearance:none;background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:var(--radius);padding:22px 20px;min-height:72px;cursor:pointer;transition:border-color .15s ease,background .15s ease,opacity .12s ease}
 .landing-card:hover,.landing-card:focus-visible{border-color:var(--teal);background:var(--surface-soft)}
@@ -110,8 +124,30 @@ a{color:var(--teal)}
 .landing-copy{display:block;color:var(--text-muted);font-size:.85rem}
 .route-marker{font-size:.68rem;font-weight:700;letter-spacing:.12em;color:var(--text-faint);text-transform:uppercase;transition:transform .15s ease,color .15s ease;white-space:nowrap}
 .landing-card:hover .route-marker,.landing-card:focus-visible .route-marker{color:var(--teal);transform:translateX(4px)}
-.landing-meta{color:var(--text-faint);font-size:.78rem;margin-top:14px;line-height:1.7}
+.route-thumbs{display:flex;flex:none}
+.route-thumbs span{width:2.25rem;aspect-ratio:3/4;margin-left:-.7rem;border:2px solid var(--surface);border-radius:var(--radius);background:var(--surface-raised);overflow:hidden;transition:border-color .15s ease}
+.route-thumbs span:first-child{margin-left:0}
+.landing-card:hover .route-thumbs span,.landing-card:focus-visible .route-thumbs span{border-color:var(--surface-soft)}
+/* Hero art wall: real catalog previews drifting in columns (rows on narrow screens); decorative only */
+.hero-wall{display:flex;align-items:flex-start;gap:10px;height:36rem;padding:0 10px;overflow:hidden;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg)}
+.wall-track{flex:1;min-width:0;display:flex;flex-direction:column;animation:wallUp 90s linear infinite;will-change:transform}
+.wall-track:nth-child(even){animation-direction:reverse;animation-duration:110s}
+.wall-tile{flex:none;aspect-ratio:3/4;margin-bottom:10px;border-radius:var(--radius);background:var(--surface-raised);overflow:hidden}
+.wall-tile:empty{animation:pulse 1.2s ease-in-out infinite}
+.hero-wall:hover .wall-track{animation-play-state:paused}
+.route-thumbs img,.wall-tile img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .4s ease}
+.route-thumbs img.in,.wall-tile img.in{opacity:1}
+@keyframes wallUp{to{transform:translateY(-50%)}}
+@keyframes wallLeft{to{transform:translateX(-50%)}}
+.landing-picks-head{margin-top:44px;padding-top:14px;border-top:1px solid var(--border);font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
 .landing-picks{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-top:10px}
+.loading-note{padding:64px 16px;text-align:center;color:var(--text-muted);animation:pulse 1.2s ease-in-out infinite}
+/* First visit only (renderLanding sets .intro once): content steps in over ~0.35s; the reduced-motion rule turns it off */
+.landing.intro .landing-intro>*,.landing.intro .hero-wall{animation:pageEnter .22s ease both}
+.landing.intro .landing-intro>:nth-child(n+3){animation-delay:.04s}
+.landing.intro .landing-intro>:nth-child(n+4){animation-delay:.08s}
+.landing.intro .landing-intro>:nth-child(n+5){animation-delay:.12s}
+.landing.intro .hero-wall{animation-delay:.06s}
 
 /* ===== Search ===== */
 .search-bar{margin-bottom:14px;display:flex;gap:8px;flex-wrap:wrap}
@@ -266,7 +302,15 @@ body.dialog-open{overflow:hidden}
 .sticky-actions .sa-price{display:block;font-size:.8rem;font-weight:700;color:var(--teal)}
 .adv-toggle{display:none}
 #advOptions{transition:none}
-@media(max-width:1099px){#app{padding:0 20px 24px}}
+@media(max-width:1099px){
+  #app{padding:0 20px 24px}
+  .landing{grid-template-columns:1fr;gap:24px;margin-top:16px}
+  .hero-wall{order:-1;flex-direction:column;height:auto;padding:8px 0;gap:8px}
+  .wall-track{flex:none;width:max-content;flex-direction:row;animation-name:wallLeft;animation-duration:70s}
+  .wall-track:nth-child(even){animation-duration:85s}
+  .wall-track:nth-child(n+3){display:none}
+  .wall-tile{width:6rem;margin:0 8px 0 0}
+}
 @media(max-width:759px){
   #app{padding:0 14px 78px}
   .adv-toggle{display:inline-flex;align-items:center;gap:6px;background:var(--surface-raised);color:var(--text);border:1px solid var(--border);font-size:.83rem;padding:10px 14px;margin-bottom:8px}
@@ -275,8 +319,15 @@ body.dialog-open{overflow:hidden}
   .sticky-actions .btn-primary{padding:11px 22px}
   .customize-shell{flex-direction:column;gap:0}
   .customize-inspector{position:static;flex:none;width:100%;max-height:none;overflow:visible;overscroll-behavior:auto;padding-right:0}
-  .landing{grid-template-columns:1fr;gap:22px;margin-top:20px}
-  .landing-headline{font-size:1.5rem}
+  .landing{gap:18px;margin-top:12px}
+  .landing-headline{font-size:2rem;margin-bottom:10px}
+  .landing-lede{font-size:.92rem;margin-bottom:16px}
+  .hero-stats{gap:24px;padding:10px 0;margin-bottom:18px}
+  .hero-stat b{font-size:1.35rem}
+  .wall-tile{width:4rem}
+  .landing-card{padding:16px 14px;gap:14px}
+  .route-marker{display:none}
+  .landing-picks-head{margin-top:32px}
   .landing-picks{grid-template-columns:repeat(3,minmax(0,1fr))}
   .header{gap:8px;padding:10px 0}
   .header-actions{gap:6px;margin-left:auto}
@@ -292,7 +343,7 @@ body.dialog-open{overflow:hidden}
   .share-modal{padding:20px}
   .share-modal .url-row{flex-direction:column}
 }
-@media(max-width:420px){#app{padding:0 12px 78px}.landing-meta{font-size:.72rem}}
+@media(max-width:420px){#app{padding:0 12px 78px}.route-index{display:none}}
 .empty-state{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;color:var(--text-muted);padding:40px 16px}
 .unknown-pill{grid-column:1/-1;padding:12px 14px;border:1px dashed var(--border-strong);border-radius:var(--radius);background:transparent;color:var(--text-muted);font-size:.8rem;cursor:pointer;text-align:center}
 .unknown-pill:hover{color:var(--text);border-color:var(--teal)}
@@ -306,7 +357,6 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 <body>
 <div id="app"></div>
 
-<script src="data.js?v=934031d0edc9"></script>
 <script>
 // =========================================================================
 // Avatar Customizer - Web App
@@ -404,6 +454,7 @@ const T = {
     estTotal: "ราคาประมาณ {n} บาท",
     errorToast: "เกิดข้อผิดพลาด ลองรีเฟรชหน้านี้",
     baht: "บาท",
+    loadingCatalog: "กำลังโหลดแคตตาล็อก…",
   },
   en: {
     appTitle: "Avatar Customizer",
@@ -480,12 +531,14 @@ const T = {
     estTotal: "Est. {n} baht",
     errorToast: "Something went wrong. Try refreshing the page.",
     baht: "baht",
+    loadingCatalog: "Loading catalog…",
   }
 };
 
 // --- State ---
 let lang = localStorage.getItem('avatar-lang') || 'th';
 let currentMain = null;  // set by each render function before DOM queries
+let dataReady = false;   // flips when data.js has run (see boot())
 let state = {
   page: 'landing',       // landing | pathA | pathB | pathBcompat | customize | summary
   selectedAvatar: null,  // avatar id
@@ -687,6 +740,8 @@ function encodeStateToHash() {
 }
 
 function saveProgress() {
+  // Before data.js lands, state is still the empty default: saving now would wipe the stored session.
+  if (!dataReady) return;
   try {
     if (state.selectedAvatar) {
       localStorage.setItem('avatar-progress', encodeStateToHash());
@@ -1033,7 +1088,9 @@ function render() {
   const main = document.createElement('main');
   main.className = 'page active';
 
-  switch (state.page) {
+  if (!dataReady && (state.page !== 'landing' || _restorePending)) {
+    main.innerHTML = '<p class="loading-note">' + t('loadingCatalog') + '</p>';
+  } else switch (state.page) {
     case 'landing': renderLanding(main); break;
     case 'pathA': renderPathA(main); break;
     case 'pathB': renderPathB(main); break;
@@ -1044,7 +1101,7 @@ function render() {
 
   app.appendChild(main);
   saveProgress();
-  syncHistory();
+  if (dataReady) syncHistory();
   sizeInspector();
 }
 
@@ -1343,15 +1400,29 @@ function renderEmptyState(grid, canClear, onClear, fallbackMsg) {
 }
 
 // --- Landing ---
+const WALL_TRACKS = 4, WALL_PER_TRACK = 6;
+let _landingIntroPlayed = false;
 function renderLanding(main) {
+  // Skeleton tiles first; fillLanding() drops real art into them in place (tracks keep drifting).
+  let wall = '';
+  for (let k = 0; k < WALL_TRACKS; k++) {
+    let tiles = '';
+    for (let j = 0; j < WALL_PER_TRACK * 2; j++) tiles += `<div class="wall-tile" data-i="${k * WALL_PER_TRACK + j % WALL_PER_TRACK}"></div>`;
+    wall += `<div class="wall-track">${tiles}</div>`;
+  }
+  const thumbs = '<span></span><span></span><span></span>';
   main.innerHTML = `
-    <div class="landing">
+    <div class="landing${_landingIntroPlayed ? '' : ' intro'}">
       <div class="landing-intro">
-        <div class="page-eyebrow">AVATAR VRCHAT</div>
-        <div class="landing-headline">${lang==='th' ? 'เลือกวิธีการเริ่มต้น' : 'Select your route'}</div>
-        <p class="landing-lede">${lang==='th' ? 'คุณสามารถเลือกอวตาร์ก่อนแล้วค่อยเลือกชุด หรือเลือกชุดที่ชอบแล้วดูว่าชุดนั้นใช้กับอวตาร์ตัวไหนได้บ้าง' : 'You can pick an avatar first, or find which avatar fits your favorite outfit'}</p>
-      </div>
-      <div class="landing-routes">
+        <div class="page-eyebrow">${lang==='th' ? 'รับแต่งอวตาร์ VRChat' : 'Custom VRChat avatars'}</div>
+        <div class="landing-headline">${lang==='th' ? 'แต่งอวตาร์ในแบบที่ชอบ' : 'Build your own avatar'}</div>
+        <p class="landing-lede">${lang==='th' ? 'เลือกตัวเบส ทรงผม และชุด ดูราคาระหว่างแต่ง แล้วส่งสรุปให้ร้าน' : 'Pick a base, hair and outfits, see the price as you build, then send the summary to the shop.'}</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><b></b><span>${lang==='th' ? 'อวตาร์' : 'avatars'}</span></div>
+          <div class="hero-stat"><b></b><span>${lang==='th' ? 'ชุด' : 'outfits'}</span></div>
+          <div class="hero-stat"><b></b><span>${lang==='th' ? 'ทรงผม' : 'hairs'}</span></div>
+        </div>
+        <div class="page-eyebrow">${lang==='th' ? 'เลือกวิธีเริ่มต้น' : 'Choose how to start'}</div>
         <div class="landing-options">
           <button class="landing-card" type="button" onclick="startPathA()">
             <span class="route-index" aria-hidden="true">01</span>
@@ -1359,6 +1430,7 @@ function renderLanding(main) {
               <span class="landing-title">${t('pickAvatar')}</span>
               <span class="landing-copy">${t('pickAvatarDesc')}</span>
             </span>
+            <span class="route-thumbs" id="routeThumbsA" aria-hidden="true">${thumbs}</span>
             <span class="route-marker" aria-hidden="true">${lang==='th' ? 'เปิด' : 'Open'}</span>
           </button>
           <button class="landing-card" type="button" onclick="startPathB()">
@@ -1367,14 +1439,35 @@ function renderLanding(main) {
               <span class="landing-title">${t('pickOutfit')}</span>
               <span class="landing-copy">${t('pickOutfitDesc')}</span>
             </span>
+            <span class="route-thumbs" id="routeThumbsB" aria-hidden="true">${thumbs}</span>
             <span class="route-marker" aria-hidden="true">${lang==='th' ? 'เปิด' : 'Open'}</span>
           </button>
         </div>
-        <p class="landing-meta">${lang==='th' ? `${avatarList().length} อวตาร์` : `${avatarList().length} avatars`} · ${t('recommended')}</p>
-        <div class="landing-picks" id="landingPicks"></div>
       </div>
+      <div class="hero-wall" aria-hidden="true">${wall}</div>
     </div>
+    <div class="landing-picks-head">${t('recommended')}</div>
+    <div class="landing-picks" id="landingPicks"></div>
   `;
+  _landingIntroPlayed = true;
+  if (dataReady) fillLanding(main);
+}
+
+// Real counts and art; boot() also calls this in place when data.js lands after the first paint.
+function fillLanding(main) {
+  const all = Object.values(AVATAR_DATA.avatars);
+  const counts = [avatarList().length, all.reduce((n, a) => n + (a.clothes || []).length, 0), (AVATAR_DATA.hairs || []).length];
+  main.querySelectorAll('.hero-stat b').forEach((b, i) => { b.textContent = counts[i].toLocaleString('en-US'); });
+  // Recommended avatars first, then the ones with the most outfits
+  const art = avatarList().filter(a => a.preview)
+    .sort((a, b) => (b.recommended ? 1 : 0) - (a.recommended ? 1 : 0) || (b.clothes || []).length - (a.clothes || []).length);
+  const outfits = ((AVATAR_DATA.avatars.Sets || {}).clothes || []).filter(c => c.preview)
+    .sort((a, b) => b.compatibleAvatars.length - a.compatibleAvatars.length);
+  const img = it => `<img src="${imgSrc(it.preview)}" alt="" loading="lazy" decoding="async" onload="this.classList.add('in')" onerror="this.style.visibility='hidden'">`;
+  if (art.length) main.querySelectorAll('.wall-tile').forEach(el => { el.innerHTML = img(art[el.dataset.i % art.length]); });
+  [['#routeThumbsA', art], ['#routeThumbsB', outfits]].forEach(([sel, items]) => {
+    main.querySelectorAll(sel + ' span').forEach((s, i) => { if (items[i]) s.innerHTML = img(items[i]); });
+  });
   const picks = main.querySelector('#landingPicks');
   for (const av of avatarList().filter(a => a.recommended)) picks.appendChild(renderCard(av, item => pickAvatar(item.id)));
 }
@@ -3501,9 +3594,24 @@ window.onerror = function(msg, url) {
 };
 
 // --- Init ---
-var _restoredFromStorage = !tryRestoreFromHash() && tryRestoreFromStorage();
+// Paint before data.js (~0.5 MB gzip) arrives: new visitors get the landing at once; share links and
+// saved sessions get a loading note instead of a landing that jumps away.
+var _restorePending = !!location.hash.slice(1);
+try { _restorePending = _restorePending || !!localStorage.getItem('avatar-progress'); } catch(e) {}
 render();
-if (_restoredFromStorage) showToast(t('progressRestored'), { label: t('startOver'), onClick: resetAll }, 6000);
+
+// Runs from the inline script right after data.js.
+function boot() {
+  dataReady = true;
+  var restoredFromStorage = !tryRestoreFromHash() && tryRestoreFromStorage();
+  var main = document.querySelector('main.page');
+  if (state.page === 'landing' && main && main.querySelector('.landing')) { fillLanding(main); syncHistory(); }
+  else render();
+  if (restoredFromStorage) showToast(t('progressRestored'), { label: t('startOver'), onClick: resetAll }, 6000);
+}
 </script>
+<!-- Exact tag: scanner/hidden_store.py render_deploy_html() adds the cache-busting ?v= hash. -->
+<script src="data.js?v=d6c253756cc5"></script>
+<script>boot();</script>
 </body>
 </html>
