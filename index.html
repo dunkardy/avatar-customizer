@@ -138,7 +138,7 @@ a{color:var(--teal)}
 .route-thumbs img.in,.wall-tile img.in{opacity:1}
 @keyframes wallUp{to{transform:translateY(-50%)}}
 @keyframes wallLeft{to{transform:translateX(-50%)}}
-.landing-picks-head{margin-top:44px;padding-top:14px;border-top:1px solid var(--border);font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
+.landing-picks-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:44px;padding-top:14px;border-top:1px solid var(--border);font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
 .landing-picks{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-top:10px}
 .loading-note{padding:64px 16px;text-align:center;color:var(--text-muted);animation:pulse 1.2s ease-in-out infinite}
 /* First visit only (renderLanding sets .intro once): content steps in over ~0.35s; the reduced-motion rule turns it off */
@@ -342,7 +342,7 @@ body.dialog-open{overflow:hidden}
   .share-modal{padding:20px}
   .share-modal .url-row{flex-direction:column}
 }
-@media(max-width:420px){#app{padding:0 12px 78px}.route-index{display:none}}
+@media(max-width:420px){#app{padding:0 12px 78px}.route-index{display:none}.landing-picks .card-badge{text-transform:none;letter-spacing:0;padding:2px 5px;margin:0 8px 8px}}
 .empty-state{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;color:var(--text-muted);padding:40px 16px}
 .unknown-pill{grid-column:1/-1;padding:12px 14px;border:1px dashed var(--border-strong);border-radius:var(--radius);background:transparent;color:var(--text-muted);font-size:.8rem;cursor:pointer;text-align:center}
 .unknown-pill:hover{color:var(--text);border-color:var(--teal)}
@@ -386,6 +386,8 @@ const T = {
     pickOutfit: "เลือกจากชุด",
     pickOutfitDesc: "เห็นชุดที่ชอบแล้ว? เลือกชุดก่อน แล้วระบบจะแสดงอวตาร์ที่ใช้ชุดนั้นได้",
     recommended: "แนะนำ",
+    newArrivals: "มาใหม่",
+    seeAll: "ดูทั้งหมด",
     female: "ผู้หญิง",
     male: "ผู้ชาย",
     unknown: "อื่นๆ",
@@ -462,13 +464,15 @@ const T = {
     pickOutfit: "Pick Outfit First",
     pickOutfitDesc: "Found an outfit you love? Pick it first and see which avatars it works with",
     recommended: "Recommended",
+    newArrivals: "New arrivals",
+    seeAll: "See all",
     female: "Female",
     male: "Male",
     unknown: "Other",
     avatar: "Avatar",
     outfit: "Outfit",
     hair: "Hair",
-    textures: "Textures/Makeup",
+    textures: "Textures / Makeup",
     accessories: "Accessories",
     props: "Props",
     search: "Search...",
@@ -1094,6 +1098,7 @@ function render() {
     case 'pathA': renderPathA(main); break;
     case 'pathB': renderPathB(main); break;
     case 'pathBcompat': renderPathBCompat(main); break;
+    case 'newArrivals': renderNewArrivals(main); break;
     case 'customize': renderCustomize(main); break;
     case 'summary': renderSummary(main); break;
   }
@@ -1445,6 +1450,8 @@ function renderLanding(main) {
       </div>
       <div class="hero-wall" aria-hidden="true">${wall}</div>
     </div>
+    <div class="landing-picks-head">${t('newArrivals')}<button class="mini-btn" type="button" onclick="state.page='newArrivals';render()">${t('seeAll')} →</button></div>
+    <div class="landing-picks" id="landingNew"></div>
     <div class="landing-picks-head">${t('recommended')}</div>
     <div class="landing-picks" id="landingPicks"></div>
   `;
@@ -1469,6 +1476,61 @@ function fillLanding(main) {
   });
   const picks = main.querySelector('#landingPicks');
   for (const av of avatarList().filter(a => a.recommended)) picks.appendChild(renderCard(av, item => pickAvatar(item.id)));
+
+  // ponytail: fixed per-type quota (outfits come in big batches and would crowd out the rest); no age cutoff, the date badge keeps it honest.
+  const fresh = Object.entries(newArrivalPools()).flatMap(([type, list]) => list.slice(0, type === 'outfit' ? 4 : 2)).sort(byNewest);
+  const newGrid = main.querySelector('#landingNew');
+  for (const n of fresh) newGrid.appendChild(renderCard(n.item, () => openNewArrival(n), [{ text: t(n.type), cls: 'badge-new' }, { text: addedLabel(n.item.dateAdded) }]));
+}
+
+// Every asset type, newest first; keys match the T labels.
+const byNewest = (a, b) => (b.item.dateAdded || 0) - (a.item.dateAdded || 0);
+function newArrivalPools() {
+  const pools = { avatar: [], outfit: [], textures: [], hair: [], accessories: [] }, seen = new Set();
+  const add = (type, item, owner) => {
+    const key = type + ':' + (item.sourceFile || item.id || item.preview);  // shared-folder items appear under several avatars
+    if (item.preview && !seen.has(key)) { seen.add(key); pools[type].push({ type, item, owner }); }
+  };
+  avatarList().forEach(av => add('avatar', av));
+  Object.values(AVATAR_DATA.avatars).forEach(av => { (av.clothes || []).forEach(c => add('outfit', c, av.id)); (av.textures || []).forEach(x => add('textures', x, av.id)); });
+  (AVATAR_DATA.hairs || []).forEach(h => add('hair', h));
+  (AVATAR_DATA.accessories || []).forEach(a => add('accessories', a));
+  Object.values(pools).forEach(list => list.sort(byNewest));
+  return pools;
+}
+function addedLabel(seconds) {
+  return new Date(seconds * 1000).toLocaleDateString(lang === 'th' ? 'th-TH' : 'en-GB', { day: 'numeric', month: 'short' });
+}
+
+// Shareable page (Discord link /new/ -> ?new): the newest 12 of each type.
+function renderNewArrivals(main) {
+  currentMain = main;
+  const pools = newArrivalPools();
+  const latest = Math.max(0, ...Object.values(pools).map(list => list.length ? list[0].item.dateAdded || 0 : 0));
+  main.innerHTML = `
+    <button class="btn-back" onclick="state.page='landing';render()">← ${t('back')}</button>
+    <div class="page-title">${t('newArrivals')}</div>
+    <p class="page-desc">${lang==='th' ? 'อัปเดตล่าสุด ' : 'Last updated '}${addedLabel(latest)}</p>
+  `;
+  for (const [type, list] of Object.entries(pools)) {
+    if (!list.length) continue;
+    const head = document.createElement('div');
+    head.className = 'landing-picks-head';
+    head.textContent = t(type);
+    const grid = document.createElement('div');
+    grid.className = 'card-grid';
+    for (const n of list.slice(0, 12)) grid.appendChild(renderCard(n.item, () => openNewArrival(n), [{ text: addedLabel(n.item.dateAdded) }]));
+    main.append(head, grid);
+  }
+}
+
+// Avatars and outfits start an order the same way their own lists do; textures, hair and
+// accessories need an avatar first, so they open the big preview.
+function openNewArrival(n) {
+  if (n.type === 'avatar') pickAvatar(n.item.id);
+  else if (n.type === 'outfit' && n.owner !== 'Sets') pickAvatar(n.owner, n.item);
+  else if (n.type === 'outfit') { state.selectedClothFirst = n.item; state.page = 'pathBcompat'; render(); }
+  else openQuickLook(n.item);
 }
 
 function startPathA() { state.page = 'pathA'; state.selectedClothFirst = null; render(); }
@@ -3595,12 +3657,16 @@ window.onerror = function(msg, url) {
 // saved sessions get a loading note instead of a landing that jumps away.
 var _restorePending = !!location.hash.slice(1);
 try { _restorePending = _restorePending || !!localStorage.getItem('avatar-progress'); } catch(e) {}
+// Discord link: /new/ forwards here with ?new. Drop it from the URL so a later reload keeps the customer's own page.
+var _openNew = new URLSearchParams(location.search).has('new');
+if (_openNew) { state.page = 'newArrivals'; history.replaceState(history.state, '', location.pathname + location.hash); }
 render();
 
 // Runs from the inline script right after data.js.
 function boot() {
   dataReady = true;
   var restoredFromStorage = !tryRestoreFromHash() && tryRestoreFromStorage();
+  if (_openNew) state.page = 'newArrivals';  // keep any restored selections, but show what the link promised
   var main = document.querySelector('main.page');
   if (state.page === 'landing' && main && main.querySelector('.landing')) { fillLanding(main); syncHistory(); }
   else render();
@@ -3608,7 +3674,7 @@ function boot() {
 }
 </script>
 <!-- Exact tag: scanner/hidden_store.py render_deploy_html() adds the cache-busting ?v= hash. -->
-<script src="data.js?v=86bd8f03d772"></script>
+<script src="data.js?v=543044e5f12a"></script>
 <script>boot();</script>
 </body>
 </html>
