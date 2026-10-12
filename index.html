@@ -1485,6 +1485,12 @@ function fillLanding(main) {
   for (const n of fresh) newGrid.appendChild(renderCard(n.item, () => openNewArrival(n), [{ text: t(n.type), cls: 'badge-new' }, { text: addedLabel(n.item.dateAdded) }]));
 }
 
+// Trending: Booth hearts per day (scanner `trend`), only items with a Booth product link have it;
+// everything else follows in the default newest-first order.
+function trendSort(list) {
+  return list.sort((a, b) => (b.trend ?? -1) - (a.trend ?? -1) || (b.dateAdded || 0) - (a.dateAdded || 0));
+}
+
 // Every asset type, newest first; keys match the T labels.
 const byNewest = (a, b) => (b.item.dateAdded || 0) - (a.item.dateAdded || 0);
 function newArrivalPools() {
@@ -1589,6 +1595,7 @@ function renderPathA(main) {
         <option value="date" ${pathAFilter.sort==='date'?'selected':''}>${lang==='th'?'ล่าสุด':'Latest'}</option>
         <option value="alpha" ${pathAFilter.sort==='alpha'?'selected':''}>A-Z</option>
         <option value="outfits" ${pathAFilter.sort==='outfits'?'selected':''}>${lang==='th'?'ชุดเยอะสุด':'Most outfits'}</option>
+        <option value="trend" ${pathAFilter.sort==='trend'?'selected':''}>${lang==='th'?'มาแรง':'Trending'}</option>
       </select>
     </div>
     <div class="card-grid" id="avatarGrid"></div>
@@ -1627,6 +1634,8 @@ function renderPathAList() {
   // Sort
   if (pathAFilter.sort === 'outfits') {
     avatars.sort(function(a,b) { return (outfitCountMap[b.id] || 0) - (outfitCountMap[a.id] || 0); });
+  } else if (pathAFilter.sort === 'trend') {
+    trendSort(avatars);
   } else if (pathAFilter.sort === 'alpha') {
     avatars.sort((a,b) => a.name.localeCompare(b.name));
   } else {
@@ -1679,6 +1688,7 @@ function renderPathB(main) {
       <select id="sortB" onchange="pathBFilter.sort=this.value;renderPathBList()">
         <option value="date" ${pathBFilter.sort==='date'?'selected':''}>${lang==='th'?'ล่าสุด':'Latest'}</option>
         <option value="alpha" ${pathBFilter.sort==='alpha'?'selected':''}>A-Z</option>
+        <option value="trend" ${pathBFilter.sort==='trend'?'selected':''}>${lang==='th'?'มาแรง':'Trending'}</option>
       </select>
     </div>
     <div id="tagFilterArea" class="tag-filter-area"></div>
@@ -1721,6 +1731,8 @@ function renderPathBList() {
   // Sort (photo-search order wins while active)
   if (outfitSearchState.active && outfitSearchState.order) {
     outfitSearchSort(clothes);
+  } else if (pathBFilter.sort === 'trend') {
+    trendSort(clothes);
   } else if (pathBFilter.sort === 'alpha') {
     clothes.sort(function(a,b) { return a.name.localeCompare(b.name); });
   } else {
@@ -2183,6 +2195,7 @@ function renderCustomize(main) {
       <select id="customSortSel" onchange="customSort=this.value;renderCustomTabList()">
         <option value="date" ${customSort==='date'?'selected':''}>${lang==='th'?'ล่าสุด':'Latest'}</option>
         <option value="alpha" ${customSort==='alpha'?'selected':''}>A-Z</option>
+        <option value="trend" ${customSort==='trend'?'selected':''}>${lang==='th'?'มาแรง':'Trending'}</option>
       </select>
     </div>
 
@@ -3066,6 +3079,8 @@ function renderCustomTabList() {
     });
   } else if (customTab === 'clothes' && outfitSearchState.active && outfitSearchState.order) {
     outfitSearchSort(items);
+  } else if (customSort === 'trend') {
+    trendSort(items);
   } else if (customSort === 'alpha') {
     items.sort(function(a,b) { return a.name.localeCompare(b.name); });
   } else {
@@ -3697,7 +3712,7 @@ function boot() {
 }
 </script>
 <!-- Exact tag: scanner/hidden_store.py render_deploy_html() adds the cache-busting ?v= hash. -->
-<script src="data.js?v=a5f774006cc9"></script>
+<script src="data.js?v=b08ab96c2905"></script>
 <script>boot();</script>
 </body>
 </html>
