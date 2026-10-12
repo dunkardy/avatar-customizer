@@ -140,6 +140,8 @@ a{color:var(--teal)}
 @keyframes wallLeft{to{transform:translateX(-50%)}}
 .landing-picks-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:44px;padding-top:14px;border-top:1px solid var(--border);font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
 .landing-picks{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-top:10px}
+.log-day{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);font-size:1.1rem;font-weight:800}
+.log-type{margin:16px 0 10px;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
 .loading-note{padding:64px 16px;text-align:center;color:var(--text-muted);animation:pulse 1.2s ease-in-out infinite}
 /* First visit only (renderLanding sets .intro once): content steps in over ~0.35s; the reduced-motion rule turns it off */
 .landing.intro .landing-intro>*,.landing.intro .hero-wall{animation:pageEnter .22s ease both}
@@ -1502,26 +1504,47 @@ function addedLabel(seconds) {
   return new Date(seconds * 1000).toLocaleDateString(lang === 'th' ? 'th-TH' : 'en-GB', { day: 'numeric', month: 'short' });
 }
 
-// Shareable page (Discord link /new/ -> ?new): the newest 12 of each type.
+// Shareable page (Discord link /new/ -> ?new): changelog of every item, one block per day
+// (newest first) split by type; more days load as the reader nears the bottom.
 function renderNewArrivals(main) {
   currentMain = main;
-  const pools = newArrivalPools();
-  const latest = Math.max(0, ...Object.values(pools).map(list => list.length ? list[0].item.dateAdded || 0 : 0));
+  const pools = newArrivalPools(), types = Object.keys(pools);
+  const days = new Map();  // local calendar day -> items, newest day first
+  Object.values(pools).flat().sort(byNewest).forEach(n => {
+    const day = new Date((n.item.dateAdded || 0) * 1000).toDateString();
+    (days.get(day) || days.set(day, []).get(day)).push(n);
+  });
+  const queue = [...days.values()];
   main.innerHTML = `
     <button class="btn-back" onclick="state.page='landing';render()">← ${t('back')}</button>
     <div class="page-title">${t('newArrivals')}</div>
-    <p class="page-desc">${lang==='th' ? 'อัปเดตล่าสุด ' : 'Last updated '}${addedLabel(latest)}</p>
+    <div id="newLog"></div><div id="newLogMore"></div>
   `;
-  for (const [type, list] of Object.entries(pools)) {
-    if (!list.length) continue;
-    const head = document.createElement('div');
-    head.className = 'landing-picks-head';
-    head.textContent = t(type);
-    const grid = document.createElement('div');
-    grid.className = 'card-grid';
-    for (const n of list.slice(0, 12)) grid.appendChild(renderCard(n.item, () => openNewArrival(n), [{ text: addedLabel(n.item.dateAdded) }]));
-    main.append(head, grid);
-  }
+  const log = main.querySelector('#newLog'), more = main.querySelector('#newLogMore');
+  const el = (cls, text) => { const d = document.createElement('div'); d.className = cls; if (text) d.textContent = text; return d; };
+  // ponytail: whole days per batch (~40 cards); fine while the biggest day stays under ~100 items.
+  const loadMore = () => {
+    for (let shown = 0; queue.length && shown < 40;) {
+      const day = queue.shift();
+      log.appendChild(el('log-day', new Date(day[0].item.dateAdded * 1000).toLocaleDateString(lang === 'th' ? 'th-TH' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' })));
+      for (const type of types) {
+        const list = day.filter(n => n.type === type);
+        if (!list.length) continue;
+        const grid = el('card-grid');
+        list.forEach(n => grid.appendChild(renderCard(n.item, () => openNewArrival(n))));
+        log.append(el('log-type', `${t(type)} · ${list.length}`), grid);
+        shown += list.length;
+      }
+    }
+  };
+  loadMore();
+  // Re-observing after each batch re-checks the sentinel, so a short batch on a tall screen keeps filling.
+  const io = new IntersectionObserver(entries => {
+    if (!more.isConnected || !queue.length) return io.disconnect();
+    if (!entries[entries.length - 1].isIntersecting) return;
+    io.unobserve(more); loadMore(); io.observe(more);
+  }, { rootMargin: '0px 0px 1200px 0px' });
+  io.observe(more);
 }
 
 // Avatars and outfits start an order the same way their own lists do; textures, hair and
@@ -3674,7 +3697,7 @@ function boot() {
 }
 </script>
 <!-- Exact tag: scanner/hidden_store.py render_deploy_html() adds the cache-busting ?v= hash. -->
-<script src="data.js?v=543044e5f12a"></script>
+<script src="data.js?v=a5f774006cc9"></script>
 <script>boot();</script>
 </body>
 </html>

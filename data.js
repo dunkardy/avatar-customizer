@@ -67090,20 +67090,20 @@ const AVATAR_DATA = {
           "compatibleAvatars": [
             "Anri",
             "Grus",
+            "Kikyo",
             "Kokoa",
-            "Maki",
-            "Maya",
+            "Merino",
             "Milk",
+            "Rindo",
             "Sue",
             "Thine Unity Package",
             "Wolferia",
             "Yuuko",
             "imeris",
-            "kikyo",
             "koyuki",
             "lucife",
-            "merino",
-            "rindo"
+            "maki",
+            "maya"
           ],
           "boothSearch": "https://booth.pm/en/search/ametista%20nail",
           "autoTags": [
@@ -67161,7 +67161,6 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Texture/Berrixy.zip",
           "dateAdded": 1751091641,
           "compatibleAvatars": [
-            "AlPha",
             "Chocolat",
             "Karin",
             "Kikyo",
@@ -67183,6 +67182,7 @@ const AVATAR_DATA = {
             "Sio",
             "Thine Unity Package",
             "Yoll",
+            "AlPha",
             "ch",
             "cha hyun",
             "cha hyun_설레오#0001(",
@@ -68126,12 +68126,12 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Texture/StarEyes_V1.0.zip",
           "dateAdded": 1724652498,
           "compatibleAvatars": [
-            "AlPha",
             "Kikyo",
             "Minase",
             "Moe",
             "Selestia",
-            "Thine Unity Package"
+            "Thine Unity Package",
+            "AlPha"
           ],
           "boothSearch": "https://booth.pm/en/search/Star%20Eyes",
           "autoTags": [
