@@ -619,10 +619,6 @@ function clothesForAvatar(avatarId) {
   return allClothes;
 }
 
-function textureCount() {
-  return state.selectedAvatar ? (avatarById(state.selectedAvatar)?.textures?.length || 0) : 0;
-}
-
 function pieceCount() {
   return state.selections.hairs.length + state.selections.clothes.length;
 }
@@ -639,27 +635,21 @@ function hasHairClipConflict() {
 }
 
 // --- Source File Map (for share URL restore) ---
+// Stable identity of a catalog item for share links, saved sessions, notes and selection. Items without an
+// archive (57 today) have sourceFile null; their preview path is unique too.
+function itemKey(it) { return it.sourceFile || it.preview; }
+
 var _sourceFileMap = null;
 function buildSourceFileMap() {
   if (_sourceFileMap) return _sourceFileMap;
   _sourceFileMap = {};
-  var cats = ['hairs', 'accessories', 'props'];
-  for (var ci = 0; ci < cats.length; ci++) {
-    var arr = AVATAR_DATA[cats[ci]] || [];
-    for (var i = 0; i < arr.length; i++) {
-      if (arr[i].sourceFile) _sourceFileMap[arr[i].sourceFile] = arr[i];
-    }
-  }
+  function add(it) { var k = itemKey(it); if (k) _sourceFileMap[k] = it; }
+  ['hairs', 'accessories', 'props'].forEach(function(cat) { (AVATAR_DATA[cat] || []).forEach(add); });
   // Scan textures and clothes inside each avatar + Sets
   var avatars = AVATAR_DATA.avatars;
   for (var avId in avatars) {
-    var av = avatars[avId];
-    for (var k = 0; k < (av.textures || []).length; k++) {
-      if (av.textures[k].sourceFile) _sourceFileMap[av.textures[k].sourceFile] = av.textures[k];
-    }
-    for (var k2 = 0; k2 < (av.clothes || []).length; k2++) {
-      if (av.clothes[k2].sourceFile) _sourceFileMap[av.clothes[k2].sourceFile] = av.clothes[k2];
-    }
+    (avatars[avId].textures || []).forEach(add);
+    (avatars[avId].clothes || []).forEach(add);
   }
   return _sourceFileMap;
 }
@@ -668,17 +658,17 @@ function buildSourceFileMap() {
 function encodeStateToHash() {
   var compact = { p: state.page, a: state.selectedAvatar || undefined };
   var sel = state.selections;
-  if (sel.hairs.length) compact.h = sel.hairs.map(function(i) { return i.sourceFile; });
-  if (sel.clothes.length) compact.c = sel.clothes.map(function(i) { return i.sourceFile; });
-  if (sel.textures.length) compact.t = sel.textures.map(function(i) { return i.sourceFile; });
-  if (sel.accessories.length) compact.x = sel.accessories.map(function(i) { return i.sourceFile; });
-  if ((sel.props || []).length) compact.r = sel.props.map(function(i) { return i.sourceFile; });
+  if (sel.hairs.length) compact.h = sel.hairs.map(itemKey);
+  if (sel.clothes.length) compact.c = sel.clothes.map(itemKey);
+  if (sel.textures.length) compact.t = sel.textures.map(itemKey);
+  if (sel.accessories.length) compact.x = sel.accessories.map(itemKey);
+  if ((sel.props || []).length) compact.r = sel.props.map(itemKey);
   // Per-item notes (only encode items that have notes)
   var itemNotes = {};
   ['hairs','clothes','textures','accessories','props'].forEach(function(cat) {
     var items = cat === 'props' ? (sel.props || []) : sel[cat];
     for (var ni = 0; ni < items.length; ni++) {
-      if (items[ni].note) itemNotes[items[ni].sourceFile] = items[ni].note;
+      if (items[ni].note) itemNotes[itemKey(items[ni])] = items[ni].note;
     }
   });
   if (Object.keys(itemNotes).length > 0) compact.no = itemNotes;
@@ -729,8 +719,8 @@ function encodeStateToHash() {
   var savedLang = localStorage.getItem('avatar-lang');
   if (savedLang) compact.l = savedLang;
   // SelectedClothFirst (Path B flow)
-  if (state.selectedClothFirst && state.selectedClothFirst.sourceFile) {
-    compact.cf = state.selectedClothFirst.sourceFile;
+  if (state.selectedClothFirst && itemKey(state.selectedClothFirst)) {
+    compact.cf = itemKey(state.selectedClothFirst);
   }
   var json = JSON.stringify(compact);
   // For short payloads, plain base64 is shorter than LZString (no dictionary overhead)
@@ -795,7 +785,13 @@ function tryRestoreFromStorage() {
   return restoreFromEncoded(saved);
 }
 
+// A share link is anyone's input: a wrong type anywhere rejects the link like an unreadable one, instead of
+// throwing inside boot() and leaving the page on "Loading catalog…".
 function restoreFromEncoded(hash) {
+  try { return decodeAndRestore(hash); } catch (e) { return false; }
+}
+
+function decodeAndRestore(hash) {
   function tryParse(json) {
     if (!json) return null;
     try {
@@ -831,11 +827,13 @@ function restoreFromEncoded(hash) {
     eyeColorRight: compact.er || '#000000',
     eyeChanged: !!(compact.el || compact.er),  // true only if eye colors were in the URL
     isNewAvatar: compact.nv !== false,          // default true (New Avatar)
-    baseHairColors: compact.bh ? compact.bh.slice() : ['#000000'],
-    baseHairChanged: !!compact.bh,
+    baseHairColors: Array.isArray(compact.bh) ? compact.bh.slice() : ['#000000'],
+    baseHairChanged: Array.isArray(compact.bh),
     keepBaseHair: compact.kh !== false,
     keepBaseOutfit: compact.ko !== false,
-    optPolygon: !!compact.po, optPCSS: !!compact.ps, optDPSHole: compact.dh || 0, optDPSRod: compact.dr || 0
+    optPolygon: !!compact.po, optPCSS: !!compact.ps,
+    // Whole numbers 0-5 only: renderCustomize writes these two into its HTML
+    optDPSHole: Math.min(5, Math.max(0, compact.dh | 0)), optDPSRod: Math.min(5, Math.max(0, compact.dr | 0))
   };
   ['h','c','t','x','r'].forEach(function(key, idx) {
     var arr = compact[key];
@@ -848,7 +846,7 @@ function restoreFromEncoded(hash) {
         // Clone items matching toggleSelection() pattern
         if (cat === 'hairs') {
           var clone = { name: item.name, preview: item.preview, sourceFile: item.sourceFile };
-          if (compact.hc && compact.hc[i]) {
+          if (compact.hc && Array.isArray(compact.hc[i])) {
             clone.colors = compact.hc[i].slice();
             clone.hairChanged = true;
           } else if (compact.nv === false) {
@@ -862,7 +860,7 @@ function restoreFromEncoded(hash) {
           sel[cat].push(clone);
         } else {
           var clone2 = { name: item.name, preview: item.preview, sourceFile: item.sourceFile };
-          if (cat === 'clothes' && compact.tg && compact.tg[i]) clone2.toggles = compact.tg[i].slice();
+          if (cat === 'clothes' && compact.tg && Array.isArray(compact.tg[i])) clone2.toggles = compact.tg[i].slice();
           sel[cat].push(clone2);
         }
       }
@@ -874,30 +872,25 @@ function restoreFromEncoded(hash) {
     for (var catIdx = 0; catIdx < ['hairs','clothes','textures','accessories','props'].length; catIdx++) {
       var catNotes = sel[['hairs','clothes','textures','accessories','props'][catIdx]];
       for (var ni2 = 0; ni2 < catNotes.length; ni2++) {
-        var note = compact.no[catNotes[ni2].sourceFile];
+        var note = compact.no[itemKey(catNotes[ni2])];
         if (note) catNotes[ni2].note = note;
       }
     }
+  }
+
+  // Tag filters before any state change: new Set() throws on a bad value, and a rejected link must leave state alone.
+  var tagFilters = {}, tagSearches = {};
+  for (var tab in compact.f || {}) tagFilters[tab] = new Set(compact.f[tab]);
+  for (var ts in compact.s || {}) {
+    if (typeof compact.s[ts] === 'string') tagSearches[ts] = compact.s[ts];
   }
 
   state.page = compact.p;
   state.selectedAvatar = compact.a;
   state.selections = sel;
   if (compact.n) state.customerNotes = compact.n;
-
-  // Restore tag filters
-  state.tagFilters = {};
-  if (compact.f) {
-    for (var tab in compact.f) {
-      state.tagFilters[tab] = new Set(compact.f[tab]);
-    }
-  }
-  state.tagSearches = {};
-  if (compact.s) {
-    for (var ts in compact.s) {
-      state.tagSearches[ts] = compact.s[ts];
-    }
-  }
+  state.tagFilters = tagFilters;
+  state.tagSearches = tagSearches;
 
   // Restore selectedClothFirst
   if (compact.cf && _sourceFileMap[compact.cf]) {
@@ -1306,7 +1299,6 @@ document.addEventListener('keydown', function(e) {
 function renderCard(item, onClick, badges = []) {
   const card = document.createElement('div');
   card.className = 'card';
-  if (item._selected) card.classList.add('selected');
 
   // Hover preview on the image
   if (item.preview) {
@@ -1565,11 +1557,17 @@ function openNewArrival(n) {
 function startPathA() { state.page = 'pathA'; state.selectedClothFirst = null; render(); }
 function startPathB() { state.page = 'pathB'; state.selectedClothFirst = null; render(); }
 function pickAvatar(id, cloth) {
+  if (id !== state.selectedAvatar) {  // the same avatar again (Back, then its card) keeps the build
+    state.selections = { hairs: [], textures: [], clothes: [], accessories: [], eyeColorLeft: '#000000', eyeColorRight: '#000000' };
+    state.tagFilters = {};
+    state.tagSearches = {};
+  }
   state.selectedAvatar = id;
   state.selectedClothFirst = cloth || null;
-  state.selections = { hairs: [], textures: [], clothes: cloth ? [cloth] : [], accessories: [], eyeColorLeft: '#000000', eyeColorRight: '#000000' };
-  state.tagFilters = {};
-  state.tagSearches = {};
+  // A copy, like toggleSelection: toggles and notes must not land on the catalog object
+  if (cloth && !state.selections.clothes.some(function(c) { return itemKey(c) === itemKey(cloth); })) {
+    state.selections.clothes.push({ name: cloth.name, preview: cloth.preview, sourceFile: cloth.sourceFile });
+  }
   state.page = 'customize';
   render();
 }
@@ -1584,7 +1582,7 @@ function renderPathA(main) {
     <div class="page-eyebrow">${lang==='th' ? 'แคตตาล็อก' : 'Catalog'}</div>
     <div class="page-title">${t('pathATitle')}</div>
     <div class="search-bar">
-      <input type="text" id="searchA" placeholder="${t('search')}" value="${pathAFilter.search}" oninput="pathAFilter.search=this.value;renderPathAList()">
+      <input type="text" id="searchA" placeholder="${t('search')}" value="${escapeHTML(pathAFilter.search)}" oninput="pathAFilter.search=this.value;renderPathAList()">
       <select id="genderA" onchange="pathAFilter.gender=this.value;renderPathAList()">
         <option value="all" ${pathAFilter.gender==='all'?'selected':''}>${t('all')}</option>
         <option value="female" ${pathAFilter.gender==='female'?'selected':''}>${t('female')}</option>
@@ -1684,7 +1682,7 @@ function renderPathB(main) {
     <div class="page-eyebrow">${lang==='th' ? 'แคตตาล็อก' : 'Catalog'}</div>
     <div class="page-title">${t('pathBTitle')}</div>
     <div class="search-bar">
-      <input type="text" id="searchB" placeholder="${t('search')}" value="${pathBFilter.search}" oninput="pathBFilter.search=this.value;renderPathBList()">
+      <input type="text" id="searchB" placeholder="${t('search')}" value="${escapeHTML(pathBFilter.search)}" oninput="pathBFilter.search=this.value;renderPathBList()">
       <select id="sortB" onchange="pathBFilter.sort=this.value;renderPathBList()">
         <option value="date" ${pathBFilter.sort==='date'?'selected':''}>${lang==='th'?'ล่าสุด':'Latest'}</option>
         <option value="alpha" ${pathBFilter.sort==='alpha'?'selected':''}>A-Z</option>
@@ -1768,7 +1766,7 @@ function renderPathBList() {
 function escapeHTML(str) {
   const div = document.createElement('div');
   div.textContent = str;
-  return div.innerHTML;
+  return div.innerHTML.replace(/"/g, '&quot;');  // safe inside "..." attributes too
 }
 
 function renderPathBCompat(main) {
@@ -2396,7 +2394,7 @@ function renderColorBar() {
       nameSpan.textContent = hitem.name.length > 18 ? hitem.name.slice(0,16) + '..' : hitem.name;
       nameSpan.title = hitem.name;
       wrapper.appendChild(nameSpan);
-      if (isExisting && !hitem.hairChanged && colors.length === 0) {
+      if (isExisting && !hitem.hairChanged) {
         var hstat = document.createElement('span');
         hstat.className = 'cb-state';
         hstat.textContent = lang==='th'?'สีเดิม':'Existing';
@@ -2541,9 +2539,9 @@ function renderSelectedStrip() {
     noteBtn.textContent = hasNote ? (lang==='th'?'โน้ต✓':'Note✓') : (lang==='th'?'+โน้ต':'+Note');
     noteBtn.title = lang === 'th' ? 'เพิ่มโน้ต/คำขอพิเศษ' : 'Add note / special request';
     noteBtn.className = 'mini-btn accent' + (hasNote ? ' on' : '');
-    noteBtn.onclick = (function(cat, name) {
-      return function(e) { e.stopPropagation(); showNoteDialog(cat, name); };
-    })(item._cat, item.name);
+    noteBtn.onclick = (function(it) {
+      return function(e) { e.stopPropagation(); showNoteDialog(it); };
+    })(item);
     div.appendChild(noteBtn);
 
     // Toggle buttons for clothes
@@ -2557,13 +2555,12 @@ function renderSelectedStrip() {
         var tgX = document.createElement('button');
         tgX.textContent = 'x';
         tgX.className = 'x-btn';
-        tgX.onclick = (function(cat, name, idx) {
+        tgX.onclick = (function(it, idx) {
           return function(e) { e.stopPropagation();
-            var s = state.selections[cat].find(function(x){return x.name===name;});
-            if (s && s.toggles) s.toggles.splice(idx, 1);
+            if (it.toggles) it.toggles.splice(idx, 1);
             renderCustomTabList(); renderSelectedStrip();
           };
-        })(item._cat, item.name, tgi);
+        })(item, tgi);
         tgSpan.appendChild(tgX);
         div.appendChild(tgSpan);
       }
@@ -2571,9 +2568,9 @@ function renderSelectedStrip() {
       togBtn.textContent = '+';
       togBtn.title = lang==='th' ? 'เพิ่มปุ่มเปิดปิด' : 'Add toggle';
       togBtn.className = 'mini-btn warn sq';
-      togBtn.onclick = (function(cat, name) {
-        return function(e) { e.stopPropagation(); showToggleDialog(cat, name); };
-      })(item._cat, item.name);
+      togBtn.onclick = (function(it) {
+        return function(e) { e.stopPropagation(); showToggleDialog(it); };
+      })(item);
       div.appendChild(togBtn);
     }
 
@@ -2582,14 +2579,14 @@ function renderSelectedStrip() {
     btn.className = 'remove-btn';
     btn.textContent = 'x';
     btn.title = lang === 'th' ? 'ลบ' : 'Remove';
-    btn.onclick = (function(cat, name) {
+    btn.onclick = (function(cat, it) {
       return function() {
-        var idx = state.selections[cat].findIndex(function(s) { return s.name === name; });
+        var idx = state.selections[cat].indexOf(it);
         if (idx >= 0) state.selections[cat].splice(idx, 1);
         renderCustomTabList();
         renderSelectedStrip();
       };
-    })(item._cat, item.name);
+    })(item._cat, item);
     div.appendChild(btn);
     strip.appendChild(div);
   }
@@ -2600,27 +2597,27 @@ function renderSelectedStrip() {
 function setHairColor(hairIdx, colorIdx, color) {
   if (!state.selections.hairs[hairIdx].colors) state.selections.hairs[hairIdx].colors = ['#000000'];
   state.selections.hairs[hairIdx].colors[colorIdx] = color;
+  state.selections.hairs[hairIdx].hairChanged = true;  // only changed colours are saved, shared and priced
   // Don't re-render: destroys the color input on mobile, dismissing picker
 }
 
 function addHairColor(hairIdx) {
   if (!state.selections.hairs[hairIdx].colors) state.selections.hairs[hairIdx].colors = ['#000000'];
   state.selections.hairs[hairIdx].colors.push('#000000');
+  state.selections.hairs[hairIdx].hairChanged = true;
   renderSelectedStrip();
 }
 
 function removeHairColor(hairIdx, colorIdx) {
   state.selections.hairs[hairIdx].colors.splice(colorIdx, 1);
+  state.selections.hairs[hairIdx].hairChanged = true;
   if (state.selections.hairs[hairIdx].colors.length === 0) {
     state.selections.hairs[hairIdx].colors = ['#000000'];
   }
   renderSelectedStrip();
 }
 
-function showToggleDialog(cat, name) {
-  var sel = state.selections[cat];
-  var item = sel.find(function(s) { return s.name === name; });
-  if (!item) return;
+function showToggleDialog(item) {
   if (!item.toggles) item.toggles = [];
   var input = prompt(
     (lang==='th' ? 'ชื่อส่วนที่ต้องการปุ่มเปิดปิด (เพิ่มทีละอัน):\n(ของบนหัว เช่น หมวก หูฟัง ทำฟรีอยู่แล้ว ไม่ต้องเพิ่ม)\nที่มีอยู่แล้ว: ' : 'Toggle part name (add one at a time):\n(Head items are already free - no need to add)\nExisting: ') + (item.toggles.join(', ') || (lang==='th'?'ไม่มี':'none')),
@@ -2633,13 +2630,10 @@ function showToggleDialog(cat, name) {
   }
 }
 
-function showNoteDialog(cat, name) {
-  var sel = state.selections[cat];
-  var item = sel.find(function(s) { return s.name === name; });
-  if (!item) return;
+function showNoteDialog(item) {
   var currentNote = item.note || '';
   var note = prompt(
-    (lang==='th' ? 'โน้ต/คำขอพิเศษ สำหรับ' : 'Note / special request for') + ' ' + name + ':',
+    (lang==='th' ? 'โน้ต/คำขอพิเศษ สำหรับ' : 'Note / special request for') + ' ' + item.name + ':',
     currentNote
   );
   if (note !== null) {
@@ -2657,6 +2651,7 @@ function applyBaseHairColorToAll() {
   var colors = (state.selections.baseHairColors || ['#000000']).slice();
   for (var i = 0; i < state.selections.hairs.length; i++) {
     state.selections.hairs[i].colors = colors.slice();
+    state.selections.hairs[i].hairChanged = true;
   }
   renderSelectedStrip();
 }
@@ -2665,6 +2660,7 @@ function applyColorsToAll(idx) {
   var colors = (state.selections.hairs[idx].colors || ['#000000']).slice();
   for (var i = 0; i < state.selections.hairs.length; i++) {
     state.selections.hairs[i].colors = colors.slice();
+    state.selections.hairs[i].hairChanged = true;
   }
   state.selections.baseHairColors = colors.slice();
   renderSelectedStrip();
@@ -3035,11 +3031,7 @@ function renderCustomTabList() {
       break;
   }
 
-  // Mark selected
-  const selSet = new Set(sel[customTab].map(s => s.name));
-  for (const item of items) {
-    item._selected = selSet.has(item.name);
-  }
+  const selSet = new Set(sel[customTab].map(itemKey));
 
   // Filter
   if (query) {
@@ -3098,6 +3090,7 @@ function renderCustomTabList() {
       toggleSelection(customTab, clicked);
       renderCustomTabList();
     }, badges);
+    if (selSet.has(itemKey(item))) card.classList.add('selected');
 
     grid.appendChild(card);
   }
@@ -3135,42 +3128,11 @@ function renderCustomTabList() {
   window.scrollTo(0, scrollY);
 }
 
-function colorName(hex) {
-  var names = {
-    '#000000': lang==='th'?'ดำ':'Black', '#ffffff': lang==='th'?'ขาว':'White',
-    '#ff0000': lang==='th'?'แดง':'Red', '#ffcccc': lang==='th'?'ชมพูอ่อน':'Light Pink',
-    '#ff69b4': lang==='th'?'ชมพู':'Pink', '#ff1493': lang==='th'?'ชมพูเข้ม':'Deep Pink',
-    '#ff8800': lang==='th'?'ส้ม':'Orange', '#ffff00': lang==='th'?'เหลือง':'Yellow',
-    '#00ff00': lang==='th'?'เขียว':'Green', '#0000ff': lang==='th'?'น้ำเงิน':'Blue',
-    '#00ffff': lang==='th'?'ฟ้า':'Cyan', '#800080': lang==='th'?'ม่วง':'Purple',
-    '#8b4513': lang==='th'?'น้ำตาล':'Brown', '#808080': lang==='th'?'เทา':'Gray',
-    '#cccccc': lang==='th'?'เทาอ่อน':'Light Gray', '#ffd700': lang==='th'?'ทอง':'Gold',
-    '#c0c0c0': lang==='th'?'เงิน':'Silver', '#ffb6c1': lang==='th'?'ชมพูอ่อน':'Light Pink',
-    '#90ee90': lang==='th'?'เขียวอ่อน':'Light Green', '#87ceeb': lang==='th'?'ฟ้าอ่อน':'Light Blue',
-    '#f5f5dc': lang==='th'?'เบจ':'Beige', '#ffe4c4': lang==='th'?'ไบออเรจ':'Bisque',
-    '#d2b48c': lang==='th'?'แทน':'Tan', '#a52a2a': lang==='th'?'น้ำตาลแดง':'Brown',
-    '#800000': lang==='th'?'แดงเข้ม':'Maroon', '#008000': lang==='th'?'เขียวเข้ม':'Dark Green',
-    '#000080': lang==='th'?'กรมท่า':'Navy', '#4b0082': lang==='th'?'คราม':'Indigo',
-  };
-  hex = hex.toLowerCase();
-  if (names[hex]) return names[hex];
-  // Try closest match
-  var closest = null, minDist = Infinity;
-  for (var h in names) {
-    var d = Math.abs(parseInt(h.slice(1,3),16) - parseInt(hex.slice(1,3),16)) +
-            Math.abs(parseInt(h.slice(3,5),16) - parseInt(hex.slice(3,5),16)) +
-            Math.abs(parseInt(h.slice(5,7),16) - parseInt(hex.slice(5,7),16));
-    if (d < minDist) { minDist = d; closest = names[h]; }
-  }
-  return closest || hex;
-}
-
 function toggleSelection(tab, item) {
   const sel = state.selections[tab];
-  const idx = sel.findIndex(s => s.name === item.name);
+  const idx = sel.findIndex(s => itemKey(s) === itemKey(item));
   if (idx >= 0) {
     sel.splice(idx, 1);
-    item._selected = false;
   } else {
     var entry = { name: item.name, preview: item.preview, sourceFile: item.sourceFile };
     if (tab === 'hairs') {
@@ -3182,7 +3144,6 @@ function toggleSelection(tab, item) {
       }
     }
     sel.push(entry);
-    item._selected = true;
   }
 }
 
@@ -3210,10 +3171,10 @@ async function buildOrderImage() {
   const allItems = [];
   if (av) allItems.push(av);
   sections.forEach(function(s){ s.items.forEach(function(it){ allItems.push(it); }); });
-  const imgMap = {};
+  const imgMap = new Map();  // by object: names repeat (an item called "Sio" for avatar Sio, three "POP" hairs)
   await Promise.all(allItems.map(function(it) {
-    if (!it.preview) { imgMap[it.name] = null; return Promise.resolve(); }
-    return _loadImg(imgSrc(it.preview)).then(function(im){ imgMap[it.name] = im; });
+    if (!it.preview) { imgMap.set(it, null); return Promise.resolve(); }
+    return _loadImg(imgSrc(it.preview)).then(function(im){ imgMap.set(it, im); });
   }));
 
   const DPR = Math.max(2, window.devicePixelRatio || 1);
@@ -3257,7 +3218,7 @@ async function buildOrderImage() {
 
   let y = PAD;
   roundRect(PAD, y, W - PAD * 2, 88, 8); ctx.fillStyle = '#111111'; ctx.fill();
-  if (av && imgMap[av.name]) { roundRect(PAD + 12, y + 12, 64, 64, 10); ctx.save(); ctx.clip(); ctx.drawImage(imgMap[av.name], PAD + 12, y + 12, 64, 64); ctx.restore(); }
+  if (av && imgMap.get(av)) { roundRect(PAD + 12, y + 12, 64, 64, 10); ctx.save(); ctx.clip(); ctx.drawImage(imgMap.get(av), PAD + 12, y + 12, 64, 64); ctx.restore(); }
   ctx.fillStyle = '#f3eee7'; ctx.font = '700 24px ' + FONT;
   ctx.fillText(av ? av.name : '-', PAD + 90, y + 20);
   const pc = (typeof pieceCount === 'function') ? pieceCount() : 0;
@@ -3272,7 +3233,7 @@ async function buildOrderImage() {
     let col = 0, rowY = y;
     s.items.forEach(function(it, i) {
       const x = PAD + col * (THUMB + COL_GAP);
-      drawThumb(imgMap[it.name], it.name, x, rowY);
+      drawThumb(imgMap.get(it), it.name, x, rowY);
       col++;
       if (col >= perRow) { col = 0; rowY += THUMB + LABEL_H + ROW_GAP; }
     });
@@ -3478,7 +3439,7 @@ function calculatePrice() {
     }
     for (var hi = 0; hi < state.selections.hairs.length; hi++) {
       var hcolors2 = state.selections.hairs[hi].colors || [];
-      if (hcolors2.length > 0) {
+      if (state.selections.hairs[hi].hairChanged && hcolors2.length > 0) {
         hairToggleCount += 1; // changing from existing
         if (hcolors2.length > 1) hairToggleCount += hcolors2.length - 1;
       }
@@ -3712,7 +3673,7 @@ function boot() {
 }
 </script>
 <!-- Exact tag: scanner/hidden_store.py render_deploy_html() adds the cache-busting ?v= hash. -->
-<script src="data.js?v=dffbb141dc95"></script>
+<script src="data.js?v=da7cac0415f2"></script>
 <script>boot();</script>
 </body>
 </html>
