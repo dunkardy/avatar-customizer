@@ -219,7 +219,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1738466462,
           "boothSearch": "https://booth.pm/en/items/6391668",
-          "trend": 12.51,
+          "trend": 12.5,
           "autoTags": [
             "horns",
             "wings",
@@ -293,7 +293,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1737434604,
           "boothSearch": "https://booth.pm/en/items/5382949",
-          "trend": 2.73,
+          "trend": 2.72,
           "autoTags": [
             "horns",
             "tail",
@@ -318,7 +318,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1737433326,
           "boothSearch": "https://booth.pm/en/items/6044800",
-          "trend": 6.22,
+          "trend": 6.21,
           "autoTags": [
             "horns",
             "breasts",
@@ -496,7 +496,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1733987572,
           "boothSearch": "https://booth.pm/en/items/5848688",
-          "trend": 10.18,
+          "trend": 10.17,
           "autoTags": [
             "wings",
             "fingerless_gloves",
@@ -537,7 +537,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1726048262,
       "boothSearch": "https://booth.pm/en/items/6082686",
-      "trend": 26.66,
+      "trend": 26.64,
       "autoTags": [
         "breasts",
         "horns",
@@ -864,7 +864,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1685358260,
       "boothSearch": "https://booth.pm/en/items/3234473",
-      "trend": 9.39,
+      "trend": 9.38,
       "autoTags": [
         "animal_ears",
         "hair_ornament",
@@ -1548,7 +1548,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1712479662,
           "boothSearch": "https://booth.pm/en/items/5027655",
-          "trend": 2.06,
+          "trend": 2.05,
           "autoTags": [
             "hood",
             "pants",
@@ -1895,7 +1895,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Ichigo/Texture/Naughty Texture.jpg",
           "dateAdded": 1758366287,
           "boothSearch": "https://booth.pm/en/items/7334984",
-          "trend": 8.15,
+          "trend": 8.14,
           "autoTags": [
             "breasts",
             "swimsuit",
@@ -1927,7 +1927,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1756875313,
       "boothSearch": "https://booth.pm/en/items/7328789",
-      "trend": 52.66,
+      "trend": 52.59,
       "autoTags": [
         "breasts",
         "animal_ears",
@@ -3220,7 +3220,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1699148781,
       "boothSearch": "https://booth.pm/en/items/5209634",
-      "trend": 11.21,
+      "trend": 11.2,
       "autoTags": [
         "pointy_ears",
         "umbrella",
@@ -3252,85 +3252,78 @@ const AVATAR_DATA = {
     "Kaguya": {
       "id": "Kaguya",
       "name": "Kaguya",
-      "preview": "images/Avatars_Kaguya_1.06.jpg",
+      "preview": "images/Avatars_Kaguya_1.07.jpg",
       "textures": [
         {
           "name": "Kaguya Body Texture",
           "preview": "images/Clothes,_Texture_Kaguya_Texture_Kaguya_Body_Texture.jpg",
           "sourceFile": "Clothes, Texture/Kaguya/Texture/Kaguya Body Texture.jpg",
-          "dateAdded": 1793776551,
+          "dateAdded": 1793776564,
           "boothSearch": "https://booth.pm/en/search/Kaguya%20Body%20Texture",
           "autoTags": [
-            "breasts",
             "nude",
             "long_hair",
+            "breasts",
             "navel",
             "heart",
-            "armpits",
-            "arm_up",
-            "completely_nude",
             "small_breasts",
+            "arm_up",
+            "censored_nipples",
+            "completely_nude",
             "sitting",
-            "hair_between_eyes",
-            "medium_breasts"
+            "armpits"
           ]
         },
         {
           "name": "Kaguya Makeup Eye Texture 04",
           "preview": "images/Clothes,_Texture_Kaguya_Texture_Kaguya_Makeup_Eye_Texture_04.jpg",
           "sourceFile": "Clothes, Texture/Kaguya/Texture/Kaguya Makeup Eye Texture 04.jpg",
-          "dateAdded": 1793788460,
+          "dateAdded": 1793788472,
           "boothSearch": "https://booth.pm/en/search/Kaguya%20Makeup%20Eye%20Texture",
           "autoTags": [
-            "animal_ears",
             "chibi",
-            "bow",
             "chibi_inset",
-            "hair_bow",
-            "bandaid",
-            "tongue",
-            "long_hair",
             "ahoge",
-            "hair_ornament",
-            "tongue_out",
-            "cat_ears",
+            "long_hair",
+            "bandaid",
             "hat",
+            "animal_ears",
+            "bow",
+            "hair_bow",
+            "beret",
             "hair_between_eyes",
-            "sleeves_past_wrists",
-            "sleeves_past_fingers",
-            "hair_intakes",
-            "bandaid_on_face",
-            "twintails",
-            "portrait"
+            "portrait",
+            "squiggle",
+            "twintails"
           ]
         },
         {
           "name": "Kaguya PureSnowEyes",
           "preview": "images/Clothes,_Texture_Kaguya_Texture_Kaguya_PureSnowEyes.jpg",
           "sourceFile": "Clothes, Texture/Kaguya/Texture/Kaguya PureSnowEyes.jpg",
-          "dateAdded": 1793776660,
+          "dateAdded": 1793776674,
           "boothSearch": "https://booth.pm/en/search/Kaguya%20Pure%20Snow%20Eyes",
           "autoTags": [
             "long_hair",
             "animal_ears",
             "hat",
-            "snowflakes",
-            "sailor_collar",
             "portrait",
+            "beret",
             "antenna_hair",
-            ":o",
+            "sailor_collar",
+            "shirt",
+            "braid",
             "ahoge",
-            "hair_between_eyes",
-            "beret"
+            "twin_braids"
           ]
         }
       ],
       "clothes": [],
       "recommended": false,
       "gender": "female",
-      "dateAdded": 1793786960,
+      "dateAdded": 1793844272,
       "boothSearch": "https://booth.pm/en/items/8562330",
-      "trend": 188.6,
+      "trend": 187.58,
       "autoTags": [
         "fangs",
         "long_hair",
@@ -3400,7 +3393,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Karin/Texture/fruity_eye_for_karin..jpg",
           "dateAdded": 1697107362,
           "boothSearch": "https://booth.pm/en/items/4504371",
-          "trend": 0.43,
+          "trend": 0.42,
           "autoTags": [
             "v",
             "hair_between_eyes",
@@ -3627,7 +3620,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1671891427,
           "boothSearch": "https://booth.pm/en/items/4318063",
-          "trend": 0.68,
+          "trend": 0.67,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -5729,7 +5722,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1686135669,
           "boothSearch": "https://booth.pm/en/items/3616640",
-          "trend": 2.97,
+          "trend": 2.96,
           "autoTags": [
             "animal_ears",
             "swimsuit",
@@ -6035,7 +6028,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1674080902,
           "boothSearch": "https://booth.pm/en/items/4097459",
-          "trend": 6.55,
+          "trend": 6.54,
           "autoTags": [
             "wings",
             "tail",
@@ -7147,7 +7140,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1687523909,
           "boothSearch": "https://booth.pm/en/items/4297305",
-          "trend": 0.35,
+          "trend": 0.34,
           "autoTags": [
             "thighhighs",
             "long_hair",
@@ -7497,7 +7490,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1703213179,
           "boothSearch": "https://booth.pm/en/items/5359699",
-          "trend": 17.03,
+          "trend": 17.02,
           "autoTags": [
             "thighhighs",
             "japanese_clothes",
@@ -7975,7 +7968,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1692188674,
           "boothSearch": "https://booth.pm/en/items/4768519",
-          "trend": 2.23,
+          "trend": 2.22,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -8004,7 +7997,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1696297192,
           "boothSearch": "https://booth.pm/en/items/5111206",
-          "trend": 6.89,
+          "trend": 6.88,
           "autoTags": [
             "pantyhose",
             "hat",
@@ -8067,7 +8060,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1706245043,
           "boothSearch": "https://booth.pm/en/items/4341340",
-          "trend": 0.57,
+          "trend": 0.56,
           "autoTags": [
             "hat",
             "thighhighs",
@@ -10281,7 +10274,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1671836682,
           "boothSearch": "https://booth.pm/en/items/3770877",
-          "trend": 0.9,
+          "trend": 0.89,
           "autoTags": [
             "animal_ears",
             "playboy_bunny",
@@ -10848,7 +10841,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1672866454,
           "boothSearch": "https://booth.pm/en/items/4118695",
-          "trend": 0.63,
+          "trend": 0.62,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -13488,7 +13481,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1673108327,
           "boothSearch": "https://booth.pm/en/items/3616640",
-          "trend": 2.97,
+          "trend": 2.96,
           "autoTags": [
             "animal_ears",
             "animal_print",
@@ -13782,7 +13775,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1697107315,
           "boothSearch": "https://booth.pm/en/items/3835842",
-          "trend": 0.93,
+          "trend": 0.92,
           "autoTags": [
             "long_hair",
             "pants",
@@ -14098,7 +14091,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1651272892,
       "boothSearch": "https://booth.pm/en/items/3681787",
-      "trend": 18.08,
+      "trend": 18.07,
       "autoTags": [
         "shirt",
         "long_hair",
@@ -15316,7 +15309,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Komano/Texture/Komano_Makeup_NO39.jpg",
           "dateAdded": 1716857189,
           "boothSearch": "https://booth.pm/en/items/5343179",
-          "trend": 4.04,
+          "trend": 4.03,
           "autoTags": [
             "mole_under_eye",
             "mole",
@@ -15406,7 +15399,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1716855867,
           "boothSearch": "https://booth.pm/en/items/5594662",
-          "trend": 6.42,
+          "trend": 6.41,
           "autoTags": [
             "weapon",
             "hat",
@@ -15588,7 +15581,7 @@ const AVATAR_DATA = {
       "gender": "male",
       "dateAdded": 1711254275,
       "boothSearch": "https://booth.pm/en/items/5260363",
-      "trend": 25.42,
+      "trend": 25.4,
       "autoTags": [
         "male_focus",
         "animal_ears",
@@ -15876,7 +15869,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792236172,
           "boothSearch": "https://booth.pm/en/items/8844483",
-          "trend": 26.37,
+          "trend": 26.04,
           "autoTags": [
             "shoes",
             "shorts",
@@ -15956,7 +15949,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1716512786,
       "boothSearch": "https://booth.pm/en/items/4993931",
-      "trend": 19.36,
+      "trend": 19.35,
       "autoTags": [
         "dress",
         "socks",
@@ -16127,7 +16120,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1713921081,
       "boothSearch": "https://booth.pm/en/items/4825073",
-      "trend": 18.42,
+      "trend": 18.41,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -18233,7 +18226,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1715831879,
           "boothSearch": "https://booth.pm/en/items/5589706",
-          "trend": 7.91,
+          "trend": 7.9,
           "autoTags": [
             "eyepatch",
             "long_hair",
@@ -18281,7 +18274,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1711072822,
           "boothSearch": "https://booth.pm/en/items/5359699",
-          "trend": 17.03,
+          "trend": 17.02,
           "autoTags": [
             "animal_ears",
             "japanese_clothes",
@@ -18606,7 +18599,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1708130869,
           "boothSearch": "https://booth.pm/en/items/4097459",
-          "trend": 6.55,
+          "trend": 6.54,
           "autoTags": [
             "wings",
             "pubic_tattoo",
@@ -18667,7 +18660,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1738462203,
       "boothSearch": "https://booth.pm/en/items/4876459",
-      "trend": 13.53,
+      "trend": 13.52,
       "autoTags": [
         "animal_ears",
         "shirt",
@@ -18716,7 +18709,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Lime & Chiffon 0.8965 & Chocolat 0.8965/Chiffon Texture/Chiffon Freckles.jpg",
           "dateAdded": 1707782119,
           "boothSearch": "https://booth.pm/en/items/8028344",
-          "trend": 0.1,
+          "trend": 0.09,
           "autoTags": [
             "freckles",
             "animal_ears",
@@ -19904,7 +19897,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1715831879,
           "boothSearch": "https://booth.pm/en/items/5589706",
-          "trend": 7.91,
+          "trend": 7.9,
           "autoTags": [
             "eyepatch",
             "long_hair",
@@ -19952,7 +19945,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1711072822,
           "boothSearch": "https://booth.pm/en/items/5359699",
-          "trend": 17.03,
+          "trend": 17.02,
           "autoTags": [
             "animal_ears",
             "japanese_clothes",
@@ -20277,7 +20270,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1708130869,
           "boothSearch": "https://booth.pm/en/items/4097459",
-          "trend": 6.55,
+          "trend": 6.54,
           "autoTags": [
             "wings",
             "pubic_tattoo",
@@ -20338,7 +20331,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1738462221,
       "boothSearch": "https://booth.pm/en/items/5354471",
-      "trend": 21.12,
+      "trend": 21.11,
       "autoTags": [
         "animal_ears",
         "twintails",
@@ -20370,7 +20363,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Lime & Chiffon 0.8965 & Chocolat 0.8965/Chocolat Texture/6466451 ALL_Chocolate_Makeup_and_Face_Animation.jpg",
           "dateAdded": 1758366361,
           "boothSearch": "https://booth.pm/en/items/6466451",
-          "trend": 1.79,
+          "trend": 1.78,
           "autoTags": [
             "hair_ornament",
             "choker",
@@ -20392,7 +20385,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Lime & Chiffon 0.8965 & Chocolat 0.8965/Chocolat Texture/_Halex__Chocolat_Textures_FullPack_1.01.jpg",
           "dateAdded": 1760839589,
           "boothSearch": "https://booth.pm/en/items/6446773",
-          "trend": 5.33,
+          "trend": 5.32,
           "autoTags": [
             "hair_ornament",
             "hairclip",
@@ -20414,7 +20407,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Lime & Chiffon 0.8965 & Chocolat 0.8965/Chocolat Texture/Chocolat__Eye___Make_up_Face_Anim.jpg",
           "dateAdded": 1779624102,
           "boothSearch": "https://booth.pm/en/items/6952484",
-          "trend": 3.66,
+          "trend": 3.65,
           "autoTags": [
             "pointy_ears",
             "wings",
@@ -20459,7 +20452,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Lime & Chiffon 0.8965 & Chocolat 0.8965/Chocolat Texture/Chocolat_cute_make_1.01.jpg",
           "dateAdded": 1768017998,
           "boothSearch": "https://booth.pm/en/items/6445713",
-          "trend": 3.69,
+          "trend": 3.68,
           "autoTags": [
             "hair_ornament",
             "animal_ears",
@@ -20483,7 +20476,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Lime & Chiffon 0.8965 & Chocolat 0.8965/Chocolat Texture/Itazurapink_Makeup_Chocolat.jpg",
           "dateAdded": 1779623679,
           "boothSearch": "https://booth.pm/en/items/7797026",
-          "trend": 11.34,
+          "trend": 11.32,
           "autoTags": [
             "animal_ears",
             "animal_ear_fluff",
@@ -21491,7 +21484,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1715831879,
           "boothSearch": "https://booth.pm/en/items/5589706",
-          "trend": 7.91,
+          "trend": 7.9,
           "autoTags": [
             "eyepatch",
             "long_hair",
@@ -21539,7 +21532,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1711072822,
           "boothSearch": "https://booth.pm/en/items/5359699",
-          "trend": 17.03,
+          "trend": 17.02,
           "autoTags": [
             "animal_ears",
             "japanese_clothes",
@@ -21864,7 +21857,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1708130869,
           "boothSearch": "https://booth.pm/en/items/4097459",
-          "trend": 6.55,
+          "trend": 6.54,
           "autoTags": [
             "wings",
             "pubic_tattoo",
@@ -21925,7 +21918,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1738462016,
       "boothSearch": "https://booth.pm/en/items/6405390",
-      "trend": 45.25,
+      "trend": 45.2,
       "autoTags": [
         "animal_ears",
         "cat_ears",
@@ -22039,7 +22032,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Lumina/Texture/LUMINA Autumn Makeup & Eye Texture.jpg",
           "dateAdded": 1764998239,
           "boothSearch": "https://booth.pm/en/items/7615850",
-          "trend": 2.81,
+          "trend": 2.8,
           "autoTags": [
             "jewelry",
             "necklace",
@@ -22059,19 +22052,16 @@ const AVATAR_DATA = {
           "name": "Lumina Misty Bloom Makeup",
           "preview": "images/Clothes,_Texture_Lumina_Texture_Lumina_Misty_Bloom_Makeup.jpg",
           "sourceFile": "Clothes, Texture/Lumina/Texture/Lumina Misty Bloom Makeup.jpg",
-          "dateAdded": 1793776567,
+          "dateAdded": 1793776574,
           "boothSearch": "https://booth.pm/en/search/Lumina%20Misty%20Bloom%20Makeup",
           "autoTags": [
-            "mole",
-            "portrait",
             "mole_under_mouth",
-            "mole_under_eye",
-            "hair_between_eyes",
+            "portrait",
+            "mole",
             "short_hair",
-            "eyelashes",
-            "makeup",
             "straight-on",
-            "lips"
+            "hair_between_eyes",
+            "makeup"
           ]
         },
         {
@@ -22099,7 +22089,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Lumina/Texture/LUMINA_Full.jpg",
           "dateAdded": 1763877679,
           "boothSearch": "https://booth.pm/en/items/7547154",
-          "trend": 11.34,
+          "trend": 11.32,
           "autoTags": [
             "long_hair",
             "portrait",
@@ -22115,7 +22105,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Lumina/Texture/Lumina_Makeup_1018.jpg",
           "dateAdded": 1764998925,
           "boothSearch": "https://booth.pm/en/items/7546797",
-          "trend": 6.26,
+          "trend": 6.25,
           "autoTags": [
             "long_hair",
             "bow",
@@ -22135,7 +22125,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Lumina/Texture/LUMINA_Smokymake.jpg",
           "dateAdded": 1763874185,
           "boothSearch": "https://booth.pm/en/items/7558651",
-          "trend": 9.01,
+          "trend": 8.99,
           "autoTags": [
             "hair_between_eyes",
             "portrait",
@@ -22169,7 +22159,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1763200843,
       "boothSearch": "https://booth.pm/en/items/7502898",
-      "trend": 62.91,
+      "trend": 62.81,
       "autoTags": [
         "animal_ears",
         "jewelry",
@@ -22463,7 +22453,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1713922605,
       "boothSearch": "https://booth.pm/en/items/5007531",
-      "trend": 25.77,
+      "trend": 25.75,
       "autoTags": [
         "heart_hands",
         "animal_ears",
@@ -22821,7 +22811,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1709690385,
           "boothSearch": "https://booth.pm/en/items/4866561",
-          "trend": 0.94,
+          "trend": 0.93,
           "autoTags": [
             "animal_ears",
             "mask",
@@ -23136,7 +23126,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1735286910,
           "boothSearch": "https://booth.pm/en/items/5928341",
-          "trend": 6.73,
+          "trend": 6.72,
           "autoTags": [
             "long_hair",
             "sleeves_past_wrists",
@@ -23487,7 +23477,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1721532977,
           "boothSearch": "https://booth.pm/en/items/5903993",
-          "trend": 16.12,
+          "trend": 16.11,
           "autoTags": [
             "dress",
             "wings",
@@ -23704,7 +23694,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756185142,
           "boothSearch": "https://booth.pm/en/items/7280499",
-          "trend": 4.34,
+          "trend": 4.33,
           "autoTags": [
             "wings",
             "hair_ornament",
@@ -23775,7 +23765,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1727237233,
           "boothSearch": "https://booth.pm/en/items/5983817",
-          "trend": 9.76,
+          "trend": 9.75,
           "autoTags": [
             "long_hair",
             "striped_clothes",
@@ -25034,7 +25024,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753072837,
           "boothSearch": "https://booth.pm/en/items/6753995",
-          "trend": 6.83,
+          "trend": 6.82,
           "autoTags": [
             "animal_ears",
             "pantyhose",
@@ -25079,7 +25069,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758365672,
           "boothSearch": "https://booth.pm/en/items/7243979",
-          "trend": 8.67,
+          "trend": 8.66,
           "autoTags": [
             "animal_ears",
             "holding",
@@ -25146,7 +25136,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1721029739,
           "boothSearch": "https://booth.pm/en/items/5899058",
-          "trend": 11.85,
+          "trend": 11.84,
           "autoTags": [
             "long_hair",
             "headphones",
@@ -25225,7 +25215,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751092033,
           "boothSearch": "https://booth.pm/en/items/6406016",
-          "trend": 4.29,
+          "trend": 4.28,
           "autoTags": [
             "animal_ears",
             "japanese_clothes",
@@ -25389,7 +25379,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763875304,
           "boothSearch": "https://booth.pm/en/items/7435460",
-          "trend": 12.33,
+          "trend": 12.31,
           "autoTags": [
             "animal_ears",
             "skirt",
@@ -25681,7 +25671,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763875253,
           "boothSearch": "https://booth.pm/en/items/7069189",
-          "trend": 6.32,
+          "trend": 6.31,
           "autoTags": [
             "swimsuit",
             "animal_ears",
@@ -25872,7 +25862,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1717042621,
       "boothSearch": "https://booth.pm/en/items/4340548",
-      "trend": 26.72,
+      "trend": 26.71,
       "autoTags": [
         "animal_ears",
         "hair_ornament",
@@ -25945,7 +25935,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Mamehinata & Kipfel 1.12/Kipfel Texture/MAKEUP & EYE & Face Blendshape.jpg",
           "dateAdded": 1725703072,
           "boothSearch": "https://booth.pm/en/items/5916665",
-          "trend": 1.59,
+          "trend": 1.58,
           "autoTags": [
             "animal_ears",
             "hair_ornament",
@@ -25972,7 +25962,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1709690385,
           "boothSearch": "https://booth.pm/en/items/4866561",
-          "trend": 0.94,
+          "trend": 0.93,
           "autoTags": [
             "animal_ears",
             "mask",
@@ -26287,7 +26277,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1735286910,
           "boothSearch": "https://booth.pm/en/items/5928341",
-          "trend": 6.73,
+          "trend": 6.72,
           "autoTags": [
             "long_hair",
             "sleeves_past_wrists",
@@ -26638,7 +26628,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1721532977,
           "boothSearch": "https://booth.pm/en/items/5903993",
-          "trend": 16.12,
+          "trend": 16.11,
           "autoTags": [
             "dress",
             "wings",
@@ -26855,7 +26845,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756185142,
           "boothSearch": "https://booth.pm/en/items/7280499",
-          "trend": 4.34,
+          "trend": 4.33,
           "autoTags": [
             "wings",
             "hair_ornament",
@@ -26926,7 +26916,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1727237233,
           "boothSearch": "https://booth.pm/en/items/5983817",
-          "trend": 9.76,
+          "trend": 9.75,
           "autoTags": [
             "long_hair",
             "striped_clothes",
@@ -28185,7 +28175,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753072837,
           "boothSearch": "https://booth.pm/en/items/6753995",
-          "trend": 6.83,
+          "trend": 6.82,
           "autoTags": [
             "animal_ears",
             "pantyhose",
@@ -28230,7 +28220,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758365672,
           "boothSearch": "https://booth.pm/en/items/7243979",
-          "trend": 8.67,
+          "trend": 8.66,
           "autoTags": [
             "animal_ears",
             "holding",
@@ -28297,7 +28287,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1721029739,
           "boothSearch": "https://booth.pm/en/items/5899058",
-          "trend": 11.85,
+          "trend": 11.84,
           "autoTags": [
             "long_hair",
             "headphones",
@@ -28376,7 +28366,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751092033,
           "boothSearch": "https://booth.pm/en/items/6406016",
-          "trend": 4.29,
+          "trend": 4.28,
           "autoTags": [
             "animal_ears",
             "japanese_clothes",
@@ -28540,7 +28530,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763875304,
           "boothSearch": "https://booth.pm/en/items/7435460",
-          "trend": 12.33,
+          "trend": 12.31,
           "autoTags": [
             "animal_ears",
             "skirt",
@@ -28832,7 +28822,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763875253,
           "boothSearch": "https://booth.pm/en/items/7069189",
-          "trend": 6.32,
+          "trend": 6.31,
           "autoTags": [
             "swimsuit",
             "animal_ears",
@@ -29023,7 +29013,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1736078179,
       "boothSearch": "https://booth.pm/en/items/5813187",
-      "trend": 60.99,
+      "trend": 60.94,
       "autoTags": [
         "long_hair",
         "necktie",
@@ -29736,7 +29726,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Manuka/Texture/LOVE YOU!! Eye Texture Manuka.jpg",
           "dateAdded": 1703215217,
           "boothSearch": "https://booth.pm/en/items/5191682",
-          "trend": 4.41,
+          "trend": 4.4,
           "autoTags": [
             "sailor_collar",
             "heart",
@@ -30202,7 +30192,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Manuka/Texture/Manuka_Makeup_No.2_Chocolaterice.jpg",
           "dateAdded": 1705193444,
           "boothSearch": "https://booth.pm/en/items/5351214",
-          "trend": 3.71,
+          "trend": 3.7,
           "autoTags": [
             "portrait",
             "long_hair",
@@ -30508,7 +30498,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Manuka/Texture/Set_05_HeartRib_Manuka.jpg",
           "dateAdded": 1698972671,
           "boothSearch": "https://booth.pm/en/items/5210640",
-          "trend": 1.1,
+          "trend": 1.09,
           "autoTags": [
             "animal_ears",
             "cat_ears",
@@ -30554,7 +30544,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Manuka/Texture/succubus_tattoo_manuka.jpg",
           "dateAdded": 1707524268,
           "boothSearch": "https://booth.pm/en/items/5291650",
-          "trend": 4.59,
+          "trend": 4.58,
           "autoTags": [
             "tattoo",
             "pubic_tattoo"
@@ -30592,7 +30582,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Manuka/Texture/Utsu_full.jpg",
           "dateAdded": 1714872384,
           "boothSearch": "https://booth.pm/en/items/5696369",
-          "trend": 3.04,
+          "trend": 3.03,
           "autoTags": [
             "shirt",
             "necktie",
@@ -30730,7 +30720,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1707261345,
           "boothSearch": "https://booth.pm/en/items/4847896",
-          "trend": 6.56,
+          "trend": 6.55,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -30969,7 +30959,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1703213081,
           "boothSearch": "https://booth.pm/en/items/5359699",
-          "trend": 17.03,
+          "trend": 17.02,
           "autoTags": [
             "double_bun",
             "thighhighs",
@@ -31084,7 +31074,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1708129350,
           "boothSearch": "https://booth.pm/en/items/5343935",
-          "trend": 1.55,
+          "trend": 1.54,
           "autoTags": [
             "skirt",
             "hat",
@@ -31475,7 +31465,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1717039682,
           "boothSearch": "https://booth.pm/en/items/5073427",
-          "trend": 1.34,
+          "trend": 1.33,
           "autoTags": [
             "swimsuit",
             "denim",
@@ -32236,7 +32226,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1716011458,
           "boothSearch": "https://booth.pm/en/items/5672762",
-          "trend": 4.39,
+          "trend": 4.38,
           "autoTags": [
             "animal_ears",
             "zoom_layer",
@@ -32715,7 +32705,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1712107711,
           "boothSearch": "https://booth.pm/en/items/5522174",
-          "trend": 0.9,
+          "trend": 0.89,
           "autoTags": [
             "hood",
             "hoodie",
@@ -33007,7 +32997,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1717976668,
           "boothSearch": "https://booth.pm/en/items/5813657",
-          "trend": 18.18,
+          "trend": 18.16,
           "autoTags": [
             "leotard",
             "long_hair",
@@ -33441,7 +33431,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1698710427,
           "boothSearch": "https://booth.pm/en/items/5202514",
-          "trend": 1.56,
+          "trend": 1.55,
           "autoTags": [
             "thighhighs",
             "horns",
@@ -33951,7 +33941,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1722659409,
           "boothSearch": "https://booth.pm/en/items/5942678",
-          "trend": 6.19,
+          "trend": 6.18,
           "autoTags": [
             "twintails",
             "long_hair",
@@ -34123,7 +34113,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1693622473,
           "boothSearch": "https://booth.pm/en/items/5053980",
-          "trend": 8.78,
+          "trend": 8.77,
           "autoTags": [
             "dress",
             "animal_ears",
@@ -35206,7 +35196,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1722658957,
           "boothSearch": "https://booth.pm/en/items/5089792",
-          "trend": 11.92,
+          "trend": 11.91,
           "autoTags": [
             "animal_ears",
             "skirt",
@@ -35851,7 +35841,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1711249074,
           "boothSearch": "https://booth.pm/en/items/5538957",
-          "trend": 0.47,
+          "trend": 0.46,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -35908,7 +35898,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1738462417,
           "boothSearch": "https://booth.pm/en/items/5231944",
-          "trend": 8.64,
+          "trend": 8.63,
           "autoTags": [
             "animal_ears",
             "hood",
@@ -36054,7 +36044,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1711245070,
           "boothSearch": "https://booth.pm/en/items/5589706",
-          "trend": 7.91,
+          "trend": 7.9,
           "autoTags": [
             "striped_clothes",
             "backpack",
@@ -36148,7 +36138,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1731913249,
           "boothSearch": "https://booth.pm/en/items/6133885",
-          "trend": 7.14,
+          "trend": 7.13,
           "autoTags": [
             "witch_hat",
             "hat",
@@ -37013,7 +37003,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1696419133,
           "boothSearch": "https://booth.pm/en/items/5107785",
-          "trend": 6.2,
+          "trend": 6.19,
           "autoTags": [
             "shorts",
             "hair_bun",
@@ -37155,7 +37145,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1709434445,
           "boothSearch": "https://booth.pm/en/items/5537028",
-          "trend": 8.18,
+          "trend": 8.17,
           "autoTags": [
             "thighhighs",
             "wings",
@@ -37801,7 +37791,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1723793655,
           "boothSearch": "https://booth.pm/en/items/6005714",
-          "trend": 10.52,
+          "trend": 10.51,
           "autoTags": [
             "chain",
             "twintails",
@@ -37995,7 +37985,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1722318582,
           "boothSearch": "https://booth.pm/en/items/5920021",
-          "trend": 0.6,
+          "trend": 0.59,
           "autoTags": [
             "hair_bun",
             "double_bun",
@@ -38054,7 +38044,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1698710237,
           "boothSearch": "https://booth.pm/en/items/5147065",
-          "trend": 1.28,
+          "trend": 1.27,
           "autoTags": [
             "dress",
             "hat",
@@ -38372,7 +38362,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1705644997,
           "boothSearch": "https://booth.pm/en/items/4801446",
-          "trend": 1.34,
+          "trend": 1.33,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -38511,7 +38501,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1724649914,
           "boothSearch": "https://booth.pm/en/items/5848688",
-          "trend": 10.18,
+          "trend": 10.17,
           "autoTags": [
             "fingerless_gloves",
             "cargo_pants",
@@ -39128,7 +39118,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1693712051,
           "boothSearch": "https://booth.pm/en/items/4915097",
-          "trend": 6.54,
+          "trend": 6.53,
           "autoTags": [
             "hood",
             "long_hair",
@@ -39152,7 +39142,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1715662930,
           "boothSearch": "https://booth.pm/en/items/5471315",
-          "trend": 0.82,
+          "trend": 0.81,
           "autoTags": [
             "tail",
             "animal_ears",
@@ -39416,7 +39406,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1708129409,
           "boothSearch": "https://booth.pm/en/items/4097459",
-          "trend": 6.55,
+          "trend": 6.54,
           "autoTags": [
             "wings",
             "demon_tail",
@@ -39459,7 +39449,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1706832584,
       "boothSearch": "https://booth.pm/en/items/5058077",
-      "trend": 43.88,
+      "trend": 43.86,
       "autoTags": [
         "animal_ears",
         "tail",
@@ -42157,7 +42147,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1691030432,
           "boothSearch": "https://booth.pm/en/items/4754706",
-          "trend": 1.62,
+          "trend": 1.61,
           "autoTags": [
             "thighhighs",
             "long_hair",
@@ -42622,7 +42612,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1672773959,
           "boothSearch": "https://booth.pm/en/items/4118695",
-          "trend": 0.63,
+          "trend": 0.62,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -43406,7 +43396,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1673125175,
           "boothSearch": "https://booth.pm/en/items/3629742",
-          "trend": 3.52,
+          "trend": 3.51,
           "autoTags": [
             "halo",
             "long_hair",
@@ -44948,7 +44938,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1717812884,
           "boothSearch": "https://booth.pm/en/items/4097459",
-          "trend": 6.55,
+          "trend": 6.54,
           "autoTags": [
             "wings",
             "twintails",
@@ -45113,7 +45103,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1676984668,
       "boothSearch": "https://booth.pm/en/items/4431242",
-      "trend": 6.89,
+      "trend": 6.88,
       "autoTags": [
         "animal_ears",
         "ahoge",
@@ -45202,7 +45192,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Milfy/Texture/8183383 Milfy MilkyWay Makeup Texture.jpg",
           "dateAdded": 1785571944,
           "boothSearch": "https://booth.pm/en/items/8183383",
-          "trend": 3.5,
+          "trend": 3.49,
           "autoTags": [
             "animal_ears",
             "cat_ears",
@@ -45280,7 +45270,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Milfy/Texture/Twinklelove_Milfy.jpg",
           "dateAdded": 1789015912,
           "boothSearch": "https://booth.pm/en/items/7786472",
-          "trend": 11.13,
+          "trend": 11.11,
           "autoTags": [
             "animal_ears",
             "short_hair",
@@ -45296,7 +45286,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1744681021,
       "boothSearch": "https://booth.pm/en/items/6571299",
-      "trend": 50.73,
+      "trend": 50.67,
       "autoTags": [
         "bear_ears",
         "animal_ears",
@@ -45372,7 +45362,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1685358136,
       "boothSearch": "https://booth.pm/en/items/2953391",
-      "trend": 4.04,
+      "trend": 4.03,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -45400,7 +45390,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Milltina/Texture/__doll_makeup___for_milltina.jpg",
           "dateAdded": 1751092589,
           "boothSearch": "https://booth.pm/en/items/6935797",
-          "trend": 4.3,
+          "trend": 4.29,
           "autoTags": [
             "hairband",
             "short_hair",
@@ -45673,7 +45663,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Milltina/Texture/Milltina_Real_skin.jpg",
           "dateAdded": 1740028776,
           "boothSearch": "https://booth.pm/en/items/6570079",
-          "trend": 4.9,
+          "trend": 4.89,
           "autoTags": [
             "breasts",
             "underwear",
@@ -45776,7 +45766,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1738465240,
           "boothSearch": "https://booth.pm/en/items/6551438",
-          "trend": 2.32,
+          "trend": 2.31,
           "autoTags": [
             "shorts",
             "breasts",
@@ -45892,7 +45882,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751093822,
           "boothSearch": "https://booth.pm/en/items/6553428",
-          "trend": 3.96,
+          "trend": 3.95,
           "autoTags": [
             "breasts",
             "shorts",
@@ -45937,7 +45927,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1743473870,
           "boothSearch": "https://booth.pm/en/items/6565933",
-          "trend": 4.51,
+          "trend": 4.5,
           "autoTags": [
             "meme_attire",
             "animal_ears",
@@ -45979,7 +45969,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1740966176,
           "boothSearch": "https://booth.pm/en/items/6589658",
-          "trend": 7.82,
+          "trend": 7.81,
           "autoTags": [
             "breasts",
             "hat",
@@ -46067,7 +46057,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791822965,
           "boothSearch": "https://booth.pm/en/items/8897752",
-          "trend": 88.39,
+          "trend": 86.97,
           "autoTags": [
             "horns",
             "breasts",
@@ -46123,7 +46113,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1740966422,
           "boothSearch": "https://booth.pm/en/items/6593719",
-          "trend": 15.69,
+          "trend": 15.68,
           "autoTags": [
             "thighhighs",
             "glasses",
@@ -46166,7 +46156,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1738463698,
           "boothSearch": "https://booth.pm/en/items/6541579",
-          "trend": 2.02,
+          "trend": 2.01,
           "autoTags": [
             "breasts",
             "swimsuit",
@@ -46320,7 +46310,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1740030174,
           "boothSearch": "https://booth.pm/en/items/6414487",
-          "trend": 14.34,
+          "trend": 14.33,
           "autoTags": [
             "breasts",
             "wings",
@@ -46354,7 +46344,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1740027653,
           "boothSearch": "https://booth.pm/en/items/6536744",
-          "trend": 19.29,
+          "trend": 19.28,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -46461,7 +46451,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1738464899,
           "boothSearch": "https://booth.pm/en/items/6499262",
-          "trend": 5.14,
+          "trend": 5.13,
           "autoTags": [
             "breasts",
             "large_breasts",
@@ -46488,7 +46478,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1747363064,
       "boothSearch": "https://booth.pm/en/items/6538026",
-      "trend": 69.98,
+      "trend": 69.91,
       "autoTags": [
         "horns",
         "maid",
@@ -46828,7 +46818,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1711249495,
           "boothSearch": "https://booth.pm/en/items/5532274",
-          "trend": 4.54,
+          "trend": 4.53,
           "autoTags": [
             "male_focus",
             "animal_ears",
@@ -46944,7 +46934,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1719272337,
           "boothSearch": "https://booth.pm/en/items/5766193",
-          "trend": 3.25,
+          "trend": 3.24,
           "autoTags": [
             "horns",
             "male_focus",
@@ -46978,7 +46968,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1772250968,
           "boothSearch": "https://booth.pm/en/items/5594662",
-          "trend": 6.42,
+          "trend": 6.41,
           "autoTags": [
             "weapon",
             "hat",
@@ -47542,7 +47532,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1711250242,
           "boothSearch": "https://booth.pm/en/items/5463673",
-          "trend": 3.96,
+          "trend": 3.95,
           "autoTags": [
             "horns",
             "male_focus",
@@ -47808,7 +47798,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1728543033,
           "boothSearch": "https://booth.pm/en/items/6043651",
-          "trend": 8.19,
+          "trend": 8.18,
           "autoTags": [
             "gloves",
             "male_focus",
@@ -48009,7 +47999,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1676242915,
           "boothSearch": "https://booth.pm/en/items/4482496",
-          "trend": 0.55,
+          "trend": 0.54,
           "autoTags": [
             "male_focus",
             "gloves",
@@ -48030,7 +48020,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1717556303,
           "boothSearch": "https://booth.pm/en/items/5658101",
-          "trend": 4.59,
+          "trend": 4.58,
           "autoTags": [
             "animal_ears",
             "jewelry",
@@ -48060,7 +48050,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1697194017,
           "boothSearch": "https://booth.pm/en/items/4472115",
-          "trend": 0.36,
+          "trend": 0.35,
           "autoTags": [
             "glasses",
             "male_focus",
@@ -48334,7 +48324,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1701478573,
       "boothSearch": "https://booth.pm/en/items/5132797",
-      "trend": 20.95,
+      "trend": 20.94,
       "autoTags": [
         "animal_ears",
         "maid_headdress",
@@ -49590,7 +49580,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1687863889,
           "boothSearch": "https://booth.pm/en/items/4097459",
-          "trend": 6.55,
+          "trend": 6.54,
           "autoTags": [
             "wings",
             "long_hair",
@@ -49696,7 +49686,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1703213113,
           "boothSearch": "https://booth.pm/en/items/5359699",
-          "trend": 17.03,
+          "trend": 17.02,
           "autoTags": [
             "thighhighs",
             "animal_ears",
@@ -49895,7 +49885,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1714871680,
           "boothSearch": "https://booth.pm/en/items/5638738",
-          "trend": 4.2,
+          "trend": 4.21,
           "autoTags": [
             "bow",
             "twintails",
@@ -50026,7 +50016,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1696297064,
           "boothSearch": "https://booth.pm/en/items/5111206",
-          "trend": 6.89,
+          "trend": 6.88,
           "autoTags": [
             "pantyhose",
             "hat",
@@ -50087,7 +50077,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1706415227,
           "boothSearch": "https://booth.pm/en/items/5418976",
-          "trend": 2.34,
+          "trend": 2.35,
           "autoTags": [
             "animal_ears",
             "rabbit_ears",
@@ -51208,7 +51198,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1714611824,
           "boothSearch": "https://booth.pm/en/items/5693792",
-          "trend": 1.36,
+          "trend": 1.35,
           "autoTags": [
             "long_hair",
             "box",
@@ -52384,7 +52374,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1722912087,
           "boothSearch": "https://booth.pm/en/items/5942678",
-          "trend": 6.19,
+          "trend": 6.18,
           "autoTags": [
             "long_hair",
             "swimsuit",
@@ -52939,7 +52929,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1687261981,
           "boothSearch": "https://booth.pm/en/items/4686246",
-          "trend": 2.78,
+          "trend": 2.77,
           "autoTags": [
             "long_hair",
             "bow",
@@ -53288,7 +53278,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1687088633,
           "boothSearch": "https://booth.pm/en/items/4715996",
-          "trend": 0.89,
+          "trend": 0.88,
           "autoTags": [
             "animal_ears",
             "long_hair",
@@ -53835,7 +53825,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1692704143,
           "boothSearch": "https://booth.pm/en/items/4686905",
-          "trend": 1.39,
+          "trend": 1.38,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -55640,7 +55630,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1706613138,
           "boothSearch": "https://booth.pm/en/items/5453345",
-          "trend": 4.73,
+          "trend": 4.72,
           "autoTags": [
             "long_hair",
             "thighhighs",
@@ -55676,7 +55666,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1694950095,
           "boothSearch": "https://booth.pm/en/items/4915097",
-          "trend": 6.54,
+          "trend": 6.53,
           "autoTags": [
             "long_hair",
             "chain",
@@ -55738,7 +55728,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1707092953,
           "boothSearch": "https://booth.pm/en/items/5471315",
-          "trend": 0.82,
+          "trend": 0.81,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -55770,7 +55760,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1704267987,
           "boothSearch": "https://booth.pm/en/items/5381043",
-          "trend": 14.54,
+          "trend": 14.53,
           "autoTags": [
             "skirt",
             "pantyhose",
@@ -56091,7 +56081,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1685243122,
       "boothSearch": "https://booth.pm/en/items/4667400",
-      "trend": 17.02,
+      "trend": 17.01,
       "autoTags": [
         "animal_ears",
         "breasts",
@@ -56237,7 +56227,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1706833249,
       "boothSearch": "https://booth.pm/en/items/5351494",
-      "trend": 9.62,
+      "trend": 9.61,
       "autoTags": [
         "gyaru",
         "long_hair",
@@ -56291,7 +56281,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1785575130,
       "boothSearch": "https://booth.pm/en/items/7699667",
-      "trend": 65.25,
+      "trend": 65.13,
       "autoTags": [
         "shirt",
         "sleeveless_shirt",
@@ -56690,7 +56680,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1673104080,
           "boothSearch": "https://booth.pm/en/items/3616640",
-          "trend": 2.97,
+          "trend": 2.96,
           "autoTags": [
             "animal_ears",
             "cat_ears",
@@ -58805,7 +58795,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1692359541,
           "boothSearch": "https://booth.pm/en/items/4097459",
-          "trend": 6.55,
+          "trend": 6.54,
           "autoTags": [
             "wings",
             "tail",
@@ -58845,7 +58835,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1686741038,
       "boothSearch": "https://booth.pm/en/items/3443188",
-      "trend": 10.44,
+      "trend": 10.43,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -59019,7 +59009,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1726318080,
           "boothSearch": "https://booth.pm/en/items/5990930",
-          "trend": 4.81,
+          "trend": 4.8,
           "autoTags": [
             "swimsuit",
             "long_hair",
@@ -59088,7 +59078,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1724651945,
           "boothSearch": "https://booth.pm/en/items/6012423",
-          "trend": 2.24,
+          "trend": 2.23,
           "autoTags": [
             "long_hair",
             "very_long_hair",
@@ -59149,7 +59139,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1724652150,
           "boothSearch": "https://booth.pm/en/items/6005714",
-          "trend": 10.52,
+          "trend": 10.51,
           "autoTags": [
             "chain",
             "sleeves_past_wrists",
@@ -59173,7 +59163,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1724650590,
       "boothSearch": "https://booth.pm/en/items/5957830",
-      "trend": 52.74,
+      "trend": 52.7,
       "autoTags": [
         "barcode",
         "necktie",
@@ -60373,7 +60363,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Selestia/Texture/traditattoos.jpg",
           "dateAdded": 1690379553,
           "boothSearch": "https://booth.pm/en/items/4743184",
-          "trend": 0.47,
+          "trend": 0.46,
           "autoTags": [
             "breasts",
             "panties",
@@ -60674,7 +60664,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1703213148,
           "boothSearch": "https://booth.pm/en/items/5359699",
-          "trend": 17.03,
+          "trend": 17.02,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -61040,7 +61030,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1673108449,
           "boothSearch": "https://booth.pm/en/items/3616640",
-          "trend": 2.97,
+          "trend": 2.96,
           "autoTags": [
             "animal_ears",
             "long_hair",
@@ -61097,7 +61087,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1696297320,
           "boothSearch": "https://booth.pm/en/items/5111206",
-          "trend": 6.89,
+          "trend": 6.88,
           "autoTags": [
             "police",
             "police_hat",
@@ -63029,7 +63019,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1696673684,
           "boothSearch": "https://booth.pm/en/items/4434614",
-          "trend": 0.6,
+          "trend": 0.59,
           "autoTags": [
             "jacket",
             "two_side_up",
@@ -65736,7 +65726,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1672774213,
           "boothSearch": "https://booth.pm/en/items/4118695",
-          "trend": 0.63,
+          "trend": 0.62,
           "autoTags": [
             "heart",
             "heart_hands",
@@ -65883,7 +65873,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1697284143,
           "boothSearch": "https://booth.pm/en/items/4553559",
-          "trend": 3.63,
+          "trend": 3.62,
           "autoTags": [
             "animal_ears",
             "breasts",
@@ -66059,7 +66049,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1672667424,
           "boothSearch": "https://booth.pm/en/items/4069079",
-          "trend": 0.95,
+          "trend": 0.94,
           "autoTags": [
             "weapon",
             "mask",
@@ -67128,7 +67118,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1712280534,
           "boothSearch": "https://booth.pm/en/items/5589706",
-          "trend": 7.91,
+          "trend": 7.9,
           "autoTags": [
             "hoodie",
             "striped_clothes",
@@ -67414,7 +67404,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1691844660,
           "boothSearch": "https://booth.pm/en/items/4961183",
-          "trend": 6.77,
+          "trend": 6.78,
           "autoTags": [
             "breasts",
             "shorts",
@@ -67534,7 +67524,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1685704201,
           "boothSearch": "https://booth.pm/en/items/4532150",
-          "trend": 3.29,
+          "trend": 3.3,
           "autoTags": [
             "twintails",
             "skirt",
@@ -67923,7 +67913,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1672868893,
           "boothSearch": "https://booth.pm/en/items/4136940",
-          "trend": 0.68,
+          "trend": 0.67,
           "autoTags": [
             "breasts",
             "swimsuit",
@@ -68274,7 +68264,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1677072339,
           "boothSearch": "https://booth.pm/en/items/4532150",
-          "trend": 3.29,
+          "trend": 3.3,
           "autoTags": [
             "twintails",
             "skirt",
@@ -68388,7 +68378,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1686047766,
           "boothSearch": "https://booth.pm/en/items/4768519",
-          "trend": 2.23,
+          "trend": 2.22,
           "autoTags": [
             "thighhighs",
             "breasts",
@@ -68596,7 +68586,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1672590760,
           "boothSearch": "https://booth.pm/en/items/4367287",
-          "trend": 3.05,
+          "trend": 3.04,
           "autoTags": [
             "dress",
             "long_hair",
@@ -68998,7 +68988,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1669337570,
       "boothSearch": "https://booth.pm/en/items/4035411",
-      "trend": 19.35,
+      "trend": 19.34,
       "autoTags": [
         "halo",
         "long_hair",
@@ -69081,19 +69071,19 @@ const AVATAR_DATA = {
           "dateAdded": 1673713967,
           "compatibleAvatars": [
             "Anri",
-            "Imeris",
+            "Grus",
             "Kikyo",
             "Kokoa",
             "Maki",
             "Maya",
+            "Merino",
             "Milk",
             "Sue",
             "Wolferia",
             "Yuuko",
-            "Grus",
+            "Imeris",
             "koyuki",
             "lucife",
-            "Merino",
             "Rindo"
           ],
           "boothSearch": "https://booth.pm/en/search/ametista%20nail",
@@ -69114,7 +69104,7 @@ const AVATAR_DATA = {
           "name": "Aquaglass",
           "preview": "images/Clothes,_Texture_Sets_Texture_Aquaglass.jpg",
           "sourceFile": "Clothes, Texture/Sets/Texture/Aquaglass.zip",
-          "dateAdded": 1793780100,
+          "dateAdded": 1793780207,
           "compatibleAvatars": [
             "05 Komane Muscular",
             "Airi",
@@ -69128,19 +69118,20 @@ const AVATAR_DATA = {
             "Kikyo",
             "Kipfel",
             "Komano",
+            "Lumina",
             "Lapwing",
             "Lasyusha",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
-            "Lumina",
+            "Manuka",
             "MAYO",
             "Mamehinata & Kipfel 1.12",
-            "Manuka",
             "Milfy",
             "Milltina",
             "Minase",
             "Misaki",
             "Nagi",
             "Ramune",
+            "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
@@ -69149,30 +69140,24 @@ const AVATAR_DATA = {
             "Wendy",
             "Yoll",
             "Lime",
-            "ririka",
-            "Rurune"
+            "ririka"
           ],
           "boothSearch": "https://booth.pm/en/items/7871786",
-          "trend": 27.12,
+          "trend": 27.06,
           "autoTags": [
-            "pantyhose",
             "skirt",
-            "gradient_legwear",
-            "print_pantyhose",
-            "tiptoes",
             "pleated_skirt",
-            "sleeves_past_wrists",
-            "standing",
-            "feet",
-            "dress",
-            "long_sleeves",
+            "holding_hands",
             "barefoot",
+            "pantyhose",
+            "long_sleeves",
+            "standing",
+            "tiptoes",
+            "dress",
             "long_hair",
             "jacket",
-            "pleated_dress",
-            "constellation",
-            "legs",
-            "fur_trim"
+            "sleeves_past_wrists",
+            "dripping"
           ]
         },
         {
@@ -69185,8 +69170,8 @@ const AVATAR_DATA = {
             "Chocolat",
             "Kipfel",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
-            "Mamehinata & Kipfel 1.12",
             "Manuka",
+            "Mamehinata & Kipfel 1.12",
             "Milltina",
             "Moe",
             "Shinano",
@@ -69223,24 +69208,24 @@ const AVATAR_DATA = {
             "Kipfel",
             "Lasyusha",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
-            "Mamehinata & Kipfel 1.12",
             "Manuka",
+            "Mamehinata & Kipfel 1.12",
             "Marycia",
             "Milfy",
             "Milltina",
             "Mizuki",
             "Moe",
+            "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
             "Sio",
             "Yoll",
             "Lime",
-            "ririka",
-            "Rurune"
+            "ririka"
           ],
           "boothSearch": "https://booth.pm/en/items/6221437",
-          "trend": 16.31,
+          "trend": 16.29,
           "autoTags": [
             "portrait",
             "hair_between_eyes",
@@ -69265,9 +69250,9 @@ const AVATAR_DATA = {
             "Kikyo",
             "Kipfel",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
+            "Manuka",
             "MORPHO",
             "Mamehinata & Kipfel 1.12",
-            "Manuka",
             "Milltina",
             "Mizuki",
             "Moe",
@@ -69331,33 +69316,30 @@ const AVATAR_DATA = {
           "name": "Broken Love Make Up",
           "preview": "images/Clothes,_Texture_Sets_Texture_Broken_Love_Make_Up.jpg",
           "sourceFile": "Clothes, Texture/Sets/Texture/Broken Love Make Up.zip",
-          "dateAdded": 1793777500,
+          "dateAdded": 1793777553,
           "compatibleAvatars": [
             "MAYO",
             "Milltina",
             "Shinano"
           ],
           "boothSearch": "https://booth.pm/en/items/8506562",
-          "trend": 25.58,
+          "trend": 25.47,
           "autoTags": [
             "hair_ornament",
-            "mole",
             "choker",
-            "necklace",
-            "jewelry",
+            "shirt",
             "hairclip",
+            "jewelry",
+            "necklace",
             "hair_between_eyes",
-            "mole_under_mouth",
-            "medium_hair",
-            "off_shoulder",
+            "off-shoulder_shirt",
             "short_hair",
-            "bandaid",
-            "mole_under_eye",
-            "bare_shoulders",
-            "heart",
-            "portrait",
+            "medium_hair",
             "letterboxed",
-            "sweater"
+            "looking_to_the_side",
+            "long_sleeves",
+            "off_shoulder",
+            "bare_shoulders"
           ]
         },
         {
@@ -69403,24 +69385,24 @@ const AVATAR_DATA = {
             "Kuuta",
             "Lasyusha",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
+            "Manuka",
             "Mafuyu",
             "Mamehinata",
             "Mamehinata & Kipfel 1.12",
-            "Manuka",
             "Marycia",
             "Milfy",
             "Milltina",
             "Minase",
             "Moe",
+            "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
             "Sio",
-            "Lime",
-            "Rurune"
+            "Lime"
           ],
           "boothSearch": "https://booth.pm/en/items/6442271",
-          "trend": 1.55,
+          "trend": 1.54,
           "autoTags": [
             "hair_ornament",
             "animal_ears",
@@ -69455,22 +69437,22 @@ const AVATAR_DATA = {
             "Hanka",
             "Komano",
             "Kuuta",
-            "Lime & Chiffon 0.8965 & Chocolat 0.8965",
             "Lumina",
-            "MAYO",
+            "Lime & Chiffon 0.8965 & Chocolat 0.8965",
             "Manuka",
+            "MAYO",
             "Milfy",
             "Milltina",
             "Minase",
             "Misaki",
             "Plum",
+            "Rurune",
             "Shinano",
             "Shinra",
-            "Sio",
-            "Rurune"
+            "Sio"
           ],
           "boothSearch": "https://booth.pm/en/items/8917900",
-          "trend": 35.34,
+          "trend": 34.56,
           "autoTags": [
             "twintails",
             "sample_watermark",
@@ -69499,22 +69481,22 @@ const AVATAR_DATA = {
             "Lapwing",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
             "Linne",
-            "MAYO",
             "Manuka",
+            "MAYO",
             "Marycia",
             "Milfy",
             "Milk",
             "Milltina",
             "Misaki",
             "Plum",
+            "Rurune",
             "Shinano",
             "Shinra",
             "Sio",
-            "Lime",
-            "Rurune"
+            "Lime"
           ],
           "boothSearch": "https://booth.pm/en/items/8823085",
-          "trend": 85.67,
+          "trend": 84.71,
           "autoTags": [
             "braid",
             "long_hair",
@@ -69535,7 +69517,7 @@ const AVATAR_DATA = {
             "Lime & Chiffon 0.8965 & Chocolat 0.8965"
           ],
           "boothSearch": "https://booth.pm/en/items/6447735",
-          "trend": 2.09,
+          "trend": 2.08,
           "autoTags": [
             "animal_ears",
             "hair_ornament",
@@ -69576,11 +69558,11 @@ const AVATAR_DATA = {
             "Milfy",
             "Moe",
             "Nagi",
+            "Rurune",
             "Selestia",
             "Shinano",
             "Sio",
             "Lime",
-            "Rurune",
             "Soraha"
           ],
           "boothSearch": "https://booth.pm/en/items/7431386",
@@ -69689,8 +69671,8 @@ const AVATAR_DATA = {
             "Karin",
             "Kikyo",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
-            "Maki",
             "Manuka",
+            "Maki",
             "Minase",
             "Moe",
             "Selestia",
@@ -69838,11 +69820,11 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Texture/Eye Texture_Fullset.rar",
           "dateAdded": 1738465789,
           "compatibleAvatars": [
+            "Grus",
             "Kikyo",
             "Milltina",
             "Selestia",
-            "ciel",
-            "Grus"
+            "ciel"
           ],
           "boothSearch": "https://booth.pm/en/search/Eye%20Texture",
           "autoTags": [
@@ -69901,8 +69883,8 @@ const AVATAR_DATA = {
             "Iris",
             "Kikyo",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
-            "Mafuyu",
             "Manuka",
+            "Mafuyu",
             "Minase",
             "Moe",
             "Selestia",
@@ -69947,14 +69929,14 @@ const AVATAR_DATA = {
             "Milfy",
             "Milltina",
             "Neon PhysBone",
+            "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
-            "Lime",
-            "Rurune"
+            "Lime"
           ],
           "boothSearch": "https://booth.pm/en/items/6806900",
-          "trend": 6.85,
+          "trend": 6.84,
           "autoTags": [
             "tattoo",
             "flower",
@@ -69970,15 +69952,15 @@ const AVATAR_DATA = {
           "dateAdded": 1743474215,
           "compatibleAvatars": [
             "Kipfel",
+            "Manuka",
             "Mamehinata",
             "Mamehinata & Kipfel 1.12",
-            "Manuka",
             "Milltina",
             "Sio",
             "ririka"
           ],
           "boothSearch": "https://booth.pm/en/items/6664954",
-          "trend": 4.71,
+          "trend": 4.7,
           "autoTags": [
             "shirt",
             "collared_shirt",
@@ -70062,7 +70044,7 @@ const AVATAR_DATA = {
             "Sio"
           ],
           "boothSearch": "https://booth.pm/en/items/6477216",
-          "trend": 4.4,
+          "trend": 4.39,
           "autoTags": [
             "heart",
             "hair_between_eyes",
@@ -70084,19 +70066,19 @@ const AVATAR_DATA = {
             "Chocolat",
             "Eku",
             "KUMALY",
-            "Lime & Chiffon 0.8965 & Chocolat 0.8965",
             "Lumina",
-            "MAYO",
+            "Lime & Chiffon 0.8965 & Chocolat 0.8965",
             "Manuka",
+            "MAYO",
             "Milfy",
             "Milltina",
             "Plum",
+            "Rurune",
             "Shinano",
-            "Sio",
-            "Rurune"
+            "Sio"
           ],
           "boothSearch": "https://booth.pm/en/items/7914728",
-          "trend": 29.88,
+          "trend": 29.81,
           "autoTags": [
             "animal_ears",
             "hair_ornament",
@@ -70137,7 +70119,7 @@ const AVATAR_DATA = {
             "Sio"
           ],
           "boothSearch": "https://booth.pm/en/items/6572141",
-          "trend": 18.14,
+          "trend": 18.12,
           "autoTags": [
             "breasts",
             "large_breasts",
@@ -70165,29 +70147,29 @@ const AVATAR_DATA = {
             "Fyuett",
             "Kaguya",
             "Kipfel",
+            "Lumina",
             "Lapwing",
             "Lasyusha",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
-            "Lumina",
+            "Manuka",
             "MAYO",
             "Mamehinata & Kipfel 1.12",
-            "Manuka",
             "Marycia",
             "Milfy",
             "Milltina",
             "Nagi",
             "Plum",
             "Ramune",
+            "Rurune",
             "Selena",
             "Shinano",
             "Sio",
             "ciel",
             "noiz",
-            "Rurune",
             "Sophina"
           ],
           "boothSearch": "https://booth.pm/en/items/8358600",
-          "trend": 77.34,
+          "trend": 76.68,
           "autoTags": [
             "portrait",
             "hair_between_eyes",
@@ -70206,7 +70188,7 @@ const AVATAR_DATA = {
             "KUMALY"
           ],
           "boothSearch": "https://booth.pm/en/items/7956395",
-          "trend": 0.82,
+          "trend": 0.81,
           "autoTags": [
             "tongue",
             "tongue_out",
@@ -70228,12 +70210,12 @@ const AVATAR_DATA = {
           "compatibleAvatars": [
             "Airi",
             "Kaguya",
-            "MAYO",
             "Manuka",
+            "MAYO",
             "Shinano"
           ],
           "boothSearch": "https://booth.pm/en/items/8840554",
-          "trend": 28.46,
+          "trend": 28.12,
           "autoTags": [
             "underwear",
             "animal_ears",
@@ -70312,33 +70294,28 @@ const AVATAR_DATA = {
             "KUMALY",
             "Kaguya",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
-            "MAYO",
             "Manuka",
+            "MAYO",
             "Milfy",
             "Milltina",
             "Ramune",
+            "Rurune",
             "Shinano",
-            "ririka",
-            "Rurune"
+            "ririka"
           ],
           "boothSearch": "https://booth.pm/en/items/8667453",
-          "trend": 23.95,
+          "trend": 23.79,
           "autoTags": [
-            "breasts",
-            "head_out_of_frame",
             "swimsuit",
+            "breasts",
             "bikini",
-            "navel",
+            "head_out_of_frame",
             "large_breasts",
             "short_hair",
-            "cleavage",
-            "collarbone",
+            "navel",
             "underboob",
-            "stomach",
-            "two-tone_bikini",
-            "thighs",
-            "bare_arms",
-            "bare_shoulders"
+            "cleavage",
+            "clothes_writing"
           ]
         },
         {
@@ -70353,23 +70330,23 @@ const AVATAR_DATA = {
             "Ichigo",
             "KUMALY",
             "Kikyo",
+            "Lumina",
             "Lasyusha",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
-            "Lumina",
             "Manuka",
             "Milfy",
             "Milltina",
             "Moe",
+            "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
             "Sio",
             "Uruki",
-            "Rindo",
-            "Rurune"
+            "Rindo"
           ],
           "boothSearch": "https://booth.pm/en/items/6587731",
-          "trend": 9.6,
+          "trend": 9.59,
           "autoTags": [
             "breasts",
             "swimsuit",
@@ -70403,6 +70380,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sets/Texture/Set_03_HeartDevil_FullSet.rar",
           "dateAdded": 1708909393,
           "compatibleAvatars": [
+            "Grus",
             "Karin",
             "Kikyo",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
@@ -70412,7 +70390,6 @@ const AVATAR_DATA = {
             "Moe",
             "Selestia",
             "Shinra",
-            "Grus",
             "Lime",
             "mint",
             "Sophina"
@@ -70483,7 +70460,7 @@ const AVATAR_DATA = {
             "Milltina"
           ],
           "boothSearch": "https://booth.pm/en/items/8876583",
-          "trend": 31.0,
+          "trend": 30.53,
           "autoTags": [
             "bow",
             "musical_note_hair_ornament",
@@ -70533,12 +70510,12 @@ const AVATAR_DATA = {
             "Marycia",
             "Milltina",
             "Misaki",
+            "Rurune",
             "Shinano",
-            "Sio",
-            "Rurune"
+            "Sio"
           ],
           "boothSearch": "https://booth.pm/en/items/8775275",
-          "trend": 41.99,
+          "trend": 41.5,
           "autoTags": [
             "animal_ears",
             "cat_ears",
@@ -70573,19 +70550,19 @@ const AVATAR_DATA = {
             "Kuuta",
             "Lasyusha",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
-            "Mafuyu",
             "Manuka",
+            "Mafuyu",
             "Marycia",
             "Milfy",
             "Milltina",
             "Minase",
             "Moe",
+            "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
             "Sio",
-            "Lime",
-            "Rurune"
+            "Lime"
           ],
           "boothSearch": "https://booth.pm/en/search/Sticky%20Kiss-",
           "autoTags": [
@@ -70635,7 +70612,7 @@ const AVATAR_DATA = {
             "Rindo"
           ],
           "boothSearch": "https://booth.pm/en/items/5291650",
-          "trend": 4.59,
+          "trend": 4.58,
           "autoTags": [
             "tattoo",
             "pubic_tattoo"
@@ -70677,19 +70654,19 @@ const AVATAR_DATA = {
             "KUMALY",
             "Komano",
             "Kyalong",
+            "Lumina",
             "Lasyusha",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
-            "Lumina",
             "Manuka",
             "Milltina",
             "Mizuki",
             "Ramune",
+            "Rurune",
             "Selena",
-            "Shinra",
-            "Rurune"
+            "Shinra"
           ],
           "boothSearch": "https://booth.pm/en/items/8636222",
-          "trend": 41.5,
+          "trend": 41.25,
           "autoTags": [
             "moon",
             "braid",
@@ -70713,12 +70690,12 @@ const AVATAR_DATA = {
           "dateAdded": 1712281313,
           "compatibleAvatars": [
             "Chiffon",
-            "Imeris",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
             "Manuka",
             "Minase",
             "Selestia",
-            "Shinra"
+            "Shinra",
+            "Imeris"
           ],
           "boothSearch": "https://booth.pm/en/search/Wet%20Body",
           "autoTags": [
@@ -70741,14 +70718,14 @@ const AVATAR_DATA = {
             "Kipfel",
             "Lasyusha",
             "Lime & Chiffon 0.8965 & Chocolat 0.8965",
-            "Mamehinata & Kipfel 1.12",
             "Manuka",
+            "Mamehinata & Kipfel 1.12",
             "Mizuki",
+            "Rurune",
             "Selestia",
             "Shinano",
             "Shinra",
-            "ririka",
-            "Rurune"
+            "ririka"
           ],
           "boothSearch": "https://booth.pm/en/search/X%20EYE",
           "autoTags": [
@@ -70887,7 +70864,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1712986547,
           "boothSearch": "https://booth.pm/en/items/4866561",
-          "trend": 0.94,
+          "trend": 0.93,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -71150,7 +71127,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1754806275,
           "boothSearch": "https://booth.pm/en/items/7172562",
-          "trend": 13.04,
+          "trend": 13.03,
           "autoTags": [
             "twintails",
             "necktie",
@@ -71189,7 +71166,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792663944,
           "boothSearch": "https://booth.pm/en/items/8722058",
-          "trend": 57.21,
+          "trend": 56.76,
           "autoTags": [
             "breasts",
             "maid",
@@ -71284,7 +71261,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792030164,
           "boothSearch": "https://booth.pm/en/items/8823585",
-          "trend": 55.89,
+          "trend": 55.26,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -71335,7 +71312,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792207918,
           "boothSearch": "https://booth.pm/en/items/8827605",
-          "trend": 30.72,
+          "trend": 30.35,
           "autoTags": [
             "shirt",
             "breasts",
@@ -71393,7 +71370,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792669075,
           "boothSearch": "https://booth.pm/en/items/7973118",
-          "trend": 30.04,
+          "trend": 29.97,
           "autoTags": [
             "pants",
             "long_hair",
@@ -71454,7 +71431,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792206735,
           "boothSearch": "https://booth.pm/en/items/8072383",
-          "trend": 44.38,
+          "trend": 44.27,
           "autoTags": [
             "dress",
             "breasts",
@@ -71652,7 +71629,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792577981,
           "boothSearch": "https://booth.pm/en/items/8280912",
-          "trend": 34.81,
+          "trend": 34.69,
           "autoTags": [
             "necktie",
             "shirt",
@@ -71713,7 +71690,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792578319,
           "boothSearch": "https://booth.pm/en/items/8354795",
-          "trend": 33.31,
+          "trend": 33.19,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -71753,7 +71730,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791953813,
           "boothSearch": "https://booth.pm/en/items/8549425",
-          "trend": 108.76,
+          "trend": 108.22,
           "autoTags": [
             "shirt",
             "v",
@@ -71794,7 +71771,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792577433,
           "boothSearch": "https://booth.pm/en/items/8417939",
-          "trend": 34.22,
+          "trend": 34.08,
           "autoTags": [
             "long_hair",
             "hat",
@@ -71847,7 +71824,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792574593,
           "boothSearch": "https://booth.pm/en/items/8492939",
-          "trend": 34.38,
+          "trend": 34.23,
           "autoTags": [
             "dress",
             "lolita_fashion",
@@ -71940,7 +71917,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792055978,
           "boothSearch": "https://booth.pm/en/items/8685209",
-          "trend": 56.45,
+          "trend": 56.06,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -72164,7 +72141,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1714870741,
           "boothSearch": "https://booth.pm/en/items/4970851",
-          "trend": 1.01,
+          "trend": 1.0,
           "autoTags": [
             "apron",
             "long_hair",
@@ -72415,7 +72392,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1707382106,
           "boothSearch": "https://booth.pm/en/items/5334182",
-          "trend": 3.48,
+          "trend": 3.47,
           "autoTags": [
             "braid",
             "twin_braids",
@@ -72475,7 +72452,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1706174631,
           "boothSearch": "https://booth.pm/en/items/5402122",
-          "trend": 12.38,
+          "trend": 12.37,
           "autoTags": [
             "hood",
             "skirt",
@@ -72581,7 +72558,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1716103783,
           "boothSearch": "https://booth.pm/en/items/5451497",
-          "trend": 13.08,
+          "trend": 13.07,
           "autoTags": [
             "breasts",
             "cross",
@@ -72624,7 +72601,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1711247321,
           "boothSearch": "https://booth.pm/en/items/5460941",
-          "trend": 9.29,
+          "trend": 9.28,
           "autoTags": [
             "long_hair",
             "hair_flaps",
@@ -72672,7 +72649,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1711513123,
           "boothSearch": "https://booth.pm/en/items/5502202",
-          "trend": 4.25,
+          "trend": 4.24,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -72715,7 +72692,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1709690914,
           "boothSearch": "https://booth.pm/en/items/5537028",
-          "trend": 8.18,
+          "trend": 8.17,
           "autoTags": [
             "long_hair",
             "skirt",
@@ -72965,7 +72942,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1719450604,
           "boothSearch": "https://booth.pm/en/items/5853713",
-          "trend": 12.02,
+          "trend": 12.01,
           "autoTags": [
             "breasts",
             "eyewear_on_head",
@@ -73066,7 +73043,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763203892,
           "boothSearch": "https://booth.pm/en/items/5978197",
-          "trend": 4.0,
+          "trend": 3.99,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -73251,7 +73228,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1743474752,
           "boothSearch": "https://booth.pm/en/items/6557157",
-          "trend": 2.67,
+          "trend": 2.66,
           "autoTags": [
             "animal_ears",
             "breasts",
@@ -73296,7 +73273,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1741767065,
           "boothSearch": "https://booth.pm/en/items/6569464",
-          "trend": 27.97,
+          "trend": 27.94,
           "autoTags": [
             "shorts",
             "single_thighhigh",
@@ -73592,7 +73569,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1749871401,
           "boothSearch": "https://booth.pm/en/items/7002606",
-          "trend": 36.62,
+          "trend": 36.58,
           "autoTags": [
             "animal_ears",
             "skirt",
@@ -73639,7 +73616,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753942371,
           "boothSearch": "https://booth.pm/en/items/7176888",
-          "trend": 9.39,
+          "trend": 9.38,
           "autoTags": [
             "dress",
             "hat",
@@ -73678,7 +73655,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1772252470,
           "boothSearch": "https://booth.pm/en/items/7297219",
-          "trend": 9.89,
+          "trend": 9.88,
           "autoTags": [
             "ass",
             "breasts",
@@ -73710,7 +73687,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792670615,
           "boothSearch": "https://booth.pm/en/items/8129747",
-          "trend": 28.78,
+          "trend": 28.69,
           "autoTags": [
             "double_bun",
             "hair_bun",
@@ -73748,7 +73725,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1772252153,
           "boothSearch": "https://booth.pm/en/items/7749239",
-          "trend": 14.83,
+          "trend": 14.8,
           "autoTags": [
             "wings",
             "demon_tail",
@@ -73794,7 +73771,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780485745,
           "boothSearch": "https://booth.pm/en/items/7932561",
-          "trend": 9.33,
+          "trend": 9.31,
           "autoTags": [
             "pantyhose",
             "breasts",
@@ -73876,7 +73853,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792207299,
           "boothSearch": "https://booth.pm/en/items/8050025",
-          "trend": 43.95,
+          "trend": 43.83,
           "autoTags": [
             "jewelry",
             "breasts",
@@ -73929,7 +73906,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792665073,
           "boothSearch": "https://booth.pm/en/items/8537905",
-          "trend": 31.67,
+          "trend": 31.51,
           "autoTags": [
             "breasts",
             "wings",
@@ -73980,7 +73957,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792057629,
           "boothSearch": "https://booth.pm/en/items/8562258",
-          "trend": 57.89,
+          "trend": 57.59,
           "autoTags": [
             "dress",
             "hat",
@@ -74038,7 +74015,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786092152,
           "boothSearch": "https://booth.pm/en/items/8562969",
-          "trend": 53.04,
+          "trend": 52.78,
           "autoTags": [
             "breasts",
             "kimono",
@@ -74099,7 +74076,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792234474,
           "boothSearch": "https://booth.pm/en/items/8626445",
-          "trend": 35.77,
+          "trend": 35.52,
           "autoTags": [
             "thighhighs",
             "twintails",
@@ -74146,7 +74123,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792664022,
           "boothSearch": "https://booth.pm/en/items/8662921",
-          "trend": 60.99,
+          "trend": 60.59,
           "autoTags": [
             "headphones",
             "hood",
@@ -74205,7 +74182,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791971225,
           "boothSearch": "https://booth.pm/en/items/8730042",
-          "trend": 79.04,
+          "trend": 78.4,
           "autoTags": [
             "breasts",
             "leotard",
@@ -74256,7 +74233,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792664153,
           "boothSearch": "https://booth.pm/en/items/8795724",
-          "trend": 49.67,
+          "trend": 49.18,
           "autoTags": [
             "pants",
             "short_hair",
@@ -74321,7 +74298,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791822910,
           "boothSearch": "https://booth.pm/en/items/8836236",
-          "trend": 119.18,
+          "trend": 117.75,
           "autoTags": [
             "animal_ears",
             "v",
@@ -74433,7 +74410,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751945775,
           "boothSearch": "https://booth.pm/en/items/7111043",
-          "trend": 33.13,
+          "trend": 33.08,
           "autoTags": [
             "skirt",
             "long_hair",
@@ -74505,7 +74482,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780487379,
           "boothSearch": "https://booth.pm/en/items/6036727",
-          "trend": 1.9,
+          "trend": 1.89,
           "autoTags": [
             "dress",
             "twintails",
@@ -74557,7 +74534,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791948821,
           "boothSearch": "https://booth.pm/en/items/8765890",
-          "trend": 127.07,
+          "trend": 125.92,
           "autoTags": [
             "wings",
             "thighhighs",
@@ -74629,7 +74606,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791821882,
           "boothSearch": "https://booth.pm/en/items/8957405",
-          "trend": 82.22,
+          "trend": 80.31,
           "autoTags": [
             "animal_costume",
             "outdoors",
@@ -74667,7 +74644,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1783697980,
           "boothSearch": "https://booth.pm/en/items/7951821",
-          "trend": 44.35,
+          "trend": 44.25,
           "autoTags": [
             "shorts",
             "shirt",
@@ -74938,7 +74915,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751093624,
           "boothSearch": "https://booth.pm/en/items/6915196",
-          "trend": 12.37,
+          "trend": 12.36,
           "autoTags": [
             "breasts",
             "striped_thighhighs",
@@ -75024,7 +75001,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1719450538,
           "boothSearch": "https://booth.pm/en/items/5854600",
-          "trend": 1.41,
+          "trend": 1.4,
           "autoTags": [
             "animal_ears",
             "sandals",
@@ -75129,7 +75106,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756185367,
           "boothSearch": "https://booth.pm/en/items/7103381",
-          "trend": 4.61,
+          "trend": 4.6,
           "autoTags": [
             "twintails",
             "headphones",
@@ -75215,7 +75192,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760841555,
           "boothSearch": "https://booth.pm/en/items/7252386",
-          "trend": 24.61,
+          "trend": 24.58,
           "autoTags": [
             "dress",
             "bow",
@@ -75405,7 +75382,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792588741,
           "boothSearch": "https://booth.pm/en/items/8762809",
-          "trend": 28.77,
+          "trend": 28.5,
           "autoTags": [
             "male_focus",
             "glasses",
@@ -75437,7 +75414,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1714005650,
           "boothSearch": "https://booth.pm/en/items/5631182",
-          "trend": 4.71,
+          "trend": 4.7,
           "autoTags": [
             "hat",
             "boots",
@@ -75480,7 +75457,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785571461,
           "boothSearch": "https://booth.pm/en/items/7919889",
-          "trend": 12.22,
+          "trend": 12.19,
           "autoTags": [
             "long_hair",
             "thighhighs",
@@ -75557,7 +75534,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791816342,
           "boothSearch": "https://booth.pm/en/items/8924594",
-          "trend": 205.21,
+          "trend": 201.22,
           "autoTags": [
             "animal_ears",
             "pantyhose",
@@ -75607,7 +75584,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1713431895,
           "boothSearch": "https://booth.pm/en/items/5646504",
-          "trend": 13.64,
+          "trend": 13.63,
           "autoTags": [
             "japanese_clothes",
             "torii",
@@ -75645,7 +75622,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1719452793,
           "boothSearch": "https://booth.pm/en/items/5819995",
-          "trend": 5.82,
+          "trend": 5.81,
           "autoTags": [
             "dress",
             "bow",
@@ -75691,7 +75668,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792060571,
           "boothSearch": "https://booth.pm/en/items/8326219",
-          "trend": 52.48,
+          "trend": 52.29,
           "autoTags": [
             "breasts",
             "swimsuit",
@@ -75743,7 +75720,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791974713,
           "boothSearch": "https://booth.pm/en/items/8803032",
-          "trend": 71.87,
+          "trend": 71.08,
           "autoTags": [
             "animal_ears",
             "long_hair",
@@ -75788,7 +75765,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763876194,
           "boothSearch": "https://booth.pm/en/items/7660785",
-          "trend": 4.14,
+          "trend": 4.13,
           "autoTags": [
             "eyewear_on_head",
             "navel",
@@ -75845,7 +75822,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791823566,
           "boothSearch": "https://booth.pm/en/items/8878359",
-          "trend": 86.49,
+          "trend": 85.26,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -75910,7 +75887,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1759465097,
           "boothSearch": "https://booth.pm/en/items/7134473",
-          "trend": 27.75,
+          "trend": 27.71,
           "autoTags": [
             "long_hair",
             "gloves",
@@ -75953,7 +75930,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1757588407,
           "boothSearch": "https://booth.pm/en/items/7388736",
-          "trend": 20.71,
+          "trend": 20.67,
           "autoTags": [
             "hat",
             "weapon",
@@ -76038,7 +76015,7 @@ const AVATAR_DATA = {
           "compatibleAvatars": [],
           "dateAdded": 1764999795,
           "boothSearch": "https://booth.pm/en/items/7423695",
-          "trend": 14.12,
+          "trend": 14.09,
           "autoTags": [
             "shorts",
             "ponytail",
@@ -76079,7 +76056,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763876560,
           "boothSearch": "https://booth.pm/en/items/7662625",
-          "trend": 11.66,
+          "trend": 11.64,
           "autoTags": [
             "long_hair",
             "skirt",
@@ -76125,7 +76102,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786090053,
           "boothSearch": "https://booth.pm/en/items/8526786",
-          "trend": 11.32,
+          "trend": 11.27,
           "autoTags": [
             "swimsuit",
             "bikini",
@@ -76175,43 +76152,30 @@ const AVATAR_DATA = {
             "Shinano",
             "Shinra"
           ],
-          "dateAdded": 1793778421,
+          "dateAdded": 1793778459,
           "boothSearch": "https://booth.pm/en/items/8327815",
-          "trend": 24.87,
+          "trend": 24.77,
           "autoTags": [
-            "flower",
-            "pointy_ears",
             "long_hair",
-            "hair_flower",
             "hair_ornament",
-            "rose",
             "detached_sleeves",
-            "thighhighs",
-            "dress",
+            "pointy_ears",
+            "hair_flower",
+            "flower",
             "pouch",
+            "dress",
+            "thighhighs",
             "belt",
-            "frills",
-            "forest",
             "very_long_hair",
-            "long_sleeves",
-            "breasts",
-            "elf",
-            "brown_belt",
-            ":o",
-            "nature",
             "corset",
-            "belt_pouch",
-            "detached_collar",
-            "bare_shoulders",
-            "bow",
-            "outdoors",
-            "tree",
             "skirt",
-            "bowtie",
-            "sidelocks",
-            "single_thighhigh",
-            "small_breasts",
-            "frilled_dress"
+            "rose",
+            "frills",
+            "bare_shoulders",
+            "belt_pouch",
+            "test_tube",
+            "potion",
+            "breasts"
           ]
         },
         {
@@ -76224,7 +76188,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1689118539,
           "boothSearch": "https://booth.pm/en/items/4787750",
-          "trend": 0.37,
+          "trend": 0.36,
           "autoTags": [
             "animal_ears",
             "long_hair",
@@ -76285,7 +76249,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791814996,
           "boothSearch": "https://booth.pm/en/items/8959047",
-          "trend": 342.3,
+          "trend": 334.28,
           "autoTags": [
             "dress",
             "long_sleeves",
@@ -76321,7 +76285,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1725703183,
           "boothSearch": "https://booth.pm/en/items/6064959",
-          "trend": 8.21,
+          "trend": 8.2,
           "autoTags": [
             "animal_ears",
             "breasts",
@@ -76436,7 +76400,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760845593,
           "boothSearch": "https://booth.pm/en/items/7456735",
-          "trend": 14.44,
+          "trend": 14.42,
           "autoTags": [
             "thighhighs",
             "skirt",
@@ -76489,7 +76453,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753943879,
           "boothSearch": "https://booth.pm/en/items/7157162",
-          "trend": 23.03,
+          "trend": 23.0,
           "autoTags": [
             "long_hair",
             "shorts",
@@ -76586,7 +76550,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792236408,
           "boothSearch": "https://booth.pm/en/items/8215331",
-          "trend": 36.98,
+          "trend": 36.86,
           "autoTags": [
             "dress",
             "braid",
@@ -76654,7 +76618,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785569042,
           "boothSearch": "https://booth.pm/en/items/6824029",
-          "trend": 9.04,
+          "trend": 9.02,
           "autoTags": [
             "halo",
             "hair_ornament",
@@ -76750,7 +76714,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792055559,
           "boothSearch": "https://booth.pm/en/items/8707535",
-          "trend": 57.54,
+          "trend": 57.07,
           "autoTags": [
             "long_hair",
             "thighhighs",
@@ -76802,7 +76766,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791602829,
           "boothSearch": "https://booth.pm/en/items/8064553",
-          "trend": 4.39,
+          "trend": 4.38,
           "autoTags": [
             "animal_ears",
             "twintails",
@@ -76857,7 +76821,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786090248,
           "boothSearch": "https://booth.pm/en/items/8180096",
-          "trend": 13.48,
+          "trend": 13.44,
           "autoTags": [
             "unconventional_maid",
             "animal_ears",
@@ -76897,7 +76861,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763875680,
           "boothSearch": "https://booth.pm/en/items/5295897",
-          "trend": 0.33,
+          "trend": 0.32,
           "autoTags": [
             "two-tone_dress",
             "dress",
@@ -76995,7 +76959,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791982815,
           "boothSearch": "https://booth.pm/en/items/8867122",
-          "trend": 53.48,
+          "trend": 52.75,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -77048,44 +77012,37 @@ const AVATAR_DATA = {
             "Shinano",
             "Sio"
           ],
-          "dateAdded": 1793780434,
+          "dateAdded": 1793780447,
           "boothSearch": "https://booth.pm/en/items/7985374",
-          "trend": 25.4,
+          "trend": 25.33,
           "autoTags": [
             "animal_ears",
             "skirt",
             "long_hair",
-            "plaid",
-            "plaid_skirt",
-            "shirt",
             "indoors",
             "classroom",
-            "long_sleeves",
-            "ahoge",
-            "breasts",
-            "pleated_skirt",
+            "plaid",
+            "plaid_skirt",
             "desk",
+            "shirt",
+            "long_sleeves",
             "cat_ears",
-            "thighs",
             "school_uniform",
-            "heart",
+            "breasts",
             "chalkboard",
-            "bow",
-            "school_desk",
-            "plaid_bow",
-            "panties",
-            "shirt_tucked_in",
-            "bowtie",
-            "underwear",
-            "nail_polish",
-            "plaid_bowtie",
-            "animal_ear_fluff",
-            "high-waist_skirt",
             "window",
-            "heart_ahoge",
-            "medium_breasts",
+            "pleated_skirt",
+            "school_desk",
+            "sailor_collar",
+            "thighs",
+            "sleeves_past_wrists",
             "standing",
-            "sleeves_past_wrists"
+            "serafuku",
+            "arm_support",
+            "cat_girl",
+            "large_breasts",
+            "hair_between_eyes",
+            "bow"
           ]
         },
         {
@@ -77119,7 +77076,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792207841,
           "boothSearch": "https://booth.pm/en/items/8385480",
-          "trend": 41.18,
+          "trend": 41.03,
           "autoTags": [
             "weapon",
             "sword",
@@ -77174,7 +77131,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792070661,
           "boothSearch": "https://booth.pm/en/items/8522108",
-          "trend": 44.85,
+          "trend": 44.65,
           "autoTags": [
             "swimsuit",
             "breasts",
@@ -77226,7 +77183,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756185063,
           "boothSearch": "https://booth.pm/en/items/7265386",
-          "trend": 7.45,
+          "trend": 7.44,
           "autoTags": [
             "twintails",
             "long_hair",
@@ -77305,7 +77262,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1762137800,
           "boothSearch": "https://booth.pm/en/items/6720009",
-          "trend": 14.16,
+          "trend": 14.14,
           "autoTags": [
             "pants",
             "twintails",
@@ -77365,7 +77322,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1729668013,
           "boothSearch": "https://booth.pm/en/items/6151859",
-          "trend": 23.62,
+          "trend": 23.6,
           "autoTags": [
             "hat",
             "double_bun",
@@ -77524,36 +77481,39 @@ const AVATAR_DATA = {
             "Sio",
             "ririka"
           ],
-          "dateAdded": 1793778388,
+          "dateAdded": 1793778414,
           "boothSearch": "https://booth.pm/en/items/7633956",
-          "trend": 26.3,
+          "trend": 26.25,
           "autoTags": [
-            "scarf",
-            "hat",
             "skirt",
-            "cup",
-            "bag",
-            "long_hair",
-            "coat",
-            "thighhighs",
-            "holding",
-            "disposable_cup",
-            "plaid",
             "pantyhose",
+            "hat",
+            "scarf",
+            "holding",
+            "plaid",
+            "coat",
+            "bag",
+            "disposable_cup",
+            "long_hair",
+            "cup",
             "holding_cup",
             "beret",
-            "coffee_cup",
-            "handbag",
-            "open_coat",
-            "open_clothes",
             "plaid_skirt",
             "long_sleeves",
-            "sweater",
-            "jacket",
-            "winter_clothes",
-            "shoulder_bag",
+            "open_clothes",
             "outdoors",
-            "blurry_background"
+            "open_coat",
+            "snowing",
+            "jacket",
+            "handbag",
+            "blunt_bangs",
+            "winter",
+            "coffee_cup",
+            "shirt",
+            "pleated_skirt",
+            "sample_watermark",
+            "blurry_background",
+            "shoulder_bag"
           ]
         },
         {
@@ -77566,7 +77526,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785573599,
           "boothSearch": "https://booth.pm/en/items/7042545",
-          "trend": 11.65,
+          "trend": 11.64,
           "autoTags": [
             "wings",
             "animal_ears",
@@ -77682,7 +77642,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792030542,
           "boothSearch": "https://booth.pm/en/items/8929183",
-          "trend": 35.57,
+          "trend": 34.88,
           "autoTags": [
             "breasts",
             "dark_skin",
@@ -77829,7 +77789,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760841259,
           "boothSearch": "https://booth.pm/en/items/7502161",
-          "trend": 7.51,
+          "trend": 7.5,
           "autoTags": [
             "weapon",
             "dress",
@@ -77889,7 +77849,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1733654366,
           "boothSearch": "https://booth.pm/en/items/5702235",
-          "trend": 18.02,
+          "trend": 18.0,
           "autoTags": [
             "shorts",
             "wariza",
@@ -77947,7 +77907,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780477804,
           "boothSearch": "https://booth.pm/en/items/7635325",
-          "trend": 50.27,
+          "trend": 50.18,
           "autoTags": [
             "animal_ears",
             "rabbit_ears",
@@ -78050,7 +78010,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792639705,
           "boothSearch": "https://booth.pm/en/items/9002263",
-          "trend": 84.79,
+          "trend": 81.9,
           "autoTags": [
             "jewelry",
             "princess_carry",
@@ -78137,7 +78097,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785573255,
           "boothSearch": "https://booth.pm/en/items/7599798",
-          "trend": 68.14,
+          "trend": 68.02,
           "autoTags": [
             "breasts",
             "barcode",
@@ -78212,7 +78172,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792070013,
           "boothSearch": "https://booth.pm/en/items/8471577",
-          "trend": 46.77,
+          "trend": 46.57,
           "autoTags": [
             "animal_ears",
             "closed_eyes",
@@ -78251,7 +78211,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792061875,
           "boothSearch": "https://booth.pm/en/items/8773574",
-          "trend": 40.29,
+          "trend": 39.9,
           "autoTags": [
             "japanese_clothes",
             "breasts",
@@ -78355,7 +78315,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760077038,
           "boothSearch": "https://booth.pm/en/items/7073212",
-          "trend": 24.44,
+          "trend": 24.41,
           "autoTags": [
             "flower",
             "long_hair",
@@ -78409,7 +78369,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786091868,
           "boothSearch": "https://booth.pm/en/items/8316961",
-          "trend": 14.79,
+          "trend": 14.74,
           "autoTags": [
             "long_hair",
             "very_long_hair",
@@ -78455,7 +78415,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792058451,
           "boothSearch": "https://booth.pm/en/items/8566537",
-          "trend": 56.45,
+          "trend": 56.17,
           "autoTags": [
             "dress",
             "thighhighs",
@@ -78499,7 +78459,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791982908,
           "boothSearch": "https://booth.pm/en/items/8765087",
-          "trend": 62.42,
+          "trend": 61.85,
           "autoTags": [
             "breasts",
             "cleavage",
@@ -78619,7 +78579,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1719450435,
           "boothSearch": "https://booth.pm/en/items/5818845",
-          "trend": 5.56,
+          "trend": 5.55,
           "autoTags": [
             "animal_ears",
             "swimsuit",
@@ -78742,7 +78702,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792639542,
           "boothSearch": "https://booth.pm/en/items/9018075",
-          "trend": 149.56,
+          "trend": 143.42,
           "autoTags": [
             "shorts",
             "jacket",
@@ -78834,7 +78794,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792602633,
           "boothSearch": "https://booth.pm/en/items/8500982",
-          "trend": 30.14,
+          "trend": 30.01,
           "autoTags": [
             "animal_ears",
             "breasts",
@@ -78937,7 +78897,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1748825520,
           "boothSearch": "https://booth.pm/en/items/6809472",
-          "trend": 8.88,
+          "trend": 8.87,
           "autoTags": [
             "skirt",
             "sunglasses",
@@ -79021,7 +78981,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791949647,
           "boothSearch": "https://booth.pm/en/items/8936392",
-          "trend": 46.39,
+          "trend": 45.32,
           "autoTags": [
             "glasses",
             "round_eyewear",
@@ -79079,7 +79039,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792663783,
           "boothSearch": "https://booth.pm/en/items/8749497",
-          "trend": 63.74,
+          "trend": 63.16,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -79147,7 +79107,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758362111,
           "boothSearch": "https://booth.pm/en/items/7196143",
-          "trend": 5.21,
+          "trend": 5.2,
           "autoTags": [
             "animal_ears",
             "apron",
@@ -79215,7 +79175,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792664132,
           "boothSearch": "https://booth.pm/en/items/8832999",
-          "trend": 48.92,
+          "trend": 48.34,
           "autoTags": [
             "stuffed_toy",
             "teddy_bear",
@@ -79397,7 +79357,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1765000998,
           "boothSearch": "https://booth.pm/en/items/7583416",
-          "trend": 18.31,
+          "trend": 18.27,
           "autoTags": [
             "goggles_on_head",
             "goggles",
@@ -79438,7 +79398,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792671324,
           "boothSearch": "https://booth.pm/en/items/8264237",
-          "trend": 28.39,
+          "trend": 28.3,
           "autoTags": [
             "shorts",
             "animal_ears",
@@ -79633,7 +79593,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1731912218,
           "boothSearch": "https://booth.pm/en/items/6225373",
-          "trend": 17.24,
+          "trend": 17.23,
           "autoTags": [
             "lolita_fashion",
             "dress",
@@ -79688,7 +79648,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791817985,
           "boothSearch": "https://booth.pm/en/items/8921754",
-          "trend": 128.87,
+          "trend": 126.36,
           "autoTags": [
             "breasts",
             "cleavage",
@@ -79741,7 +79701,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792207497,
           "boothSearch": "https://booth.pm/en/items/8687322",
-          "trend": 37.7,
+          "trend": 37.4,
           "autoTags": [
             "steampunk",
             "gloves",
@@ -79805,7 +79765,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792236658,
           "boothSearch": "https://booth.pm/en/items/8515811",
-          "trend": 36.0,
+          "trend": 35.84,
           "autoTags": [
             "animal_ears",
             "pantyhose",
@@ -79855,7 +79815,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792234090,
           "boothSearch": "https://booth.pm/en/items/8612735",
-          "trend": 39.01,
+          "trend": 38.79,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -79997,7 +79957,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1714177765,
           "boothSearch": "https://booth.pm/en/items/5656639",
-          "trend": 0.83,
+          "trend": 0.82,
           "autoTags": [
             "jacket",
             "shorts",
@@ -80088,7 +80048,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1740966574,
           "boothSearch": "https://booth.pm/en/items/6601149",
-          "trend": 21.96,
+          "trend": 21.93,
           "autoTags": [
             "breasts",
             "jacket",
@@ -80136,7 +80096,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751093102,
           "boothSearch": "https://booth.pm/en/items/7006278",
-          "trend": 4.41,
+          "trend": 4.4,
           "autoTags": [
             "long_hair",
             "animal_ears",
@@ -80225,7 +80185,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1759464393,
           "boothSearch": "https://booth.pm/en/items/6219310",
-          "trend": 7.7,
+          "trend": 7.69,
           "autoTags": [
             "blood",
             "eyepatch",
@@ -80276,7 +80236,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792664547,
           "boothSearch": "https://booth.pm/en/items/8950371",
-          "trend": 22.03,
+          "trend": 21.27,
           "autoTags": [
             "blood",
             "breasts",
@@ -80332,38 +80292,34 @@ const AVATAR_DATA = {
             "Shinra",
             "Sio"
           ],
-          "dateAdded": 1793781334,
+          "dateAdded": 1793781418,
           "boothSearch": "https://booth.pm/en/items/8566890",
-          "trend": 26.31,
+          "trend": 26.18,
           "autoTags": [
             "fireworks",
             "breasts",
-            "hair_ornament",
             "hand_fan",
-            "cleavage",
+            "hair_ornament",
             "hair_flower",
-            "japanese_clothes",
             "long_hair",
-            "kimono",
             "flower",
             "night",
+            "cleavage",
             "large_breasts",
             "holding",
-            "floral_print",
-            "braid",
-            "night_sky",
-            "standing",
-            "bare_shoulders",
             "holding_fan",
-            "blunt_bangs",
-            "frills",
-            "outdoors",
-            "sky",
-            "aerial_fireworks",
+            "japanese_clothes",
             "paper_fan",
-            "thighhighs",
+            "kimono",
+            "aerial_fireworks",
+            "night_sky",
+            "sky",
+            "blunt_bangs",
+            "outdoors",
+            "bare_shoulders",
+            "uchiwa",
+            "bridal_garter",
             "long_sleeves",
-            "wide_sleeves",
             "off_shoulder"
           ]
         },
@@ -80470,7 +80426,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1712889366,
           "boothSearch": "https://booth.pm/en/items/5482366",
-          "trend": 5.15,
+          "trend": 5.14,
           "autoTags": [
             "animal_ears",
             "thighhighs",
@@ -80512,7 +80468,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789018223,
           "boothSearch": "https://booth.pm/en/items/8689012",
-          "trend": 52.78,
+          "trend": 52.39,
           "autoTags": [
             "long_hair",
             "shorts",
@@ -80553,7 +80509,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1695606659,
           "boothSearch": "https://booth.pm/en/items/5095570",
-          "trend": 5.42,
+          "trend": 5.41,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -80589,7 +80545,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1716249684,
           "boothSearch": "https://booth.pm/en/items/5730929",
-          "trend": 1.45,
+          "trend": 1.44,
           "autoTags": [
             "breasts",
             "jacket",
@@ -80644,7 +80600,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785569748,
           "boothSearch": "https://booth.pm/en/items/8155460",
-          "trend": 57.41,
+          "trend": 57.24,
           "autoTags": [
             "breasts",
             "ghost",
@@ -80691,7 +80647,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792207603,
           "boothSearch": "https://booth.pm/en/items/8232579",
-          "trend": 42.47,
+          "trend": 42.33,
           "autoTags": [
             "gloves",
             "pantyhose",
@@ -80746,7 +80702,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1721532807,
           "boothSearch": "https://booth.pm/en/items/5913076",
-          "trend": 5.09,
+          "trend": 5.08,
           "autoTags": [
             "sitting",
             "long_hair",
@@ -80791,7 +80747,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792664676,
           "boothSearch": "https://booth.pm/en/items/7645723",
-          "trend": 40.49,
+          "trend": 40.41,
           "autoTags": [
             "jacket",
             "shirt",
@@ -80846,7 +80802,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792668935,
           "boothSearch": "https://booth.pm/en/items/8404988",
-          "trend": 29.53,
+          "trend": 29.42,
           "autoTags": [
             "horns",
             "long_hair",
@@ -80884,7 +80840,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792071405,
           "boothSearch": "https://booth.pm/en/items/8716868",
-          "trend": 36.89,
+          "trend": 36.57,
           "autoTags": [
             "dress",
             "long_hair",
@@ -80975,7 +80931,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763876010,
           "boothSearch": "https://booth.pm/en/items/7360914",
-          "trend": 2.59,
+          "trend": 2.58,
           "autoTags": [
             "animal_ears",
             "shorts",
@@ -81157,7 +81113,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1765001045,
           "boothSearch": "https://booth.pm/en/items/7624835",
-          "trend": 12.25,
+          "trend": 12.23,
           "autoTags": [
             "thighhighs",
             "fishnets",
@@ -81208,7 +81164,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1748826773,
           "boothSearch": "https://booth.pm/en/items/6903116",
-          "trend": 7.63,
+          "trend": 7.62,
           "autoTags": [
             "goggles",
             "goggles_on_head",
@@ -81251,7 +81207,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792058585,
           "boothSearch": "https://booth.pm/en/items/8685183",
-          "trend": 51.41,
+          "trend": 51.04,
           "autoTags": [
             "dress",
             "long_hair",
@@ -81305,7 +81261,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792061279,
           "boothSearch": "https://booth.pm/en/items/7926318",
-          "trend": 48.91,
+          "trend": 48.67,
           "autoTags": [
             "eyepatch",
             "breasts",
@@ -81428,7 +81384,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792058206,
           "boothSearch": "https://booth.pm/en/items/8502426",
-          "trend": 58.41,
+          "trend": 58.15,
           "autoTags": [
             "animal_ears",
             "long_hair",
@@ -81615,7 +81571,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1764999555,
           "boothSearch": "https://booth.pm/en/items/6837607",
-          "trend": 4.02,
+          "trend": 4.01,
           "autoTags": [
             "breasts",
             "twintails",
@@ -81798,7 +81754,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792669521,
           "boothSearch": "https://booth.pm/en/items/8429078",
-          "trend": 28.92,
+          "trend": 28.8,
           "autoTags": [
             "navel",
             "long_hair",
@@ -81864,7 +81820,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760842209,
           "boothSearch": "https://booth.pm/en/items/7391080",
-          "trend": 1.23,
+          "trend": 1.22,
           "autoTags": [
             "long_hair",
             "closed_eyes",
@@ -81911,7 +81867,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1738460681,
           "boothSearch": "https://booth.pm/en/items/6530623",
-          "trend": 6.56,
+          "trend": 6.55,
           "autoTags": [
             "animal_ears",
             "cat_ears",
@@ -81950,7 +81906,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751094210,
           "boothSearch": "https://booth.pm/en/items/7061928",
-          "trend": 18.81,
+          "trend": 18.79,
           "autoTags": [
             "headphones_around_neck",
             "long_hair",
@@ -82008,7 +81964,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791816820,
           "boothSearch": "https://booth.pm/en/items/8890992",
-          "trend": 247.84,
+          "trend": 243.94,
           "autoTags": [
             "roller_skates",
             "skates",
@@ -82062,7 +82018,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791971308,
           "boothSearch": "https://booth.pm/en/items/8920410",
-          "trend": 45.37,
+          "trend": 44.56,
           "autoTags": [
             "breasts",
             "cross",
@@ -82097,7 +82053,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1719452903,
           "boothSearch": "https://booth.pm/en/items/5831594",
-          "trend": 5.72,
+          "trend": 5.71,
           "autoTags": [
             "goggles",
             "goggles_on_head",
@@ -82140,7 +82096,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1711677459,
           "boothSearch": "https://booth.pm/en/items/5570549",
-          "trend": 4.1,
+          "trend": 4.09,
           "autoTags": [
             "horns",
             "breasts",
@@ -82216,7 +82172,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1768020362,
           "boothSearch": "https://booth.pm/en/items/7621009",
-          "trend": 6.89,
+          "trend": 6.87,
           "autoTags": [
             "heterochromia",
             "animal_ears",
@@ -82324,7 +82280,7 @@ const AVATAR_DATA = {
           "compatibleAvatars": [],
           "dateAdded": 1735287736,
           "boothSearch": "https://booth.pm/en/items/6351850",
-          "trend": 8.06,
+          "trend": 8.05,
           "autoTags": [
             "breasts",
             "christmas_tree",
@@ -82413,7 +82369,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1765002553,
           "boothSearch": "https://booth.pm/en/items/6530936",
-          "trend": 11.43,
+          "trend": 11.42,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -82508,7 +82464,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756185940,
           "boothSearch": "https://booth.pm/en/items/7224603",
-          "trend": 19.52,
+          "trend": 19.5,
           "autoTags": [
             "navel",
             "hat",
@@ -82559,7 +82515,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792574396,
           "boothSearch": "https://booth.pm/en/items/8355832",
-          "trend": 34.1,
+          "trend": 33.93,
           "autoTags": [
             "cuffs",
             "handcuffs",
@@ -82628,7 +82584,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792064485,
           "boothSearch": "https://booth.pm/en/items/8734338",
-          "trend": 40.99,
+          "trend": 40.65,
           "autoTags": [
             "twintails",
             "breasts",
@@ -82728,7 +82684,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760079148,
           "boothSearch": "https://booth.pm/en/items/7447193",
-          "trend": 11.88,
+          "trend": 11.86,
           "autoTags": [
             "skirt",
             "thighhighs",
@@ -82821,7 +82777,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753943683,
           "boothSearch": "https://booth.pm/en/items/6958093",
-          "trend": 18.25,
+          "trend": 18.22,
           "autoTags": [
             "necktie",
             "skirt",
@@ -82869,7 +82825,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751095895,
           "boothSearch": "https://booth.pm/en/items/6986272",
-          "trend": 20.54,
+          "trend": 20.52,
           "autoTags": [
             "swimsuit",
             "long_hair",
@@ -82929,7 +82885,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792640131,
           "boothSearch": "https://booth.pm/en/items/8755650",
-          "trend": 87.03,
+          "trend": 86.26,
           "autoTags": [
             "denim",
             "shorts",
@@ -83013,7 +82969,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789016115,
           "boothSearch": "https://booth.pm/en/items/8740341",
-          "trend": 22.08,
+          "trend": 21.9,
           "autoTags": [
             "long_hair",
             "animal_ears",
@@ -83080,7 +83036,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1712454118,
           "boothSearch": "https://booth.pm/en/items/5615296",
-          "trend": 5.24,
+          "trend": 5.23,
           "autoTags": [
             "breasts",
             "dress",
@@ -83112,7 +83068,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786090876,
           "boothSearch": "https://booth.pm/en/items/8362796",
-          "trend": 8.68,
+          "trend": 8.65,
           "autoTags": [
             "long_hair",
             "ahoge",
@@ -83152,7 +83108,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792602200,
           "boothSearch": "https://booth.pm/en/items/8142476",
-          "trend": 32.71,
+          "trend": 32.61,
           "autoTags": [
             "food_in_mouth",
             "skirt",
@@ -83353,7 +83309,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1737432163,
           "boothSearch": "https://booth.pm/en/items/6003357",
-          "trend": 12.65,
+          "trend": 12.64,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -83477,7 +83433,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1772253146,
           "boothSearch": "https://booth.pm/en/items/7360141",
-          "trend": 8.8,
+          "trend": 8.79,
           "autoTags": [
             "thighhighs",
             "hair_bun",
@@ -83523,7 +83479,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751094308,
           "boothSearch": "https://booth.pm/en/items/6829757",
-          "trend": 12.68,
+          "trend": 12.67,
           "autoTags": [
             "dress",
             "thighhighs",
@@ -83557,7 +83513,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1749868913,
           "boothSearch": "https://booth.pm/en/items/6539340",
-          "trend": 27.31,
+          "trend": 27.28,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -83607,7 +83563,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780485313,
           "boothSearch": "https://booth.pm/en/items/7944843",
-          "trend": 4.99,
+          "trend": 4.98,
           "autoTags": [
             "skirt",
             "police",
@@ -83723,7 +83679,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756185865,
           "boothSearch": "https://booth.pm/en/items/7274480",
-          "trend": 29.48,
+          "trend": 29.43,
           "autoTags": [
             "raglan_sleeves",
             "pants",
@@ -83804,36 +83760,34 @@ const AVATAR_DATA = {
             "Shinano",
             "Shinra"
           ],
-          "dateAdded": 1793779174,
+          "dateAdded": 1793779233,
           "boothSearch": "https://booth.pm/en/items/8272781",
-          "trend": 25.97,
+          "trend": 25.89,
           "autoTags": [
             "steampunk",
-            "gears",
-            "hat",
-            "glasses",
             "top_hat",
+            "hat",
+            "gears",
+            "glasses",
             "long_hair",
-            "thighhighs",
             "round_eyewear",
-            "capelet",
-            "holding",
-            "cane",
-            "boots",
-            "frills",
-            "pocket_watch",
-            "watch",
-            "skirt",
-            "long_sleeves",
-            "bowtie",
             "shirt",
+            "long_sleeves",
+            "cane",
+            "frills",
+            "thighhighs",
+            "holding",
+            "skirt",
+            "bowtie",
             "bow",
-            ":o",
+            "capelet",
+            "gloves",
+            "frilled_skirt",
             "monocle",
-            "horns",
-            "floating_hair",
-            "cover",
-            "album_cover"
+            "holding_cane",
+            ":o",
+            "pocket_watch",
+            "floating_hair"
           ]
         },
         {
@@ -83849,7 +83803,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758365035,
           "boothSearch": "https://booth.pm/en/items/7089216",
-          "trend": 4.65,
+          "trend": 4.64,
           "autoTags": [
             "animal_ears",
             "breasts",
@@ -83902,7 +83856,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1744680359,
           "boothSearch": "https://booth.pm/en/items/6766463",
-          "trend": 28.12,
+          "trend": 28.09,
           "autoTags": [
             "jacket",
             "long_hair",
@@ -83980,7 +83934,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1783444879,
           "boothSearch": "https://booth.pm/en/items/7701669",
-          "trend": 30.61,
+          "trend": 30.56,
           "autoTags": [
             "skirt",
             "long_hair",
@@ -84026,7 +83980,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1737434271,
           "boothSearch": "https://booth.pm/en/items/5141327",
-          "trend": 20.28,
+          "trend": 20.27,
           "autoTags": [
             "skirt",
             "long_hair",
@@ -84150,7 +84104,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1721023106,
           "boothSearch": "https://booth.pm/en/items/5562714",
-          "trend": 12.83,
+          "trend": 12.82,
           "autoTags": [
             "maid",
             "apron",
@@ -84186,7 +84140,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791975341,
           "boothSearch": "https://booth.pm/en/items/8510662",
-          "trend": 88.17,
+          "trend": 87.76,
           "autoTags": [
             "hat",
             "two_side_up",
@@ -84355,7 +84309,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1768018507,
           "boothSearch": "https://booth.pm/en/items/7692578",
-          "trend": 7.45,
+          "trend": 7.43,
           "autoTags": [
             "closed_eyes",
             "skirt",
@@ -84396,7 +84350,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792060441,
           "boothSearch": "https://booth.pm/en/items/8639951",
-          "trend": 47.82,
+          "trend": 47.52,
           "autoTags": [
             "heart_hands_duo",
             "animal_ears",
@@ -84454,7 +84408,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792669337,
           "boothSearch": "https://booth.pm/en/items/8679587",
-          "trend": 27.43,
+          "trend": 27.24,
           "autoTags": [
             "long_hair",
             "boots",
@@ -84671,7 +84625,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791952994,
           "boothSearch": "https://booth.pm/en/items/8957247",
-          "trend": 50.78,
+          "trend": 49.61,
           "autoTags": [
             "animal_ears",
             "heterochromia",
@@ -84718,7 +84672,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1783699878,
           "boothSearch": "https://booth.pm/en/items/7386927",
-          "trend": 13.42,
+          "trend": 13.4,
           "autoTags": [
             "hat",
             "long_hair",
@@ -84929,7 +84883,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1694775557,
           "boothSearch": "https://booth.pm/en/items/5019167",
-          "trend": 3.03,
+          "trend": 3.02,
           "autoTags": [
             "breasts",
             "tattoo",
@@ -85039,7 +84993,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792057919,
           "boothSearch": "https://booth.pm/en/items/8617823",
-          "trend": 56.57,
+          "trend": 56.25,
           "autoTags": [
             "hat",
             "baseball_cap",
@@ -85078,7 +85032,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1740967138,
           "boothSearch": "https://booth.pm/en/items/6102655",
-          "trend": 4.34,
+          "trend": 4.33,
           "autoTags": [
             "long_hair",
             "glasses",
@@ -85117,7 +85071,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792062143,
           "boothSearch": "https://booth.pm/en/items/8127596",
-          "trend": 49.85,
+          "trend": 49.71,
           "autoTags": [
             "animal_ears",
             "bear_ears",
@@ -85261,7 +85215,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789017453,
           "boothSearch": "https://booth.pm/en/items/8215421",
-          "trend": 72.04,
+          "trend": 71.81,
           "autoTags": [
             "skirt",
             "long_hair",
@@ -85316,7 +85270,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753069106,
           "boothSearch": "https://booth.pm/en/items/7155643",
-          "trend": 8.43,
+          "trend": 8.42,
           "autoTags": [
             "animal_hat",
             "cross-laced_sleeves",
@@ -85392,7 +85346,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1717974677,
           "boothSearch": "https://booth.pm/en/items/5809341",
-          "trend": 9.37,
+          "trend": 9.36,
           "autoTags": [
             "thighhighs",
             "long_hair",
@@ -85432,7 +85386,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792668506,
           "boothSearch": "https://booth.pm/en/items/8591219",
-          "trend": 29.05,
+          "trend": 28.89,
           "autoTags": [
             "breasts",
             "swimsuit",
@@ -85593,7 +85547,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780483689,
           "boothSearch": "https://booth.pm/en/items/7790733",
-          "trend": 2.92,
+          "trend": 2.91,
           "autoTags": [
             "animal_ears",
             "skirt",
@@ -85698,7 +85652,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792666713,
           "boothSearch": "https://booth.pm/en/items/7991762",
-          "trend": 31.58,
+          "trend": 31.5,
           "autoTags": [
             "gas_mask",
             "hood",
@@ -85743,7 +85697,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792588819,
           "boothSearch": "https://booth.pm/en/items/8418806",
-          "trend": 32.95,
+          "trend": 32.82,
           "autoTags": [
             "mask",
             "long_hair",
@@ -85887,7 +85841,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785569496,
           "boothSearch": "https://booth.pm/en/items/7913746",
-          "trend": 6.7,
+          "trend": 6.69,
           "autoTags": [
             "long_hair",
             "hat",
@@ -85944,7 +85898,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791946663,
           "boothSearch": "https://booth.pm/en/items/8775363",
-          "trend": 201.45,
+          "trend": 199.58,
           "autoTags": [
             "pants",
             "jacket",
@@ -85984,7 +85938,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791781971,
           "boothSearch": "https://booth.pm/en/items/7266541",
-          "trend": 5.02,
+          "trend": 5.01,
           "autoTags": [
             "denim",
             "pants",
@@ -86025,7 +85979,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1743473411,
           "boothSearch": "https://booth.pm/en/items/6633647",
-          "trend": 39.92,
+          "trend": 39.88,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -86073,7 +86027,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791955920,
           "boothSearch": "https://booth.pm/en/items/8734204",
-          "trend": 96.71,
+          "trend": 95.91,
           "autoTags": [
             "animal_ears",
             "gloves",
@@ -86120,7 +86074,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1716511175,
           "boothSearch": "https://booth.pm/en/items/5760880",
-          "trend": 19.05,
+          "trend": 19.04,
           "autoTags": [
             "hand_fan",
             "long_hair",
@@ -86174,7 +86128,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1729669144,
           "boothSearch": "https://booth.pm/en/items/6175348",
-          "trend": 22.23,
+          "trend": 22.21,
           "autoTags": [
             "cross",
             "thighhighs",
@@ -86219,7 +86173,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758857195,
           "boothSearch": "https://booth.pm/en/items/7068961",
-          "trend": 25.6,
+          "trend": 25.57,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -86294,7 +86248,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792060957,
           "boothSearch": "https://booth.pm/en/items/8659461",
-          "trend": 48.07,
+          "trend": 47.76,
           "autoTags": [
             "thighhighs",
             "moon",
@@ -86362,29 +86316,27 @@ const AVATAR_DATA = {
             "Sio",
             "mint"
           ],
-          "dateAdded": 1793777325,
+          "dateAdded": 1793777333,
           "boothSearch": "https://booth.pm/en/items/7638986",
-          "trend": 27.4,
+          "trend": 27.36,
           "autoTags": [
             "animal_ears",
             "rabbit_ears",
-            "jacket",
             "long_hair",
-            "earmuffs",
-            "sleeves_past_wrists",
-            "hair_ornament",
-            "long_sleeves",
-            "zipper",
-            "x_hair_ornament",
-            "cat_ears",
-            "hairclip",
+            "jacket",
             "qr_code",
+            "earmuffs",
+            "cat_ears",
+            "long_sleeves",
+            "hair_ornament",
+            "coat",
+            "x_hair_ornament",
+            "sleeves_past_wrists",
+            "holding",
+            "blunt_bangs",
             "rabbit_girl",
-            "animal_ear_fluff",
-            "track_jacket",
-            "zipper_pull_tab",
-            "breath",
-            "very_long_hair"
+            "cat_girl",
+            "hairclip"
           ]
         },
         {
@@ -86481,7 +86433,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1734505729,
           "boothSearch": "https://booth.pm/en/items/6299386",
-          "trend": 6.53,
+          "trend": 6.52,
           "autoTags": [
             "animal_ears",
             "wings",
@@ -86525,7 +86477,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1729667105,
           "boothSearch": "https://booth.pm/en/items/6054347",
-          "trend": 10.94,
+          "trend": 10.93,
           "autoTags": [
             "animal_ears",
             "skirt",
@@ -86566,7 +86518,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751094481,
           "boothSearch": "https://booth.pm/en/items/7083852",
-          "trend": 18.48,
+          "trend": 18.46,
           "autoTags": [
             "witch_hat",
             "hat",
@@ -86671,7 +86623,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791817630,
           "boothSearch": "https://booth.pm/en/items/8914039",
-          "trend": 120.99,
+          "trend": 118.84,
           "autoTags": [
             "male_focus",
             "sunglasses",
@@ -86722,7 +86674,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792638996,
           "boothSearch": "https://booth.pm/en/items/8988089",
-          "trend": 285.85,
+          "trend": 277.43,
           "autoTags": [
             "thighhighs",
             "jacket",
@@ -86779,7 +86731,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792639610,
           "boothSearch": "https://booth.pm/en/items/8993764",
-          "trend": 88.03,
+          "trend": 85.19,
           "autoTags": [
             "fur_trim",
             "hood",
@@ -86882,38 +86834,33 @@ const AVATAR_DATA = {
             "Shinano",
             "Shinra"
           ],
-          "dateAdded": 1793776844,
+          "dateAdded": 1793776852,
           "boothSearch": "https://booth.pm/en/items/8801771",
-          "trend": 21.98,
+          "trend": 21.75,
           "autoTags": [
-            "breasts",
             "animal_ears",
             "tail",
-            "cleavage",
-            "braid",
-            "cat_ears",
+            "breasts",
             "sitting",
+            "cleavage",
+            "cat_ears",
+            "braid",
+            "long_hair",
             "sweater",
             "ahoge",
-            "hair_ornament",
-            "sleeves_past_wrists",
-            "long_hair",
             "long_sleeves",
+            "cat_tail",
+            "striped_sweater",
+            "sleeves_past_wrists",
             "animal_ear_fluff",
             "cat_girl",
-            "cat_tail",
-            "off_shoulder",
-            "large_breasts",
-            "jewelry",
             "hair_between_eyes",
-            "single_braid",
-            "off-shoulder_sweater",
-            "striped_sweater",
+            "medium_breasts",
+            "shirt",
+            "hair_ornament",
+            "large_breasts",
             "striped_clothes",
-            "hair_over_shoulder",
-            "striped_shirt",
-            "bare_shoulders",
-            "medium_breasts"
+            "striped_shirt"
           ]
         },
         {
@@ -87014,7 +86961,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760078268,
           "boothSearch": "https://booth.pm/en/items/7485461",
-          "trend": 24.63,
+          "trend": 24.59,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -87110,7 +87057,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792054749,
           "boothSearch": "https://booth.pm/en/items/8741587",
-          "trend": 59.23,
+          "trend": 58.68,
           "autoTags": [
             "animal_ears",
             "breasts",
@@ -87168,7 +87115,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760845933,
           "boothSearch": "https://booth.pm/en/items/7542145",
-          "trend": 6.9,
+          "trend": 6.89,
           "autoTags": [
             "cowboy_hat",
             "breasts",
@@ -87242,7 +87189,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791977093,
           "boothSearch": "https://booth.pm/en/items/8685203",
-          "trend": 74.52,
+          "trend": 73.99,
           "autoTags": [
             "instrument",
             "thighhighs",
@@ -87309,7 +87256,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785573624,
           "boothSearch": "https://booth.pm/en/items/8497386",
-          "trend": 59.42,
+          "trend": 59.16,
           "autoTags": [
             "skirt",
             "long_hair",
@@ -87371,7 +87318,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1737434967,
           "boothSearch": "https://booth.pm/en/items/6437534",
-          "trend": 5.88,
+          "trend": 5.87,
           "autoTags": [
             "eyepatch",
             "long_hair",
@@ -87546,7 +87493,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756877639,
           "boothSearch": "https://booth.pm/en/items/7368058",
-          "trend": 21.27,
+          "trend": 21.24,
           "autoTags": [
             "breasts",
             "swimsuit",
@@ -87586,7 +87533,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1726316692,
           "boothSearch": "https://booth.pm/en/items/6054284",
-          "trend": 5.5,
+          "trend": 5.49,
           "autoTags": [
             "long_hair",
             "fox_mask",
@@ -87631,7 +87578,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791969947,
           "boothSearch": "https://booth.pm/en/items/8796687",
-          "trend": 82.13,
+          "trend": 81.31,
           "autoTags": [
             "tongue_out",
             "teddy_bear",
@@ -87780,7 +87727,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1702253190,
           "boothSearch": "https://booth.pm/en/items/5241459",
-          "trend": 3.81,
+          "trend": 3.8,
           "autoTags": [
             "underwear",
             "breasts",
@@ -87862,7 +87809,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791817216,
           "boothSearch": "https://booth.pm/en/items/8899897",
-          "trend": 185.04,
+          "trend": 181.72,
           "autoTags": [
             "horns",
             "long_hair",
@@ -88007,7 +87954,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1765001318,
           "boothSearch": "https://booth.pm/en/items/7277731",
-          "trend": 6.33,
+          "trend": 6.32,
           "autoTags": [
             "wings",
             "animal_ears",
@@ -88060,7 +88007,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792668470,
           "boothSearch": "https://booth.pm/en/items/8623705",
-          "trend": 28.57,
+          "trend": 28.4,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -88215,7 +88162,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792579664,
           "boothSearch": "https://booth.pm/en/items/8609864",
-          "trend": 31.02,
+          "trend": 30.84,
           "autoTags": [
             "animal_ears",
             "cat_ears",
@@ -88311,40 +88258,24 @@ const AVATAR_DATA = {
             "Sio",
             "ririka"
           ],
-          "dateAdded": 1793777737,
+          "dateAdded": 1793777747,
           "boothSearch": "https://booth.pm/en/items/8143206",
-          "trend": 26.48,
+          "trend": 26.41,
           "autoTags": [
-            "hood",
-            "hoodie",
-            "long_hair",
-            "arm_up",
-            "shorts",
-            "puffy_long_sleeves",
-            "long_sleeves",
-            "very_long_hair",
             "rubber_duck",
-            "puffy_sleeves",
-            "hood_down",
-            "hair_between_eyes",
-            ":d",
-            "ahoge",
-            "potato_chips",
-            "standing_on_one_leg",
-            "braid",
-            "heart",
-            "ginkgo_leaf",
-            "hair_bun",
-            "twintails",
+            "long_hair",
             "chewing_gum",
-            "hair_intakes",
-            "short_shorts",
-            "chips_(food)",
-            "drawstring",
-            "sleeves_past_wrists",
-            "standing",
-            "bike_shorts",
-            "cover"
+            "long_sleeves",
+            "shorts",
+            "hoodie",
+            "arm_up",
+            "very_long_hair",
+            "bubble_blowing",
+            "hood",
+            "ahoge",
+            "shirt",
+            "sweater",
+            "hair_bun"
           ]
         },
         {
@@ -88443,7 +88374,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753944343,
           "boothSearch": "https://booth.pm/en/items/6986518",
-          "trend": 26.71,
+          "trend": 26.68,
           "autoTags": [
             "horns",
             "wings",
@@ -88485,7 +88416,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758365172,
           "boothSearch": "https://booth.pm/en/items/7413888",
-          "trend": 20.91,
+          "trend": 20.88,
           "autoTags": [
             "swimsuit",
             "breasts",
@@ -88537,7 +88468,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791980892,
           "boothSearch": "https://booth.pm/en/items/8637516",
-          "trend": 76.28,
+          "trend": 75.82,
           "autoTags": [
             "dress",
             "breasts",
@@ -88580,7 +88511,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1740028448,
           "boothSearch": "https://booth.pm/en/items/6557731",
-          "trend": 9.89,
+          "trend": 9.88,
           "autoTags": [
             "pants",
             "headphones",
@@ -88666,7 +88597,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1765000413,
           "boothSearch": "https://booth.pm/en/items/7636086",
-          "trend": 2.04,
+          "trend": 2.03,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -88716,23 +88647,21 @@ const AVATAR_DATA = {
             "Rurune",
             "Shinano"
           ],
-          "dateAdded": 1793780663,
+          "dateAdded": 1793780683,
           "boothSearch": "https://booth.pm/en/items/8344414",
-          "trend": 25.27,
+          "trend": 25.18,
           "autoTags": [
             "long_hair",
             "bodysuit",
-            "holding",
             "breasts",
             "covered_navel",
+            "holding",
             "long_sleeves",
-            "weapon",
-            "holding_weapon",
-            "grin",
             "large_breasts",
+            "teeth",
+            "weapon",
             "thigh_gap",
-            "ahoge",
-            "space",
+            "character_name",
             "hair_between_eyes",
             "copyright_name"
           ]
@@ -88765,7 +88694,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1766119384,
           "boothSearch": "https://booth.pm/en/items/6924390",
-          "trend": 14.73,
+          "trend": 14.71,
           "autoTags": [
             "long_hair",
             "hat",
@@ -88887,7 +88816,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1717811578,
           "boothSearch": "https://booth.pm/en/items/5806520",
-          "trend": 7.1,
+          "trend": 7.09,
           "autoTags": [
             "barcode",
             "thighhighs",
@@ -88983,7 +88912,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791818310,
           "boothSearch": "https://booth.pm/en/items/8867186",
-          "trend": 187.72,
+          "trend": 185.04,
           "autoTags": [
             "thighhighs",
             "animal_ears",
@@ -89045,7 +88974,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791953733,
           "boothSearch": "https://booth.pm/en/items/8801382",
-          "trend": 86.35,
+          "trend": 85.35,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -89135,7 +89064,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791958282,
           "boothSearch": "https://booth.pm/en/items/8686330",
-          "trend": 96.47,
+          "trend": 95.75,
           "autoTags": [
             "thighhighs",
             "breasts",
@@ -89190,7 +89119,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786092472,
           "boothSearch": "https://booth.pm/en/items/8618031",
-          "trend": 71.08,
+          "trend": 70.68,
           "autoTags": [
             "necktie",
             "thighhighs",
@@ -89328,7 +89257,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1766121069,
           "boothSearch": "https://booth.pm/en/items/7751614",
-          "trend": 30.53,
+          "trend": 30.47,
           "autoTags": [
             "horns",
             "breasts",
@@ -89386,7 +89315,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756877575,
           "boothSearch": "https://booth.pm/en/items/7364866",
-          "trend": 12.94,
+          "trend": 12.92,
           "autoTags": [
             "breasts",
             "hair_ornament",
@@ -89522,7 +89451,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1772252613,
           "boothSearch": "https://booth.pm/en/items/7740702",
-          "trend": 7.04,
+          "trend": 7.03,
           "autoTags": [
             "thighhighs",
             "dress",
@@ -89598,7 +89527,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1712453886,
           "boothSearch": "https://booth.pm/en/items/5615136",
-          "trend": 23.22,
+          "trend": 23.2,
           "autoTags": [
             "long_hair",
             "skirt",
@@ -89634,7 +89563,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1727508615,
           "boothSearch": "https://booth.pm/en/items/6115033",
-          "trend": 13.49,
+          "trend": 13.48,
           "autoTags": [
             "animal_ears",
             "long_hair",
@@ -89730,7 +89659,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1765001850,
           "boothSearch": "https://booth.pm/en/items/7698124",
-          "trend": 16.01,
+          "trend": 15.98,
           "autoTags": [
             "breasts",
             "weapon",
@@ -89822,7 +89751,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789013511,
           "boothSearch": "https://booth.pm/en/items/6729310",
-          "trend": 5.81,
+          "trend": 5.8,
           "autoTags": [
             "hat",
             "braid",
@@ -89860,7 +89789,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786092201,
           "boothSearch": "https://booth.pm/en/items/8544325",
-          "trend": 23.14,
+          "trend": 23.03,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -89887,7 +89816,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1718511179,
           "boothSearch": "https://booth.pm/en/items/5813657",
-          "trend": 18.18,
+          "trend": 18.16,
           "autoTags": [
             "weapon",
             "holding_weapon",
@@ -89973,7 +89902,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758367729,
           "boothSearch": "https://booth.pm/en/items/7173117",
-          "trend": 20.2,
+          "trend": 20.18,
           "autoTags": [
             "thighhighs",
             "hat",
@@ -90050,7 +89979,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1717554541,
           "boothSearch": "https://booth.pm/en/items/5767163",
-          "trend": 11.53,
+          "trend": 11.52,
           "autoTags": [
             "skirt",
             "hat",
@@ -90110,7 +90039,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756876951,
           "boothSearch": "https://booth.pm/en/items/7276432",
-          "trend": 12.6,
+          "trend": 12.58,
           "autoTags": [
             "instrument",
             "wings",
@@ -90186,7 +90115,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791959418,
           "boothSearch": "https://booth.pm/en/items/8943737",
-          "trend": 36.15,
+          "trend": 35.34,
           "autoTags": [
             "autumn_leaves",
             "leaf",
@@ -90238,7 +90167,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1748825337,
           "boothSearch": "https://booth.pm/en/items/6672179",
-          "trend": 13.12,
+          "trend": 13.1,
           "autoTags": [
             "underwear",
             "thighhighs",
@@ -90281,7 +90210,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792059898,
           "boothSearch": "https://booth.pm/en/items/8646781",
-          "trend": 50.51,
+          "trend": 50.19,
           "autoTags": [
             "long_hair",
             "dress",
@@ -90319,7 +90248,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763780968,
           "boothSearch": "https://booth.pm/en/items/7634321",
-          "trend": 19.24,
+          "trend": 19.21,
           "autoTags": [
             "shorts",
             "hood",
@@ -90367,7 +90296,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792664099,
           "boothSearch": "https://booth.pm/en/items/8830091",
-          "trend": 44.65,
+          "trend": 43.91,
           "autoTags": [
             "breasts",
             "leotard",
@@ -90469,7 +90398,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1766122356,
           "boothSearch": "https://booth.pm/en/items/7702023",
-          "trend": 6.59,
+          "trend": 6.57,
           "autoTags": [
             "breasts",
             "head_out_of_frame",
@@ -90534,7 +90463,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792071567,
           "boothSearch": "https://booth.pm/en/items/8542188",
-          "trend": 44.56,
+          "trend": 44.34,
           "autoTags": [
             "gloves",
             "male_focus",
@@ -90629,7 +90558,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1741766518,
           "boothSearch": "https://booth.pm/en/items/6675517",
-          "trend": 15.86,
+          "trend": 15.84,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -90680,7 +90609,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792071719,
           "boothSearch": "https://booth.pm/en/items/8731878",
-          "trend": 38.11,
+          "trend": 37.79,
           "autoTags": [
             "dress",
             "long_hair",
@@ -90754,7 +90683,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792055333,
           "boothSearch": "https://booth.pm/en/items/8570757",
-          "trend": 64.15,
+          "trend": 63.82,
           "autoTags": [
             "twintails",
             "long_hair",
@@ -90830,7 +90759,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1740968392,
           "boothSearch": "https://booth.pm/en/items/5792910",
-          "trend": 2.84,
+          "trend": 2.83,
           "autoTags": [
             "swimsuit",
             "tail",
@@ -90869,7 +90798,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1779618955,
           "boothSearch": "https://booth.pm/en/items/7752730",
-          "trend": 5.93,
+          "trend": 5.91,
           "autoTags": [
             "thighhighs",
             "ass",
@@ -90933,7 +90862,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785572425,
           "boothSearch": "https://booth.pm/en/items/8338573",
-          "trend": 2.93,
+          "trend": 2.92,
           "autoTags": [
             "animal_ears",
             "breasts",
@@ -91067,7 +90996,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789013075,
           "boothSearch": "https://booth.pm/en/items/8516197",
-          "trend": 27.79,
+          "trend": 27.66,
           "autoTags": [
             "thighhighs",
             "wings",
@@ -91118,7 +91047,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763878096,
           "boothSearch": "https://booth.pm/en/items/7636044",
-          "trend": 6.36,
+          "trend": 6.35,
           "autoTags": [
             "earmuffs",
             "skirt",
@@ -91154,7 +91083,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1721533581,
           "boothSearch": "https://booth.pm/en/items/5911204",
-          "trend": 7.5,
+          "trend": 7.49,
           "autoTags": [
             "jacket",
             "long_hair",
@@ -91201,7 +91130,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1717040857,
           "boothSearch": "https://booth.pm/en/items/4900333",
-          "trend": 0.58,
+          "trend": 0.57,
           "autoTags": [
             "long_hair",
             "twintails",
@@ -91273,7 +91202,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1714784296,
           "boothSearch": "https://booth.pm/en/items/5661914",
-          "trend": 5.48,
+          "trend": 5.47,
           "autoTags": [
             "animal_ears",
             "rabbit_ears",
@@ -91464,7 +91393,7 @@ const AVATAR_DATA = {
           "compatibleAvatars": [],
           "dateAdded": 1690378874,
           "boothSearch": "https://booth.pm/en/items/4893582",
-          "trend": 6.39,
+          "trend": 6.38,
           "autoTags": [
             "weapon",
             "gun",
@@ -91493,7 +91422,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785569721,
           "boothSearch": "https://booth.pm/en/items/8303190",
-          "trend": 4.49,
+          "trend": 4.47,
           "autoTags": [
             "eyepatch_bikini",
             "breasts",
@@ -91540,7 +91469,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780486290,
           "boothSearch": "https://booth.pm/en/items/7222700",
-          "trend": 9.6,
+          "trend": 9.59,
           "autoTags": [
             "tongue",
             "thighhighs",
@@ -91586,7 +91515,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1761966336,
           "boothSearch": "https://booth.pm/en/items/7547699",
-          "trend": 32.88,
+          "trend": 32.82,
           "autoTags": [
             "breasts",
             "braid",
@@ -91634,7 +91563,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1708130515,
           "boothSearch": "https://booth.pm/en/items/5472285",
-          "trend": 1.79,
+          "trend": 1.78,
           "autoTags": [
             "food",
             "twintails",
@@ -91756,7 +91685,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1715660311,
           "boothSearch": "https://booth.pm/en/items/5727129",
-          "trend": 7.77,
+          "trend": 7.76,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -91790,7 +91719,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1736299405,
           "boothSearch": "https://booth.pm/en/items/6431583",
-          "trend": 15.45,
+          "trend": 15.43,
           "autoTags": [
             "animal_ears",
             "gloves",
@@ -91866,7 +91795,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1731910437,
           "boothSearch": "https://booth.pm/en/items/5914541",
-          "trend": 3.42,
+          "trend": 3.41,
           "autoTags": [
             "weapon",
             "gun",
@@ -91910,7 +91839,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1707523706,
           "boothSearch": "https://booth.pm/en/items/5485641",
-          "trend": 20.72,
+          "trend": 20.7,
           "autoTags": [
             "eyepatch",
             "medical_eyepatch",
@@ -91962,7 +91891,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1765001759,
           "boothSearch": "https://booth.pm/en/items/6597034",
-          "trend": 5.74,
+          "trend": 5.73,
           "autoTags": [
             "navel",
             "breasts",
@@ -91989,7 +91918,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1719272429,
           "boothSearch": "https://booth.pm/en/items/5398952",
-          "trend": 10.06,
+          "trend": 10.05,
           "autoTags": [
             "animal_ears",
             "necktie",
@@ -92332,7 +92261,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1706613501,
           "boothSearch": "https://booth.pm/en/items/5456273",
-          "trend": 5.67,
+          "trend": 5.66,
           "autoTags": [
             "6+girls",
             "twin_braids",
@@ -92570,7 +92499,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1698113241,
           "boothSearch": "https://booth.pm/en/items/5196178",
-          "trend": 15.62,
+          "trend": 15.61,
           "autoTags": [
             "twintails",
             "cross",
@@ -92787,7 +92716,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1711071361,
           "boothSearch": "https://booth.pm/en/items/5523766",
-          "trend": 6.84,
+          "trend": 6.83,
           "autoTags": [
             "hat",
             "skirt",
@@ -93162,7 +93091,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1731913066,
           "boothSearch": "https://booth.pm/en/items/6110076",
-          "trend": 11.67,
+          "trend": 11.66,
           "autoTags": [
             "breasts",
             "large_breasts",
@@ -93192,7 +93121,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1689119003,
           "boothSearch": "https://booth.pm/en/items/4821445",
-          "trend": 2.07,
+          "trend": 2.06,
           "autoTags": [
             "long_hair",
             "maid",
@@ -93230,7 +93159,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1724651712,
           "boothSearch": "https://booth.pm/en/items/6013373",
-          "trend": 10.37,
+          "trend": 10.36,
           "autoTags": [
             "shirt",
             "jacket",
@@ -93635,7 +93564,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1698368276,
           "boothSearch": "https://booth.pm/en/items/5125737",
-          "trend": 6.79,
+          "trend": 6.78,
           "autoTags": [
             "jirai_kei",
             "clothing_cutout",
@@ -93686,7 +93615,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780486383,
           "boothSearch": "https://booth.pm/en/items/7946665",
-          "trend": 6.55,
+          "trend": 6.53,
           "autoTags": [
             "navel",
             "pants",
@@ -93837,7 +93766,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751946525,
           "boothSearch": "https://booth.pm/en/items/7132208",
-          "trend": 4.12,
+          "trend": 4.11,
           "autoTags": [
             "shirt",
             "hat",
@@ -93869,7 +93798,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780483266,
           "boothSearch": "https://booth.pm/en/items/7808359",
-          "trend": 7.2,
+          "trend": 7.19,
           "autoTags": [
             "animal_ears",
             "backpack",
@@ -93912,7 +93841,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1736079119,
           "boothSearch": "https://booth.pm/en/items/6425375",
-          "trend": 14.53,
+          "trend": 14.52,
           "autoTags": [
             "japanese_clothes",
             "long_hair",
@@ -93957,7 +93886,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756186755,
           "boothSearch": "https://booth.pm/en/items/7269732",
-          "trend": 9.82,
+          "trend": 9.8,
           "autoTags": [
             "dress",
             "heterochromia",
@@ -94008,7 +93937,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792602472,
           "boothSearch": "https://booth.pm/en/items/8614516",
-          "trend": 29.72,
+          "trend": 29.55,
           "autoTags": [
             "dress",
             "bow",
@@ -94127,7 +94056,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785569213,
           "boothSearch": "https://booth.pm/en/items/8228032",
-          "trend": 1.78,
+          "trend": 1.77,
           "autoTags": [
             "long_hair",
             "animal_ears",
@@ -94208,7 +94137,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792236016,
           "boothSearch": "https://booth.pm/en/items/8769578",
-          "trend": 32.08,
+          "trend": 31.78,
           "autoTags": [
             "twintails",
             "hat",
@@ -94250,7 +94179,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792639096,
           "boothSearch": "https://booth.pm/en/items/8993192",
-          "trend": 228.45,
+          "trend": 221.02,
           "autoTags": [
             "moon",
             "chinese_clothes",
@@ -94306,7 +94235,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760845000,
           "boothSearch": "https://booth.pm/en/items/7195911",
-          "trend": 25.24,
+          "trend": 25.21,
           "autoTags": [
             "japanese_clothes",
             "breasts",
@@ -94353,7 +94282,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791952868,
           "boothSearch": "https://booth.pm/en/items/8875799",
-          "trend": 94.51,
+          "trend": 93.16,
           "autoTags": [
             "character_name",
             "long_hair",
@@ -94393,7 +94322,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792671528,
           "boothSearch": "https://booth.pm/en/items/8240037",
-          "trend": 27.86,
+          "trend": 27.76,
           "autoTags": [
             "animal_ears",
             "hair_over_one_eye",
@@ -94465,7 +94394,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1706174689,
           "boothSearch": "https://booth.pm/en/items/5430833",
-          "trend": 5.25,
+          "trend": 5.24,
           "autoTags": [
             "skirt",
             "hat",
@@ -94598,7 +94527,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758859054,
           "boothSearch": "https://booth.pm/en/items/7042776",
-          "trend": 15.53,
+          "trend": 15.51,
           "autoTags": [
             "long_hair",
             "goggles_on_head",
@@ -94635,7 +94564,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1712016052,
           "boothSearch": "https://booth.pm/en/items/5623751",
-          "trend": 17.05,
+          "trend": 17.04,
           "autoTags": [
             "6+girls",
             "thighhighs",
@@ -94684,42 +94613,41 @@ const AVATAR_DATA = {
             "Shinra",
             "Sio"
           ],
-          "dateAdded": 1793777447,
+          "dateAdded": 1793777456,
           "boothSearch": "https://booth.pm/en/items/8613639",
-          "trend": 23.86,
+          "trend": 23.73,
           "autoTags": [
             "swimsuit",
-            "breasts",
-            "animal_ears",
             "bikini",
-            "hat",
-            "sarong",
+            "animal_ears",
             "long_hair",
+            "hat",
+            "breasts",
             "navel",
             "sunset",
             "outdoors",
-            "bracelet",
-            "jewelry",
-            "cleavage",
-            "cat_ears",
-            "ribbon",
-            "blurry_background",
-            "flower",
-            "hat_flower",
-            "large_breasts",
-            "thigh_strap",
             "ears_through_headwear",
-            "tree",
-            "choker",
-            "highleg",
+            "sarong",
             "standing",
-            "stomach",
-            "palm_tree",
-            "sun_hat",
-            "beach",
+            "ribbon",
             "sky",
+            "cleavage",
+            "stomach",
+            "blurry_background",
+            "cloud",
+            "medium_breasts",
+            "sun_hat",
+            "bare_shoulders",
+            "flower",
+            "beach",
+            "horse_ears",
+            "highleg",
             "highleg_bikini",
-            "ocean"
+            "tree",
+            "official_alternate_costume",
+            "thigh_strap",
+            "water",
+            "thigh_ribbon"
           ]
         },
         {
@@ -94740,7 +94668,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1707380703,
           "boothSearch": "https://booth.pm/en/items/5478672",
-          "trend": 4.96,
+          "trend": 4.95,
           "autoTags": [
             "animal_ears",
             "rabbit_ears",
@@ -94780,7 +94708,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780487328,
           "boothSearch": "https://booth.pm/en/items/7100742",
-          "trend": 20.25,
+          "trend": 20.22,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -94876,7 +94804,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1733986696,
           "boothSearch": "https://booth.pm/en/items/6194760",
-          "trend": 27.68,
+          "trend": 27.66,
           "autoTags": [
             "hat",
             "long_hair",
@@ -94986,35 +94914,27 @@ const AVATAR_DATA = {
             "Rurune",
             "Shinano"
           ],
-          "dateAdded": 1793777558,
+          "dateAdded": 1793777595,
           "boothSearch": "https://booth.pm/en/items/8661264",
-          "trend": 23.69,
+          "trend": 23.54,
           "autoTags": [
             "horns",
             "breasts",
             "wings",
             "demon_wings",
             "demon_horns",
-            "crown",
-            "tail",
-            "large_breasts",
             "long_hair",
+            "large_breasts",
+            "tail",
             "demon_tail",
-            "demon_girl",
             "outstretched_arms",
-            "toenails",
-            "long_sleeves",
-            "toenail_polish",
-            "toes",
-            "barefoot",
             "sitting",
-            "see-through",
-            "cleavage",
+            "demon_girl",
+            "long_sleeves",
+            "crown",
             "wariza",
-            "covered_navel",
-            "feet",
-            "nail_polish",
-            "collar"
+            "barefoot",
+            "cleavage"
           ]
         },
         {
@@ -95043,7 +94963,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1744684894,
           "boothSearch": "https://booth.pm/en/items/6612858",
-          "trend": 17.74,
+          "trend": 17.73,
           "autoTags": [
             "animal_ears",
             "twintails",
@@ -95218,7 +95138,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785575480,
           "boothSearch": "https://booth.pm/en/items/8501003",
-          "trend": 14.76,
+          "trend": 14.7,
           "autoTags": [
             "goggles",
             "sitting",
@@ -95264,7 +95184,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1783697633,
           "boothSearch": "https://booth.pm/en/items/8079010",
-          "trend": 27.26,
+          "trend": 27.19,
           "autoTags": [
             "overalls",
             "goggles",
@@ -95411,7 +95331,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792236210,
           "boothSearch": "https://booth.pm/en/items/8783592",
-          "trend": 30.22,
+          "trend": 29.93,
           "autoTags": [
             "japanese_clothes",
             "kimono",
@@ -95492,7 +95412,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763782924,
           "boothSearch": "https://booth.pm/en/items/7538081",
-          "trend": 28.98,
+          "trend": 28.93,
           "autoTags": [
             "flower",
             "rose",
@@ -95542,7 +95462,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792059199,
           "boothSearch": "https://booth.pm/en/items/8688655",
-          "trend": 48.97,
+          "trend": 48.63,
           "autoTags": [
             "sunglasses",
             "jewelry",
@@ -95818,7 +95738,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1754805184,
           "boothSearch": "https://booth.pm/en/items/7195061",
-          "trend": 20.75,
+          "trend": 20.72,
           "autoTags": [
             "breasts",
             "eyewear_on_head",
@@ -95872,7 +95792,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1704422763,
           "boothSearch": "https://booth.pm/en/items/5374094",
-          "trend": 13.96,
+          "trend": 13.95,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -96245,7 +96165,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1738465159,
           "boothSearch": "https://booth.pm/en/items/6542103",
-          "trend": 7.81,
+          "trend": 7.8,
           "autoTags": [
             "animal_ears",
             "shorts",
@@ -96335,7 +96255,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792666590,
           "boothSearch": "https://booth.pm/en/items/8265918",
-          "trend": 30.51,
+          "trend": 30.4,
           "autoTags": [
             "hat",
             "shirt",
@@ -96418,7 +96338,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792207169,
           "boothSearch": "https://booth.pm/en/items/8919954",
-          "trend": 20.65,
+          "trend": 20.26,
           "autoTags": [
             "breasts",
             "swimsuit",
@@ -96480,7 +96400,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789014423,
           "boothSearch": "https://booth.pm/en/items/8718181",
-          "trend": 19.44,
+          "trend": 19.28,
           "autoTags": [
             "tennis_racket",
             "racket",
@@ -96536,7 +96456,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760843181,
           "boothSearch": "https://booth.pm/en/items/7414326",
-          "trend": 44.5,
+          "trend": 44.43,
           "autoTags": [
             "headphones_around_neck",
             "headphones",
@@ -96586,7 +96506,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786090721,
           "boothSearch": "https://booth.pm/en/items/8248392",
-          "trend": 14.94,
+          "trend": 14.89,
           "autoTags": [
             "breasts",
             "pantyhose",
@@ -96634,7 +96554,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1720140176,
           "boothSearch": "https://booth.pm/en/items/5849570",
-          "trend": 3.59,
+          "trend": 3.58,
           "autoTags": [
             "navel_piercing",
             "long_hair",
@@ -96676,7 +96596,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1725704521,
           "boothSearch": "https://booth.pm/en/items/6023118",
-          "trend": 6.62,
+          "trend": 6.61,
           "autoTags": [
             "long_hair",
             "very_long_hair",
@@ -96715,7 +96635,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1727508536,
           "boothSearch": "https://booth.pm/en/items/6110958",
-          "trend": 30.69,
+          "trend": 30.67,
           "autoTags": [
             "skirt",
             "thighhighs",
@@ -96806,37 +96726,34 @@ const AVATAR_DATA = {
             "Rurune",
             "Shinano"
           ],
-          "dateAdded": 1793780215,
+          "dateAdded": 1793780278,
           "boothSearch": "https://booth.pm/en/items/8689023",
-          "trend": 24.07,
+          "trend": 23.9,
           "autoTags": [
-            "breasts",
             "rabbit_ears",
-            "leotard",
             "animal_ears",
             "pacifier",
+            "leotard",
+            "breasts",
             "twintails",
             "long_hair",
-            "playboy_bunny",
-            "cleavage",
-            "fake_animal_ears",
-            "detached_sleeves",
-            "thigh_strap",
             "barcode",
-            "strapless_leotard",
-            "maid_headdress",
-            "large_breasts",
-            "highleg_leotard",
+            "fake_animal_ears",
+            "cleavage",
+            "playboy_bunny",
+            "thigh_strap",
+            "detached_sleeves",
             "wings",
-            "strapless",
-            "highleg",
+            "medium_breasts",
+            "shrug_(clothing)",
+            "hair_ornament",
             "heart",
-            "very_long_hair",
+            "maid_headdress",
+            "strapless_leotard",
+            "highleg_leotard",
+            "highleg",
             "bandaid",
-            "long_sleeves",
-            "thigh_gap",
-            "sleeves_past_wrists",
-            "bow"
+            "very_long_hair"
           ]
         },
         {
@@ -96940,7 +96857,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785571832,
           "boothSearch": "https://booth.pm/en/items/8426582",
-          "trend": 84.85,
+          "trend": 84.51,
           "autoTags": [
             "skirt",
             "long_hair",
@@ -96999,34 +96916,37 @@ const AVATAR_DATA = {
             "Shinra",
             "Sio"
           ],
-          "dateAdded": 1793779947,
+          "dateAdded": 1793779959,
           "boothSearch": "https://booth.pm/en/items/8282137",
-          "trend": 27.5,
+          "trend": 27.4,
           "autoTags": [
             "animal_ears",
+            "bandaid_on_nose",
             "pants",
-            "breasts",
-            "sitting",
-            "jewelry",
-            "choker",
-            "cleavage",
-            "necklace",
+            "bandaid_on_face",
             "cross",
-            "glasses",
-            "tail",
-            "earrings",
+            "jewelry",
+            "sitting",
+            "breasts",
+            "necklace",
+            "choker",
+            "cross_necklace",
+            "bandaid",
+            "cleavage",
+            "torn_pants",
+            "cat",
+            "torn_clothes",
+            "cat_ears",
             "bare_shoulders",
-            "belt",
-            "long_sleeves",
-            "collarbone",
-            "medium_breasts",
-            "piercing",
-            "shirt",
-            "shoes",
-            "long_hair",
+            "crop_top",
             "denim",
-            "off_shoulder",
-            "jeans"
+            "tank_top",
+            "shirt",
+            "medium_breasts",
+            "jeans",
+            "medium_hair",
+            "long_sleeves",
+            "midriff"
           ]
         },
         {
@@ -97044,7 +96964,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789017777,
           "boothSearch": "https://booth.pm/en/items/6332168",
-          "trend": 4.43,
+          "trend": 4.42,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -97134,7 +97054,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791821212,
           "boothSearch": "https://booth.pm/en/items/8851858",
-          "trend": 121.76,
+          "trend": 120.13,
           "autoTags": [
             "weapon",
             "science_fiction",
@@ -97160,7 +97080,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786528375,
           "boothSearch": "https://booth.pm/en/items/8191176",
-          "trend": 14.84,
+          "trend": 14.79,
           "autoTags": [
             "long_hair",
             "animal_ears",
@@ -97489,7 +97409,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791821419,
           "boothSearch": "https://booth.pm/en/items/8852105",
-          "trend": 91.18,
+          "trend": 89.5,
           "autoTags": [
             "animal_ears",
             "pants",
@@ -97574,7 +97494,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756182883,
           "boothSearch": "https://booth.pm/en/items/7276679",
-          "trend": 25.6,
+          "trend": 25.56,
           "autoTags": [
             "twintails",
             "bodysuit",
@@ -97658,7 +97578,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1714346288,
           "boothSearch": "https://booth.pm/en/items/5684457",
-          "trend": 5.05,
+          "trend": 5.04,
           "autoTags": [
             "breasts",
             "jacket",
@@ -97772,7 +97692,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780484786,
           "boothSearch": "https://booth.pm/en/items/7506561",
-          "trend": 22.05,
+          "trend": 22.02,
           "autoTags": [
             "breasts",
             "multicolored_hair",
@@ -97824,7 +97744,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1719450310,
           "boothSearch": "https://booth.pm/en/items/5856019",
-          "trend": 5.31,
+          "trend": 5.3,
           "autoTags": [
             "animal_ears",
             "tattoo",
@@ -97910,7 +97830,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791823581,
           "boothSearch": "https://booth.pm/en/items/8928160",
-          "trend": 37.1,
+          "trend": 36.34,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -97962,7 +97882,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1716103342,
           "boothSearch": "https://booth.pm/en/items/5695247",
-          "trend": 3.35,
+          "trend": 3.34,
           "autoTags": [
             "sweater",
             "skirt",
@@ -98098,7 +98018,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1772252354,
           "boothSearch": "https://booth.pm/en/items/7719704",
-          "trend": 1.49,
+          "trend": 1.48,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -98268,7 +98188,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791819359,
           "boothSearch": "https://booth.pm/en/items/8883697",
-          "trend": 176.23,
+          "trend": 173.65,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -98315,7 +98235,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792671436,
           "boothSearch": "https://booth.pm/en/items/8541308",
-          "trend": 26.94,
+          "trend": 26.81,
           "autoTags": [
             "mask",
             "japanese_clothes",
@@ -98403,7 +98323,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791969132,
           "boothSearch": "https://booth.pm/en/items/8942700",
-          "trend": 36.31,
+          "trend": 35.51,
           "autoTags": [
             "thighhighs",
             "underwear",
@@ -98445,7 +98365,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792666976,
           "boothSearch": "https://booth.pm/en/items/8414658",
-          "trend": 30.51,
+          "trend": 30.39,
           "autoTags": [
             "halo",
             "wings",
@@ -98547,7 +98467,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791816668,
           "boothSearch": "https://booth.pm/en/items/8853669",
-          "trend": 263.23,
+          "trend": 259.85,
           "autoTags": [
             "skirt",
             "long_hair",
@@ -98594,7 +98514,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1759464935,
           "boothSearch": "https://booth.pm/en/items/6858596",
-          "trend": 5.21,
+          "trend": 5.2,
           "autoTags": [
             "twintails",
             "short_hair",
@@ -98638,7 +98558,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753072995,
           "boothSearch": "https://booth.pm/en/items/7163860",
-          "trend": 10.07,
+          "trend": 10.06,
           "autoTags": [
             "long_hair",
             "jacket",
@@ -98680,7 +98600,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1719838644,
           "boothSearch": "https://booth.pm/en/items/5858367",
-          "trend": 7.87,
+          "trend": 7.86,
           "autoTags": [
             "horns",
             "thighhighs",
@@ -98728,7 +98648,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760846249,
           "boothSearch": "https://booth.pm/en/items/7514937",
-          "trend": 12.04,
+          "trend": 12.02,
           "autoTags": [
             "underwear",
             "pantyhose",
@@ -98767,7 +98687,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1727509128,
           "boothSearch": "https://booth.pm/en/items/6097769",
-          "trend": 10.72,
+          "trend": 10.71,
           "autoTags": [
             "bandaid_on_nose",
             "bandaid_on_face",
@@ -98803,7 +98723,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1740969716,
           "boothSearch": "https://booth.pm/en/items/6556387",
-          "trend": 3.37,
+          "trend": 3.36,
           "autoTags": [
             "bow",
             "long_hair",
@@ -98946,7 +98866,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1685800723,
           "boothSearch": "https://booth.pm/en/items/4826392",
-          "trend": 4.4,
+          "trend": 4.39,
           "autoTags": [
             "weapon",
             "long_hair",
@@ -99076,7 +98996,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792578213,
           "boothSearch": "https://booth.pm/en/items/7899921",
-          "trend": 34.67,
+          "trend": 34.59,
           "autoTags": [
             "bandaid_on_face",
             "bandaid_on_nose",
@@ -99150,7 +99070,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756877731,
           "boothSearch": "https://booth.pm/en/items/6693314",
-          "trend": 8.73,
+          "trend": 8.72,
           "autoTags": [
             "breasts",
             "horns",
@@ -99200,7 +99120,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1734501288,
           "boothSearch": "https://booth.pm/en/items/6307927",
-          "trend": 24.17,
+          "trend": 24.15,
           "autoTags": [
             "breasts",
             "large_breasts",
@@ -99245,31 +99165,26 @@ const AVATAR_DATA = {
             "Shinano",
             "mint"
           ],
-          "dateAdded": 1793778614,
+          "dateAdded": 1793778661,
           "boothSearch": "https://booth.pm/en/items/8538327",
-          "trend": 27.41,
+          "trend": 27.28,
           "autoTags": [
-            "constellation",
-            "dress",
-            "star_(sky)",
             "long_hair",
+            "dress",
             "thighhighs",
-            "hair_ornament",
-            "collar",
-            "sky",
             "star_(symbol)",
-            "twintails",
-            "thigh_strap",
-            "pale_skin",
-            "night",
             "bow",
-            "starry_sky",
-            "crescent",
-            "crescent_moon",
+            "pale_skin",
             "long_sleeves",
+            "hair_ornament",
+            "star_(sky)",
+            "constellation",
+            "sky",
             "off_shoulder",
-            "night_sky",
-            "belt"
+            "choker",
+            "collar",
+            "night",
+            "sleeves_past_wrists"
           ]
         },
         {
@@ -99285,7 +99200,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785570052,
           "boothSearch": "https://booth.pm/en/items/7169449",
-          "trend": 12.13,
+          "trend": 12.11,
           "autoTags": [
             "skirt",
             "necktie",
@@ -99370,7 +99285,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792034948,
           "boothSearch": "https://booth.pm/en/items/8243183",
-          "trend": 73.8,
+          "trend": 73.56,
           "autoTags": [
             "breasts",
             "swimsuit",
@@ -99515,7 +99430,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1764999701,
           "boothSearch": "https://booth.pm/en/items/7413241",
-          "trend": 4.15,
+          "trend": 4.14,
           "autoTags": [
             "animal_ears",
             "long_hair",
@@ -99552,7 +99467,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791602308,
           "boothSearch": "https://booth.pm/en/items/8745903",
-          "trend": 26.47,
+          "trend": 26.25,
           "autoTags": [
             "gloves",
             "breasts",
@@ -99625,7 +99540,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792668180,
           "boothSearch": "https://booth.pm/en/items/8267226",
-          "trend": 30.4,
+          "trend": 30.3,
           "autoTags": [
             "weapon",
             "sitting",
@@ -99682,7 +99597,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760078534,
           "boothSearch": "https://booth.pm/en/items/7475726",
-          "trend": 6.7,
+          "trend": 6.69,
           "autoTags": [
             "thighhighs",
             "breasts",
@@ -99755,7 +99670,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791970797,
           "boothSearch": "https://booth.pm/en/items/8928601",
-          "trend": 41.57,
+          "trend": 40.78,
           "autoTags": [
             "latex",
             "latex_bodysuit",
@@ -99818,7 +99733,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791956084,
           "boothSearch": "https://booth.pm/en/items/8857545",
-          "trend": 81.76,
+          "trend": 80.69,
           "autoTags": [
             "ring",
             "glasses",
@@ -99861,26 +99776,26 @@ const AVATAR_DATA = {
             "Rurune",
             "Shinano"
           ],
-          "dateAdded": 1793778139,
+          "dateAdded": 1793778148,
           "boothSearch": "https://booth.pm/en/items/7899654",
-          "trend": 26.63,
+          "trend": 26.57,
           "autoTags": [
             "long_hair",
             "very_long_hair",
-            "breasts",
             "braid",
-            "slippers",
-            "shorts",
             "kneeling",
+            "thighhighs",
+            "shorts",
+            "breasts",
+            "slippers",
             "character_name",
-            "cleavage",
             "camisole",
-            "long_sleeves",
+            "shirt",
             "sweater",
-            ";o",
-            "collarbone",
-            "medium_breasts",
-            "hair_between_eyes"
+            "long_sleeves",
+            "shoes",
+            "cleavage",
+            "jacket"
           ]
         },
         {
@@ -99901,7 +99816,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1748826444,
           "boothSearch": "https://booth.pm/en/items/6857673",
-          "trend": 9.5,
+          "trend": 9.49,
           "autoTags": [
             "lying",
             "long_hair",
@@ -99987,7 +99902,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791815733,
           "boothSearch": "https://booth.pm/en/items/8952285",
-          "trend": 283.41,
+          "trend": 277.11,
           "autoTags": [
             "breasts",
             "dress",
@@ -100095,7 +100010,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789014167,
           "boothSearch": "https://booth.pm/en/items/7151500",
-          "trend": 5.13,
+          "trend": 5.12,
           "autoTags": [
             "eyewear_on_head",
             "animal_ears",
@@ -100223,7 +100138,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791820203,
           "boothSearch": "https://booth.pm/en/items/8954283",
-          "trend": 81.34,
+          "trend": 79.46,
           "autoTags": [
             "breasts",
             "dress",
@@ -100270,7 +100185,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760846605,
           "boothSearch": "https://booth.pm/en/items/6722495",
-          "trend": 20.43,
+          "trend": 20.41,
           "autoTags": [
             "breasts",
             "tail",
@@ -100369,7 +100284,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1734768564,
           "boothSearch": "https://booth.pm/en/items/6302265",
-          "trend": 12.64,
+          "trend": 12.63,
           "autoTags": [
             "breasts",
             "glasses",
@@ -100489,7 +100404,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1700437332,
           "boothSearch": "https://booth.pm/en/items/5207437",
-          "trend": 8.83,
+          "trend": 8.82,
           "autoTags": [
             "animal_ears",
             "thighhighs",
@@ -100593,7 +100508,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758361914,
           "boothSearch": "https://booth.pm/en/items/7409855",
-          "trend": 12.4,
+          "trend": 12.38,
           "autoTags": [
             "gloves",
             "long_hair",
@@ -100635,7 +100550,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792235617,
           "boothSearch": "https://booth.pm/en/items/8324117",
-          "trend": 37.05,
+          "trend": 36.92,
           "autoTags": [
             "dress",
             "long_hair",
@@ -100708,7 +100623,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1783699997,
           "boothSearch": "https://booth.pm/en/items/8183560",
-          "trend": 22.83,
+          "trend": 22.76,
           "autoTags": [
             "breasts",
             "large_breasts",
@@ -100743,7 +100658,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760077846,
           "boothSearch": "https://booth.pm/en/items/6623606",
-          "trend": 25.26,
+          "trend": 25.24,
           "autoTags": [
             "animal_ears",
             "wings",
@@ -100883,7 +100798,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753943467,
           "boothSearch": "https://booth.pm/en/items/7198011",
-          "trend": 9.81,
+          "trend": 9.79,
           "autoTags": [
             "breasts",
             "horns",
@@ -100918,7 +100833,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1744681333,
           "boothSearch": "https://booth.pm/en/items/6590533",
-          "trend": 13.16,
+          "trend": 13.14,
           "autoTags": [
             "male_focus",
             "coat",
@@ -100995,7 +100910,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1768018843,
           "boothSearch": "https://booth.pm/en/items/6744059",
-          "trend": 21.73,
+          "trend": 21.7,
           "autoTags": [
             "long_hair",
             "breasts",
@@ -101036,7 +100951,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791819453,
           "boothSearch": "https://booth.pm/en/items/8831909",
-          "trend": 159.32,
+          "trend": 157.39,
           "autoTags": [
             "skirt",
             "hair_over_one_eye",
@@ -101075,7 +100990,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1748827997,
           "boothSearch": "https://booth.pm/en/items/6902147",
-          "trend": 11.63,
+          "trend": 11.62,
           "autoTags": [
             "hat",
             "long_hair",
@@ -101114,7 +101029,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758367426,
           "boothSearch": "https://booth.pm/en/items/6033509",
-          "trend": 23.59,
+          "trend": 23.57,
           "autoTags": [
             "boots",
             "qr_code",
@@ -101161,7 +101076,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1749870319,
           "boothSearch": "https://booth.pm/en/items/6721544",
-          "trend": 36.07,
+          "trend": 36.03,
           "autoTags": [
             "hood",
             "bow",
@@ -101244,7 +101159,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1704268698,
           "boothSearch": "https://booth.pm/en/items/5381043",
-          "trend": 14.54,
+          "trend": 14.53,
           "autoTags": [
             "skirt",
             "long_hair",
@@ -101298,7 +101213,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791981644,
           "boothSearch": "https://booth.pm/en/items/8815195",
-          "trend": 62.28,
+          "trend": 61.58,
           "autoTags": [
             "dress",
             "glasses",
@@ -101357,7 +101272,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792058722,
           "boothSearch": "https://booth.pm/en/items/8286345",
-          "trend": 58.22,
+          "trend": 58.02,
           "autoTags": [
             "shorts",
             "long_hair",
@@ -101422,7 +101337,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791955795,
           "boothSearch": "https://booth.pm/en/items/8514906",
-          "trend": 110.76,
+          "trend": 110.26,
           "autoTags": [
             "shorts",
             "long_hair",
@@ -101511,7 +101426,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1729669564,
           "boothSearch": "https://booth.pm/en/items/6134320",
-          "trend": 11.1,
+          "trend": 11.09,
           "autoTags": [
             "tail",
             "demon_tail",
@@ -101557,7 +101472,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792639827,
           "boothSearch": "https://booth.pm/en/items/8922005",
-          "trend": 100.16,
+          "trend": 97.76,
           "autoTags": [
             "skirt",
             "animal_ears",
@@ -101697,7 +101612,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1720410710,
           "boothSearch": "https://booth.pm/en/items/5073427",
-          "trend": 1.34,
+          "trend": 1.33,
           "autoTags": [
             "denim",
             "jeans",
@@ -101755,7 +101670,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792574976,
           "boothSearch": "https://booth.pm/en/items/8596526",
-          "trend": 31.07,
+          "trend": 30.9,
           "autoTags": [
             "jewelry",
             "long_hair",
@@ -101793,7 +101708,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791817315,
           "boothSearch": "https://booth.pm/en/items/8900020",
-          "trend": 173.1,
+          "trend": 170.36,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -101842,7 +101757,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753944288,
           "boothSearch": "https://booth.pm/en/items/7220960",
-          "trend": 26.82,
+          "trend": 26.78,
           "autoTags": [
             "animal_ears",
             "breasts",
@@ -101911,7 +101826,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1740967811,
           "boothSearch": "https://booth.pm/en/items/6395464",
-          "trend": 7.36,
+          "trend": 7.35,
           "autoTags": [
             "long_hair",
             "dress",
@@ -101954,7 +101869,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792574056,
           "boothSearch": "https://booth.pm/en/items/7567561",
-          "trend": 38.03,
+          "trend": 37.96,
           "autoTags": [
             "bug",
             "butterfly",
@@ -101998,7 +101913,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1711512828,
           "boothSearch": "https://booth.pm/en/items/5552272",
-          "trend": 3.52,
+          "trend": 3.51,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -102043,7 +101958,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763875952,
           "boothSearch": "https://booth.pm/en/items/7644162",
-          "trend": 27.26,
+          "trend": 27.21,
           "autoTags": [
             "veil",
             "butterfly",
@@ -102094,7 +102009,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791981068,
           "boothSearch": "https://booth.pm/en/items/8664306",
-          "trend": 73.45,
+          "trend": 72.97,
           "autoTags": [
             "long_hair",
             "nun",
@@ -102172,7 +102087,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756876352,
           "boothSearch": "https://booth.pm/en/items/6844894",
-          "trend": 2.87,
+          "trend": 2.86,
           "autoTags": [
             "jester_cap",
             "hat",
@@ -102265,7 +102180,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763781827,
           "boothSearch": "https://booth.pm/en/items/7559681",
-          "trend": 15.73,
+          "trend": 15.71,
           "autoTags": [
             "wings",
             "breasts",
@@ -102311,7 +102226,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1754804870,
           "boothSearch": "https://booth.pm/en/items/6415336",
-          "trend": 12.5,
+          "trend": 12.48,
           "autoTags": [
             "skirt",
             "long_hair",
@@ -102366,7 +102281,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792058818,
           "boothSearch": "https://booth.pm/en/items/8596548",
-          "trend": 54.07,
+          "trend": 53.78,
           "autoTags": [
             "multicolored_hair",
             "tongue_out",
@@ -102431,7 +102346,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791602588,
           "boothSearch": "https://booth.pm/en/items/8701824",
-          "trend": 40.04,
+          "trend": 39.75,
           "autoTags": [
             "dress",
             "long_hair",
@@ -102468,7 +102383,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791970072,
           "boothSearch": "https://booth.pm/en/items/8820693",
-          "trend": 84.09,
+          "trend": 83.13,
           "autoTags": [
             "animal_ears",
             "leash",
@@ -102518,7 +102433,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756187191,
           "boothSearch": "https://booth.pm/en/items/7305761",
-          "trend": 6.46,
+          "trend": 6.45,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -102568,7 +102483,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760078902,
           "boothSearch": "https://booth.pm/en/items/7492609",
-          "trend": 5.24,
+          "trend": 5.23,
           "autoTags": [
             "breasts",
             "cleavage",
@@ -102598,7 +102513,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760845730,
           "boothSearch": "https://booth.pm/en/items/7280369",
-          "trend": 5.15,
+          "trend": 5.14,
           "autoTags": [
             "breasts",
             "heterochromia",
@@ -102641,7 +102556,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791823469,
           "boothSearch": "https://booth.pm/en/items/8951962",
-          "trend": 61.02,
+          "trend": 59.67,
           "autoTags": [
             "breasts",
             "heterochromia",
@@ -102914,7 +102829,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792234974,
           "boothSearch": "https://booth.pm/en/items/8664382",
-          "trend": 35.36,
+          "trend": 35.13,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -102982,7 +102897,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753942163,
           "boothSearch": "https://booth.pm/en/items/6282679",
-          "trend": 5.34,
+          "trend": 5.33,
           "autoTags": [
             "glasses",
             "thighhighs",
@@ -103026,7 +102941,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791948741,
           "boothSearch": "https://booth.pm/en/items/8797527",
-          "trend": 124.51,
+          "trend": 123.26,
           "autoTags": [
             "long_hair",
             "hat",
@@ -103074,7 +102989,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753068491,
           "boothSearch": "https://booth.pm/en/items/7117394",
-          "trend": 26.3,
+          "trend": 26.26,
           "autoTags": [
             "swimsuit",
             "breasts",
@@ -103116,7 +103031,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792059651,
           "boothSearch": "https://booth.pm/en/items/8543522",
-          "trend": 53.55,
+          "trend": 53.3,
           "autoTags": [
             "animal_ears",
             "breasts",
@@ -103174,7 +103089,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1748824608,
           "boothSearch": "https://booth.pm/en/items/6920741",
-          "trend": 20.85,
+          "trend": 20.83,
           "autoTags": [
             "skirt",
             "long_hair",
@@ -103229,7 +103144,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789015087,
           "boothSearch": "https://booth.pm/en/items/8711279",
-          "trend": 20.16,
+          "trend": 20.0,
           "autoTags": [
             "long_hair",
             "dress",
@@ -103270,7 +103185,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1736299829,
           "boothSearch": "https://booth.pm/en/items/5824072",
-          "trend": 6.34,
+          "trend": 6.33,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -103307,7 +103222,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763877271,
           "boothSearch": "https://booth.pm/en/items/7647988",
-          "trend": 18.37,
+          "trend": 18.33,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -103358,7 +103273,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792060085,
           "boothSearch": "https://booth.pm/en/items/8646853",
-          "trend": 49.78,
+          "trend": 49.47,
           "autoTags": [
             "chocolate_on_body",
             "food_on_body",
@@ -103403,7 +103318,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1723352520,
           "boothSearch": "https://booth.pm/en/items/5978904",
-          "trend": 3.82,
+          "trend": 3.81,
           "autoTags": [
             "dress",
             "twin_braids",
@@ -103490,7 +103405,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785572727,
           "boothSearch": "https://booth.pm/en/items/6721847",
-          "trend": 8.77,
+          "trend": 8.76,
           "autoTags": [
             "long_hair",
             "breasts",
@@ -103553,7 +103468,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792030438,
           "boothSearch": "https://booth.pm/en/items/8865757",
-          "trend": 51.53,
+          "trend": 50.84,
           "autoTags": [
             "animal_ears",
             "pantyhose",
@@ -103612,7 +103527,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1748827832,
           "boothSearch": "https://booth.pm/en/items/6971758",
-          "trend": 34.89,
+          "trend": 34.85,
           "autoTags": [
             "chinese_clothes",
             "breasts",
@@ -103692,7 +103607,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756180227,
           "boothSearch": "https://booth.pm/en/items/6618690",
-          "trend": 10.96,
+          "trend": 10.95,
           "autoTags": [
             "twintails",
             "earmuffs",
@@ -103777,7 +103692,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756876057,
           "boothSearch": "https://booth.pm/en/items/7176385",
-          "trend": 10.39,
+          "trend": 10.38,
           "autoTags": [
             "medical_eyepatch",
             "eyepatch",
@@ -103824,7 +103739,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1740964519,
           "boothSearch": "https://booth.pm/en/items/5833021",
-          "trend": 3.11,
+          "trend": 3.1,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -103874,7 +103789,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792071289,
           "boothSearch": "https://booth.pm/en/items/8818389",
-          "trend": 31.17,
+          "trend": 30.73,
           "autoTags": [
             "gloves",
             "animal_ears",
@@ -103940,7 +103855,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1743475488,
           "boothSearch": "https://booth.pm/en/items/6663684",
-          "trend": 21.2,
+          "trend": 21.18,
           "autoTags": [
             "twintails",
             "long_hair",
@@ -103991,7 +103906,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751095244,
           "boothSearch": "https://booth.pm/en/items/6828940",
-          "trend": 10.05,
+          "trend": 10.04,
           "autoTags": [
             "outdoors",
             "hat",
@@ -104051,7 +103966,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792059464,
           "boothSearch": "https://booth.pm/en/items/8652654",
-          "trend": 54.62,
+          "trend": 54.27,
           "autoTags": [
             "bear_ears",
             "doughnut",
@@ -104107,7 +104022,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1765000749,
           "boothSearch": "https://booth.pm/en/items/7678165",
-          "trend": 6.27,
+          "trend": 6.26,
           "autoTags": [
             "pants",
             "long_hair",
@@ -104156,7 +104071,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1731912920,
           "boothSearch": "https://booth.pm/en/items/6218827",
-          "trend": 8.01,
+          "trend": 8.0,
           "autoTags": [
             "dress",
             "jacket",
@@ -104253,7 +104168,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1733654495,
           "boothSearch": "https://booth.pm/en/items/6335191",
-          "trend": 7.81,
+          "trend": 7.8,
           "autoTags": [
             "animal_ears",
             "jacket",
@@ -104313,7 +104228,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791819403,
           "boothSearch": "https://booth.pm/en/items/8853422",
-          "trend": 192.93,
+          "trend": 190.44,
           "autoTags": [
             "weapon",
             "holding_weapon",
@@ -104362,7 +104277,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756877239,
           "boothSearch": "https://booth.pm/en/items/7236196",
-          "trend": 23.8,
+          "trend": 23.77,
           "autoTags": [
             "eyepatch",
             "breasts",
@@ -104432,7 +104347,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792065645,
           "boothSearch": "https://booth.pm/en/items/8538387",
-          "trend": 46.49,
+          "trend": 46.27,
           "autoTags": [
             "animal_ears",
             "clothes_around_waist",
@@ -104521,7 +104436,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792060468,
           "boothSearch": "https://booth.pm/en/items/8775390",
-          "trend": 42.29,
+          "trend": 41.9,
           "autoTags": [
             "breasts",
             "animal_print",
@@ -104590,7 +104505,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792639988,
           "boothSearch": "https://booth.pm/en/items/8843718",
-          "trend": 58.77,
+          "trend": 56.87,
           "autoTags": [
             "breasts",
             "horns",
@@ -104672,45 +104587,33 @@ const AVATAR_DATA = {
             "Milltina",
             "Shinano"
           ],
-          "dateAdded": 1793779724,
+          "dateAdded": 1793779734,
           "boothSearch": "https://booth.pm/en/items/8739837",
-          "trend": 22.27,
+          "trend": 22.08,
           "autoTags": [
             "breasts",
             "skirt",
             "thighhighs",
-            "shirt",
-            "underwear",
             "animal_ears",
-            "bear_ears",
+            "shirt",
             "streaked_hair",
-            "glasses",
+            "bear_ears",
             "multicolored_hair",
-            "choker",
-            "bra",
-            "garter_straps",
             "pencil_skirt",
             "large_breasts",
-            "long_hair",
-            "bear_girl",
+            "garter_straps",
+            "choker",
             "twintails",
-            "hair_ornament",
-            "panties",
-            "collared_shirt",
-            "see-through",
+            "long_hair",
+            "cleavage",
+            "glasses",
+            "bear_girl",
             "sitting",
+            "collared_shirt",
+            "bra",
+            "underwear",
             "short_sleeves",
-            "ribbon",
-            "nail_polish",
-            "braid",
-            "bra_visible_through_clothes",
-            "hair_ribbon",
-            "miniskirt",
-            "collarbone",
-            "thighs",
-            "see-through_shirt",
-            "character_name",
-            "semi-rimless_eyewear"
+            "shirt_tucked_in"
           ]
         },
         {
@@ -104741,7 +104644,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780486224,
           "boothSearch": "https://booth.pm/en/items/7857707",
-          "trend": 4.27,
+          "trend": 4.26,
           "autoTags": [
             "breasts",
             "jacket",
@@ -104792,7 +104695,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1765001119,
           "boothSearch": "https://booth.pm/en/items/7640274",
-          "trend": 19.93,
+          "trend": 19.9,
           "autoTags": [
             "hat",
             "long_hair",
@@ -104887,7 +104790,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1712107237,
           "boothSearch": "https://booth.pm/en/items/5569304",
-          "trend": 3.11,
+          "trend": 3.1,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -104959,7 +104862,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786090666,
           "boothSearch": "https://booth.pm/en/items/8544451",
-          "trend": 56.42,
+          "trend": 56.15,
           "autoTags": [
             "cow_print",
             "animal_print",
@@ -105037,7 +104940,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1754806057,
           "boothSearch": "https://booth.pm/en/items/7099641",
-          "trend": 14.65,
+          "trend": 14.63,
           "autoTags": [
             "animal_ears",
             "long_hair",
@@ -105086,7 +104989,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753944215,
           "boothSearch": "https://booth.pm/en/items/7136709",
-          "trend": 2.79,
+          "trend": 2.78,
           "autoTags": [
             "dress",
             "short_hair",
@@ -105121,7 +105024,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792664682,
           "boothSearch": "https://booth.pm/en/items/7717360",
-          "trend": 53.94,
+          "trend": 53.83,
           "autoTags": [
             "cat",
             "closed_eyes",
@@ -105155,7 +105058,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1740028945,
           "boothSearch": "https://booth.pm/en/items/6445027",
-          "trend": 4.55,
+          "trend": 4.54,
           "autoTags": [
             "hat",
             "gloves",
@@ -105195,7 +105098,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1768019389,
           "boothSearch": "https://booth.pm/en/items/7696246",
-          "trend": 21.18,
+          "trend": 21.14,
           "autoTags": [
             "skirt",
             "animal_ears",
@@ -105238,7 +105141,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1749871638,
           "boothSearch": "https://booth.pm/en/items/7012162",
-          "trend": 25.17,
+          "trend": 25.14,
           "autoTags": [
             "hat",
             "dress",
@@ -105282,7 +105185,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1724135691,
           "boothSearch": "https://booth.pm/en/items/6010473",
-          "trend": 21.77,
+          "trend": 21.75,
           "autoTags": [
             "sleeves_past_wrists",
             "twintails",
@@ -105329,7 +105232,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1727508758,
           "boothSearch": "https://booth.pm/en/items/6103527",
-          "trend": 14.52,
+          "trend": 14.5,
           "autoTags": [
             "dress",
             "twintails",
@@ -105474,7 +105377,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785571356,
           "boothSearch": "https://booth.pm/en/items/8436194",
-          "trend": 57.75,
+          "trend": 57.52,
           "autoTags": [
             "swimsuit",
             "breasts",
@@ -105546,7 +105449,7 @@ const AVATAR_DATA = {
           "compatibleAvatars": [],
           "dateAdded": 1783446944,
           "boothSearch": "https://booth.pm/en/items/6500276",
-          "trend": 8.44,
+          "trend": 8.43,
           "autoTags": [
             "weapon",
             "lolita_fashion",
@@ -105616,7 +105519,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792666319,
           "boothSearch": "https://booth.pm/en/items/7832878",
-          "trend": 31.87,
+          "trend": 31.81,
           "autoTags": [
             "hat",
             "short_hair",
@@ -105855,7 +105758,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792574654,
           "boothSearch": "https://booth.pm/en/items/8842349",
-          "trend": 25.54,
+          "trend": 25.22,
           "autoTags": [
             "piercing",
             "eyepatch",
@@ -105918,7 +105821,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1764998672,
           "boothSearch": "https://booth.pm/en/items/7514492",
-          "trend": 14.78,
+          "trend": 14.75,
           "autoTags": [
             "glasses",
             "male_focus",
@@ -105966,7 +105869,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792577321,
           "boothSearch": "https://booth.pm/en/items/8073042",
-          "trend": 35.54,
+          "trend": 35.44,
           "autoTags": [
             "animal_ears",
             "gloves",
@@ -106014,7 +105917,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756875978,
           "boothSearch": "https://booth.pm/en/items/7322062",
-          "trend": 3.69,
+          "trend": 3.68,
           "autoTags": [
             "breasts",
             "swimsuit",
@@ -106063,7 +105966,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753072505,
           "boothSearch": "https://booth.pm/en/items/7163499",
-          "trend": 5.13,
+          "trend": 5.12,
           "autoTags": [
             "swimsuit",
             "breasts",
@@ -106112,7 +106015,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1735289038,
           "boothSearch": "https://booth.pm/en/items/6389276",
-          "trend": 2.69,
+          "trend": 2.68,
           "autoTags": [
             "breasts",
             "v",
@@ -106158,41 +106061,38 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano"
           ],
-          "dateAdded": 1793778833,
+          "dateAdded": 1793778850,
           "boothSearch": "https://booth.pm/en/items/8235187",
-          "trend": 27.32,
+          "trend": 27.23,
           "autoTags": [
             "breasts",
+            "cow_print",
             "horns",
+            "animal_print",
+            "cow_ears",
             "animal_ears",
             "long_hair",
             "leotard",
-            "animal_print",
-            "cow_print",
-            "cow_ears",
-            "large_breasts",
-            "multicolored_hair",
-            "heterochromia",
-            "ear_tag",
             "bell",
+            "multicolored_hair",
+            "large_breasts",
             "cow_horns",
-            "covered_navel",
-            "very_long_hair",
-            "cow_girl",
-            "highleg",
-            "highleg_leotard",
-            "thigh_strap",
-            "see-through",
-            "cowbell",
-            "heart",
-            "bare_shoulders",
             "year_of_the_ox",
-            "streaked_hair",
-            "2021",
-            "gloves",
-            "bridal_gauntlets",
+            "cow_girl",
             "neck_bell",
-            "choker"
+            "cowbell",
+            "ear_tag",
+            "2021",
+            "very_long_hair",
+            "heart",
+            "thigh_strap",
+            "chinese_zodiac",
+            "collar",
+            "gloves",
+            "streaked_hair",
+            "covered_navel",
+            "see-through",
+            "new_year"
           ]
         },
         {
@@ -106223,7 +106123,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753067768,
           "boothSearch": "https://booth.pm/en/items/7192364",
-          "trend": 42.35,
+          "trend": 42.29,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -106290,7 +106190,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1711249621,
           "boothSearch": "https://booth.pm/en/items/5517741",
-          "trend": 12.87,
+          "trend": 12.86,
           "autoTags": [
             "skirt",
             "twintails",
@@ -106378,7 +106278,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791975359,
           "boothSearch": "https://booth.pm/en/items/8761569",
-          "trend": 70.43,
+          "trend": 69.77,
           "autoTags": [
             "animal_ears",
             "holding",
@@ -106442,7 +106342,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792670059,
           "boothSearch": "https://booth.pm/en/items/7746556",
-          "trend": 29.63,
+          "trend": 29.57,
           "autoTags": [
             "weapon",
             "mask",
@@ -106499,7 +106399,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1721025054,
           "boothSearch": "https://booth.pm/en/items/5879794",
-          "trend": 22.77,
+          "trend": 22.75,
           "autoTags": [
             "long_hair",
             "ribbon",
@@ -106571,7 +106471,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1793776757,
           "boothSearch": "https://booth.pm/en/items/8545401",
-          "trend": 18.48,
+          "trend": 18.16,
           "autoTags": [
             "furry",
             "animal_ears",
@@ -106709,7 +106609,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792670876,
           "boothSearch": "https://booth.pm/en/items/7944162",
-          "trend": 29.32,
+          "trend": 29.25,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -106763,7 +106663,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792035455,
           "boothSearch": "https://booth.pm/en/items/8487148",
-          "trend": 67.36,
+          "trend": 67.07,
           "autoTags": [
             "heart-shaped_eyewear",
             "breasts",
@@ -106849,7 +106749,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792061439,
           "boothSearch": "https://booth.pm/en/items/8636726",
-          "trend": 46.79,
+          "trend": 46.51,
           "autoTags": [
             "wings",
             "thighhighs",
@@ -106903,7 +106803,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791821721,
           "boothSearch": "https://booth.pm/en/items/8818883",
-          "trend": 134.67,
+          "trend": 133.18,
           "autoTags": [
             "chewing_gum",
             "skirt",
@@ -106983,7 +106883,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1712889803,
           "boothSearch": "https://booth.pm/en/items/5378679",
-          "trend": 9.88,
+          "trend": 9.87,
           "autoTags": [
             "scarf",
             "mittens",
@@ -107039,7 +106939,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1714005744,
           "boothSearch": "https://booth.pm/en/items/5561261",
-          "trend": 4.69,
+          "trend": 4.68,
           "autoTags": [
             "tentacles",
             "tentacle_sex",
@@ -107103,7 +107003,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792061172,
           "boothSearch": "https://booth.pm/en/items/8568055",
-          "trend": 50.2,
+          "trend": 49.94,
           "autoTags": [
             "necktie",
             "shirt",
@@ -107179,7 +107079,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751091836,
           "boothSearch": "https://booth.pm/en/items/7031603",
-          "trend": 20.76,
+          "trend": 20.74,
           "autoTags": [
             "heart-shaped_eyewear",
             "skirt",
@@ -107253,7 +107153,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756876295,
           "boothSearch": "https://booth.pm/en/items/7323615",
-          "trend": 13.12,
+          "trend": 13.1,
           "autoTags": [
             "long_hair",
             "twintails",
@@ -107292,7 +107192,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1708303515,
           "boothSearch": "https://booth.pm/en/items/5498573",
-          "trend": 2.85,
+          "trend": 2.84,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -107330,7 +107230,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1712887806,
           "boothSearch": "https://booth.pm/en/items/5638932",
-          "trend": 7.12,
+          "trend": 7.11,
           "autoTags": [
             "stuffed_toy",
             "stuffed_animal",
@@ -107428,7 +107328,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791820138,
           "boothSearch": "https://booth.pm/en/items/8860773",
-          "trend": 83.63,
+          "trend": 81.79,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -107474,7 +107374,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792602568,
           "boothSearch": "https://booth.pm/en/items/8589350",
-          "trend": 29.16,
+          "trend": 29.01,
           "autoTags": [
             "skirt",
             "jewelry",
@@ -107526,7 +107426,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786090029,
           "boothSearch": "https://booth.pm/en/items/7812129",
-          "trend": 14.33,
+          "trend": 14.3,
           "autoTags": [
             "animal_ears",
             "ahoge",
@@ -107577,7 +107477,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791602722,
           "boothSearch": "https://booth.pm/en/items/8732498",
-          "trend": 29.66,
+          "trend": 29.42,
           "autoTags": [
             "long_hair",
             "thighhighs",
@@ -107666,7 +107566,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763198857,
           "boothSearch": "https://booth.pm/en/items/7074433",
-          "trend": 11.88,
+          "trend": 11.87,
           "autoTags": [
             "swimsuit",
             "shorts",
@@ -107717,7 +107617,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791947025,
           "boothSearch": "https://booth.pm/en/items/8926571",
-          "trend": 69.37,
+          "trend": 67.88,
           "autoTags": [
             "breasts",
             "elbow_gloves",
@@ -107821,7 +107721,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792664636,
           "boothSearch": "https://booth.pm/en/items/8898944",
-          "trend": 27.66,
+          "trend": 27.17,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -107997,7 +107897,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1737432528,
           "boothSearch": "https://booth.pm/en/items/6480471",
-          "trend": 3.4,
+          "trend": 3.39,
           "autoTags": [
             "heart_print",
             "sleep_mask",
@@ -108073,7 +107973,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1748826222,
           "boothSearch": "https://booth.pm/en/items/6837444",
-          "trend": 16.56,
+          "trend": 16.54,
           "autoTags": [
             "animal_ears",
             "apron",
@@ -108128,7 +108028,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1685534269,
           "boothSearch": "https://booth.pm/en/items/4782886",
-          "trend": 4.98,
+          "trend": 4.97,
           "autoTags": [
             "zoom_layer",
             "jacket",
@@ -108176,7 +108076,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792576670,
           "boothSearch": "https://booth.pm/en/items/8748495",
-          "trend": 27.79,
+          "trend": 27.54,
           "autoTags": [
             "flower",
             "lotus",
@@ -108346,7 +108246,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751091096,
           "boothSearch": "https://booth.pm/en/items/7069949",
-          "trend": 16.01,
+          "trend": 15.99,
           "autoTags": [
             "skirt",
             "breasts",
@@ -108391,7 +108291,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1726047870,
           "boothSearch": "https://booth.pm/en/items/6066349",
-          "trend": 12.74,
+          "trend": 12.73,
           "autoTags": [
             "double_bun",
             "horns",
@@ -108447,7 +108347,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791821460,
           "boothSearch": "https://booth.pm/en/items/8919078",
-          "trend": 84.83,
+          "trend": 83.32,
           "autoTags": [
             "navel",
             "hat",
@@ -108486,7 +108386,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1734504946,
           "boothSearch": "https://booth.pm/en/items/6268905",
-          "trend": 3.32,
+          "trend": 3.31,
           "autoTags": [
             "animal_ears",
             "jacket",
@@ -108542,7 +108442,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792235575,
           "boothSearch": "https://booth.pm/en/items/8239670",
-          "trend": 38.18,
+          "trend": 38.06,
           "autoTags": [
             "bandaid_on_nose",
             "bandaid_on_face",
@@ -108666,7 +108566,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792664795,
           "boothSearch": "https://booth.pm/en/items/7850009",
-          "trend": 39.82,
+          "trend": 39.73,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -108713,7 +108613,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792061036,
           "boothSearch": "https://booth.pm/en/items/8941050",
-          "trend": 22.84,
+          "trend": 22.37,
           "autoTags": [
             "breasts",
             "gloves",
@@ -108779,7 +108679,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792671123,
           "boothSearch": "https://booth.pm/en/items/8664997",
-          "trend": 26.27,
+          "trend": 26.1,
           "autoTags": [
             "breasts",
             "bikini",
@@ -108846,7 +108746,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1768020475,
           "boothSearch": "https://booth.pm/en/items/7331668",
-          "trend": 7.4,
+          "trend": 7.39,
           "autoTags": [
             "swimsuit",
             "animal_ears",
@@ -108930,7 +108830,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1744682514,
           "boothSearch": "https://booth.pm/en/items/6650136",
-          "trend": 28.77,
+          "trend": 28.74,
           "autoTags": [
             "hat",
             "skirt",
@@ -108999,7 +108899,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792666530,
           "boothSearch": "https://booth.pm/en/items/8384726",
-          "trend": 33.24,
+          "trend": 33.11,
           "autoTags": [
             "hairband",
             "hair_over_one_eye",
@@ -109054,7 +108954,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792639048,
           "boothSearch": "https://booth.pm/en/items/8992587",
-          "trend": 250.8,
+          "trend": 243.04,
           "autoTags": [
             "dress",
             "breasts",
@@ -109109,7 +109009,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1759463182,
           "boothSearch": "https://booth.pm/en/items/7065708",
-          "trend": 64.58,
+          "trend": 64.49,
           "autoTags": [
             "necktie",
             "shirt",
@@ -109165,7 +109065,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792670246,
           "boothSearch": "https://booth.pm/en/items/7883046",
-          "trend": 29.41,
+          "trend": 29.35,
           "autoTags": [
             "skirt",
             "shirt",
@@ -109242,7 +109142,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763781201,
           "boothSearch": "https://booth.pm/en/items/7640427",
-          "trend": 7.83,
+          "trend": 7.81,
           "autoTags": [
             "dress",
             "long_hair",
@@ -109349,7 +109249,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792664448,
           "boothSearch": "https://booth.pm/en/items/8868002",
-          "trend": 42.56,
+          "trend": 41.98,
           "autoTags": [
             "male_focus",
             "phone",
@@ -109388,7 +109288,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792207200,
           "boothSearch": "https://booth.pm/en/items/8674339",
-          "trend": 40.2,
+          "trend": 39.93,
           "autoTags": [
             "male_focus",
             "necktie",
@@ -109442,7 +109342,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1757588165,
           "boothSearch": "https://booth.pm/en/items/6696947",
-          "trend": 16.77,
+          "trend": 16.76,
           "autoTags": [
             "breasts",
             "jeans",
@@ -109483,7 +109383,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792235097,
           "boothSearch": "https://booth.pm/en/items/8747673",
-          "trend": 32.73,
+          "trend": 32.45,
           "autoTags": [
             "breasts",
             "weapon",
@@ -109541,7 +109441,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780485875,
           "boothSearch": "https://booth.pm/en/items/7940273",
-          "trend": 36.14,
+          "trend": 36.05,
           "autoTags": [
             "weapon",
             "gun",
@@ -109597,7 +109497,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791982427,
           "boothSearch": "https://booth.pm/en/items/8434318",
-          "trend": 78.33,
+          "trend": 78.01,
           "autoTags": [
             "animal_ears",
             "necktie",
@@ -109651,7 +109551,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792206425,
           "boothSearch": "https://booth.pm/en/items/8706053",
-          "trend": 37.66,
+          "trend": 37.37,
           "autoTags": [
             "motorcycle",
             "jacket",
@@ -109785,7 +109685,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791820922,
           "boothSearch": "https://booth.pm/en/items/8942722",
-          "trend": 120.7,
+          "trend": 117.81,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -109949,7 +109849,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792207387,
           "boothSearch": "https://booth.pm/en/items/8703141",
-          "trend": 37.43,
+          "trend": 37.14,
           "autoTags": [
             "animal_ears",
             "cat_ears",
@@ -110018,7 +109918,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1714346767,
           "boothSearch": "https://booth.pm/en/items/5683588",
-          "trend": 22.19,
+          "trend": 22.18,
           "autoTags": [
             "skirt",
             "jacket",
@@ -110066,7 +109966,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791816416,
           "boothSearch": "https://booth.pm/en/items/8928645",
-          "trend": 181.63,
+          "trend": 178.19,
           "autoTags": [
             "blindfold",
             "thighhighs",
@@ -110105,7 +110005,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791968075,
           "boothSearch": "https://booth.pm/en/items/8856400",
-          "trend": 69.89,
+          "trend": 68.98,
           "autoTags": [
             "tail",
             "horns",
@@ -110152,7 +110052,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792669741,
           "boothSearch": "https://booth.pm/en/items/8032421",
-          "trend": 29.72,
+          "trend": 29.64,
           "autoTags": [
             "tentacles",
             "breasts",
@@ -110231,7 +110131,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792234683,
           "boothSearch": "https://booth.pm/en/items/8416799",
-          "trend": 39.22,
+          "trend": 39.07,
           "autoTags": [
             "goggles_on_headwear",
             "twin_braids",
@@ -110294,7 +110194,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792663981,
           "boothSearch": "https://booth.pm/en/items/8836714",
-          "trend": 53.26,
+          "trend": 52.61,
           "autoTags": [
             "headphones_around_neck",
             "hat",
@@ -110351,7 +110251,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791949443,
           "boothSearch": "https://booth.pm/en/items/8644635",
-          "trend": 123.5,
+          "trend": 122.74,
           "autoTags": [
             "weapon",
             "scarf",
@@ -110392,7 +110292,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792058902,
           "boothSearch": "https://booth.pm/en/items/8866670",
-          "trend": 39.45,
+          "trend": 38.92,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -110560,7 +110460,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1757588330,
           "boothSearch": "https://booth.pm/en/items/6792142",
-          "trend": 5.87,
+          "trend": 5.86,
           "autoTags": [
             "braid",
             "bare_shoulders",
@@ -110584,25 +110484,23 @@ const AVATAR_DATA = {
             "Milltina",
             "Shinano"
           ],
-          "dateAdded": 1793776932,
+          "dateAdded": 1793776940,
           "boothSearch": "https://booth.pm/en/items/8084946",
-          "trend": 25.98,
+          "trend": 25.91,
           "autoTags": [
             "jacket",
             "shirt",
-            "breasts",
             "shorts",
-            "blurry_background",
-            "short_hair",
             "long_sleeves",
-            "open_clothes",
+            "blurry_background",
             "open_jacket",
+            "open_clothes",
+            "breasts",
+            "short_hair",
             "indoors",
-            "off_shoulder",
             "medium_hair",
-            "medium_breasts",
-            "standing",
-            "window"
+            "off_shoulder",
+            "standing"
           ]
         },
         {
@@ -110632,7 +110530,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780491673,
           "boothSearch": "https://booth.pm/en/items/7827090",
-          "trend": 25.17,
+          "trend": 25.12,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -110717,7 +110615,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760075355,
           "boothSearch": "https://booth.pm/en/items/7467197",
-          "trend": 24.73,
+          "trend": 24.69,
           "autoTags": [
             "horns",
             "weapon",
@@ -110777,7 +110675,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785483203,
           "boothSearch": "https://booth.pm/en/items/8252804",
-          "trend": 16.07,
+          "trend": 16.01,
           "autoTags": [
             "breasts",
             "onsen",
@@ -110824,7 +110722,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1761966712,
           "boothSearch": "https://booth.pm/en/items/7526768",
-          "trend": 20.6,
+          "trend": 20.56,
           "autoTags": [
             "long_hair",
             "dress",
@@ -110878,7 +110776,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792574109,
           "boothSearch": "https://booth.pm/en/items/8416136",
-          "trend": 36.51,
+          "trend": 36.36,
           "autoTags": [
             "breasts",
             "horns",
@@ -110932,7 +110830,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760842414,
           "boothSearch": "https://booth.pm/en/items/7517343",
-          "trend": 10.22,
+          "trend": 10.21,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -111006,7 +110904,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1757588608,
           "boothSearch": "https://booth.pm/en/items/7380044",
-          "trend": 3.18,
+          "trend": 3.17,
           "autoTags": [
             "dress",
             "detached_sleeves",
@@ -111049,7 +110947,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789013610,
           "boothSearch": "https://booth.pm/en/items/8661426",
-          "trend": 25.8,
+          "trend": 25.63,
           "autoTags": [
             "glasses",
             "jacket",
@@ -111104,7 +111002,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1768019481,
           "boothSearch": "https://booth.pm/en/items/6429083",
-          "trend": 15.46,
+          "trend": 15.45,
           "autoTags": [
             "japanese_clothes",
             "kimono",
@@ -111158,7 +111056,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756180588,
           "boothSearch": "https://booth.pm/en/items/7265006",
-          "trend": 24.56,
+          "trend": 24.52,
           "autoTags": [
             "japanese_clothes",
             "kimono",
@@ -111212,7 +111110,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792664876,
           "boothSearch": "https://booth.pm/en/items/8689252",
-          "trend": 30.8,
+          "trend": 30.58,
           "autoTags": [
             "baseball_cap",
             "pants",
@@ -111266,7 +111164,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792057743,
           "boothSearch": "https://booth.pm/en/items/8702943",
-          "trend": 52.53,
+          "trend": 52.13,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -111333,7 +111231,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780486714,
           "boothSearch": "https://booth.pm/en/items/7847339",
-          "trend": 8.65,
+          "trend": 8.63,
           "autoTags": [
             "breasts",
             "necktie",
@@ -111392,7 +111290,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1714004816,
           "boothSearch": "https://booth.pm/en/items/5679585",
-          "trend": 6.62,
+          "trend": 6.61,
           "autoTags": [
             "animal_ears",
             "cat_ears",
@@ -111439,7 +111337,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792071180,
           "boothSearch": "https://booth.pm/en/items/8692499",
-          "trend": 41.24,
+          "trend": 40.95,
           "autoTags": [
             "breasts",
             "tail",
@@ -111507,7 +111405,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792234376,
           "boothSearch": "https://booth.pm/en/items/8288695",
-          "trend": 40.25,
+          "trend": 40.12,
           "autoTags": [
             "animal_ears",
             "long_hair",
@@ -111567,7 +111465,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758857631,
           "boothSearch": "https://booth.pm/en/items/6770800",
-          "trend": 7.56,
+          "trend": 7.55,
           "autoTags": [
             "thighhighs",
             "jewelry",
@@ -111623,7 +111521,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791980763,
           "boothSearch": "https://booth.pm/en/items/8925490",
-          "trend": 41.28,
+          "trend": 40.47,
           "autoTags": [
             "long_hair",
             "dress",
@@ -111815,7 +111713,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758364351,
           "boothSearch": "https://booth.pm/en/items/6959079",
-          "trend": 12.44,
+          "trend": 12.42,
           "autoTags": [
             "skirt",
             "animal_ears",
@@ -111900,7 +111798,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1783697668,
           "boothSearch": "https://booth.pm/en/items/8089553",
-          "trend": 23.22,
+          "trend": 23.16,
           "autoTags": [
             "skirt",
             "long_hair",
@@ -111952,7 +111850,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1757588466,
           "boothSearch": "https://booth.pm/en/items/7386414",
-          "trend": 11.16,
+          "trend": 11.14,
           "autoTags": [
             "breasts",
             "swimsuit",
@@ -112102,7 +112000,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756875390,
           "boothSearch": "https://booth.pm/en/items/7290413",
-          "trend": 18.86,
+          "trend": 18.83,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -112224,7 +112122,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1687695152,
           "boothSearch": "https://booth.pm/en/items/4858480",
-          "trend": 2.49,
+          "trend": 2.48,
           "autoTags": [
             "eyepatch",
             "shorts",
@@ -112265,7 +112163,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1708129798,
           "boothSearch": "https://booth.pm/en/items/4923771",
-          "trend": 9.54,
+          "trend": 9.53,
           "autoTags": [
             "twintails",
             "fishnets",
@@ -112312,7 +112210,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1772253849,
           "boothSearch": "https://booth.pm/en/items/7295731",
-          "trend": 6.26,
+          "trend": 6.25,
           "autoTags": [
             "swimsuit",
             "bikini",
@@ -112511,7 +112409,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1727511283,
           "boothSearch": "https://booth.pm/en/items/6086818",
-          "trend": 11.48,
+          "trend": 11.47,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -112605,7 +112503,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792071660,
           "boothSearch": "https://booth.pm/en/items/8635070",
-          "trend": 38.93,
+          "trend": 38.64,
           "autoTags": [
             "animal_ears",
             "motor_vehicle",
@@ -112749,7 +112647,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792676838,
           "boothSearch": "https://booth.pm/en/items/8301438",
-          "trend": 27.9,
+          "trend": 27.81,
           "autoTags": [
             "shirt",
             "long_hair",
@@ -112868,7 +112766,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756185565,
           "boothSearch": "https://booth.pm/en/items/6399824",
-          "trend": 26.81,
+          "trend": 26.79,
           "autoTags": [
             "necktie",
             "braid",
@@ -112918,7 +112816,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791969236,
           "boothSearch": "https://booth.pm/en/items/8819432",
-          "trend": 76.62,
+          "trend": 75.77,
           "autoTags": [
             "dress",
             "sneakers",
@@ -113011,32 +112909,24 @@ const AVATAR_DATA = {
             "mint",
             "ririka"
           ],
-          "dateAdded": 1793780988,
+          "dateAdded": 1793781005,
           "boothSearch": "https://booth.pm/en/items/8597179",
-          "trend": 25.95,
+          "trend": 25.81,
           "autoTags": [
             "bow",
-            "wand",
             "heart",
-            "frills",
+            "long_sleeves",
             "dress",
-            "twintails",
             "short_hair",
-            "detached_sleeves",
+            "twintails",
+            "wand",
+            "frills",
+            "ribbon",
             "hat",
             "long_hair",
-            "holding",
-            "underwear",
-            "panties",
-            "holding_wand",
-            "staff",
             "magical_girl",
-            "ribbon",
-            "bra",
-            "hair_intakes",
-            "long_sleeves",
-            "bowtie",
-            "cover"
+            "holding_wand",
+            "bowtie"
           ]
         },
         {
@@ -113065,7 +112955,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791946979,
           "boothSearch": "https://booth.pm/en/items/8734991",
-          "trend": 99.5,
+          "trend": 98.5,
           "autoTags": [
             "bandages",
             "intravenous_drip",
@@ -113116,7 +113006,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792056112,
           "boothSearch": "https://booth.pm/en/items/8851602",
-          "trend": 42.39,
+          "trend": 41.85,
           "autoTags": [
             "long_hair"
           ]
@@ -113149,7 +113039,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789013460,
           "boothSearch": "https://booth.pm/en/items/8070374",
-          "trend": 39.47,
+          "trend": 39.37,
           "autoTags": [
             "long_hair",
             "breasts",
@@ -113180,7 +113070,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1749868126,
           "boothSearch": "https://booth.pm/en/items/6731870",
-          "trend": 7.11,
+          "trend": 7.1,
           "autoTags": [
             "breasts",
             "zoom_layer",
@@ -113227,7 +113117,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756180403,
           "boothSearch": "https://booth.pm/en/items/7247229",
-          "trend": 27.05,
+          "trend": 27.01,
           "autoTags": [
             "lab_coat",
             "skirt",
@@ -113293,7 +113183,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792666525,
           "boothSearch": "https://booth.pm/en/items/7822755",
-          "trend": 32.45,
+          "trend": 32.38,
           "autoTags": [
             "breasts",
             "pants",
@@ -113345,7 +113235,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763874938,
           "boothSearch": "https://booth.pm/en/items/5666134",
-          "trend": 3.19,
+          "trend": 3.18,
           "autoTags": [
             "animal_ears",
             "long_hair",
@@ -113378,7 +113268,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1686656738,
           "boothSearch": "https://booth.pm/en/items/4761319",
-          "trend": 5.11,
+          "trend": 5.1,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -113427,7 +113317,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1759463580,
           "boothSearch": "https://booth.pm/en/items/6742067",
-          "trend": 14.81,
+          "trend": 14.79,
           "autoTags": [
             "skirt",
             "long_hair",
@@ -113486,7 +113376,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760844356,
           "boothSearch": "https://booth.pm/en/items/6818558",
-          "trend": 12.42,
+          "trend": 12.41,
           "autoTags": [
             "eyepatch",
             "hood",
@@ -113587,7 +113477,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792602772,
           "boothSearch": "https://booth.pm/en/items/8829757",
-          "trend": 22.92,
+          "trend": 22.61,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -113716,7 +113606,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1779619631,
           "boothSearch": "https://booth.pm/en/items/7834569",
-          "trend": 3.36,
+          "trend": 3.35,
           "autoTags": [
             "breasts",
             "navel",
@@ -113985,7 +113875,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792070258,
           "boothSearch": "https://booth.pm/en/items/8755539",
-          "trend": 36.43,
+          "trend": 36.07,
           "autoTags": [
             "breasts",
             "arthropod_girl",
@@ -114142,7 +114032,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785485093,
           "boothSearch": "https://booth.pm/en/items/7841267",
-          "trend": 21.69,
+          "trend": 21.65,
           "autoTags": [
             "animal_ears",
             "rabbit_ears",
@@ -114178,7 +114068,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1713226326,
           "boothSearch": "https://booth.pm/en/items/5322140",
-          "trend": 11.87,
+          "trend": 11.86,
           "autoTags": [
             "thighhighs",
             "animal_ears",
@@ -114308,7 +114198,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1717812217,
           "boothSearch": "https://booth.pm/en/items/5759070",
-          "trend": 11.46,
+          "trend": 11.45,
           "autoTags": [
             "jacket",
             "goggles",
@@ -114486,7 +114376,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1765002082,
           "boothSearch": "https://booth.pm/en/items/7705769",
-          "trend": 7.69,
+          "trend": 7.68,
           "autoTags": [
             "jacket",
             "shorts",
@@ -114576,7 +114466,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792668378,
           "boothSearch": "https://booth.pm/en/items/8429525",
-          "trend": 29.89,
+          "trend": 29.77,
           "autoTags": [
             "jewelry",
             "hat",
@@ -114670,7 +114560,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791952899,
           "boothSearch": "https://booth.pm/en/items/8874595",
-          "trend": 76.16,
+          "trend": 75.1,
           "autoTags": [
             "logo",
             "copyright_name",
@@ -114731,7 +114621,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1702427322,
           "boothSearch": "https://booth.pm/en/items/5285762",
-          "trend": 2.46,
+          "trend": 2.45,
           "autoTags": [
             "boots",
             "thighhighs",
@@ -114768,7 +114658,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792064417,
           "boothSearch": "https://booth.pm/en/items/8870820",
-          "trend": 34.54,
+          "trend": 34.07,
           "autoTags": [
             "long_hair",
             "shirt",
@@ -114821,7 +114711,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792030419,
           "boothSearch": "https://booth.pm/en/items/8707867",
-          "trend": 66.86,
+          "trend": 66.35,
           "autoTags": [
             "weapon",
             "sword",
@@ -114905,7 +114795,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792578141,
           "boothSearch": "https://booth.pm/en/items/8124608",
-          "trend": 34.72,
+          "trend": 34.62,
           "autoTags": [
             "male_focus",
             "jewelry",
@@ -114977,7 +114867,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792061737,
           "boothSearch": "https://booth.pm/en/items/8358893",
-          "trend": 49.92,
+          "trend": 49.71,
           "autoTags": [
             "male_focus",
             "jacket",
@@ -115063,7 +114953,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1697368295,
           "boothSearch": "https://booth.pm/en/items/4843359",
-          "trend": 4.2,
+          "trend": 4.19,
           "autoTags": [
             "nun",
             "long_hair",
@@ -115104,7 +114994,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1746490722,
           "boothSearch": "https://booth.pm/en/items/6869974",
-          "trend": 19.7,
+          "trend": 19.68,
           "autoTags": [
             "skirt",
             "hat",
@@ -115158,7 +115048,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792055399,
           "boothSearch": "https://booth.pm/en/items/8766572",
-          "trend": 57.8,
+          "trend": 57.27,
           "autoTags": [
             "animal_ears",
             "thighhighs",
@@ -115323,7 +115213,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791971741,
           "boothSearch": "https://booth.pm/en/items/8818352",
-          "trend": 65.27,
+          "trend": 64.43,
           "autoTags": [
             "twintails",
             "dress",
@@ -115402,7 +115292,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792577810,
           "boothSearch": "https://booth.pm/en/items/8544641",
-          "trend": 32.96,
+          "trend": 32.8,
           "autoTags": [
             "thighhighs",
             "chain",
@@ -115439,7 +115329,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1721890241,
           "boothSearch": "https://booth.pm/en/items/5889532",
-          "trend": 7.92,
+          "trend": 7.91,
           "autoTags": [
             "violin",
             "long_hair",
@@ -115535,7 +115425,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792639792,
           "boothSearch": "https://booth.pm/en/items/8997703",
-          "trend": 78.94,
+          "trend": 76.38,
           "autoTags": [
             "animal_ears",
             "long_hair",
@@ -115600,7 +115490,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792055681,
           "boothSearch": "https://booth.pm/en/items/8664262",
-          "trend": 59.1,
+          "trend": 58.71,
           "autoTags": [
             "swimsuit",
             "jewelry",
@@ -115686,7 +115576,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1740967500,
           "boothSearch": "https://booth.pm/en/items/6584413",
-          "trend": 16.06,
+          "trend": 16.04,
           "autoTags": [
             "headphones",
             "goggles",
@@ -115744,7 +115634,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1772253079,
           "boothSearch": "https://booth.pm/en/items/7593555",
-          "trend": 27.86,
+          "trend": 27.81,
           "autoTags": [
             "eyewear_on_head",
             "sunglasses",
@@ -115924,7 +115814,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792061558,
           "boothSearch": "https://booth.pm/en/items/8663387",
-          "trend": 45.07,
+          "trend": 44.77,
           "autoTags": [
             "skirt",
             "breasts",
@@ -115995,7 +115885,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1765000526,
           "boothSearch": "https://booth.pm/en/items/7660737",
-          "trend": 12.0,
+          "trend": 11.98,
           "autoTags": [
             "long_hair",
             "sweater",
@@ -116077,7 +115967,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792029943,
           "boothSearch": "https://booth.pm/en/items/8711620",
-          "trend": 64.9,
+          "trend": 64.4,
           "autoTags": [
             "breasts",
             "hand_fan",
@@ -116189,7 +116079,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1768019735,
           "boothSearch": "https://booth.pm/en/items/7723140",
-          "trend": 4.4,
+          "trend": 4.39,
           "autoTags": [
             "male_focus",
             "short_hair",
@@ -116235,7 +116125,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791981561,
           "boothSearch": "https://booth.pm/en/items/8541528",
-          "trend": 76.65,
+          "trend": 76.28,
           "autoTags": [
             "animal_ears",
             "halo",
@@ -116380,7 +116270,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792667688,
           "boothSearch": "https://booth.pm/en/items/8497463",
-          "trend": 29.29,
+          "trend": 29.16,
           "autoTags": [
             "breasts",
             "bikini",
@@ -116434,7 +116324,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1761969642,
           "boothSearch": "https://booth.pm/en/items/7250227",
-          "trend": 4.63,
+          "trend": 4.62,
           "autoTags": [
             "bug",
             "butterfly",
@@ -116485,7 +116375,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792035042,
           "boothSearch": "https://booth.pm/en/items/8633952",
-          "trend": 66.31,
+          "trend": 65.91,
           "autoTags": [
             "breasts",
             "gloves",
@@ -116533,7 +116423,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791969176,
           "boothSearch": "https://booth.pm/en/items/8893838",
-          "trend": 64.72,
+          "trend": 63.71,
           "autoTags": [
             "animal_ears",
             "long_hair",
@@ -116631,7 +116521,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1737433796,
           "boothSearch": "https://booth.pm/en/items/6374874",
-          "trend": 13.6,
+          "trend": 13.59,
           "autoTags": [
             "dress",
             "breasts",
@@ -116671,7 +116561,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763873876,
           "boothSearch": "https://booth.pm/en/items/7542241",
-          "trend": 56.47,
+          "trend": 56.37,
           "autoTags": [
             "animal_ears",
             "neckerchief",
@@ -116755,7 +116645,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1772252935,
           "boothSearch": "https://booth.pm/en/items/7413765",
-          "trend": 13.02,
+          "trend": 13.0,
           "autoTags": [
             "skirt",
             "bandages",
@@ -116820,7 +116710,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792207100,
           "boothSearch": "https://booth.pm/en/items/8068205",
-          "trend": 43.76,
+          "trend": 43.64,
           "autoTags": [
             "sword",
             "weapon",
@@ -117051,7 +116941,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791816295,
           "boothSearch": "https://booth.pm/en/items/8950880",
-          "trend": 283.22,
+          "trend": 276.95,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -117106,7 +116996,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791820538,
           "boothSearch": "https://booth.pm/en/items/8829058",
-          "trend": 140.29,
+          "trend": 138.65,
           "autoTags": [
             "horns",
             "breasts",
@@ -117160,7 +117050,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792070378,
           "boothSearch": "https://booth.pm/en/items/8202792",
-          "trend": 47.95,
+          "trend": 47.8,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -117220,7 +117110,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756186022,
           "boothSearch": "https://booth.pm/en/items/7190600",
-          "trend": 14.27,
+          "trend": 14.25,
           "autoTags": [
             "twintails",
             "veil",
@@ -117269,7 +117159,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792236363,
           "boothSearch": "https://booth.pm/en/items/8733229",
-          "trend": 31.87,
+          "trend": 31.61,
           "autoTags": [
             "swimsuit",
             "school_swimsuit",
@@ -117355,7 +117245,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1779613087,
           "boothSearch": "https://booth.pm/en/items/7805765",
-          "trend": 15.33,
+          "trend": 15.29,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -117443,7 +117333,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753072183,
           "boothSearch": "https://booth.pm/en/items/6022385",
-          "trend": 8.01,
+          "trend": 8.0,
           "autoTags": [
             "long_hair",
             "hat",
@@ -117539,7 +117429,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1783697222,
           "boothSearch": "https://booth.pm/en/items/7384160",
-          "trend": 11.81,
+          "trend": 11.8,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -117586,7 +117476,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792056718,
           "boothSearch": "https://booth.pm/en/items/8691820",
-          "trend": 55.75,
+          "trend": 55.35,
           "autoTags": [
             "weapon",
             "sword",
@@ -117647,7 +117537,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758364950,
           "boothSearch": "https://booth.pm/en/items/7153209",
-          "trend": 9.46,
+          "trend": 9.45,
           "autoTags": [
             "thighhighs",
             "dress",
@@ -117684,7 +117574,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1719271050,
           "boothSearch": "https://booth.pm/en/items/5844100",
-          "trend": 3.39,
+          "trend": 3.38,
           "autoTags": [
             "animal_ears",
             "skirt",
@@ -117752,7 +117642,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792071614,
           "boothSearch": "https://booth.pm/en/items/8799884",
-          "trend": 34.17,
+          "trend": 33.81,
           "autoTags": [
             "school_uniform",
             "skirt",
@@ -117830,7 +117720,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791948939,
           "boothSearch": "https://booth.pm/en/items/8786891",
-          "trend": 118.66,
+          "trend": 117.51,
           "autoTags": [
             "skirt",
             "thighhighs",
@@ -117891,7 +117781,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792663816,
           "boothSearch": "https://booth.pm/en/items/8916133",
-          "trend": 46.71,
+          "trend": 45.89,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -117946,7 +117836,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1772253383,
           "boothSearch": "https://booth.pm/en/items/7751151",
-          "trend": 13.46,
+          "trend": 13.43,
           "autoTags": [
             "breasts",
             "bandaid",
@@ -117981,7 +117871,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1768018164,
           "boothSearch": "https://booth.pm/en/items/7669725",
-          "trend": 8.99,
+          "trend": 8.98,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -118029,7 +117919,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1743476209,
           "boothSearch": "https://booth.pm/en/items/6535704",
-          "trend": 36.89,
+          "trend": 36.85,
           "autoTags": [
             "thighhighs",
             "dress",
@@ -118114,7 +118004,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785482815,
           "boothSearch": "https://booth.pm/en/items/7170420",
-          "trend": 14.85,
+          "trend": 14.83,
           "autoTags": [
             "breasts",
             "sunglasses",
@@ -118167,7 +118057,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1766123768,
           "boothSearch": "https://booth.pm/en/items/7700084",
-          "trend": 12.51,
+          "trend": 12.48,
           "autoTags": [
             "pants",
             "denim",
@@ -118230,7 +118120,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792667412,
           "boothSearch": "https://booth.pm/en/items/8193029",
-          "trend": 30.4,
+          "trend": 30.31,
           "autoTags": [
             "horns",
             "animal_ears",
@@ -118297,7 +118187,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780486439,
           "boothSearch": "https://booth.pm/en/items/7886281",
-          "trend": 14.86,
+          "trend": 14.82,
           "autoTags": [
             "dress",
             "flower",
@@ -118350,7 +118240,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789017902,
           "boothSearch": "https://booth.pm/en/items/8414866",
-          "trend": 24.86,
+          "trend": 24.76,
           "autoTags": [
             "breasts",
             "towel",
@@ -118398,7 +118288,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1717812928,
           "boothSearch": "https://booth.pm/en/items/5792625",
-          "trend": 9.16,
+          "trend": 9.15,
           "autoTags": [
             "animal_ears",
             "holding",
@@ -118473,7 +118363,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763203527,
           "boothSearch": "https://booth.pm/en/items/7285626",
-          "trend": 21.44,
+          "trend": 21.41,
           "autoTags": [
             "male_focus",
             "animal_ears",
@@ -118582,7 +118472,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792638766,
           "boothSearch": "https://booth.pm/en/items/8995885",
-          "trend": 396.71,
+          "trend": 383.95,
           "autoTags": [
             "animal_ears",
             "bandage_over_one_eye",
@@ -118641,7 +118531,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791817829,
           "boothSearch": "https://booth.pm/en/items/8918778",
-          "trend": 173.73,
+          "trend": 170.63,
           "autoTags": [
             "breasts",
             "brushing_teeth",
@@ -118689,7 +118579,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786088683,
           "boothSearch": "https://booth.pm/en/items/8457542",
-          "trend": 8.2,
+          "trend": 8.17,
           "autoTags": [
             "long_hair",
             "frills",
@@ -118741,7 +118631,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756186488,
           "boothSearch": "https://booth.pm/en/items/7295810",
-          "trend": 22.61,
+          "trend": 22.58,
           "autoTags": [
             "horns",
             "holding",
@@ -118788,7 +118678,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786091424,
           "boothSearch": "https://booth.pm/en/items/8546753",
-          "trend": 11.18,
+          "trend": 11.13,
           "autoTags": [
             "short_hair",
             "monster_girl",
@@ -118871,7 +118761,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789015846,
           "boothSearch": "https://booth.pm/en/items/8621692",
-          "trend": 67.03,
+          "trend": 66.64,
           "autoTags": [
             "nun",
             "ahoge",
@@ -118915,7 +118805,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1783698942,
           "boothSearch": "https://booth.pm/en/items/7413986",
-          "trend": 7.12,
+          "trend": 7.11,
           "autoTags": [
             "braid",
             "twin_braids",
@@ -118966,7 +118856,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1772253198,
           "boothSearch": "https://booth.pm/en/items/7763811",
-          "trend": 16.12,
+          "trend": 16.09,
           "autoTags": [
             "mask",
             "fox_mask",
@@ -119058,7 +118948,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1766123315,
           "boothSearch": "https://booth.pm/en/items/7346875",
-          "trend": 3.43,
+          "trend": 3.42,
           "autoTags": [
             "pants",
             "long_hair",
@@ -119133,33 +119023,34 @@ const AVATAR_DATA = {
             "Shiratsume",
             "Sio"
           ],
-          "dateAdded": 1793779157,
+          "dateAdded": 1793779169,
           "boothSearch": "https://booth.pm/en/items/8146933",
-          "trend": 26.7,
+          "trend": 26.62,
           "autoTags": [
             "thighhighs",
             "dress",
             "short_sleeves",
-            "jewelry",
             "bow",
-            "twintails",
-            "earrings",
             "long_hair",
-            "garter_straps",
-            "hairband",
+            "twintails",
             "puffy_short_sleeves",
-            "hair_bow",
+            "jewelry",
             "puffy_sleeves",
-            "hair_bun",
-            "heart",
-            "double_bun",
+            "earrings",
+            "hairband",
+            "hair_bow",
+            "shirt",
+            "ribbon",
+            "frills",
             "buttons",
             "bowtie",
-            "ribbon",
-            "shirt",
-            "frills",
+            "sleeveless_dress",
+            "heart",
             "plaid",
-            "short_dress"
+            "standing",
+            "two_side_up",
+            "short_dress",
+            "zettai_ryouiki"
           ]
         },
         {
@@ -119192,7 +119083,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1783699968,
           "boothSearch": "https://booth.pm/en/items/7176919",
-          "trend": 7.25,
+          "trend": 7.24,
           "autoTags": [
             "head_out_of_frame",
             "breasts",
@@ -119237,7 +119128,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758858206,
           "boothSearch": "https://booth.pm/en/items/7072798",
-          "trend": 14.18,
+          "trend": 14.16,
           "autoTags": [
             "thighhighs",
             "long_hair",
@@ -119284,7 +119175,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792060812,
           "boothSearch": "https://booth.pm/en/items/8573808",
-          "trend": 50.61,
+          "trend": 50.35,
           "autoTags": [
             "navel",
             "beanie",
@@ -119342,7 +119233,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760844163,
           "boothSearch": "https://booth.pm/en/items/7519221",
-          "trend": 12.56,
+          "trend": 12.54,
           "autoTags": [
             "flower",
             "long_hair",
@@ -119392,7 +119283,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1761972782,
           "boothSearch": "https://booth.pm/en/items/7564173",
-          "trend": 19.58,
+          "trend": 19.54,
           "autoTags": [
             "hairband",
             "hair_ornament",
@@ -119432,7 +119323,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756186417,
           "boothSearch": "https://booth.pm/en/items/7209394",
-          "trend": 8.68,
+          "trend": 8.67,
           "autoTags": [
             "long_hair",
             "eyepatch",
@@ -119607,7 +119498,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789013150,
           "boothSearch": "https://booth.pm/en/items/8133614",
-          "trend": 19.75,
+          "trend": 19.69,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -119644,7 +119535,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756875781,
           "boothSearch": "https://booth.pm/en/items/7334949",
-          "trend": 18.05,
+          "trend": 18.02,
           "autoTags": [
             "barcode",
             "ring",
@@ -119737,7 +119628,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1738464209,
           "boothSearch": "https://booth.pm/en/items/6487540",
-          "trend": 13.71,
+          "trend": 13.7,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -119825,7 +119716,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1712890451,
           "boothSearch": "https://booth.pm/en/items/5626209",
-          "trend": 7.92,
+          "trend": 7.91,
           "autoTags": [
             "underwear",
             "panties",
@@ -119872,7 +119763,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792061093,
           "boothSearch": "https://booth.pm/en/items/8620896",
-          "trend": 48.18,
+          "trend": 47.9,
           "autoTags": [
             "thighhighs",
             "high_heels",
@@ -119992,7 +119883,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792059949,
           "boothSearch": "https://booth.pm/en/items/8593417",
-          "trend": 51.11,
+          "trend": 50.83,
           "autoTags": [
             "breasts",
             "jacket",
@@ -120037,7 +119928,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1734506346,
           "boothSearch": "https://booth.pm/en/items/6205490",
-          "trend": 4.93,
+          "trend": 4.92,
           "autoTags": [
             "chain",
             "long_hair",
@@ -120068,7 +119959,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780485152,
           "boothSearch": "https://booth.pm/en/items/7946344",
-          "trend": 10.36,
+          "trend": 10.33,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -120110,7 +120001,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1734506630,
           "boothSearch": "https://booth.pm/en/items/6370137",
-          "trend": 7.02,
+          "trend": 7.01,
           "autoTags": [
             "long_hair",
             "bow",
@@ -120158,7 +120049,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1772253694,
           "boothSearch": "https://booth.pm/en/items/7751175",
-          "trend": 23.26,
+          "trend": 23.21,
           "autoTags": [
             "dress",
             "long_hair",
@@ -120277,7 +120168,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791971771,
           "boothSearch": "https://booth.pm/en/items/8866466",
-          "trend": 67.09,
+          "trend": 66.19,
           "autoTags": [
             "shirt",
             "short_hair",
@@ -120438,7 +120329,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786088474,
           "boothSearch": "https://booth.pm/en/items/7943465",
-          "trend": 4.45,
+          "trend": 4.44,
           "autoTags": [
             "male_focus",
             "hood",
@@ -120461,7 +120352,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792602395,
           "boothSearch": "https://booth.pm/en/items/8897450",
-          "trend": 24.12,
+          "trend": 23.74,
           "autoTags": [
             "hat",
             "thighhighs",
@@ -120575,7 +120466,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792035108,
           "boothSearch": "https://booth.pm/en/items/8912491",
-          "trend": 33.1,
+          "trend": 32.43,
           "autoTags": [
             "navel_piercing",
             "navel",
@@ -120611,50 +120502,54 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano"
           ],
-          "dateAdded": 1793778550,
+          "dateAdded": 1793778603,
           "boothSearch": "https://booth.pm/en/items/8662708",
-          "trend": 25.63,
+          "trend": 25.47,
           "autoTags": [
             "swimsuit",
             "breasts",
-            "see-through",
-            "animal_ears",
             "multicolored_hair",
-            "beach",
-            "aiming_at_viewer",
-            "holding",
-            "shrug_(clothing)",
+            "animal_ears",
             "aiming",
             "weapon",
+            "shrug_(clothing)",
+            "holding",
+            "beach",
+            "aiming_at_viewer",
             "short_hair",
-            "navel",
-            "bikini",
             "gun",
+            "bikini",
             "outdoors",
-            "shorts",
             "holding_weapon",
-            "covered_navel",
-            "sky",
-            "hair_over_one_eye",
-            "nail_polish",
-            "see-through_jacket",
+            "shorts",
+            "streaked_hair",
             "holding_gun",
+            "navel",
+            "sky",
+            "two-tone_hair",
+            "day",
+            "hair_over_one_eye",
+            "see-through",
             "one-piece_swimsuit",
             "long_sleeves",
-            "day",
-            "two-tone_hair",
             "palm_tree",
-            "streaked_hair",
-            "animal_ear_fluff",
-            "large_breasts",
-            "medium_breasts",
-            "blurry_background",
-            "water_gun",
-            "cloud",
-            "see-through_sleeves",
-            "o-ring",
             "jacket",
-            "highleg"
+            "o-ring",
+            "sun",
+            "cat_ears",
+            "cloud",
+            "large_breasts",
+            "short_shorts",
+            "medium_breasts",
+            "see-through_jacket",
+            "tree",
+            "blurry_background",
+            "standing",
+            "water_gun",
+            "ocean",
+            "handgun",
+            "covered_navel",
+            "open_fly"
           ]
         },
         {
@@ -120717,7 +120612,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1696298038,
           "boothSearch": "https://booth.pm/en/items/4858480",
-          "trend": 2.49,
+          "trend": 2.48,
           "autoTags": [
             "eyepatch",
             "shorts",
@@ -120766,7 +120661,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792234763,
           "boothSearch": "https://booth.pm/en/items/8700454",
-          "trend": 33.84,
+          "trend": 33.57,
           "autoTags": [
             "shorts",
             "jacket",
@@ -120863,7 +120758,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792667203,
           "boothSearch": "https://booth.pm/en/items/8058137",
-          "trend": 31.17,
+          "trend": 31.09,
           "autoTags": [
             "breasts",
             "jewelry",
@@ -121076,7 +120971,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760843340,
           "boothSearch": "https://booth.pm/en/items/7251275",
-          "trend": 8.82,
+          "trend": 8.8,
           "autoTags": [
             "merchandise",
             "shirt",
@@ -121156,7 +121051,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1724651133,
           "boothSearch": "https://booth.pm/en/items/5990204",
-          "trend": 4.88,
+          "trend": 4.87,
           "autoTags": [
             "hand_fan",
             "veil",
@@ -121274,7 +121169,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780476671,
           "boothSearch": "https://booth.pm/en/items/8127867",
-          "trend": 49.63,
+          "trend": 49.49,
           "autoTags": [
             "playing_card",
             "card",
@@ -121345,7 +121240,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1749869098,
           "boothSearch": "https://booth.pm/en/items/6983353",
-          "trend": 19.55,
+          "trend": 19.52,
           "autoTags": [
             "umbrella",
             "dress",
@@ -121403,7 +121298,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1768018712,
           "boothSearch": "https://booth.pm/en/items/7111694",
-          "trend": 12.27,
+          "trend": 12.25,
           "autoTags": [
             "animal_ears",
             "jacket",
@@ -121459,7 +121354,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786092275,
           "boothSearch": "https://booth.pm/en/items/8563496",
-          "trend": 15.62,
+          "trend": 15.54,
           "autoTags": [
             "long_hair",
             "dress",
@@ -121546,7 +121441,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763877113,
           "boothSearch": "https://booth.pm/en/items/7442741",
-          "trend": 10.24,
+          "trend": 10.22,
           "autoTags": [
             "long_hair",
             "hat",
@@ -121623,7 +121518,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1768020202,
           "boothSearch": "https://booth.pm/en/items/7706711",
-          "trend": 12.14,
+          "trend": 12.12,
           "autoTags": [
             "pants",
             "jacket",
@@ -121709,7 +121604,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760841085,
           "boothSearch": "https://booth.pm/en/items/7434022",
-          "trend": 3.51,
+          "trend": 3.5,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -121772,7 +121667,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792061911,
           "boothSearch": "https://booth.pm/en/items/7973730",
-          "trend": 50.94,
+          "trend": 50.82,
           "autoTags": [
             "headphones",
             "headphones_around_neck",
@@ -121834,7 +121729,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791603255,
           "boothSearch": "https://booth.pm/en/items/8608213",
-          "trend": 5.48,
+          "trend": 5.45,
           "autoTags": [
             "breasts",
             "large_breasts",
@@ -121873,7 +121768,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751094894,
           "boothSearch": "https://booth.pm/en/items/6783232",
-          "trend": 22.64,
+          "trend": 22.61,
           "autoTags": [
             "hat",
             "fence",
@@ -121939,7 +121834,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792056958,
           "boothSearch": "https://booth.pm/en/items/8080363",
-          "trend": 64.74,
+          "trend": 64.56,
           "autoTags": [
             "jacket",
             "long_hair",
@@ -121977,7 +121872,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1705472001,
           "boothSearch": "https://booth.pm/en/items/5122085",
-          "trend": 2.62,
+          "trend": 2.61,
           "autoTags": [
             "horns",
             "wings",
@@ -122027,7 +121922,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791950341,
           "boothSearch": "https://booth.pm/en/items/8819536",
-          "trend": 96.25,
+          "trend": 95.18,
           "autoTags": [
             "breasts",
             "horns",
@@ -122069,7 +121964,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785570709,
           "boothSearch": "https://booth.pm/en/items/7550561",
-          "trend": 7.38,
+          "trend": 7.37,
           "autoTags": [
             "fork",
             "plaid_dress",
@@ -122122,7 +122017,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791977034,
           "boothSearch": "https://booth.pm/en/items/8641014",
-          "trend": 79.67,
+          "trend": 79.18,
           "autoTags": [
             "skirt",
             "twintails",
@@ -122169,7 +122064,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753944037,
           "boothSearch": "https://booth.pm/en/items/7223170",
-          "trend": 6.93,
+          "trend": 6.92,
           "autoTags": [
             "breasts",
             "maid",
@@ -122272,7 +122167,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1714177420,
           "boothSearch": "https://booth.pm/en/items/5594480",
-          "trend": 13.36,
+          "trend": 13.35,
           "autoTags": [
             "star_(symbol)",
             "frills",
@@ -122380,7 +122275,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792575021,
           "boothSearch": "https://booth.pm/en/items/8216027",
-          "trend": 31.54,
+          "trend": 31.43,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -122471,7 +122366,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751944396,
           "boothSearch": "https://booth.pm/en/items/7097896",
-          "trend": 3.6,
+          "trend": 3.59,
           "autoTags": [
             "jacket",
             "breasts",
@@ -122573,7 +122468,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791987899,
           "boothSearch": "https://booth.pm/en/items/8892942",
-          "trend": 41.26,
+          "trend": 40.58,
           "autoTags": [
             "long_hair",
             "sitting",
@@ -122606,7 +122501,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792057429,
           "boothSearch": "https://booth.pm/en/items/8862625",
-          "trend": 30.3,
+          "trend": 29.76,
           "autoTags": [
             "breasts",
             "heart",
@@ -122694,7 +122589,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792640182,
           "boothSearch": "https://booth.pm/en/items/8603085",
-          "trend": 77.59,
+          "trend": 77.17,
           "autoTags": [
             "electric_fan",
             "hand_fan",
@@ -122749,7 +122644,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786088971,
           "boothSearch": "https://booth.pm/en/items/7124805",
-          "trend": 10.43,
+          "trend": 10.42,
           "autoTags": [
             "breasts",
             "swimsuit",
@@ -122792,7 +122687,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756185027,
           "boothSearch": "https://booth.pm/en/items/7111542",
-          "trend": 17.62,
+          "trend": 17.59,
           "autoTags": [
             "swimsuit",
             "swim_ring",
@@ -122915,7 +122810,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1708218457,
           "boothSearch": "https://booth.pm/en/items/4961183",
-          "trend": 6.77,
+          "trend": 6.78,
           "autoTags": [
             "breasts",
             "shorts",
@@ -122993,7 +122888,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751945691,
           "boothSearch": "https://booth.pm/en/items/7110291",
-          "trend": 9.62,
+          "trend": 9.6,
           "autoTags": [
             "jewelry",
             "necklace",
@@ -123029,7 +122924,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792574901,
           "boothSearch": "https://booth.pm/en/items/8606454",
-          "trend": 29.89,
+          "trend": 29.72,
           "autoTags": [
             "holding",
             "animal_ears",
@@ -123090,40 +122985,38 @@ const AVATAR_DATA = {
             "Sio",
             "mint"
           ],
-          "dateAdded": 1793781309,
+          "dateAdded": 1793781329,
           "boothSearch": "https://booth.pm/en/items/8384383",
-          "trend": 27.78,
+          "trend": 27.67,
           "autoTags": [
-            "denim_skirt",
             "skirt",
-            "jewelry",
             "long_hair",
+            "jewelry",
             "necklace",
-            "breasts",
             "shirt",
             "twintails",
             "long_sleeves",
+            "breasts",
             "earrings",
-            "denim",
+            "puffy_sleeves",
+            "off-shoulder_shirt",
+            "denim_skirt",
             "midriff",
             "cleavage",
-            "bare_shoulders",
-            "off-shoulder_shirt",
-            "bag",
-            "crop_top",
-            "off_shoulder",
-            "handbag",
-            "bow",
-            "puffy_sleeves",
-            "medium_breasts",
-            "miniskirt",
-            "braid",
-            "detached_sleeves",
             "very_long_hair",
-            "ring",
+            "crop_top",
+            "bare_shoulders",
+            "sitting",
+            "off_shoulder",
+            "detached_sleeves",
+            "miniskirt",
+            "puffy_long_sleeves",
             "pencil_skirt",
-            "collarbone",
-            "sitting"
+            "bow",
+            "shorts",
+            "pale_skin",
+            "bag",
+            "medium_breasts"
           ]
         },
         {
@@ -123154,7 +123047,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792589000,
           "boothSearch": "https://booth.pm/en/items/8533792",
-          "trend": 31.15,
+          "trend": 31.0,
           "autoTags": [
             "swimsuit",
             "bikini",
@@ -123308,7 +123201,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792234563,
           "boothSearch": "https://booth.pm/en/items/8546901",
-          "trend": 39.53,
+          "trend": 39.33,
           "autoTags": [
             "lantern",
             "hat",
@@ -123389,7 +123282,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792669548,
           "boothSearch": "https://booth.pm/en/items/8356174",
-          "trend": 29.59,
+          "trend": 29.48,
           "autoTags": [
             "breasts",
             "underwear",
@@ -123476,7 +123369,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792638872,
           "boothSearch": "https://booth.pm/en/items/9003204",
-          "trend": 359.08,
+          "trend": 346.74,
           "autoTags": [
             "skirt",
             "long_hair",
@@ -123564,7 +123457,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791959113,
           "boothSearch": "https://booth.pm/en/items/8862723",
-          "trend": 77.25,
+          "trend": 76.22,
           "autoTags": [
             "hat",
             "glasses",
@@ -123617,7 +123510,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758857445,
           "boothSearch": "https://booth.pm/en/items/7439890",
-          "trend": 5.19,
+          "trend": 5.18,
           "autoTags": [
             "long_hair",
             "shorts",
@@ -123666,7 +123559,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756185625,
           "boothSearch": "https://booth.pm/en/items/7164165",
-          "trend": 8.66,
+          "trend": 8.65,
           "autoTags": [
             "breasts",
             "swimsuit",
@@ -123805,7 +123698,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789016534,
           "boothSearch": "https://booth.pm/en/items/8689802",
-          "trend": 41.59,
+          "trend": 41.3,
           "autoTags": [
             "long_hair",
             "horns",
@@ -123910,7 +123803,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792064854,
           "boothSearch": "https://booth.pm/en/items/7900000",
-          "trend": 50.89,
+          "trend": 50.77,
           "autoTags": [
             "navel",
             "long_hair",
@@ -123960,7 +123853,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791775247,
           "boothSearch": "https://booth.pm/en/items/7874090",
-          "trend": 13.74,
+          "trend": 13.71,
           "autoTags": [
             "skirt",
             "hat",
@@ -124132,7 +124025,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792070536,
           "boothSearch": "https://booth.pm/en/items/8147532",
-          "trend": 49.23,
+          "trend": 49.08,
           "autoTags": [
             "breasts",
             "underwear",
@@ -124193,7 +124086,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792235360,
           "boothSearch": "https://booth.pm/en/items/8644793",
-          "trend": 35.43,
+          "trend": 35.21,
           "autoTags": [
             "sleep_mask",
             "long_hair",
@@ -124246,7 +124139,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760842610,
           "boothSearch": "https://booth.pm/en/items/7519788",
-          "trend": 29.41,
+          "trend": 29.36,
           "autoTags": [
             "wings",
             "long_hair",
@@ -124282,7 +124175,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1696330084,
           "boothSearch": "https://booth.pm/en/items/4532150",
-          "trend": 3.29,
+          "trend": 3.3,
           "autoTags": [
             "skirt",
             "long_hair",
@@ -124338,7 +124231,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792574768,
           "boothSearch": "https://booth.pm/en/items/8167875",
-          "trend": 33.06,
+          "trend": 32.96,
           "autoTags": [
             "wings",
             "dress",
@@ -124384,7 +124277,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792669820,
           "boothSearch": "https://booth.pm/en/items/8528163",
-          "trend": 28.39,
+          "trend": 28.25,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -124681,7 +124574,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763782401,
           "boothSearch": "https://booth.pm/en/items/7486801",
-          "trend": 11.35,
+          "trend": 11.33,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -124805,7 +124698,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791971156,
           "boothSearch": "https://booth.pm/en/items/8818416",
-          "trend": 60.16,
+          "trend": 59.33,
           "autoTags": [
             "veil",
             "bouquet",
@@ -124845,7 +124738,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1714346345,
           "boothSearch": "https://booth.pm/en/items/5690463",
-          "trend": 8.51,
+          "trend": 8.5,
           "autoTags": [
             "lying",
             "long_hair",
@@ -124873,7 +124766,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1708130781,
           "boothSearch": "https://booth.pm/en/items/5423725",
-          "trend": 1.92,
+          "trend": 1.91,
           "autoTags": [
             "animal_ears",
             "long_hair",
@@ -124917,7 +124810,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1715479412,
           "boothSearch": "https://booth.pm/en/items/5730227",
-          "trend": 2.15,
+          "trend": 2.14,
           "autoTags": [
             "long_hair",
             "bow",
@@ -124956,7 +124849,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758363547,
           "boothSearch": "https://booth.pm/en/items/7285784",
-          "trend": 7.47,
+          "trend": 7.46,
           "autoTags": [
             "skirt",
             "plaid_skirt",
@@ -125007,7 +124900,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792235476,
           "boothSearch": "https://booth.pm/en/items/8257944",
-          "trend": 38.19,
+          "trend": 38.06,
           "autoTags": [
             "dress",
             "hat",
@@ -125076,7 +124969,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1758364799,
           "boothSearch": "https://booth.pm/en/items/7376708",
-          "trend": 4.65,
+          "trend": 4.64,
           "autoTags": [
             "skirt",
             "twintails",
@@ -125106,7 +124999,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1757588551,
           "boothSearch": "https://booth.pm/en/items/7109388",
-          "trend": 7.18,
+          "trend": 7.17,
           "autoTags": [
             "male_focus",
             "hat",
@@ -125247,7 +125140,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792059854,
           "boothSearch": "https://booth.pm/en/items/8597582",
-          "trend": 51.34,
+          "trend": 51.07,
           "autoTags": [
             "breasts",
             "thighhighs",
@@ -125302,7 +125195,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792671278,
           "boothSearch": "https://booth.pm/en/items/8641498",
-          "trend": 26.54,
+          "trend": 26.38,
           "autoTags": [
             "sleep_mask",
             "breasts",
@@ -125348,7 +125241,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1717205156,
           "boothSearch": "https://booth.pm/en/items/5776104",
-          "trend": 5.87,
+          "trend": 5.86,
           "autoTags": [
             "breasts",
             "swimsuit",
@@ -125486,33 +125379,31 @@ const AVATAR_DATA = {
             "Sio",
             "platinum"
           ],
-          "dateAdded": 1793783406,
+          "dateAdded": 1793783432,
           "boothSearch": "https://booth.pm/en/items/7671366",
-          "trend": 28.43,
+          "trend": 28.38,
           "autoTags": [
             "thighhighs",
             "long_hair",
-            "sitting",
-            "hair_ribbon",
-            "ribbon",
-            "flower",
             "dress",
-            "long_sleeves",
+            "hairband",
+            "sitting",
+            "flower",
+            "ribbon",
             "ahoge",
+            "long_sleeves",
+            "hair_ribbon",
+            "very_long_hair",
+            "side_ponytail",
             "copyright_name",
             "hair_between_eyes",
-            "nail_polish",
-            "side_ponytail",
             "rose",
-            "hairband",
-            "very_long_hair",
+            "frills",
             "armchair",
             "chair",
-            "frills",
+            "official_alternate_costume",
             "puffy_sleeves",
-            "hair_intakes",
-            "ascot",
-            "blurry_foreground"
+            "crossed_legs"
           ]
         },
         {
@@ -125632,28 +125523,22 @@ const AVATAR_DATA = {
             "Shinano",
             "mint"
           ],
-          "dateAdded": 1793784563,
+          "dateAdded": 1793784596,
           "boothSearch": "https://booth.pm/en/items/8015586",
-          "trend": 28.48,
+          "trend": 28.41,
           "autoTags": [
             "twintails",
             "detached_sleeves",
             "long_hair",
             "dress",
-            "sky",
-            "ribbon",
             "hair_ribbon",
-            "star_(sky)",
-            "starry_sky",
-            "night",
-            "bare_shoulders",
+            "ribbon",
             "long_sleeves",
-            "night_sky",
-            "small_breasts",
-            "breasts",
-            ":d",
+            "bare_shoulders",
+            "sky",
             "frills",
-            "cloud",
+            "skirt",
+            "star_(sky)",
             "bow"
           ]
         },
@@ -125771,7 +125656,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791959188,
           "boothSearch": "https://booth.pm/en/items/8853537",
-          "trend": 74.15,
+          "trend": 73.16,
           "autoTags": [
             "animal_ears",
             "breasts",
@@ -125832,7 +125717,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792670536,
           "boothSearch": "https://booth.pm/en/items/8287241",
-          "trend": 28.78,
+          "trend": 28.68,
           "autoTags": [
             "caution_tape",
             "breasts",
@@ -125889,7 +125774,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1724650033,
           "boothSearch": "https://booth.pm/en/items/6020523",
-          "trend": 17.29,
+          "trend": 17.27,
           "autoTags": [
             "breasts",
             "underwear",
@@ -125937,41 +125822,34 @@ const AVATAR_DATA = {
             "Shinra",
             "Sio"
           ],
-          "dateAdded": 1793779459,
+          "dateAdded": 1793779482,
           "boothSearch": "https://booth.pm/en/items/8089652",
-          "trend": 26.6,
+          "trend": 26.53,
           "autoTags": [
-            "leotard",
             "breasts",
+            "leotard",
             "animal_ears",
-            "pantyhose",
-            "handcuffs",
-            "long_hair",
-            "jacket",
             "playboy_bunny",
-            "bowtie",
-            "cuffs",
-            "bow",
-            "detached_collar",
-            "fishnets",
+            "jacket",
+            "long_hair",
             "rabbit_ears",
-            "hat",
-            "fake_animal_ears",
+            "bowtie",
+            "bow",
             "high_heels",
-            "fishnet_pantyhose",
-            "highleg",
-            "highleg_leotard",
-            "strapless",
-            "cleavage",
+            "fake_animal_ears",
+            "hat",
             "large_breasts",
+            "cleavage",
+            "strapless",
+            "highleg",
             "strapless_leotard",
-            "chain",
-            "cropped_jacket",
-            "long_sleeves",
             "open_jacket",
-            "arm_up",
+            "detached_collar",
+            "o-ring",
+            "thigh_strap",
             "open_clothes",
-            "bound"
+            "long_sleeves",
+            "highleg_leotard"
           ]
         },
         {
@@ -126031,7 +125909,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792638751,
           "boothSearch": "https://booth.pm/en/items/8995820",
-          "trend": 513.71,
+          "trend": 497.03,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -126130,7 +126008,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792670412,
           "boothSearch": "https://booth.pm/en/items/8029197",
-          "trend": 29.6,
+          "trend": 29.52,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -126254,7 +126132,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789013572,
           "boothSearch": "https://booth.pm/en/items/8667441",
-          "trend": 109.89,
+          "trend": 109.1,
           "autoTags": [
             "jacket",
             "short_hair",
@@ -126302,7 +126180,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1764999389,
           "boothSearch": "https://booth.pm/en/items/7462634",
-          "trend": 18.04,
+          "trend": 18.01,
           "autoTags": [
             "dress",
             "long_hair",
@@ -126419,7 +126297,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1760846749,
           "boothSearch": "https://booth.pm/en/items/7477128",
-          "trend": 22.08,
+          "trend": 22.04,
           "autoTags": [
             "skirt",
             "long_hair",
@@ -126479,7 +126357,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792574734,
           "boothSearch": "https://booth.pm/en/items/8646410",
-          "trend": 29.65,
+          "trend": 29.46,
           "autoTags": [
             "animal_ears",
             "jacket",
@@ -126534,7 +126412,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792602688,
           "boothSearch": "https://booth.pm/en/items/8645436",
-          "trend": 28.72,
+          "trend": 28.54,
           "autoTags": [
             "shorts",
             "choker",
@@ -126751,7 +126629,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792670926,
           "boothSearch": "https://booth.pm/en/items/8669314",
-          "trend": 26.28,
+          "trend": 26.09,
           "autoTags": [
             "animal_ears",
             "long_hair",
@@ -126807,7 +126685,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763878310,
           "boothSearch": "https://booth.pm/en/items/7588606",
-          "trend": 1.32,
+          "trend": 1.31,
           "autoTags": [
             "breasts",
             "large_breasts",
@@ -126852,7 +126730,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791775015,
           "boothSearch": "https://booth.pm/en/items/8001463",
-          "trend": 18.48,
+          "trend": 18.43,
           "autoTags": [
             "long_hair",
             "lying",
@@ -126931,7 +126809,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753069226,
           "boothSearch": "https://booth.pm/en/items/6714930",
-          "trend": 42.82,
+          "trend": 42.78,
           "autoTags": [
             "hat",
             "weapon",
@@ -126986,7 +126864,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1789010653,
           "boothSearch": "https://booth.pm/en/items/8511779",
-          "trend": 15.94,
+          "trend": 15.87,
           "autoTags": [
             "breasts",
             "pants",
@@ -127040,7 +126918,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756180854,
           "boothSearch": "https://booth.pm/en/items/6975254",
-          "trend": 7.03,
+          "trend": 7.02,
           "autoTags": [
             "long_hair",
             "hat",
@@ -127093,7 +126971,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791953901,
           "boothSearch": "https://booth.pm/en/items/8765956",
-          "trend": 93.48,
+          "trend": 92.64,
           "autoTags": [
             "hat",
             "baseball_cap",
@@ -127135,7 +127013,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756875714,
           "boothSearch": "https://booth.pm/en/items/7319089",
-          "trend": 17.99,
+          "trend": 17.96,
           "autoTags": [
             "shorts",
             "crown",
@@ -127192,7 +127070,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1706613233,
           "boothSearch": "https://booth.pm/en/items/5453345",
-          "trend": 4.73,
+          "trend": 4.72,
           "autoTags": [
             "long_hair",
             "breasts",
@@ -127246,7 +127124,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1765002310,
           "boothSearch": "https://booth.pm/en/items/7694063",
-          "trend": 29.33,
+          "trend": 29.27,
           "autoTags": [
             "jacket",
             "gloves",
@@ -127327,7 +127205,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1753068020,
           "boothSearch": "https://booth.pm/en/items/6959448",
-          "trend": 11.81,
+          "trend": 11.79,
           "autoTags": [
             "twintails",
             "sunglasses",
@@ -127376,7 +127254,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1761974079,
           "boothSearch": "https://booth.pm/en/items/7587616",
-          "trend": 20.46,
+          "trend": 20.42,
           "autoTags": [
             "hat",
             "witch_hat",
@@ -127421,7 +127299,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792639945,
           "boothSearch": "https://booth.pm/en/items/8936522",
-          "trend": 66.77,
+          "trend": 65.17,
           "autoTags": [
             "breasts",
             "skirt",
@@ -127471,7 +127349,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791603077,
           "boothSearch": "https://booth.pm/en/items/7294198",
-          "trend": 8.24,
+          "trend": 8.23,
           "autoTags": [
             "breasts",
             "gloves",
@@ -127520,7 +127398,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1772253299,
           "boothSearch": "https://booth.pm/en/items/7778476",
-          "trend": 5.0,
+          "trend": 4.99,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -127605,7 +127483,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1744683033,
           "boothSearch": "https://booth.pm/en/items/6094015",
-          "trend": 20.19,
+          "trend": 20.17,
           "autoTags": [
             "animal_ears",
             "long_hair",
@@ -127657,7 +127535,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791819304,
           "boothSearch": "https://booth.pm/en/items/8924528",
-          "trend": 101.83,
+          "trend": 99.95,
           "autoTags": [
             "gloves",
             "horns",
@@ -127717,7 +127595,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792057381,
           "boothSearch": "https://booth.pm/en/items/8823315",
-          "trend": 44.91,
+          "trend": 44.4,
           "autoTags": [
             "gloves",
             "hat",
@@ -127778,7 +127656,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792671503,
           "boothSearch": "https://booth.pm/en/items/8518742",
-          "trend": 27.29,
+          "trend": 27.17,
           "autoTags": [
             "breasts",
             "hood",
@@ -127831,7 +127709,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1738462553,
           "boothSearch": "https://booth.pm/en/items/6397984",
-          "trend": 26.71,
+          "trend": 26.68,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -128034,7 +127912,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1761972868,
           "boothSearch": "https://booth.pm/en/items/7464866",
-          "trend": 17.88,
+          "trend": 17.85,
           "autoTags": [
             "twintails",
             "cape",
@@ -128109,7 +127987,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1759465506,
           "boothSearch": "https://booth.pm/en/items/7021465",
-          "trend": 22.56,
+          "trend": 22.53,
           "autoTags": [
             "pants",
             "short_hair",
@@ -128195,7 +128073,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1765002611,
           "boothSearch": "https://booth.pm/en/items/7687718",
-          "trend": 8.72,
+          "trend": 8.7,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -128312,7 +128190,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792576457,
           "boothSearch": "https://booth.pm/en/items/8204201",
-          "trend": 32.13,
+          "trend": 32.03,
           "autoTags": [
             "animal_ears",
             "fangs",
@@ -128354,68 +128232,50 @@ const AVATAR_DATA = {
             "Selestia",
             "Shinano"
           ],
-          "dateAdded": 1793781669,
+          "dateAdded": 1793781686,
           "boothSearch": "https://booth.pm/en/items/8600314",
-          "trend": 26.43,
+          "trend": 26.28,
           "autoTags": [
-            "bikini",
-            "swimsuit",
-            "breasts",
-            "sunglasses",
             "eyewear_on_head",
+            "swimsuit",
+            "bikini",
+            "sunglasses",
+            "breasts",
             "jacket",
             "thigh_strap",
             "outdoors",
-            "navel",
-            "choker",
-            "halterneck",
-            "animal_print",
-            "long_hair",
             "twintails",
+            "choker",
+            "long_hair",
+            "animal_print",
+            "navel",
             "day",
-            "jewelry",
-            "open_jacket",
-            "open_clothes",
-            "o-ring_bikini",
-            "shirt",
-            "stomach",
-            "bare_shoulders",
-            "o-ring",
-            "criss-cross_halter",
-            "cleavage",
-            "medium_breasts",
-            "string_bikini",
             "sky",
-            "hair_ribbon",
-            "off_shoulder",
+            "medium_breasts",
             "palm_tree",
+            "open_jacket",
             "cow_print",
-            "bracelet",
-            "earrings",
-            "standing",
-            "front-tie_top",
-            "print_bikini",
-            "ribbon",
-            "collarbone",
-            "sleeveless_shirt",
-            "thighs",
-            "cloud",
-            "large_breasts",
-            "sun",
-            "sunlight",
-            "mole_under_eye",
-            "long_sleeves",
-            "short_hair",
-            "tree",
-            "mole",
-            "very_long_hair",
-            "o-ring_top",
-            "beachball",
-            "ball",
+            "halterneck",
+            "open_clothes",
+            "jewelry",
             "beach",
-            "black-framed_eyewear",
-            "front-tie_bikini_top",
-            "hair_bun"
+            "cleavage",
+            "cloud",
+            "ribbon",
+            "print_bikini",
+            "hair_ribbon",
+            "tree",
+            "bracelet",
+            "ocean",
+            "short_hair",
+            "o-ring",
+            "bare_shoulders",
+            "off_shoulder",
+            "standing",
+            "sun",
+            "very_long_hair",
+            "o-ring_bikini",
+            "water"
           ]
         },
         {
@@ -128432,7 +128292,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1738461809,
           "boothSearch": "https://booth.pm/en/items/6462272",
-          "trend": 6.47,
+          "trend": 6.46,
           "autoTags": [
             "animal_ears",
             "jacket",
@@ -128522,7 +128382,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1711248842,
           "boothSearch": "https://booth.pm/en/items/5507990",
-          "trend": 1.42,
+          "trend": 1.41,
           "autoTags": [
             "dress",
             "animal_ears",
@@ -128598,7 +128458,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751092802,
           "boothSearch": "https://booth.pm/en/items/6932149",
-          "trend": 10.24,
+          "trend": 10.22,
           "autoTags": [
             "animal_ears",
             "rabbit_ears",
@@ -128693,7 +128553,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792671695,
           "boothSearch": "https://booth.pm/en/items/7997763",
-          "trend": 28.62,
+          "trend": 28.55,
           "autoTags": [
             "long_hair",
             "shirt",
@@ -128741,7 +128601,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792639451,
           "boothSearch": "https://booth.pm/en/items/9022875",
-          "trend": 456.38,
+          "trend": 436.37,
           "autoTags": [
             "hat",
             "witch_hat",
@@ -128841,7 +128701,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791969992,
           "boothSearch": "https://booth.pm/en/items/8821967",
-          "trend": 73.52,
+          "trend": 72.69,
           "autoTags": [
             "thighhighs",
             "wings",
@@ -128887,7 +128747,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792667385,
           "boothSearch": "https://booth.pm/en/items/8479280",
-          "trend": 29.79,
+          "trend": 29.66,
           "autoTags": [
             "breasts",
             "gloves",
@@ -128942,7 +128802,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1780484041,
           "boothSearch": "https://booth.pm/en/items/7845615",
-          "trend": 8.91,
+          "trend": 8.89,
           "autoTags": [
             "breasts",
             "large_breasts",
@@ -128980,7 +128840,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1756178686,
           "boothSearch": "https://booth.pm/en/items/6878710",
-          "trend": 8.77,
+          "trend": 8.76,
           "autoTags": [
             "breasts",
             "twintails",
@@ -129065,7 +128925,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1716514231,
           "boothSearch": "https://booth.pm/en/items/5750363",
-          "trend": 5.13,
+          "trend": 5.12,
           "autoTags": [
             "dress",
             "long_hair",
@@ -129141,7 +129001,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1735286421,
           "boothSearch": "https://booth.pm/en/items/4367287",
-          "trend": 3.05,
+          "trend": 3.04,
           "autoTags": [
             "hat",
             "santa_hat",
@@ -129337,7 +129197,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1763874547,
           "boothSearch": "https://booth.pm/en/items/7572439",
-          "trend": 5.9,
+          "trend": 5.89,
           "autoTags": [
             "hat",
             "dress",
@@ -129376,7 +129236,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1785477872,
           "boothSearch": "https://booth.pm/en/items/8201549",
-          "trend": 31.39,
+          "trend": 31.29,
           "autoTags": [
             "pants",
             "shirt",
@@ -129439,7 +129299,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792639246,
           "boothSearch": "https://booth.pm/en/items/8991052",
-          "trend": 116.98,
+          "trend": 113.39,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -129489,7 +129349,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1737435109,
           "boothSearch": "https://booth.pm/en/items/6137672",
-          "trend": 6.14,
+          "trend": 6.13,
           "autoTags": [
             "caution_tape",
             "braid",
@@ -129583,46 +129443,41 @@ const AVATAR_DATA = {
             "Rurune",
             "Shinano"
           ],
-          "dateAdded": 1793782113,
+          "dateAdded": 1793782231,
           "boothSearch": "https://booth.pm/en/items/8448779",
-          "trend": 24.96,
+          "trend": 24.85,
           "autoTags": [
             "animal_ear_headphones",
-            "fake_animal_ears",
             "cat_ear_headphones",
-            "long_hair",
+            "fake_animal_ears",
             "headphones",
-            "thighhighs",
-            "skirt",
-            "fur_trim",
             "animal_ears",
-            "ahoge",
-            "crop_top",
-            "shirt",
-            "very_long_hair",
-            "single_thighhigh",
-            "jacket",
+            "long_hair",
+            "thighhighs",
+            "fur_trim",
+            "skirt",
             "sleeves_past_fingers",
+            "single_thighhigh",
+            "very_long_hair",
             "asymmetrical_legwear",
-            "twintails",
-            "midriff",
-            "pleated_skirt",
-            "long_sleeves",
+            "ahoge",
             "sleeves_past_wrists",
-            "miniskirt",
-            "open_clothes",
-            "socks",
-            "single_sock",
-            "fur-trimmed_sleeves",
-            ":d",
-            "choker",
-            "low_twintails",
+            "shirt",
             "boots",
+            "jacket",
+            "fur-trimmed_sleeves",
+            "twintails",
             "coat",
-            "vest",
-            "belt",
+            "crop_top",
+            "cat_ears",
+            "long_sleeves",
+            "sitting",
             "wide_sleeves",
-            "character_name"
+            "chair",
+            "single_sock",
+            "tail",
+            "belt",
+            "midriff"
           ]
         },
         {
@@ -129648,7 +129503,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791822660,
           "boothSearch": "https://booth.pm/en/items/8814185",
-          "trend": 113.61,
+          "trend": 112.33,
           "autoTags": [
             "dress",
             "long_hair",
@@ -129698,7 +129553,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1791818113,
           "boothSearch": "https://booth.pm/en/items/8903735",
-          "trend": 118.53,
+          "trend": 115.89,
           "autoTags": [
             "hat",
             "long_hair",
@@ -129770,7 +129625,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792668572,
           "boothSearch": "https://booth.pm/en/items/8500913",
-          "trend": 29.27,
+          "trend": 29.14,
           "autoTags": [
             "breasts",
             "apron",
@@ -129855,7 +129710,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1779624815,
           "boothSearch": "https://booth.pm/en/items/7732871",
-          "trend": 18.08,
+          "trend": 18.04,
           "autoTags": [
             "scarf",
             "skirt",
@@ -129899,7 +129754,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1740968590,
           "boothSearch": "https://booth.pm/en/items/6429701",
-          "trend": 12.71,
+          "trend": 12.7,
           "autoTags": [
             "short_hair",
             "shirt",
@@ -129958,7 +129813,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1723353240,
           "boothSearch": "https://booth.pm/en/items/5991541",
-          "trend": 4.77,
+          "trend": 4.76,
           "autoTags": [
             "twintails",
             "pants",
@@ -130092,34 +129947,38 @@ const AVATAR_DATA = {
             "SiuSiu",
             "Velle"
           ],
-          "dateAdded": 1793782090,
+          "dateAdded": 1793782108,
           "boothSearch": "https://booth.pm/en/items/8970851",
-          "trend": 13.5,
+          "trend": 13.15,
           "autoTags": [
-            "hat",
-            "tongue",
-            "tongue_out",
-            "braid",
             "baseball_bat",
             "holding_baseball_bat",
-            "navel",
-            "long_hair",
-            "midriff",
-            "holding",
-            "crop_top",
+            "hat",
             "baseball_cap",
+            "braid",
+            "midriff",
+            "long_hair",
+            "tongue_out",
+            "holding",
+            "navel",
+            "crop_top",
+            "baseball_uniform",
+            "tongue",
             "long_sleeves",
-            "open_clothes",
-            "shirt",
             "jacket",
-            "short_sleeves",
-            "outdoors",
+            "shirt",
+            "open_clothes",
             "layered_sleeves",
             "sportswear",
-            "beanie",
-            "breasts",
             "short_over_long_sleeves",
-            "side_braid"
+            "short_sleeves",
+            "outdoors",
+            "nail_polish",
+            "side_braid",
+            "pants",
+            "sky",
+            "open_jacket",
+            "single_braid"
           ]
         },
         {
@@ -130151,7 +130010,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792640085,
           "boothSearch": "https://booth.pm/en/items/8883395",
-          "trend": 75.01,
+          "trend": 73.91,
           "autoTags": [
             "mask_pull",
             "long_hair",
@@ -130289,7 +130148,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792235071,
           "boothSearch": "https://booth.pm/en/items/8184658",
-          "trend": 39.06,
+          "trend": 38.94,
           "autoTags": [
             "horns",
             "umbrella",
@@ -130337,7 +130196,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792057011,
           "boothSearch": "https://booth.pm/en/items/8729524",
-          "trend": 51.26,
+          "trend": 50.81,
           "autoTags": [
             "breasts",
             "heterochromia",
@@ -130392,7 +130251,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792071994,
           "boothSearch": "https://booth.pm/en/items/8029794",
-          "trend": 44.79,
+          "trend": 44.68,
           "autoTags": [
             "animal_ears",
             "thighhighs",
@@ -130489,7 +130348,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1718777656,
           "boothSearch": "https://booth.pm/en/items/5840141",
-          "trend": 18.63,
+          "trend": 18.61,
           "autoTags": [
             "japanese_clothes",
             "flower",
@@ -130529,7 +130388,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1699832935,
           "boothSearch": "https://booth.pm/en/items/5222688",
-          "trend": 8.65,
+          "trend": 8.64,
           "autoTags": [
             "animal_ears",
             "dress",
@@ -130612,7 +130471,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792639377,
           "boothSearch": "https://booth.pm/en/items/9000616",
-          "trend": 110.5,
+          "trend": 106.8,
           "autoTags": [
             "breasts",
             "animal_ears",
@@ -130663,46 +130522,42 @@ const AVATAR_DATA = {
             "Sio",
             "kurone"
           ],
-          "dateAdded": 1793778963,
+          "dateAdded": 1793778973,
           "boothSearch": "https://booth.pm/en/items/7900099",
-          "trend": 26.73,
+          "trend": 26.67,
           "autoTags": [
             "dress",
-            "thighhighs",
-            "gloves",
-            "breasts",
             "china_dress",
+            "thighhighs",
             "hair_bun",
             "chinese_clothes",
-            "twintails",
+            "gloves",
+            "breasts",
             "long_hair",
-            "multicolored_hair",
+            "twintails",
             "very_long_hair",
-            "clothing_cutout",
-            "half_gloves",
-            "pelvic_curtain",
             "double_bun",
+            "clothing_cutout",
+            "multicolored_hair",
             "underwear",
-            "panties",
-            "sleeveless",
             "braid",
+            "panties",
+            "pelvic_curtain",
+            "sleeveless",
+            "side_slit",
             "sleeveless_dress",
-            "two-tone_hair",
-            "twin_braids",
             "bare_shoulders",
             "long_sleeves",
-            "medium_breasts",
-            "hair_ornament",
-            "covered_navel",
-            "side_slit",
+            "two-tone_hair",
             "cleavage_cutout",
+            "half_gloves",
+            "medium_breasts",
             "side-tie_panties",
+            "holding",
+            "hair_ornament",
             "standing",
-            "standing_on_one_leg",
-            "large_breasts",
-            "string_panties",
-            "leg_up",
-            "thighs"
+            "twin_braids",
+            "standing_on_one_leg"
           ]
         },
         {
@@ -130732,7 +130587,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792577490,
           "boothSearch": "https://booth.pm/en/items/8380230",
-          "trend": 34.26,
+          "trend": 34.13,
           "autoTags": [
             "long_hair",
             "breasts",
@@ -130774,7 +130629,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1786092008,
           "boothSearch": "https://booth.pm/en/items/8543771",
-          "trend": 29.53,
+          "trend": 29.39,
           "autoTags": [
             "headphones_around_neck",
             "headphones",
@@ -130869,7 +130724,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1751094127,
           "boothSearch": "https://booth.pm/en/items/4672800",
-          "trend": 5.22,
+          "trend": 5.21,
           "autoTags": [
             "thighhighs",
             "jirai_kei",
@@ -130922,7 +130777,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1690296913,
           "boothSearch": "https://booth.pm/en/items/4911652",
-          "trend": 4.31,
+          "trend": 4.3,
           "autoTags": [
             "japanese_clothes",
             "kimono",
@@ -130966,7 +130821,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792071534,
           "boothSearch": "https://booth.pm/en/items/8550623",
-          "trend": 43.46,
+          "trend": 43.25,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -131019,21 +130874,23 @@ const AVATAR_DATA = {
             "Shinano",
             "Sio"
           ],
-          "dateAdded": 1793777178,
+          "dateAdded": 1793777187,
           "boothSearch": "https://booth.pm/en/items/8184099",
-          "trend": 25.61,
+          "trend": 25.53,
           "autoTags": [
-            "slippers",
             "lying",
             "on_stomach",
+            "slippers",
+            "sleeves_past_wrists",
+            "mouth_hold",
             "long_sleeves",
             "the_pose",
-            "mouth_hold",
-            "dress",
             "scissors",
-            "hair_between_eyes",
-            "collarbone",
-            "short_hair"
+            "short_hair",
+            "sleeves_past_fingers",
+            "bow",
+            "dress",
+            "ribbon"
           ]
         },
         {
@@ -131063,7 +130920,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792061513,
           "boothSearch": "https://booth.pm/en/items/8400366",
-          "trend": 52.91,
+          "trend": 52.71,
           "autoTags": [
             "animal_ears",
             "breasts",
@@ -131127,7 +130984,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1783440492,
           "boothSearch": "https://booth.pm/en/items/7540926",
-          "trend": 7.39,
+          "trend": 7.37,
           "autoTags": [
             "wings",
             "long_hair",
@@ -131166,7 +131023,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1783696459,
           "boothSearch": "https://booth.pm/en/items/7483681",
-          "trend": 6.04,
+          "trend": 6.03,
           "autoTags": [
             "skirt",
             "breasts",
@@ -131484,7 +131341,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Shinano/Texture/favotime_pure_make.jpg",
           "dateAdded": 1760843384,
           "boothSearch": "https://booth.pm/en/items/7217718",
-          "trend": 12.76,
+          "trend": 12.74,
           "autoTags": [
             "hair_ornament",
             "sample_watermark",
@@ -131856,7 +131713,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1737431054,
           "boothSearch": "https://booth.pm/en/items/5638738",
-          "trend": 4.2,
+          "trend": 4.21,
           "autoTags": [
             "bow",
             "braid",
@@ -132044,7 +131901,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792664338,
           "boothSearch": "https://booth.pm/en/items/8778921",
-          "trend": 44.25,
+          "trend": 43.79,
           "autoTags": [
             "jirai_kei",
             "skirt",
@@ -132208,7 +132065,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1729669518,
           "boothSearch": "https://booth.pm/en/items/6133885",
-          "trend": 7.14,
+          "trend": 7.13,
           "autoTags": [
             "witch_hat",
             "hat",
@@ -132341,7 +132198,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1792664281,
           "boothSearch": "https://booth.pm/en/items/8760771",
-          "trend": 47.73,
+          "trend": 47.29,
           "autoTags": [
             "breasts",
             "cleavage",
@@ -132439,7 +132296,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1727509359,
       "boothSearch": "https://booth.pm/en/items/6106863",
-      "trend": 68.17,
+      "trend": 68.11,
       "autoTags": [
         "braid",
         "sleeves_past_wrists",
@@ -133010,7 +132867,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Shinra/Texture/shira_texture_zzoma.jpg",
           "dateAdded": 1686835578,
           "boothSearch": "https://booth.pm/en/items/4726058",
-          "trend": 1.27,
+          "trend": 1.26,
           "autoTags": [
             "long_hair",
             "jewelry",
@@ -133256,7 +133113,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1722660914,
           "boothSearch": "https://booth.pm/en/items/5111206",
-          "trend": 6.89,
+          "trend": 6.88,
           "autoTags": [
             "gun",
             "weapon",
@@ -133491,7 +133348,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1691071833,
           "boothSearch": "https://booth.pm/en/items/4772607",
-          "trend": 0.76,
+          "trend": 0.75,
           "autoTags": [
             "long_hair",
             "hat",
@@ -133928,7 +133785,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1718778669,
           "boothSearch": "https://booth.pm/en/items/5807195",
-          "trend": 3.55,
+          "trend": 3.54,
           "autoTags": [
             "dress",
             "twintails",
@@ -133949,7 +133806,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1700438090,
           "boothSearch": "https://booth.pm/en/items/5246928",
-          "trend": 5.24,
+          "trend": 5.23,
           "autoTags": [
             "dress",
             "detached_sleeves",
@@ -133976,7 +133833,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1731911807,
           "boothSearch": "https://booth.pm/en/items/6217964",
-          "trend": 4.37,
+          "trend": 4.36,
           "autoTags": [
             "dress",
             "chinese_clothes",
@@ -134032,7 +133889,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1719840893,
           "boothSearch": "https://booth.pm/en/items/5849570",
-          "trend": 3.59,
+          "trend": 3.58,
           "autoTags": [
             "long_hair",
             "ass",
@@ -134382,7 +134239,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1711072899,
           "boothSearch": "https://booth.pm/en/items/5359699",
-          "trend": 17.03,
+          "trend": 17.02,
           "autoTags": [
             "breasts",
             "long_hair",
@@ -134738,7 +134595,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1686919613,
           "boothSearch": "https://booth.pm/en/items/4686905",
-          "trend": 1.39,
+          "trend": 1.38,
           "autoTags": [
             "short_hair",
             "shirt",
@@ -135013,7 +134870,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1705645037,
           "boothSearch": "https://booth.pm/en/items/4801446",
-          "trend": 1.34,
+          "trend": 1.33,
           "autoTags": [
             "long_hair",
             "shorts",
@@ -135511,7 +135368,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sio/Texture/Cross Flare Sio.jpg",
           "dateAdded": 1789040986,
           "boothSearch": "https://booth.pm/en/items/8672150",
-          "trend": 41.33,
+          "trend": 41.04,
           "autoTags": [
             "animal_ears",
             "hair_between_eyes",
@@ -135593,7 +135450,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sio/Texture/Go.oz_Sio_Dark_Makeup.jpg",
           "dateAdded": 1713920939,
           "boothSearch": "https://booth.pm/en/items/5658245",
-          "trend": 2.54,
+          "trend": 2.53,
           "autoTags": [
             "breasts",
             "hat",
@@ -135923,7 +135780,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sio/Texture/Sio.jpg",
           "dateAdded": 1718508064,
           "boothSearch": "https://booth.pm/en/items/5650156",
-          "trend": 33.14,
+          "trend": 33.11,
           "autoTags": [
             "animal_ears",
             "horns",
@@ -135980,7 +135837,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sio/Texture/Sio_Cyberpunk Eyes + Makeup Texture & Material.jpg",
           "dateAdded": 1748825727,
           "boothSearch": "https://booth.pm/en/items/6113112",
-          "trend": 2.78,
+          "trend": 2.77,
           "autoTags": [
             "twintails",
             "glowing",
@@ -136003,7 +135860,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sio/Texture/Sio_Doll_Texture.jpg",
           "dateAdded": 1760841376,
           "boothSearch": "https://booth.pm/en/items/5871400",
-          "trend": 5.06,
+          "trend": 5.05,
           "autoTags": [
             "twintails",
             "hair_ornament",
@@ -136137,7 +135994,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sio/Texture/sio_makeup__.jpg",
           "dateAdded": 1760843458,
           "boothSearch": "https://booth.pm/en/items/7336929",
-          "trend": 3.34,
+          "trend": 3.33,
           "autoTags": [
             "twintails",
             "collar",
@@ -136164,7 +136021,7 @@ const AVATAR_DATA = {
           "sourceFile": "Clothes, Texture/Sio/Texture/Sio_Makeup_NO39.jpg",
           "dateAdded": 1713056887,
           "boothSearch": "https://booth.pm/en/items/5653758",
-          "trend": 2.41,
+          "trend": 2.4,
           "autoTags": [
             "animal_ears",
             "straight-on",
@@ -136513,7 +136370,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1714606782,
           "boothSearch": "https://booth.pm/en/items/5615296",
-          "trend": 5.24,
+          "trend": 5.23,
           "autoTags": [
             "animal_ears",
             "twintails",
@@ -136550,7 +136407,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1714606074,
           "boothSearch": "https://booth.pm/en/items/5638932",
-          "trend": 7.12,
+          "trend": 7.11,
           "autoTags": [
             "animal_ears",
             "twintails",
@@ -136666,7 +136523,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1717811797,
           "boothSearch": "https://booth.pm/en/items/5786985",
-          "trend": 2.25,
+          "trend": 2.24,
           "autoTags": [
             "shorts",
             "sleeves_past_wrists",
@@ -136759,7 +136616,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1713922155,
           "boothSearch": "https://booth.pm/en/items/5638738",
-          "trend": 4.2,
+          "trend": 4.21,
           "autoTags": [
             "jewelry",
             "twintails",
@@ -137078,7 +136935,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1713579939,
           "boothSearch": "https://booth.pm/en/items/5054320",
-          "trend": 5.93,
+          "trend": 5.92,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -137260,7 +137117,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1717379283,
           "boothSearch": "https://booth.pm/en/items/5672762",
-          "trend": 4.39,
+          "trend": 4.38,
           "autoTags": [
             "animal_ears",
             "skirt",
@@ -137480,7 +137337,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1713921492,
           "boothSearch": "https://booth.pm/en/items/5476338",
-          "trend": 5.51,
+          "trend": 5.5,
           "autoTags": [
             "headphones",
             "twintails",
@@ -137685,7 +137542,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1718508132,
           "boothSearch": "https://booth.pm/en/items/5803983",
-          "trend": 4.17,
+          "trend": 4.16,
           "autoTags": [
             "hat",
             "necktie",
@@ -137882,7 +137739,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1713141056,
           "boothSearch": "https://booth.pm/en/items/5050979",
-          "trend": 5.21,
+          "trend": 5.2,
           "autoTags": [
             "twintails",
             "animal_ears",
@@ -138133,7 +137990,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1715038379,
           "boothSearch": "https://booth.pm/en/items/5674632",
-          "trend": 5.64,
+          "trend": 5.63,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -138284,7 +138141,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1713921186,
           "boothSearch": "https://booth.pm/en/items/5657880",
-          "trend": 0.35,
+          "trend": 0.34,
           "autoTags": [
             "animal_ears",
             "tail",
@@ -138593,7 +138450,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1712984561,
           "boothSearch": "https://booth.pm/en/items/5537028",
-          "trend": 8.18,
+          "trend": 8.17,
           "autoTags": [
             "tail",
             "skirt",
@@ -138871,7 +138728,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1713056328,
           "boothSearch": "https://booth.pm/en/items/5586335",
-          "trend": 4.1,
+          "trend": 4.09,
           "autoTags": [
             "pants",
             "animal_ears",
@@ -139403,7 +139260,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1712985643,
           "boothSearch": "https://booth.pm/en/items/5642995",
-          "trend": 2.52,
+          "trend": 2.51,
           "autoTags": [
             "skirt",
             "thighhighs",
@@ -139544,7 +139401,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1713661958,
           "boothSearch": "https://booth.pm/en/items/5631273",
-          "trend": 3.44,
+          "trend": 3.43,
           "autoTags": [
             "animal_ears",
             "skirt",
@@ -139850,7 +139707,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1713579525,
           "boothSearch": "https://booth.pm/en/items/5661914",
-          "trend": 5.48,
+          "trend": 5.47,
           "autoTags": [
             "twintails",
             "animal_ears",
@@ -140348,7 +140205,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1721023652,
           "boothSearch": "https://booth.pm/en/items/5842739",
-          "trend": 5.04,
+          "trend": 5.03,
           "autoTags": [
             "shorts",
             "jacket",
@@ -140421,7 +140278,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1722659540,
           "boothSearch": "https://booth.pm/en/items/5848688",
-          "trend": 10.18,
+          "trend": 10.17,
           "autoTags": [
             "animal_ears",
             "sitting",
@@ -140619,7 +140476,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1721022920,
       "boothSearch": "https://booth.pm/en/items/5650156",
-      "trend": 33.14,
+      "trend": 33.11,
       "autoTags": [
         "animal_ears",
         "cat_ears",
@@ -140708,7 +140565,7 @@ const AVATAR_DATA = {
           ],
           "dateAdded": 1672861977,
           "boothSearch": "https://booth.pm/en/items/4118695",
-          "trend": 0.63,
+          "trend": 0.62,
           "autoTags": [
             "animal_ears",
             "twintails",
@@ -140866,7 +140723,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1667111166,
       "boothSearch": "https://booth.pm/en/items/4044305",
-      "trend": 9.4,
+      "trend": 9.39,
       "autoTags": [
         "animal_ears",
         "cat_ears",
@@ -142198,7 +142055,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1694775151,
       "boothSearch": "https://booth.pm/en/items/4951792",
-      "trend": 7.57,
+      "trend": 7.56,
       "autoTags": [
         "sample_watermark",
         "animal_ears",
@@ -143883,7 +143740,7 @@ const AVATAR_DATA = {
       "gender": "male",
       "dateAdded": 1789010533,
       "boothSearch": "https://booth.pm/en/items/8017433",
-      "trend": 20.66,
+      "trend": 20.61,
       "autoTags": [
         "gloves",
         "male_focus",
@@ -143909,7 +143766,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1669336489,
       "boothSearch": "https://booth.pm/en/items/4123536",
-      "trend": 2.62,
+      "trend": 2.61,
       "autoTags": [
         "animal_ears",
         "heterochromia",
@@ -143938,7 +143795,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1712018990,
       "boothSearch": "https://booth.pm/en/items/5482062",
-      "trend": 10.43,
+      "trend": 10.42,
       "autoTags": [
         "animal_ears",
         "gloves",
@@ -143997,7 +143854,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1785573950,
       "boothSearch": "https://booth.pm/en/items/7328764",
-      "trend": 66.99,
+      "trend": 66.9,
       "autoTags": [
         "animal_ears",
         "cat_ears",
@@ -144089,7 +143946,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1785575477,
       "boothSearch": "https://booth.pm/en/items/8147205",
-      "trend": 48.43,
+      "trend": 48.28,
       "autoTags": [
         "pointy_ears",
         "hair_bun",
@@ -144169,7 +144026,7 @@ const AVATAR_DATA = {
       "gender": "male",
       "dateAdded": 1753942841,
       "boothSearch": "https://booth.pm/en/items/6970249",
-      "trend": 37.28,
+      "trend": 37.24,
       "autoTags": [
         "male_focus",
         "animal_ears",
@@ -144198,7 +144055,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1792667550,
       "boothSearch": "https://booth.pm/en/items/7827639",
-      "trend": 30.95,
+      "trend": 30.88,
       "autoTags": [
         "animal_ears",
         "tongue_out",
@@ -144246,7 +144103,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1785575061,
       "boothSearch": "https://booth.pm/en/items/7928592",
-      "trend": 57.08,
+      "trend": 56.95,
       "autoTags": [
         "bear_ears",
         "animal_ears",
@@ -144282,7 +144139,7 @@ const AVATAR_DATA = {
       "gender": "male",
       "dateAdded": 1701053253,
       "boothSearch": "https://booth.pm/en/items/5142722",
-      "trend": 10.65,
+      "trend": 10.64,
       "autoTags": [
         "gloves",
         "male_focus",
@@ -144311,7 +144168,7 @@ const AVATAR_DATA = {
       "gender": "male",
       "dateAdded": 1785688590,
       "boothSearch": "https://booth.pm/en/items/6813995",
-      "trend": 36.65,
+      "trend": 36.61,
       "autoTags": [
         "animal_ears",
         "male_focus",
@@ -144374,7 +144231,7 @@ const AVATAR_DATA = {
       "gender": "male",
       "dateAdded": 1792602277,
       "boothSearch": "https://booth.pm/en/items/7924603",
-      "trend": 37.49,
+      "trend": 37.4,
       "autoTags": [
         "animal_ears",
         "ear_piercing",
@@ -144482,7 +144339,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1792602374,
       "boothSearch": "https://booth.pm/en/items/7918098",
-      "trend": 32.34,
+      "trend": 32.26,
       "autoTags": [
         "thighhighs",
         "jacket",
@@ -144547,7 +144404,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1785574658,
       "boothSearch": "https://booth.pm/en/items/8122803",
-      "trend": 91.55,
+      "trend": 91.29,
       "autoTags": [
         "animal_ears",
         "hair_ornament",
@@ -144614,7 +144471,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1785688143,
       "boothSearch": "https://booth.pm/en/items/6305948",
-      "trend": 40.14,
+      "trend": 40.1,
       "autoTags": [
         "animal_ears",
         "interlocked_fingers",
@@ -144640,7 +144497,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1785574418,
       "boothSearch": "https://booth.pm/en/items/8325804",
-      "trend": 104.56,
+      "trend": 104.2,
       "autoTags": [
         "hat",
         "choker",
@@ -144661,7 +144518,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1785688086,
       "boothSearch": "https://booth.pm/en/items/5345398",
-      "trend": 14.16,
+      "trend": 14.15,
       "autoTags": [
         "long_hair",
         "sweater",
@@ -144745,7 +144602,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1785574279,
       "boothSearch": "https://booth.pm/en/items/7770415",
-      "trend": 52.05,
+      "trend": 51.94,
       "autoTags": [
         "animal_ears",
         "animal_ear_fluff",
@@ -144934,7 +144791,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1751092517,
       "boothSearch": "https://booth.pm/en/items/6831821",
-      "trend": 24.32,
+      "trend": 24.29,
       "autoTags": [
         "animal_ears",
         "animal_ear_fluff",
@@ -144959,7 +144816,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1791823210,
       "boothSearch": "https://booth.pm/en/items/8426340",
-      "trend": 144.34,
+      "trend": 143.73,
       "autoTags": [
         "earphones",
         "earbuds",
@@ -145014,7 +144871,7 @@ const AVATAR_DATA = {
       "gender": "male",
       "dateAdded": 1792235487,
       "boothSearch": "https://booth.pm/en/items/8415837",
-      "trend": 38.22,
+      "trend": 38.07,
       "autoTags": [
         "male_focus",
         "mole",
@@ -145165,7 +145022,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1792064908,
       "boothSearch": "https://booth.pm/en/items/7841391",
-      "trend": 51.5,
+      "trend": 51.4,
       "autoTags": [
         "ahoge",
         "sleeves_past_wrists",
@@ -145231,7 +145088,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1791821221,
       "boothSearch": "https://booth.pm/en/items/8672657",
-      "trend": 433.23,
+      "trend": 428.34,
       "autoTags": [
         "choker",
         "heart",
@@ -145264,7 +145121,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1666064846,
       "boothSearch": "https://booth.pm/en/items/3923094",
-      "trend": 10.49,
+      "trend": 10.48,
       "autoTags": [
         "breasts",
         "horns",
@@ -145303,7 +145160,7 @@ const AVATAR_DATA = {
       "gender": "male",
       "dateAdded": 1791821248,
       "boothSearch": "https://booth.pm/en/items/8670449",
-      "trend": 132.91,
+      "trend": 131.35,
       "autoTags": [
         "gloves",
         "male_focus",
@@ -145366,7 +145223,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1663534144,
       "boothSearch": "https://booth.pm/en/items/4118550",
-      "trend": 17.88,
+      "trend": 17.87,
       "autoTags": [
         "long_hair",
         "flower",
@@ -147175,7 +147032,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1785688393,
       "boothSearch": "https://booth.pm/en/items/6373683",
-      "trend": 15.97,
+      "trend": 15.95,
       "autoTags": [
         "heart",
         "long_hair",
@@ -147368,7 +147225,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1582548936,
       "boothSearch": "https://booth.pm/en/items/1723127",
-      "trend": 1.77,
+      "trend": 1.76,
       "autoTags": [
         "animal_ears",
         "sailor_collar",
@@ -147795,7 +147652,7 @@ const AVATAR_DATA = {
       "gender": "female",
       "dateAdded": 1669637600,
       "boothSearch": "https://booth.pm/en/items/3550881",
-      "trend": 9.51,
+      "trend": 9.5,
       "autoTags": [
         "glasses",
         "animal_ears",
@@ -148017,7 +147874,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/02_PinkPuddingHair.rar",
       "dateAdded": 1709691719,
       "boothSearch": "https://booth.pm/en/items/5537865",
-      "trend": 10.48,
+      "trend": 10.47,
       "autoTags": [
         "cone_hair_bun",
         "long_hair",
@@ -148065,7 +147922,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/08 PinkPuddingHair.7z",
       "dateAdded": 1763199200,
       "boothSearch": "https://booth.pm/en/items/6128928",
-      "trend": 7.67,
+      "trend": 7.66,
       "autoTags": [
         "hair_ornament",
         "x_hair_ornament",
@@ -148092,7 +147949,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/09_PinkPuddingHair.rar",
       "dateAdded": 1736345123,
       "boothSearch": "https://booth.pm/en/items/6244479",
-      "trend": 10.19,
+      "trend": 10.18,
       "autoTags": [
         "long_hair",
         "bag",
@@ -148113,7 +147970,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/101 Dalmatian bunz Hair.zip",
       "dateAdded": 1751944943,
       "boothSearch": "https://booth.pm/en/items/7077782",
-      "trend": 16.71,
+      "trend": 16.68,
       "autoTags": [
         "breasts",
         "animal_ears",
@@ -148234,7 +148091,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/16_PinkPuddingHair_Fullset.zip",
       "dateAdded": 1761966795,
       "boothSearch": "https://booth.pm/en/items/7526769",
-      "trend": 16.87,
+      "trend": 16.85,
       "autoTags": [
         "collar",
         "twin_braids",
@@ -148254,7 +148111,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/18 PinkPuddingHair.zip",
       "dateAdded": 1792669156,
       "boothSearch": "https://booth.pm/en/items/8614517",
-      "trend": 28.09,
+      "trend": 27.92,
       "autoTags": [
         "mole",
         "bow",
@@ -148379,7 +148236,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/2WAY__Twintails1.3.zip",
       "dateAdded": 1763876762,
       "boothSearch": "https://booth.pm/en/items/7622359",
-      "trend": 8.52,
+      "trend": 8.51,
       "autoTags": [
         "twintails",
         "long_hair",
@@ -148448,7 +148305,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/3way_twinhair_22_11_24.zip",
       "dateAdded": 1674055660,
       "boothSearch": "https://booth.pm/en/items/4336106",
-      "trend": 1.77,
+      "trend": 1.76,
       "autoTags": [
         "twintails",
         "long_hair",
@@ -148482,7 +148339,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/3way_Twinhair_23.01.11.zip",
       "dateAdded": 1674055660,
       "boothSearch": "https://booth.pm/en/items/4336106",
-      "trend": 1.77,
+      "trend": 1.76,
       "autoTags": [
         "twintails",
         "long_hair",
@@ -148539,7 +148396,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/4902597 hair kiriha-astra_H03 Ribbon braided low twin tail.zip",
       "dateAdded": 1700436975,
       "boothSearch": "https://booth.pm/en/items/4902597",
-      "trend": 2.89,
+      "trend": 2.88,
       "autoTags": [
         "twintails",
         "ribbon",
@@ -148672,7 +148529,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/4way_Smooth_Shift_241201.zip",
       "dateAdded": 1736344763,
       "boothSearch": "https://booth.pm/en/items/6287431",
-      "trend": 19.31,
+      "trend": 19.3,
       "autoTags": [
         "long_hair",
         "dress",
@@ -148733,7 +148590,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/5315109 hamanosis_MafuLon Muffler Hair.zip",
       "dateAdded": 1713431173,
       "boothSearch": "https://booth.pm/en/items/5315109",
-      "trend": 13.08,
+      "trend": 13.07,
       "autoTags": [
         "scarf",
         "ahoge",
@@ -148839,7 +148696,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/8353601 Twin_Bun_Hair_Ver1.0.0.zip",
       "dateAdded": 1791953475,
       "boothSearch": "https://booth.pm/en/items/8353601",
-      "trend": 97.51,
+      "trend": 96.67,
       "autoTags": [
         "hair_bun",
         "shirt",
@@ -148875,7 +148732,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/8668877 - DenimHair.rar",
       "dateAdded": 1791970555,
       "boothSearch": "https://booth.pm/en/items/8668877",
-      "trend": 89.97,
+      "trend": 89.37,
       "autoTags": [
         "breasts",
         "animal_ears",
@@ -148990,7 +148847,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/[VRChair] TwinTail Devil.zip",
       "dateAdded": 1792058832,
       "boothSearch": "https://booth.pm/en/items/8828345",
-      "trend": 40.81,
+      "trend": 40.33,
       "autoTags": [
         "horns",
         "breasts",
@@ -149067,7 +148924,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/_full_Rabbit_Angel_Two_Side_Twin_Tail_Hair.zip",
       "dateAdded": 1760075731,
       "boothSearch": "https://booth.pm/en/items/7237391",
-      "trend": 15.44,
+      "trend": 15.42,
       "autoTags": [
         "dress",
         "rabbit_ears",
@@ -149225,7 +149082,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/_popo_hair_.zip",
       "dateAdded": 1691340251,
       "boothSearch": "https://booth.pm/ja/items/4794933",
-      "trend": 1.31,
+      "trend": 1.3,
       "autoTags": [
         "breasts",
         "ponytail",
@@ -149378,7 +149235,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/AdultGALHair_ver1.zip",
       "dateAdded": 1759465919,
       "boothSearch": "https://booth.pm/en/items/6238423",
-      "trend": 10.65,
+      "trend": 10.64,
       "autoTags": [
         "dress",
         "breasts",
@@ -149458,7 +149315,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Amairo_Hair.zip",
       "dateAdded": 1791815579,
       "boothSearch": "https://booth.pm/en/items/8957458",
-      "trend": 242.85,
+      "trend": 237.21,
       "autoTags": [
         "short_hair_with_long_locks",
         "breasts",
@@ -149481,7 +149338,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/AmeShort_1.00.zip",
       "dateAdded": 1716511750,
       "boothSearch": "https://booth.pm/en/items/4605581",
-      "trend": 11.56,
+      "trend": 11.55,
       "autoTags": [
         "animal_ears",
         "shirt",
@@ -149521,7 +149378,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/AmikomiHarfTwins.zip",
       "dateAdded": 1785568812,
       "boothSearch": "https://booth.pm/en/items/6567257",
-      "trend": 14.26,
+      "trend": 14.25,
       "autoTags": [
         "long_hair",
         "shirt",
@@ -149617,7 +149474,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Angel_Hair.zip",
       "dateAdded": 1724899950,
       "boothSearch": "https://booth.pm/en/items/5953605",
-      "trend": 5.53,
+      "trend": 5.52,
       "autoTags": [
         "apron",
         "unconventional_maid",
@@ -149653,7 +149510,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/ANKA Lunar Two Side Up Hair Full.rar",
       "dateAdded": 1724135413,
       "boothSearch": "https://booth.pm/en/items/5967904",
-      "trend": 11.96,
+      "trend": 11.95,
       "autoTags": [
         "thighhighs",
         "long_hair",
@@ -149718,7 +149575,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/ANKA_.zip",
       "dateAdded": 1673190163,
       "boothSearch": "https://booth.pm/en/items/4222130",
-      "trend": 6.64,
+      "trend": 6.63,
       "autoTags": [
         "halo",
         "short_hair",
@@ -149770,7 +149627,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/anka__45.zip",
       "dateAdded": 1675393911,
       "boothSearch": "https://booth.pm/en/items/4450457",
-      "trend": 4.4,
+      "trend": 4.39,
       "autoTags": [
         "long_hair",
         "shirt",
@@ -149843,7 +149700,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Anka_Aurora_HairV1.0.0.zip",
       "dateAdded": 1705645258,
       "boothSearch": "https://booth.pm/en/items/5398728",
-      "trend": 11.89,
+      "trend": 11.88,
       "autoTags": [
         "long_hair",
         "dress",
@@ -149897,7 +149754,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/ANKA_Chica_v.1.0.1.zip",
       "dateAdded": 1714871060,
       "boothSearch": "https://booth.pm/en/items/4566715",
-      "trend": 11.41,
+      "trend": 11.4,
       "autoTags": [
         "jewelry",
         "k-pop",
@@ -150043,7 +149900,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/ANKA_Ethereal_Waves_Hair_V1.0.0.zip",
       "dateAdded": 1719839826,
       "boothSearch": "https://booth.pm/en/items/5857541",
-      "trend": 14.92,
+      "trend": 14.91,
       "autoTags": [
         "long_hair",
         "hair_over_one_eye",
@@ -150176,7 +150033,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/ANKA_High_Bun.zip",
       "dateAdded": 1673198994,
       "boothSearch": "https://booth.pm/en/items/4306451",
-      "trend": 4.02,
+      "trend": 4.01,
       "autoTags": [
         "breasts",
         "kimono",
@@ -150466,7 +150323,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/ANKA_Nya____.v1.0.zip",
       "dateAdded": 1695865706,
       "boothSearch": "https://booth.pm/en/items/5063714",
-      "trend": 5.26,
+      "trend": 5.25,
       "autoTags": [
         "animal_ears",
         "two_side_up",
@@ -150575,7 +150432,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/ANKA_Shy_Dream_Hair_V1.0.1.zip",
       "dateAdded": 1717037123,
       "boothSearch": "https://booth.pm/en/items/5780287",
-      "trend": 16.39,
+      "trend": 16.38,
       "autoTags": [
         "long_hair",
         "shirt",
@@ -150599,7 +150456,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/anka_straight_hair.zip",
       "dateAdded": 1673195289,
       "boothSearch": "https://booth.pm/en/items/4072923",
-      "trend": 5.37,
+      "trend": 5.36,
       "autoTags": [
         "breasts",
         "long_hair",
@@ -150668,7 +150525,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/AntiqueBraid.ver1.0.zip",
       "dateAdded": 1791975366,
       "boothSearch": "https://booth.pm/en/items/8714524",
-      "trend": 78.67,
+      "trend": 78.06,
       "autoTags": [
         "flower",
         "hair_flower",
@@ -150844,7 +150701,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Astroid hair full package.zip",
       "dateAdded": 1792058595,
       "boothSearch": "https://booth.pm/en/items/8541272",
-      "trend": 56.72,
+      "trend": 56.45,
       "autoTags": [
         "breasts",
         "gloves",
@@ -150968,7 +150825,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Aveline Hair - Veloa.zip",
       "dateAdded": 1792057930,
       "boothSearch": "https://booth.pm/en/items/8909202",
-      "trend": 36.73,
+      "trend": 36.1,
       "autoTags": [
         "magazine_cover",
         "glasses",
@@ -151143,7 +151000,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Bloom_braid_bun_Hair.zip",
       "dateAdded": 1725677241,
       "boothSearch": "https://booth.pm/en/items/5947154",
-      "trend": 17.4,
+      "trend": 17.39,
       "autoTags": [
         "long_hair",
         "skirt",
@@ -151201,7 +151058,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/blurring Kasane Wolf Bob1.zip",
       "dateAdded": 1792235584,
       "boothSearch": "https://booth.pm/en/items/8808155",
-      "trend": 24.53,
+      "trend": 24.12,
       "autoTags": [
         "glasses",
         "jewelry",
@@ -151229,7 +151086,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/blurring__Fallen_Tensi_Hair.zip",
       "dateAdded": 1783697252,
       "boothSearch": "https://booth.pm/en/items/8071285",
-      "trend": 11.66,
+      "trend": 11.63,
       "autoTags": [
         "dress",
         "breasts",
@@ -151250,7 +151107,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/blurring_angel_heart_Hair︎.zip",
       "dateAdded": 1768018322,
       "boothSearch": "https://booth.pm/en/items/7721012",
-      "trend": 7.72,
+      "trend": 7.71,
       "autoTags": [
         "animal_ears",
         "cat_ears",
@@ -151414,7 +151271,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/bosa bob 6Avaters.zip",
       "dateAdded": 1780486766,
       "boothSearch": "https://booth.pm/en/items/6874268",
-      "trend": 13.42,
+      "trend": 13.4,
       "autoTags": [
         "shirt",
         "two_side_up",
@@ -151435,7 +151292,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/bosabosa_bob.zip",
       "dateAdded": 1760841718,
       "boothSearch": "https://booth.pm/en/items/6348190",
-      "trend": 18.83,
+      "trend": 18.81,
       "autoTags": [
         "animal_ears",
         "hands_up",
@@ -151479,7 +151336,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Bossa Bosa Long Hair.zip",
       "dateAdded": 1738467148,
       "boothSearch": "https://booth.pm/en/items/6521101",
-      "trend": 31.37,
+      "trend": 31.34,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -151510,7 +151367,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Braid Hush Hair.zip",
       "dateAdded": 1736345286,
       "boothSearch": "https://booth.pm/en/items/6209956",
-      "trend": 9.79,
+      "trend": 9.78,
       "autoTags": [
         "braid",
         "sleeveless",
@@ -151553,52 +151410,51 @@ const AVATAR_DATA = {
       "name": "Break Point HairCut",
       "preview": "images/Hair_Break_Point_HairCut.jpg",
       "sourceFile": "Hair/Break Point HairCut.7z",
-      "dateAdded": 1793777752,
+      "dateAdded": 1793777758,
       "boothSearch": "https://booth.pm/en/items/8405072",
-      "trend": 27.26,
+      "trend": 27.15,
       "autoTags": [
         "long_hair",
         "hair_intakes",
-        "bare_shoulders",
         "breasts",
-        "elbow_gloves"
+        "bare_shoulders",
+        "detached_sleeves",
+        "large_breasts"
       ]
     },
     {
       "name": "Bunny Knot Twin",
       "preview": "images/Hair_Bunny_Knot_Twin.jpg",
       "sourceFile": "Hair/Bunny Knot Twin.zip",
-      "dateAdded": 1793778257,
+      "dateAdded": 1793778264,
       "boothSearch": "https://booth.pm/en/items/8130170",
-      "trend": 25.54,
+      "trend": 25.47,
       "autoTags": [
         "animal_ears",
         "twintails",
-        "jacket",
         "long_hair",
+        "jacket",
+        "rabbit_ears",
+        "multicolored_hair",
+        "hair_ornament",
         "breasts",
         "buruma",
-        "rabbit_ears",
-        "shirt",
-        "hair_ornament",
-        "hair_intakes",
-        "multicolored_hair",
-        "animal_ear_fluff",
         "sleeves_past_wrists",
+        "hair_intakes",
+        "shirt",
         "long_sleeves",
-        "medium_breasts",
-        "track_jacket",
+        "animal_ear_fluff",
         "very_long_hair",
-        "hair_ribbon",
         "hand_on_own_chest",
         "star_(symbol)",
         "star_hair_ornament",
-        "ribbon",
-        "gradient_hair",
+        "fox_ears",
+        "medium_breasts",
+        "track_jacket",
+        "panties",
         "rabbit_girl",
-        "character_name",
-        "copyright_name",
-        "large_breasts"
+        "large_breasts",
+        "underwear"
       ]
     },
     {
@@ -151607,7 +151463,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/BunnyAngel Hair V1.0.zip",
       "dateAdded": 1792055753,
       "boothSearch": "https://booth.pm/en/items/8524503",
-      "trend": 63.24,
+      "trend": 62.93,
       "autoTags": [
         "breasts",
         "animal_ears",
@@ -151642,7 +151498,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Butterfly Muse Bob Hair.zip",
       "dateAdded": 1792671008,
       "boothSearch": "https://booth.pm/en/items/8632255",
-      "trend": 26.89,
+      "trend": 26.72,
       "autoTags": [
         "closed_eyes",
         "breasts",
@@ -151670,7 +151526,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Butterpop_Wink_Hair.zip",
       "dateAdded": 1760844416,
       "boothSearch": "https://booth.pm/en/items/6785240",
-      "trend": 2.74,
+      "trend": 2.73,
       "autoTags": [
         "ahoge",
         "dress",
@@ -151738,7 +151594,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/cap_hair.zip",
       "dateAdded": 1692104593,
       "boothSearch": "https://booth.pm/en/items/4833301",
-      "trend": 1.33,
+      "trend": 1.32,
       "autoTags": [
         "braid",
         "twin_braids",
@@ -151769,7 +151625,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/CAT_TWINTAIL.V1.0.0.zip",
       "dateAdded": 1708216866,
       "boothSearch": "https://booth.pm/en/items/5503446",
-      "trend": 9.52,
+      "trend": 9.51,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -151897,7 +151753,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/cheongsun_hair.zip",
       "dateAdded": 1690297717,
       "boothSearch": "https://booth.pm/en/items/4472127",
-      "trend": 3.66,
+      "trend": 3.65,
       "autoTags": [
         "choker",
         "portrait",
@@ -151914,7 +151770,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Cherish Twin.ver1.0.zip",
       "dateAdded": 1792671016,
       "boothSearch": "https://booth.pm/en/items/8248147",
-      "trend": 28.43,
+      "trend": 28.33,
       "autoTags": [
         "animal_ears",
         "necktie",
@@ -151977,7 +151833,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Chloris.zip",
       "dateAdded": 1792071829,
       "boothSearch": "https://booth.pm/en/items/8103671",
-      "trend": 44.96,
+      "trend": 44.83,
       "autoTags": [
         "gloves",
         "long_hair",
@@ -152023,7 +151879,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Classic Long.ver1.0.zip",
       "dateAdded": 1792668944,
       "boothSearch": "https://booth.pm/en/items/8389484",
-      "trend": 29.4,
+      "trend": 29.28,
       "autoTags": [
         "animal_ears",
         "halo",
@@ -152067,7 +151923,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Cocoa_Hair.ver1.0.zip",
       "dateAdded": 1768019569,
       "boothSearch": "https://booth.pm/en/items/7106738",
-      "trend": 14.43,
+      "trend": 14.42,
       "autoTags": [
         "breasts",
         "twintails",
@@ -152158,7 +152014,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Comfy_Pony_Tail_ver.1.2.zip",
       "dateAdded": 1791821489,
       "boothSearch": "https://booth.pm/en/items/8896300",
-      "trend": 96.4,
+      "trend": 94.89,
       "autoTags": [
         "animal_ears",
         "cat_ears",
@@ -152192,7 +152048,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/ConyBuny Hair.7z",
       "dateAdded": 1748827578,
       "boothSearch": "https://booth.pm/en/items/6958038",
-      "trend": 16.17,
+      "trend": 16.15,
       "autoTags": [
         "animal_ears",
         "rabbit_ears",
@@ -152241,7 +152097,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/CottonCandyTwin_Ver1.0.zip",
       "dateAdded": 1721532234,
       "boothSearch": "https://booth.pm/en/items/5907543",
-      "trend": 6.62,
+      "trend": 6.61,
       "autoTags": [
         "twintails",
         "shirt",
@@ -152277,7 +152133,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Coy_hair.zip",
       "dateAdded": 1714004980,
       "boothSearch": "https://booth.pm/en/items/5679296",
-      "trend": 2.29,
+      "trend": 2.28,
       "autoTags": [
         "hair_bun",
         "hair_ornament",
@@ -152319,7 +152175,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Criada_Two_Side_Twin_Tail_Hair.zip",
       "dateAdded": 1717974736,
       "boothSearch": "https://booth.pm/en/items/5785595",
-      "trend": 7.47,
+      "trend": 7.46,
       "autoTags": [
         "apron",
         "dress",
@@ -152434,7 +152290,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/cute_odango1.1.zip",
       "dateAdded": 1720409836,
       "boothSearch": "https://booth.pm/en/items/5868699",
-      "trend": 1.57,
+      "trend": 1.56,
       "autoTags": [
         "heart",
         "double_bun",
@@ -152476,7 +152332,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Dahlia_Hair.zip",
       "dateAdded": 1738461432,
       "boothSearch": "https://booth.pm/en/items/6462863",
-      "trend": 31.83,
+      "trend": 31.8,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -152513,7 +152369,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Daisy Ribbon Hair v1.0.zip",
       "dateAdded": 1792667626,
       "boothSearch": "https://booth.pm/en/items/8151922",
-      "trend": 30.47,
+      "trend": 30.38,
       "autoTags": [
         "hair_ornament",
         "long_hair",
@@ -152538,7 +152394,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Daisy_Hair.ver1.0.zip",
       "dateAdded": 1736344820,
       "boothSearch": "https://booth.pm/en/items/6266013",
-      "trend": 16.19,
+      "trend": 16.18,
       "autoTags": [
         "phone",
         "hair_ornament",
@@ -152569,7 +152425,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Daisy_Loop_Braid_bun_Hair.zip",
       "dateAdded": 1763203292,
       "boothSearch": "https://booth.pm/en/items/7635252",
-      "trend": 30.08,
+      "trend": 30.03,
       "autoTags": [
         "animal_ears",
         "necktie",
@@ -152678,7 +152534,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/DANAHair_Mitsuha_1.0.zip",
       "dateAdded": 1791822676,
       "boothSearch": "https://booth.pm/en/items/8959634",
-      "trend": 74.12,
+      "trend": 72.35,
       "autoTags": [
         "breasts",
         "gloves",
@@ -152708,7 +152564,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/DANAHair_Sara_1.01.zip",
       "dateAdded": 1753071852,
       "boothSearch": "https://booth.pm/en/items/7156745",
-      "trend": 18.46,
+      "trend": 18.43,
       "autoTags": [
         "ribbon",
         "long_hair",
@@ -152798,7 +152654,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Day Layered Cut Hair.zip",
       "dateAdded": 1761974109,
       "boothSearch": "https://booth.pm/en/items/7254250",
-      "trend": 34.96,
+      "trend": 34.91,
       "autoTags": [
         "gloves",
         "choker",
@@ -152818,7 +152674,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Deer Bloom Long Hair.zip",
       "dateAdded": 1792235106,
       "boothSearch": "https://booth.pm/en/items/8524766",
-      "trend": 37.42,
+      "trend": 37.25,
       "autoTags": [
         "animal_ears",
         "dress",
@@ -152878,7 +152734,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Divine Hair.zip",
       "dateAdded": 1792666851,
       "boothSearch": "https://booth.pm/en/items/8484240",
-      "trend": 30.1,
+      "trend": 29.97,
       "autoTags": [
         "long_hair",
         "halo",
@@ -152988,7 +152844,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Donut_twintail_hair_v1.02.zip",
       "dateAdded": 1717037404,
       "boothSearch": "https://booth.pm/en/items/5766139",
-      "trend": 8.31,
+      "trend": 8.3,
       "autoTags": [
         "long_hair",
         "twintails",
@@ -153014,7 +152870,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Downer_Mituami_ver1.0.zip",
       "dateAdded": 1724649524,
       "boothSearch": "https://booth.pm/en/items/5942778",
-      "trend": 8.43,
+      "trend": 8.42,
       "autoTags": [
         "braid",
         "hair_over_one_eye",
@@ -153036,7 +152892,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/edgyponytail.zip",
       "dateAdded": 1732588824,
       "boothSearch": "https://booth.pm/en/items/6210322",
-      "trend": 8.93,
+      "trend": 8.92,
       "autoTags": [
         "shirt",
         "jacket",
@@ -153061,7 +152917,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Elara_Braid_Hair_TurningPoint_06.V1.04.zip",
       "dateAdded": 1780477473,
       "boothSearch": "https://booth.pm/en/items/8146766",
-      "trend": 25.37,
+      "trend": 25.3,
       "autoTags": [
         "long_hair",
         "braid",
@@ -153092,7 +152948,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/ElegantBobHair Ver.1.0.zip",
       "dateAdded": 1791976171,
       "boothSearch": "https://booth.pm/en/items/8781923",
-      "trend": 58.89,
+      "trend": 58.2,
       "autoTags": [
         "bow",
         "drill_hair",
@@ -153114,7 +152970,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/EnnuiOsageHair_ForMale.zip",
       "dateAdded": 1757588682,
       "boothSearch": "https://booth.pm/en/items/6332026",
-      "trend": 9.94,
+      "trend": 9.93,
       "autoTags": [
         "braid",
         "gloves",
@@ -153142,7 +152998,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/ephemeral-hair-low-pony.zip",
       "dateAdded": 1690638254,
       "boothSearch": "https://booth.pm/en/items/4214489",
-      "trend": 9.0,
+      "trend": 8.99,
       "autoTags": [
         "gloves",
         "horns",
@@ -153165,7 +153021,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Eunike Short 0.4.unitypackage",
       "dateAdded": 1763877419,
       "boothSearch": "https://booth.pm/en/items/7163323",
-      "trend": 3.74,
+      "trend": 3.73,
       "autoTags": [
         "male_focus",
         "necktie",
@@ -153190,7 +153046,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Evergrace_Bunny_Hair_Ver1.00.zip",
       "dateAdded": 1727509539,
       "boothSearch": "https://booth.pm/en/items/6115027",
-      "trend": 10.94,
+      "trend": 10.93,
       "autoTags": [
         "animal_ears",
         "rabbit_ears",
@@ -153255,7 +153111,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Fancy_Hair_v1.0.zip",
       "dateAdded": 1753944472,
       "boothSearch": "https://booth.pm/en/items/7233871",
-      "trend": 32.15,
+      "trend": 32.11,
       "autoTags": [
         "breasts",
         "long_hair",
@@ -153281,7 +153137,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Fantasy_Horn_Bun_V1.0.0.zip",
       "dateAdded": 1729668292,
       "boothSearch": "https://booth.pm/en/items/6142230",
-      "trend": 7.28,
+      "trend": 7.27,
       "autoTags": [
         "hair_bun",
         "double_bun",
@@ -153311,7 +153167,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Feathlap Hair FULL.zip",
       "dateAdded": 1792234898,
       "boothSearch": "https://booth.pm/en/items/8171770",
-      "trend": 40.27,
+      "trend": 40.15,
       "autoTags": [
         "male_focus",
         "glasses",
@@ -153446,7 +153302,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/FlowBraidHair_1.0.0.zip",
       "dateAdded": 1740964657,
       "boothSearch": "https://booth.pm/en/items/6624847",
-      "trend": 18.21,
+      "trend": 18.19,
       "autoTags": [
         "hair_over_one_eye",
         "braid",
@@ -153470,7 +153326,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Flowing_Lily.zip",
       "dateAdded": 1756181217,
       "boothSearch": "https://booth.pm/en/items/7265146",
-      "trend": 26.05,
+      "trend": 26.01,
       "autoTags": [
         "long_hair",
         "dress",
@@ -153515,7 +153371,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Fluffy_Hair_v1.0.zip",
       "dateAdded": 1768020277,
       "boothSearch": "https://booth.pm/en/items/7729580",
-      "trend": 22.42,
+      "trend": 22.38,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -153585,25 +153441,23 @@ const AVATAR_DATA = {
       "name": "Flux Curl Hair",
       "preview": "images/Hair_Flux_Curl_Hair.jpg",
       "sourceFile": "Hair/Flux Curl Hair.zip",
-      "dateAdded": 1793776593,
+      "dateAdded": 1793776598,
       "boothSearch": "https://booth.pm/en/items/8184519",
-      "trend": 26.82,
+      "trend": 26.74,
       "autoTags": [
         "animal_ears",
-        "male_focus",
         "dog_ears",
+        "male_focus",
         "qr_code",
-        "bone",
-        "fang",
-        "tongue",
-        "short_hair",
         "shirt",
-        "pale_skin",
+        "bone_hair_ornament",
+        "short_hair",
         "multicolored_hair",
-        "tongue_out",
-        "collared_shirt",
-        "skin_fang",
-        "smoke"
+        "pale_skin",
+        "bone",
+        "long_sleeves",
+        "hair_between_eyes",
+        "sailor_collar"
       ]
     },
     {
@@ -153730,7 +153584,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/FrenchBraidHair 5996153.zip",
       "dateAdded": 1726316836,
       "boothSearch": "https://booth.pm/en/items/5996153",
-      "trend": 19.13,
+      "trend": 19.12,
       "autoTags": [
         "long_hair",
         "dress",
@@ -153748,7 +153602,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/FULLPACK - Asmodeus Hair.zip",
       "dateAdded": 1791970234,
       "boothSearch": "https://booth.pm/en/items/8418992",
-      "trend": 98.6,
+      "trend": 98.21,
       "autoTags": [
         "horns",
         "gloves",
@@ -153782,7 +153636,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Fullset_GoldenHour_v1.0.zip",
       "dateAdded": 1751944690,
       "boothSearch": "https://booth.pm/en/items/7112255",
-      "trend": 9.55,
+      "trend": 9.54,
       "autoTags": [
         "long_hair",
         "heart",
@@ -153808,7 +153662,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Fullset_MochiHair_v1.4.zip",
       "dateAdded": 1765000596,
       "boothSearch": "https://booth.pm/en/items/6976743",
-      "trend": 6.8,
+      "trend": 6.79,
       "autoTags": [
         "bow",
         "long_hair",
@@ -153897,7 +153751,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Fuwatoro long long long hair V1.0.0.zip",
       "dateAdded": 1792668213,
       "boothSearch": "https://booth.pm/en/items/7729922",
-      "trend": 31.13,
+      "trend": 31.07,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -153924,7 +153778,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/FuzzHair.zip",
       "dateAdded": 1792071728,
       "boothSearch": "https://booth.pm/en/items/8055989",
-      "trend": 45.65,
+      "trend": 45.53,
       "autoTags": [
         "animal_ears",
         "bandaid_on_nose",
@@ -153960,7 +153814,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Ghost Hair DEVIL.zip",
       "dateAdded": 1792639394,
       "boothSearch": "https://booth.pm/en/items/8991767",
-      "trend": 104.64,
+      "trend": 100.92,
       "autoTags": [
         "breasts",
         "dress",
@@ -153985,7 +153839,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/GirlyBob.zip",
       "dateAdded": 1792577734,
       "boothSearch": "https://booth.pm/en/items/8538551",
-      "trend": 33.61,
+      "trend": 33.44,
       "autoTags": [
         "braid",
         "choker",
@@ -154036,7 +153890,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Glow veil twin ver.1.0.0.unitypackage",
       "dateAdded": 1792669164,
       "boothSearch": "https://booth.pm/en/items/8432632",
-      "trend": 28.63,
+      "trend": 28.52,
       "autoTags": [
         "jirai_kei",
         "twintails",
@@ -154270,7 +154124,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Hakanage_Lowpony_ver1.0.zip",
       "dateAdded": 1673193218,
       "boothSearch": "https://booth.pm/en/items/4214489",
-      "trend": 9.0,
+      "trend": 8.99,
       "autoTags": [
         "hair_flower",
         "flower",
@@ -154345,7 +154199,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Half_Twin_Bob.zip",
       "dateAdded": 1791819038,
       "boothSearch": "https://booth.pm/en/items/8965459",
-      "trend": 166.16,
+      "trend": 162.02,
       "autoTags": [
         "necktie",
         "hair_ornament",
@@ -154413,7 +154267,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/half_up_messy_bun_v1.02.zip",
       "dateAdded": 1743471154,
       "boothSearch": "https://booth.pm/en/items/6259381",
-      "trend": 8.41,
+      "trend": 8.4,
       "autoTags": [
         "long_hair",
         "dress",
@@ -154440,7 +154294,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/halftwin.zip",
       "dateAdded": 1760840652,
       "boothSearch": "https://booth.pm/en/items/6905003",
-      "trend": 17.08,
+      "trend": 17.06,
       "autoTags": [
         "sailor_collar",
         "long_hair",
@@ -154467,7 +154321,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Halo Ring Hair.zip",
       "dateAdded": 1792034821,
       "boothSearch": "https://booth.pm/en/items/8457461",
-      "trend": 71.81,
+      "trend": 71.51,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -154495,7 +154349,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/hamanosis KoiKaze hair.zip",
       "dateAdded": 1792234787,
       "boothSearch": "https://booth.pm/en/items/8657199",
-      "trend": 36.77,
+      "trend": 36.54,
       "autoTags": [
         "breasts",
         "necktie",
@@ -154524,7 +154378,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/hamanosis_baby_short_moe.zip",
       "dateAdded": 1695466665,
       "boothSearch": "https://booth.pm/en/items/4909344",
-      "trend": 8.5,
+      "trend": 8.49,
       "autoTags": [
         "ahoge",
         "hair_between_eyes",
@@ -154576,7 +154430,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/hamanosis_Dragon_hair_Shinano.zip",
       "dateAdded": 1731910032,
       "boothSearch": "https://booth.pm/en/items/6218854",
-      "trend": 13.05,
+      "trend": 13.04,
       "autoTags": [
         "ahoge",
         "long_hair",
@@ -154677,7 +154531,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Hanacho-Hai.zip",
       "dateAdded": 1792664258,
       "boothSearch": "https://booth.pm/en/items/8663979",
-      "trend": 53.16,
+      "trend": 52.82,
       "autoTags": [
         "hair_ornament",
         "school_uniform",
@@ -154756,7 +154610,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Haniel_Long.zip",
       "dateAdded": 1791959272,
       "boothSearch": "https://booth.pm/en/items/8866129",
-      "trend": 72.74,
+      "trend": 71.76,
       "autoTags": [
         "necktie",
         "long_hair",
@@ -154778,7 +154632,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Haruyu Wave.zip",
       "dateAdded": 1764999329,
       "boothSearch": "https://booth.pm/en/items/6749768",
-      "trend": 12.25,
+      "trend": 12.24,
       "autoTags": [
         "animal_ears",
         "multicolored_hair",
@@ -154840,7 +154694,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/HAZE.zip",
       "dateAdded": 1792234726,
       "boothSearch": "https://booth.pm/en/items/8619104",
-      "trend": 40.44,
+      "trend": 40.19,
       "autoTags": [
         "jewelry",
         "earrings",
@@ -154916,37 +154770,40 @@ const AVATAR_DATA = {
       "name": "Honey Curling",
       "preview": "images/Hair_Honey_Curling.jpg",
       "sourceFile": "Hair/Honey Curling.zip",
-      "dateAdded": 1793776742,
+      "dateAdded": 1793776747,
       "boothSearch": "https://booth.pm/en/items/8715159",
-      "trend": 23.47,
+      "trend": 23.27,
       "autoTags": [
         "bow",
         "glasses",
-        "semi-rimless_eyewear",
         "dress",
         "apron",
-        "blunt_bangs",
-        "hair_bow",
+        "semi-rimless_eyewear",
         "red-framed_eyewear",
-        "short_sleeves",
-        "drill_hair",
-        "under-rim_eyewear",
-        "lace_trim",
-        "colored_skin",
-        "wrist_cuffs",
+        "hair_bow",
         "puffy_sleeves",
+        "short_sleeves",
+        "colored_skin",
+        "blunt_bangs",
         "maid",
+        "under-rim_eyewear",
+        "drill_hair",
+        "frills",
         "long_hair",
-        "collared_dress",
+        "hands_up",
         "puffy_short_sleeves",
         "hair_intakes",
-        "polka_dot",
-        "frills",
-        "hands_up",
-        "heart",
+        "buttons",
+        "collared_dress",
+        "bowtie",
+        "joints",
         "twin_drills",
+        "doll_joints",
         "ribbon",
-        "lace"
+        "twintails",
+        "maid_apron",
+        "frilled_apron",
+        "lace_trim"
       ]
     },
     {
@@ -154955,7 +154812,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Honey Gyaru.zip",
       "dateAdded": 1792234482,
       "boothSearch": "https://booth.pm/en/items/8515193",
-      "trend": 38.26,
+      "trend": 38.08,
       "autoTags": [
         "shirt",
         "necktie",
@@ -155007,7 +154864,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/icicle_Two_Side_Twin_Tail_Hair_ver.1.2.zip",
       "dateAdded": 1768017351,
       "boothSearch": "https://booth.pm/en/items/7798898",
-      "trend": 23.4,
+      "trend": 23.35,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -155035,7 +154892,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Inside_Hair__.zip",
       "dateAdded": 1733652500,
       "boothSearch": "https://booth.pm/en/items/5493545",
-      "trend": 2.75,
+      "trend": 2.74,
       "autoTags": [
         "lying",
         "on_stomach",
@@ -155056,7 +154913,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Interk Wolf.zip",
       "dateAdded": 1792579586,
       "boothSearch": "https://booth.pm/en/items/8625272",
-      "trend": 31.55,
+      "trend": 31.35,
       "autoTags": [
         "animal_ears",
         "necktie",
@@ -155086,7 +154943,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/iO-hair7-All.zip",
       "dateAdded": 1753068650,
       "boothSearch": "https://booth.pm/en/items/7162173",
-      "trend": 11.26,
+      "trend": 11.25,
       "autoTags": [
         "bow",
         "long_hair",
@@ -155113,7 +154970,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Iris_Hair.ver1.0.zip",
       "dateAdded": 1761970033,
       "boothSearch": "https://booth.pm/en/items/6961767",
-      "trend": 26.53,
+      "trend": 26.5,
       "autoTags": [
         "hair_ornament",
         "long_hair",
@@ -155142,7 +154999,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/itsukihair-forminase_shinra-_ver1_00.zip",
       "dateAdded": 1696417314,
       "boothSearch": "https://booth.pm/en/items/4997939",
-      "trend": 6.39,
+      "trend": 6.38,
       "autoTags": [
         "short_hair",
         "jewelry",
@@ -155159,7 +155016,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Ivy_Hair.ver1.1.zip",
       "dateAdded": 1740029560,
       "boothSearch": "https://booth.pm/en/items/6537462",
-      "trend": 31.83,
+      "trend": 31.8,
       "autoTags": [
         "short_hair",
         "hair_ornament",
@@ -155181,7 +155038,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Jellyennuihair_ver1.0.zip",
       "dateAdded": 1703214206,
       "boothSearch": "https://booth.pm/en/items/5324416",
-      "trend": 14.45,
+      "trend": 14.44,
       "autoTags": [
         "long_hair",
         "choker",
@@ -155199,7 +155056,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Jellyloop Hair.zip",
       "dateAdded": 1792206856,
       "boothSearch": "https://booth.pm/en/items/8430228",
-      "trend": 42.11,
+      "trend": 41.93,
       "autoTags": [
         "breasts",
         "jewelry",
@@ -155336,7 +155193,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/KAKIAGE_half_up_Pony_Tail.zip",
       "dateAdded": 1676467375,
       "boothSearch": "https://booth.pm/en/items/4496606",
-      "trend": 4.0,
+      "trend": 3.99,
       "autoTags": [
         "long_hair",
         "glasses",
@@ -155446,7 +155303,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Kipfel_GloomyRibonHair.zip",
       "dateAdded": 1721532167,
       "boothSearch": "https://booth.pm/en/items/5908326",
-      "trend": 5.22,
+      "trend": 5.21,
       "autoTags": [
         "twintails",
         "long_hair",
@@ -155500,7 +155357,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Kiriha06LongHair_v1.0.zip",
       "dateAdded": 1702254208,
       "boothSearch": "https://booth.pm/en/items/5308179",
-      "trend": 2.68,
+      "trend": 2.67,
       "autoTags": [
         "long_hair",
         "shirt",
@@ -155527,7 +155384,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Kiriha10Wolf_v1.0.zip",
       "dateAdded": 1735287981,
       "boothSearch": "https://booth.pm/en/items/5714909",
-      "trend": 0.94,
+      "trend": 0.93,
       "autoTags": [
         "v",
         "hair_between_eyes",
@@ -155570,7 +155427,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Kiriha27 Ponytail v1.0.unitypackage",
       "dateAdded": 1792668515,
       "boothSearch": "https://booth.pm/en/items/8598846",
-      "trend": 28.9,
+      "trend": 28.75,
       "autoTags": [
         "long_hair",
         "shirt",
@@ -155596,7 +155453,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Kismet_Hair.zip",
       "dateAdded": 1735287434,
       "boothSearch": "https://booth.pm/en/items/6425877",
-      "trend": 16.51,
+      "trend": 16.49,
       "autoTags": [
         "hair_ornament",
         "glasses",
@@ -155624,7 +155481,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/KisTaleHair v1.0.zip",
       "dateAdded": 1791970002,
       "boothSearch": "https://booth.pm/en/items/8886213",
-      "trend": 57.38,
+      "trend": 56.53,
       "autoTags": [
         "hair_over_one_eye",
         "multicolored_hair",
@@ -155673,7 +155530,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Kitsune_Miko.zip",
       "dateAdded": 1791953349,
       "boothSearch": "https://booth.pm/en/items/8708436",
-      "trend": 108.32,
+      "trend": 107.5,
       "autoTags": [
         "animal_ears",
         "hair_ornament",
@@ -155713,7 +155570,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Koakuma ShortWolf ikos.zip",
       "dateAdded": 1792664265,
       "boothSearch": "https://booth.pm/en/items/8912005",
-      "trend": 32.95,
+      "trend": 32.1,
       "autoTags": [
         "halo",
         "male_focus",
@@ -155771,7 +155628,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Komaru-Hair.zip",
       "dateAdded": 1791964308,
       "boothSearch": "https://booth.pm/en/items/8765588",
-      "trend": 86.32,
+      "trend": 85.54,
       "autoTags": [
         "animal_ears",
         "glasses",
@@ -155837,7 +155694,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/kuronekolonghair_v1.02.zip",
       "dateAdded": 1751945476,
       "boothSearch": "https://booth.pm/en/items/6618782",
-      "trend": 28.67,
+      "trend": 28.64,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -155886,7 +155743,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/kusekke_short_bob1.2.zip",
       "dateAdded": 1779622814,
       "boothSearch": "https://booth.pm/en/items/6799308",
-      "trend": 19.08,
+      "trend": 19.06,
       "autoTags": [
         "sailor_collar",
         "short_hair",
@@ -155958,7 +155815,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Lavender_Braid_Hair.zip",
       "dateAdded": 1707523947,
       "boothSearch": "https://booth.pm/en/items/5483086",
-      "trend": 16.92,
+      "trend": 16.91,
       "autoTags": [
         "long_hair",
         "braid",
@@ -156006,30 +155863,23 @@ const AVATAR_DATA = {
       "name": "Layered Wolf Hair",
       "preview": "images/Hair_Layered_Wolf_Hair.jpg",
       "sourceFile": "Hair/Layered Wolf Hair.zip",
-      "dateAdded": 1793777065,
+      "dateAdded": 1793777071,
       "boothSearch": "https://booth.pm/en/items/8300651",
-      "trend": 27.2,
+      "trend": 27.1,
       "autoTags": [
         "necktie",
-        "jacket",
         "shirt",
+        "jacket",
         "choker",
         "multicolored_hair",
-        "hair_between_eyes",
-        "medium_hair",
         "ribbon",
+        "medium_hair",
         "neck_ribbon",
-        "long_hair",
-        "dress",
         "off_shoulder",
-        "siblings",
+        "hair_between_eyes",
+        "long_hair",
         "collared_shirt",
-        "frills",
-        "streaked_hair",
-        "ahoge",
-        "open_clothes",
-        "breasts",
-        "open_jacket"
+        "dress"
       ]
     },
     {
@@ -156038,7 +155888,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Layered_hush_cut_Hair.zip",
       "dateAdded": 1701054037,
       "boothSearch": "https://booth.pm/en/items/5213334",
-      "trend": 20.4,
+      "trend": 20.39,
       "autoTags": [
         "long_hair",
         "jacket",
@@ -156057,7 +155907,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Lazy Hair.zip",
       "dateAdded": 1792577692,
       "boothSearch": "https://booth.pm/en/items/7927176",
-      "trend": 35.47,
+      "trend": 35.39,
       "autoTags": [
         "long_hair",
         "shirt",
@@ -156080,7 +155930,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Lazy_Cat_hair_Full_set_.zip",
       "dateAdded": 1751093341,
       "boothSearch": "https://booth.pm/en/items/6999621",
-      "trend": 9.65,
+      "trend": 9.64,
       "autoTags": [
         "animal_ears",
         "buruma",
@@ -156206,7 +156056,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Li-ne Lovely Long Hair v1.0.3.zip",
       "dateAdded": 1792207213,
       "boothSearch": "https://booth.pm/en/items/7643173",
-      "trend": 45.45,
+      "trend": 45.37,
       "autoTags": [
         "breasts",
         "animal_ears",
@@ -156239,7 +156089,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Li-ne Side Ribbon Long hair.zip",
       "dateAdded": 1792030550,
       "boothSearch": "https://booth.pm/en/items/8641861",
-      "trend": 70.01,
+      "trend": 69.58,
       "autoTags": [
         "breasts",
         "animal_ears",
@@ -156279,7 +156129,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Li-ne Simple Twintail Hair.zip",
       "dateAdded": 1792060529,
       "boothSearch": "https://booth.pm/en/items/8251363",
-      "trend": 55.41,
+      "trend": 55.23,
       "autoTags": [
         "necktie",
         "twintails",
@@ -156308,7 +156158,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Li-ne_Bun_SideTail_Hair_v1.0.1.zip",
       "dateAdded": 1761967123,
       "boothSearch": "https://booth.pm/en/items/7326466",
-      "trend": 28.72,
+      "trend": 28.68,
       "autoTags": [
         "hair_over_one_eye",
         "hair_bun",
@@ -156348,7 +156198,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/li-ne_long_straight_hair_v1_0_1.zip",
       "dateAdded": 1686833860,
       "boothSearch": "https://booth.pm/en/items/4844630",
-      "trend": 12.45,
+      "trend": 12.44,
       "autoTags": [
         "long_hair",
         "ahoge",
@@ -156386,7 +156236,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Li-ne_Lovely_twin_hair_v1.0.9.zip",
       "dateAdded": 1698625725,
       "boothSearch": "https://booth.pm/en/items/5208259",
-      "trend": 18.69,
+      "trend": 18.68,
       "autoTags": [
         "hair_bow",
         "long_hair",
@@ -156427,7 +156277,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Li-ne_Neko_Long_Hair_v1.0.5.zip",
       "dateAdded": 1738465316,
       "boothSearch": "https://booth.pm/en/items/6306172",
-      "trend": 17.57,
+      "trend": 17.56,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -156464,7 +156314,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Li-ne_Neko_Twintail_Hair_2022Unity.zip",
       "dateAdded": 1741767285,
       "boothSearch": "https://booth.pm/en/items/6473121",
-      "trend": 22.48,
+      "trend": 22.46,
       "autoTags": [
         "animal_ears",
         "cat_ears",
@@ -156676,7 +156526,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Li-ne_Wild_Ponytail_Hair.zip",
       "dateAdded": 1723791591,
       "boothSearch": "https://booth.pm/en/items/5971260",
-      "trend": 8.54,
+      "trend": 8.53,
       "autoTags": [
         "swimsuit",
         "bikini",
@@ -156721,7 +156571,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Lili_Hair.ver1.1.zip",
       "dateAdded": 1751094991,
       "boothSearch": "https://booth.pm/en/items/6869457",
-      "trend": 33.58,
+      "trend": 33.54,
       "autoTags": [
         "multicolored_hair",
         "braid",
@@ -156755,7 +156605,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Lilith Two Side Twin Tail Hair.unitypackage",
       "dateAdded": 1743474081,
       "boothSearch": "https://booth.pm/en/items/6646060",
-      "trend": 21.05,
+      "trend": 21.03,
       "autoTags": [
         "breasts",
         "twintails",
@@ -156794,7 +156644,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Lilith_Ponytail.zip",
       "dateAdded": 1715662017,
       "boothSearch": "https://booth.pm/en/items/5740549",
-      "trend": 11.11,
+      "trend": 11.1,
       "autoTags": [
         "skirt",
         "shirt",
@@ -156831,7 +156681,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/LionRabbitHair.zip",
       "dateAdded": 1792060476,
       "boothSearch": "https://booth.pm/en/items/8853409",
-      "trend": 37.92,
+      "trend": 37.43,
       "autoTags": [
         "shirt",
         "hair_ornament",
@@ -156856,7 +156706,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/LisetteBob.zip",
       "dateAdded": 1753944394,
       "boothSearch": "https://booth.pm/en/items/7234297",
-      "trend": 23.2,
+      "trend": 23.17,
       "autoTags": [
         "shirt",
         "necktie",
@@ -156876,7 +156726,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Little Devil.zip",
       "dateAdded": 1792070053,
       "boothSearch": "https://booth.pm/en/items/8133635",
-      "trend": 50.02,
+      "trend": 49.88,
       "autoTags": [
         "heart_hands",
         "breasts",
@@ -156952,7 +156802,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Long Pure Twintail.zip",
       "dateAdded": 1792071194,
       "boothSearch": "https://booth.pm/en/items/8713852",
-      "trend": 41.59,
+      "trend": 41.27,
       "autoTags": [
         "breasts",
         "thighhighs",
@@ -157027,7 +156877,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Long_Braid_Hair.zip",
       "dateAdded": 1738461691,
       "boothSearch": "https://booth.pm/en/items/6514658",
-      "trend": 8.83,
+      "trend": 8.82,
       "autoTags": [
         "skirt",
         "long_hair",
@@ -157116,7 +156966,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Loose Pop Dumpling Hair v1.0.8.zip",
       "dateAdded": 1784381126,
       "boothSearch": "https://booth.pm/en/items/7357737",
-      "trend": 14.4,
+      "trend": 14.38,
       "autoTags": [
         "animal_ears",
         "necktie",
@@ -157135,7 +156985,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/LooseSideTail Ver.1.00.zip",
       "dateAdded": 1792669530,
       "boothSearch": "https://booth.pm/en/items/8229151",
-      "trend": 29.32,
+      "trend": 29.22,
       "autoTags": [
         "crop_top",
         "sleeveless",
@@ -157162,7 +157012,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Loropetie v1.0.zip",
       "dateAdded": 1792233105,
       "boothSearch": "https://booth.pm/en/items/8451081",
-      "trend": 41.25,
+      "trend": 41.08,
       "autoTags": [
         "breasts",
         "swimsuit",
@@ -157252,7 +157102,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/love_twin.zip",
       "dateAdded": 1789014395,
       "boothSearch": "https://booth.pm/en/items/6404009",
-      "trend": 2.81,
+      "trend": 2.8,
       "autoTags": [
         "heart_hands",
         "clothing_cutout",
@@ -157338,7 +157188,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/LovesickHair_unitypackage_1.0.0.zip",
       "dateAdded": 1726316515,
       "boothSearch": "https://booth.pm/en/items/6043334",
-      "trend": 7.58,
+      "trend": 7.57,
       "autoTags": [
         "long_hair",
         "sweater",
@@ -157358,7 +157208,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Low Ponytail.zip",
       "dateAdded": 1792233334,
       "boothSearch": "https://booth.pm/en/items/8177769",
-      "trend": 41.73,
+      "trend": 41.61,
       "autoTags": [
         "jewelry",
         "hair_over_one_eye",
@@ -157380,7 +157230,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Lozy_Hair.ver1.0.zip",
       "dateAdded": 1780486743,
       "boothSearch": "https://booth.pm/en/items/8013601",
-      "trend": 46.47,
+      "trend": 46.35,
       "autoTags": [
         "long_hair",
         "skirt",
@@ -157424,7 +157274,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Lucelia Pony v1.0.zip",
       "dateAdded": 1791980900,
       "boothSearch": "https://booth.pm/en/items/8781430",
-      "trend": 68.73,
+      "trend": 68.04,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -157453,7 +157303,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Lucid Hair.zip",
       "dateAdded": 1792035213,
       "boothSearch": "https://booth.pm/en/items/8617700",
-      "trend": 65.9,
+      "trend": 65.53,
       "autoTags": [
         "flower",
         "hair_ornament",
@@ -157534,7 +157384,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Luminous_Two_Side_Twin_Tail_Hair.zip",
       "dateAdded": 1760846168,
       "boothSearch": "https://booth.pm/en/items/7488061",
-      "trend": 10.48,
+      "trend": 10.46,
       "autoTags": [
         "animal_ears",
         "thighhighs",
@@ -157568,7 +157418,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Luna Wolf Hair.zip",
       "dateAdded": 1792236507,
       "boothSearch": "https://booth.pm/en/items/8355282",
-      "trend": 36.33,
+      "trend": 36.19,
       "autoTags": [
         "animal_ears",
         "shirt",
@@ -157649,7 +157499,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MaesagariAsimeBob_Ver1.02.zip",
       "dateAdded": 1763877945,
       "boothSearch": "https://booth.pm/en/items/7508361",
-      "trend": 29.24,
+      "trend": 29.19,
       "autoTags": [
         "jewelry",
         "ring",
@@ -157727,7 +157577,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MAMOMING_hair002.rar",
       "dateAdded": 1733653226,
       "boothSearch": "https://booth.pm/en/items/5813981",
-      "trend": 3.09,
+      "trend": 3.08,
       "autoTags": [
         "jacket",
         "skirt",
@@ -157781,7 +157631,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MAMOMING_Hair004_FullPack.zip",
       "dateAdded": 1760843070,
       "boothSearch": "https://booth.pm/en/items/6111059",
-      "trend": 2.21,
+      "trend": 2.2,
       "autoTags": [
         "jewelry",
         "drill_hair",
@@ -157850,7 +157700,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MARIYURI.rar",
       "dateAdded": 1727511750,
       "boothSearch": "https://booth.pm/en/items/6061838",
-      "trend": 22.27,
+      "trend": 22.25,
       "autoTags": [
         "long_hair",
         "very_long_hair",
@@ -157876,7 +157726,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Mariyuri_SidetailHair.zip",
       "dateAdded": 1751093571,
       "boothSearch": "https://booth.pm/en/items/6736829",
-      "trend": 13.37,
+      "trend": 13.36,
       "autoTags": [
         "long_hair",
         "side_ponytail",
@@ -157943,7 +157793,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MaziOniWolf.zip",
       "dateAdded": 1792059628,
       "boothSearch": "https://booth.pm/en/items/7903171",
-      "trend": 57.89,
+      "trend": 57.76,
       "autoTags": [
         "necktie",
         "horns",
@@ -158004,7 +157854,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MekakureDatenLong.zip",
       "dateAdded": 1791821229,
       "boothSearch": "https://booth.pm/en/items/8866839",
-      "trend": 116.16,
+      "trend": 114.54,
       "autoTags": [
         "long_hair",
         "long_sleeves",
@@ -158052,7 +157902,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MellieHair v1.1.zip",
       "dateAdded": 1792639199,
       "boothSearch": "https://booth.pm/en/items/8958373",
-      "trend": 134.9,
+      "trend": 130.93,
       "autoTags": [
         "horns",
         "ribbon",
@@ -158078,7 +157928,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Mellow Side Tail.zip",
       "dateAdded": 1792057442,
       "boothSearch": "https://booth.pm/en/items/8775567",
-      "trend": 49.17,
+      "trend": 48.72,
       "autoTags": [
         "bow",
         "musical_note_hair_ornament",
@@ -158118,7 +157968,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MellowRibbon_Hair.zip",
       "dateAdded": 1711071748,
       "boothSearch": "https://booth.pm/en/items/5559867",
-      "trend": 13.62,
+      "trend": 13.61,
       "autoTags": [
         "long_hair",
         "portrait",
@@ -158134,7 +157984,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Meloa_Hair.ver1.0.zip",
       "dateAdded": 1758365893,
       "boothSearch": "https://booth.pm/en/items/7422273",
-      "trend": 34.22,
+      "trend": 34.17,
       "autoTags": [
         "breasts",
         "swimsuit",
@@ -158160,7 +158010,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Melofuwakiza.zip",
       "dateAdded": 1756179978,
       "boothSearch": "https://booth.pm/en/items/7210080",
-      "trend": 5.88,
+      "trend": 5.87,
       "autoTags": [
         "male_focus",
         "barcode",
@@ -158244,7 +158094,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Mendako_Hair.zip",
       "dateAdded": 1791849294,
       "boothSearch": "https://booth.pm/en/items/8943810",
-      "trend": 177.65,
+      "trend": 173.94,
       "autoTags": [
         "jacket",
         "choker",
@@ -158301,7 +158151,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Messy bun.zip",
       "dateAdded": 1792058461,
       "boothSearch": "https://booth.pm/en/items/8578284",
-      "trend": 56.61,
+      "trend": 56.32,
       "autoTags": [
         "breasts",
         "dress",
@@ -158337,7 +158187,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Messy Side Pony.zip",
       "dateAdded": 1791955805,
       "boothSearch": "https://booth.pm/en/items/8720832",
-      "trend": 97.84,
+      "trend": 97.01,
       "autoTags": [
         "breasts",
         "swimsuit",
@@ -158358,7 +158208,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/messy-bun_hair.zip",
       "dateAdded": 1690807155,
       "boothSearch": "https://booth.pm/en/items/4804565",
-      "trend": 7.93,
+      "trend": 7.92,
       "autoTags": [
         "headphones",
         "blurry_background",
@@ -158381,7 +158231,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MessyLowPonytail.zip",
       "dateAdded": 1718777889,
       "boothSearch": "https://booth.pm/en/items/5808286",
-      "trend": 12.64,
+      "trend": 12.63,
       "autoTags": [
         "choker",
         "bandaid_on_face",
@@ -158405,7 +158255,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Mimidashi_Semi-Long_Hair.zip",
       "dateAdded": 1791849291,
       "boothSearch": "https://booth.pm/en/items/8880025",
-      "trend": 62.59,
+      "trend": 61.48,
       "autoTags": [
         "ahoge",
         "braid",
@@ -158428,7 +158278,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MimiDashiBob_v1.0.zip",
       "dateAdded": 1694346137,
       "boothSearch": "https://booth.pm/en/items/5061681",
-      "trend": 9.48,
+      "trend": 9.47,
       "autoTags": [
         "hair_flower",
         "flower",
@@ -158482,7 +158332,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/minimal_wolf_hair_v1.02.zip",
       "dateAdded": 1756187526,
       "boothSearch": "https://booth.pm/en/items/6949025",
-      "trend": 33.06,
+      "trend": 33.02,
       "autoTags": [
         "glasses",
         "bow",
@@ -158530,7 +158380,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Mio_Bob.zip",
       "dateAdded": 1791818474,
       "boothSearch": "https://booth.pm/en/items/8953754",
-      "trend": 107.61,
+      "trend": 105.11,
       "autoTags": [
         "hairband",
         "ahoge",
@@ -158553,7 +158403,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MirageWolfHair_v1.1.0.zip",
       "dateAdded": 1791819489,
       "boothSearch": "https://booth.pm/en/items/8889087",
-      "trend": 126.7,
+      "trend": 124.71,
       "autoTags": [
         "pointy_ears",
         "choker",
@@ -158679,7 +158529,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/ModeDowner.zip",
       "dateAdded": 1749871029,
       "boothSearch": "https://booth.pm/en/items/6574873",
-      "trend": 14.8,
+      "trend": 14.79,
       "autoTags": [
         "glasses",
         "animal_ears",
@@ -158706,7 +158556,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Monaca.zip",
       "dateAdded": 1792578149,
       "boothSearch": "https://booth.pm/en/items/7775422",
-      "trend": 35.17,
+      "trend": 35.1,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -158740,7 +158590,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Moonlit_Charm_Hair.zip",
       "dateAdded": 1791815092,
       "boothSearch": "https://booth.pm/en/items/8956997",
-      "trend": 284.24,
+      "trend": 277.48,
       "autoTags": [
         "breasts",
         "pantyhose",
@@ -158765,7 +158615,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Moonveil Wave Hair v1.00.zip",
       "dateAdded": 1792029786,
       "boothSearch": "https://booth.pm/en/items/8956735",
-      "trend": 35.68,
+      "trend": 34.83,
       "autoTags": [
         "dress",
         "long_hair",
@@ -158849,7 +158699,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Muffin_Hair.ver1.0.zip",
       "dateAdded": 1731913386,
       "boothSearch": "https://booth.pm/en/items/6193199",
-      "trend": 12.0,
+      "trend": 11.99,
       "autoTags": [
         "hat",
         "twintails",
@@ -158873,7 +158723,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MugenNoiZ timadebi.zip",
       "dateAdded": 1792061490,
       "boothSearch": "https://booth.pm/en/items/8690446",
-      "trend": 18.35,
+      "trend": 17.94,
       "autoTags": [
         "horns",
         "animal_ears",
@@ -158896,7 +158746,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Multi Look Short Hair ver 1.0.zip",
       "dateAdded": 1792666814,
       "boothSearch": "https://booth.pm/en/items/8374593",
-      "trend": 31.17,
+      "trend": 31.05,
       "autoTags": [
         "necktie",
         "headphones_around_neck",
@@ -158939,7 +158789,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MuzousaLayeredCutHair ver1.00.zip",
       "dateAdded": 1792669349,
       "boothSearch": "https://booth.pm/en/items/8609228",
-      "trend": 27.55,
+      "trend": 27.35,
       "autoTags": [
         "jewelry",
         "multicolored_hair",
@@ -158989,7 +158839,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MY_CRUSH_Short_wolf_hair.zip",
       "dateAdded": 1714611221,
       "boothSearch": "https://booth.pm/en/items/5636151",
-      "trend": 11.53,
+      "trend": 11.52,
       "autoTags": [
         "male_focus",
         "necklace",
@@ -159009,7 +158859,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MyHalftwin_All.zip",
       "dateAdded": 1791816425,
       "boothSearch": "https://booth.pm/en/items/8848224",
-      "trend": 187.82,
+      "trend": 184.16,
       "autoTags": [
         "long_hair",
         "two_side_up",
@@ -159025,7 +158875,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/MYPony.zip",
       "dateAdded": 1792671585,
       "boothSearch": "https://booth.pm/en/items/8178936",
-      "trend": 28.33,
+      "trend": 28.24,
       "autoTags": [
         "tongue",
         "long_hair",
@@ -159054,7 +158904,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/N1_Simple_Bob_Hair.zip",
       "dateAdded": 1791816433,
       "boothSearch": "https://booth.pm/en/items/8937812",
-      "trend": 127.77,
+      "trend": 125.2,
       "autoTags": [
         "jewelry",
         "necklace",
@@ -159079,7 +158929,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/N2 Messy Ponytail.zip",
       "dateAdded": 1792663729,
       "boothSearch": "https://booth.pm/en/items/8992845",
-      "trend": 36.61,
+      "trend": 35.48,
       "autoTags": [
         "jewelry",
         "cross",
@@ -159183,7 +159033,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/NaturalGazeHair029.zip",
       "dateAdded": 1792639847,
       "boothSearch": "https://booth.pm/en/items/9002322",
-      "trend": 85.79,
+      "trend": 82.86,
       "autoTags": [
         "long_hair",
         "skirt",
@@ -159228,7 +159078,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Neko Tied Bob hair v1.0.3.zip",
       "dateAdded": 1792035632,
       "boothSearch": "https://booth.pm/en/items/7977491",
-      "trend": 73.51,
+      "trend": 73.33,
       "autoTags": [
         "breasts",
         "animal_ears",
@@ -159272,7 +159122,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Neko_bob.zip",
       "dateAdded": 1718508560,
       "boothSearch": "https://booth.pm/en/items/5823103",
-      "trend": 22.38,
+      "trend": 22.37,
       "autoTags": [
         "shorts",
         "navel",
@@ -159333,7 +159183,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/nekoneko_hair.zip",
       "dateAdded": 1726715674,
       "boothSearch": "https://booth.pm/en/items/6095961",
-      "trend": 4.81,
+      "trend": 4.8,
       "autoTags": [
         "multicolored_hair",
         "hair_bun",
@@ -159359,7 +159209,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/nemu hair.zip",
       "dateAdded": 1791953484,
       "boothSearch": "https://booth.pm/en/items/8823060",
-      "trend": 87.9,
+      "trend": 86.91,
       "autoTags": [
         "breasts",
         "animal_ears",
@@ -159395,7 +159245,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Neo MellowCutHair v1.1.zip",
       "dateAdded": 1792667636,
       "boothSearch": "https://booth.pm/en/items/8554532",
-      "trend": 30.07,
+      "trend": 29.92,
       "autoTags": [
         "necklace",
         "male_focus",
@@ -159444,7 +159294,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Neru_Hair.zip",
       "dateAdded": 1791964695,
       "boothSearch": "https://booth.pm/en/items/8637749",
-      "trend": 99.33,
+      "trend": 98.73,
       "autoTags": [
         "animal_ears",
         "shirt",
@@ -159468,7 +159318,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Noble_Bloody.zip",
       "dateAdded": 1792058311,
       "boothSearch": "https://booth.pm/en/items/8281704",
-      "trend": 60.36,
+      "trend": 60.16,
       "autoTags": [
         "goth_fashion",
         "hair_ornament",
@@ -159498,7 +159348,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/NocturnalTwin_v1.0.1.zip",
       "dateAdded": 1763875176,
       "boothSearch": "https://booth.pm/en/items/7585197",
-      "trend": 40.04,
+      "trend": 39.97,
       "autoTags": [
         "long_hair",
         "twintails",
@@ -159527,7 +159377,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Noir Hair.zip",
       "dateAdded": 1792035533,
       "boothSearch": "https://booth.pm/en/items/8278739",
-      "trend": 71.23,
+      "trend": 70.99,
       "autoTags": [
         "breasts",
         "gloves",
@@ -159599,7 +159449,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Noxie Hair v1.0.zip",
       "dateAdded": 1791981218,
       "boothSearch": "https://booth.pm/en/items/8761680",
-      "trend": 64.33,
+      "trend": 63.75,
       "autoTags": [
         "horns",
         "ahoge",
@@ -159626,7 +159476,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Nua 03 Casual Ribboned Ponytail Fullset 1.0.0.zip",
       "dateAdded": 1792669827,
       "boothSearch": "https://booth.pm/en/items/8620054",
-      "trend": 27.49,
+      "trend": 27.33,
       "autoTags": [
         "ponytail",
         "ribbon",
@@ -159656,7 +159506,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/NUA 04 Hush Layered Short Cut Fullset 1.1.0.zip",
       "dateAdded": 1792059476,
       "boothSearch": "https://booth.pm/en/items/8689259",
-      "trend": 50.37,
+      "trend": 50.01,
       "autoTags": [
         "animal_ears",
         "jewelry",
@@ -159690,7 +159540,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/NUA 07 Koinu Hinata Fullset 1.0.0.zip",
       "dateAdded": 1792639855,
       "boothSearch": "https://booth.pm/en/items/8993166",
-      "trend": 72.32,
+      "trend": 70.09,
       "autoTags": [
         "long_hair",
         "animal_ears",
@@ -159726,35 +159576,29 @@ const AVATAR_DATA = {
       "name": "Nya Nya Nya Hair",
       "preview": "images/Hair_Nya_Nya_Nya_Hair.jpg",
       "sourceFile": "Hair/Nya Nya Nya Hair.zip",
-      "dateAdded": 1793778536,
+      "dateAdded": 1793778543,
       "boothSearch": "https://booth.pm/en/items/7854946",
-      "trend": 25.94,
+      "trend": 25.88,
       "autoTags": [
         "animal_ears",
-        "animal_ear_fluff",
         "cat_ears",
         "braid",
-        "long_hair",
         "twin_braids",
-        "collar",
-        "hairband",
-        "hair_ornament",
+        "long_hair",
         "wrist_cuffs",
+        "hair_ornament",
+        "hairband",
         "dress",
-        "bow",
-        "frills",
-        "collarbone",
-        "jewelry",
-        "bare_shoulders",
+        "animal_ear_fluff",
+        "hairclip",
         "necklace",
+        "jewelry",
         ":3",
-        "hair_bow",
+        "collar",
+        "bow",
         "cat_girl",
-        "center_frills",
-        "hair_intakes",
-        "strapless",
-        ":d",
-        "hairclip"
+        "frills",
+        "bare_shoulders"
       ]
     },
     {
@@ -159763,7 +159607,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/OdangoPonytail.zip",
       "dateAdded": 1756180077,
       "boothSearch": "https://booth.pm/en/items/7224250",
-      "trend": 20.64,
+      "trend": 20.61,
       "autoTags": [
         "long_hair",
         "breasts",
@@ -159808,7 +159652,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/omekasi_lowpony.zip",
       "dateAdded": 1784380717,
       "boothSearch": "https://booth.pm/en/items/6947304",
-      "trend": 9.36,
+      "trend": 9.35,
       "autoTags": [
         "long_hair",
         "dotted_line",
@@ -159892,7 +159736,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/OsanyanyanyaJimi_LowTwin.zip",
       "dateAdded": 1751944554,
       "boothSearch": "https://booth.pm/en/items/7079888",
-      "trend": 29.53,
+      "trend": 29.5,
       "autoTags": [
         "animal_ears",
         "cat_ears",
@@ -159933,7 +159777,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/OutlawSweptBackHair_ver1_0_0.zip",
       "dateAdded": 1760078400,
       "boothSearch": "https://booth.pm/en/items/7256472",
-      "trend": 4.21,
+      "trend": 4.2,
       "autoTags": [
         "male_focus",
         "hair_slicked_back",
@@ -159948,7 +159792,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Oversleep_low_Twin_Tail.zip",
       "dateAdded": 1763200545,
       "boothSearch": "https://booth.pm/en/items/7542796",
-      "trend": 28.84,
+      "trend": 28.79,
       "autoTags": [
         "animal_ears",
         "sailor_collar",
@@ -160084,27 +159928,22 @@ const AVATAR_DATA = {
       "name": "Peach Edge Bob",
       "preview": "images/Hair_Peach_Edge_Bob.jpg",
       "sourceFile": "Hair/Peach Edge Bob.zip",
-      "dateAdded": 1793776618,
+      "dateAdded": 1793776622,
       "boothSearch": "https://booth.pm/en/items/7727374",
-      "trend": 27.37,
+      "trend": 27.32,
       "autoTags": [
         "jewelry",
-        "necklace",
-        "portrait",
-        "piercing",
         "short_hair",
-        "ear_piercing",
         "bob_cut",
+        "portrait",
+        "necklace",
         "earrings",
-        "mole_under_eye",
-        "mole",
         "shirt",
-        "blunt_ends",
+        "piercing",
+        "ear_piercing",
         "hair_between_eyes",
-        "outside_border",
         "hair_behind_ear",
-        "sweater",
-        "long_bangs"
+        "jacket"
       ]
     },
     {
@@ -160113,7 +159952,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Peach Edge Medium layer.zip",
       "dateAdded": 1792058912,
       "boothSearch": "https://booth.pm/en/items/8689245",
-      "trend": 52.86,
+      "trend": 52.48,
       "autoTags": [
         "jewelry",
         "necklace",
@@ -160136,50 +159975,41 @@ const AVATAR_DATA = {
       "name": "Peach Edge Soft Layer",
       "preview": "images/Hair_Peach_Edge_Soft_Layer.jpg",
       "sourceFile": "Hair/Peach Edge Soft Layer.zip",
-      "dateAdded": 1793776649,
+      "dateAdded": 1793776654,
       "boothSearch": "https://booth.pm/en/items/7928538",
-      "trend": 26.11,
+      "trend": 26.05,
       "autoTags": [
         "jewelry",
         "necklace",
-        "cross",
-        "mole",
         "long_hair",
-        "mole_under_eye",
-        "earrings",
-        "jacket",
+        "cross",
+        "cross_necklace",
         "sleeves_past_wrists",
         "breasts",
-        "cross_necklace",
-        "nail_polish",
-        "long_sleeves",
-        "bra",
+        "shirt",
+        "jacket",
+        "earrings",
         "cleavage",
-        "hair_between_eyes",
-        "underwear"
+        "long_sleeves",
+        "hair_between_eyes"
       ]
     },
     {
       "name": "Peach Edge Yuruhuwa Odango",
       "preview": "images/Hair_Peach_Edge_Yuruhuwa_Odango.jpg",
       "sourceFile": "Hair/Peach Edge Yuruhuwa Odango.zip",
-      "dateAdded": 1793776582,
+      "dateAdded": 1793776588,
       "boothSearch": "https://booth.pm/en/items/8077062",
-      "trend": 25.51,
+      "trend": 25.45,
       "autoTags": [
         "jewelry",
         "long_hair",
-        "mole",
-        "necklace",
-        "mole_under_eye",
-        "earrings",
-        "breasts",
-        "blunt_bangs",
-        "jacket",
         "side_ponytail",
-        "collarbone",
-        "hair_bun",
-        "cleavage"
+        "necklace",
+        "earrings",
+        "jacket",
+        "breasts",
+        "blunt_bangs"
       ]
     },
     {
@@ -160230,7 +160060,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Picnic_low_Twin_Tail.zip",
       "dateAdded": 1772252011,
       "boothSearch": "https://booth.pm/en/items/7685153",
-      "trend": 13.55,
+      "trend": 13.53,
       "autoTags": [
         "breasts",
         "cleavage",
@@ -160261,7 +160091,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Pippipmeow full.zip",
       "dateAdded": 1791819435,
       "boothSearch": "https://booth.pm/en/items/8883506",
-      "trend": 157.75,
+      "trend": 155.44,
       "autoTags": [
         "animal_ears",
         "braid",
@@ -160318,7 +160148,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Plait Hair.zip",
       "dateAdded": 1792056094,
       "boothSearch": "https://booth.pm/en/items/8355584",
-      "trend": 64.85,
+      "trend": 64.62,
       "autoTags": [
         "necktie",
         "gloves",
@@ -160431,7 +160261,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/POOP_HAIR_18.zip",
       "dateAdded": 1791820237,
       "boothSearch": "https://booth.pm/en/items/8852118",
-      "trend": 112.85,
+      "trend": 111.25,
       "autoTags": [
         "long_hair",
         "breasts",
@@ -160449,7 +160279,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/POP 04.zip",
       "dateAdded": 1717975662,
       "boothSearch": "https://booth.pm/en/items/5810905",
-      "trend": 7.62,
+      "trend": 7.61,
       "autoTags": [
         "shirt",
         "hair_ornament",
@@ -160479,7 +160309,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/PoP.Hair 01.zip",
       "dateAdded": 1705645317,
       "boothSearch": "https://booth.pm/en/items/5418355",
-      "trend": 6.58,
+      "trend": 6.57,
       "autoTags": [
         "fangs",
         "braid",
@@ -160581,7 +160411,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/POPHair11.rar",
       "dateAdded": 1740030872,
       "boothSearch": "https://booth.pm/en/items/6538150",
-      "trend": 14.4,
+      "trend": 14.38,
       "autoTags": [
         "twintails",
         "necklace",
@@ -160712,7 +160542,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Project Zero NO.20 [FULLSET].zip",
       "dateAdded": 1791952923,
       "boothSearch": "https://booth.pm/en/items/8734991",
-      "trend": 99.5,
+      "trend": 98.5,
       "autoTags": [
         "cuffs",
         "ahoge",
@@ -160765,7 +160595,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/puppy long braids hair [6145324].zip",
       "dateAdded": 1736079213,
       "boothSearch": "https://booth.pm/en/items/6145324",
-      "trend": 13.33,
+      "trend": 13.32,
       "autoTags": [
         "animal_ears",
         "braid",
@@ -160817,7 +160647,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Pure Pony and Long Hair.zip",
       "dateAdded": 1792071299,
       "boothSearch": "https://booth.pm/en/items/8597929",
-      "trend": 43.89,
+      "trend": 43.65,
       "autoTags": [
         "breasts",
         "gloves",
@@ -160866,7 +160696,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/PureLowPony1.02.zip",
       "dateAdded": 1763782030,
       "boothSearch": "https://booth.pm/en/items/6589334",
-      "trend": 5.24,
+      "trend": 5.23,
       "autoTags": [
         "breasts",
         "long_hair",
@@ -161013,7 +160843,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Rabby Longhair ver.1.1.zip",
       "dateAdded": 1791970011,
       "boothSearch": "https://booth.pm/en/items/8713582",
-      "trend": 89.15,
+      "trend": 88.46,
       "autoTags": [
         "animal_ears",
         "rabbit_ears",
@@ -161036,7 +160866,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Ran_Ponytail_NEWNICHe_Studio.zip",
       "dateAdded": 1760841649,
       "boothSearch": "https://booth.pm/en/items/7494037",
-      "trend": 6.52,
+      "trend": 6.51,
       "autoTags": [
         "breasts",
         "hair_ornament",
@@ -161086,7 +160916,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Ribbon Angel hair ver1.2.zip",
       "dateAdded": 1792574136,
       "boothSearch": "https://booth.pm/en/items/8566423",
-      "trend": 33.68,
+      "trend": 33.51,
       "autoTags": [
         "long_hair",
         "neck_bell",
@@ -161117,7 +160947,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Ribbon long hair.zip",
       "dateAdded": 1718508398,
       "boothSearch": "https://booth.pm/en/items/5814301",
-      "trend": 5.92,
+      "trend": 5.91,
       "autoTags": [
         "neckerchief",
         "school_uniform",
@@ -161196,7 +161026,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/RosalieTwin.zip",
       "dateAdded": 1792591598,
       "boothSearch": "https://booth.pm/en/items/8496340",
-      "trend": 31.97,
+      "trend": 31.83,
       "autoTags": [
         "heterochromia",
         "heart",
@@ -161226,7 +161056,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Rosary Hair.zip",
       "dateAdded": 1715226730,
       "boothSearch": "https://booth.pm/en/items/5609554",
-      "trend": 3.38,
+      "trend": 3.37,
       "autoTags": [
         "twintails",
         "long_hair",
@@ -161248,7 +161078,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Rose_Devil_Full.zip",
       "dateAdded": 1701054336,
       "boothSearch": "https://booth.pm/en/items/5152437",
-      "trend": 5.61,
+      "trend": 5.6,
       "autoTags": [
         "horns",
         "heart",
@@ -161493,7 +161323,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Rosy Loop Hair Fullpack.zip",
       "dateAdded": 1756181825,
       "boothSearch": "https://booth.pm/en/items/7201039",
-      "trend": 23.53,
+      "trend": 23.5,
       "autoTags": [
         "heart",
         "shirt",
@@ -161540,7 +161370,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Rough_Long_Hair.zip",
       "dateAdded": 1736345198,
       "boothSearch": "https://booth.pm/en/items/6464467",
-      "trend": 32.59,
+      "trend": 32.56,
       "autoTags": [
         "long_hair",
         "ahoge",
@@ -161560,7 +161390,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/ROZE_Kusogaki_Twintail_v1.0.zip",
       "dateAdded": 1711250715,
       "boothSearch": "https://booth.pm/en/items/5548688",
-      "trend": 1.4,
+      "trend": 1.39,
       "autoTags": [
         "swimsuit",
         "twintails",
@@ -161589,7 +161419,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Ruffle_Bob_Hair.zip",
       "dateAdded": 1791948980,
       "boothSearch": "https://booth.pm/en/items/8961587",
-      "trend": 57.6,
+      "trend": 56.22,
       "autoTags": [
         "animal_ears",
         "tongue",
@@ -161639,7 +161469,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/sarasarashort.zip",
       "dateAdded": 1792574447,
       "boothSearch": "https://booth.pm/en/items/8134489",
-      "trend": 36.0,
+      "trend": 35.9,
       "autoTags": [
         "animal_ears",
         "hair_ornament",
@@ -161677,7 +161507,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Sassy Neko.ver1.1.zip",
       "dateAdded": 1791980770,
       "boothSearch": "https://booth.pm/en/items/8599360",
-      "trend": 79.81,
+      "trend": 79.38,
       "autoTags": [
         "eyewear_on_head",
         "animal_ears",
@@ -161832,7 +161662,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Seira_Hair_1.0.0.zip",
       "dateAdded": 1756179147,
       "boothSearch": "https://booth.pm/en/items/7305847",
-      "trend": 14.67,
+      "trend": 14.65,
       "autoTags": [
         "long_hair",
         "very_long_hair",
@@ -161884,7 +161714,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/selestia_anka_long_wavy_twintail.zip",
       "dateAdded": 1692802043,
       "boothSearch": "https://booth.pm/en/items/4400530",
-      "trend": 1.88,
+      "trend": 1.87,
       "autoTags": [
         "long_hair",
         "thighhighs",
@@ -161946,7 +161776,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Sena_Hair.ver1.0.zip",
       "dateAdded": 1765001208,
       "boothSearch": "https://booth.pm/en/items/7680720",
-      "trend": 33.89,
+      "trend": 33.83,
       "autoTags": [
         "hat",
         "hair_over_one_eye",
@@ -161970,7 +161800,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Sharp Edge.ver1.0.zip",
       "dateAdded": 1792639110,
       "boothSearch": "https://booth.pm/en/items/8997892",
-      "trend": 175.0,
+      "trend": 169.33,
       "autoTags": [
         "gloves",
         "elbow_gloves",
@@ -161998,7 +161828,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Sheep Wolf Bob Hair.zip",
       "dateAdded": 1792588877,
       "boothSearch": "https://booth.pm/en/items/8132418",
-      "trend": 33.46,
+      "trend": 33.36,
       "autoTags": [
         "breasts",
         "jewelry",
@@ -162108,7 +161938,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Side-Half-Up__支援版.zip",
       "dateAdded": 1791818226,
       "boothSearch": "https://booth.pm/en/items/8902627",
-      "trend": 114.34,
+      "trend": 112.1,
       "autoTags": [
         "v",
         "choker",
@@ -162129,7 +161959,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/side_bun_hair.zip",
       "dateAdded": 1696417503,
       "boothSearch": "https://booth.pm/en/items/5024393",
-      "trend": 7.57,
+      "trend": 7.56,
       "autoTags": [
         "shirt",
         "sleeveless_shirt",
@@ -162190,7 +162020,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/simple_Bob.zip",
       "dateAdded": 1751094790,
       "boothSearch": "https://booth.pm/en/items/6745224",
-      "trend": 18.01,
+      "trend": 17.99,
       "autoTags": [
         "collar",
         "short_hair",
@@ -162213,7 +162043,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/SimpleLongTwin.zip",
       "dateAdded": 1791953012,
       "boothSearch": "https://booth.pm/en/items/8977752",
-      "trend": 49.67,
+      "trend": 48.32,
       "autoTags": [
         "animal_ears",
         "plaid_background",
@@ -162317,7 +162147,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Snowflake_Braids_Hair_V1.0.0.zip",
       "dateAdded": 1712620453,
       "boothSearch": "https://booth.pm/en/items/5632233",
-      "trend": 7.44,
+      "trend": 7.43,
       "autoTags": [
         "clothing_cutout",
         "braid",
@@ -162351,7 +162181,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/SnowKit Hair v1.04.zip",
       "dateAdded": 1792665309,
       "boothSearch": "https://booth.pm/en/items/7877200",
-      "trend": 32.27,
+      "trend": 32.2,
       "autoTags": [
         "animal_ears",
         "dress",
@@ -162422,7 +162252,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/SOFTTWINTAILHAIR KILLNYA.zip",
       "dateAdded": 1791980648,
       "boothSearch": "https://booth.pm/en/items/8797146",
-      "trend": 71.4,
+      "trend": 70.69,
       "autoTags": [
         "long_hair",
         "shirt",
@@ -162445,7 +162275,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/SP-006 v1.0.zip",
       "dateAdded": 1792639402,
       "boothSearch": "https://booth.pm/en/items/8973680",
-      "trend": 94.0,
+      "trend": 91.46,
       "autoTags": [
         "jewelry",
         "breasts",
@@ -162516,25 +162346,26 @@ const AVATAR_DATA = {
       "name": "Sporty Shortcut",
       "preview": "images/Hair_Sporty_Shortcut.jpg",
       "sourceFile": "Hair/Sporty Shortcut.zip",
-      "dateAdded": 1793776944,
+      "dateAdded": 1793776952,
       "boothSearch": "https://booth.pm/en/items/8394149",
-      "trend": 26.85,
+      "trend": 26.75,
       "autoTags": [
         "breasts",
         "ahoge",
         "short_hair",
         "cleavage",
-        "halterneck",
         "criss-cross_halter",
+        "halterneck",
+        "hood",
+        "hair_between_eyes",
+        "jacket",
+        "off_shoulder",
         "large_breasts",
         "collarbone",
-        "jacket",
-        "hood",
-        "sweatdrop",
+        "medium_breasts",
         "bare_shoulders",
-        "hair_between_eyes",
-        "off_shoulder",
-        "clothes_writing"
+        "hoodie",
+        "hood_down"
       ]
     },
     {
@@ -162543,7 +162374,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Squirrel_Two_Side_Twin_Tail.zip",
       "dateAdded": 1720139432,
       "boothSearch": "https://booth.pm/en/items/5841209",
-      "trend": 9.2,
+      "trend": 9.19,
       "autoTags": [
         "dress",
         "long_hair",
@@ -162571,7 +162402,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/StarCross_Bob_hair_Ver1.01.zip",
       "dateAdded": 1740969143,
       "boothSearch": "https://booth.pm/en/items/6636163",
-      "trend": 21.08,
+      "trend": 21.06,
       "autoTags": [
         "animal_ears",
         "hairband",
@@ -162626,7 +162457,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Stellar_Kitty_hair_Ver1.00.zip",
       "dateAdded": 1791959464,
       "boothSearch": "https://booth.pm/en/items/8806438",
-      "trend": 79.34,
+      "trend": 78.52,
       "autoTags": [
         "animal_ears",
         "tail",
@@ -162655,7 +162486,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Stile Lupo Hair ver 1.0.zip",
       "dateAdded": 1792577513,
       "boothSearch": "https://booth.pm/en/items/8010286",
-      "trend": 35.83,
+      "trend": 35.74,
       "autoTags": [
         "animal_ears",
         "jewelry",
@@ -162764,7 +162595,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/SuperLongHair.rar",
       "dateAdded": 1791818463,
       "boothSearch": "https://booth.pm/en/items/8957413",
-      "trend": 82.75,
+      "trend": 80.79,
       "autoTags": [
         "eyepatch",
         "collar",
@@ -162786,7 +162617,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/SuzukazeLong Ver.1.01.zip",
       "dateAdded": 1792579707,
       "boothSearch": "https://booth.pm/en/items/8528011",
-      "trend": 32.31,
+      "trend": 32.16,
       "autoTags": [
         "long_hair",
         "breasts",
@@ -162945,7 +162776,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/THX 4th Hair.zip",
       "dateAdded": 1792035351,
       "boothSearch": "https://booth.pm/en/items/8629189",
-      "trend": 65.01,
+      "trend": 64.61,
       "autoTags": [
         "necktie",
         "twintails",
@@ -162985,7 +162816,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Toastie Hair.zip",
       "dateAdded": 1748827508,
       "boothSearch": "https://booth.pm/en/items/6919165",
-      "trend": 8.19,
+      "trend": 8.18,
       "autoTags": [
         "bandaid_on_nose",
         "food",
@@ -163073,7 +162904,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Tulle Twin.zip",
       "dateAdded": 1791981273,
       "boothSearch": "https://booth.pm/en/items/8711174",
-      "trend": 70.75,
+      "trend": 70.21,
       "autoTags": [
         "dress",
         "gloves",
@@ -163107,7 +162938,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/TurningPoint_04_Muffin_Puff_Hair__v1.0.zip",
       "dateAdded": 1758364670,
       "boothSearch": "https://booth.pm/en/items/7412200",
-      "trend": 10.49,
+      "trend": 10.47,
       "autoTags": [
         "animal_ears",
         "hair_ornament",
@@ -163138,7 +162969,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Twin tail braided hair.zip",
       "dateAdded": 1713225195,
       "boothSearch": "https://booth.pm/en/items/5650302",
-      "trend": 3.58,
+      "trend": 3.57,
       "autoTags": [
         "sweater",
         "long_hair",
@@ -163161,7 +162992,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Twin_Braid_Hair_1.0.1.zip",
       "dateAdded": 1772253635,
       "boothSearch": "https://booth.pm/en/items/6706451",
-      "trend": 3.88,
+      "trend": 3.87,
       "autoTags": [
         "horns",
         "braid",
@@ -163184,7 +163015,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Twin_Bun_Braids_v1.03.zip",
       "dateAdded": 1763875813,
       "boothSearch": "https://booth.pm/en/items/6907124",
-      "trend": 21.4,
+      "trend": 21.38,
       "autoTags": [
         "hair_bun",
         "navel",
@@ -163256,7 +163087,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Twinkle Tails Full.zip",
       "dateAdded": 1792577197,
       "boothSearch": "https://booth.pm/en/items/7803581",
-      "trend": 36.57,
+      "trend": 36.5,
       "autoTags": [
         "necktie",
         "twintails",
@@ -163343,7 +163174,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Twirlix Twintails.zip",
       "dateAdded": 1783698487,
       "boothSearch": "https://booth.pm/en/items/8147077",
-      "trend": 20.3,
+      "trend": 20.24,
       "autoTags": [
         "breasts",
         "cleavage",
@@ -163478,7 +163309,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Unisex_Shortcut.zip",
       "dateAdded": 1724649653,
       "boothSearch": "https://booth.pm/en/items/5947293",
-      "trend": 15.82,
+      "trend": 15.8,
       "autoTags": [
         "short_hair",
         "school_uniform",
@@ -163587,7 +163418,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Valentine_Hair.zip",
       "dateAdded": 1686047639,
       "boothSearch": "https://booth.pm/en/items/3712747",
-      "trend": 5.15,
+      "trend": 5.14,
       "autoTags": [
         "long_hair",
         "breasts",
@@ -163615,7 +163446,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Varsity_Hair_v1.0.zip",
       "dateAdded": 1763874698,
       "boothSearch": "https://booth.pm/en/items/7571453",
-      "trend": 20.94,
+      "trend": 20.91,
       "autoTags": [
         "necktie",
         "breasts",
@@ -163668,7 +163499,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Velvet_Cat_Long_Hair.zip",
       "dateAdded": 1758858695,
       "boothSearch": "https://booth.pm/en/items/7405787",
-      "trend": 15.07,
+      "trend": 15.11,
       "autoTags": [
         "animal_ears",
         "shirt",
@@ -163701,7 +163532,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Viree Hair.zip",
       "dateAdded": 1792062151,
       "boothSearch": "https://booth.pm/en/items/8710030",
-      "trend": 41.37,
+      "trend": 43.51,
       "autoTags": [
         "male_focus",
         "short_hair",
@@ -163720,7 +163551,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/volumehalfuptail.zip",
       "dateAdded": 1705191528,
       "boothSearch": "https://booth.pm/en/items/5382856",
-      "trend": 7.62,
+      "trend": 7.63,
       "autoTags": [
         "long_hair",
         "thighhighs",
@@ -163738,7 +163569,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/VRC Hair .exe 004 Cherimell Hair.7z",
       "dateAdded": 1791818452,
       "boothSearch": "https://booth.pm/en/items/8914549",
-      "trend": 95.52,
+      "trend": 103.71,
       "autoTags": [
         "animal_ears",
         "skirt",
@@ -163775,7 +163606,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/VRC Hair Angel Puff Hair.zip",
       "dateAdded": 1792055695,
       "boothSearch": "https://booth.pm/en/items/8805453",
-      "trend": 52.68,
+      "trend": 52.13,
       "autoTags": [
         "long_hair",
         "breasts",
@@ -163894,7 +163725,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Wavy_twintails.zip",
       "dateAdded": 1724135461,
       "boothSearch": "https://booth.pm/en/items/6014369",
-      "trend": 3.58,
+      "trend": 3.57,
       "autoTags": [
         "food",
         "twintails",
@@ -164085,7 +163916,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/WindSwayHair_1.01.unitypackage",
       "dateAdded": 1760075648,
       "boothSearch": "https://booth.pm/en/items/7409236",
-      "trend": 6.23,
+      "trend": 6.22,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -164116,7 +163947,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Wing_Flare_Hair_v1.01.zip",
       "dateAdded": 1763198475,
       "boothSearch": "https://booth.pm/en/items/6694784",
-      "trend": 8.72,
+      "trend": 8.71,
       "autoTags": [
         "long_hair",
         "hair_over_one_eye",
@@ -164164,7 +163995,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/WishList Mococo v1.0.0.zip",
       "dateAdded": 1792206469,
       "boothSearch": "https://booth.pm/en/items/8727562",
-      "trend": 37.2,
+      "trend": 36.9,
       "autoTags": [
         "animal_ears",
         "rabbit_ears",
@@ -164196,7 +164027,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/WishList_Claselle_v1.0.0.zip",
       "dateAdded": 1751092941,
       "boothSearch": "https://booth.pm/en/items/7036853",
-      "trend": 13.25,
+      "trend": 13.23,
       "autoTags": [
         "horns",
         "necktie",
@@ -164220,7 +164051,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/WishList_Cosmi_v1.0.0.zip",
       "dateAdded": 1756876417,
       "boothSearch": "https://booth.pm/en/items/7357530",
-      "trend": 9.14,
+      "trend": 9.13,
       "autoTags": [
         "long_hair",
         "shirt",
@@ -164247,7 +164078,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/WishList_Kanako_v1.0.0.zip",
       "dateAdded": 1761967222,
       "boothSearch": "https://booth.pm/en/items/7550375",
-      "trend": 12.84,
+      "trend": 12.82,
       "autoTags": [
         "long_hair",
         "hair_bun",
@@ -164272,7 +164103,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/WishList_Rich_v1.0.1.zip",
       "dateAdded": 1749870647,
       "boothSearch": "https://booth.pm/en/items/6825310",
-      "trend": 6.04,
+      "trend": 6.03,
       "autoTags": [
         "long_hair",
         "long_sleeves",
@@ -164402,7 +164233,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Woofy Hair Fullset.zip",
       "dateAdded": 1768017910,
       "boothSearch": "https://booth.pm/en/items/7725095",
-      "trend": 24.82,
+      "trend": 24.77,
       "autoTags": [
         "animal_ears",
         "necktie",
@@ -164457,7 +164288,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/Yume_coi_side_half.zip",
       "dateAdded": 1758365367,
       "boothSearch": "https://booth.pm/en/items/6192827",
-      "trend": 12.5,
+      "trend": 12.49,
       "autoTags": [
         "animal_ears",
         "cat_ears",
@@ -164535,7 +164366,7 @@ const AVATAR_DATA = {
       "sourceFile": "Hair/YunLongPonite.zip",
       "dateAdded": 1748827641,
       "boothSearch": "https://booth.pm/en/items/6947751",
-      "trend": 14.25,
+      "trend": 14.23,
       "autoTags": [
         "long_hair",
         "gloves",
@@ -164647,22 +164478,24 @@ const AVATAR_DATA = {
       "name": "Yurupop Half Twin",
       "preview": "images/Hair_Yurupop_Half_Twin.jpg",
       "sourceFile": "Hair/Yurupop Half Twin.unitypackage",
-      "dateAdded": 1793776632,
+      "dateAdded": 1793776636,
       "boothSearch": "https://booth.pm/en/items/8321511",
-      "trend": 25.52,
+      "trend": 25.43,
       "autoTags": [
         "animal_ears",
         "necktie",
         "shirt",
         "collared_shirt",
-        "animal_ear_fluff",
-        "chibi",
         "two_side_up",
-        "hair_ornament",
-        "hairclip",
+        "animal_ear_fluff",
         "cat_ears",
         "sweater_vest",
+        "chibi",
+        "hair_ornament",
+        "hairclip",
         "long_hair",
+        "vest",
+        "bag",
         "hair_between_eyes"
       ]
     },
@@ -164811,7 +164644,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/1st_earandtail.zip",
       "dateAdded": 1723351687,
       "boothSearch": "https://booth.pm/en/items/5928702",
-      "trend": 15.59,
+      "trend": 15.58,
       "autoTags": [
         "animal_ears",
         "skirt",
@@ -165029,7 +164862,7 @@ const AVATAR_DATA = {
         "Mafuyu"
       ],
       "boothSearch": "https://booth.pm/en/items/6367517",
-      "trend": 13.49,
+      "trend": 13.48,
       "autoTags": [
         "headphones",
         "ahoge",
@@ -165051,7 +164884,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/8973051 accs RegaliaHorns Aconite v1.0.0.zip",
       "dateAdded": 1792664457,
       "boothSearch": "https://booth.pm/en/items/8973051",
-      "trend": 21.7,
+      "trend": 21.0,
       "autoTags": [
         "horns",
         "hair_ornament",
@@ -165378,7 +165211,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/_Liltoon__AKALII_Ears_and_Tail_v1.rar",
       "dateAdded": 1707523008,
       "boothSearch": "https://booth.pm/en/items/5350924",
-      "trend": 2.89,
+      "trend": 2.88,
       "autoTags": [
         "animal_ears",
         "long_hair",
@@ -165725,7 +165558,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Angelring_Halo_ver1.00.zip",
       "dateAdded": 1761970457,
       "boothSearch": "https://booth.pm/en/items/7556287",
-      "trend": 5.24,
+      "trend": 5.23,
       "autoTags": [
         "halo",
         "closed_eyes",
@@ -165846,7 +165679,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Archive halo system Ver.1.0.0.zip",
       "dateAdded": 1792060976,
       "boothSearch": "https://booth.pm/en/items/8864944",
-      "trend": 33.7,
+      "trend": 33.25,
       "autoTags": [
         "necktie",
         "jacket",
@@ -166254,7 +166087,7 @@ const AVATAR_DATA = {
         "YUMEKA"
       ],
       "boothSearch": "https://booth.pm/en/items/8853411",
-      "trend": 46.34,
+      "trend": 45.74,
       "autoTags": [
         "breasts",
         "swimsuit",
@@ -166381,7 +166214,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/bunny_headband.zip",
       "dateAdded": 1674440877,
       "boothSearch": "https://booth.pm/en/items/4100996",
-      "trend": 0.47,
+      "trend": 0.46,
       "autoTags": [
         "animal_ears",
         "rabbit_ears",
@@ -166429,7 +166262,7 @@ const AVATAR_DATA = {
         "Moe"
       ],
       "boothSearch": "https://booth.pm/en/items/5914423",
-      "trend": 4.69,
+      "trend": 4.68,
       "autoTags": [
         "animal_ears",
         "cat_ears",
@@ -166478,7 +166311,7 @@ const AVATAR_DATA = {
         "Moe"
       ],
       "boothSearch": "https://booth.pm/en/items/5739587",
-      "trend": 3.81,
+      "trend": 3.8,
       "autoTags": [
         "bug",
         "butterfly",
@@ -166739,7 +166572,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/cat_ear_set.zip",
       "dateAdded": 1717037597,
       "boothSearch": "https://booth.pm/en/items/5163046",
-      "trend": 2.6,
+      "trend": 2.59,
       "autoTags": [
         "animal_ears",
         "tail",
@@ -166785,7 +166618,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Cat_Ears.zip",
       "dateAdded": 1783696537,
       "boothSearch": "https://booth.pm/en/items/7300129",
-      "trend": 0.94,
+      "trend": 0.93,
       "autoTags": [
         "animal_ears",
         "multicolored_hair",
@@ -167205,7 +167038,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/CreamerMaid_Lolinkle.zip",
       "dateAdded": 1785571519,
       "boothSearch": "https://booth.pm/en/items/8322972",
-      "trend": 9.49,
+      "trend": 9.45,
       "autoTags": [
         "bandaid_on_face",
         "bow",
@@ -167357,7 +167190,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/cyber_glasses_v1_0.zip",
       "dateAdded": 1685534032,
       "boothSearch": "https://booth.pm/en/items/4803709",
-      "trend": 2.94,
+      "trend": 2.93,
       "autoTags": [
         "still_life"
       ]
@@ -167386,7 +167219,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/cyberface-v1_00.zip",
       "dateAdded": 1690462303,
       "boothSearch": "https://booth.pm/en/items/4551617",
-      "trend": 1.28,
+      "trend": 1.27,
       "autoTags": [
         "animal_ears",
         "breasts",
@@ -167426,7 +167259,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/dark_horn_ver_1_03.zip",
       "dateAdded": 1726318370,
       "boothSearch": "https://booth.pm/en/items/5558987",
-      "trend": 12.79,
+      "trend": 12.78,
       "autoTags": [
         "horns",
         "ahoge",
@@ -167588,36 +167421,29 @@ const AVATAR_DATA = {
       "name": "DOG shoeS and Muzzle",
       "preview": "images/Accessories_DOG_shoeS_and_Muzzle.jpg",
       "sourceFile": "Accessories/DOG shoeS and Muzzle.zip",
-      "dateAdded": 1793776679,
+      "dateAdded": 1793776688,
       "compatibleAvatars": [
         "Manuka",
         "Shinano"
       ],
       "boothSearch": "https://booth.pm/en/items/8783175",
-      "trend": 21.54,
+      "trend": 21.29,
       "autoTags": [
         "animal_ears",
         "sitting",
-        "jacket",
-        "long_sleeves",
-        "animal_ear_fluff",
-        "shoes",
-        "hugging_own_legs",
         "sneakers",
+        "shoes",
+        "jacket",
         "mask",
-        "pantyhose",
-        "hair_between_eyes",
-        "short_hair",
+        "glowing_eyes",
+        "long_sleeves",
+        "glowing",
+        "hat",
+        "crossed_legs",
         "chair",
-        "furry_female",
-        "knees_up",
-        "track_jacket",
-        "furry",
         "cat_ears",
-        "couch",
-        "sleeves_past_wrists",
-        "zipper",
-        "armchair"
+        "character_name",
+        "tail"
       ]
     },
     {
@@ -167626,7 +167452,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/dr-acc02-v1_91.zip",
       "dateAdded": 1695896119,
       "boothSearch": "https://booth.pm/en/items/3479462",
-      "trend": 3.88,
+      "trend": 3.87,
       "autoTags": [
         "barcode",
         "round_eyewear",
@@ -167660,7 +167486,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/DreamLoopHalo_v1.00.zip",
       "dateAdded": 1761971474,
       "boothSearch": "https://booth.pm/en/items/7554950",
-      "trend": 8.06,
+      "trend": 8.05,
       "autoTags": [
         "star_(symbol)",
         "still_life"
@@ -167672,7 +167498,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/DropGlass.zip",
       "dateAdded": 1791946351,
       "boothSearch": "https://booth.pm/en/items/8952718",
-      "trend": 82.4,
+      "trend": 80.56,
       "autoTags": [
         "portrait",
         "purple-tinted_eyewear",
@@ -167778,7 +167604,7 @@ const AVATAR_DATA = {
         "Milltina"
       ],
       "boothSearch": "https://booth.pm/en/items/6569880",
-      "trend": 8.92,
+      "trend": 8.91,
       "autoTags": [
         "horns",
         "portrait",
@@ -168208,7 +168034,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Flowerearrings.zip",
       "dateAdded": 1792071624,
       "boothSearch": "https://booth.pm/en/items/8820322",
-      "trend": 31.82,
+      "trend": 31.45,
       "autoTags": [
         "jewelry",
         "hair_ornament",
@@ -168356,7 +168182,7 @@ const AVATAR_DATA = {
         "Rurune"
       ],
       "boothSearch": "https://booth.pm/en/items/8508319",
-      "trend": 3.54,
+      "trend": 3.53,
       "autoTags": [
         "sex_toy",
         "penis",
@@ -168406,7 +168232,7 @@ const AVATAR_DATA = {
         "Sio"
       ],
       "boothSearch": "https://booth.pm/en/items/5666650",
-      "trend": 2.46,
+      "trend": 2.45,
       "autoTags": [
         "breasts",
         "cleavage_cutout",
@@ -168487,7 +168313,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/funyaneko.zip",
       "dateAdded": 1785573587,
       "boothSearch": "https://booth.pm/en/items/7770830",
-      "trend": 5.33,
+      "trend": 5.32,
       "autoTags": [
         "animal_ears",
         "cat_ears",
@@ -168765,7 +168591,7 @@ const AVATAR_DATA = {
         "Shinra"
       ],
       "boothSearch": "https://booth.pm/en/items/4242965",
-      "trend": 7.23,
+      "trend": 7.22,
       "autoTags": [
         "boots",
         "thigh_boots",
@@ -168789,7 +168615,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/GothicHeadDress1.01.zip",
       "dateAdded": 1792669085,
       "boothSearch": "https://booth.pm/en/items/5366415",
-      "trend": 29.54,
+      "trend": 29.45,
       "autoTags": [
         "rose",
         "flower",
@@ -169330,7 +169156,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Hemlighet-Deer.zip",
       "dateAdded": 1791819550,
       "boothSearch": "https://booth.pm/en/items/8940899",
-      "trend": 60.36,
+      "trend": 59.13,
       "autoTags": [
         "long_hair",
         "holding",
@@ -169477,7 +169303,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Horns Ear.zip",
       "dateAdded": 1760846440,
       "boothSearch": "https://booth.pm/en/items/6956966",
-      "trend": 5.98,
+      "trend": 5.97,
       "autoTags": [
         "animal_ears",
         "tail",
@@ -169513,7 +169339,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/HoshiyuinoTubasa_1.0.zip",
       "dateAdded": 1786090753,
       "boothSearch": "https://booth.pm/en/items/8032593",
-      "trend": 13.38,
+      "trend": 13.34,
       "autoTags": [
         "wings",
         "skirt",
@@ -169604,7 +169430,7 @@ const AVATAR_DATA = {
         "fluctua"
       ],
       "boothSearch": "https://booth.pm/en/items/5244121",
-      "trend": 2.75,
+      "trend": 2.74,
       "autoTags": [
         "jewelry",
         "earrings",
@@ -169829,7 +169655,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Kaburipants.zip",
       "dateAdded": 1785570284,
       "boothSearch": "https://booth.pm/en/items/8274988",
-      "trend": 12.96,
+      "trend": 12.92,
       "autoTags": [
         "object_on_head",
         "animal_ears",
@@ -169899,7 +169725,7 @@ const AVATAR_DATA = {
         "Shinano"
       ],
       "boothSearch": "https://booth.pm/en/items/8865942",
-      "trend": 58.59,
+      "trend": 57.7,
       "autoTags": [
         "jewelry",
         "necklace",
@@ -169972,7 +169798,7 @@ const AVATAR_DATA = {
         "Kipfel"
       ],
       "boothSearch": "https://booth.pm/en/items/5914850",
-      "trend": 12.7,
+      "trend": 12.69,
       "autoTags": [
         "shirt",
         "long_hair",
@@ -170127,7 +169953,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Kumachama Plush Hug.zip",
       "dateAdded": 1793776751,
       "boothSearch": "https://booth.pm/en/items/7979646",
-      "trend": 38.96,
+      "trend": 38.87,
       "autoTags": [
         "teddy_bear",
         "stuffed_toy",
@@ -170155,7 +169981,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/LaceRibbonHalo_v1.zip",
       "dateAdded": 1751944762,
       "boothSearch": "https://booth.pm/en/items/7103241",
-      "trend": 1.58,
+      "trend": 1.57,
       "autoTags": [
         "bow",
         "long_hair",
@@ -170353,7 +170179,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Little Devil Glowing Tattoo.zip",
       "dateAdded": 1793776628,
       "boothSearch": "https://booth.pm/en/items/8810673",
-      "trend": 27.08,
+      "trend": 26.79,
       "autoTags": [
         "pubic_tattoo",
         "tattoo",
@@ -170461,7 +170287,7 @@ const AVATAR_DATA = {
         "ririka"
       ],
       "boothSearch": "https://booth.pm/en/items/6314083",
-      "trend": 16.76,
+      "trend": 16.74,
       "autoTags": [
         "cross",
         "jewelry",
@@ -170516,7 +170342,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Lycorisradiata_horn.zip",
       "dateAdded": 1753072569,
       "boothSearch": "https://booth.pm/en/items/6156398",
-      "trend": 3.78,
+      "trend": 3.77,
       "autoTags": [
         "horns",
         "long_hair",
@@ -171052,7 +170878,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Mokomoko earrings By tanpopo03.zip",
       "dateAdded": 1712619805,
       "boothSearch": "https://booth.pm/en/items/5271359",
-      "trend": 0.97,
+      "trend": 0.96,
       "autoTags": [
         "bow",
         "ornate_border",
@@ -171184,7 +171010,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Muchio_MA_v1.6.2.zip",
       "dateAdded": 1791946802,
       "boothSearch": "https://booth.pm/en/items/8657397",
-      "trend": 191.91,
+      "trend": 190.68,
       "autoTags": [
         ":3",
         "standing",
@@ -171244,7 +171070,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Mworks MochiFrame.zip",
       "dateAdded": 1791980911,
       "boothSearch": "https://booth.pm/en/items/8855342",
-      "trend": 51.87,
+      "trend": 51.19,
       "autoTags": [
         "glasses",
         "heart",
@@ -171688,7 +171514,7 @@ const AVATAR_DATA = {
         "ririka"
       ],
       "boothSearch": "https://booth.pm/en/items/8842903",
-      "trend": 98.72,
+      "trend": 96.9,
       "autoTags": [
         "album_cover",
         "cover",
@@ -171847,7 +171673,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Plump tentacles_Ver1.0.zip",
       "dateAdded": 1791949018,
       "boothSearch": "https://booth.pm/en/items/8779712",
-      "trend": 105.4,
+      "trend": 104.4,
       "autoTags": [
         "halo",
         "barefoot",
@@ -171897,7 +171723,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Primrose_Crown.zip",
       "dateAdded": 1707523593,
       "boothSearch": "https://booth.pm/en/items/5482859",
-      "trend": 2.52,
+      "trend": 2.51,
       "autoTags": [
         "still_life",
         "crown",
@@ -172101,7 +171927,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/qpd_shop_star_necklace.zip",
       "dateAdded": 1707522960,
       "boothSearch": "https://booth.pm/en/items/5432654",
-      "trend": 0.19,
+      "trend": 0.18,
       "autoTags": [
         "cursor",
         "jewelry",
@@ -172173,7 +171999,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/rabbit_halo.zip",
       "dateAdded": 1785569536,
       "boothSearch": "https://booth.pm/en/items/6431933",
-      "trend": 0.92,
+      "trend": 0.91,
       "autoTags": [
         "rabbit",
         ">_<",
@@ -172643,7 +172469,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Sakura_Halo.zip",
       "dateAdded": 1754806388,
       "boothSearch": "https://booth.pm/en/items/6751976",
-      "trend": 7.71,
+      "trend": 7.7,
       "autoTags": [
         "animal_ears",
         "cherry_blossoms",
@@ -172750,7 +172576,7 @@ const AVATAR_DATA = {
         "vlau"
       ],
       "boothSearch": "https://booth.pm/en/items/4835743",
-      "trend": 23.19,
+      "trend": 23.18,
       "autoTags": [
         "closed_eyes",
         "lighter",
@@ -172897,7 +172723,7 @@ const AVATAR_DATA = {
         "Sio"
       ],
       "boothSearch": "https://booth.pm/en/items/7326536",
-      "trend": 2.01,
+      "trend": 2.0,
       "autoTags": [
         "mole_under_eye",
         "mole",
@@ -172927,7 +172753,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Sheer Veil Halo.zip",
       "dateAdded": 1792057324,
       "boothSearch": "https://booth.pm/en/items/8695051",
-      "trend": 53.78,
+      "trend": 53.4,
       "autoTags": [
         "dress",
         "hair_over_one_eye",
@@ -172977,7 +172803,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/ShootingStarHalo.zip",
       "dateAdded": 1789015152,
       "boothSearch": "https://booth.pm/en/items/8751114",
-      "trend": 38.62,
+      "trend": 38.29,
       "autoTags": [
         "flower",
         "still_life",
@@ -173112,7 +172938,7 @@ const AVATAR_DATA = {
         "ririka"
       ],
       "boothSearch": "https://booth.pm/en/items/6500677",
-      "trend": 21.99,
+      "trend": 21.97,
       "autoTags": [
         "sleeves_past_wrists",
         "long_sleeves",
@@ -173291,7 +173117,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Snow_Leopard_Ears___Tail.zip",
       "dateAdded": 1700437684,
       "boothSearch": "https://booth.pm/en/items/5261679",
-      "trend": 3.46,
+      "trend": 3.45,
       "autoTags": [
         "tail",
         "animal_ears",
@@ -173447,7 +173273,7 @@ const AVATAR_DATA = {
         "Shinra"
       ],
       "boothSearch": "https://booth.pm/en/items/5931068",
-      "trend": 6.26,
+      "trend": 6.25,
       "autoTags": [
         "long_hair",
         "animal_ears",
@@ -173480,7 +173306,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Sphere Of Muse ver1.00.zip",
       "dateAdded": 1792602829,
       "boothSearch": "https://booth.pm/en/items/8932637",
-      "trend": 15.45,
+      "trend": 15.15,
       "autoTags": [
         "star_(symbol)",
         "still_life",
@@ -173592,7 +173418,7 @@ const AVATAR_DATA = {
         "Kikyo"
       ],
       "boothSearch": "https://booth.pm/en/items/5007748",
-      "trend": 3.41,
+      "trend": 3.4,
       "autoTags": [
         "animal_ears",
         "thighhighs",
@@ -173694,7 +173520,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Starlight Thunder Horn.zip",
       "dateAdded": 1792664379,
       "boothSearch": "https://booth.pm/en/items/8928905",
-      "trend": 32.75,
+      "trend": 32.13,
       "autoTags": [
         "horns",
         "pointy_ears",
@@ -173840,7 +173666,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/sugar usa 1.0.zip",
       "dateAdded": 1792072006,
       "boothSearch": "https://booth.pm/en/items/8799661",
-      "trend": 32.45,
+      "trend": 32.12,
       "autoTags": [
         "hair_ornament",
         "animal_ears",
@@ -173870,7 +173696,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Sugar_Doggy.zip",
       "dateAdded": 1785573579,
       "boothSearch": "https://booth.pm/en/items/8409547",
-      "trend": 4.13,
+      "trend": 4.12,
       "autoTags": [
         "tail",
         "animal_ears",
@@ -174001,7 +173827,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/tangledhorn_fullpack.zip",
       "dateAdded": 1717556086,
       "boothSearch": "https://booth.pm/en/items/5434623",
-      "trend": 7.05,
+      "trend": 7.04,
       "autoTags": [
         "horns",
         "long_hair",
@@ -174046,7 +173872,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/TENSHI_CHOKER.rar",
       "dateAdded": 1712452906,
       "boothSearch": "https://booth.pm/en/items/4949310",
-      "trend": 12.8,
+      "trend": 12.79,
       "autoTags": [
         "heart",
         "chain",
@@ -174212,7 +174038,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/unicorn.zip",
       "dateAdded": 1792639957,
       "boothSearch": "https://booth.pm/en/items/8958908",
-      "trend": 43.77,
+      "trend": 42.35,
       "autoTags": [
         "pointy_ears",
         "long_hair",
@@ -174263,7 +174089,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/Veiled_Halo.zip",
       "dateAdded": 1786090038,
       "boothSearch": "https://booth.pm/en/items/8063240",
-      "trend": 15.37,
+      "trend": 15.33,
       "autoTags": [
         "halo",
         "long_hair",
@@ -174396,7 +174222,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/VinedEyeMask1.1.0.zip",
       "dateAdded": 1779622457,
       "boothSearch": "https://booth.pm/en/items/6215017",
-      "trend": 12.22,
+      "trend": 12.21,
       "autoTags": [
         "braid",
         "blindfold",
@@ -174450,7 +174276,7 @@ const AVATAR_DATA = {
       "sourceFile": "Accessories/W.A.R.D.zip",
       "dateAdded": 1791817323,
       "boothSearch": "https://booth.pm/en/items/8937643",
-      "trend": 99.68,
+      "trend": 97.67,
       "autoTags": [
         "animal_ears",
         "necktie",
@@ -174931,7 +174757,7 @@ const AVATAR_DATA = {
         "Selestia"
       ],
       "boothSearch": "https://booth.pm/en/items/5338169",
-      "trend": 1.18,
+      "trend": 1.17,
       "autoTags": [
         "pointy_ears",
         "twintails",
