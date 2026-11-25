@@ -250,6 +250,9 @@ a{color:var(--teal)}
 .summary-nav{justify-content:space-between;padding-top:14px;border-top:1px solid var(--border)}
 .summary-nav>button{flex:0 0 auto}
 #orderImageArea:empty{display:none}
+.referral-box label{display:block;font-size:.85rem;font-weight:600;margin-bottom:6px}
+.referral-box input{width:100%;box-sizing:border-box;font-size:.9rem;padding:9px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);color:var(--text);font-family:inherit}
+.referral-box .cb-note{display:block;margin-bottom:8px}
 .price-table{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:12px 16px;font-size:.85rem;line-height:2}
 .price-row{display:flex;justify-content:space-between;gap:12px}
 .price-row .unit{color:var(--text-muted)}
@@ -421,6 +424,10 @@ const T = {
     createImage: "สร้างรูปสรุปออเดอร์",
     generatingImage: "กำลังสร้างรูป...",
     copyBothNote: "กรุณาส่งให้ทางร้านทั้ง 2 อย่าง: (1) กด \"คัดลอกข้อความ\" และ (2) กด \"สร้างรูปสรุปออเดอร์\" เพื่อสร้างรูป แล้วกด \"คัดลอกรูป\"",
+    referralLabel: "โปรแนะนำเพื่อน: ลดทันที 50 บาท",
+    referralHint: "มีเพื่อนแนะนำร้านมา? ใส่ username Discord ของเพื่อนคนนั้น คุณลด 50 บาท และเพื่อนได้เครดิต 50 บาท · เฉพาะออเดอร์อวตาร์ตัวใหม่ · ถูกแนะนำได้ครั้งเดียว",
+    referralDiscount: "ส่วนลดโปรแนะนำเพื่อน",
+    referralLine: "- โปรแนะนำเพื่อน ผู้แนะนำ (Discord):",
     copyImage: "คัดลอกรูป",
     downloadImage: "ดาวน์โหลดรูป",
     imageCopied: "คัดลอกรูปแล้ว!",
@@ -500,6 +507,10 @@ const T = {
     createImage: "Create order image",
     generatingImage: "Generating image...",
     copyBothNote: "Send BOTH to the shop: (1) tap \"Copy Text\", and (2) tap \"Create order image\" to generate the image, then tap \"Copy image\".",
+    referralLabel: "Referral promo: 50 baht off",
+    referralHint: "Did a friend refer you? Enter their Discord username: you get 50 baht off and they get 50 baht credit · New avatar orders only · Once per customer",
+    referralDiscount: "Referral promo discount",
+    referralLine: "- Referral promo, referred by (Discord):",
     copyImage: "Copy image",
     downloadImage: "Download image",
     imageCopied: "Image copied!",
@@ -557,7 +568,8 @@ let state = {
   },
   tagFilters: {},         // { tab: Set } per-tab selected tag strings
   tagSearches: {},        // { tab: string } per-tab tag search input
-  customerNotes: ''       // free-text notes for share URL
+  customerNotes: '',      // free-text notes for share URL
+  referrer: ''            // Discord username of whoever referred the customer (referral promo)
 };
 
 // Per-tab tag filter helpers — each tab keeps its own filter state
@@ -582,7 +594,8 @@ var PRICING = {
   polygonReduction: 49,
   pcssShadows: 69,
   dpsHole: 19,
-  dpsRod: 29
+  dpsRod: 29,
+  referralDiscount: 50
 };
 var LIMITS = {
   maxPieces: 8,
@@ -704,6 +717,7 @@ function encodeStateToHash() {
     if (tg.some(function(x) { return x !== null; })) compact.tg = tg;
   }
   if (state.customerNotes) compact.n = state.customerNotes;
+  if (state.referrer) compact.rf = state.referrer;
   // Tag filter state (only save non-empty tabs)
   var f = {};
   for (var tab in state.tagFilters) {
@@ -889,6 +903,7 @@ function decodeAndRestore(hash) {
   state.selectedAvatar = compact.a;
   state.selections = sel;
   if (compact.n) state.customerNotes = compact.n;
+  if (compact.rf) state.referrer = compact.rf;
   state.tagFilters = tagFilters;
   state.tagSearches = tagSearches;
 
@@ -3325,6 +3340,11 @@ function renderSummary(main) {
     <div class="summary-layout">
       <div id="summaryContent"></div>
       <aside class="summary-aside">
+        ${state.selections.isNewAvatar !== false ? `<div class="referral-box">
+          <label for="referralInput">${t('referralLabel')}</label>
+          <span class="cb-note">${t('referralHint')}</span>
+          <input type="text" id="referralInput" maxlength="32" autocomplete="off" spellcheck="false" placeholder="username" value="${escapeHTML(state.referrer || '')}" oninput="setReferrer(this.value)">
+        </div>` : ''}
         <div id="summaryPrice"></div>
         <div class="copy-both-note">${t('copyBothNote')}</div>
         <div class="summary-actions">
@@ -3380,7 +3400,12 @@ function renderSummary(main) {
   textDiv.appendChild(textPre);
   content.appendChild(textDiv);
 
-  // Price breakdown
+  fillSummaryPrice();
+}
+
+function fillSummaryPrice() {
+  var box = currentMain && currentMain.querySelector('#summaryPrice');
+  if (!box) return;
   var priceDiv = document.createElement('div');
   priceDiv.className = 'summary-section';
   priceDiv.innerHTML = '<h3>' + (lang==='th' ? 'สรุปราคา' : 'Price Summary') + '</h3>';
@@ -3397,7 +3422,16 @@ function renderSummary(main) {
   priceHTML += '<div class="price-row price-total"><span>' + (lang==='th' ? 'รวม' : 'Total') + '</span><span>' + price.total + ' ' + t('baht') + '</span></div>';
   priceList.innerHTML = priceHTML;
   priceDiv.appendChild(priceList);
-  main.querySelector('#summaryPrice').appendChild(priceDiv);
+  box.replaceChildren(priceDiv);
+}
+
+// Typing updates the price and order text in place: a full render() would drop the input's focus.
+function setReferrer(value) {
+  state.referrer = value.trim().replace(/^@+/, '');
+  var text = currentMain && currentMain.querySelector('#summaryText');
+  if (text) text.textContent = generateSummaryText();
+  fillSummaryPrice();
+  saveProgress();
 }
 
 function calculatePrice() {
@@ -3517,6 +3551,11 @@ function calculatePrice() {
     total += dpsRod * PRICING.dpsRod;
     details.push((lang==='th'?'DPS แท่ง':'DPS rods') + ' x' + dpsRod + ': ' + (dpsRod * PRICING.dpsRod));
   }
+  // Referral promo: the referred customer gets 50 baht off, new avatar orders only
+  if (isNew && state.referrer) {
+    total -= PRICING.referralDiscount;
+    details.push(t('referralDiscount') + ': -' + PRICING.referralDiscount);
+  }
   return { total: total, details: details };
 }
 
@@ -3611,6 +3650,7 @@ function generateSummaryText() {
   var dpsR = state.selections.optDPSRod || 0;
   if (dpsH > 0) lines.push((lang==='th' ? '- DPS รู' : '- DPS holes') + ' x' + dpsH);
   if (dpsR > 0) lines.push((lang==='th' ? '- DPS แท่ง' : '- DPS rods') + ' x' + dpsR);
+  if (state.selections.isNewAvatar !== false && state.referrer) lines.push(t('referralLine') + ' ' + state.referrer);
 
   // Add price
   var price = calculatePrice();
@@ -3640,6 +3680,7 @@ function resetAll() {
     tagFilters: {},
     tagSearches: {},
     customerNotes: '',
+    referrer: '',
   };
   history.replaceState(history.state, '', location.pathname + location.search);
   render();
@@ -3673,7 +3714,7 @@ function boot() {
 }
 </script>
 <!-- Exact tag: scanner/hidden_store.py render_deploy_html() adds the cache-busting ?v= hash. -->
-<script src="data.js?v=14d62b3da9eb"></script>
+<script src="data.js?v=d3977d18eb0b"></script>
 <script>boot();</script>
 </body>
 </html>
